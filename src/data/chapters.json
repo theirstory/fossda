@@ -1,0 +1,77 @@
+{
+  "title": "Index",
+  "created_at": "2024-09-10T13:28:59.838Z",
+  "updated_at": "2024-09-11T15:28:29.011Z",
+  "metadata": [
+    {
+      "title": "Introduction to FOSSDA and Open Source",
+      "timecode": "00:00:04",
+      "time": {
+        "start": 4,
+        "end": null
+      },
+      "synopsis": "Heather Meeker introduces the FOSSDA digital archive, emphasizing the profound impact of open source software. She highlights how the movement was driven by individuals rather than governments or corporations.",
+      "keywords": "open source, FOSSDA, software movement, digital archive"
+    },
+    {
+      "title": "The Origins and Growth of Open Source",
+      "timecode": "00:00:27",
+      "time": {
+        "start": 27,
+        "end": null
+      },
+      "synopsis": "Open source began as an effort to make software more accessible. Meeker explains how open-source software is now an integral part of daily life, thanks to the dedication of early contributors.",
+      "keywords": "open source, software access, community, technology impact"
+    },
+    {
+      "title": "Capturing Personal Stories of Open Source Pioneers",
+      "timecode": "00:00:58",
+      "time": {
+        "start": 58,
+        "end": null
+      },
+      "synopsis": "Meeker discusses the importance of documenting the personal stories behind the open-source movement. She hopes these stories will help future generations understand its origins and significance.",
+      "keywords": "oral history, open source pioneers, movement documentation"
+    },
+    {
+      "title": "Heather Meeker's Personal Journey into Technology",
+      "timecode": "00:01:42",
+      "time": {
+        "start": 102,
+        "end": null
+      },
+      "synopsis": "Meeker shares her background as a computer programmer in the 1980s, working with compiled BASIC. She reflects on how software development was different back then and how she entered the field without formal education in programming.",
+      "keywords": "Heather Meeker, programming, BASIC, 1980s, software industry"
+    },
+    {
+      "title": "Transition from Programming to Law",
+      "timecode": "00:02:37",
+      "time": {
+        "start": 157,
+        "end": null
+      },
+      "synopsis": "Meeker describes her shift from programming to law, discovering the emerging field of software licensing. She recalls how open-source licenses were initially misunderstood by legal professionals.",
+      "keywords": "career transition, software licensing, law, open source licenses"
+    },
+    {
+      "title": "Pioneering Open Source Legal Work",
+      "timecode": "00:03:37",
+      "time": {
+        "start": 217,
+        "end": null
+      },
+      "synopsis": "Faced with skepticism about open source, Meeker took an innovative approach by developing legal frameworks for it. She likens legal work to solving complex puzzles, much like programming.",
+      "keywords": "legal challenges, software licenses, open source law, problem-solving"
+    },
+    {
+      "title": "Passion for Open Source and Closing Remarks",
+      "timecode": "00:04:35",
+      "time": {
+        "start": 275,
+        "end": null
+      },
+      "synopsis": "Meeker reflects on her fulfilling career in open-source law and the intellectual engagement it provides. She encourages listeners to explore the archive and consider how individuals can drive global change.",
+      "keywords": "career fulfillment, open source advocacy, storytelling, inspiration"
+    }
+  ]
+} 

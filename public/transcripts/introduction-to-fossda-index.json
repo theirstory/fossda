@@ -1,0 +1,26 @@
+{
+  "title": "Introducing FOSSDA",
+  "created_at": "2024-09-10T13:28:59.838Z",
+  "updated_at": "2024-09-11T15:28:29.011Z",
+  "metadata": [
+    {
+      "title": "Introducing FOSSDA",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Heather welcomes the audience to the Open Source Stories digital Archive, also known as FOSSDA. She emphasizes the transformative impact of open source software on the world and highlight its ubiquity in daily life."
+    },
+    {
+      "title": "The Impact of Open Source",
+      "timecode": "00:00:10",
+      "time": {
+        "start": 10,
+        "end": null
+      },
+      "synopsis": "Heather discusses the significant positive changes that open source software has brought to the world. They describe the movement as longstanding and emphasize that it was initiated by individuals who recognized the importance of software accessibility."
+    }
+    // ... add the rest of the chapters
+  ]
+} 
