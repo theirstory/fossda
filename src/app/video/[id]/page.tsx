@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 
 type Props = {
   params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+  // searchParams: { [key: string]: string | string[] | undefined }
 }
 
 const PLAYBACK_IDS: Record<string, string> = {
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function VideoPage({ 
-  params,
-  searchParams,
+  params
+  // searchParams,
 }: Props) {
   const videoId = params.id;
   const currentVideo = videoData[videoId];
