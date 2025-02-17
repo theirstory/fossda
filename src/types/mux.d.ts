@@ -14,6 +14,7 @@ declare module '@mux/mux-player-react' {
   export interface MuxPlayerProps extends ComponentProps<'video'> {
     streamType?: 'on-demand' | 'live';
     playbackId?: string;
+    accentColor?: string;
     metadata?: {
       video_title?: string;
       player_name?: string;

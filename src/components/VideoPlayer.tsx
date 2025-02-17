@@ -16,11 +16,6 @@ interface MuxChapter {
   value: string;
 }
 
-interface MuxPlayerProps {
-  accentColor?: string;
-  // ... other props
-}
-
 const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
   ({ playbackId, onPlayStateChange, chapters, thumbnail }, ref) => {
     const playerRef = useRef<MuxPlayerElement>(null);
@@ -42,6 +37,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           console.error = originalError;
         };
       }
+      return undefined;
     }, [mounted]);
 
     // Restore video control methods while maintaining type safety

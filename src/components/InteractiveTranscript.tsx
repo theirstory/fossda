@@ -41,90 +41,94 @@ export default function InteractiveTranscript({
 
   // Initialize HyperaudioLite
   useEffect(() => {
-    if (scriptLoaded && mounted && transcriptRef.current && videoRef.current && document.getElementById('hyperplayer')) {
-      if (typeof HyperaudioLite === 'function') {
-        new HyperaudioLite(
-          "hypertranscript",
-          "hyperplayer",
-          false,  // minimizedMode
-          true,   // autoScroll
-          false,  // doubleClick
-          false,  // webMonetization
-          false   // playOnClick
-        );
-
-        // Add click handler to transcript spans
-        const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
-        spans.forEach(span => {
-          span.addEventListener('click', () => {
-            const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
-            // Set time directly on the video element
-            const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-            if (videoElement) {
-              videoElement.currentTime = time;
-              if (isPlaying) {
-                videoElement.play();
-              }
-              // Scroll the clicked word into view
-              span.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-          });
-        });
-      }
+    if (!scriptLoaded || !mounted || !transcriptRef.current) {
+      return undefined;
     }
+
+    if (typeof HyperaudioLite === 'function') {
+      new HyperaudioLite(
+        "hypertranscript",
+        "hyperplayer",
+        false,
+        true,
+        false,
+        false,
+        false
+      );
+
+      // Add click handler to transcript spans
+      const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
+      spans.forEach(span => {
+        span.addEventListener('click', () => {
+          const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
+          const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+          if (videoElement) {
+            videoElement.currentTime = time;
+            if (isPlaying) {
+              videoElement.play();
+            }
+            span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
+      });
+    }
+
+    return undefined;
   }, [scriptLoaded, videoRef, mounted, isPlaying]);
 
   // Add timeupdate listener to scroll transcript
   useEffect(() => {
     const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-    if (videoElement && transcriptRef.current && transcriptContainerRef.current) {
-      const handleTimeUpdate = () => {
-        const currentTime = videoElement.currentTime * 1000; // Convert to ms
-        const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
-        
-        // Find the current or next span
-        let currentSpan: Element | null = null;
-        for (const span of spans) {
-          const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
-          if (spanTime <= currentTime) {
-            currentSpan = span;
-          } else {
-            break;
-          }
-        }
-        
-        if (currentSpan && transcriptContainerRef.current) {
-          const container = transcriptContainerRef.current;
-          const containerRect = container.getBoundingClientRect();
-          const spanRect = (currentSpan as HTMLElement).getBoundingClientRect();
-          
-          // Calculate the ideal position (2/3 from the top)
-          const targetPosition = containerRect.height * 0.33;
-          const currentOffset = spanRect.top - containerRect.top;
-          const scrollAdjustment = currentOffset - targetPosition;
-          
-          // Smooth scroll to position
-          container.scrollTo({
-            top: container.scrollTop + scrollAdjustment,
-            behavior: 'smooth'
-          });
-
-          // Highlight current span
-          spans.forEach(span => span.classList.remove('bg-yellow-100'));
-          if (currentSpan) {
-            currentSpan.classList.add('bg-yellow-100');
-          }
-        }
-      };
-
-      videoElement.addEventListener('timeupdate', handleTimeUpdate);
-      videoElement.addEventListener('seeking', handleTimeUpdate);
-      
-      return () => {
-        videoElement.removeEventListener('timeupdate', handleTimeUpdate);
-        videoElement.removeEventListener('seeking', handleTimeUpdate);
-      };
+    if (!videoElement || !transcriptRef.current || !transcriptContainerRef.current) {
+      return undefined;
     }
+
+    const handleTimeUpdate = () => {
+      const currentTime = videoElement.currentTime * 1000; // Convert to ms
+      const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
+      
+      // Find the current or next span
+      let currentSpan: Element | null = null;
+      for (const span of spans) {
+        const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+        if (spanTime <= currentTime) {
+          currentSpan = span;
+        } else {
+          break;
+        }
+      }
+      
+      if (currentSpan && transcriptContainerRef.current) {
+        const container = transcriptContainerRef.current;
+        const containerRect = container.getBoundingClientRect();
+        const spanRect = (currentSpan as HTMLElement).getBoundingClientRect();
+        
+        // Calculate the ideal position (2/3 from the top)
+        const targetPosition = containerRect.height * 0.33;
+        const currentOffset = spanRect.top - containerRect.top;
+        const scrollAdjustment = currentOffset - targetPosition;
+        
+        // Smooth scroll to position
+        container.scrollTo({
+          top: container.scrollTop + scrollAdjustment,
+          behavior: 'smooth'
+        });
+
+        // Highlight current span
+        spans.forEach(span => span.classList.remove('bg-yellow-100'));
+        if (currentSpan) {
+          currentSpan.classList.add('bg-yellow-100');
+        }
+      }
+    };
+
+    videoElement.addEventListener('timeupdate', handleTimeUpdate);
+    videoElement.addEventListener('seeking', handleTimeUpdate);
+    
+    return () => {
+      videoElement.removeEventListener('timeupdate', handleTimeUpdate);
+      videoElement.removeEventListener('seeking', handleTimeUpdate);
+    };
   }, [mounted]);
 
   // Handle chapter navigation

@@ -1,7 +1,6 @@
 "use client";
 
 import VideoSection from './VideoSection';
-import { VideoData } from '@/types/transcript';
 
 interface ClientVideoSectionProps {
   videoId: string;
