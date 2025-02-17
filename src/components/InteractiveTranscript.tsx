@@ -45,36 +45,62 @@ export default function InteractiveTranscript({
       return undefined;
     }
 
-    if (typeof HyperaudioLite === 'function') {
-      new HyperaudioLite(
-        "hypertranscript",
-        "hyperplayer",
-        false,
-        true,
-        false,
-        false,
-        false
-      );
+    // Wait for player to be ready
+    const player = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (!player) {
+      return undefined;
+    }
 
-      // Add click handler to transcript spans
+    const setupClickHandlers = () => {
       const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
       spans.forEach(span => {
         span.addEventListener('click', () => {
           const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
-          const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-          if (videoElement) {
-            videoElement.currentTime = time;
+          const videoElement = document.getElementById('hyperplayer');
+          if (videoElement && 'currentTime' in videoElement) {
+            (videoElement as HTMLVideoElement).currentTime = time;
             if (isPlaying) {
-              videoElement.play();
+              (videoElement as HTMLVideoElement).play();
             }
             span.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         });
       });
-    }
+    };
 
-    return undefined;
-  }, [scriptLoaded, videoRef, mounted, isPlaying]);
+    // Create a MutationObserver to watch for player initialization
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-media-status') {
+          const status = player.getAttribute('data-media-status');
+          if (status === 'ready') {
+            if (typeof HyperaudioLite === 'function') {
+              new HyperaudioLite(
+                "hypertranscript",
+                "hyperplayer",
+                false,
+                true,
+                false,
+                false,
+                false
+              );
+              setupClickHandlers();
+            }
+            observer.disconnect();
+          }
+        }
+      });
+    });
+
+    observer.observe(player, { attributes: true });
+
+    // Set up initial click handlers
+    setupClickHandlers();
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [scriptLoaded, mounted, isPlaying]);
 
   // Add timeupdate listener to scroll transcript
   useEffect(() => {
