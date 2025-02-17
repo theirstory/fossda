@@ -37,14 +37,14 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     metadata: []
   };
 
-  const handleTimeUpdate = (time: number) => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = time;
-      if (isPlaying) {
-        videoRef.current.play().catch(console.error);
-      }
-    }
-  };
+  // const handleTimeUpdate = (time: number) => {
+  //   if (videoRef.current) {
+  //     videoRef.current.currentTime = time;
+  //     if (isPlaying) {
+  //       videoRef.current.play().catch(console.error);
+  //     }
+  //   }
+  // };
 
   const handlePlayStateChange = (playing: boolean) => {
     setIsPlaying(playing);
