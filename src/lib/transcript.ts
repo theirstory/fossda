@@ -32,7 +32,7 @@ export function addTimecodesToTranscript(html: string, chapters: ChapterMetadata
   if (sortedChapters.length > 0) {
     const firstChapter = sortedChapters[0];
     const firstChapterHeading = `
-      <div class="bg-gray-50 border-l-4 border-gray-900 pl-4 py-4 mb-8">
+      <div class="bg-gray-50 border-l-4 border-gray-900 pl-4 py-4 mb-8 cursor-pointer hover:bg-gray-100 transition-colors" data-chapter-time="${firstChapter.time.start * 1000}">
         <h2 class="text-xl font-bold text-gray-900">
           ${firstChapter.title}
         </h2>
@@ -64,7 +64,7 @@ export function addTimecodesToTranscript(html: string, chapters: ChapterMetadata
     if (lastSentenceEnd !== -1) {
       const chapterHeading = `
         </p>
-        <div class="bg-gray-50 border-l-4 border-gray-900 pl-4 py-4 my-8">
+        <div class="bg-gray-50 border-l-4 border-gray-900 pl-4 py-4 my-8 cursor-pointer hover:bg-gray-100 transition-colors" data-chapter-time="${chapter.time.start * 1000}">
           <h2 class="text-xl font-bold text-gray-900">
             ${chapter.title}
           </h2>
