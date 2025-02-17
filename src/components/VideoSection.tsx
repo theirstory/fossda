@@ -6,6 +6,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import InteractiveTranscript from "./InteractiveTranscript";
 import InsightsPanel from "./InsightsPanel";
 import chaptersData from "@/data/chapters.json";
+import { config } from '@/lib/config';
+import { MuxPlayerElement } from '@mux/mux-player-react';
 
 interface VideoSectionProps {
   videoId: string;
@@ -14,7 +16,7 @@ interface VideoSectionProps {
 
 export default function VideoSection({ videoId, transcriptHtml }: VideoSectionProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const videoRef = useRef<MuxPlayerElement>(null);
 
   const handleTimeUpdate = (time: number) => {
     if (videoRef.current) {
@@ -34,9 +36,10 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
       <div>
         <VideoPlayer
           ref={videoRef}
-          videoUrl={`/videos/${videoId}.mp4`}
+          playbackId={process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID!}
           onPlayStateChange={handlePlayStateChange}
           isPlaying={isPlaying}
+          chapters={chaptersData.metadata}
         />
       </div>
 

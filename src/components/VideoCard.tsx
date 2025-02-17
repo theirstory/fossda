@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { PlayCircle } from "lucide-react";
 import Image from "next/image";
@@ -25,6 +28,29 @@ export default function VideoCard({
   isHero,
   isCompact
 }: VideoCardProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <Card className={cn(
+        "overflow-hidden animate-pulse",
+        isHero && "bg-gray-900",
+        isCompact && "bg-gray-50",
+        className
+      )}>
+        <div className={cn(
+          "relative aspect-video bg-gray-800",
+          isHero && "aspect-[16/9]",
+          isCompact && "aspect-[2/1]"
+        )} />
+      </Card>
+    );
+  }
+
   return (
     <Link href={`/video/${id}`} className="block">
       <Card className={cn(

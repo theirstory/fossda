@@ -1,200 +1,87 @@
 "use client";
 
-import { forwardRef, useEffect, useImperativeHandle, useRef, useState, useCallback } from "react";
-import { Button } from "./ui/button";
-import { Slider } from "./ui/slider";
-import { 
-  Play, 
-  Pause, 
-  Volume2, 
-  VolumeX,
-  Maximize,
-  SkipBack,
-  SkipForward
-} from "lucide-react";
-import { debounce } from "@/lib/utils";
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
+import MuxPlayer, { MuxPlayerProps, MuxPlayerElement } from '@mux/mux-player-react';
+import { ChapterMetadata } from "@/types/transcript";
 
 interface VideoPlayerProps {
-  videoUrl: string;
+  playbackId: string;
   onPlayStateChange: (playing: boolean) => void;
   isPlaying: boolean;
+  chapters: ChapterMetadata[];
 }
 
-const VideoPlayer = forwardRef<HTMLVideoElement, VideoPlayerProps>(
-  ({ videoUrl, onPlayStateChange, isPlaying }, ref) => {
-    const videoRef = useRef<HTMLVideoElement>(null);
-    const [duration, setDuration] = useState(0);
-    const [volume, setVolume] = useState(1);
-    const [isMuted, setIsMuted] = useState(false);
-    const [localCurrentTime, setLocalCurrentTime] = useState(0);
+const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
+  ({ playbackId, onPlayStateChange, isPlaying, chapters }, ref) => {
+    const videoRef = useRef<MuxPlayerElement>(null);
+    const [mounted, setMounted] = useState(false);
 
-    useImperativeHandle(ref, () => videoRef.current!);
-
-    useEffect(() => {
-      const video = videoRef.current;
-      if (video) {
-        const handleTimeUpdate = () => {
-          setLocalCurrentTime(video.currentTime);
-        };
-        video.addEventListener('timeupdate', handleTimeUpdate);
-        return () => {
-          video.removeEventListener('timeupdate', handleTimeUpdate);
-        };
-      }
-    }, []);
-
-    useEffect(() => {
-      const video = videoRef.current;
-      if (video) {
-        const handlePlay = () => onPlayStateChange(true);
-        const handlePause = () => onPlayStateChange(false);
-
-        video.addEventListener('play', handlePlay);
-        video.addEventListener('pause', handlePause);
-
-        return () => {
-          video.removeEventListener('play', handlePlay);
-          video.removeEventListener('pause', handlePause);
-        };
-      }
-    }, [onPlayStateChange]);
-
-    const handleLoadedMetadata = () => {
-      if (videoRef.current) {
-        setDuration(videoRef.current.duration);
-      }
-    };
-
-    const handleVolumeChange = (value: number) => {
-      if (videoRef.current) {
-        videoRef.current.volume = value;
-        setVolume(value);
-        setIsMuted(value === 0);
-      }
-    };
-
-    const toggleMute = () => {
-      if (videoRef.current) {
-        const newMutedState = !isMuted;
-        videoRef.current.muted = newMutedState;
-        setIsMuted(newMutedState);
-        if (!newMutedState && volume === 0) {
-          handleVolumeChange(1);
+    // Expose the video element methods
+    useImperativeHandle(ref, () => ({
+      ...videoRef.current!,
+      currentTime: videoRef.current?.currentTime ?? 0,
+      duration: videoRef.current?.duration ?? 0,
+      play: async () => {
+        if (videoRef.current) {
+          return videoRef.current.play();
+        }
+        return Promise.resolve();
+      },
+      pause: () => {
+        if (videoRef.current) {
+          videoRef.current.pause();
         }
       }
-    };
+    }));
 
-    const formatTime = (seconds: number) => {
-      const minutes = Math.floor(seconds / 60);
-      const remainingSeconds = Math.floor(seconds % 60);
-      return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-    };
+    useEffect(() => {
+      setMounted(true);
+    }, []);
 
-    const seek = (time: number) => {
-      if (videoRef.current) {
-        videoRef.current.currentTime = time;
+    // Add chapters when the player mounts
+    useEffect(() => {
+      if (mounted && videoRef.current && 'addChapters' in videoRef.current) {
+        const muxChapters = chapters.map(chapter => ({
+          startTime: chapter.time.start,
+          value: chapter.title
+        }));
+        
+        (videoRef.current as any).addChapters(muxChapters);
       }
-    };
+    }, [mounted, chapters]);
 
-    const skipForward = () => {
-      if (videoRef.current) {
-        seek(Math.min(videoRef.current.currentTime + 10, duration));
-      }
-    };
-
-    const skipBackward = () => {
-      if (videoRef.current) {
-        seek(Math.max(videoRef.current.currentTime - 10, 0));
-      }
-    };
+    if (!mounted) {
+      return (
+        <div className="relative bg-black rounded-lg overflow-hidden">
+          <div className="aspect-video bg-black animate-pulse" />
+        </div>
+      );
+    }
 
     return (
       <div className="relative bg-black rounded-lg overflow-hidden">
-        <video
+        <MuxPlayer
           id="hyperplayer"
           ref={videoRef}
-          className="w-full aspect-video bg-black"
-          controls
-          onLoadedMetadata={handleLoadedMetadata}
-        >
-          <source src={videoUrl} type="video/mp4" />
-        </video>
-        
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-          <Slider 
-            value={[localCurrentTime]}
-            max={duration}
-            step={0.1}
-            onValueChange={([value]) => seek(value)}
-            className="mb-4"
-          />
-          
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={skipBackward}
-              >
-                <SkipBack className="h-4 w-4 text-white" />
-              </Button>
-              
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => videoRef.current?.play()}
-              >
-                {isPlaying ? (
-                  <Pause className="h-6 w-6 text-white" />
-                ) : (
-                  <Play className="h-6 w-6 text-white" />
-                )}
-              </Button>
-              
-              <Button 
-                variant="ghost" 
-                size="icon"
-                onClick={skipForward}
-              >
-                <SkipForward className="h-4 w-4 text-white" />
-              </Button>
-
-              <span className="text-white text-sm">
-                {formatTime(localCurrentTime)} / {formatTime(duration)}
-              </span>
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={toggleMute}
-              >
-                {isMuted ? (
-                  <VolumeX className="h-4 w-4 text-white" />
-                ) : (
-                  <Volume2 className="h-4 w-4 text-white" />
-                )}
-              </Button>
-              
-              <Slider
-                value={[volume]}
-                max={1}
-                step={0.1}
-                onValueChange={([value]) => handleVolumeChange(value)}
-                className="w-24"
-              />
-
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => videoRef.current?.requestFullscreen()}
-              >
-                <Maximize className="h-4 w-4 text-white" />
-              </Button>
-            </div>
-          </div>
-        </div>
+          streamType="on-demand"
+          playbackId={playbackId}
+          metadata={{
+            video_title: 'Introduction to FOSSDA',
+            player_name: 'FOSSDA Player',
+          }}
+          onPlay={() => onPlayStateChange(true)}
+          onPause={() => onPlayStateChange(false)}
+          primaryColor="#FFFFFF"
+          secondaryColor="#000000"
+          accentColor="#eaaa11"
+          defaultShowCaptions
+          defaultShowChapters
+          thumbnailTime={0}
+          storyboard={{
+            src: `https://image.mux.com/${playbackId}/storyboard.vtt`,
+            type: 'text/vtt'
+          }}
+        />
       </div>
     );
   }

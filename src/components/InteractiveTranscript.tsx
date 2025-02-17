@@ -6,12 +6,13 @@ import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
 import { parseTranscriptChapters, TranscriptChapter, addTimecodesToTranscript } from "@/lib/transcript";
 import { ChapterMetadata } from "@/types/transcript";
+import { MuxPlayerElement } from '@mux/mux-player-react';
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
   onTimeClick: (time: number) => void;
   isPlaying: boolean;
-  videoRef: React.RefObject<HTMLVideoElement | null>;
+  videoRef: React.RefObject<MuxPlayerElement>;
   chapters: ChapterMetadata[];
 }
 
@@ -25,18 +26,21 @@ export default function InteractiveTranscript({
   const transcriptRef = useRef<HTMLDivElement>(null);
   const scriptLoaded = useScripts();
   const [processedHtml, setProcessedHtml] = useState(transcriptHtml);
+  const [mounted, setMounted] = useState(false);
 
-  // Initialize transcript
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined') {
       setProcessedHtml(addTimecodesToTranscript(transcriptHtml));
     }
-  }, [transcriptHtml]);
+  }, [transcriptHtml, mounted]);
 
-  // Initialize hyperaudio-lite
+  // Initialize HyperaudioLite
   useEffect(() => {
-    if (scriptLoaded && transcriptRef.current && videoRef.current) {
-      // Initialize hyperaudio-lite
+    if (scriptLoaded && mounted && transcriptRef.current && videoRef.current && document.getElementById('hyperplayer')) {
       if (typeof HyperaudioLite === 'function') {
         new HyperaudioLite(
           "hypertranscript",
@@ -45,11 +49,47 @@ export default function InteractiveTranscript({
           true,   // autoScroll
           false,  // doubleClick
           false,  // webMonetization
-          true    // playOnClick
+          false   // playOnClick
         );
+
+        // Add click handler to transcript spans
+        const spans = transcriptRef.current.querySelectorAll('span[data-m]');
+        spans.forEach(span => {
+          span.addEventListener('click', () => {
+            const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
+            // Set time directly on the video element
+            const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+            if (videoElement) {
+              videoElement.currentTime = time;
+              if (isPlaying) {
+                videoElement.play();
+              }
+              // Scroll the clicked word into view
+              span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+          });
+        });
       }
     }
-  }, [scriptLoaded, videoRef]);
+  }, [scriptLoaded, videoRef, mounted, isPlaying]);
+
+  // Handle chapter navigation
+  const handleChapterClick = (time: number) => {
+    if (videoRef.current) {
+      // Set time directly on the video element
+      const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+      if (videoElement) {
+        videoElement.currentTime = time;
+        if (isPlaying) {
+          videoElement.play();
+        }
+      }
+    }
+  };
+
+  if (!mounted) {
+    return <div className="h-[calc(100vh-200px)] bg-gray-100 animate-pulse" />;
+  }
 
   return (
     <Card className="h-[calc(100vh-200px)] overflow-hidden">
@@ -58,19 +98,15 @@ export default function InteractiveTranscript({
           {chapters.map((chapter) => (
             <button
               key={chapter.time.start}
-              onClick={() => onTimeClick(chapter.time.start)}
+              onClick={() => handleChapterClick(chapter.time.start)}
               className={cn(
                 "text-left w-full p-3 hover:bg-gray-100 transition-colors border-b",
                 (videoRef.current?.currentTime ?? 0) >= chapter.time.start && "bg-gray-100 font-medium"
               )}
             >
               <div className="text-sm font-medium">{chapter.title}</div>
-              <div className="text-xs text-gray-600 mt-1">
-                {chapter.timecode}
-              </div>
-              <div className="text-xs text-gray-500 mt-2 line-clamp-2">
-                {chapter.synopsis}
-              </div>
+              <div className="text-xs text-gray-600 mt-1">{chapter.timecode}</div>
+              <div className="text-xs text-gray-500 mt-2 line-clamp-2">{chapter.synopsis}</div>
             </button>
           ))}
         </div>
