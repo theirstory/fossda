@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
-import MuxPlayer, { MuxPlayerProps, MuxPlayerElement } from '@mux/mux-player-react';
+import MuxPlayer, { MuxPlayerElement } from '@mux/mux-player-react';
 import { ChapterMetadata } from "@/types/transcript";
 
 interface VideoPlayerProps {

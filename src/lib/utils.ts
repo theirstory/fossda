@@ -10,13 +10,16 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function debounce<T extends (...args: any[]) => any>(
-  func: T,
+/**
+ * Creates a debounced version of a function
+ */
+export function debounce<Args extends unknown[], R>(
+  func: (...args: Args) => R,
   wait: number
-): T & { cancel: () => void } {
+): ((...args: Args) => void) & { cancel: () => void } {
   let timeout: NodeJS.Timeout | null = null;
 
-  const debounced = (...args: Parameters<T>) => {
+  const debounced = (...args: Args) => {
     if (timeout) {
       clearTimeout(timeout);
     }
@@ -32,7 +35,7 @@ export function debounce<T extends (...args: any[]) => any>(
     }
   };
 
-  return debounced as T & { cancel: () => void };
+  return debounced;
 }
 
 /**

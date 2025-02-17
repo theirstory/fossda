@@ -12,13 +12,13 @@ interface ChapterData {
   metadata: ChapterMetadata[];
 }
 
-// Create a default chapter structure
-const defaultChapter: ChapterData = {
-  title: "",
-  created_at: new Date().toISOString(),
-  updated_at: new Date().toISOString(),
-  metadata: []
-};
+// // Create a default chapter structure
+// const defaultChapter: ChapterData = {
+//   title: "",
+//   created_at: new Date().toISOString(),
+//   updated_at: new Date().toISOString(),
+//   metadata: []
+// };
 
 // Export the chapter data with proper typing
 export const chapterData: Record<string, ChapterData> = {
