@@ -16,6 +16,26 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
     const videoRef = useRef<MuxPlayerElement>(null);
     const [mounted, setMounted] = useState(false);
 
+    // Add error handling for HLS
+    useEffect(() => {
+      if (mounted && videoRef.current) {
+        const player = videoRef.current;
+        
+        // Suppress HLS errors
+        const originalError = console.error;
+        console.error = (...args) => {
+          if (args[0]?.toString().includes('getErrorFromHlsErrorData')) {
+            return;
+          }
+          originalError.apply(console, args);
+        };
+
+        return () => {
+          console.error = originalError;
+        };
+      }
+    }, [mounted]);
+
     // Expose the video element methods
     useImperativeHandle(ref, () => ({
       ...videoRef.current!,
@@ -71,9 +91,19 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           }}
           onPlay={() => onPlayStateChange(true)}
           onPause={() => onPlayStateChange(false)}
-          primaryColor="#FFFFFF"
-          secondaryColor="#000000"
-          accentColor="#eaaa11"
+          theme={{
+            '--primary-color': '#eaaa11',
+            '--secondary-color': '#000000',
+            '--accent-color': '#eaaa11',
+            '--control-icons': '#eaaa11',
+            '--play-button-hover': '#eaaa11',
+            '--play-button': '#eaaa11',
+            '--progress-bar': '#eaaa11',
+            '--progress-bar-played': '#eaaa11',
+            '--progress-bar-buffered': '#eaaa11',
+            '--volume-slider': '#eaaa11',
+            '--volume-slider-thumb': '#eaaa11',
+          }}
           defaultShowCaptions
           defaultShowChapters
           poster="/thumbnails/fossda-intro.png"

@@ -18,9 +18,28 @@ declare module '@mux/mux-player-react' {
       video_title?: string;
       player_name?: string;
     };
+    theme?: {
+      '--primary-color'?: string;
+      '--secondary-color'?: string;
+      '--accent-color'?: string;
+    };
+    tracks?: {
+      src: string;
+      kind: 'subtitles' | 'captions';
+      label: string;
+      srcLang: string;
+      default?: boolean;
+    }[];
+    defaultShowCaptions?: boolean;
+    defaultShowChapters?: boolean;
+    poster?: string;
+    storyboard?: {
+      src: string;
+      type: string;
+    };
   }
 
-  declare const MuxPlayer: ForwardRefExoticComponent<
+  const MuxPlayer: ForwardRefExoticComponent<
     MuxPlayerProps & RefAttributes<MuxPlayerElement>
   >;
 

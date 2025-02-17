@@ -12,7 +12,7 @@ interface InteractiveTranscriptProps {
   transcriptHtml: string;
   onTimeClick: (time: number) => void;
   isPlaying: boolean;
-  videoRef: React.RefObject<MuxPlayerElement>;
+  videoRef: React.RefObject<MuxPlayerElement | null>;
   chapters: ChapterMetadata[];
 }
 
@@ -54,7 +54,7 @@ export default function InteractiveTranscript({
         );
 
         // Add click handler to transcript spans
-        const spans = transcriptRef.current.querySelectorAll('span[data-m]');
+        const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
         spans.forEach(span => {
           span.addEventListener('click', () => {
             const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
@@ -80,7 +80,7 @@ export default function InteractiveTranscript({
     if (videoElement && transcriptRef.current && transcriptContainerRef.current) {
       const handleTimeUpdate = () => {
         const currentTime = videoElement.currentTime * 1000; // Convert to ms
-        const spans = transcriptRef.current?.querySelectorAll('span[data-m]');
+        const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
         
         // Find the current or next span
         let currentSpan: Element | null = null;
@@ -111,7 +111,9 @@ export default function InteractiveTranscript({
 
           // Highlight current span
           spans.forEach(span => span.classList.remove('bg-yellow-100'));
-          currentSpan.classList.add('bg-yellow-100');
+          if (currentSpan) {
+            currentSpan.classList.add('bg-yellow-100');
+          }
         }
       };
 

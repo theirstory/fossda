@@ -8,6 +8,7 @@ import InsightsPanel from "./InsightsPanel";
 import chaptersData from "@/data/chapters.json";
 import { config } from '@/lib/config';
 import { MuxPlayerElement } from '@mux/mux-player-react';
+import { ChapterMetadata } from "@/types/transcript";
 
 interface VideoSectionProps {
   videoId: string;
@@ -16,7 +17,7 @@ interface VideoSectionProps {
 
 export default function VideoSection({ videoId, transcriptHtml }: VideoSectionProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<MuxPlayerElement>(null);
+  const videoRef = useRef<MuxPlayerElement>(null!);
 
   const handleTimeUpdate = (time: number) => {
     if (videoRef.current) {
@@ -33,7 +34,7 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div>
+      <div className="grid grid-rows-[auto_1fr] gap-6 h-[calc(100vh-200px)]">
         <VideoPlayer
           ref={videoRef}
           playbackId={process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID!}
@@ -41,6 +42,18 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
           isPlaying={isPlaying}
           chapters={chaptersData.metadata}
         />
+
+        <div className="bg-white rounded-lg shadow p-4">
+          <h2 className="text-lg font-semibold text-gray-900 mb-2">
+            Summary
+          </h2>
+          <div className="text-gray-700 leading-relaxed overflow-y-auto h-[calc(100%-2rem)]">
+            Heather Meeker introduces FOSSDA (Free and Open Source Software Digital Archive), 
+            a project preserving the history of open source. She shares how the movement transformed 
+            software accessibility, driven by individuals rather than institutions, and draws from 
+            her journey from 1980s programming to open source licensing.
+          </div>
+        </div>
       </div>
 
       <div className="bg-white rounded-lg shadow">
