@@ -8,6 +8,11 @@ import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { Metadata } from 'next';
 
+interface PageProps {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
 const PLAYBACK_IDS: Record<string, string> = {
   'introduction-to-fossda': process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID!,
   'deb-goodkin': 'FjnuVlu9beaFgCNI01Bo3mkaaS89DRXWulNlcT57e8z8',
@@ -15,11 +20,7 @@ const PLAYBACK_IDS: Record<string, string> = {
   'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ'
 };
 
-type Props = {
-  params: { id: string }
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const video = videoData[params.id];
   
   return {
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function VideoPage({ params }: { params: { id: string } }) {
+export default async function VideoPage({ params }: PageProps) {
   const videoId = params.id;
   const currentVideo = videoData[videoId];
   
