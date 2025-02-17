@@ -1,3 +1,5 @@
+import { ChapterMetadata } from "@/types/transcript";
+
 export interface TranscriptChapter {
   title: string;
   startTime: number;

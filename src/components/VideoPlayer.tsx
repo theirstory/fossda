@@ -16,6 +16,11 @@ interface MuxChapter {
   value: string;
 }
 
+interface MuxPlayerProps {
+  accentColor?: string;
+  // ... other props
+}
+
 const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
   ({ playbackId, onPlayStateChange, chapters, thumbnail }, ref) => {
     const playerRef = useRef<MuxPlayerElement>(null);
@@ -39,28 +44,33 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
       }
     }, [mounted]);
 
-    // Expose the video element methods
-    useImperativeHandle(ref, () => ({
-      play: async () => {
-        if (playerRef.current) {
-          return playerRef.current.play();
+    // Restore video control methods while maintaining type safety
+    useImperativeHandle(ref, () => {
+      const basePlayer = playerRef.current as MuxPlayerElement;
+      
+      return {
+        ...basePlayer,
+        play: async () => {
+          if (playerRef.current) {
+            return playerRef.current.play();
+          }
+          return Promise.resolve();
+        },
+        pause: () => {
+          if (playerRef.current) {
+            playerRef.current.pause();
+          }
+        },
+        get currentTime() {
+          return playerRef.current?.currentTime || 0;
+        },
+        set currentTime(value: number) {
+          if (playerRef.current) {
+            playerRef.current.currentTime = value;
+          }
         }
-        return Promise.resolve();
-      },
-      pause: () => {
-        if (playerRef.current) {
-          playerRef.current.pause();
-        }
-      },
-      get currentTime() {
-        return playerRef.current?.currentTime || 0;
-      },
-      set currentTime(value: number) {
-        if (playerRef.current) {
-          playerRef.current.currentTime = value;
-        }
-      }
-    }));
+      } as MuxPlayerElement;
+    }, [playerRef]);
 
     useEffect(() => {
       setMounted(true);

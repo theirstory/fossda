@@ -33,4 +33,15 @@ export interface TranscriptIndex {
   created_at: string;
   updated_at: string;
   metadata: ChapterMetadata[];
+}
+
+export interface Entity {
+  name: string;
+  type: string;
+  mentions: number;
+}
+
+export interface Topic {
+  name: string;
+  score: number;
 } 
