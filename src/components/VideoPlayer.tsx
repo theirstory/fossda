@@ -41,8 +41,17 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
 
     // Expose the video element methods
     useImperativeHandle(ref, () => ({
-      play: () => playerRef.current?.play(),
-      pause: () => playerRef.current?.pause(),
+      play: async () => {
+        if (playerRef.current) {
+          return playerRef.current.play();
+        }
+        return Promise.resolve();
+      },
+      pause: () => {
+        if (playerRef.current) {
+          playerRef.current.pause();
+        }
+      },
       get currentTime() {
         return playerRef.current?.currentTime || 0;
       },
@@ -91,7 +100,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           }}
           onPlay={() => onPlayStateChange(true)}
           onPause={() => onPlayStateChange(false)}
-          themeColor="#eaaa11"
+          accentColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters
           poster={thumbnail}
