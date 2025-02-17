@@ -1,38 +1,14 @@
 import { Button } from "@/components/ui/button";
 import VideoCard from "@/components/VideoCard";
 import { ChevronRight } from "lucide-react";
+import { videoData } from "@/data/videos";
 
 export default function Home() {
-  const heroVideo = {
-    id: "introduction-to-fossda",
-    title: "Introduction to FOSSDA",
-    duration: "21:33",
-    thumbnail: "/thumbnails/fossda-intro.png",
-    description: "An introduction to the Free and Open Source Stories Digital Archive and its mission."
-  };
-
-  const videos = [
-    {
-      id: "heather-meeker",
-      title: "Heather Meeker",
-      duration: "21:33", 
-      thumbnail: "/thumbnails/heather-meeker-1.png",
-      description: "From computer programmer to open source legal expert - a journey through the evolution of software licensing."
-    },
-    {
-      id: "deborah-goodkin",
-      title: "Deborah Goodkin",
-      duration: "21:33",
-      thumbnail: "/thumbnails/deb-goodkin.png",
-      description: "Stories from the pioneers who transformed software accessibility and collaboration."
-    },
-    {
-      id: "bruce-perens",
-      title: "Bruce Perens",
-      duration: "21:33",
-      thumbnail: "/thumbnails/bruce-perens.png",
-      description: "Exploring how open source software has transformed technology and society."
-    }
+  const heroVideo = videoData["introduction-to-fossda"];
+  const featuredVideos = [
+    videoData["heather-meeker"],
+    videoData["deb-goodkin"],
+    videoData["bruce-perens"]
   ];
 
   return (
@@ -61,8 +37,9 @@ export default function Home() {
         {/* Hero Video */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">Introduction to FOSSDA</h2>
-          <VideoCard 
-            {...heroVideo} 
+          <VideoCard
+            {...heroVideo}
+            description={heroVideo.sentence}
             className="aspect-video"
             isHero
           />
@@ -72,10 +49,11 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-semibold mb-4">Featured Stories</h2>
           <div className="space-y-3">
-            {videos.map((video) => (
-              <VideoCard 
-                key={video.id} 
+            {featuredVideos.map((video) => (
+              <VideoCard
+                key={video.id}
                 {...video}
+                description={video.sentence}
                 className="h-auto"
                 isCompact
               />

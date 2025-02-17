@@ -1,0 +1,1926 @@
+{
+  "title": "Auto-generated index",
+  "metadata": [
+    {
+      "index": 0,
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 1,
+          "line": "# Introduction and Background",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 2,
+          "line": "> Zack Ellis introduces Heather Meeker, who provides a brief overview of her career as a lawyer and venture capitalist specializing in open source software.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 3,
+          "line": "**open source, law, venture capital, career background**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**open source, law, venture capital, career background**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 4,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Introduction and Background",
+      "synopsis": "Zack Ellis introduces Heather Meeker, who provides a brief overview of her career as a lawyer and venture capitalist specializing in open source software.",
+      "notes": "",
+      "keywords": "open source, law, venture capital, career background"
+    },
+    {
+      "index": 5,
+      "timecode": "00:01:09",
+      "time": {
+        "start": 69,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 6,
+          "line": "# Early Career and Transition to Law",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 7,
+          "line": "> Heather discusses her early career as a computer programmer in the 1980s and her transition to law, emphasizing the natural evolution from legal work to business counseling.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 8,
+          "line": "**computer programming, career transition, technology law, business counseling**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**computer programming, career transition, technology law, business counseling**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 9,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Early Career and Transition to Law",
+      "synopsis": "Heather discusses her early career as a computer programmer in the 1980s and her transition to law, emphasizing the natural evolution from legal work to business counseling.",
+      "notes": "",
+      "keywords": "computer programming, career transition, technology law, business counseling"
+    },
+    {
+      "index": 10,
+      "timecode": "00:05:59",
+      "time": {
+        "start": 359,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 11,
+          "line": "# Introduction to Computers and Programming",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 12,
+          "line": "> Heather shares how her father, an early computer programmer, introduced her to computers at a young age and sparked her interest in programming.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 13,
+          "line": "**early computing, family influence, career inspiration**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**early computing, family influence, career inspiration**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 14,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Introduction to Computers and Programming",
+      "synopsis": "Heather shares how her father, an early computer programmer, introduced her to computers at a young age and sparked her interest in programming.",
+      "notes": "",
+      "keywords": "early computing, family influence, career inspiration"
+    },
+    {
+      "index": 15,
+      "timecode": "00:07:47",
+      "time": {
+        "start": 467,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 16,
+          "line": "# Passion for Programming",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 17,
+          "line": "> Heather describes her love for programming, highlighting the sense of control and creativity it offered, as well as its absorbing nature.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 18,
+          "line": "**programming, creativity, problem-solving, career satisfaction**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**programming, creativity, problem-solving, career satisfaction**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 19,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Passion for Programming",
+      "synopsis": "Heather describes her love for programming, highlighting the sense of control and creativity it offered, as well as its absorbing nature.",
+      "notes": "",
+      "keywords": "programming, creativity, problem-solving, career satisfaction"
+    },
+    {
+      "index": 20,
+      "timecode": "00:10:30",
+      "time": {
+        "start": 630,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 21,
+          "line": "# Career Shifts and Path to Law",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 22,
+          "line": "> Heather recounts her journey from programming to music and eventually to law, explaining how her diverse background led her to specialize in technology and open source law.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 23,
+          "line": "**career changes, music, technology law, open source specialization**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**career changes, music, technology law, open source specialization**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 24,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Career Shifts and Path to Law",
+      "synopsis": "Heather recounts her journey from programming to music and eventually to law, explaining how her diverse background led her to specialize in technology and open source law.",
+      "notes": "",
+      "keywords": "career changes, music, technology law, open source specialization"
+    },
+    {
+      "index": 25,
+      "timecode": "00:14:47",
+      "time": {
+        "start": 887,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 26,
+          "line": "# Similarities Between Programming and Legal Work",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 27,
+          "line": "> Heather compares programming and legal work, noting similarities in rule-writing and problem-solving, but highlighting differences in human interaction and analysis.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 28,
+          "line": "**programming vs law, problem-solving, rule-writing, professional skills**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**programming vs law, problem-solving, rule-writing, professional skills**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 29,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Similarities Between Programming and Legal Work",
+      "synopsis": "Heather compares programming and legal work, noting similarities in rule-writing and problem-solving, but highlighting differences in human interaction and analysis.",
+      "notes": "",
+      "keywords": "programming vs law, problem-solving, rule-writing, professional skills"
+    },
+    {
+      "index": 30,
+      "timecode": "00:16:53",
+      "time": {
+        "start": 1013,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 31,
+          "line": "# Early Experiences in Open Source Law",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 32,
+          "line": "> Heather discusses her early experiences in open source law, including the challenges of navigating a new legal area and the lack of existing resources.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 33,
+          "line": "**open source law, legal challenges, pioneering work**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**open source law, legal challenges, pioneering work**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 34,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Early Experiences in Open Source Law",
+      "synopsis": "Heather discusses her early experiences in open source law, including the challenges of navigating a new legal area and the lack of existing resources.",
+      "notes": "",
+      "keywords": "open source law, legal challenges, pioneering work"
+    },
+    {
+      "index": 35,
+      "timecode": "00:19:17",
+      "time": {
+        "start": 1157,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 36,
+          "line": "# First Encounter with Open Source Licenses",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 37,
+          "line": "> Heather recalls her first encounter with open source licenses and the process of developing legal analysis in an area with little existing guidance.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 38,
+          "line": "**open source licenses, legal analysis, BSD license**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**open source licenses, legal analysis, BSD license**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 39,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "First Encounter with Open Source Licenses",
+      "synopsis": "Heather recalls her first encounter with open source licenses and the process of developing legal analysis in an area with little existing guidance.",
+      "notes": "",
+      "keywords": "open source licenses, legal analysis, BSD license"
+    },
+    {
+      "index": 40,
+      "timecode": "00:21:12",
+      "time": {
+        "start": 1272,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 41,
+          "line": "# Challenges in Open Source Legal Analysis",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 42,
+          "line": "> Heather explains the difficulties in analyzing open source licenses without established legal precedents and the need to reason from first principles.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 43,
+          "line": "**legal analysis, open source challenges, reasoning skills**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**legal analysis, open source challenges, reasoning skills**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 44,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Challenges in Open Source Legal Analysis",
+      "synopsis": "Heather explains the difficulties in analyzing open source licenses without established legal precedents and the need to reason from first principles.",
+      "notes": "",
+      "keywords": "legal analysis, open source challenges, reasoning skills"
+    },
+    {
+      "index": 45,
+      "timecode": "00:23:12",
+      "time": {
+        "start": 1392,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 46,
+          "line": "# Development of Open Source Legal Practices",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 47,
+          "line": "> Heather describes the evolution of open source legal practices, including the formation of communities and the development of best practices.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 48,
+          "line": "**legal practices, community development, best practices**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**legal practices, community development, best practices**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 49,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Development of Open Source Legal Practices",
+      "synopsis": "Heather describes the evolution of open source legal practices, including the formation of communities and the development of best practices.",
+      "notes": "",
+      "keywords": "legal practices, community development, best practices"
+    },
+    {
+      "index": 50,
+      "timecode": "00:24:59",
+      "time": {
+        "start": 1499,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 51,
+          "line": "# Stakeholders in the Open Source Community",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 52,
+          "line": "> Heather outlines the various stakeholders she encountered in the open source community, including developers, lawyers, and business people.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 53,
+          "line": "**open source community, stakeholders, collaboration**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**open source community, stakeholders, collaboration**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 54,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Stakeholders in the Open Source Community",
+      "synopsis": "Heather outlines the various stakeholders she encountered in the open source community, including developers, lawyers, and business people.",
+      "notes": "",
+      "keywords": "open source community, stakeholders, collaboration"
+    },
+    {
+      "index": 55,
+      "timecode": "00:26:52",
+      "time": {
+        "start": 1612,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 56,
+          "line": "# Open Source as a Transformative Force",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 57,
+          "line": "> Heather discusses her early recognition of open source as a transformative force in the technology industry and its unique licensing paradigm.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 58,
+          "line": "**open source impact, licensing paradigm, industry transformation**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**open source impact, licensing paradigm, industry transformation**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 59,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Open Source as a Transformative Force",
+      "synopsis": "Heather discusses her early recognition of open source as a transformative force in the technology industry and its unique licensing paradigm.",
+      "notes": "",
+      "keywords": "open source impact, licensing paradigm, industry transformation"
+    },
+    {
+      "index": 60,
+      "timecode": "00:28:43",
+      "time": {
+        "start": 1723,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 61,
+          "line": "# Impact of Open Source on Business and Collaboration",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 62,
+          "line": "> Heather explains how open source has changed the technology industry, fostering collaboration between companies and altering business practices.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 63,
+          "line": "**industry collaboration, business transformation, open source adoption**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**industry collaboration, business transformation, open source adoption**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 64,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Impact of Open Source on Business and Collaboration",
+      "synopsis": "Heather explains how open source has changed the technology industry, fostering collaboration between companies and altering business practices.",
+      "notes": "",
+      "keywords": "industry collaboration, business transformation, open source adoption"
+    },
+    {
+      "index": 65,
+      "timecode": "00:31:13",
+      "time": {
+        "start": 1873,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 66,
+          "line": "# Addressing Client Fears about Open Source",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 67,
+          "line": "> Heather recounts her experiences in helping clients overcome fears about open source licensing and her unique approach as a lawyer in reducing perceived risks.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 68,
+          "line": "**client counseling, risk management, open source adoption**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**client counseling, risk management, open source adoption**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 69,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Addressing Client Fears about Open Source",
+      "synopsis": "Heather recounts her experiences in helping clients overcome fears about open source licensing and her unique approach as a lawyer in reducing perceived risks.",
+      "notes": "",
+      "keywords": "client counseling, risk management, open source adoption"
+    },
+    {
+      "index": 70,
+      "timecode": "00:33:37",
+      "time": {
+        "start": 2017,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 71,
+          "line": "# Career Challenges and Growth",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 72,
+          "line": "> Heather discusses career challenges, including changing law firms and the lack of recognition for open source expertise early in her career.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 73,
+          "line": "**career challenges, professional growth, open source specialization**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**career challenges, professional growth, open source specialization**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 74,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Career Challenges and Growth",
+      "synopsis": "Heather discusses career challenges, including changing law firms and the lack of recognition for open source expertise early in her career.",
+      "notes": "",
+      "keywords": "career challenges, professional growth, open source specialization"
+    },
+    {
+      "index": 75,
+      "timecode": "00:37:20",
+      "time": {
+        "start": 2240,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 76,
+          "line": "# Finding the Right Professional Environment",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 77,
+          "line": "> Heather shares her experience finding a law firm that valued her open source expertise and provided the freedom to develop her practice.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 78,
+          "line": "**career development, professional environment, open source law practice**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**career development, professional environment, open source law practice**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 79,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Finding the Right Professional Environment",
+      "synopsis": "Heather shares her experience finding a law firm that valued her open source expertise and provided the freedom to develop her practice.",
+      "notes": "",
+      "keywords": "career development, professional environment, open source law practice"
+    },
+    {
+      "index": 80,
+      "timecode": "00:41:18",
+      "time": {
+        "start": 2478,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 81,
+          "line": "# Transition to Venture Capital",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 82,
+          "line": "> Heather explains her unexpected transition into venture capital, sparked by her involvement in drafting the controversial Commons Clause license.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 83,
+          "line": "**venture capital, Commons Clause, career transition**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**venture capital, Commons Clause, career transition**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 84,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Transition to Venture Capital",
+      "synopsis": "Heather explains her unexpected transition into venture capital, sparked by her involvement in drafting the controversial Commons Clause license.",
+      "notes": "",
+      "keywords": "venture capital, Commons Clause, career transition"
+    },
+    {
+      "index": 85,
+      "timecode": "00:46:03",
+      "time": {
+        "start": 2763,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 86,
+          "line": "# Reflections on Career without Open Source",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 87,
+          "line": "> Heather contemplates where her career might have led without the emergence of open source software.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 88,
+          "line": "**career reflection, alternative paths, open source impact**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**career reflection, alternative paths, open source impact**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 89,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Reflections on Career without Open Source",
+      "synopsis": "Heather contemplates where her career might have led without the emergence of open source software.",
+      "notes": "",
+      "keywords": "career reflection, alternative paths, open source impact"
+    },
+    {
+      "index": 90,
+      "timecode": "00:47:00",
+      "time": {
+        "start": 2820,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 91,
+          "line": "# Google vs. Oracle Case",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 92,
+          "line": "> Heather discusses her involvement in the landmark Google vs. Oracle case and its significance for the software industry.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 93,
+          "line": "**Google vs. Oracle, software copyright, fair use doctrine**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**Google vs. Oracle, software copyright, fair use doctrine**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 94,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Google vs. Oracle Case",
+      "synopsis": "Heather discusses her involvement in the landmark Google vs. Oracle case and its significance for the software industry.",
+      "notes": "",
+      "keywords": "Google vs. Oracle, software copyright, fair use doctrine"
+    },
+    {
+      "index": 95,
+      "timecode": "00:52:07",
+      "time": {
+        "start": 3127,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 96,
+          "line": "# Impact of Open Source on the World",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 97,
+          "line": "> Heather reflects on the global impact of open source software, including its effects on developing countries and business collaboration.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 98,
+          "line": "**global impact, developing world, business collaboration**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**global impact, developing world, business collaboration**",
+              "",
+              "**"
+            ]
+          ]
+        },
+        {
+          "index": 99,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        }
+      ],
+      "timecodes": [],
+      "title": "Impact of Open Source on the World",
+      "synopsis": "Heather reflects on the global impact of open source software, including its effects on developing countries and business collaboration.",
+      "notes": "",
+      "keywords": "global impact, developing world, business collaboration"
+    },
+    {
+      "index": 100,
+      "timecode": "00:53:36",
+      "time": {
+        "start": 3216,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 101,
+          "line": "# Personal Pride and Closing Thoughts",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 102,
+          "line": "> Heather expresses her pride in sharing knowledge and teaching others throughout her career, emphasizing the importance of giving back to the community.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 103,
+          "line": "**knowledge sharing, career satisfaction, community contribution**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**knowledge sharing, career satisfaction, community contribution**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Personal Pride and Closing Thoughts",
+      "synopsis": "Heather expresses her pride in sharing knowledge and teaching others throughout her career, emphasizing the importance of giving back to the community.",
+      "notes": "",
+      "keywords": "knowledge sharing, career satisfaction, community contribution"
+    }
+  ],
+  "notes": [
+    {
+      "children": [
+        {
+          "text": "[00:00:00]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Introduction and Background"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Zack Ellis introduces Heather Meeker, who provides a brief overview of her career as a lawyer and venture capitalist specializing in open source software."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**open source, law, venture capital, career background**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:01:09]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Early Career and Transition to Law"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather discusses her early career as a computer programmer in the 1980s and her transition to law, emphasizing the natural evolution from legal work to business counseling."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**computer programming, career transition, technology law, business counseling**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:05:59]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Introduction to Computers and Programming"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather shares how her father, an early computer programmer, introduced her to computers at a young age and sparked her interest in programming."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**early computing, family influence, career inspiration**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:07:47]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Passion for Programming"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather describes her love for programming, highlighting the sense of control and creativity it offered, as well as its absorbing nature."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**programming, creativity, problem-solving, career satisfaction**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:10:30]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Career Shifts and Path to Law"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather recounts her journey from programming to music and eventually to law, explaining how her diverse background led her to specialize in technology and open source law."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**career changes, music, technology law, open source specialization**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:14:47]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Similarities Between Programming and Legal Work"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather compares programming and legal work, noting similarities in rule-writing and problem-solving, but highlighting differences in human interaction and analysis."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**programming vs law, problem-solving, rule-writing, professional skills**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:16:53]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Early Experiences in Open Source Law"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather discusses her early experiences in open source law, including the challenges of navigating a new legal area and the lack of existing resources."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**open source law, legal challenges, pioneering work**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:19:17]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# First Encounter with Open Source Licenses"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather recalls her first encounter with open source licenses and the process of developing legal analysis in an area with little existing guidance."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**open source licenses, legal analysis, BSD license**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:21:12]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Challenges in Open Source Legal Analysis"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather explains the difficulties in analyzing open source licenses without established legal precedents and the need to reason from first principles."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**legal analysis, open source challenges, reasoning skills**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:23:12]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Development of Open Source Legal Practices"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather describes the evolution of open source legal practices, including the formation of communities and the development of best practices."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**legal practices, community development, best practices**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:24:59]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Stakeholders in the Open Source Community"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather outlines the various stakeholders she encountered in the open source community, including developers, lawyers, and business people."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**open source community, stakeholders, collaboration**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:26:52]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Open Source as a Transformative Force"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather discusses her early recognition of open source as a transformative force in the technology industry and its unique licensing paradigm."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**open source impact, licensing paradigm, industry transformation**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:28:43]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Impact of Open Source on Business and Collaboration"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather explains how open source has changed the technology industry, fostering collaboration between companies and altering business practices."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**industry collaboration, business transformation, open source adoption**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:31:13]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Addressing Client Fears about Open Source"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather recounts her experiences in helping clients overcome fears about open source licensing and her unique approach as a lawyer in reducing perceived risks."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**client counseling, risk management, open source adoption**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:33:37]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Career Challenges and Growth"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather discusses career challenges, including changing law firms and the lack of recognition for open source expertise early in her career."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**career challenges, professional growth, open source specialization**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:37:20]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Finding the Right Professional Environment"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather shares her experience finding a law firm that valued her open source expertise and provided the freedom to develop her practice."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**career development, professional environment, open source law practice**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:41:18]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Transition to Venture Capital"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather explains her unexpected transition into venture capital, sparked by her involvement in drafting the controversial Commons Clause license."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**venture capital, Commons Clause, career transition**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:46:03]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Reflections on Career without Open Source"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather contemplates where her career might have led without the emergence of open source software."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**career reflection, alternative paths, open source impact**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:47:00]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Google vs. Oracle Case"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather discusses her involvement in the landmark Google vs. Oracle case and its significance for the software industry."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**Google vs. Oracle, software copyright, fair use doctrine**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:52:07]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Impact of Open Source on the World"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather reflects on the global impact of open source software, including its effects on developing countries and business collaboration."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**global impact, developing world, business collaboration**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:53:36]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Personal Pride and Closing Thoughts"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Heather expresses her pride in sharing knowledge and teaching others throughout her career, emphasizing the importance of giving back to the community."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**knowledge sharing, career satisfaction, community contribution**"
+        }
+      ]
+    }
+  ],
+  "_id": "66e03c340013946c2a177e26",
+  "created_at": "2024-09-10T12:31:48.481Z",
+  "updated_at": "2024-09-10T12:32:39.401Z"
+}

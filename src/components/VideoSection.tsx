@@ -5,19 +5,37 @@ import VideoPlayer from "./VideoPlayer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import InteractiveTranscript from "./InteractiveTranscript";
 import InsightsPanel from "./InsightsPanel";
-import chaptersData from "@/data/chapters.json";
+import { chapterData } from '@/data/chapters';
 import { config } from '@/lib/config';
 import { MuxPlayerElement } from '@mux/mux-player-react';
 import { ChapterMetadata } from "@/types/transcript";
+import RelatedVideos from "./RelatedVideos";
 
 interface VideoSectionProps {
   videoId: string;
   transcriptHtml: string;
+  playbackId: string;
+  currentVideo: {
+    id: string;
+    title: string;
+    duration: string;
+    thumbnail: string;
+    description: string;
+    summary: string;
+  };
 }
 
-export default function VideoSection({ videoId, transcriptHtml }: VideoSectionProps) {
+export default function VideoSection({ videoId, transcriptHtml, playbackId, currentVideo }: VideoSectionProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<MuxPlayerElement>(null!);
+  
+  // Add error handling and fallback for chapter data
+  const videoChapters = chapterData[videoId] || {
+    title: currentVideo.title,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+    metadata: []
+  };
 
   const handleTimeUpdate = (time: number) => {
     if (videoRef.current) {
@@ -37,10 +55,11 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
       <div className="grid grid-rows-[auto_1fr] gap-6 h-[calc(100vh-200px)]">
         <VideoPlayer
           ref={videoRef}
-          playbackId={process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID!}
+          playbackId={playbackId}
           onPlayStateChange={handlePlayStateChange}
           isPlaying={isPlaying}
-          chapters={chaptersData.metadata}
+          chapters={videoChapters.metadata}
+          thumbnail={currentVideo.thumbnail}
         />
 
         <div className="bg-white rounded-lg shadow p-4">
@@ -48,10 +67,7 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
             Summary
           </h2>
           <div className="text-gray-700 leading-relaxed overflow-y-auto h-[calc(100%-2rem)]">
-            Heather Meeker introduces FOSSDA (Free and Open Source Software Digital Archive), 
-            a project preserving the history of open source. She shares how the movement transformed 
-            software accessibility, driven by individuals rather than institutions, and draws from 
-            her journey from 1980s programming to open source licensing.
+            {currentVideo.summary}
           </div>
         </div>
       </div>
@@ -60,7 +76,7 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
         <Tabs defaultValue="transcript">
           <TabsList className="w-full">
             <TabsTrigger value="transcript">Transcription</TabsTrigger>
-            <TabsTrigger value="insights">Insights</TabsTrigger>
+            <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
           <TabsContent value="transcript" className="h-[calc(100vh-200px)]">
             <InteractiveTranscript
@@ -68,13 +84,11 @@ export default function VideoSection({ videoId, transcriptHtml }: VideoSectionPr
               onTimeClick={handleTimeUpdate}
               isPlaying={isPlaying}
               videoRef={videoRef}
-              chapters={chaptersData.metadata}
+              chapters={videoChapters.metadata}
             />
           </TabsContent>
-          <TabsContent value="insights">
-            <InsightsPanel
-              onEntityClick={handleTimeUpdate}
-            />
+          <TabsContent value="related" className="h-[calc(100vh-200px)]">
+            <RelatedVideos currentVideoId={currentVideo.id} />
           </TabsContent>
         </Tabs>
       </div>

@@ -9,10 +9,11 @@ interface VideoPlayerProps {
   onPlayStateChange: (playing: boolean) => void;
   isPlaying: boolean;
   chapters: ChapterMetadata[];
+  thumbnail: string;
 }
 
 const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
-  ({ playbackId, onPlayStateChange, isPlaying, chapters }, ref) => {
+  ({ playbackId, onPlayStateChange, isPlaying, chapters, thumbnail }, ref) => {
     const videoRef = useRef<MuxPlayerElement>(null);
     const [mounted, setMounted] = useState(false);
 
@@ -86,7 +87,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           streamType="on-demand"
           playbackId={playbackId}
           metadata={{
-            video_title: 'Introduction to FOSSDA',
+            video_title: 'FOSSDA Interview',
             player_name: 'FOSSDA Player',
           }}
           onPlay={() => onPlayStateChange(true)}
@@ -94,7 +95,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           accentColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters
-          poster="/thumbnails/fossda-intro.png"
+          poster={thumbnail}
           storyboard={{
             src: `https://image.mux.com/${playbackId}/storyboard.vtt`,
             type: 'text/vtt'

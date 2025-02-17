@@ -1,0 +1,4932 @@
+WEBVTT
+
+1
+00:00:02.784 --> 00:00:08.193
+<v Zack>Hi, I'm Zack Ellis interviewing
+Heather Meeker for FOSSDA, the
+
+2
+00:00:08.313 --> 00:00:11.145
+<v Zack>Free and Open Source Stories
+Digital Archive.
+
+3
+00:00:12.140 --> 00:00:16.070
+<v Zack>So Heather, I want to start off by
+asking you to tell me a little bit
+
+4
+00:00:16.090 --> 00:00:16.531
+<v Zack>about yourself.
+
+5
+00:00:18.280 --> 00:00:22.386
+<v Heather>Well, I am a lawyer and a venture
+
+6
+00:00:22.426 --> 00:00:27.514
+<v Heather>capitalist, and both in the area
+of open source software.
+
+7
+00:00:29.760 --> 00:00:35.333
+<v Heather>And I've been practicing law for
+nearly 30 years, mostly in this
+
+8
+00:00:35.453 --> 00:00:35.714
+<v Heather>area.
+
+9
+00:00:36.440 --> 00:00:38.024
+<v Heather>And then I've been doing VC work
+
+10
+00:00:38.044 --> 00:00:40.130
+<v Heather>for about three years in this
+area.
+
+11
+00:00:41.320 --> 00:00:45.450
+<v Heather>I have a checkered past beyond
+that, but maybe not all that
+
+12
+00:00:45.511 --> 00:00:46.934
+<v Heather>relevant to what we're doing.
+
+13
+00:00:47.000 --> 00:00:48.485
+<v Heather>I've done a lot of stuff in life.
+
+14
+00:00:50.360 --> 00:00:53.388
+<v Heather>Law was my third career and my
+best one.
+
+15
+00:00:55.780 --> 00:00:59.051
+<v Heather>So, but that's what I'm doing
+these days.
+
+16
+00:00:59.961 --> 00:01:00.484
+<v Zack>Fantastic.
+
+17
+00:01:00.920 --> 00:01:03.425
+<v Zack>So law and venture capital, so
+
+18
+00:01:03.486 --> 00:01:08.163
+<v Zack>you've seen different sides of the
+open source world, it sounds like.
+
+19
+00:01:09.083 --> 00:01:09.948
+<v Heather>Yeah, definitely.
+
+20
+00:01:10.000 --> 00:01:13.107
+<v Heather>And, you know, one of the reasons
+
+21
+00:01:13.187 --> 00:01:18.322
+<v Heather>that I got to that dual role is
+that a lot of what I was doing as
+
+22
+00:01:18.342 --> 00:01:22.133
+<v Heather>a lawyer ended up being more like
+business counseling.
+
+23
+00:01:22.440 --> 00:01:26.811
+<v Heather>So that is actually a more natural
+evolution than you might think.
+
+24
+00:01:28.140 --> 00:01:32.389
+<v Heather>So these days, it's a little hard
+to separate the two, except for
+
+25
+00:01:33.051 --> 00:01:36.465
+<v Heather>you get paid differently for doing
+the two things.
+
+26
+00:01:39.043 --> 00:01:42.113
+<v Zack>So how did that get started for
+you?
+
+27
+00:01:42.320 --> 00:01:46.772
+<v Zack>And it sounds like, were you, walk
+me through a little bit, maybe of
+
+28
+00:01:46.852 --> 00:01:49.605
+<v Zack>the high level, like the
+beginnings of your career into
+
+29
+00:01:49.665 --> 00:01:53.642
+<v Zack>when you started to get involved
+in software, in open source?
+
+30
+00:01:54.520 --> 00:01:59.330
+<v Heather>Well, so I actually was a computer
+programmer in the 1980s.
+
+31
+00:02:02.000 --> 00:02:04.628
+<v Heather>I know that just sounds absolutely
+ancient now.
+
+32
+00:02:06.320 --> 00:02:09.127
+<v Heather>Doesn't sound ancient to me, but
+it's all a matter of perspective.
+
+33
+00:02:10.699 --> 00:02:15.651
+<v Heather>And I got into that because there
+was a lot of demand for people to
+
+34
+00:02:15.731 --> 00:02:18.946
+<v Heather>work in particularly applications
+programming.
+
+35
+00:02:20.279 --> 00:02:25.172
+<v Heather>When I graduated from college, and
+I didn't have a degree in computer
+
+36
+00:02:25.192 --> 00:02:28.727
+<v Heather>science, and in fact, most people
+didn't have degrees in computer
+
+37
+00:02:28.767 --> 00:02:32.664
+<v Heather>science, you couldn't really get a
+degree in computer science, except
+
+38
+00:02:32.804 --> 00:02:35.432
+<v Heather>for maybe, you know, some schools.
+
+39
+00:02:35.880 --> 00:02:37.344
+<v Heather>I went to a liberal arts college,
+
+40
+00:02:37.424 --> 00:02:41.461
+<v Heather>and I think they had a computer
+science major, but you had to kind
+
+41
+00:02:41.501 --> 00:02:42.566
+<v Heather>of cobble it together.
+
+42
+00:02:43.400 --> 00:02:45.244
+<v Heather>So I had actually learned
+
+43
+00:02:45.344 --> 00:02:50.602
+<v Heather>programming as a kid, because my
+father taught me the basics of it.
+
+44
+00:02:51.780 --> 00:02:55.850
+<v Heather>And then when I was in college, I
+took some computer science
+
+45
+00:02:55.910 --> 00:02:59.565
+<v Heather>classes, basically, because the
+computer science lab was air
+
+46
+00:02:59.605 --> 00:03:00.147
+<v Heather>conditioned.
+
+47
+00:03:01.500 --> 00:03:03.287
+<v Heather>And I went to summer school, and
+
+48
+00:03:03.307 --> 00:03:04.250
+<v Heather>it was really hot.
+
+49
+00:03:05.121 --> 00:03:06.584
+<v Heather>Plus, I was interested in
+
+50
+00:03:07.626 --> 00:03:09.832
+<v Heather>programming, you know, I thought
+it was kind of cool.
+
+51
+00:03:11.320 --> 00:03:17.793
+<v Heather>So I graduated, and I quickly like
+moved into computer programming,
+
+52
+00:03:17.853 --> 00:03:20.949
+<v Heather>because there was a lot of
+opportunity in that area.
+
+53
+00:03:21.280 --> 00:03:25.592
+<v Heather>And nobody required a degree in it
+at that time, maybe because there
+
+54
+00:03:25.612 --> 00:03:26.661
+<v Heather>just weren't enough people.
+
+55
+00:03:26.781 --> 00:03:28.587
+<v Heather>So you could basically go and put
+
+56
+00:03:28.627 --> 00:03:30.132
+<v Heather>your hand up and say, I'm
+interested.
+
+57
+00:03:30.800 --> 00:03:34.229
+<v Heather>And if you had a college degree,
+or at least had been to college
+
+58
+00:03:35.111 --> 00:03:37.666
+<v Heather>for some amount of time, that was
+a real plus, right.
+
+59
+00:03:38.360 --> 00:03:41.450
+<v Heather>So I worked as a programmer for
+about four years.
+
+60
+00:03:42.501 --> 00:03:45.892
+<v Heather>And then I went off and did some
+other stuff.
+
+61
+00:03:46.220 --> 00:03:49.450
+<v Heather>I was a professional musician for
+a while, opened a business.
+
+62
+00:03:51.862 --> 00:03:59.173
+<v Heather>And then after I went to law
+school, I realized that actually
+
+63
+00:03:59.253 --> 00:04:03.186
+<v Heather>the law around computer software
+was very interesting to me because
+
+64
+00:04:03.246 --> 00:04:04.230
+<v Heather>I had this background.
+
+65
+00:04:04.980 --> 00:04:06.804
+<v Heather>So that's a long way of saying
+
+66
+00:04:07.245 --> 00:04:10.954
+<v Heather>that when I started practicing
+law, I immediately started
+
+67
+00:04:11.100 --> 00:04:17.754
+<v Heather>focusing on computer software
+licensing as a practice.
+
+68
+00:04:18.360 --> 00:04:23.231
+<v Heather>And then very soon after that,
+people started to become aware of
+
+69
+00:04:23.251 --> 00:04:23.652
+<v Heather>open source.
+
+70
+00:04:25.261 --> 00:04:26.265
+<v Heather>And they started asking me
+
+71
+00:04:26.306 --> 00:04:27.230
+<v Heather>questions about it.
+
+72
+00:04:27.420 --> 00:04:29.606
+<v Heather>So, you know, I had to figure out
+
+73
+00:04:29.626 --> 00:04:32.901
+<v Heather>the answers to the questions
+because there weren't many answers
+
+74
+00:04:32.961 --> 00:04:34.668
+<v Heather>floating around there at that
+time.
+
+75
+00:04:35.880 --> 00:04:39.470
+<v Heather>So I just, you know, started to
+try to figure out what the answers
+
+76
+00:04:39.571 --> 00:04:39.831
+<v Heather>were.
+
+77
+00:04:41.060 --> 00:04:44.087
+<v Heather>And when you're in an organization
+
+78
+00:04:44.128 --> 00:04:47.440
+<v Heather>and you know 10% more than the
+person in the next room, you're
+
+79
+00:04:47.501 --> 00:04:50.451
+<v Heather>the expert, you know, that's just
+the way the world works.
+
+80
+00:04:51.000 --> 00:04:53.468
+<v Heather>And so people kept asking me
+questions and I kept trying to
+
+81
+00:04:53.568 --> 00:04:55.945
+<v Heather>answer them and building up my
+knowledge.
+
+82
+00:04:56.640 --> 00:04:58.527
+<v Heather>And that's how I got into it.
+
+83
+00:04:59.500 --> 00:05:03.268
+<v Heather>I would say that the reason I put
+
+84
+00:05:03.308 --> 00:05:06.595
+<v Heather>that effort in was that I just
+thought it was really interesting.
+
+85
+00:05:06.960 --> 00:05:10.830
+<v Heather>I mean, it was something that I
+had never seen before.
+
+86
+00:05:12.440 --> 00:05:15.729
+<v Heather>And there's really not been a lot
+like it in the law because it's
+
+87
+00:05:15.769 --> 00:05:20.466
+<v Heather>just kind of a grassroots movement
+and from a legal point of view, it
+
+88
+00:05:20.527 --> 00:05:25.923
+<v Heather>was very like messy and hard to
+understand, which I think most
+
+89
+00:05:26.024 --> 00:05:28.249
+<v Heather>lawyers love stuff like that,
+right?
+
+90
+00:05:30.200 --> 00:05:31.424
+<v Heather>We're puzzle solvers.
+
+91
+00:05:33.440 --> 00:05:34.903
+<v Heather>And this was a really interesting
+
+92
+00:05:34.963 --> 00:05:39.662
+<v Heather>puzzle that moreover had something
+to do with a topic that I was
+
+93
+00:05:39.743 --> 00:05:40.426
+<v Heather>interested in.
+
+94
+00:05:40.900 --> 00:05:43.168
+<v Heather>So that's how I got involved in it
+
+95
+00:05:43.910 --> 00:05:44.492
+<v Heather>as a lawyer.
+
+96
+00:05:44.640 --> 00:05:46.163
+<v Heather>And then after practicing for many
+
+97
+00:05:46.223 --> 00:05:53.563
+<v Heather>years, I got more interested in
+how to make business models work
+
+98
+00:05:53.624 --> 00:05:54.307
+<v Heather>in this area.
+
+99
+00:05:55.120 --> 00:05:56.444
+<v Heather>And that's how I got into the
+
+100
+00:05:56.604 --> 00:05:57.367
+<v Heather>venture capital.
+
+101
+00:05:59.400 --> 00:06:02.045
+<v Zack>So it was kind of initially an
+
+102
+00:06:02.105 --> 00:06:07.441
+<v Zack>interest in computer science or
+programming, but that kind of came
+
+103
+00:06:07.521 --> 00:06:11.392
+<v Zack>from your dad introducing you to
+computers at a really early age.
+
+104
+00:06:12.140 --> 00:06:12.522
+<v Zack>It did.
+
+105
+00:06:14.200 --> 00:06:15.747
+<v Zack>Well, just out of curiosity, what
+
+106
+00:06:15.928 --> 00:06:18.206
+<v Zack>did he do?
+And how did that come about where
+
+107
+00:06:18.226 --> 00:06:19.912
+<v Zack>he was like, oh, yeah, he's going
+to love this.
+
+108
+00:06:19.960 --> 00:06:22.048
+<v Zack>He was actually a programmer.
+
+109
+00:06:23.240 --> 00:06:25.305
+<v Heather>And that doesn't sound
+
+110
+00:06:25.686 --> 00:06:29.640
+<v Heather>extraordinary today at all, but it
+was incredibly extraordinary then.
+
+111
+00:06:29.660 --> 00:06:35.694
+<v Heather>I mean, he actually worked in a
+think tank kind of place and they
+
+112
+00:06:35.754 --> 00:06:39.728
+<v Heather>were starting to use computers to
+solve problems, which, you know,
+
+113
+00:06:39.768 --> 00:06:42.620
+<v Heather>people just hadn't even done
+before that.
+
+114
+00:06:43.121 --> 00:06:48.353
+<v Heather>And so he used to take me to work
+and I would see the computers with
+
+115
+00:06:48.373 --> 00:06:50.066
+<v Heather>the big tape drives on them.
+
+116
+00:06:50.440 --> 00:06:52.425
+<v Heather>And it's like a lot of really
+
+117
+00:06:52.485 --> 00:06:57.140
+<v Heather>amusing stuff about going to these
+places and being exposed to that.
+
+118
+00:06:57.581 --> 00:07:02.652
+<v Heather>But when I was a kid and people
+would ask me what my father did
+
+119
+00:07:02.752 --> 00:07:08.027
+<v Heather>for a living, you know, I started
+saying he was like a spy, right,
+
+120
+00:07:08.068 --> 00:07:13.585
+<v Heather>because it was easier to explain
+than telling people that he was a
+
+121
+00:07:14.206 --> 00:07:17.234
+<v Heather>computer data processor, which is
+what he told me to say.
+
+122
+00:07:17.680 --> 00:07:17.921
+<v Heather>Right.
+
+123
+00:07:18.443 --> 00:07:19.989
+<v Heather>No one understood what that was.
+
+124
+00:07:20.820 --> 00:07:24.570
+<v Heather>And and so I got a really early
+view into that.
+
+125
+00:07:26.520 --> 00:07:29.748
+<v Heather>And of course, he did not have a
+technical education either,
+
+126
+00:07:29.768 --> 00:07:34.349
+<v Heather>though, because at that time,
+nobody did basically.
+
+127
+00:07:35.425 --> 00:07:35.726
+<v Zack>Yeah.
+
+128
+00:07:36.128 --> 00:07:36.349
+<v Zack>Yeah.
+
+129
+00:07:37.062 --> 00:07:39.610
+<v Zack>So then so then you started
+studying programming.
+
+130
+00:07:40.780 --> 00:07:46.194
+<v Zack>What like what what kept you
+interested in computer science?
+
+131
+00:07:47.243 --> 00:07:49.210
+<v Heather>Computer like programming is.
+
+132
+00:07:52.463 --> 00:07:55.588
+<v Heather>It's an experience like almost
+
+133
+00:07:55.669 --> 00:08:00.700
+<v Heather>nothing else, like when you are
+writing a program, you are in
+
+134
+00:08:00.820 --> 00:08:07.673
+<v Heather>total control, right, subject to
+the rules of the language and the
+
+135
+00:08:08.074 --> 00:08:12.312
+<v Heather>environment you're in, you tell
+the computer exactly what to do.
+
+136
+00:08:12.961 --> 00:08:16.893
+<v Heather>If the computer doesn't do what
+you ask it to do, it's your fault.
+
+137
+00:08:17.320 --> 00:08:17.662
+<v Heather>Right.
+
+138
+00:08:17.722 --> 00:08:20.352
+<v Heather>I mean, that's not always true.
+
+139
+00:08:20.380 --> 00:08:21.768
+<v Heather>It's almost always true.
+
+140
+00:08:21.960 --> 00:08:25.592
+<v Heather>So that's like this experience.
+
+141
+00:08:25.640 --> 00:08:28.712
+<v Heather>It's like pure engineering in a
+way.
+
+142
+00:08:28.780 --> 00:08:33.450
+<v Heather>Like you're not even you're not
+even really bounded by the
+
+143
+00:08:33.570 --> 00:08:35.495
+<v Heather>physical world in programming.
+
+144
+00:08:35.620 --> 00:08:37.505
+<v Heather>Like it's like being a little
+
+145
+00:08:37.645 --> 00:08:41.701
+<v Heather>megalomaniac, you know, it's like
+really exciting for that reason.
+
+146
+00:08:42.182 --> 00:08:45.273
+<v Heather>Also, it's one of the most
+absorbing things I've ever done.
+
+147
+00:08:45.360 --> 00:08:51.212
+<v Heather>Like when I was a coder, I would
+go to work and I'd get there, you
+
+148
+00:08:52.134 --> 00:08:56.270
+<v Heather>know, at eight in the morning and
+then at five I would look up and
+
+149
+00:08:56.310 --> 00:08:57.193
+<v Heather>the day would be over.
+
+150
+00:08:57.340 --> 00:08:59.325
+<v Heather>And it was almost as if no time
+
+151
+00:08:59.605 --> 00:09:03.214
+<v Heather>had passed because I was so
+focused on what I was doing.
+
+152
+00:09:03.941 --> 00:09:07.971
+<v Heather>And I don't think I've ever
+experienced anything else quite
+
+153
+00:09:08.453 --> 00:09:09.014
+<v Heather>like that.
+
+154
+00:09:09.741 --> 00:09:11.284
+<v Heather>Nothing else I've ever done in my
+
+155
+00:09:11.364 --> 00:09:17.761
+<v Heather>life, either for money or for fun,
+has has absorbed me that much.
+
+156
+00:09:18.303 --> 00:09:22.393
+<v Heather>And I really loved it for that
+reason, but also got kind of burnt
+
+157
+00:09:22.593 --> 00:09:23.983
+<v Heather>out on it for that reason.
+
+158
+00:09:24.003 --> 00:09:26.332
+<v Heather>And and I stopped doing it.
+
+159
+00:09:27.783 --> 00:09:31.913
+<v Heather>Not sure whether that was a good
+idea or a bad idea, but but it was
+
+160
+00:09:31.953 --> 00:09:32.941
+<v Heather>what happened, you know.
+
+161
+00:09:33.322 --> 00:09:34.990
+<v Heather>So that's what I loved about it.
+
+162
+00:09:35.140 --> 00:09:39.691
+<v Heather>It was just you got to solve
+puzzles however you you know, and
+
+163
+00:09:39.711 --> 00:09:44.192
+<v Heather>you were only really bounded by
+your ingenuity in doing that.
+
+164
+00:09:44.861 --> 00:09:50.153
+<v Heather>I also thought coding was a very
+creative activity, and I'm not
+
+165
+00:09:50.193 --> 00:09:51.681
+<v Heather>sure everybody thinks that.
+
+166
+00:09:51.881 --> 00:09:54.549
+<v Heather>But but you have like so much
+
+167
+00:09:54.629 --> 00:09:56.294
+<v Heather>control over how you do things.
+
+168
+00:09:57.244 --> 00:09:58.470
+<v Heather>I just found that fascinating.
+
+169
+00:10:00.002 --> 00:10:04.551
+<v Zack>And then so that kind of that that
+that sort of freedom and
+
+170
+00:10:04.651 --> 00:10:08.648
+<v Zack>creativity kind of and just
+natural draw to it kind of kept
+
+171
+00:10:08.668 --> 00:10:08.889
+<v Zack>you there.
+
+172
+00:10:08.960 --> 00:10:10.524
+<v Zack>But then you then you left and
+
+173
+00:10:10.604 --> 00:10:15.080
+<v Zack>went into law kind of but for
+programming and computer science.
+
+174
+00:10:15.501 --> 00:10:19.411
+<v Zack>Tell me a little bit about kind of
+the departure from programming and
+
+175
+00:10:19.432 --> 00:10:22.990
+<v Zack>then into law and kind of what
+attracted you to to law.
+
+176
+00:10:23.380 --> 00:10:25.771
+<v Zack>And then we'll marry those
+together with open source.
+
+177
+00:10:25.800 --> 00:10:26.927
+<v Zack>But tell me a little bit.
+
+178
+00:10:27.000 --> 00:10:28.829
+<v Zack>Well, there was another step in
+
+179
+00:10:28.869 --> 00:10:29.110
+<v Zack>there.
+
+180
+00:10:30.003 --> 00:10:32.492
+<v Heather>I I went to music school.
+
+181
+00:10:32.920 --> 00:10:37.894
+<v Heather>I went to a basically a trade
+school is a one year program.
+
+182
+00:10:37.940 --> 00:10:43.292
+<v Heather>And I went to learn to play drums
+because I had been, you know,
+
+183
+00:10:43.733 --> 00:10:44.615
+<v Heather>learning drums.
+
+184
+00:10:45.663 --> 00:10:47.329
+<v Heather>And I had gotten the idea that I
+
+185
+00:10:47.369 --> 00:10:48.513
+<v Heather>wanted to be a musician.
+
+186
+00:10:48.660 --> 00:10:50.088
+<v Heather>By the way, that's a bad idea.
+
+187
+00:10:52.265 --> 00:10:56.717
+<v Heather>But not because it's really fun to
+play music, but it's a terrible
+
+188
+00:10:56.757 --> 00:10:56.997
+<v Heather>career.
+
+189
+00:10:56.997 --> 00:10:57.853
+<v Heather>Anyway, a terrible career.
+
+190
+00:10:57.853 --> 00:11:05.957
+<v Heather>Anyway, so I went to this school
+and and and then I started working
+
+191
+00:11:06.237 --> 00:11:07.205
+<v Heather>professionally as a musician and I
+I opened a rehearsal studio.
+
+192
+00:11:07.205 --> 00:11:07.305
+<v Heather>working professionally as a
+musician and I I opened a
+
+193
+00:11:07.305 --> 00:11:07.325
+<v Heather>rehearsal studio.
+
+194
+00:11:09.780 --> 00:11:11.026
+<v Heather>So I had this little business.
+
+195
+00:11:11.500 --> 00:11:17.756
+<v Heather>And and and then I just realized,
+well, this is an awful career.
+
+196
+00:11:17.756 --> 00:11:21.211
+<v Heather>You know, You know, there is
+really no future in this because
+
+197
+00:11:21.231 --> 00:11:23.102
+<v Heather>you know how they say in the
+entertainment industry, industry,
+
+198
+00:11:23.182 --> 00:11:25.349
+<v Heather>it's who, you know, that's not
+just like Sour Graves.
+
+199
+00:11:26.840 --> 00:11:29.009
+<v Heather>It's really who, you know, and I
+didn't know anybody.
+
+200
+00:11:29.640 --> 00:11:29.922
+<v Heather>Right.
+
+201
+00:11:30.220 --> 00:11:31.704
+<v Heather>And I suppose there are some
+
+202
+00:11:31.724 --> 00:11:34.351
+<v Heather>people who are like super
+brilliant, who can just make it
+
+203
+00:11:35.160 --> 00:11:35.883
+<v Heather>without any connections.
+
+204
+00:11:36.940 --> 00:11:38.347
+<v Heather>I was not one of those people.
+
+205
+00:11:38.839 --> 00:11:40.105
+<v Heather>I mean, I was competent, but not
+great.
+
+206
+00:11:41.740 --> 00:11:44.207
+<v Heather>By the way, I in music school, I I
+met people who were really
+
+207
+00:11:44.247 --> 00:11:44.668
+<v Heather>brilliant.
+
+208
+00:11:46.439 --> 00:11:47.403
+<v Heather>And I and I realized I'm not one
+
+209
+00:11:47.523 --> 00:11:48.587
+<v Heather>of those people.
+
+210
+00:11:50.380 --> 00:11:52.086
+<v Heather>Like I am not a super talented
+
+211
+00:11:52.848 --> 00:11:53.049
+<v Heather>musician.
+
+212
+00:11:54.060 --> 00:11:54.222
+<v Heather>Right.
+
+213
+00:11:54.520 --> 00:11:55.344
+<v Heather>And that's OK.
+
+214
+00:11:56.360 --> 00:11:56.982
+<v Heather>I still enjoy doing it.
+
+215
+00:11:58.841 --> 00:12:00.910
+<v Heather>But but they understood that about
+myself.
+
+216
+00:12:01.240 --> 00:12:02.907
+<v Heather>You know, I I could do it OK.
+
+217
+00:12:03.740 --> 00:12:05.146
+<v Heather>But I would never be like this
+
+218
+00:12:05.166 --> 00:12:06.030
+<v Heather>great player.
+
+219
+00:12:06.320 --> 00:12:07.383
+<v Heather>So so I decide, OK, I'm not going
+
+220
+00:12:07.403 --> 00:12:08.205
+<v Heather>to do that anymore.
+
+221
+00:12:10.820 --> 00:12:12.205
+<v Heather>Plus, I was about nearly 30 at
+
+222
+00:12:12.245 --> 00:12:12.747
+<v Heather>that time.
+
+223
+00:12:13.820 --> 00:12:14.883
+<v Heather>And it's kind of a a young kid's
+
+224
+00:12:14.943 --> 00:12:15.344
+<v Heather>profession.
+
+225
+00:12:19.101 --> 00:12:26.372
+<v Heather>And and so what I did was I got a
+
+226
+00:12:26.472 --> 00:12:30.959
+<v Heather>job as a as a temp secretary at a
+at a record label.
+
+227
+00:12:30.959 --> 00:12:31.069
+<v Heather>I knew someone who worked at a at
+a record label.
+
+228
+00:12:31.069 --> 00:12:34.575
+<v Heather>I knew someone who worked at the
+record label, and they were and I
+
+229
+00:12:34.595 --> 00:12:35.203
+<v Heather>really needed a job because I
+didn't have any money.
+
+230
+00:12:35.203 --> 00:12:35.333
+<v Heather>were and I really needed a job
+because I didn't have any money.
+
+231
+00:12:37.680 --> 00:12:40.235
+<v Heather>I didn't have any health
+insurance.
+
+232
+00:12:40.235 --> 00:12:40.399
+<v Zack>It was And and insurance.
+
+233
+00:12:40.399 --> 00:12:40.651
+<v Zack>It was awful.
+
+234
+00:12:40.651 --> 00:12:41.062
+<v Zack>And and so I started was awful.
+
+235
+00:12:41.062 --> 00:12:41.423
+<v Zack>And and so I started working there
+
+236
+00:12:41.503 --> 00:12:47.621
+<v Zack>and they put me in the legal
+department and actually really
+
+237
+00:12:47.721 --> 00:12:49.708
+<v Heather>enjoyed working in the legal
+department.
+
+238
+00:12:51.521 --> 00:12:55.591
+<v Heather>So then they made me a paralegal
+and then they made me a lawyer.
+
+239
+00:12:57.462 --> 00:12:59.110
+<v Heather>Then they made me a paralegal.
+
+240
+00:12:59.110 --> 00:13:01.050
+<v Heather>One One of the paralegals left.
+
+241
+00:13:01.200 --> 00:13:02.468
+<v Heather>They made me a paralegal.
+
+242
+00:13:03.402 --> 00:13:06.828
+<v Heather>And then and then I I looked
+
+243
+00:13:06.868 --> 00:13:11.001
+<v Heather>around and I thought I could make
+a lot more money doing the same
+
+244
+00:13:11.061 --> 00:13:13.471
+<v Heather>work if I just went to law school.
+
+245
+00:13:13.800 --> 00:13:15.427
+<v Heather>Now, that's a huge commitment of
+
+246
+00:13:15.528 --> 00:13:16.291
+<v Heather>time and money.
+
+247
+00:13:18.864 --> 00:13:22.773
+<v Heather>And and so that's that's what got
+
+248
+00:13:22.813 --> 00:13:23.875
+<v Heather>me interested in law.
+
+249
+00:13:24.000 --> 00:13:25.986
+<v Heather>Actually, you know, I was doing
+
+250
+00:13:26.046 --> 00:13:28.433
+<v Heather>some work in that area and I
+thought it was really interesting.
+
+251
+00:13:28.920 --> 00:13:31.969
+<v Heather>And by the way, I thought that I
+would become an entertainment
+
+252
+00:13:32.009 --> 00:13:35.329
+<v Heather>lawyer because I had been working
+at an entertainment business.
+
+253
+00:13:35.660 --> 00:13:39.268
+<v Heather>But when I got to law school and I
+realized you could work in
+
+254
+00:13:39.348 --> 00:13:43.984
+<v Heather>technology and and that actually
+there was a big crossover to
+
+255
+00:13:44.064 --> 00:13:48.155
+<v Heather>entertainment, I thought I found
+the perfect place for me.
+
+256
+00:13:49.422 --> 00:13:55.092
+<v Heather>I graduated law school in 1994 and
+basically the World Wide Web
+
+257
+00:13:55.573 --> 00:13:58.765
+<v Heather>happened for most people in about
+95 or 96.
+
+258
+00:13:59.940 --> 00:14:03.970
+<v Heather>And so there was something going
+on that they called convergence,
+
+259
+00:14:04.111 --> 00:14:07.027
+<v Heather>meaning technology and media
+coming together.
+
+260
+00:14:07.601 --> 00:14:08.426
+<v Heather>And that was just me.
+
+261
+00:14:08.980 --> 00:14:10.668
+<v Heather>I was right at the intersection of
+
+262
+00:14:10.708 --> 00:14:11.371
+<v Heather>those things.
+
+263
+00:14:11.460 --> 00:14:13.004
+<v Heather>And when I found out you could
+
+264
+00:14:13.124 --> 00:14:17.903
+<v Heather>work in that area, I thought I
+will never, never wanted to do
+
+265
+00:14:17.963 --> 00:14:18.467
+<v Heather>anything else.
+
+266
+00:14:18.580 --> 00:14:20.049
+<v Heather>This this was perfect for me.
+
+267
+00:14:21.181 --> 00:14:28.092
+<v Zack>Well, so I'm curious what you
+talked about, like being really
+
+268
+00:14:28.393 --> 00:14:33.105
+<v Zack>consumed by programming early on
+and then all of a sudden,
+
+269
+00:14:33.947 --> 00:14:37.055
+<v Zack>seemingly by surprise, loving
+legal.
+
+270
+00:14:37.100 --> 00:14:41.065
+<v Zack>What was it about legal?
+And I'm curious if you saw any
+
+271
+00:14:41.105 --> 00:14:44.941
+<v Zack>similarities or differences
+between the joy that you got from
+
+272
+00:14:44.981 --> 00:14:46.710
+<v Zack>the legal work and from
+programming.
+
+273
+00:14:47.762 --> 00:14:53.714
+<v Heather>Well, you know, there were some
+similarities in in the in the joy
+
+274
+00:14:53.774 --> 00:14:54.375
+<v Heather>I got from it.
+
+275
+00:14:54.720 --> 00:14:56.424
+<v Heather>There are also a huge number of
+
+276
+00:14:56.464 --> 00:15:00.800
+<v Heather>similarities between programming
+and legal, like, for instance, if
+
+277
+00:15:00.840 --> 00:15:05.793
+<v Heather>you're a if you're a transactional
+lawyer like I was, I was doing
+
+278
+00:15:05.873 --> 00:15:06.334
+<v Heather>deals.
+
+279
+00:15:08.266 --> 00:15:09.529
+<v Heather>When you write contracts, you're
+
+280
+00:15:09.570 --> 00:15:10.974
+<v Heather>writing rules for people.
+
+281
+00:15:11.582 --> 00:15:12.604
+<v Heather>When you're programming, you're
+
+282
+00:15:12.625 --> 00:15:15.693
+<v Heather>writing rules for computers to
+execute.
+
+283
+00:15:16.120 --> 00:15:19.111
+<v Heather>There are a huge number of
+parallels between the two.
+
+284
+00:15:19.460 --> 00:15:21.891
+<v Heather>So I don't know, maybe I just like
+writing rules.
+
+285
+00:15:22.882 --> 00:15:26.293
+<v Heather>But but the kind of enjoyment I
+got was pretty different.
+
+286
+00:15:26.760 --> 00:15:32.992
+<v Heather>Like it's it's they're both
+intellectual tasks, but they're
+
+287
+00:15:33.012 --> 00:15:34.875
+<v Heather>very different intellectual tasks.
+
+288
+00:15:35.260 --> 00:15:37.023
+<v Heather>Like computer programming is like
+
+289
+00:15:37.164 --> 00:15:42.635
+<v Heather>pure problem solving and legal
+work is all more analysis.
+
+290
+00:15:43.260 --> 00:15:46.732
+<v Heather>And and you have to deal with a
+lot more vagueness.
+
+291
+00:15:47.360 --> 00:15:49.490
+<v Heather>Like computer programming pretty
+much is what it is.
+
+292
+00:15:50.823 --> 00:15:53.733
+<v Heather>And you can't as a programmer, you
+usually can't change that.
+
+293
+00:15:53.820 --> 00:15:58.031
+<v Heather>Like you're in an environment and
+there's well, you know, for people
+
+294
+00:15:58.071 --> 00:16:01.467
+<v Heather>like me who are applications
+programmers, you just given the
+
+295
+00:16:01.507 --> 00:16:05.269
+<v Heather>environment, you deal with the
+rules you're given for for law.
+
+296
+00:16:05.700 --> 00:16:09.631
+<v Heather>The rules are fuzzy, which is why
+the world has so many lawyers, you
+
+297
+00:16:09.671 --> 00:16:14.070
+<v Heather>know, so it's a different kind of
+task and much, much more human
+
+298
+00:16:14.130 --> 00:16:14.732
+<v Heather>oriented.
+
+299
+00:16:15.280 --> 00:16:17.425
+<v Heather>I mean, programmers just sit there
+
+300
+00:16:17.466 --> 00:16:21.664
+<v Heather>all day in front of a machine and
+you don't have to interact with
+
+301
+00:16:21.764 --> 00:16:22.609
+<v Heather>any human being.
+
+302
+00:16:23.662 --> 00:16:25.828
+<v Heather>Lawyers have to, you know, that's
+
+303
+00:16:25.908 --> 00:16:29.206
+<v Heather>actually about client service and
+you have to interact with people.
+
+304
+00:16:31.684 --> 00:16:36.032
+<v Zack>I'm curious when you first started
+to get into law and saw this
+
+305
+00:16:36.072 --> 00:16:42.854
+<v Zack>convergence of tech and law and
+entertainment on top of that.
+
+306
+00:16:44.743 --> 00:16:48.952
+<v Zack>Who are some of the early
+influential figures in your career
+
+307
+00:16:49.673 --> 00:16:55.089
+<v Zack>at that stage?
+It's kind of hard to say because I
+
+308
+00:16:55.149 --> 00:16:57.254
+<v Heather>was mostly blazing my own path.
+
+309
+00:16:58.701 --> 00:17:02.146
+<v Heather>I mean, I had colleagues who
+
+310
+00:17:02.426 --> 00:17:09.497
+<v Heather>taught me a lot, but that was more
+about how to practice law.
+
+311
+00:17:09.497 --> 00:17:15.592
+<v Heather>Law Law is a weird profession in
+that you go to professional
+
+312
+00:17:15.692 --> 00:17:20.269
+<v Heather>school, which is three years long,
+and they teach you nothing about
+
+313
+00:17:20.410 --> 00:17:21.051
+<v Heather>practicing law.
+
+314
+00:17:22.763 --> 00:17:24.327
+<v Heather>They teach you some stuff about
+
+315
+00:17:24.448 --> 00:17:27.114
+<v Heather>law, but not about being a lawyer
+at all.
+
+316
+00:17:27.339 --> 00:17:29.190
+<v Heather>They're basically teaching you to
+be a judge.
+
+317
+00:17:29.982 --> 00:17:33.851
+<v Heather>So most of us don't become judges
+and we go into private practice
+
+318
+00:17:34.332 --> 00:17:36.928
+<v Heather>and then you have to learn how to
+be a lawyer.
+
+319
+00:17:37.300 --> 00:17:41.072
+<v Heather>So I had wonderful colleagues who
+taught me how to be a lawyer.
+
+320
+00:17:41.480 --> 00:17:49.494
+<v Heather>But as far as the open source
+expertise, you know, we were kind
+
+321
+00:17:49.554 --> 00:17:54.129
+<v Heather>of writing the rules in a way like
+we were looking at these licenses
+
+322
+00:17:54.189 --> 00:17:57.225
+<v Heather>and trying to figure out how to
+like plug them into a legal
+
+323
+00:17:57.306 --> 00:17:57.768
+<v Heather>context.
+
+324
+00:17:58.260 --> 00:17:59.744
+<v Heather>And one of the reasons I enjoyed
+
+325
+00:17:59.785 --> 00:18:03.081
+<v Heather>the area is there just wasn't
+anything out there about it.
+
+326
+00:18:03.300 --> 00:18:07.071
+<v Heather>So one of the things I started
+doing was writing about it because
+
+327
+00:18:07.111 --> 00:18:08.274
+<v Heather>I really like to write.
+
+328
+00:18:09.183 --> 00:18:11.751
+<v Heather>And I thought, OK, there are no
+
+329
+00:18:11.791 --> 00:18:12.253
+<v Heather>materials.
+
+330
+00:18:12.253 --> 00:18:13.126
+<v Heather>I'll I'll just write them.
+
+331
+00:18:15.406 --> 00:18:18.514
+<v Heather>And so I was kind of on my own for
+a lot of it.
+
+332
+00:18:18.680 --> 00:18:25.193
+<v Heather>I mean, I've had some friends, you
+know, whom I've been able to
+
+333
+00:18:25.253 --> 00:18:29.287
+<v Heather>bounce things off of, but I wasn't
+like I don't know, there wasn't
+
+334
+00:18:29.387 --> 00:18:31.714
+<v Heather>one person who was like guiding me
+at all.
+
+335
+00:18:32.926 --> 00:18:34.031
+<v Zack>Yeah, yeah.
+
+336
+00:18:34.080 --> 00:18:36.346
+<v Zack>Like you said, it was kind of
+
+337
+00:18:36.426 --> 00:18:39.114
+<v Zack>blazing your own path and it was
+new.
+
+338
+00:18:39.114 --> 00:18:42.892
+<v Zack>And And like you were kind of
+people would clients would ask you
+
+339
+00:18:42.932 --> 00:18:43.333
+<v Zack>questions.
+
+340
+00:18:43.400 --> 00:18:45.650
+<v Zack>You'd have to figure it out.
+
+341
+00:18:46.543 --> 00:18:48.552
+<v Heather>Yeah, there were there weren't
+answers, really.
+
+342
+00:18:48.660 --> 00:18:53.051
+<v Heather>You had to just kind of
+extrapolate from the basic legal
+
+343
+00:18:53.151 --> 00:18:54.154
+<v Heather>answers that you knew.
+
+344
+00:18:54.520 --> 00:18:57.110
+<v Heather>And that was it was scary and
+
+345
+00:18:57.170 --> 00:18:57.853
+<v Heather>challenging.
+
+346
+00:18:57.900 --> 00:19:00.689
+<v Heather>And but that's kind of what I
+
+347
+00:19:00.749 --> 00:19:01.853
+<v Heather>liked about it, too.
+
+348
+00:19:02.121 --> 00:19:02.262
+<v Zack>Yeah.
+
+349
+00:19:03.182 --> 00:19:08.352
+<v Zack>Can you remember like the the
+first time that you remember
+
+350
+00:19:08.553 --> 00:19:12.306
+<v Zack>hearing about open source and what
+that was and that is something
+
+351
+00:19:12.466 --> 00:19:21.070
+<v Zack>different than typical way?
+I think a client sent me a copy of
+
+352
+00:19:21.210 --> 00:19:24.542
+<v Heather>one of the permissive licenses
+like the BSD license, which is a
+
+353
+00:19:24.582 --> 00:19:26.310
+<v Heather>very short license.
+
+354
+00:19:27.023 --> 00:19:28.568
+<v Heather>It's like a couple of paragraphs,
+
+355
+00:19:28.789 --> 00:19:29.692
+<v Heather>two, three paragraphs.
+
+356
+00:19:30.462 --> 00:19:33.791
+<v Heather>And and it didn't look like
+
+357
+00:19:33.891 --> 00:19:35.014
+<v Heather>anything I'd ever seen.
+
+358
+00:19:35.100 --> 00:19:38.150
+<v Heather>And then they were asking, is this
+
+359
+00:19:38.250 --> 00:19:41.368
+<v Heather>OK to use?
+And there was no one around me to
+
+360
+00:19:41.468 --> 00:19:42.432
+<v Heather>answer that question.
+
+361
+00:19:42.740 --> 00:19:44.245
+<v Heather>So then I started reading
+
+362
+00:19:44.325 --> 00:19:46.473
+<v Heather>everything I could about what was
+out there.
+
+363
+00:19:46.600 --> 00:19:50.791
+<v Heather>And there was some stuff written
+about it, but it was mostly what I
+
+364
+00:19:50.831 --> 00:19:52.074
+<v Heather>would call advocacy.
+
+365
+00:19:52.320 --> 00:19:53.563
+<v Heather>So there were free software
+
+366
+00:19:53.684 --> 00:19:57.975
+<v Heather>advocates who were saying, you
+know, software should be open.
+
+367
+00:19:58.140 --> 00:20:01.311
+<v Heather>But that wasn't legal analysis.
+
+368
+00:20:01.781 --> 00:20:02.022
+<v Heather>Right.
+
+369
+00:20:02.600 --> 00:20:08.594
+<v Heather>And so the the legal objective
+legal analysis was not out there
+
+370
+00:20:08.634 --> 00:20:08.875
+<v Heather>at all.
+
+371
+00:20:09.060 --> 00:20:11.627
+<v Heather>So that's what I had to start, you
+
+372
+00:20:11.647 --> 00:20:13.994
+<v Heather>know, trying to figure out.
+
+373
+00:20:14.843 --> 00:20:16.149
+<v Heather>And there were other people trying
+
+374
+00:20:16.189 --> 00:20:16.771
+<v Heather>to figure it out, too.
+
+375
+00:20:17.060 --> 00:20:18.767
+<v Heather>But we weren't really working
+
+376
+00:20:18.827 --> 00:20:20.012
+<v Heather>together at that point.
+
+377
+00:20:21.924 --> 00:20:23.608
+<v Heather>So, yeah, I'm sure it was somebody
+
+378
+00:20:23.668 --> 00:20:26.715
+<v Heather>sending me like the BSD license, a
+client asking.
+
+379
+00:20:26.880 --> 00:20:30.412
+<v Heather>I don't remember what client it
+was, but client sends me BSD
+
+380
+00:20:30.432 --> 00:20:30.773
+<v Heather>license.
+
+381
+00:20:30.820 --> 00:20:31.907
+<v Heather>It says, hey, is this OK?
+
+382
+00:20:32.220 --> 00:20:36.432
+<v Heather>And I got to answer that question
+is actually a very difficult
+
+383
+00:20:36.472 --> 00:20:37.394
+<v Heather>question at the time.
+
+384
+00:20:38.064 --> 00:20:38.165
+<v Zack>Hmm.
+
+385
+00:20:38.620 --> 00:20:46.455
+<v Zack>So what so what was I mean, what
+was that like to start to see some
+
+386
+00:20:46.475 --> 00:20:50.127
+<v Zack>of these other types of licenses
+come up and you're going through
+
+387
+00:20:50.147 --> 00:20:52.754
+<v Zack>trying to look at research that's
+out there?
+
+388
+00:20:53.161 --> 00:20:55.651
+<v Zack>And what were the what were the
+challenging aspects?
+
+389
+00:20:55.700 --> 00:21:00.593
+<v Zack>And how did that kind of evolve
+into something that became more?
+
+390
+00:21:00.840 --> 00:21:03.789
+<v Zack>I don't know if formal is the
+right word, but they're like there
+
+391
+00:21:03.809 --> 00:21:06.889
+<v Zack>are now practices and standard
+licenses around open source.
+
+392
+00:21:06.900 --> 00:21:09.691
+<v Zack>Like, how did that kind of evolve
+over time?
+
+393
+00:21:12.524 --> 00:21:16.452
+<v Heather>Well, I should probably explain
+that when you're a lawyer and
+
+394
+00:21:16.492 --> 00:21:19.564
+<v Heather>someone asks you a question,
+they'll present you with some
+
+395
+00:21:19.684 --> 00:21:23.834
+<v Heather>facts and then you either know
+what the law is or you look it up,
+
+396
+00:21:24.220 --> 00:21:27.489
+<v Heather>like you do some research and you
+maybe you read a case or you read
+
+397
+00:21:27.509 --> 00:21:29.033
+<v Heather>a statute or something like that.
+
+398
+00:21:29.460 --> 00:21:30.685
+<v Heather>And then you apply one to the
+
+399
+00:21:30.746 --> 00:21:31.931
+<v Heather>other and you give an answer.
+
+400
+00:21:32.623 --> 00:21:33.848
+<v Heather>So in open source, that didn't
+
+401
+00:21:33.868 --> 00:21:34.390
+<v Heather>work at all.
+
+402
+00:21:34.840 --> 00:21:37.489
+<v Heather>There there were there were like
+
+403
+00:21:37.529 --> 00:21:41.708
+<v Heather>there's copyright law, but it
+doesn't tell you how to interpret
+
+404
+00:21:41.769 --> 00:21:43.013
+<v Heather>open source licenses.
+
+405
+00:21:43.420 --> 00:21:44.925
+<v Heather>There's contract law, but it
+
+406
+00:21:45.426 --> 00:21:47.192
+<v Heather>doesn't tell you a lot about that
+either.
+
+407
+00:21:47.660 --> 00:21:51.772
+<v Heather>So I was looking at this set of
+facts like this license, and then
+
+408
+00:21:51.832 --> 00:21:55.870
+<v Heather>I had to go, OK, what do I know
+about the law that would ever
+
+409
+00:21:55.950 --> 00:21:57.905
+<v Heather>apply to this thing?
+Because Because it's just a new
+
+410
+00:21:57.986 --> 00:21:58.268
+<v Heather>thing.
+
+411
+00:21:58.400 --> 00:22:00.107
+<v Heather>And I there was there were no
+
+412
+00:22:00.188 --> 00:22:01.091
+<v Heather>cases to read.
+
+413
+00:22:01.140 --> 00:22:02.588
+<v Heather>There were no statutes to read.
+
+414
+00:22:02.720 --> 00:22:06.753
+<v Heather>There was there weren't even any
+like law review articles to read.
+
+415
+00:22:07.661 --> 00:22:12.773
+<v Heather>And and so, you know, I just kind
+of had to reason from first
+
+416
+00:22:12.873 --> 00:22:13.995
+<v Heather>principles about it.
+
+417
+00:22:15.144 --> 00:22:17.332
+<v Heather>And and lawyers.
+
+418
+00:22:18.805 --> 00:22:20.331
+<v Heather>That scares lawyers a lot.
+
+419
+00:22:20.500 --> 00:22:23.048
+<v Heather>Like when they don't have rules,
+
+420
+00:22:23.549 --> 00:22:24.913
+<v Heather>they get freaked out.
+
+421
+00:22:25.020 --> 00:22:25.926
+<v Heather>They like rules.
+
+422
+00:22:26.060 --> 00:22:26.282
+<v Heather>Right.
+
+423
+00:22:26.560 --> 00:22:30.049
+<v Heather>So the experience was like walking
+
+424
+00:22:30.130 --> 00:22:31.814
+<v Heather>out on a wire, you know.
+
+425
+00:22:32.702 --> 00:22:33.945
+<v Heather>And and by the way, there were
+
+426
+00:22:34.025 --> 00:22:37.554
+<v Heather>some people at the time and
+probably still some some people,
+
+427
+00:22:37.720 --> 00:22:42.571
+<v Heather>some lawyers who just would not
+deal with it at all because it was
+
+428
+00:22:42.712 --> 00:22:44.015
+<v Heather>too weird and too new.
+
+429
+00:22:44.902 --> 00:22:47.350
+<v Heather>And they felt that it was risky to
+
+430
+00:22:47.390 --> 00:22:48.473
+<v Heather>give advice about it.
+
+431
+00:22:48.780 --> 00:22:50.869
+<v Heather>But but my clients had questions.
+
+432
+00:22:51.420 --> 00:22:54.090
+<v Heather>You know, I couldn't just say, oh,
+no, I don't know the answer to
+
+433
+00:22:54.150 --> 00:22:54.331
+<v Heather>that.
+
+434
+00:22:54.860 --> 00:22:56.409
+<v Heather>Like, you have to figure it out.
+
+435
+00:22:57.245 --> 00:22:57.386
+<v Zack>Hmm.
+
+436
+00:22:59.164 --> 00:23:01.772
+<v Zack>And then so so what started to
+
+437
+00:23:01.812 --> 00:23:05.131
+<v Zack>happen after that?
+Like what happened next?
+
+438
+00:23:05.180 --> 00:23:09.291
+<v Zack>I mean, after you started to write
+about it, you started to get more
+
+439
+00:23:09.572 --> 00:23:10.554
+<v Zack>started to see this more.
+
+440
+00:23:11.606 --> 00:23:12.069
+<v Zack>What happened?
+
+441
+00:23:12.882 --> 00:23:15.891
+<v Heather>Well, first of all, I started to
+meet other people who are
+
+442
+00:23:15.951 --> 00:23:17.174
+<v Heather>interested in the topic.
+
+443
+00:23:17.962 --> 00:23:20.788
+<v Heather>And so now we're like in the late
+
+444
+00:23:20.808 --> 00:23:21.029
+<v Heather>1990s, early 2000s.
+
+445
+00:23:23.620 --> 00:23:26.106
+<v Heather>And and so now I'm meeting a few
+
+446
+00:23:26.186 --> 00:23:29.615
+<v Heather>other lawyers who seem to be
+knowledgeable about it.
+
+447
+00:23:30.643 --> 00:23:34.754
+<v Heather>And so, first of all, some
+communities developed around that
+
+448
+00:23:35.382 --> 00:23:38.312
+<v Heather>so that we could bounce things off
+each other.
+
+449
+00:23:40.604 --> 00:23:45.434
+<v Heather>And and then, you know, I started
+getting some reputation for
+
+450
+00:23:46.035 --> 00:23:46.336
+<v Heather>knowing.
+
+451
+00:23:47.583 --> 00:23:50.169
+<v Heather>You know about this thing and
+
+452
+00:23:50.189 --> 00:23:53.102
+<v Heather>people would just call me out of
+the blue, you know, because they
+
+453
+00:23:53.724 --> 00:23:56.753
+<v Heather>they were really at sea trying to
+figure this stuff out.
+
+454
+00:23:57.360 --> 00:24:01.650
+<v Heather>And then and then what really
+developed over the next 10 years
+
+455
+00:24:01.750 --> 00:24:07.751
+<v Heather>and continues to develop today is
+best practices around dealing with
+
+456
+00:24:07.772 --> 00:24:13.253
+<v Heather>the licenses, because there's
+still not a lot of direct law on
+
+457
+00:24:13.313 --> 00:24:13.474
+<v Heather>them.
+
+458
+00:24:14.142 --> 00:24:16.388
+<v Heather>But there are practices that
+
+459
+00:24:16.448 --> 00:24:18.234
+<v Heather>people agree are best practices.
+
+460
+00:24:18.440 --> 00:24:20.666
+<v Heather>So that's that's really what
+
+461
+00:24:20.706 --> 00:24:24.422
+<v Heather>happened next was some development
+of the law, but mostly a
+
+462
+00:24:24.462 --> 00:24:29.835
+<v Heather>development of a way that people
+generally did things in order to
+
+463
+00:24:30.604 --> 00:24:31.649
+<v Heather>deal with the licenses.
+
+464
+00:24:34.004 --> 00:24:37.271
+<v Zack>What what was it like when you
+
+465
+00:24:37.792 --> 00:24:41.348
+<v Zack>started to meet some of those
+other players in the open source
+
+466
+00:24:41.388 --> 00:24:43.147
+<v Zack>space?
+And tell me a little bit.
+
+467
+00:24:43.220 --> 00:24:46.452
+<v Zack>I know you've said to me before
+that there's there's different
+
+468
+00:24:46.720 --> 00:24:49.071
+<v Zack>types of stakeholders in the open
+source community.
+
+469
+00:24:49.982 --> 00:24:53.432
+<v Zack>Tell me a little bit about like
+the types of stakeholders and some
+
+470
+00:24:53.452 --> 00:24:56.828
+<v Zack>of those early interactions you
+had as you started to meet like
+
+471
+00:24:57.189 --> 00:24:58.954
+<v Zack>the world of players, if you will.
+
+472
+00:24:59.702 --> 00:25:01.729
+<v Heather>Well, I met clients who were
+
+473
+00:25:01.789 --> 00:25:02.692
+<v Heather>interested in it.
+
+474
+00:25:03.300 --> 00:25:06.287
+<v Heather>And so they were actually usually
+
+475
+00:25:06.367 --> 00:25:10.115
+<v Heather>other lawyers who wanted to learn
+about it.
+
+476
+00:25:10.540 --> 00:25:14.312
+<v Heather>So I was helping them learn as I
+learned about it.
+
+477
+00:25:14.960 --> 00:25:19.374
+<v Heather>I I also had clients who were
+engineers and they're developers.
+
+478
+00:25:19.440 --> 00:25:21.911
+<v Heather>So they're the people actually
+creating the software.
+
+479
+00:25:21.940 --> 00:25:23.609
+<v Heather>They're the most important people,
+by the way.
+
+480
+00:25:23.940 --> 00:25:28.613
+<v Heather>The lawyers are just, you know, on
+along for the ride.
+
+481
+00:25:28.800 --> 00:25:28.982
+<v Heather>Right.
+
+482
+00:25:31.104 --> 00:25:32.848
+<v Heather>So I met a lot of engineers who
+
+483
+00:25:32.908 --> 00:25:35.895
+<v Heather>actually interested in writing
+open source software.
+
+484
+00:25:37.162 --> 00:25:41.711
+<v Heather>I met other lawyers just, you
+know, who were not clients or
+
+485
+00:25:41.771 --> 00:25:44.016
+<v Heather>colleagues who were interested in
+it.
+
+486
+00:25:44.100 --> 00:25:47.530
+<v Heather>And I would say maybe the
+relationship I had with them was a
+
+487
+00:25:47.570 --> 00:25:50.667
+<v Heather>little bit of frenemies, you you
+know, because we were competing
+
+488
+00:25:50.728 --> 00:25:51.370
+<v Heather>with each other.
+
+489
+00:25:51.480 --> 00:25:54.189
+<v Heather>But but on the other hand, there
+
+490
+00:25:54.249 --> 00:25:58.187
+<v Heather>weren't so many of us that we
+could really afford not to
+
+491
+00:25:58.769 --> 00:26:00.334
+<v Heather>collaborate, you know.
+
+492
+00:26:02.924 --> 00:26:05.329
+<v Heather>And and then like there developed
+
+493
+00:26:05.369 --> 00:26:09.365
+<v Heather>a lot of other categories of
+people involved, like community
+
+494
+00:26:09.425 --> 00:26:10.148
+<v Heather>managers.
+
+495
+00:26:10.500 --> 00:26:12.167
+<v Heather>So these may not actually be
+
+496
+00:26:12.207 --> 00:26:16.970
+<v Heather>developers, but maybe they're
+people who help bring open source
+
+497
+00:26:17.171 --> 00:26:18.274
+<v Heather>developers together.
+
+498
+00:26:19.424 --> 00:26:20.950
+<v Heather>There were business people who
+
+499
+00:26:21.010 --> 00:26:26.711
+<v Heather>wanted to, you know, use open
+source in their business or use
+
+500
+00:26:26.772 --> 00:26:28.275
+<v Heather>open source as a business tool.
+
+501
+00:26:28.380 --> 00:26:31.068
+<v Heather>So those were those are some of
+
+502
+00:26:31.108 --> 00:26:35.170
+<v Heather>the main stakeholders that I
+started to interact with over
+
+503
+00:26:35.210 --> 00:26:35.431
+<v Heather>time.
+
+504
+00:26:36.064 --> 00:26:36.809
+<v Heather>Yeah.
+
+505
+00:26:37.542 --> 00:26:46.004
+<v Zack>Did any of those kind of early
+projects like really pique your
+
+506
+00:26:46.044 --> 00:26:49.172
+<v Zack>interest or when did you start to
+see open source as something
+
+507
+00:26:49.393 --> 00:26:54.090
+<v Zack>transformative?
+I really saw it as transformative
+
+508
+00:26:54.271 --> 00:26:55.494
+<v Heather>almost from the beginning.
+
+509
+00:26:55.580 --> 00:26:58.867
+<v Heather>I did not realize and I'm not sure
+
+510
+00:26:58.908 --> 00:27:03.085
+<v Heather>very many people would have
+realized at that time how huge it
+
+511
+00:27:03.125 --> 00:27:03.568
+<v Heather>would get.
+
+512
+00:27:04.382 --> 00:27:08.032
+<v Heather>But it was just so different from
+
+513
+00:27:08.332 --> 00:27:13.433
+<v Heather>everything else that you learned
+as a technology lawyer.
+
+514
+00:27:14.262 --> 00:27:19.404
+<v Heather>Like if you do a regular software
+license, you know, it has a
+
+515
+00:27:19.805 --> 00:27:23.715
+<v Heather>particular form and some terms
+that you would expect.
+
+516
+00:27:23.820 --> 00:27:28.313
+<v Heather>So there's a there's like an
+industry practice about that.
+
+517
+00:27:28.800 --> 00:27:32.373
+<v Heather>Open source is like bizarro world
+licensing.
+
+518
+00:27:32.500 --> 00:27:34.009
+<v Heather>It's like exactly the opposite.
+
+519
+00:27:34.009 --> 00:27:35.505
+<v Heather>It's It's like giving away rights
+
+520
+00:27:35.726 --> 00:27:39.525
+<v Heather>and forcing people to give away
+rights instead of just like normal
+
+521
+00:27:39.565 --> 00:27:44.226
+<v Heather>licensing is like just granting
+the minimum little thing necessary
+
+522
+00:27:44.286 --> 00:27:45.130
+<v Heather>to get the deal done.
+
+523
+00:27:45.220 --> 00:27:47.289
+<v Heather>But like being as stingy as
+
+524
+00:27:47.369 --> 00:27:47.891
+<v Heather>possible.
+
+525
+00:27:47.980 --> 00:27:49.084
+<v Heather>That's like what you do with
+
+526
+00:27:49.124 --> 00:27:51.132
+<v Heather>proprietary license with open
+source.
+
+527
+00:27:51.132 --> 00:27:52.347
+<v Heather>You You just like here it is.
+
+528
+00:27:52.900 --> 00:27:54.107
+<v Heather>Do whatever you want with it.
+
+529
+00:27:54.661 --> 00:27:56.490
+<v Heather>And there are very few
+limitations.
+
+530
+00:27:56.580 --> 00:28:01.174
+<v Heather>If you got to really think hard
+about like what what are those?
+
+531
+00:28:01.782 --> 00:28:05.333
+<v Heather>Those they're not really
+limitations like conditions.
+
+532
+00:28:05.440 --> 00:28:08.091
+<v Heather>What does conditions mean and how
+do you comply with those?
+
+533
+00:28:08.220 --> 00:28:10.411
+<v Heather>So it was just totally different.
+
+534
+00:28:11.604 --> 00:28:13.108
+<v Heather>And I like that about it because
+
+535
+00:28:13.148 --> 00:28:16.827
+<v Heather>there's a lot of mental gymnastics
+like involved in trying to switch
+
+536
+00:28:16.927 --> 00:28:18.453
+<v Heather>from one paradigm to the other.
+
+537
+00:28:21.625 --> 00:28:26.434
+<v Zack>What how how do those differences
+
+538
+00:28:26.574 --> 00:28:29.459
+<v Zack>between open source and kind of
+proprietary systems?
+
+539
+00:28:32.386 --> 00:28:37.154
+<v Zack>What kind of changes does that
+create, both from a business
+
+540
+00:28:37.254 --> 00:28:43.816
+<v Zack>context, from how people interact?
+I'm going to see it's huge.
+
+541
+00:28:43.816 --> 00:28:43.846
+<v Heather>I it's huge.
+
+542
+00:28:43.846 --> 00:28:46.390
+<v Heather>I mean, you know, if you look back
+
+543
+00:28:46.490 --> 00:28:48.737
+<v Heather>before so open source is used
+before.
+
+544
+00:28:48.737 --> 00:28:49.256
+<v Heather>Open source is used by everybody
+is used before.
+
+545
+00:28:49.256 --> 00:28:49.548
+<v Heather>Open source is used by everybody
+now.
+
+546
+00:28:50.881 --> 00:28:53.990
+<v Heather>Like almost everyone in the
+technology industry now actually
+
+547
+00:28:54.050 --> 00:28:55.253
+<v Heather>contributes to it.
+
+548
+00:28:55.900 --> 00:28:57.107
+<v Heather>I mean, it's everywhere.
+
+549
+00:28:57.320 --> 00:29:00.029
+<v Heather>We're using it right this minute
+to do this interview.
+
+550
+00:29:00.840 --> 00:29:01.705
+<v Heather>It's in your phone.
+
+551
+00:29:02.200 --> 00:29:02.642
+<v Heather>It's everywhere, right?
+
+552
+00:29:03.580 --> 00:29:10.853
+<v Heather>And if you go back, I guess, 25
+years, the notion that that
+
+553
+00:29:11.033 --> 00:29:16.171
+<v Heather>private companies would do
+collaborate was not an idea.
+
+554
+00:29:17.743 --> 00:29:20.693
+<v Heather>I mean, it wasn't a thing that it
+wasn't a thing.
+
+555
+00:29:20.860 --> 00:29:21.082
+<v Heather>Right.
+
+556
+00:29:22.663 --> 00:29:24.987
+<v Heather>And and today you have all these
+
+557
+00:29:25.669 --> 00:29:29.822
+<v Heather>like big organizations and
+companies collaborating on things
+
+558
+00:29:29.983 --> 00:29:31.530
+<v Heather>and giving stuff away.
+
+559
+00:29:31.600 --> 00:29:34.091
+<v Heather>And that just wasn't done.
+
+560
+00:29:34.340 --> 00:29:38.710
+<v Heather>I would say open source changed
+the entire face of technology
+
+561
+00:29:39.091 --> 00:29:43.231
+<v Heather>because it it changed a paradigm
+for how people interact.
+
+562
+00:29:43.841 --> 00:29:47.611
+<v Heather>You know, they were just strictly
+competitors and now they're
+
+563
+00:29:47.972 --> 00:29:48.754
+<v Heather>collaborators.
+
+564
+00:29:48.840 --> 00:29:51.566
+<v Heather>And even there are there are only
+
+565
+00:29:51.987 --> 00:29:55.983
+<v Heather>like maybe two, three companies
+that are known for not doing it
+
+566
+00:29:56.104 --> 00:29:56.285
+<v Heather>now.
+
+567
+00:29:56.741 --> 00:29:56.942
+<v Heather>Right.
+
+568
+00:29:57.440 --> 00:30:00.051
+<v Heather>If you go back 25 years, like no
+one was doing it.
+
+569
+00:30:00.080 --> 00:30:02.871
+<v Heather>They were terrified about what
+these licenses meant and
+
+570
+00:30:02.891 --> 00:30:03.212
+<v Heather>everything.
+
+571
+00:30:03.842 --> 00:30:06.069
+<v Heather>So it's completely been absorbed
+
+572
+00:30:06.130 --> 00:30:06.672
+<v Heather>in business.
+
+573
+00:30:07.200 --> 00:30:09.146
+<v Heather>And that, you know, if you believe
+
+574
+00:30:09.186 --> 00:30:12.461
+<v Heather>in markets, which I do because I
+studied economics and all that
+
+575
+00:30:12.481 --> 00:30:16.333
+<v Heather>stuff, that wouldn't happen unless
+it worked.
+
+576
+00:30:16.801 --> 00:30:16.963
+<v Heather>Right.
+
+577
+00:30:17.683 --> 00:30:19.410
+<v Heather>It actually works as a paradigm.
+
+578
+00:30:19.880 --> 00:30:22.712
+<v Heather>Like it produced a lot of really
+great stuff.
+
+579
+00:30:23.581 --> 00:30:28.252
+<v Heather>And over that time, people became
+convinced of that and they
+
+580
+00:30:28.392 --> 00:30:31.707
+<v Heather>overcame their fear about these
+licensing paradigms they didn't
+
+581
+00:30:31.727 --> 00:30:32.370
+<v Heather>understand.
+
+582
+00:30:32.840 --> 00:30:35.588
+<v Heather>So they got over the fear and then
+
+583
+00:30:35.669 --> 00:30:37.253
+<v Heather>it really changed their behavior.
+
+584
+00:30:38.563 --> 00:30:40.648
+<v Heather>So to me, it's changed everything
+
+585
+00:30:40.728 --> 00:30:43.195
+<v Heather>about the way the technology
+industry operates.
+
+586
+00:30:48.105 --> 00:30:51.152
+<v Zack>Kind of looking back on your
+interactions with clients, and you
+
+587
+00:30:51.192 --> 00:30:54.387
+<v Zack>mentioned earlier that kind of as
+being a lawyer is almost also
+
+588
+00:30:54.447 --> 00:30:56.073
+<v Zack>being a business advisor.
+
+589
+00:30:57.823 --> 00:30:59.848
+<v Zack>Whether, you know, what if any
+
+590
+00:30:59.888 --> 00:31:03.640
+<v Zack>moments kind of stand out in your
+mind where whether it was was
+
+591
+00:31:03.680 --> 00:31:07.311
+<v Zack>resistance to the idea of open
+source or where it just like
+
+592
+00:31:07.612 --> 00:31:09.307
+<v Zack>clicked or like how you approach
+that?
+
+593
+00:31:13.387 --> 00:31:14.833
+<v Heather>That's a tough question.
+
+594
+00:31:15.180 --> 00:31:17.325
+<v Heather>I don't remember one instance so
+
+595
+00:31:17.365 --> 00:31:22.641
+<v Heather>much as it seems to me like I've
+spent decades now talking people
+
+596
+00:31:22.721 --> 00:31:25.793
+<v Heather>off the ledge because they're
+frightened.
+
+597
+00:31:26.884 --> 00:31:28.772
+<v Heather>Everyone's frightened of things
+they don't understand.
+
+598
+00:31:28.941 --> 00:31:29.122
+<v Heather>Right.
+
+599
+00:31:29.360 --> 00:31:35.108
+<v Heather>So I spent many, many hours just
+
+600
+00:31:35.288 --> 00:31:41.483
+<v Heather>explaining how things worked and
+trying to reduce people's level of
+
+601
+00:31:41.604 --> 00:31:41.825
+<v Heather>fear.
+
+602
+00:31:42.360 --> 00:31:43.946
+<v Heather>And by the way, that's not a
+
+603
+00:31:44.107 --> 00:31:45.592
+<v Heather>normal task for a lawyer.
+
+604
+00:31:45.700 --> 00:31:47.625
+<v Heather>Like most lawyers have the task of
+
+605
+00:31:47.726 --> 00:31:50.574
+<v Heather>identifying risks and warning
+people about stuff.
+
+606
+00:31:51.402 --> 00:31:54.430
+<v Heather>My career has been almost the
+opposite, like saying, no, you
+
+607
+00:31:54.470 --> 00:31:56.664
+<v Heather>really don't need to worry about
+this.
+
+608
+00:31:56.820 --> 00:32:00.331
+<v Heather>Yes, it's a theoretical risk, but
+in the end of the day, it won't
+
+609
+00:32:00.391 --> 00:32:00.773
+<v Heather>matter.
+
+610
+00:32:01.200 --> 00:32:04.148
+<v Heather>And and so that's what I remember
+
+611
+00:32:04.248 --> 00:32:06.474
+<v Heather>is like years and years of doing
+that.
+
+612
+00:32:07.163 --> 00:32:08.910
+<v Zack>Where do you think that comes
+from?
+
+613
+00:32:09.160 --> 00:32:12.732
+<v Zack>That kind of opposite disposition
+that you that you seem to have?
+
+614
+00:32:12.960 --> 00:32:15.611
+<v Heather>Well, maybe I, you know, maybe I
+never should have been a lawyer.
+
+615
+00:32:15.880 --> 00:32:20.514
+<v Heather>You know, that's that's certainly,
+you know, open to question.
+
+616
+00:32:20.641 --> 00:32:20.862
+<v Heather>Right.
+
+617
+00:32:22.844 --> 00:32:24.448
+<v Heather>Because I think my personality is
+
+618
+00:32:24.489 --> 00:32:26.714
+<v Heather>not is a little different from
+most lawyers.
+
+619
+00:32:27.040 --> 00:32:28.247
+<v Heather>I'm very practical.
+
+620
+00:32:28.480 --> 00:32:32.451
+<v Heather>And and maybe that's why I liked
+
+621
+00:32:32.591 --> 00:32:33.494
+<v Heather>programming, too.
+
+622
+00:32:33.760 --> 00:32:35.669
+<v Heather>You know, I'm I'm a very practical
+
+623
+00:32:35.749 --> 00:32:35.910
+<v Heather>type.
+
+624
+00:32:35.960 --> 00:32:38.170
+<v Heather>I think I am an engineer at heart.
+
+625
+00:32:38.981 --> 00:32:45.855
+<v Heather>And so I like to create stuff and
+I like to create procedures and so
+
+626
+00:32:45.915 --> 00:32:46.236
+<v Heather>forth.
+
+627
+00:32:46.280 --> 00:32:47.608
+<v Heather>And I like to build stuff.
+
+628
+00:32:48.763 --> 00:32:52.454
+<v Heather>And and that's not really a lawyer
+personality.
+
+629
+00:32:54.085 --> 00:32:56.633
+<v Heather>I don't know where I got that, but
+I don't remember getting it.
+
+630
+00:32:56.760 --> 00:32:59.190
+<v Heather>I think I just came into the
+situation with it.
+
+631
+00:32:59.701 --> 00:32:59.902
+<v Zack>Yeah.
+
+632
+00:33:00.281 --> 00:33:00.462
+<v Zack>Yeah.
+
+633
+00:33:00.982 --> 00:33:01.465
+<v Zack>It's interesting.
+
+634
+00:33:01.700 --> 00:33:03.445
+<v Zack>You mentioned before, though, it's
+
+635
+00:33:03.565 --> 00:33:07.723
+<v Zack>both like maybe you like creating
+rules, but you also mentioned how
+
+636
+00:33:07.823 --> 00:33:11.353
+<v Zack>there is or it seemed to me like
+almost a certain freedom, at least
+
+637
+00:33:11.393 --> 00:33:12.704
+<v Zack>when you were you were
+programming, where you're not
+
+638
+00:33:12.824 --> 00:33:15.133
+<v Zack>bound, but, you know, by the real
+world.
+
+639
+00:33:15.140 --> 00:33:18.352
+<v Zack>It's like this pure it's this pure
+creative endeavor.
+
+640
+00:33:18.352 --> 00:33:18.380
+<v Zack>Yeah.
+
+641
+00:33:18.380 --> 00:33:18.380
+<v UNKNOWN>Yeah.
+
+642
+00:33:19.540 --> 00:33:20.828
+<v Heather>Well, to me, that's what it was.
+
+643
+00:33:20.920 --> 00:33:21.122
+<v Heather>Yeah.
+
+644
+00:33:21.660 --> 00:33:21.821
+<v Zack>Yeah.
+
+645
+00:33:22.500 --> 00:33:24.365
+<v Zack>So so talk me through some of the
+
+646
+00:33:24.425 --> 00:33:29.023
+<v Zack>other kind of inflection points in
+your career as you then progressed
+
+647
+00:33:29.144 --> 00:33:30.670
+<v Zack>as you met.
+
+648
+00:33:31.181 --> 00:33:32.267
+<v Zack>Can you meet more people?
+
+649
+00:33:32.300 --> 00:33:36.473
+<v Zack>What were some of the main
+inflection points from there?
+
+650
+00:33:37.804 --> 00:33:40.213
+<v Heather>Well, I changed law firms a couple
+of times.
+
+651
+00:33:42.764 --> 00:33:48.715
+<v Heather>You know, I was at one place and I
+just felt like I wasn't succeeding
+
+652
+00:33:48.795 --> 00:33:49.036
+<v Heather>there.
+
+653
+00:33:49.100 --> 00:33:52.631
+<v Heather>And that was an important life
+
+654
+00:33:52.712 --> 00:33:53.113
+<v Heather>lesson.
+
+655
+00:33:53.160 --> 00:33:55.709
+<v Heather>And it was kind of painful, but it
+
+656
+00:33:55.769 --> 00:33:56.331
+<v Heather>turned out OK.
+
+657
+00:33:56.820 --> 00:33:59.767
+<v Heather>You know, part of the problem I
+
+658
+00:33:59.787 --> 00:34:03.002
+<v Heather>had, I think, was that being an
+open source lawyer was not really
+
+659
+00:34:03.042 --> 00:34:03.425
+<v Heather>a thing.
+
+660
+00:34:03.961 --> 00:34:04.142
+<v Heather>Right.
+
+661
+00:34:04.300 --> 00:34:08.192
+<v Heather>And and the people I worked with
+didn't even understand, like they
+
+662
+00:34:08.212 --> 00:34:09.585
+<v Heather>didn't even think it was
+important.
+
+663
+00:34:09.585 --> 00:34:13.472
+<v Heather>They They didn't particularly
+value this expertise.
+
+664
+00:34:13.860 --> 00:34:18.092
+<v Heather>My clients valued it, but the
+people I was working for didn't.
+
+665
+00:34:18.860 --> 00:34:23.552
+<v Heather>And so I just thought I need to be
+somewhere where I can just kind of
+
+666
+00:34:23.911 --> 00:34:27.889
+<v Heather>carve my own path because I didn't
+want to go on the paths that were
+
+667
+00:34:27.949 --> 00:34:28.452
+<v Heather>available.
+
+668
+00:34:30.545 --> 00:34:32.929
+<v Heather>And nobody was going to go say,
+
+669
+00:34:33.050 --> 00:34:34.755
+<v Heather>oh, we have an open source expert.
+
+670
+00:34:34.980 --> 00:34:36.047
+<v Heather>Isn't that a great thing?
+
+671
+00:34:36.320 --> 00:34:36.562
+<v Heather>Right.
+
+672
+00:34:37.060 --> 00:34:38.067
+<v Heather>Today they would.
+
+673
+00:34:38.782 --> 00:34:43.634
+<v Heather>But but at the time, no, like it
+just wasn't recognized as a career
+
+674
+00:34:43.674 --> 00:34:43.955
+<v Heather>path.
+
+675
+00:34:44.902 --> 00:34:46.665
+<v Heather>So that was a little painful
+
+676
+00:34:46.725 --> 00:34:51.155
+<v Heather>because I had to move and I felt
+kind of like a failure.
+
+677
+00:34:51.679 --> 00:34:56.833
+<v Heather>And but it was also a real
+learning experience.
+
+678
+00:34:57.500 --> 00:35:03.293
+<v Heather>And, you know, what I would say
+about that is that everybody goes
+
+679
+00:35:03.353 --> 00:35:04.315
+<v Heather>through those things.
+
+680
+00:35:04.620 --> 00:35:06.765
+<v Heather>Like if you look at people and
+
+681
+00:35:06.825 --> 00:35:10.761
+<v Heather>they seem to just have succeeded
+one in one thing after another,
+
+682
+00:35:11.405 --> 00:35:12.188
+<v Heather>nobody does that.
+
+683
+00:35:12.560 --> 00:35:12.782
+<v Heather>Right.
+
+684
+00:35:13.160 --> 00:35:14.808
+<v Heather>Everybody crashes and burns.
+
+685
+00:35:15.340 --> 00:35:17.128
+<v Heather>And and it's it's about how you
+
+686
+00:35:17.168 --> 00:35:17.911
+<v Heather>react to that.
+
+687
+00:35:18.000 --> 00:35:20.268
+<v Heather>It's not you know, it's not you
+
+688
+00:35:20.308 --> 00:35:21.492
+<v Heather>can't avoid it in life.
+
+689
+00:35:21.660 --> 00:35:21.822
+<v Heather>Right.
+
+690
+00:35:21.920 --> 00:35:22.987
+<v Heather>You're going to have setbacks.
+
+691
+00:35:23.922 --> 00:35:26.628
+<v Heather>Um, but I'm extremely persistent
+
+692
+00:35:27.069 --> 00:35:29.275
+<v Heather>and I was very interested in the
+topic.
+
+693
+00:35:29.400 --> 00:35:32.450
+<v Heather>And I just thought, well, I must
+find a situation where I can do
+
+694
+00:35:32.491 --> 00:35:32.651
+<v Heather>this.
+
+695
+00:35:33.541 --> 00:35:36.126
+<v Heather>The other thing is, um, I made a
+
+696
+00:35:36.187 --> 00:35:41.103
+<v Heather>decision along the line that what
+I wanted from my law practice was
+
+697
+00:35:41.203 --> 00:35:44.313
+<v Heather>to be the best lawyer I could be
+like.
+
+698
+00:35:44.860 --> 00:35:46.930
+<v Heather>And I wanted to be the best in
+this area.
+
+699
+00:35:47.120 --> 00:35:49.869
+<v Heather>You know, I wanted to to pursue
+excellence.
+
+700
+00:35:52.183 --> 00:35:55.173
+<v Heather>And that is not the same as
+pursuing money.
+
+701
+00:35:56.001 --> 00:36:01.535
+<v Heather>I mean, they do interact a lot at
+a good law firm.
+
+702
+00:36:01.801 --> 00:36:01.962
+<v Heather>Right.
+
+703
+00:36:02.500 --> 00:36:05.429
+<v Heather>But but I could have done other
+
+704
+00:36:05.470 --> 00:36:06.573
+<v Heather>things to make more money.
+
+705
+00:36:07.464 --> 00:36:09.110
+<v Heather>And I mean, don't get me wrong.
+
+706
+00:36:09.420 --> 00:36:12.771
+<v Heather>I've been a partner at a big law
+firm for many years, and it's, you
+
+707
+00:36:12.811 --> 00:36:14.203
+<v Heather>know, very well paying job.
+
+708
+00:36:15.362 --> 00:36:18.011
+<v Heather>But but that was an important
+
+709
+00:36:18.131 --> 00:36:18.532
+<v Heather>choice.
+
+710
+00:36:19.041 --> 00:36:20.186
+<v Heather>You know, I could have gone in a
+
+711
+00:36:20.247 --> 00:36:20.950
+<v Heather>different direction.
+
+712
+00:36:21.020 --> 00:36:22.086
+<v Heather>I probably wouldn't have been as
+
+713
+00:36:22.146 --> 00:36:22.830
+<v Heather>specialized.
+
+714
+00:36:22.900 --> 00:36:24.126
+<v Heather>I would have done different kinds
+
+715
+00:36:24.167 --> 00:36:24.388
+<v Heather>of work.
+
+716
+00:36:24.820 --> 00:36:26.684
+<v Heather>But what gets me out of bed every
+
+717
+00:36:26.925 --> 00:36:31.080
+<v Heather>morning at my desk is not like,
+oh, I'm going to make a lot a lot
+
+718
+00:36:31.081 --> 00:36:34.231
+<v Heather>of money today or even I'm going
+to make a lot of money for my
+
+719
+00:36:34.291 --> 00:36:35.073
+<v Heather>clients today.
+
+720
+00:36:35.073 --> 00:36:36.725
+<v Heather>It's It's like I just want to do
+
+721
+00:36:36.785 --> 00:36:39.493
+<v Heather>something really difficult and
+interesting.
+
+722
+00:36:39.820 --> 00:36:41.650
+<v Heather>Like, that's what I wanted to do.
+
+723
+00:36:41.700 --> 00:36:44.106
+<v Heather>And it's important to know, you
+
+724
+00:36:44.608 --> 00:36:47.074
+<v Heather>know, what you want out of a
+career.
+
+725
+00:36:48.184 --> 00:36:50.232
+<v Heather>And you never know it when you're
+starting out.
+
+726
+00:36:50.280 --> 00:36:51.567
+<v Heather>You learn that over time.
+
+727
+00:36:52.080 --> 00:36:55.951
+<v Heather>So so I made choices that led me
+
+728
+00:36:56.012 --> 00:36:56.754
+<v Heather>down that path.
+
+729
+00:36:59.123 --> 00:37:02.589
+<v Zack>And so what did that look like to
+
+730
+00:37:02.629 --> 00:37:08.644
+<v Zack>then, you know, you left the the
+law firm felt like they didn't
+
+731
+00:37:08.684 --> 00:37:12.174
+<v Zack>necessarily appreciate open source
+in the way that you did.
+
+732
+00:37:12.380 --> 00:37:15.650
+<v Zack>And here's the thing, that there
+is this opportunity to dive into
+
+733
+00:37:15.710 --> 00:37:16.861
+<v Zack>it more and pursue it.
+
+734
+00:37:17.400 --> 00:37:19.890
+<v Zack>So what what did you do?
+
+735
+00:37:20.300 --> 00:37:23.630
+<v Heather>Well, in fact, they told me and
+this is this is kind of
+
+736
+00:37:23.690 --> 00:37:25.154
+<v Heather>astonishing at this point.
+
+737
+00:37:25.240 --> 00:37:28.490
+<v Heather>But I was told we don't really
+
+738
+00:37:28.590 --> 00:37:29.453
+<v Heather>need people.
+
+739
+00:37:29.700 --> 00:37:31.809
+<v Heather>This is at a technology law firm,
+
+740
+00:37:31.829 --> 00:37:31.930
+<v Heather>too.
+
+741
+00:37:32.420 --> 00:37:33.766
+<v Heather>We don't really need people with
+
+742
+00:37:33.846 --> 00:37:35.011
+<v Heather>software expertise.
+
+743
+00:37:35.200 --> 00:37:36.303
+<v Heather>I mean, it's like such a
+
+744
+00:37:36.363 --> 00:37:40.574
+<v Heather>ridiculous statement because then
+the entire world, like as Andreas
+
+745
+00:37:40.780 --> 00:37:42.409
+<v Heather>said, like software ate the world.
+
+746
+00:37:42.540 --> 00:37:42.722
+<v Heather>Right.
+
+747
+00:37:43.300 --> 00:37:47.728
+<v Heather>Like, why would you even say that?
+But that was just that that
+
+748
+00:37:47.748 --> 00:37:49.052
+<v Heather>situation just was what it was.
+
+749
+00:37:50.481 --> 00:37:52.887
+<v Heather>And and so, you know, I left and
+
+750
+00:37:52.907 --> 00:37:56.581
+<v Heather>just went to another firm and I
+went to a place where they were a
+
+751
+00:37:56.621 --> 00:38:00.393
+<v Heather>lot more agnostic about what your
+practice was.
+
+752
+00:38:01.602 --> 00:38:06.213
+<v Heather>Basically, I interviewed at this
+place and I was talking to the guy
+
+753
+00:38:06.253 --> 00:38:09.551
+<v Heather>that ran the firm and he asked me
+what I did.
+
+754
+00:38:09.551 --> 00:38:12.111
+<v Heather>And And I said, oh, I'm a
+specialist in open source.
+
+755
+00:38:12.260 --> 00:38:14.189
+<v Heather>And I explained something about my
+practice.
+
+756
+00:38:14.680 --> 00:38:18.351
+<v Heather>And he said, I have no idea what
+you're talking about, but I have a
+
+757
+00:38:18.391 --> 00:38:19.562
+<v Heather>couple of questions for you.
+
+758
+00:38:20.363 --> 00:38:21.469
+<v Heather>Do you have clients?
+
+759
+00:38:21.941 --> 00:38:23.549
+<v Heather>I said, oh, yeah, I've got a lot
+of clients.
+
+760
+00:38:24.204 --> 00:38:27.350
+<v Heather>Do they pay you?
+I said, oh, yeah, they pay me.
+
+761
+00:38:27.801 --> 00:38:28.807
+<v Heather>They're glad to pay me.
+
+762
+00:38:28.920 --> 00:38:31.149
+<v Heather>He's like, great, you know.
+
+763
+00:38:31.760 --> 00:38:34.991
+<v Heather>And so I really needed an
+environment like that.
+
+764
+00:38:35.540 --> 00:38:37.249
+<v Heather>By the way, props were due.
+
+765
+00:38:37.340 --> 00:38:38.788
+<v Heather>That was Greenberg, Trorig.
+
+766
+00:38:39.040 --> 00:38:43.430
+<v Heather>And and they they were just so
+wonderful because they gave me
+
+767
+00:38:43.470 --> 00:38:46.022
+<v Heather>this opportunity to make my own
+way.
+
+768
+00:38:46.022 --> 00:38:50.773
+<v Heather>And And and that was that was huge
+for me.
+
+769
+00:38:51.280 --> 00:38:54.731
+<v Heather>You know, I it was it's scary
+because then you've got to
+
+770
+00:38:54.851 --> 00:38:55.433
+<v Heather>perform.
+
+771
+00:38:55.433 --> 00:38:55.581
+<v Heather>Right.
+
+772
+00:38:55.581 --> 00:38:55.581
+<v Heather>Right.
+
+773
+00:38:56.520 --> 00:38:58.806
+<v Heather>But but that was the kind of place
+
+774
+00:38:58.926 --> 00:39:02.221
+<v Heather>where they were like, look, if
+you've got a good practice, we
+
+775
+00:39:02.282 --> 00:39:02.806
+<v Heather>welcome you.
+
+776
+00:39:02.900 --> 00:39:04.826
+<v Heather>And it was it was less about their
+
+777
+00:39:04.906 --> 00:39:07.564
+<v Heather>mission than about the mission of
+the people that worked there.
+
+778
+00:39:09.223 --> 00:39:13.112
+<v Zack>And what did that feel like to
+kind of have this, again, like
+
+779
+00:39:13.192 --> 00:39:17.749
+<v Zack>antithesis kind of thing where it
+was like, oh, it's almost like,
+
+780
+00:39:17.769 --> 00:39:19.033
+<v Zack>you know, you're a VC.
+
+781
+00:39:19.461 --> 00:39:20.327
+<v Zack>Oh, do you have traction?
+
+782
+00:39:20.400 --> 00:39:21.828
+<v Zack>OK, well, there must be something
+here.
+
+783
+00:39:21.880 --> 00:39:25.491
+<v Zack>I don't I don't know if I get it
+or not, but the market says that
+
+784
+00:39:25.632 --> 00:39:26.073
+<v Zack>that there's.
+
+785
+00:39:26.100 --> 00:39:26.946
+<v Zack>Yeah, exactly.
+
+786
+00:39:26.946 --> 00:39:28.647
+<v Zack>Like, Like, what was what was that
+like?
+
+787
+00:39:29.520 --> 00:39:33.072
+<v Zack>And what did that feel like to
+have someone kind of embrace you?
+
+788
+00:39:33.441 --> 00:39:35.189
+<v Zack>Oh, it was it was great.
+
+789
+00:39:35.260 --> 00:39:37.326
+<v Heather>I really felt appreciated and I
+
+790
+00:39:37.366 --> 00:39:40.161
+<v Heather>really needed that at that point,
+you know, because I had been
+
+791
+00:39:40.201 --> 00:39:42.791
+<v Heather>through this, you know, sort of
+difficult transition.
+
+792
+00:39:42.840 --> 00:39:48.272
+<v Heather>And and I and I, like I said, I'm
+forever grateful that there was
+
+793
+00:39:48.312 --> 00:39:52.530
+<v Heather>that opportunity, you know,
+because I could have not run into
+
+794
+00:39:52.590 --> 00:39:53.493
+<v Heather>that opportunity.
+
+795
+00:39:56.005 --> 00:39:57.589
+<v Heather>And another thing is that, like,
+
+796
+00:39:57.769 --> 00:39:59.954
+<v Heather>it matters how people run
+businesses.
+
+797
+00:40:00.360 --> 00:40:04.292
+<v Heather>You know, it's not you hear all
+the corporate messaging in a place
+
+798
+00:40:04.332 --> 00:40:04.733
+<v Heather>you work.
+
+799
+00:40:05.021 --> 00:40:06.669
+<v Heather>And that matters.
+
+800
+00:40:06.740 --> 00:40:07.907
+<v Heather>Like the culture matters.
+
+801
+00:40:08.340 --> 00:40:11.427
+<v Heather>And that particular business, like
+
+802
+00:40:11.727 --> 00:40:15.882
+<v Heather>the first firm I worked at, you
+would go to a company event and
+
+803
+00:40:15.922 --> 00:40:18.291
+<v Heather>they would say they had a mission
+statement.
+
+804
+00:40:18.580 --> 00:40:19.868
+<v Heather>Here's our mission statement.
+
+805
+00:40:20.100 --> 00:40:21.206
+<v Heather>Come along for the ride.
+
+806
+00:40:21.800 --> 00:40:25.751
+<v Heather>And then I went to Greenberg and
+they and we would have a meeting
+
+807
+00:40:25.811 --> 00:40:28.988
+<v Heather>and they would say and the
+management would say, how can we
+
+808
+00:40:29.049 --> 00:40:32.408
+<v Heather>help you succeed?
+Like, you know what you're doing,
+
+809
+00:40:32.428 --> 00:40:35.447
+<v Heather>OK?
+We want to hire you unless you
+
+810
+00:40:35.487 --> 00:40:36.230
+<v Heather>knew what you were doing.
+
+811
+00:40:36.820 --> 00:40:38.008
+<v Heather>How do we help you succeed?
+
+812
+00:40:38.060 --> 00:40:40.670
+<v Heather>And that was like so empowering,
+right?
+
+813
+00:40:41.260 --> 00:40:44.992
+<v Heather>It's a great way to run a business
+if you can run a business that
+
+814
+00:40:45.052 --> 00:40:45.273
+<v Heather>way.
+
+815
+00:40:45.700 --> 00:40:48.645
+<v Heather>And and it was it was a great
+
+816
+00:40:48.725 --> 00:40:55.663
+<v Heather>feeling because I really like just
+having the freedom to to go in my
+
+817
+00:40:55.723 --> 00:40:56.387
+<v Heather>own direction.
+
+818
+00:40:58.483 --> 00:41:00.627
+<v Zack>Could you talk a little bit about
+
+819
+00:41:00.647 --> 00:41:06.561
+<v Zack>kind of from from that period of
+then really diving into practicing
+
+820
+00:41:06.581 --> 00:41:12.253
+<v Zack>like open source law to becoming a
+VC in the open source community
+
+821
+00:41:12.273 --> 00:41:14.887
+<v Zack>and how in the world did that
+happen?
+
+822
+00:41:15.281 --> 00:41:18.132
+<v Zack>And that's a good question.
+
+823
+00:41:18.180 --> 00:41:19.628
+<v Heather>Yeah, yeah.
+
+824
+00:41:19.760 --> 00:41:22.131
+<v Heather>So I didn't really intend that to
+happen.
+
+825
+00:41:22.761 --> 00:41:30.414
+<v Heather>But but the the the person who
+runs the VC firm, Joseph Jacks, is
+
+826
+00:41:30.514 --> 00:41:31.336
+<v Heather>he's called JJ.
+
+827
+00:41:31.620 --> 00:41:34.367
+<v Heather>He just like contacted me out of
+
+828
+00:41:34.407 --> 00:41:37.842
+<v Heather>the blue basically one day and
+said, hey, I'm starting a fund
+
+829
+00:41:37.883 --> 00:41:39.490
+<v Heather>that's around open source.
+
+830
+00:41:40.263 --> 00:41:41.650
+<v Heather>Do you want to be part of it?
+
+831
+00:41:42.080 --> 00:41:45.291
+<v Heather>And my first inclination was, what
+do you want me for?
+
+832
+00:41:45.760 --> 00:41:46.645
+<v Heather>Just I'm a lawyer.
+
+833
+00:41:47.320 --> 00:41:50.006
+<v Heather>But then I talked to him more and
+
+834
+00:41:50.126 --> 00:41:54.761
+<v Heather>I thought, oh, actually, this does
+make a lot of sense because I had
+
+835
+00:41:54.801 --> 00:41:59.553
+<v Heather>been spending a lot of time
+counseling people on business
+
+836
+00:41:59.613 --> 00:42:00.074
+<v Heather>models.
+
+837
+00:42:00.700 --> 00:42:03.448
+<v Heather>And I I almost didn't realize how
+
+838
+00:42:03.568 --> 00:42:05.694
+<v Heather>much of my time I was spending
+doing that.
+
+839
+00:42:06.362 --> 00:42:09.373
+<v Heather>And there was this event that took
+place.
+
+840
+00:42:09.420 --> 00:42:13.491
+<v Heather>And this is kind of inside
+baseball, but hopefully I can make
+
+841
+00:42:13.552 --> 00:42:14.494
+<v Heather>it understandable.
+
+842
+00:42:16.644 --> 00:42:18.328
+<v Heather>Somebody I knew came to me and
+
+843
+00:42:18.408 --> 00:42:21.795
+<v Heather>asked me to write this license, a
+new kind of license.
+
+844
+00:42:22.543 --> 00:42:24.692
+<v Heather>And they asked me to do it for
+free.
+
+845
+00:42:24.740 --> 00:42:26.249
+<v Heather>It wasn't a client engagement.
+
+846
+00:42:26.942 --> 00:42:28.547
+<v Heather>And I said, sure, you know,
+
+847
+00:42:28.567 --> 00:42:30.914
+<v Heather>because I always help people do
+stuff, you know.
+
+848
+00:42:32.042 --> 00:42:37.633
+<v Zack>And and so I wrote this thing or I
+actually led the drafting on is
+
+849
+00:42:37.693 --> 00:42:38.675
+<v Zack>probably more accurate.
+
+850
+00:42:39.220 --> 00:42:40.545
+<v Heather>And it got released and it was
+
+851
+00:42:40.786 --> 00:42:42.452
+<v Heather>enormously controversial.
+
+852
+00:42:42.840 --> 00:42:43.925
+<v Heather>This was something called the
+
+853
+00:42:43.986 --> 00:42:45.031
+<v Heather>Commons Clause.
+
+854
+00:42:45.822 --> 00:42:50.733
+<v Heather>And and I was roundly criticized
+
+855
+00:42:50.753 --> 00:42:51.214
+<v Heather>for doing this.
+
+856
+00:42:51.500 --> 00:42:53.264
+<v Heather>I mean, you know, there was all
+
+857
+00:42:53.344 --> 00:42:58.435
+<v Heather>sorts of trolling and flame wars
+and stuff over this thing.
+
+858
+00:42:59.562 --> 00:43:03.991
+<v Heather>And and I thought to myself at
+that point, oh, my goodness, you
+
+859
+00:43:04.011 --> 00:43:05.795
+<v Heather>know, I did this for free.
+
+860
+00:43:05.920 --> 00:43:07.405
+<v Heather>And, you know, no good deed goes
+
+861
+00:43:07.485 --> 00:43:09.111
+<v Heather>unpunished and all this sort of
+thing.
+
+862
+00:43:09.700 --> 00:43:14.394
+<v Heather>But then it turned out that
+although that particular project
+
+863
+00:43:14.480 --> 00:43:18.131
+<v Heather>didn't really fly for a variety of
+reasons, people wanted to do
+
+864
+00:43:18.271 --> 00:43:19.154
+<v Heather>similar things.
+
+865
+00:43:19.882 --> 00:43:21.065
+<v Heather>And they were very interested in
+
+866
+00:43:21.506 --> 00:43:25.367
+<v Heather>like the concept that this
+involved, a concept I didn't come
+
+867
+00:43:25.427 --> 00:43:25.749
+<v Heather>up with.
+
+868
+00:43:25.860 --> 00:43:26.867
+<v Heather>I just wrote the thing.
+
+869
+00:43:27.040 --> 00:43:27.301
+<v Heather>Right.
+
+870
+00:43:28.064 --> 00:43:29.469
+<v Heather>People told me what they want and
+
+871
+00:43:29.489 --> 00:43:30.372
+<v Heather>I wrote it for them.
+
+872
+00:43:31.443 --> 00:43:33.089
+<v Heather>And so I was just a craftsman
+
+873
+00:43:33.190 --> 00:43:33.431
+<v Heather>there.
+
+874
+00:43:34.020 --> 00:43:35.565
+<v Heather>But then people started coming to
+
+875
+00:43:35.585 --> 00:43:37.833
+<v Heather>me and saying, well, I want to do
+something like that.
+
+876
+00:43:37.833 --> 00:43:43.591
+<v Heather>And And and so over the course of
+maybe a year, I probably did a
+
+877
+00:43:44.373 --> 00:43:49.513
+<v Heather>project like that for several
+dozen companies.
+
+878
+00:43:49.513 --> 00:43:51.389
+<v Heather>I I mean, that's a lot of
+companies.
+
+879
+00:43:51.580 --> 00:43:54.731
+<v Heather>You know, that's a lot of clients
+in that amount of time.
+
+880
+00:43:55.340 --> 00:44:03.775
+<v Heather>So so I that involved a lot of
+discussion about business models.
+
+881
+00:44:04.120 --> 00:44:07.068
+<v Heather>So I kind of fell into this thing
+just because somebody asked me to
+
+882
+00:44:07.169 --> 00:44:09.094
+<v Heather>do something for them.
+
+883
+00:44:10.223 --> 00:44:12.289
+<v Heather>And and then all of a sudden, like
+
+884
+00:44:12.369 --> 00:44:14.074
+<v Heather>I was the person doing this thing.
+
+885
+00:44:15.182 --> 00:44:18.711
+<v Heather>And I have to say that, you know,
+
+886
+00:44:18.751 --> 00:44:22.910
+<v Heather>that changed my whole career
+because I started doing different
+
+887
+00:44:22.930 --> 00:44:23.452
+<v Heather>kind of work.
+
+888
+00:44:23.500 --> 00:44:25.025
+<v Heather>And that's kind of how I got into
+
+889
+00:44:25.065 --> 00:44:30.109
+<v Heather>the business model counseling more
+than just kind of the pure
+
+890
+00:44:30.189 --> 00:44:31.453
+<v Heather>licensing analysis.
+
+891
+00:44:31.841 --> 00:44:33.345
+<v Heather>I did a favor for someone which
+
+892
+00:44:33.766 --> 00:44:36.884
+<v Heather>seemed to be a very bad idea at
+the beginning, but it turned out
+
+893
+00:44:36.904 --> 00:44:37.949
+<v Heather>to be a very good idea.
+
+894
+00:44:40.225 --> 00:44:42.170
+<v Zack>I mean, maybe not not so different
+
+895
+00:44:42.210 --> 00:44:45.266
+<v Zack>than the first client who said,
+hey, what do you think about this
+
+896
+00:44:45.306 --> 00:44:46.523
+<v Zack>license?
+I don't know.
+
+897
+00:44:46.543 --> 00:44:47.086
+<v Zack>Let me go look.
+
+898
+00:44:47.520 --> 00:44:48.283
+<v Heather>Oh, absolutely.
+
+899
+00:44:48.344 --> 00:44:50.291
+<v Heather>Because like this was also new.
+
+900
+00:44:50.460 --> 00:44:52.089
+<v Heather>This is new territory, too.
+
+901
+00:44:52.160 --> 00:44:57.382
+<v Heather>But and and I guess, you know,
+there are probably it would have
+
+902
+00:44:57.402 --> 00:45:00.646
+<v Heather>been a lot of people who would
+have said, no way I won't do that,
+
+903
+00:45:00.947 --> 00:45:01.871
+<v Heather>particularly for free.
+
+904
+00:45:04.546 --> 00:45:06.111
+<v Heather>But but I said, yeah, sure.
+
+905
+00:45:06.151 --> 00:45:06.733
+<v Heather>Sign me up.
+
+906
+00:45:08.403 --> 00:45:10.627
+<v Zack>There might be some some similar
+
+907
+00:45:10.768 --> 00:45:14.856
+<v Zack>ethos there around free free and
+open source software.
+
+908
+00:45:15.222 --> 00:45:16.970
+<v Zack>Yeah, absolutely.
+
+909
+00:45:17.040 --> 00:45:19.347
+<v Heather>I mean, my my whole philosophy,
+
+910
+00:45:19.407 --> 00:45:23.928
+<v Heather>like for all these years has been
+if somebody asked me to help, I
+
+911
+00:45:23.968 --> 00:45:24.991
+<v Heather>help them if I can.
+
+912
+00:45:25.400 --> 00:45:27.448
+<v Heather>Like and whether it's going to
+
+913
+00:45:27.488 --> 00:45:30.791
+<v Heather>result in pain, work or not is
+kind of secondary for me.
+
+914
+00:45:32.586 --> 00:45:34.452
+<v Heather>And I'm not sure.
+
+915
+00:45:34.860 --> 00:45:36.064
+<v Heather>Again, I'm not sure that's a way
+
+916
+00:45:36.104 --> 00:45:38.773
+<v Heather>to make the most money, you know,
+or be.
+
+917
+00:45:39.663 --> 00:45:42.412
+<v Heather>But actually, I think it does make
+you successful.
+
+918
+00:45:42.860 --> 00:45:46.672
+<v Heather>Like paying it forward really
+works in a service business.
+
+919
+00:45:47.120 --> 00:45:51.713
+<v Heather>And it's also makes you happier, I
+think, because you get to help
+
+920
+00:45:51.773 --> 00:45:52.074
+<v Heather>people.
+
+921
+00:45:52.201 --> 00:45:53.307
+<v Heather>I like helping people.
+
+922
+00:45:55.384 --> 00:45:59.513
+<v Zack>Where do you think you'd be
+without open source if open source
+
+923
+00:45:59.614 --> 00:46:03.852
+<v Zack>never existed?
+A starving drummer?
+
+924
+00:46:03.980 --> 00:46:09.827
+<v Heather>No, I might be a starving
+musician, but more likely I'd just
+
+925
+00:46:09.867 --> 00:46:12.795
+<v Heather>be doing like M&A deals, which is
+fine.
+
+926
+00:46:12.900 --> 00:46:18.032
+<v Heather>You know, I've done tons of them,
+but but it it wouldn't have been
+
+927
+00:46:18.092 --> 00:46:19.094
+<v Heather>as wild a ride.
+
+928
+00:46:19.521 --> 00:46:20.868
+<v Heather>Open source is crazy.
+
+929
+00:46:21.180 --> 00:46:25.310
+<v Heather>Like every time you think that
+you've seen everything, something
+
+930
+00:46:25.570 --> 00:46:27.435
+<v Heather>absolutely crazy happens.
+
+931
+00:46:28.122 --> 00:46:29.708
+<v Heather>Somebody is doing something
+
+932
+00:46:29.869 --> 00:46:30.812
+<v Heather>totally nuts.
+
+933
+00:46:31.562 --> 00:46:32.987
+<v Heather>And you wake up and you read the
+
+934
+00:46:33.067 --> 00:46:36.247
+<v Heather>news and you're like, what?
+How could this happen?
+
+935
+00:46:37.162 --> 00:46:41.093
+<v Heather>And and it's it's scary, but fun.
+
+936
+00:46:41.560 --> 00:46:43.669
+<v Heather>It doesn't happen so much in like
+
+937
+00:46:43.910 --> 00:46:44.512
+<v Heather>M&A deals.
+
+938
+00:46:48.705 --> 00:46:50.890
+<v Zack>Would it be worth in the last few
+
+939
+00:46:50.910 --> 00:46:53.295
+<v Zack>minutes that we have here talking
+about Google versus Oracle?
+
+940
+00:46:53.360 --> 00:46:55.369
+<v Zack>That was a big deal and you were
+involved.
+
+941
+00:46:55.801 --> 00:46:55.962
+<v Zack>Yeah.
+
+942
+00:46:55.962 --> 00:46:58.949
+<v Zack>Yeah, Yeah, that was an amazing
+
+943
+00:46:59.030 --> 00:46:59.832
+<v Zack>experience.
+
+944
+00:47:00.341 --> 00:47:00.684
+<v Heather>It was.
+
+945
+00:47:01.624 --> 00:47:02.849
+<v Heather>I mean, I think for most.
+
+946
+00:47:03.380 --> 00:47:04.664
+<v Heather>Well, there aren't so many
+
+947
+00:47:04.745 --> 00:47:07.213
+<v Heather>software copyright lawyers running
+around out there.
+
+948
+00:47:07.320 --> 00:47:10.811
+<v Heather>But for those of us in that area,
+that was like the case of the
+
+949
+00:47:10.912 --> 00:47:11.413
+<v Heather>century.
+
+950
+00:47:12.281 --> 00:47:15.167
+<v Heather>And it was also between two big
+
+951
+00:47:15.207 --> 00:47:19.216
+<v Heather>companies that had a lot of money
+to litigate.
+
+952
+00:47:20.284 --> 00:47:22.170
+<v Heather>And I loved working with Google.
+
+953
+00:47:22.940 --> 00:47:24.848
+<v Heather>I mean, they're a great client to
+
+954
+00:47:24.868 --> 00:47:25.210
+<v Heather>work with.
+
+955
+00:47:25.780 --> 00:47:28.969
+<v Heather>And I just got it was so great to
+
+956
+00:47:29.009 --> 00:47:31.174
+<v Heather>get to work on a landmark thing
+like that.
+
+957
+00:47:31.174 --> 00:47:34.993
+<v Heather>And And I also thought it was
+really important to the industry.
+
+958
+00:47:35.884 --> 00:47:37.311
+<v Heather>And I'm really glad we won.
+
+959
+00:47:39.065 --> 00:47:40.670
+<v Zack>Could you, you know, for the sake
+
+960
+00:47:40.690 --> 00:47:44.810
+<v Zack>of history, I mean, could you talk
+just what were the implications of
+
+961
+00:47:44.850 --> 00:47:47.068
+<v Zack>the case?
+What was at stake in kind of what
+
+962
+00:47:47.249 --> 00:47:52.650
+<v Zack>was it about?
+Well, on a on a doctrinal level,
+
+963
+00:47:52.670 --> 00:47:59.208
+<v Heather>it was about whether you could
+copy the interface of some
+
+964
+00:47:59.269 --> 00:48:01.795
+<v Heather>software in order to reengineer
+it.
+
+965
+00:48:02.561 --> 00:48:10.554
+<v Heather>So so if if if there's some
+software and you don't like that
+
+966
+00:48:10.594 --> 00:48:13.344
+<v Heather>software for a variety of reasons
+like you don't like the way it
+
+967
+00:48:13.384 --> 00:48:17.001
+<v Heather>works or you don't like the
+licensing for it or whatever, can
+
+968
+00:48:17.021 --> 00:48:19.891
+<v Heather>you take the interface for it and
+redo it yourself?
+
+969
+00:48:20.160 --> 00:48:26.213
+<v Heather>Because that's basically what
+Google did with Android and as
+
+970
+00:48:26.253 --> 00:48:29.149
+<v Heather>opposed to Java, which was what
+Oracle owned.
+
+971
+00:48:29.942 --> 00:48:35.334
+<v Heather>And and there was and before that
+case in the software industry,
+
+972
+00:48:35.720 --> 00:48:40.012
+<v Heather>pretty much everyone assumed you
+could do that and not have
+
+973
+00:48:40.353 --> 00:48:41.034
+<v Heather>liability.
+
+974
+00:48:41.783 --> 00:48:43.611
+<v Heather>And then this lawsuit happened.
+
+975
+00:48:43.900 --> 00:48:47.012
+<v Heather>And in fact, the law was not very
+clear about it.
+
+976
+00:48:47.260 --> 00:48:50.753
+<v Heather>And because you had two parties
+with a lot of money to litigate,
+
+977
+00:48:52.403 --> 00:48:57.814
+<v Heather>you know, there was just every
+issue got, you know, argued to the
+
+978
+00:48:57.954 --> 00:48:58.275
+<v Heather>max.
+
+979
+00:48:58.560 --> 00:48:58.880
+<v Heather>Right.
+
+980
+00:49:00.563 --> 00:49:08.175
+<v Heather>And eventually, the Supreme Court
+decided that that Google could do
+
+981
+00:49:08.255 --> 00:49:09.700
+<v Heather>what they did in that case.
+
+982
+00:49:09.761 --> 00:49:12.427
+<v Heather>But but the decision was, I think,
+
+983
+00:49:12.507 --> 00:49:16.081
+<v Heather>unfortunately, a little bit
+limited to its facts, pretty much,
+
+984
+00:49:17.265 --> 00:49:20.554
+<v Heather>which was that they could do that
+in that case.
+
+985
+00:49:20.700 --> 00:49:24.571
+<v Heather>But that doesn't mean that you
+could go to the next situation and
+
+986
+00:49:24.631 --> 00:49:25.333
+<v Heather>also do it.
+
+987
+00:49:25.660 --> 00:49:26.723
+<v Heather>It was under something called a
+
+988
+00:49:26.783 --> 00:49:29.752
+<v Heather>fair use doctrine, which is very
+fact specific.
+
+989
+00:49:30.360 --> 00:49:34.188
+<v Heather>And, you know, ironically, one of
+the first I remember the first
+
+990
+00:49:35.030 --> 00:49:40.509
+<v Heather>professional lecture I gave as a
+lawyer when I was an associate was
+
+991
+00:49:40.589 --> 00:49:41.873
+<v Heather>on the fair use doctrine.
+
+992
+00:49:42.000 --> 00:49:43.587
+<v Heather>And I had written a paper on it in
+
+993
+00:49:43.628 --> 00:49:44.210
+<v Heather>law school.
+
+994
+00:49:44.220 --> 00:49:46.327
+<v Heather>And then I ended up doing this
+
+995
+00:49:46.408 --> 00:49:47.652
+<v Heather>huge case on it.
+
+996
+00:49:49.263 --> 00:49:51.168
+<v Heather>So that was interesting because
+
+997
+00:49:51.188 --> 00:49:55.164
+<v Heather>it's only because I wrote this
+paper in law school that I kind of
+
+998
+00:49:55.244 --> 00:49:57.472
+<v Heather>knew that defense like the back of
+my hand.
+
+999
+00:49:57.921 --> 00:50:01.350
+<v Heather>And then, you know, I got totally
+steeped in it for the 10 years of
+
+1000
+00:50:01.411 --> 00:50:04.449
+<v Heather>that case, you know, working on it
+on and off.
+
+1001
+00:50:05.703 --> 00:50:10.174
+<v Zack>What what did it mean to you to
+work on a case like that?
+
+1002
+00:50:12.343 --> 00:50:16.850
+<v Heather>Well, it's great for cocktail
+party conversations like there's
+
+1003
+00:50:18.333 --> 00:50:23.430
+<v Heather>it's something that people outside
+of my sort of immediate sphere may
+
+1004
+00:50:23.470 --> 00:50:24.172
+<v Heather>have heard of.
+
+1005
+00:50:24.440 --> 00:50:24.761
+<v Heather>Right.
+
+1006
+00:50:25.182 --> 00:50:28.813
+<v Heather>Whereas open source stuff like
+most of them haven't really heard
+
+1007
+00:50:28.833 --> 00:50:29.034
+<v Heather>of it.
+
+1008
+00:50:30.583 --> 00:50:35.133
+<v Heather>So and I think it's it's
+
+1009
+00:50:35.193 --> 00:50:36.215
+<v Heather>understandable to people.
+
+1010
+00:50:36.260 --> 00:50:37.729
+<v Heather>So that's that's good.
+
+1011
+00:50:38.060 --> 00:50:44.872
+<v Heather>I thought it was hugely important
+case because if you can't rewrite
+
+1012
+00:50:44.932 --> 00:50:49.810
+<v Heather>software to suit your needs, then
+I don't know what that would even
+
+1013
+00:50:49.911 --> 00:50:50.192
+<v Heather>mean.
+
+1014
+00:50:51.142 --> 00:50:52.505
+<v Heather>I think what it would have meant
+
+1015
+00:50:52.665 --> 00:51:01.551
+<v Heather>is that you if you can't do that,
+then it would stifle innovation a
+
+1016
+00:51:01.731 --> 00:51:02.414
+<v Heather>huge amount.
+
+1017
+00:51:03.161 --> 00:51:04.845
+<v Heather>Just to give an example, like
+
+1018
+00:51:05.246 --> 00:51:09.535
+<v Heather>Linux, which is the operating
+system that's open source site
+
+1019
+00:51:10.522 --> 00:51:14.774
+<v Heather>that was created because for in
+exactly the same kind of project,
+
+1020
+00:51:15.180 --> 00:51:21.026
+<v Heather>they took the interface for Unix,
+which was a proprietary operating
+
+1021
+00:51:21.066 --> 00:51:23.293
+<v Heather>system, and then just and rewrote
+it.
+
+1022
+00:51:23.820 --> 00:51:30.333
+<v Heather>They rewrote a new system to that
+to Unix's specifications to avoid
+
+1023
+00:51:30.413 --> 00:51:32.607
+<v Heather>the licensing issues with Unix.
+
+1024
+00:51:33.403 --> 00:51:35.552
+<v Heather>And so if you couldn't do that.
+
+1025
+00:51:37.044 --> 00:51:40.514
+<v Heather>In a way, we wouldn't have had the
+open source movement at all.
+
+1026
+00:51:41.623 --> 00:51:44.951
+<v Heather>A lot of open source software is
+actually re-implementation of
+
+1027
+00:51:45.031 --> 00:51:46.294
+<v Heather>proprietary software.
+
+1028
+00:51:46.420 --> 00:51:48.767
+<v Heather>So that's one reason why it was
+
+1029
+00:51:48.868 --> 00:51:50.714
+<v Heather>hugely important to open source.
+
+1030
+00:51:52.945 --> 00:51:54.188
+<v Zack>In that sort of vein and kind of
+
+1031
+00:51:54.709 --> 00:52:00.671
+<v Zack>coming to a wrap here, I mean,
+where would the world be without
+
+1032
+00:52:00.731 --> 00:52:03.510
+<v Zack>open source?
+How has open source changed the
+
+1033
+00:52:03.530 --> 00:52:05.549
+<v Zack>world?
+And why does it matter?
+
+1034
+00:52:05.601 --> 00:52:12.349
+<v Zack>Why does it matter to you?
+I guess without Linux, we would
+
+1035
+00:52:12.369 --> 00:52:17.828
+<v Heather>all be just using Windows and Mac
+OS, I guess, or maybe Unix.
+
+1036
+00:52:17.828 --> 00:52:17.838
+<v Heather>Unix.
+
+1037
+00:52:18.763 --> 00:52:21.289
+<v Heather>And one thing that would mean is
+
+1038
+00:52:21.409 --> 00:52:25.826
+<v Heather>that the developing world would
+have less access to software
+
+1039
+00:52:25.826 --> 00:52:28.396
+<v Heather>access to software because they'd
+have to pay for every copy.
+
+1040
+00:52:31.547 --> 00:52:36.716
+<v Heather>The developing world couldn't,
+like, localize software for their
+
+1041
+00:52:36.756 --> 00:52:38.649
+<v Heather>own languages, and we would not
+have had this sea languages, and
+
+1042
+00:52:38.649 --> 00:52:41.509
+<v Heather>we would not have had this sea
+change in business where people
+
+1043
+00:52:41.529 --> 00:52:45.161
+<v Heather>now look, people now ask
+businesses to be collaborative
+
+1044
+00:52:45.181 --> 00:52:48.269
+<v Heather>with each other, as opposed to
+just fighting with each other and
+
+1045
+00:52:48.289 --> 00:52:51.207
+<v Heather>competing with each other.
+
+1046
+00:52:51.207 --> 00:52:51.231
+<v Heather>I other.
+
+1047
+00:52:51.231 --> 00:52:56.077
+<v Heather>I think it's it's it's changed the
+technology world and it's changed
+
+1048
+00:52:56.097 --> 00:52:56.919
+<v Heather>the business world.
+
+1049
+00:52:56.919 --> 00:52:56.989
+<v Heather>I once did this talk called, I
+
+1050
+00:52:56.989 --> 00:52:57.089
+<v Heather>think, like, it's a wonderful it's
+changed the business world.
+
+1051
+00:52:57.089 --> 00:52:57.209
+<v Heather>I once did this talk called, I
+think, like, it's a wonderful
+
+1052
+00:52:57.209 --> 00:52:57.485
+<v Heather>Linux or something.
+
+1053
+00:53:02.460 --> 00:53:03.362
+<v Heather>Or and and it was like, it's a
+
+1054
+00:53:03.442 --> 00:53:09.336
+<v Heather>wonderful life, like asking what
+would the world be like without
+
+1055
+00:53:09.336 --> 00:53:14.755
+<v Heather>open open source?
+And of course, it was dreary.
+
+1056
+00:53:14.755 --> 00:53:14.836
+<v Heather>Right, dreary.
+
+1057
+00:53:14.836 --> 00:53:15.128
+<v Heather>Right, right.
+
+1058
+00:53:15.560 --> 00:53:15.861
+<v Heather>Doom and gloom.
+
+1059
+00:53:16.720 --> 00:53:17.829
+<v Heather>Yeah.
+
+1060
+00:53:17.829 --> 00:53:25.210
+<v Zack>What What are you most proud of?
+What are you most proud of when
+
+1061
+00:53:25.230 --> 00:53:27.998
+<v Zack>you look back on on your career or
+anything else that you'd want to
+
+1062
+00:53:27.998 --> 00:53:28.187
+<v Zack>share kind of in closing?
+or anything else that you'd want
+
+1063
+00:53:28.187 --> 00:53:34.453
+<v Zack>to share kind of in closing?
+I guess I'm most proud of what I
+
+1064
+00:53:34.614 --> 00:53:36.298
+<v Zack>the knowledge I've shared with
+people.
+
+1065
+00:53:36.298 --> 00:53:37.235
+<v Heather>That's people.
+
+1066
+00:53:37.235 --> 00:53:38.148
+<v Heather>That's really it's really
+
+1067
+00:53:38.208 --> 00:53:41.717
+<v Heather>important to me to teach other
+people what you know.
+
+1068
+00:53:41.782 --> 00:53:46.854
+<v Heather>I mean, and even if you only know
+10 percent more, it's OK, right,
+
+1069
+00:53:47.255 --> 00:53:48.218
+<v Heather>to teach other people.
+
+1070
+00:53:48.218 --> 00:53:48.258
+<v Heather>To teach other people.
+
+1071
+00:53:48.258 --> 00:53:48.288
+<v Heather>teach other people.
+
+1072
+00:53:48.288 --> 00:53:48.328
+<v Heather>To teach other people.
+
+1073
+00:53:49.081 --> 00:53:53.971
+<v Heather>And that's what I'm most proud
+that I was able to develop a
+
+1074
+00:53:54.011 --> 00:53:58.369
+<v Heather>career where I was able to do that
+and still have a successful
+
+1075
+00:53:58.450 --> 00:53:58.771
+<v Heather>career.
+
+1076
+00:53:58.920 --> 00:54:01.666
+<v Heather>Like, I'm glad I was able to give
+
+1077
+00:54:01.706 --> 00:54:05.620
+<v Heather>so much away, because when you
+look back over it, I think that's
+
+1078
+00:54:05.641 --> 00:54:08.951
+<v Heather>what gives you satisfaction is
+like, what did you do for other
+
+1079
+00:54:09.032 --> 00:54:12.091
+<v Heather>people?
+And and I think I've I've done
+
+1080
+00:54:12.131 --> 00:54:12.231
+<v Heather>that.
+
+1081
+00:54:12.260 --> 00:54:13.584
+<v Heather>I've certainly given away a lot of
+
+1082
+00:54:13.684 --> 00:54:16.613
+<v Heather>books and videos and all the
+knowledge that I could.
+
+1083
+00:54:18.388 --> 00:54:18.891
+<v Zack>Absolutely.
+
+1084
+00:54:20.105 --> 00:54:22.032
+<v Zack>Anything else before we wrap?
+
+1085
+00:54:22.784 --> 00:54:23.709
+<v Heather>No, that's it.
+
+1086
+00:54:23.800 --> 00:54:26.228
+<v Heather>I mean, it's been it's been really
+
+1087
+00:54:26.368 --> 00:54:27.993
+<v Heather>fun talking about this.
+
+1088
+00:54:29.323 --> 00:54:33.152
+<v Heather>I don't get asked to talk about
+
+1089
+00:54:33.232 --> 00:54:34.395
+<v Heather>myself that much.
+
+1090
+00:54:34.941 --> 00:54:37.830
+<v Heather>So, of course, everyone loves
+
+1091
+00:54:37.910 --> 00:54:39.034
+<v Heather>talking about themselves.
+
+1092
+00:54:40.082 --> 00:54:42.848
+<v Heather>But it was fun to look back over
+
+1093
+00:54:43.469 --> 00:54:47.002
+<v Heather>over the whole thing and, you
+know, try to figure out what the
+
+1094
+00:54:47.062 --> 00:54:47.988
+<v Heather>story arc is.
+
+1095
+00:54:48.905 --> 00:54:49.347
+<v Zack>Absolutely.
+
+1096
+00:54:49.660 --> 00:54:52.612
+<v Zack>Well, Heather, absolute pleasure
+and honor.
+
+1097
+00:54:52.820 --> 00:54:57.093
+<v Zack>And thank you for your time and
+contributing your story.
+
+1098
+00:54:57.600 --> 00:55:00.250
+<v Heather>Well, thanks for talking to me
+today.
+
+1099
+00:55:00.742 --> 00:55:01.045
+<v Heather>Absolutely.
+

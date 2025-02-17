@@ -29,3 +29,12 @@ export function debounce<T extends (...args: any[]) => any>(
 
   return debounced as T & { cancel: () => void };
 }
+
+export function getVideoId(urlId: string): string {
+  const idMap: Record<string, string> = {
+    'deborah-goodkin': 'deb-goodkin',
+    // Add more mappings as needed
+  };
+  
+  return idMap[urlId] || urlId;
+}

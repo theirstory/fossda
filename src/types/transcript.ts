@@ -7,17 +7,14 @@ export interface TranscriptSegment {
 export interface VideoData {
   id: string;
   title: string;
-  transcript: TranscriptSegment[];
+  duration: string;
+  thumbnail: string;
+  summary: string;
+  sentence: string;
+  transcript?: TranscriptSegment[];
   insights?: {
-    entities: {
-      name: string;
-      type: string;
-      occurrences: number[];
-    }[];
-    topics: {
-      name: string;
-      timestamps: number[];
-    }[];
+    entities: Entity[];
+    topics: Topic[];
   };
 }
 
