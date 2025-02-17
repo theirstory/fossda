@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     // Create the video asset
     const asset = await muxClient.video.assets.create({
       input: file,
-      playback_policy: 'public',
+      playback_policy: ['public'],
       mp4_support: 'standard'
     });
 
