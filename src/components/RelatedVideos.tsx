@@ -6,8 +6,18 @@ interface RelatedVideosProps {
 }
 
 export default function RelatedVideos({ currentVideoId }: RelatedVideosProps) {
-  // Filter out the current video and convert to array
-  const relatedVideos = Object.values(videoData).filter(video => video.id !== currentVideoId);
+  // Get all videos except the current one
+  const otherVideos = Object.values(videoData).filter(video => video.id !== currentVideoId);
+  
+  // Separate intro video from other videos
+  const introVideo = otherVideos.find(video => video.id === "introduction-to-fossda");
+  const mainVideos = otherVideos.filter(video => video.id !== "introduction-to-fossda");
+  
+  // Combine arrays with intro at the end
+  const relatedVideos = [...mainVideos];
+  if (introVideo && currentVideoId !== "introduction-to-fossda") {
+    relatedVideos.push(introVideo);
+  }
 
   return (
     <div className="h-full overflow-y-auto">

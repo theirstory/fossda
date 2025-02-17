@@ -12,7 +12,8 @@ export default function Home() {
   ];
 
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 h-screen flex flex-col">
+      {/* Header Section */}
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-bold mb-2">Free and Open Source Stories Digital Archive</h1>
@@ -32,8 +33,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Two-column layout for videos */}
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6">
+      {/* Videos Section - with scrollable Featured Stories */}
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6 flex-1 min-h-0">
         {/* Hero Video */}
         <div>
           <h2 className="text-2xl font-semibold mb-4">Introduction to FOSSDA</h2>
@@ -45,19 +46,21 @@ export default function Home() {
           />
         </div>
 
-        {/* Featured Stories Column */}
-        <div>
+        {/* Featured Stories Column - Scrollable */}
+        <div className="flex flex-col min-h-0">
           <h2 className="text-2xl font-semibold mb-4">Featured Stories</h2>
-          <div className="space-y-3">
-            {featuredVideos.map((video) => (
-              <VideoCard
-                key={video.id}
-                {...video}
-                description={video.sentence}
-                className="h-auto"
-                isCompact
-              />
-            ))}
+          <div className="overflow-y-auto flex-1">
+            <div className="space-y-3 pr-2">
+              {featuredVideos.map((video) => (
+                <VideoCard
+                  key={video.id}
+                  {...video}
+                  description={video.sentence}
+                  className="h-auto"
+                  isCompact
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
