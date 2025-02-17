@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import VideoCard from "@/components/VideoCard";
 import { ChevronRight } from "lucide-react";
 import { videoData } from "@/data/videos";
+import { Metadata } from "next";
 
 export default function Home() {
   const heroVideo = videoData["introduction-to-fossda"];
@@ -66,4 +67,9 @@ export default function Home() {
       </div>
     </main>
   );
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'Free Open Source Stories Digital Archive',
+  description: 'A digital archive of stories from the free and open source software community',
+}; 

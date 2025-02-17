@@ -2,6 +2,7 @@ import VideoSection from "@/components/VideoSection";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { videoData } from "@/data/videos"; // Fixed import path
+import { Metadata } from 'next';
 
 export default async function HeatherMeekerPage() {
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', 'heather-meeker.html');
@@ -21,4 +22,9 @@ export default async function HeatherMeekerPage() {
       />
     </main>
   );
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'Heather Meeker | Free Open Source Stories Digital Archive',
+  description: 'Interview with Heather Meeker about open source licensing and community',
+}; 

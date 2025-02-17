@@ -7,6 +7,7 @@ import path from 'path';
 import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { getVideoId } from "@/lib/utils";
+import { Metadata } from 'next';
 
 const PLAYBACK_IDS: Record<string, string> = {
   'introduction-to-fossda': process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID!,
@@ -14,6 +15,19 @@ const PLAYBACK_IDS: Record<string, string> = {
   'heather-meeker': 'BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg3KI7irM',
   'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ'
 };
+
+type Props = {
+  params: { id: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const video = videoData[params.id];
+  
+  return {
+    title: `${video.title} | Free Open Source Stories Digital Archive`,
+    description: video.description || video.sentence,
+  };
+}
 
 export default async function VideoPage({ params }: { params: { id: string } }) {
   const videoId = params.id;

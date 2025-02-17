@@ -2,6 +2,7 @@ import VideoSection from "@/components/VideoSection";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { videoData } from "@/data/videos";
+import { Metadata } from 'next';
 
 export default async function DebGoodkinPage() {
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', 'deb-goodkin.html');
@@ -13,7 +14,7 @@ export default async function DebGoodkinPage() {
       <VideoSection
         videoId="deb-goodkin"
         transcriptHtml={transcriptHtml}
-        playbackId="FjnuVlu9beaFgCNI01Bo3mkaaS89DRXWulNlcT57e8z8"
+        playbackId="VwS00Yq2pI1RKqBxvhI8H5RXFUVBxokM"
         currentVideo={{
           ...video,
           description: video.sentence
@@ -21,4 +22,9 @@ export default async function DebGoodkinPage() {
       />
     </main>
   );
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'Deb Goodkin | Free Open Source Stories Digital Archive',
+  description: 'Interview with Deb Goodkin from the FreeBSD Foundation',
+}; 

@@ -2,6 +2,7 @@ import VideoSection from "@/components/VideoSection";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { videoData } from "@/data/videos";
+import { Metadata } from 'next';
 
 export default async function BrucePerensPage() {
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', 'bruce-perens.html');
@@ -21,4 +22,9 @@ export default async function BrucePerensPage() {
       />
     </main>
   );
-} 
+}
+
+export const metadata: Metadata = {
+  title: 'Bruce Perens | Free Open Source Stories Digital Archive',
+  description: 'Interview with Bruce Perens about open source software and its history',
+}; 
