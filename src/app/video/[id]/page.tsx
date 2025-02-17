@@ -6,7 +6,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from "react";
 import { videoData } from "@/data/videos";
-import { getVideoId } from "@/lib/utils";
 import { Metadata } from 'next';
 
 const PLAYBACK_IDS: Record<string, string> = {

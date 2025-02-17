@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
-import MuxPlayer, { MuxPlayerProps, MuxPlayerElement } from '@mux/mux-player-react';
+import MuxPlayer, { type MuxPlayerRefAttributes } from '@mux/mux-player-react';
 import { ChapterMetadata } from "@/types/transcript";
 
 interface VideoPlayerProps {
@@ -12,15 +12,15 @@ interface VideoPlayerProps {
   thumbnail: string;
 }
 
-const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
+const VideoPlayer = forwardRef<MuxPlayerRefAttributes, VideoPlayerProps>(
   ({ playbackId, onPlayStateChange, isPlaying, chapters, thumbnail }, ref) => {
-    const videoRef = useRef<MuxPlayerElement>(null);
+    const playerRef = useRef<MuxPlayerRefAttributes>(null);
     const [mounted, setMounted] = useState(false);
 
     // Add error handling for HLS
     useEffect(() => {
-      if (mounted && videoRef.current) {
-        const player = videoRef.current;
+      if (mounted && playerRef.current) {
+        const player = playerRef.current;
         
         // Suppress HLS errors
         const originalError = console.error;
@@ -39,18 +39,14 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
 
     // Expose the video element methods
     useImperativeHandle(ref, () => ({
-      ...videoRef.current!,
-      currentTime: videoRef.current?.currentTime ?? 0,
-      duration: videoRef.current?.duration ?? 0,
-      play: async () => {
-        if (videoRef.current) {
-          return videoRef.current.play();
-        }
-        return Promise.resolve();
+      play: () => playerRef.current?.play(),
+      pause: () => playerRef.current?.pause(),
+      get currentTime() {
+        return playerRef.current?.currentTime || 0;
       },
-      pause: () => {
-        if (videoRef.current) {
-          videoRef.current.pause();
+      set currentTime(value: number) {
+        if (playerRef.current) {
+          playerRef.current.currentTime = value;
         }
       }
     }));
@@ -61,13 +57,13 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
 
     // Add chapters when the player mounts
     useEffect(() => {
-      if (mounted && videoRef.current && 'addChapters' in videoRef.current) {
+      if (mounted && playerRef.current && 'addChapters' in playerRef.current) {
         const muxChapters = chapters.map(chapter => ({
           startTime: chapter.time.start,
           value: chapter.title
         }));
         
-        (videoRef.current as any).addChapters(muxChapters);
+        (playerRef.current as any).addChapters(muxChapters);
       }
     }, [mounted, chapters]);
 
@@ -83,7 +79,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
       <div className="relative bg-black rounded-lg overflow-hidden">
         <MuxPlayer
           id="hyperplayer"
-          ref={videoRef}
+          ref={playerRef}
           streamType="on-demand"
           playbackId={playbackId}
           metadata={{

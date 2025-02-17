@@ -1,27 +1,27 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { cn } from "@/lib/utils";
+import { useEffect, useRef, useState } from 'react';
+import { ChapterMetadata } from '@/types/transcript';
+import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
-import { parseTranscriptChapters, TranscriptChapter, addTimecodesToTranscript } from "@/lib/transcript";
-import { ChapterMetadata } from "@/types/transcript";
+import { parseTranscriptChapters, addTimecodesToTranscript } from "@/lib/transcript";
 import { MuxPlayerElement } from '@mux/mux-player-react';
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
-  onTimeClick: (time: number) => void;
-  isPlaying: boolean;
-  videoRef: React.RefObject<MuxPlayerElement | null>;
   chapters: ChapterMetadata[];
+  videoRef: React.RefObject<any>;
+  isPlaying: boolean;
+  onTimeClick: (time: number) => void;
 }
 
 export default function InteractiveTranscript({
   transcriptHtml,
-  onTimeClick,
-  isPlaying,
+  chapters,
   videoRef,
-  chapters
+  isPlaying,
+  onTimeClick
 }: InteractiveTranscriptProps) {
   const transcriptRef = useRef<HTMLDivElement>(null);
   const transcriptContainerRef = useRef<HTMLDivElement>(null);

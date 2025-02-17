@@ -1,5 +1,6 @@
 interface InsightsPanelProps {
-  onEntityClick: (time: number) => void;
+  entities: Entity[];
+  topics: Topic[];
 }
 
 export default function InsightsPanel({ onEntityClick }: InsightsPanelProps) {
