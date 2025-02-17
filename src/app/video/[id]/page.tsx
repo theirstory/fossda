@@ -8,9 +8,9 @@ import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { Metadata } from 'next';
 
-type Props = {
-  params: { id: string }
-  // searchParams: { [key: string]: string | string[] | undefined }
+interface Props {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 const PLAYBACK_IDS: Record<string, string> = {
@@ -21,7 +21,8 @@ const PLAYBACK_IDS: Record<string, string> = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const video = videoData[params.id];
+  const resolvedParams = await params;
+  const video = videoData[resolvedParams.id];
   
   return {
     title: `${video.title} | Free Open Source Stories Digital Archive`,
@@ -29,15 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function VideoPage({ 
-  params
-  // searchParams,
-}: Props) {
-  const videoId = params.id;
+export default async function VideoPage({ params }: Props) {
+  const resolvedParams = await params;
+  const videoId = resolvedParams.id;
   const currentVideo = videoData[videoId];
   
   if (!currentVideo) {
-    throw new Error(`Video ${params.id} not found`);
+    throw new Error(`Video ${videoId} not found`);
   }
 
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${videoId}.html`);
@@ -69,7 +68,7 @@ export default async function VideoPage({
             playbackId={PLAYBACK_IDS[videoId]}
             currentVideo={{
               ...currentVideo,
-              description: currentVideo.sentence // Map sentence to description
+              description: currentVideo.sentence
             }}
           />
         </Suspense>
