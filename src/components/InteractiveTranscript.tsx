@@ -24,6 +24,7 @@ export default function InteractiveTranscript({
   chapters
 }: InteractiveTranscriptProps) {
   const transcriptRef = useRef<HTMLDivElement>(null);
+  const transcriptContainerRef = useRef<HTMLDivElement>(null);
   const scriptLoaded = useScripts();
   const [processedHtml, setProcessedHtml] = useState(transcriptHtml);
   const [mounted, setMounted] = useState(false);
@@ -73,6 +74,57 @@ export default function InteractiveTranscript({
     }
   }, [scriptLoaded, videoRef, mounted, isPlaying]);
 
+  // Add timeupdate listener to scroll transcript
+  useEffect(() => {
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (videoElement && transcriptRef.current && transcriptContainerRef.current) {
+      const handleTimeUpdate = () => {
+        const currentTime = videoElement.currentTime * 1000; // Convert to ms
+        const spans = transcriptRef.current?.querySelectorAll('span[data-m]');
+        
+        // Find the current or next span
+        let currentSpan: Element | null = null;
+        for (const span of spans) {
+          const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+          if (spanTime <= currentTime) {
+            currentSpan = span;
+          } else {
+            break;
+          }
+        }
+        
+        if (currentSpan && transcriptContainerRef.current) {
+          const container = transcriptContainerRef.current;
+          const containerRect = container.getBoundingClientRect();
+          const spanRect = (currentSpan as HTMLElement).getBoundingClientRect();
+          
+          // Calculate the ideal position (2/3 from the top)
+          const targetPosition = containerRect.height * 0.33;
+          const currentOffset = spanRect.top - containerRect.top;
+          const scrollAdjustment = currentOffset - targetPosition;
+          
+          // Smooth scroll to position
+          container.scrollTo({
+            top: container.scrollTop + scrollAdjustment,
+            behavior: 'smooth'
+          });
+
+          // Highlight current span
+          spans.forEach(span => span.classList.remove('bg-yellow-100'));
+          currentSpan.classList.add('bg-yellow-100');
+        }
+      };
+
+      videoElement.addEventListener('timeupdate', handleTimeUpdate);
+      videoElement.addEventListener('seeking', handleTimeUpdate);
+      
+      return () => {
+        videoElement.removeEventListener('timeupdate', handleTimeUpdate);
+        videoElement.removeEventListener('seeking', handleTimeUpdate);
+      };
+    }
+  }, [mounted]);
+
   // Handle chapter navigation
   const handleChapterClick = (time: number) => {
     if (videoRef.current) {
@@ -111,7 +163,10 @@ export default function InteractiveTranscript({
           ))}
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4">
+        <div 
+          ref={transcriptContainerRef}
+          className="flex-1 overflow-y-auto p-4"
+        >
           <div 
             id="hypertranscript"
             ref={transcriptRef}

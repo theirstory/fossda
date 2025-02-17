@@ -76,7 +76,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           accentColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters
-          thumbnailTime={0}
+          poster="/thumbnails/fossda-intro.png"
           storyboard={{
             src: `https://image.mux.com/${playbackId}/storyboard.vtt`,
             type: 'text/vtt'
