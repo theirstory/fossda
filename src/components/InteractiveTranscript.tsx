@@ -35,9 +35,9 @@ export default function InteractiveTranscript({
 
   useEffect(() => {
     if (mounted && typeof window !== 'undefined') {
-      setProcessedHtml(addTimecodesToTranscript(transcriptHtml));
+      setProcessedHtml(addTimecodesToTranscript(transcriptHtml, chapters));
     }
-  }, [transcriptHtml, mounted]);
+  }, [transcriptHtml, chapters, mounted]);
 
   // Initialize HyperaudioLite
   useEffect(() => {
