@@ -28,7 +28,6 @@ export async function POST(request: Request) {
       text_type: 'subtitles',
       name: 'English',
       closed_captions: true,
-      status: 'ready',
       passthrough: 'English subtitles',
       url: srtContent
     });
