@@ -8,9 +8,9 @@ import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { Metadata } from 'next';
 
-interface PageProps {
-  params: { id: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
 const PLAYBACK_IDS: Record<string, string> = {
@@ -20,7 +20,7 @@ const PLAYBACK_IDS: Record<string, string> = {
   'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ'
 };
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const video = videoData[params.id];
   
   return {
@@ -29,7 +29,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default async function VideoPage({ params }: PageProps) {
+export default async function VideoPage({ 
+  params,
+  searchParams,
+}: Props) {
   const videoId = params.id;
   const currentVideo = videoData[videoId];
   
