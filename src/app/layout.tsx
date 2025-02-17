@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tell Inclusive Stories",
-  description: "Interactive video archive of personal stories and experiences",
+  title: 'Free Open Source Stories Digital Archive',
+  description: 'A digital archive of stories from the free and open source software community',
 };
 
 export default function RootLayout({
