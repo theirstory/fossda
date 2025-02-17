@@ -13,15 +13,15 @@ interface InteractiveTranscriptProps {
   chapters: ChapterMetadata[];
   videoRef: React.RefObject<MuxPlayerRefAttributes>;
   isPlaying: boolean;
-  onTimeClick: (time: number) => void;
+  // onTimeClick: (time: number) => void;
 }
 
 export default function InteractiveTranscript({
   transcriptHtml,
   chapters,
   videoRef,
-  isPlaying,
-  onTimeClick
+  isPlaying
+  // onTimeClick
 }: InteractiveTranscriptProps) {
   const transcriptRef = useRef<HTMLDivElement>(null);
   const transcriptContainerRef = useRef<HTMLDivElement>(null);
@@ -201,8 +201,8 @@ export default function InteractiveTranscript({
   );
 }
 
-function formatTime(seconds: number) {
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = Math.floor(seconds % 60);
-  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-} 
+// function formatTime(seconds: number) {
+//   const minutes = Math.floor(seconds / 60);
+//   const remainingSeconds = Math.floor(seconds % 60);
+//   return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+// } 

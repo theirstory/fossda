@@ -1,6 +1,11 @@
 import { type ClassValue, clsx } from "clsx"
 import { twMerge } from "tailwind-merge"
 
+/**
+ * Combines class names using clsx and tailwind-merge
+ * @param inputs - Class names to combine
+ * @returns Combined and merged class names
+ */
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
@@ -30,11 +35,12 @@ export function debounce<T extends (...args: any[]) => any>(
   return debounced as T & { cancel: () => void };
 }
 
-export function getVideoId(urlId: string): string {
-  const idMap: Record<string, string> = {
-    'deborah-goodkin': 'deb-goodkin',
-    // Add more mappings as needed
-  };
-  
-  return idMap[urlId] || urlId;
+/**
+ * Gets the video ID from a URL or path
+ * @param path - URL or path containing video ID
+ * @returns Extracted video ID
+ */
+export function getVideoId(path: string): string {
+  const parts = path.split('/');
+  return parts[parts.length - 1];
 }

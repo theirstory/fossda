@@ -9,7 +9,7 @@ const muxClient = new Mux({
 
 export async function POST(request: Request) {
   try {
-    const { title, file } = await request.json();
+    const { file } = await request.json();
 
     // Create the video asset
     const asset = await muxClient.video.assets.create({

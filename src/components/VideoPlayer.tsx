@@ -1,7 +1,7 @@
 "use client";
 
 import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
-import MuxPlayer, { type MuxPlayerRefAttributes } from '@mux/mux-player-react';
+import MuxPlayer, { MuxPlayerProps, MuxPlayerElement } from '@mux/mux-player-react';
 import { ChapterMetadata } from "@/types/transcript";
 
 interface VideoPlayerProps {
@@ -11,9 +11,14 @@ interface VideoPlayerProps {
   thumbnail: string;
 }
 
-const VideoPlayer = forwardRef<MuxPlayerRefAttributes, VideoPlayerProps>(
+interface MuxChapter {
+  startTime: number;
+  value: string;
+}
+
+const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
   ({ playbackId, onPlayStateChange, chapters, thumbnail }, ref) => {
-    const playerRef = useRef<MuxPlayerRefAttributes>(null);
+    const playerRef = useRef<MuxPlayerElement>(null);
     const [mounted, setMounted] = useState(false);
 
     // Add error handling for HLS
@@ -55,12 +60,13 @@ const VideoPlayer = forwardRef<MuxPlayerRefAttributes, VideoPlayerProps>(
     // Add chapters when the player mounts
     useEffect(() => {
       if (mounted && playerRef.current && 'addChapters' in playerRef.current) {
-        const muxChapters = chapters.map(chapter => ({
+        const muxChapters: MuxChapter[] = chapters.map(chapter => ({
           startTime: chapter.time.start,
           value: chapter.title
         }));
         
-        (playerRef.current as any).addChapters(muxChapters);
+        const player = playerRef.current as MuxPlayerElement & { addChapters: (chapters: MuxChapter[]) => void };
+        player.addChapters(muxChapters);
       }
     }, [mounted, chapters]);
 
@@ -85,7 +91,7 @@ const VideoPlayer = forwardRef<MuxPlayerRefAttributes, VideoPlayerProps>(
           }}
           onPlay={() => onPlayStateChange(true)}
           onPause={() => onPlayStateChange(false)}
-          accentColor="#eaaa11"
+          themeColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters
           poster={thumbnail}

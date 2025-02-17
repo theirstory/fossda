@@ -4,11 +4,11 @@ import { useState, useRef } from "react";
 import VideoPlayer from "./VideoPlayer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import InteractiveTranscript from "./InteractiveTranscript";
-import InsightsPanel from "./InsightsPanel";
+// import InsightsPanel from "./InsightsPanel";
 import { chapterData } from '@/data/chapters';
-import { config } from '@/lib/config';
+// import { config } from '@/lib/config';
 import { MuxPlayerElement } from '@mux/mux-player-react';
-import { ChapterMetadata } from "@/types/transcript";
+// import { ChapterMetadata } from "@/types/transcript";
 import RelatedVideos from "./RelatedVideos";
 
 interface VideoSectionProps {
