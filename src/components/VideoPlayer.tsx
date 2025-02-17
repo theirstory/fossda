@@ -91,19 +91,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           }}
           onPlay={() => onPlayStateChange(true)}
           onPause={() => onPlayStateChange(false)}
-          theme={{
-            '--primary-color': '#eaaa11',
-            '--secondary-color': '#000000',
-            '--accent-color': '#eaaa11',
-            '--control-icons': '#eaaa11',
-            '--play-button-hover': '#eaaa11',
-            '--play-button': '#eaaa11',
-            '--progress-bar': '#eaaa11',
-            '--progress-bar-played': '#eaaa11',
-            '--progress-bar-buffered': '#eaaa11',
-            '--volume-slider': '#eaaa11',
-            '--volume-slider-thumb': '#eaaa11',
-          }}
+          accentColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters
           poster="/thumbnails/fossda-intro.png"
