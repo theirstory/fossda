@@ -57,7 +57,6 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
           ref={videoRef}
           playbackId={playbackId}
           onPlayStateChange={handlePlayStateChange}
-          isPlaying={isPlaying}
           chapters={videoChapters.metadata}
           thumbnail={currentVideo.thumbnail}
         />
@@ -81,7 +80,6 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
           <TabsContent value="transcript" className="h-[calc(100vh-200px)]">
             <InteractiveTranscript
               transcriptHtml={transcriptHtml}
-              onTimeClick={handleTimeUpdate}
               isPlaying={isPlaying}
               videoRef={videoRef}
               chapters={videoChapters.metadata}

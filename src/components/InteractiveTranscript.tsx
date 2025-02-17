@@ -6,12 +6,12 @@ import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
 import { addTimecodesToTranscript } from "@/lib/transcript";
-import type { MuxPlayerRefAttributes } from '@mux/mux-player-react';
+import { MuxPlayerElement } from '@mux/mux-player-react';
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
   chapters: ChapterMetadata[];
-  videoRef: React.RefObject<MuxPlayerRefAttributes>;
+  videoRef: React.RefObject<MuxPlayerElement>;
   isPlaying: boolean;
   // onTimeClick: (time: number) => void;
 }
