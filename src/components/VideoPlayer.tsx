@@ -110,10 +110,6 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           defaultShowCaptions
           defaultShowChapters
           poster={thumbnail}
-          storyboard={{
-            src: `https://image.mux.com/${playbackId}/storyboard.vtt`,
-            type: 'text/vtt'
-          }}
         />
       </div>
     );
