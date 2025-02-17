@@ -16,7 +16,7 @@ const PLAYBACK_IDS: Record<string, string> = {
 };
 
 export default async function VideoPage({ params }: { params: { id: string } }) {
-  const videoId = getVideoId(params.id);
+  const videoId = params.id;
   const currentVideo = videoData[videoId];
   
   if (!currentVideo) {
@@ -44,13 +44,16 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
         </div>
       </header>
 
-      <main className="container mx-auto p-4">
-        <Suspense fallback={<div>Loading video...</div>}>
-          <VideoSection 
+      <main className="container mx-auto px-4 py-8">
+        <Suspense fallback={<div>Loading...</div>}>
+          <VideoSection
             videoId={videoId}
             transcriptHtml={transcriptHtml}
             playbackId={PLAYBACK_IDS[videoId]}
-            currentVideo={currentVideo}
+            currentVideo={{
+              ...currentVideo,
+              description: currentVideo.sentence // Map sentence to description
+            }}
           />
         </Suspense>
       </main>
