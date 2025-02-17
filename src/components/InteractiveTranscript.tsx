@@ -5,13 +5,13 @@ import { ChapterMetadata } from '@/types/transcript';
 import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
-import { parseTranscriptChapters, addTimecodesToTranscript } from "@/lib/transcript";
-import { MuxPlayerElement } from '@mux/mux-player-react';
+import { addTimecodesToTranscript } from "@/lib/transcript";
+import type { MuxPlayerRefAttributes } from '@mux/mux-player-react';
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
   chapters: ChapterMetadata[];
-  videoRef: React.RefObject<any>;
+  videoRef: React.RefObject<MuxPlayerRefAttributes>;
   isPlaying: boolean;
   onTimeClick: (time: number) => void;
 }

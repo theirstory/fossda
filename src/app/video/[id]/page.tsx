@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   return {
     title: `${video.title} | Free Open Source Stories Digital Archive`,
-    description: video.description || video.sentence,
+    description: video.sentence,
   };
 }
 

@@ -7,21 +7,18 @@ import { ChapterMetadata } from "@/types/transcript";
 interface VideoPlayerProps {
   playbackId: string;
   onPlayStateChange: (playing: boolean) => void;
-  isPlaying: boolean;
   chapters: ChapterMetadata[];
   thumbnail: string;
 }
 
 const VideoPlayer = forwardRef<MuxPlayerRefAttributes, VideoPlayerProps>(
-  ({ playbackId, onPlayStateChange, isPlaying, chapters, thumbnail }, ref) => {
+  ({ playbackId, onPlayStateChange, chapters, thumbnail }, ref) => {
     const playerRef = useRef<MuxPlayerRefAttributes>(null);
     const [mounted, setMounted] = useState(false);
 
     // Add error handling for HLS
     useEffect(() => {
       if (mounted && playerRef.current) {
-        const player = playerRef.current;
-        
         // Suppress HLS errors
         const originalError = console.error;
         console.error = (...args) => {
