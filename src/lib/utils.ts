@@ -47,3 +47,14 @@ export function getVideoId(path: string): string {
   const parts = path.split('/');
   return parts[parts.length - 1];
 }
+
+/**
+ * Formats a duration in seconds to mm:ss format
+ * @param seconds - Duration in seconds
+ * @returns Formatted duration
+ */
+export function formatDuration(seconds: number): string {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
