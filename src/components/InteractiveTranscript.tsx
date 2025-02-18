@@ -173,23 +173,32 @@ export default function InteractiveTranscript({
 
   // Initialize click handlers
   useEffect(() => {
-    if (mounted && transcriptRef.current) {
-      // Add click handler for chapter headings
-      const chapterHeadings = transcriptRef.current.querySelectorAll('[data-chapter-time]');
-      chapterHeadings.forEach(heading => {
-        heading.addEventListener('click', () => {
-          const time = parseInt(heading.getAttribute('data-chapter-time') || '0', 10) / 1000;
-          const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-          if (videoElement) {
-            videoElement.currentTime = time;
-            if (isPlaying) {
-              videoElement.play();
-            }
-          }
-        });
-      });
+    if (!mounted || !transcriptRef.current || !videoRef.current) {
+      return undefined;
     }
-  }, [mounted, isPlaying]);
+
+    const handleSpanClick = (span: HTMLElement) => {
+      const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
+      if (videoRef.current) {
+        videoRef.current.currentTime = time;
+        if (isPlaying) {
+          videoRef.current.play().catch(console.error);
+        }
+        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    };
+
+    const spans = Array.from(transcriptRef.current.querySelectorAll<HTMLElement>('span[data-m]'));
+    spans.forEach(span => {
+      span.addEventListener('click', () => handleSpanClick(span));
+    });
+
+    return () => {
+      spans.forEach(span => {
+        span.removeEventListener('click', () => handleSpanClick(span));
+      });
+    };
+  }, [mounted, isPlaying, videoRef]);
 
   if (!mounted) {
     return <div className="h-[calc(100vh-200px)] bg-gray-100 animate-pulse" />;

@@ -50,6 +50,12 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     setIsPlaying(playing);
   };
 
+  console.log('VideoSection playbackId:', {
+    id: playbackId,
+    length: playbackId.length,
+    chars: Array.from(playbackId).map(c => c.charCodeAt(0))
+  });
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="grid grid-rows-[auto_1fr] gap-6 h-[calc(100vh-200px)]">

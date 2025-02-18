@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import VideoCard from "@/components/VideoCard";
-import { ChevronRight } from "lucide-react";
+import ThemeExplorer from "@/components/ThemeExplorer";
 import { videoData } from "@/data/videos";
 import { Metadata } from "next";
 
@@ -13,56 +12,54 @@ export default function Home() {
   ];
 
   return (
-    <main className="container mx-auto px-4 py-8 h-screen flex flex-col">
-      {/* Header Section */}
-      <div className="flex items-center justify-between mb-8">
-        <div>
-          <h1 className="text-3xl font-bold mb-2">Free and Open Source Stories Digital Archive</h1>
-          <p className="text-gray-600 max-w-3xl mb-8">
-            Open source has transformed our world, not through governments or corporations, but through dedicated individuals 
-            who envisioned a better way to share software. FOSSDA captures the personal stories of those who built this 
-            movement, preserving their experiences for future generations who will carry open source forward into the 21st century.
-          </p>
-        </div>
-        <div className="flex items-center gap-4">
-          <Button variant="outline">Stories</Button>
-          <Button variant="outline">Clips</Button>
-          <Button variant="outline">Insights</Button>
-          <Button variant="outline">
-            <ChevronRight className="h-4 w-4" />
-          </Button>
-        </div>
+    <main className="container mx-auto px-4 py-6">
+      {/* Header */}
+      <div className="mb-6">
+        <h1 className="text-2xl font-bold mb-2">
+          Free and Open Source Stories Digital Archive
+        </h1>
+        <p className="text-gray-600 max-w-3xl text-sm">
+          Open source has transformed our world, not through governments or corporations, but through dedicated individuals 
+          who envisioned a better way to share software. FOSSDA captures the personal stories of those who built this 
+          movement, preserving their experiences for future generations who will carry open source forward into the 21st century.
+        </p>
       </div>
 
-      {/* Videos Section - with scrollable Featured Stories */}
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-6 flex-1 min-h-0">
-        {/* Hero Video */}
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Introduction to FOSSDA</h2>
-          <VideoCard
-            {...heroVideo}
-            description={heroVideo.sentence}
-            className="aspect-video"
-            isHero
-          />
-        </div>
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr,320px] gap-6">
+        {/* Left Column - Videos */}
+        <div className="space-y-6">
+          {/* Hero Video */}
+          <div className="max-w-3xl">
+            <h2 className="text-lg font-semibold mb-3">Introduction to FOSSDA</h2>
+            <VideoCard
+              {...heroVideo}
+              description={heroVideo.sentence}
+              className="aspect-video"
+              isHero
+            />
+          </div>
 
-        {/* Featured Stories Column - Scrollable */}
-        <div className="flex flex-col min-h-0">
-          <h2 className="text-2xl font-semibold mb-4">Featured Stories</h2>
-          <div className="overflow-y-auto flex-1">
-            <div className="space-y-3 pr-2">
+          {/* Featured Stories */}
+          <div>
+            <h2 className="text-lg font-semibold mb-3">Featured Stories</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {featuredVideos.map((video) => (
                 <VideoCard
                   key={video.id}
                   {...video}
                   description={video.sentence}
-                  className="h-auto"
-                  isCompact
+                  className="h-full"
                 />
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Right Column - Theme Explorer */}
+        <div className="bg-white rounded-lg shadow-sm p-4 h-[calc(100vh-160px)] sticky top-4">
+          <h2 className="text-lg font-semibold mb-3">Explore Themes & Connections</h2>
+          <ThemeExplorer />
         </div>
       </div>
     </main>

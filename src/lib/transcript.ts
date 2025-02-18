@@ -139,4 +139,59 @@ export function parseTranscriptChapters(html: string): TranscriptChapter[] {
   });
   
   return chapters;
+}
+
+interface TimeRange {
+  start: number;
+  end: number;
+}
+
+export function findQuoteTimeRange(html: string, quote: string): TimeRange | null {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  
+  // Clean up the quote and transcript text for comparison
+  const cleanQuote = quote.trim().toLowerCase().replace(/\s+/g, ' ');
+  
+  // Get all spans with timestamps
+  const spans = Array.from(doc.querySelectorAll('span[data-m]'));
+  
+  let matchStart = -1;
+  let matchEnd = -1;
+  let currentText = '';
+  
+  // Build up text and look for match
+  for (let i = 0; i < spans.length; i++) {
+    const span = spans[i];
+    const text = span.textContent?.trim() || '';
+    if (!text) continue;
+    
+    currentText += ' ' + text;
+    currentText = currentText.toLowerCase().trim();
+    
+    if (matchStart === -1 && currentText.includes(cleanQuote.slice(0, 30))) {
+      matchStart = parseInt(span.getAttribute('data-m') || '0', 10);
+    }
+    
+    if (matchStart !== -1 && currentText.includes(cleanQuote.slice(-30))) {
+      matchEnd = parseInt(span.getAttribute('data-m') || '0', 10);
+      // Add approximate duration of last span
+      if (span.getAttribute('data-d')) {
+        matchEnd += parseInt(span.getAttribute('data-d') || '0', 10);
+      } else {
+        matchEnd += 2000; // Add 2 seconds as fallback
+      }
+      break;
+    }
+  }
+  
+  if (matchStart === -1 || matchEnd === -1) {
+    console.warn('Could not find exact match for quote:', cleanQuote);
+    return null;
+  }
+  
+  return {
+    start: matchStart / 1000, // Convert to seconds
+    end: matchEnd / 1000
+  };
 } 

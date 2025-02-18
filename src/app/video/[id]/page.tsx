@@ -1,12 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { ChevronLeft, Share2 } from "lucide-react";
-import Link from "next/link";
 import VideoSection from "@/components/VideoSection";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { Metadata } from 'next';
+import PageNavigation from '@/components/PageNavigation';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -16,7 +14,7 @@ interface Props {
 const PLAYBACK_IDS: Record<string, string> = {
   'introduction-to-fossda': 'Tj25JqqJzvm9yUVnHhkzh4SI4OpEsMDDEwn00nuaVCqo',
   'deb-goodkin': 'FjnuVlu9beaFgCNI01Bo3mkaaS89DRXWulNlcT57e8z8',
-  'heather-meeker': 'BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg8KI7irM',
+  'heather-meeker': 'BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg3KI7irM',
   'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ'
 };
 
@@ -45,18 +43,8 @@ export default async function VideoPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-white shadow">
-        <div className="container mx-auto p-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="text-gray-600 hover:text-gray-900">
-              <Button variant="ghost" size="icon">
-                <ChevronLeft className="h-5 w-5" />
-              </Button>
-            </Link>
-            <h1 className="text-xl font-semibold">{currentVideo.title}</h1>
-          </div>
-          <Button variant="ghost" size="icon">
-            <Share2 className="h-5 w-5" />
-          </Button>
+        <div className="container mx-auto p-4">
+          <PageNavigation />
         </div>
       </header>
 
