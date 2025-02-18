@@ -9,8 +9,10 @@ import PageNavigation from '@/components/PageNavigation';
 import React from 'react';
 import { iconMap } from '@/data/icons';
 
-interface Props {
-  params: { id: string };
+// Update Props to match Next.js PageProps
+type Props = {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 function formatDuration(duration: number): string {
@@ -25,8 +27,10 @@ async function getThemeData(id: string) {
   return { theme, themeClips };
 }
 
-export default async function ThemePage({ params: { id } }: Props) {
-  const { theme, themeClips } = await getThemeData(id);
+// Update the component signature to match Next.js types
+export default async function ThemePage(props: Props) {
+  const params = await props.params;
+  const { theme, themeClips } = await getThemeData(params.id);
 
   if (!theme) {
     return <div>Theme not found</div>;
@@ -104,11 +108,11 @@ export default async function ThemePage({ params: { id } }: Props) {
                         
                         <div className="flex items-center justify-between">
                           <div>
-                            {clip.themes.filter(t => t !== id).length > 0 && (
+                            {clip.themes.filter(t => t !== params.id).length > 0 && (
                               <div className="flex items-center gap-2">
                                 <span className="text-sm text-gray-500">Also found in:</span>
                                 <div className="flex gap-2">
-                                  {clip.themes.filter(t => t !== id).map(themeId => {
+                                  {clip.themes.filter(t => t !== params.id).map(themeId => {
                                     const relatedTheme = themes.find(t => t.id === themeId);
                                     return relatedTheme ? (
                                       <Link key={themeId} href={`/theme/${themeId}`}>
@@ -145,7 +149,7 @@ export default async function ThemePage({ params: { id } }: Props) {
         {/* Theme Explorer Sidebar */}
         <div className="bg-white rounded-lg shadow-sm p-4 h-[calc(100vh-160px)] sticky top-4">
           <h2 className="text-lg font-semibold mb-3">Explore Other Themes</h2>
-          <ThemeExplorer currentThemeId={id} />
+          <ThemeExplorer currentThemeId={params.id} />
         </div>
       </div>
     </main>
