@@ -1,1 +1,1 @@
-export type IconName = 'code' | 'users' | 'heart' | 'graduation-cap' | 'mountain' | 'code-2' | 'history'; 
+export type IconName = 'sparkles' | 'code' | 'users' | 'heart' | 'graduation-cap' | 'mountain' | 'code-2' | 'history'; 

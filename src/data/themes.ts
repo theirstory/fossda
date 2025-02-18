@@ -6,6 +6,7 @@ export interface Theme {
   description: string;
   iconName: IconName;
   color: string;
+  iconColor: string;
   question: string;
 }
 
@@ -14,8 +15,9 @@ export const themes: Theme[] = [
     id: 'exposure',
     title: 'Early Exposure',
     description: 'First encounters with computers and programming',
-    iconName: 'code', // Use string identifiers instead of components
+    iconName: 'sparkles',
     color: 'bg-blue-500',
+    iconColor: '#FFD700',
     question: 'How did you first get into computers, technology, or programming?'
   },
   {
@@ -24,6 +26,7 @@ export const themes: Theme[] = [
     description: 'Motivations and beliefs driving open source involvement',
     iconName: 'heart',
     color: 'bg-red-500',
+    iconColor: '#EF4444',
     question: 'What got you into open source specifically? What personal beliefs, values, or experiences have shaped who you are?'
   },
   {
@@ -32,6 +35,7 @@ export const themes: Theme[] = [
     description: 'Who influenced your journey?',
     iconName: 'graduation-cap',
     color: 'bg-yellow-500',
+    iconColor: '#F59E0B',
     question: 'Who were people, areas of study, or ideas that have influenced you?'
   },
   {
@@ -40,6 +44,7 @@ export const themes: Theme[] = [
     description: 'Overcoming obstacles in open source',
     iconName: 'mountain',
     color: 'bg-orange-500',
+    iconColor: '#78716C',
     question: 'What have been challenges you or the open source community have faced?'
   },
   {
@@ -48,6 +53,7 @@ export const themes: Theme[] = [
     description: 'Projects and contributions',
     iconName: 'code-2',
     color: 'bg-indigo-500',
+    iconColor: '#6366F1',
     question: 'What open source projects have you been involved with?'
   },
   {
@@ -56,6 +62,7 @@ export const themes: Theme[] = [
     description: 'Building and nurturing open source communities',
     iconName: 'users',
     color: 'bg-green-500',
+    iconColor: '#22C55E',
     question: 'What can you tell me about how people have come together as a community?'
   },
   {
@@ -64,6 +71,7 @@ export const themes: Theme[] = [
     description: 'How open source has changed over time',
     iconName: 'history',
     color: 'bg-purple-500',
+    iconColor: '#A855F7',
     question: 'How has open source changed over time?'
   }
 ]; 

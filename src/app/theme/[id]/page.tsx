@@ -44,11 +44,14 @@ export default async function ThemePage(props: Props) {
           <div className="space-y-6">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className={`p-3 rounded-full ${theme.color} text-white`}>
-                  {iconMap[theme.iconName] && React.createElement(iconMap[theme.iconName], { className: "h-5 w-5" })}
+                <div className="p-3 rounded-full flex items-center justify-center">
+                  {iconMap[theme.iconName] && React.createElement(iconMap[theme.iconName], { 
+                    className: "h-8 w-8",
+                    style: { color: theme.iconColor }
+                  })}
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold">{theme.title}</h1>
+                  <h1 className={`text-2xl font-bold ${theme.color.replace('bg-', 'text-')}`}>{theme.title}</h1>
                   <p className="text-gray-600">{theme.description}</p>
                 </div>
               </div>
