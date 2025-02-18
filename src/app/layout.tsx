@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from 'next/script';
 import { Suspense } from 'react';
+import MainNavigation from "@/components/MainNavigation";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} antialiased`} suppressHydrationWarning>
+        <MainNavigation />
         <Suspense fallback={null}>
           {children}
         </Suspense>

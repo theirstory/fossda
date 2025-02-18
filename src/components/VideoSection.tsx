@@ -58,7 +58,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div className="grid grid-rows-[auto_1fr] gap-6 h-[calc(100vh-200px)]">
+      <div className="grid grid-rows-[auto_1fr] gap-6">
         <VideoPlayer
           ref={videoRef}
           playbackId={playbackId}
@@ -67,11 +67,11 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
           thumbnail={currentVideo.thumbnail}
         />
 
-        <div className="bg-white rounded-lg shadow p-4">
+        <div className="bg-white rounded-lg shadow p-4 max-h-[300px]">
           <h2 className="text-lg font-semibold text-gray-900 mb-2">
             Summary
           </h2>
-          <div className="text-gray-700 leading-relaxed overflow-y-auto h-[calc(100%-2rem)]">
+          <div className="text-gray-700 leading-relaxed overflow-y-auto h-[calc(100%-2.5rem)]">
             {currentVideo.summary}
           </div>
         </div>
@@ -83,7 +83,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
             <TabsTrigger value="transcript">Transcription</TabsTrigger>
             <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
-          <TabsContent value="transcript" className="h-[calc(100vh-200px)]">
+          <TabsContent value="transcript" className="max-h-[600px] overflow-y-auto">
             <InteractiveTranscript
               transcriptHtml={transcriptHtml}
               isPlaying={isPlaying}
@@ -91,7 +91,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
               chapters={videoChapters.metadata}
             />
           </TabsContent>
-          <TabsContent value="related" className="h-[calc(100vh-200px)]">
+          <TabsContent value="related" className="max-h-[600px] overflow-y-auto">
             <RelatedVideos currentVideoId={currentVideo.id} />
           </TabsContent>
         </Tabs>

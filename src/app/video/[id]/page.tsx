@@ -4,7 +4,6 @@ import path from 'path';
 import { Suspense } from "react";
 import { videoData } from "@/data/videos";
 import { Metadata } from 'next';
-import PageNavigation from '@/components/PageNavigation';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -41,14 +40,8 @@ export default async function VideoPage({ params }: Props) {
   const transcriptHtml = await fs.readFile(transcriptPath, 'utf-8');
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <header className="bg-white shadow">
-        <div className="container mx-auto p-4">
-          <PageNavigation />
-        </div>
-      </header>
-
-      <main className="container mx-auto px-4 py-8">
+    <div className="h-[calc(100vh-64px)] overflow-hidden bg-gray-100">
+      <main className="container mx-auto px-4 py-6">
         <Suspense fallback={<div>Loading...</div>}>
           <VideoSection
             videoId={videoId}
