@@ -1,19 +1,19 @@
 import { clips } from "@/data/clips";
 import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
 import Image from "next/image";
 import { videoData } from "@/data/videos";
 import { themes } from "@/data/themes";
 import { iconMap } from "@/data/icons";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 interface VideoClipsProps {
   interviewId: string;
-  onClipClick?: (time: number) => void;
+  onClipClick?: (timestamp: number) => void;
 }
 
 export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps) {
-  // Filter clips for this interviewee and sort by startTime
+  const router = useRouter();
   const intervieweeClips = clips
     .filter(clip => clip.interviewId === interviewId)
     .sort((a, b) => a.startTime - b.startTime);
@@ -24,14 +24,10 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   }
 
-  const handleClipClick = (startTime: number) => {
-    if (onClipClick) {
-      onClipClick(startTime);
-    }
-  };
-
-  const handleThemeClick = (e: React.MouseEvent) => {
+  const handleThemeClick = (e: React.MouseEvent, themeId: string) => {
+    e.preventDefault();
     e.stopPropagation();
+    router.push(`/theme/${themeId}`);
   };
 
   // Helper function to sort themes based on their order in the themes array
@@ -50,10 +46,17 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
         const sortedThemes = sortThemesByOrder(clip.themes);
         
         return (
-          <div 
+          <div
             key={clip.id}
-            className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow cursor-pointer h-[220px]"
-            onClick={() => handleClipClick(clip.startTime)}
+            onClick={(e) => {
+              if (onClipClick) {
+                e.preventDefault();
+                onClipClick(clip.startTime);
+              } else {
+                router.push(`/video/${clip.interviewId}?t=${clip.startTime}`);
+              }
+            }}
+            className="block hover:bg-gray-50 cursor-pointer"
           >
             <div className="flex gap-6 h-full">
               <div className="relative w-48 flex-shrink-0">
@@ -95,10 +98,9 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
                     if (!theme || !iconMap[theme.iconName]) return null;
                     
                     return (
-                      <Link 
+                      <button
                         key={themeId}
-                        href={`/theme/${themeId}`}
-                        onClick={handleThemeClick}
+                        onClick={(e) => handleThemeClick(e, themeId)}
                         className="w-8 h-8 rounded-full flex items-center justify-center bg-gray-50 hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                         title={theme.title}
                         aria-label={`View ${theme.title} theme`}
@@ -108,7 +110,7 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
                           style: { color: theme.iconColor },
                           "aria-hidden": "true"
                         })}
-                      </Link>
+                      </button>
                     );
                   })}
                 </div>

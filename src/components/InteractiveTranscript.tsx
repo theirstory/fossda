@@ -7,11 +7,12 @@ import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
 import { addTimecodesToTranscript } from "@/lib/transcript";
 import { MuxPlayerElement } from '@mux/mux-player-react';
+import { useSearchParams } from 'next/navigation';
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
   chapters: ChapterMetadata[];
-  videoRef: React.RefObject<MuxPlayerElement>;
+  videoRef: React.RefObject<MuxPlayerElement | null>;
   isPlaying: boolean;
   // onTimeClick: (time: number) => void;
 }
@@ -28,10 +29,42 @@ export default function InteractiveTranscript({
   const scriptLoaded = useScripts();
   const [processedHtml, setProcessedHtml] = useState(transcriptHtml);
   const [mounted, setMounted] = useState(false);
+  const searchParams = useSearchParams();
+  const startTime = searchParams.get('t');
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  // Add effect to handle initial scroll to timestamp
+  useEffect(() => {
+    if (!mounted || !transcriptRef.current || !startTime) return;
+
+    const timeMs = parseFloat(startTime) * 1000;
+    const spans = Array.from(transcriptRef.current.querySelectorAll<HTMLElement>('span[data-m]'));
+    
+    // Find the span closest to the timestamp
+    let targetSpan: HTMLElement | null = null;
+    for (const span of spans) {
+      const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+      if (spanTime <= timeMs) {
+        targetSpan = span;
+      } else {
+        break;
+      }
+    }
+
+    if (targetSpan && transcriptContainerRef.current) {
+      // Remove any existing highlights
+      spans.forEach(span => span.classList.remove('bg-yellow-100'));
+      
+      // Add highlight to target span
+      targetSpan.classList.add('bg-yellow-100');
+      
+      // Scroll the span into view
+      targetSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [mounted, startTime]);
 
   useEffect(() => {
     if (mounted && typeof window !== 'undefined') {

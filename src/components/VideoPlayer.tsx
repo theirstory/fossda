@@ -9,6 +9,7 @@ interface VideoPlayerProps {
   onPlayStateChange: (playing: boolean) => void;
   chapters: ChapterMetadata[];
   thumbnail: string;
+  onLoadedMetadata?: () => void;
 }
 
 interface MuxChapter {
@@ -17,7 +18,7 @@ interface MuxChapter {
 }
 
 const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
-  ({ playbackId, onPlayStateChange, chapters, thumbnail }, ref) => {
+  ({ playbackId, onPlayStateChange, chapters, thumbnail, onLoadedMetadata }, ref) => {
     const playerRef = useRef<MuxPlayerElement>(null);
     const [mounted, setMounted] = useState(false);
 
@@ -106,6 +107,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           }}
           onPlay={() => onPlayStateChange(true)}
           onPause={() => onPlayStateChange(false)}
+          onLoadedMetadata={onLoadedMetadata}
           accentColor="#eaaa11"
           defaultShowCaptions
           defaultShowChapters

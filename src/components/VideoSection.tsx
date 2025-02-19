@@ -28,8 +28,8 @@ interface VideoSectionProps {
 }
 
 export default function VideoSection({ videoId, transcriptHtml, playbackId, currentVideo }: VideoSectionProps) {
+  const videoRef = useRef<MuxPlayerElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<MuxPlayerElement>(null!);
   const searchParams = useSearchParams();
   const startTime = searchParams.get('t');
   
@@ -41,27 +41,33 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     metadata: []
   };
 
-  // Set initial timestamp when video is ready
+  // Handle initial timestamp
   useEffect(() => {
-    if (videoRef.current && startTime) {
-      const timeInSeconds = parseFloat(startTime);
-      if (!isNaN(timeInSeconds)) {
-        videoRef.current.currentTime = timeInSeconds;
+    const handleInitialTimestamp = () => {
+      if (videoRef.current && startTime) {
+        const timeInSeconds = parseFloat(startTime);
+        if (!isNaN(timeInSeconds)) {
+          videoRef.current.currentTime = timeInSeconds;
+        }
       }
-    }
-  }, [startTime, videoRef.current]);
+    };
 
-  // const handleTimeUpdate = (time: number) => {
-  //   if (videoRef.current) {
-  //     videoRef.current.currentTime = time;
-  //     if (isPlaying) {
-  //       videoRef.current.play().catch(console.error);
-  //     }
-  //   }
-  // };
+    // Try to set timestamp immediately in case player is already ready
+    handleInitialTimestamp();
+  }, [startTime]);
 
   const handlePlayStateChange = (playing: boolean) => {
     setIsPlaying(playing);
+  };
+
+  const handleClipClick = (timestamp: number) => {
+    if (videoRef.current) {
+      const wasPlaying = isPlaying;
+      videoRef.current.currentTime = timestamp;
+      if (wasPlaying) {
+        videoRef.current.play();
+      }
+    }
   };
 
   console.log('VideoSection playbackId:', {
@@ -79,6 +85,14 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
           onPlayStateChange={handlePlayStateChange}
           chapters={videoChapters.metadata}
           thumbnail={currentVideo.thumbnail}
+          onLoadedMetadata={() => {
+            if (videoRef.current && startTime) {
+              const timeInSeconds = parseFloat(startTime);
+              if (!isNaN(timeInSeconds)) {
+                videoRef.current.currentTime = timeInSeconds;
+              }
+            }
+          }}
         />
 
         <div className="bg-white rounded-lg shadow p-4 max-h-[300px]">
@@ -107,7 +121,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
             />
           </TabsContent>
           <TabsContent value="clips" className="max-h-[600px] overflow-y-auto">
-            <VideoClips interviewId={videoId} />
+            <VideoClips interviewId={videoId} onClipClick={handleClipClick} />
           </TabsContent>
           <TabsContent value="related" className="max-h-[600px] overflow-y-auto">
             <RelatedVideos currentVideoId={currentVideo.id} />
