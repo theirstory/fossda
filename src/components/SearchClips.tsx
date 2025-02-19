@@ -1,16 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { clips } from "@/data/clips";
 import { videoData } from "@/data/videos";
 import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
+import { formatDuration } from "@/lib/utils";
 
 export default function SearchClips() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearching, setIsSearching] = useState(false);
+  const pathname = usePathname();
+
+  // Clear search when route changes
+  useEffect(() => {
+    setSearchQuery("");
+    setIsSearching(false);
+  }, [pathname]);
 
   // Filter clips based on search query
   const filteredClips = searchQuery.length > 2 ? clips.filter(clip => {
@@ -20,13 +29,7 @@ export default function SearchClips() {
     const matchesChapter = clip.chapter.title.toLowerCase().includes(query);
     const matchesInterviewee = clip.interviewTitle.toLowerCase().includes(query);
     return matchesTranscript || matchesTitle || matchesChapter || matchesInterviewee;
-  }).slice(0, 5) : []; // Show only top 5 results
-
-  function formatDuration(duration: number): string {
-    const minutes = Math.floor(duration / 60);
-    const seconds = Math.floor(duration % 60);
-    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-  }
+  }).slice(0, 5) : [];
 
   return (
     <div className="relative">

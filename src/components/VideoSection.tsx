@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import VideoPlayer from "./VideoPlayer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import InteractiveTranscript from "./InteractiveTranscript";
@@ -11,6 +11,7 @@ import { MuxPlayerElement } from '@mux/mux-player-react';
 // import { ChapterMetadata } from "@/types/transcript";
 import RelatedVideos from "./RelatedVideos";
 import VideoClips from "./VideoClips";
+import { useSearchParams } from 'next/navigation';
 
 interface VideoSectionProps {
   videoId: string;
@@ -29,6 +30,8 @@ interface VideoSectionProps {
 export default function VideoSection({ videoId, transcriptHtml, playbackId, currentVideo }: VideoSectionProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<MuxPlayerElement>(null!);
+  const searchParams = useSearchParams();
+  const startTime = searchParams.get('t');
   
   // Add error handling and fallback for chapter data
   const videoChapters = chapterData[videoId] || {
@@ -37,6 +40,16 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     updated_at: new Date().toISOString(),
     metadata: []
   };
+
+  // Set initial timestamp when video is ready
+  useEffect(() => {
+    if (videoRef.current && startTime) {
+      const timeInSeconds = parseFloat(startTime);
+      if (!isNaN(timeInSeconds)) {
+        videoRef.current.currentTime = timeInSeconds;
+      }
+    }
+  }, [startTime, videoRef.current]);
 
   // const handleTimeUpdate = (time: number) => {
   //   if (videoRef.current) {
