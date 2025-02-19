@@ -53,7 +53,7 @@ export default function SearchClips() {
                 return (
                   <Link
                     key={clip.id}
-                    href={`/video/${clip.interviewId}?t=${clip.startTime}`}
+                    href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
                     className="block hover:bg-gray-50"
                   >
                     <div className="p-3 flex gap-3">

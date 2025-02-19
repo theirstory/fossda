@@ -53,7 +53,7 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
                 e.preventDefault();
                 onClipClick(clip.startTime);
               } else {
-                router.push(`/video/${clip.interviewId}?t=${clip.startTime}`);
+                router.push(`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`);
               }
             }}
             className="block hover:bg-gray-50 cursor-pointer"
@@ -121,4 +121,4 @@ export default function VideoClips({ interviewId, onClipClick }: VideoClipsProps
       })}
     </div>
   );
-} 
+}

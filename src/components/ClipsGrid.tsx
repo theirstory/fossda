@@ -118,7 +118,7 @@ export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProp
               <div className="flex gap-6">
                 <div className="relative w-48 flex-shrink-0">
                   <Link 
-                    href={`/video/${clip.interviewId}?t=${clip.startTime}`}
+                    href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
                     className="block cursor-pointer"
                   >
                     <div className="relative aspect-video rounded-md overflow-hidden">
@@ -172,7 +172,7 @@ export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProp
                     </div>
                     
                     <Link 
-                      href={`/video/${clip.interviewId}?t=${clip.startTime}`}
+                      href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
                       className="text-sm text-blue-600 hover:text-blue-800"
                     >
                       Watch in Interview →
