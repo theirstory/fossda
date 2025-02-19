@@ -14,10 +14,12 @@ export default function SearchClips() {
 
   // Filter clips based on search query
   const filteredClips = searchQuery.length > 2 ? clips.filter(clip => {
-    const matchesTranscript = clip.transcript.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesTitle = clip.title.toLowerCase().includes(searchQuery.toLowerCase());
-    const matchesChapter = clip.chapter.title.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesTranscript || matchesTitle || matchesChapter;
+    const query = searchQuery.toLowerCase();
+    const matchesTranscript = clip.transcript.toLowerCase().includes(query);
+    const matchesTitle = clip.title.toLowerCase().includes(query);
+    const matchesChapter = clip.chapter.title.toLowerCase().includes(query);
+    const matchesInterviewee = clip.interviewTitle.toLowerCase().includes(query);
+    return matchesTranscript || matchesTitle || matchesChapter || matchesInterviewee;
   }).slice(0, 5) : []; // Show only top 5 results
 
   function formatDuration(duration: number): string {
@@ -29,7 +31,7 @@ export default function SearchClips() {
   return (
     <div className="relative">
       <Input
-        placeholder="Search clips by title, transcript, or chapter..."
+        placeholder="Search by interviewee name, clip title, transcript, or chapter..."
         value={searchQuery}
         onChange={(e) => {
           setSearchQuery(e.target.value);
