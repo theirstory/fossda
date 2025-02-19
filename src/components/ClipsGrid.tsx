@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import React from "react";
 import { Clip } from "@/types";
 import { Theme } from "@/data/themes";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +14,23 @@ interface ClipsGridProps {
   clips: Clip[];
   interviewees: { id: string; title: string; }[];
   themes: Theme[];
+}
+
+function highlightText(text: string, query: string): React.ReactNode {
+  if (!query) return text;
+  
+  const parts = text.split(new RegExp(`(${query})`, 'gi'));
+  return (
+    <>
+      {parts.map((part, i) => 
+        part.toLowerCase() === query.toLowerCase() ? (
+          <span key={i} className="bg-yellow-200">{part}</span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
 }
 
 export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProps) {
@@ -143,15 +161,17 @@ export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProp
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">{clip.title}</h3>
+                      <h3 className="text-lg font-semibold mb-1">
+                        {highlightText(clip.title, searchQuery)}
+                      </h3>
                       <div className="text-sm text-gray-500">
-                        Chapter: {clip.chapter.title}
+                        Chapter: {highlightText(clip.chapter.title, searchQuery)}
                       </div>
                     </div>
                   </div>
                   
                   <blockquote className="text-gray-600 mb-4 border-l-4 pl-4 italic">
-                    {clip.transcript}
+                    {highlightText(clip.transcript, searchQuery)}
                   </blockquote>
                   
                   <div className="flex items-center justify-between">
