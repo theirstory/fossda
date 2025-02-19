@@ -23,7 +23,7 @@ export const videoData: Record<string, VideoData> = {
     id: "heather-meeker",
     title: "Heather Meeker",
     duration: "55:02",
-    thumbnail: "/thumbnails/heather-meeker.png",
+    thumbnail: "https://image.mux.com/BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg3KI7irM/animated.gif?width=320&start=5&end=10",
     summary: `Heather Meeker shares her fascinating journey from early computer programming in the 1980s to becoming a leading voice in open source software law. Her interview provides unique insights into the evolution of software licensing and the legal frameworks that support open source development.`,
     sentence: "From computer programmer to open source legal expert - a journey through the evolution of software licensing."
   },
