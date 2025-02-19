@@ -16,6 +16,8 @@ import { themes } from "@/data/themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import SearchClips from "./SearchClips";
+import { iconMap } from "@/data/icons";
+import React from "react";
 
 export default function MainNavigation() {
   const pathname = usePathname();
@@ -115,10 +117,16 @@ export default function MainNavigation() {
                   </div>
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectGroup>
+                  <SelectGroup className="p-0">
                     {themes.map((theme) => (
-                      <SelectItem key={theme.id} value={theme.id}>
-                        {theme.title}
+                      <SelectItem key={theme.id} value={theme.id} className="pl-2">
+                        <div className="flex items-center gap-2">
+                          {React.createElement(iconMap[theme.iconName], {
+                            className: "h-4 w-4",
+                            style: { color: theme.iconColor }
+                          })}
+                          {theme.title}
+                        </div>
                       </SelectItem>
                     ))}
                   </SelectGroup>
