@@ -14,15 +14,21 @@ interface InteractiveTranscriptProps {
   chapters: ChapterMetadata[];
   videoRef: React.RefObject<MuxPlayerElement | null>;
   isPlaying: boolean;
-  // onTimeClick: (time: number) => void;
 }
+
+const transcriptStyles = `
+  .hyperaudio-lite span[data-m] {
+    margin: 0 -0.25em;  /* Pull words closer together on both sides */
+    padding: 0 0.25em;  /* Add padding that can be selected on both sides */
+    display: inline-block;  /* Make padding selectable */
+  }
+`;
 
 export default function InteractiveTranscript({
   transcriptHtml,
   chapters,
   videoRef,
   isPlaying
-  // onTimeClick
 }: InteractiveTranscriptProps) {
   const transcriptRef = useRef<HTMLDivElement>(null);
   const transcriptContainerRef = useRef<HTMLDivElement>(null);
@@ -31,6 +37,9 @@ export default function InteractiveTranscript({
   const [mounted, setMounted] = useState(false);
   const searchParams = useSearchParams();
   const startTime = searchParams.get('t');
+  const [selectionStart, setSelectionStart] = useState<number | null>(null);
+  const [selectionEnd, setSelectionEnd] = useState<number | null>(null);
+  const [isSelecting, setIsSelecting] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -233,12 +242,70 @@ export default function InteractiveTranscript({
     };
   }, [mounted, isPlaying, videoRef]);
 
+  // Handle custom text selection
+  useEffect(() => {
+    if (!transcriptRef.current) return;
+
+    const handleMouseDown = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest('#hypertranscript')) return;
+      
+      setIsSelecting(true);
+      setSelectionStart(e.clientY);
+      setSelectionEnd(e.clientY);
+      
+      // Prevent browser's default text selection
+      e.preventDefault();
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isSelecting) return;
+      setSelectionEnd(e.clientY);
+    };
+
+    const handleMouseUp = () => {
+      setIsSelecting(false);
+    };
+
+    document.addEventListener('mousedown', handleMouseDown);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+
+    return () => {
+      document.removeEventListener('mousedown', handleMouseDown);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isSelecting]);
+
+  // Render selection highlight
+  const renderHighlight = () => {
+    if (!selectionStart || !selectionEnd || !transcriptRef.current) return null;
+
+    const minY = Math.min(selectionStart, selectionEnd);
+    const maxY = Math.max(selectionStart, selectionEnd);
+    const transcriptRect = transcriptRef.current.getBoundingClientRect();
+    
+    return (
+      <div
+        className="absolute pointer-events-none bg-blue-200/50"
+        style={{
+          left: 0,
+          right: 0,
+          top: minY - transcriptRect.top,
+          height: maxY - minY,
+        }}
+      />
+    );
+  };
+
   if (!mounted) {
     return <div className="h-[calc(100vh-200px)] bg-gray-100 animate-pulse" />;
   }
 
   return (
     <Card className="h-[calc(100vh-200px)] overflow-hidden">
+      <style>{transcriptStyles}</style>
       <div className="h-full flex">
         <div className="w-64 border-r bg-gray-50 overflow-y-auto">
           {chapters.map((chapter) => (
@@ -259,14 +326,15 @@ export default function InteractiveTranscript({
 
         <div 
           ref={transcriptContainerRef}
-          className="flex-1 overflow-y-auto p-4"
+          className="flex-1 overflow-y-auto p-4 relative"
         >
           <div 
             id="hypertranscript"
             ref={transcriptRef}
-            className="hyperaudio-lite"
+            className="hyperaudio-lite relative"
             dangerouslySetInnerHTML={{ __html: processedHtml }}
           />
+          {renderHighlight()}
         </div>
       </div>
     </Card>
