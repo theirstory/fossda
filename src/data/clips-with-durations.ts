@@ -7,7 +7,7 @@ export const clips: Clip[] = [
     "title": "The Origins of Open Source",
     "startTime": 10.2,
     "endTime": 26.8,
-    "duration": 17,
+    "duration": 16.6,
     "chapter": {
       "id": "intro",
       "title": "Introduction"
@@ -25,7 +25,7 @@ export const clips: Clip[] = [
     "title": "Creating Open Source Marketing",
     "startTime": 37.5,
     "endTime": 56.4,
-    "duration": 19,
+    "duration": 18.9,
     "chapter": {
       "id": "origins",
       "title": "Origins of Open Source"
@@ -43,7 +43,7 @@ export const clips: Clip[] = [
     "title": "Evolution of Open Source Law",
     "startTime": 185.4,
     "endTime": 220,
-    "duration": 35,
+    "duration": 34.6,
     "chapter": {
       "id": "legal-perspective",
       "title": "Legal Evolution"
@@ -61,7 +61,7 @@ export const clips: Clip[] = [
     "title": "Finding Her Path",
     "startTime": 5559.325,
     "endTime": 5572.554,
-    "duration": 13,
+    "duration": 13.22900000000027,
     "chapter": {
       "id": "career-journey",
       "title": "Career Journey"
@@ -79,7 +79,7 @@ export const clips: Clip[] = [
     "title": "Bruce Perens on Open Source Origins",
     "startTime": 97.5,
     "endTime": 126,
-    "duration": 29,
+    "duration": 28.5,
     "chapter": {
       "id": "early-years",
       "title": "Early Years"
@@ -115,7 +115,7 @@ export const clips: Clip[] = [
     "title": "The Power of Internet Collaboration",
     "startTime": 2320.5,
     "endTime": 2380.4,
-    "duration": 60,
+    "duration": 59.9,
     "chapter": {
       "id": "community",
       "title": "Community Impact"
@@ -133,7 +133,7 @@ export const clips: Clip[] = [
     "title": "Open Source Law as Puzzles",
     "startTime": 232.2,
     "endTime": 270.6,
-    "duration": 38,
+    "duration": 38.4,
     "chapter": {
       "id": "career",
       "title": "Career Journey"
@@ -151,7 +151,7 @@ export const clips: Clip[] = [
     "title": "Finding Her Path in Tech",
     "startTime": 5559.325,
     "endTime": 5572.554,
-    "duration": 13,
+    "duration": 13.22900000000027,
     "chapter": {
       "id": "early-career",
       "title": "Early Career"

@@ -5,16 +5,16 @@ export const clips: Clip[] = [
   {
     id: 'bruce-stallman-influence',
     title: "From Free Software to Open Source",
-    startTime: 84.7,  // 01:24.7
-    endTime: 156.4,   // 02:36.4
-    duration: 71.7,   // Fixed duration: 156.4 - 84.7 = 71.7
+    startTime: 74.261,  // 01:14.261
+    endTime: 156.4,   // 02:42.700
+    duration: 82.139,   // Fixed duration: 156.4 - 74.261 = 82.139
     chapter: {
       id: 'evolution',
       title: 'Evolution of Open Source'
     },
     interviewId: 'bruce-perens',
     interviewTitle: 'Bruce Perens',
-    transcript: "Well, obviously, I'm standing on the shoulders of giants because the work of Richard Stallman preceeded mine, and the basic concepts of open source are those created by Richard for free software. What we did with open source was create a marketing program for the free software concept which would reach different people.",
+    transcript: "Heather Meeker: How'd you decide to get involved in/create this movement of open source? Bruce Perens: Well, obviously, I'm standing on the shoulders of giants because the work of Richard Stallman preceeded mine, and the basic concepts of open source are those created by Richard for free software. What we did with open source was create a marketing program for the free software concept which would reach different people. So, Richard's approach was very well suited for programmers, but it depended on the apriori understanding of the usefulness of software freedom. And our approach was more based on just having a big collection of software that you could build, whether it was a business or any project that you wanted to, you could build these upon, you could share the development of the software and my feeling personally was that the philosophy would come later for a lot of the people who participated. And so, obviously, we were successful beyond our wildest dreams.",
     themes: ['community', 'evolution', 'education']
   },
 
@@ -180,15 +180,15 @@ export const clips: Clip[] = [
     id: "bruce-busybox-creation",
     title: "Creating BusyBox",
     startTime: 42.0,   // 00:42.0
-    endTime: 60.0,     // 00:60.0
-    duration: 18.0,
+    endTime: 59.1,     // 00:59.1
+    duration: 17.1,
     chapter: {
       id: "projects",
       title: "Introduction to Bruce Perens"
     },
     interviewId: "bruce-perens",
     interviewTitle: "Bruce Perens",
-    transcript: "He's the creator of BusyBox, which is a key software utility for Linux system that everybody uses",
+    transcript: "He's the creator of BusyBox, which is a key software utility for Linux system that everybody uses all the time, and he was a key developer at Pixar, helping to create the technology of 3D animated feature films. Bruce, welcome to FOSSDA!",
     themes: ["projects", "innovation"]
   },
 
