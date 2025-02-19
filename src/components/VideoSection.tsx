@@ -12,6 +12,7 @@ import { MuxPlayerElement } from '@mux/mux-player-react';
 import RelatedVideos from "./RelatedVideos";
 import VideoClips from "./VideoClips";
 import { useSearchParams } from 'next/navigation';
+import { clips } from "@/data/clips";
 
 interface VideoSectionProps {
   videoId: string;
@@ -76,6 +77,9 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     chars: Array.from(playbackId).map(c => c.charCodeAt(0))
   });
 
+  // Get number of clips for this video
+  const clipCount = clips.filter(clip => clip.interviewId === videoId).length;
+
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div className="grid grid-rows-[auto_1fr] gap-6">
@@ -109,7 +113,9 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
         <Tabs defaultValue="transcript">
           <TabsList className="w-full">
             <TabsTrigger value="transcript">Transcription</TabsTrigger>
-            <TabsTrigger value="clips">Clips</TabsTrigger>
+            <TabsTrigger value="clips">
+              Clips ({clipCount})
+            </TabsTrigger>
             <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
           <TabsContent value="transcript" className="max-h-[600px] overflow-y-auto">
