@@ -2,6 +2,9 @@ import VideoCard from "@/components/VideoCard";
 import ThemeExplorer from "@/components/ThemeExplorer";
 import { videoData } from "@/data/videos";
 import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   const heroVideo = videoData["introduction-to-fossda"];
@@ -32,7 +35,17 @@ export default function Home() {
           <div className="space-y-6">
             {/* Hero Video */}
             <div>
-              <h2 className="text-lg font-semibold mb-2">Introduction to FOSSDA</h2>
+              <div className="mb-2">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-lg font-semibold">Introduction to FOSSDA</h2>
+                  <Link href="/clips">
+                    <Button variant="ghost" className="text-blue-600 hover:text-blue-800 h-7 px-2 gap-1">
+                      Browse All Clips
+                      <ChevronRight className="h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
               <div className="max-w-2xl">
                 <VideoCard
                   {...heroVideo}
