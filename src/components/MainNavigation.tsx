@@ -15,6 +15,7 @@ import {
 import { themes } from "@/data/themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import SearchClips from "./SearchClips";
 
 export default function MainNavigation() {
   const pathname = usePathname();
@@ -37,10 +38,11 @@ export default function MainNavigation() {
   return (
     <div className="sticky top-0 z-50 bg-white border-b">
       <nav className="container mx-auto px-4">
-        <div className="flex h-16 items-center">
+        <div className="flex h-16 items-center justify-between">
+          {/* Left Section - Logo, Back Button, and Search */}
           <div className="flex items-center gap-4 flex-1">
             {/* Logo */}
-            <Link href="/" className="text-lg font-bold flex items-center gap-2">
+            <Link href="/" className="text-lg font-bold flex items-center gap-2 shrink-0">
               <Image
                 src="/images/logo.png"
                 alt="FOSSDA Logo"
@@ -57,16 +59,21 @@ export default function MainNavigation() {
                 variant="ghost" 
                 size="sm" 
                 onClick={() => router.back()}
-                className="gap-2 text-muted-foreground hover:text-foreground"
+                className="gap-2 text-muted-foreground hover:text-foreground shrink-0"
               >
                 <ChevronLeft className="h-4 w-4" />
                 Back
               </Button>
             )}
+
+            {/* Search */}
+            <div className="max-w-md w-full">
+              <SearchClips />
+            </div>
           </div>
 
-          <div className="flex items-center gap-8">
-            {/* Main Links */}
+          {/* Right Section - Navigation Links */}
+          <div className="flex items-center gap-6 ml-4">
             <Link
               href="/"
               className={cn(
