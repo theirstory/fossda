@@ -10,6 +10,7 @@ import { chapterData } from '@/data/chapters';
 import { MuxPlayerElement } from '@mux/mux-player-react';
 // import { ChapterMetadata } from "@/types/transcript";
 import RelatedVideos from "./RelatedVideos";
+import VideoClips from "./VideoClips";
 
 interface VideoSectionProps {
   videoId: string;
@@ -81,6 +82,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
         <Tabs defaultValue="transcript">
           <TabsList className="w-full">
             <TabsTrigger value="transcript">Transcription</TabsTrigger>
+            <TabsTrigger value="clips">Clips</TabsTrigger>
             <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
           <TabsContent value="transcript" className="max-h-[600px] overflow-y-auto">
@@ -90,6 +92,9 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
               videoRef={videoRef}
               chapters={videoChapters.metadata}
             />
+          </TabsContent>
+          <TabsContent value="clips" className="max-h-[600px] overflow-y-auto">
+            <VideoClips interviewId={videoId} />
           </TabsContent>
           <TabsContent value="related" className="max-h-[600px] overflow-y-auto">
             <RelatedVideos currentVideoId={currentVideo.id} />

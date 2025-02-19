@@ -1,10 +1,5 @@
-import { promises as fs } from 'fs';
-import path from 'path';
-import { findQuoteTimeRange } from '@/lib/transcript';
 import { Clip } from '@/types/index';
-import { formatDuration } from '@/lib/utils';
 
-// Original clips array
 export const clips: Clip[] = [
   // Bruce Perens Clips
   {
@@ -267,40 +262,5 @@ export const clips: Clip[] = [
   }
 ];
 
-// Add the calculation functionality
-export async function calculateClipDurations(): Promise<Clip[]> {
-  const updatedClips: Clip[] = [];
-  
-  for (const clip of clips) {
-    const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${clip.interviewId}.html`);
-    try {
-      const transcriptHtml = await fs.readFile(transcriptPath, 'utf-8');
-      const timeRange = findQuoteTimeRange(transcriptHtml, clip.transcript);
-      
-      if (timeRange) {
-        const newClip = {
-          ...clip,
-          startTime: timeRange.start,
-          endTime: timeRange.end,
-          duration: timeRange.end - timeRange.start,
-          clockStartTime: formatDuration(timeRange.start),
-          clockEndTime: formatDuration(timeRange.end)
-        };
-        updatedClips.push(newClip);
-      } else {
-        console.warn(`Could not find time range for clip: ${clip.id}`);
-        updatedClips.push(clip);
-      }
-    } catch (error) {
-      console.error(`Error processing transcript for ${clip.interviewId}:`, error);
-      updatedClips.push(clip);
-    }
-  }
-  
-  return updatedClips;
-}
-
-// Export a function to get the clips with accurate durations
-export async function getClips(): Promise<Clip[]> {
-  return calculateClipDurations();
-} 
+// Remove the dynamic functions and just export the static data
+export default clips; 
