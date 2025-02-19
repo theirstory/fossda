@@ -4,9 +4,9 @@ export const clips: Clip[] = [
   {
     "id": "meeker-personal-journey",
     "title": "Personal Journey into Open Source",
-    "startTime": 144.5,
-    "endTime": 206.7,
-    "duration": 62.2,
+    "startTime": 102.9,
+    "endTime": 141.054,
+    "duration": 38.154,
     "chapter": {
       "id": "exposure",
       "title": "Heather Meeker's Personal Journey into Technology"
