@@ -246,7 +246,7 @@ export default function InteractiveTranscript({
     };
   }, [mounted, isPlaying, videoRef]);
 
-  // Handle custom text selection
+  // Update the custom text selection effect to use Selection API
   useEffect(() => {
     if (!transcriptRef.current) return;
 
@@ -254,12 +254,10 @@ export default function InteractiveTranscript({
       const target = e.target as HTMLElement;
       if (!target.closest('#hypertranscript')) return;
       
+      // Don't prevent default - let browser handle text selection
       setIsSelecting(true);
       setSelectionStart(e.clientY);
       setSelectionEnd(e.clientY);
-      
-      // Prevent browser's default text selection
-      e.preventDefault();
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -269,6 +267,16 @@ export default function InteractiveTranscript({
 
     const handleMouseUp = () => {
       setIsSelecting(false);
+      // Get the selection after mouse up
+      const selection = window.getSelection();
+      if (selection && selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        console.log('Selection range:', {
+          startOffset: range.startOffset,
+          endOffset: range.endOffset,
+          text: range.toString()
+        });
+      }
     };
 
     document.addEventListener('mousedown', handleMouseDown);
@@ -282,7 +290,7 @@ export default function InteractiveTranscript({
     };
   }, [isSelecting]);
 
-  // Replace the URL parameters effect with this corrected version
+  // Replace the URL parameters effect with this new version
   useEffect(() => {
     if (!mounted || !transcriptRef.current || !startTime || !endTime || !hasScrolledToStart) return;
 
@@ -291,51 +299,58 @@ export default function InteractiveTranscript({
     const endTimeMs = parseFloat(endTime) * 1000;
     const spans = Array.from(transcriptElement.querySelectorAll<HTMLElement>('span[data-m]'));
     
-    // Clear any existing highlights first
+    // Clear any existing highlights and selection
     spans.forEach(span => {
-      span.classList.remove('bg-blue-200/50');
       span.classList.remove('bg-yellow-100');
+      span.style.backgroundColor = '';
     });
+    window.getSelection()?.removeAllRanges();
     
-    let isWithinRange = false;
+    let firstSpan: HTMLElement | null = null;
+    let lastSpan: HTMLElement | null = null;
     
     spans.forEach(span => {
       const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
-
-      // Stop highlighting if we've passed the end time
-      if (spanTime >= endTimeMs) {
-        isWithinRange = false;
-        return;
-      }
-
-      // Start highlighting when we find the first word at or after the start time
-      if (!isWithinRange && spanTime >= startTimeMs) {
-        isWithinRange = true;
-      }
-
-      // Add highlight if within range
-      if (isWithinRange) {
-        span.classList.add('bg-blue-200/50');
+      if (spanTime >= startTimeMs && spanTime < endTimeMs) {
+        if (!firstSpan) {
+          firstSpan = span;
+        }
+        lastSpan = span;
       }
     });
+
+    if (firstSpan && lastSpan) {
+      // Create a new range
+      const range = document.createRange();
+      range.setStartBefore(firstSpan);
+      range.setEndAfter(lastSpan);
+
+      // Create a new selection
+      const selection = window.getSelection();
+      if (selection) {
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      // Scroll the first span into view
+      (firstSpan as HTMLElement).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   }, [mounted, startTime, endTime, hasScrolledToStart]);
 
-  // Replace the renderHighlight function with this simpler version that only handles manual selection
+  // Update the renderHighlight function to only handle manual selection
   const renderHighlight = () => {
-    if (!isSelecting || !selectionStart || !selectionEnd || !transcriptRef.current) return null;
-
-    const minY = Math.min(selectionStart, selectionEnd);
-    const maxY = Math.max(selectionStart, selectionEnd);
+    if (!transcriptRef.current || !isSelecting || !selectionStart || !selectionEnd) return null;
+    
     const transcriptRect = transcriptRef.current.getBoundingClientRect();
     
     return (
       <div
-        className="absolute pointer-events-none bg-blue-200/50"
+        className="absolute pointer-events-none bg-blue-500/50"
         style={{
           left: 0,
           right: 0,
-          top: minY - transcriptRect.top,
-          height: maxY - minY,
+          top: Math.min(selectionStart, selectionEnd) - transcriptRect.top,
+          height: Math.abs(selectionEnd - selectionStart),
         }}
       />
     );
