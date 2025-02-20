@@ -37,9 +37,11 @@ export default function InteractiveTranscript({
   const [mounted, setMounted] = useState(false);
   const searchParams = useSearchParams();
   const startTime = searchParams.get('t');
+  const endTime = searchParams.get('end');
   const [selectionStart, setSelectionStart] = useState<number | null>(null);
   const [selectionEnd, setSelectionEnd] = useState<number | null>(null);
   const [isSelecting, setIsSelecting] = useState(false);
+  const [hasScrolledToStart, setHasScrolledToStart] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -67,11 +69,13 @@ export default function InteractiveTranscript({
       // Remove any existing highlights
       spans.forEach(span => span.classList.remove('bg-yellow-100'));
       
-      // Add highlight to target span
-      targetSpan.classList.add('bg-yellow-100');
-      
       // Scroll the span into view
       targetSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Set scroll complete after a short delay
+      setTimeout(() => {
+        setHasScrolledToStart(true);
+      }, 100);
     }
   }, [mounted, startTime]);
 
@@ -278,9 +282,47 @@ export default function InteractiveTranscript({
     };
   }, [isSelecting]);
 
-  // Render selection highlight
+  // Replace the URL parameters effect with this corrected version
+  useEffect(() => {
+    if (!mounted || !transcriptRef.current || !startTime || !endTime || !hasScrolledToStart) return;
+
+    const transcriptElement = transcriptRef.current;
+    const startTimeMs = parseFloat(startTime) * 1000;
+    const endTimeMs = parseFloat(endTime) * 1000;
+    const spans = Array.from(transcriptElement.querySelectorAll<HTMLElement>('span[data-m]'));
+    
+    // Clear any existing highlights first
+    spans.forEach(span => {
+      span.classList.remove('bg-blue-200/50');
+      span.classList.remove('bg-yellow-100');
+    });
+    
+    let isWithinRange = false;
+    
+    spans.forEach(span => {
+      const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+
+      // Stop highlighting if we've passed the end time
+      if (spanTime >= endTimeMs) {
+        isWithinRange = false;
+        return;
+      }
+
+      // Start highlighting when we find the first word at or after the start time
+      if (!isWithinRange && spanTime >= startTimeMs) {
+        isWithinRange = true;
+      }
+
+      // Add highlight if within range
+      if (isWithinRange) {
+        span.classList.add('bg-blue-200/50');
+      }
+    });
+  }, [mounted, startTime, endTime, hasScrolledToStart]);
+
+  // Replace the renderHighlight function with this simpler version that only handles manual selection
   const renderHighlight = () => {
-    if (!selectionStart || !selectionEnd || !transcriptRef.current) return null;
+    if (!isSelecting || !selectionStart || !selectionEnd || !transcriptRef.current) return null;
 
     const minY = Math.min(selectionStart, selectionEnd);
     const maxY = Math.max(selectionStart, selectionEnd);
