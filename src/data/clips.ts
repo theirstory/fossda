@@ -64,9 +64,9 @@ export const clips: Clip[] = [
   {
     "id": "goodkin-early-computers",
     "title": "First Computer Experiences", 
-    "startTime": 233.548,
+    "startTime": 224.624,
     "endTime": 281.673,
-    "duration": 48.125,
+    "duration": 57.049,
     "chapter": {
       "id": "exposure",
       "title": "College Education and Introduction to Computing"
