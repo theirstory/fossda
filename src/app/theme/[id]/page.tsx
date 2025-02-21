@@ -4,6 +4,8 @@ import { Badge } from '@/components/ui/badge';
 import { iconMap } from '@/data/icons';
 import { Metadata } from 'next';
 import ThemePageClient from "./client";
+import Link from 'next/link';
+import { cn } from '@/lib/utils';
 
 // Update Props to match Next.js PageProps
 type Props = {
@@ -45,9 +47,14 @@ export default async function ThemePage(props: Props) {
 
   const Icon = iconMap[theme.iconName];
 
+  // Calculate clip counts for each theme
+  const themeClipCounts = themes.reduce((acc, t) => {
+    acc[t.id] = clips.filter(clip => clip.themes.includes(t.id)).length;
+    return acc;
+  }, {} as Record<string, number>);
+
   return (
     <main>
-      {/* Hero Section - Ultra compact */}
       <div className="relative bg-gray-900 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-20">
@@ -83,13 +90,68 @@ export default async function ThemePage(props: Props) {
         </div>
       </div>
 
-      {/* Main Content - Minimal padding */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <ThemePageClient
-          theme={theme}
-          themeClips={themeClips}
-          themes={themes}
-        />
+      {/* Main Content Area */}
+      <div className="px-2 sm:px-4 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr,250px] gap-4">
+          {/* Clips Section */}
+          <div className="max-w-[1400px]">
+            <ThemePageClient
+              theme={theme}
+              themeClips={themeClips}
+              themes={themes}
+            />
+          </div>
+
+          {/* Theme Navigation - Vertical */}
+          <div className="lg:sticky lg:top-[88px] h-fit">
+            <div className="bg-white rounded-lg shadow-lg p-3">
+              <h2 className="text-sm font-medium text-gray-500 mb-3">Explore Themes</h2>
+              <div className="flex flex-col gap-2">
+                {themes.map((t) => {
+                  const isActive = t.id === theme.id;
+                  const ThemeIcon = iconMap[t.iconName];
+                  return (
+                    <Link
+                      key={t.id}
+                      href={`/theme/${t.id}`}
+                      className={cn(
+                        "flex items-center gap-2 px-2.5 py-2 rounded-lg transition-colors",
+                        isActive 
+                          ? "bg-gray-100" 
+                          : "hover:bg-gray-50"
+                      )}
+                    >
+                      <div 
+                        className={cn(
+                          "p-1.5 rounded-full",
+                          isActive ? "bg-gray-200" : "bg-gray-50"
+                        )}
+                      >
+                        <ThemeIcon className="h-4 w-4" style={{ color: t.iconColor }} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center justify-between gap-2">
+                          <span className={cn(
+                            "text-sm font-medium truncate",
+                            isActive ? "text-gray-900" : "text-gray-600"
+                          )}>
+                            {t.title}
+                          </span>
+                          <Badge variant="secondary" className={cn(
+                            "bg-gray-100 border-0 shrink-0",
+                            isActive ? "text-gray-900" : "text-gray-500"
+                          )}>
+                            {themeClipCounts[t.id]}
+                          </Badge>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );
