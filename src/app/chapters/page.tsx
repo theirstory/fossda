@@ -6,16 +6,16 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Search, ChevronRight, ChevronLeft, Check, ChevronDown } from "lucide-react";
+import { Clock, Search, ChevronRight, ChevronLeft, Check, ChevronDown, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import { Badge } from "@/components/ui/badge";
 
 export default function ChaptersPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,6 +24,7 @@ export default function ChaptersPage() {
   );
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
+  const [isFilterExpanded, setIsFilterExpanded] = useState(true);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Group chapters by interview
@@ -87,7 +88,7 @@ export default function ChaptersPage() {
   };
 
   return (
-    <main>
+    <main className="min-h-screen">
       {/* Hero Section */}
       <div className="relative bg-gray-900">
         {/* Background Pattern */}
@@ -98,7 +99,7 @@ export default function ChaptersPage() {
           }} />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Interview Chapters
@@ -110,153 +111,161 @@ export default function ChaptersPage() {
         </div>
       </div>
 
-      {/* Search and Filter Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="space-y-4">
-          {/* Search */}
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5" />
-            <Input 
-              placeholder="Search chapters by title or content..." 
-              className="pl-10"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
-          </div>
-
-          {/* Interview Selection */}
-          <div className="flex items-center gap-4">
-            <div className="flex flex-wrap gap-2">
-              <Popover>
-                <PopoverTrigger asChild>
-                  <Button variant="outline" className="w-[200px] justify-between" role="combobox">
-                    <span className="truncate flex items-center gap-2">
-                      <span className="text-muted-foreground">Filter by interview</span>
-                      <Badge variant="secondary" className="rounded-sm px-1 font-normal">
-                        {selectedInterviews.length}
-                      </Badge>
-                    </span>
-                    <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
-                  </Button>
-                </PopoverTrigger>
-                <PopoverContent className="w-[200px] p-2" align="start">
-                  <div className="space-y-2">
-                    <div className="flex gap-2 pb-2 border-b">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 h-8"
-                        onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
-                      >
-                        Select all
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 h-8"
-                        onClick={() => setSelectedInterviews([])}
-                      >
-                        Clear all
-                      </Button>
-                    </div>
-                    <div className="text-sm text-muted-foreground pb-1">
-                      Select multiple interviews:
-                    </div>
-                    {groupedChapters.map((interview) => (
-                      <div
-                        key={interview.id}
-                        role="button"
-                        onClick={() => {
-                          setSelectedInterviews((prev) =>
-                            prev.includes(interview.id)
-                              ? prev.filter((id) => id !== interview.id)
-                              : [...prev, interview.id]
-                          );
-                        }}
-                        className={cn(
-                          "flex items-center gap-2 px-2 py-1.5 rounded-sm text-sm relative select-none",
-                          "hover:bg-accent hover:text-accent-foreground cursor-pointer",
-                          selectedInterviews.includes(interview.id) && "bg-accent"
-                        )}
-                      >
-                        <div className={cn(
-                          "flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
-                          selectedInterviews.includes(interview.id)
-                            ? "bg-primary text-primary-foreground"
-                            : "opacity-50"
-                        )}>
-                          <Check className={cn(
-                            "h-3 w-3",
-                            selectedInterviews.includes(interview.id) ? "opacity-100" : "opacity-0"
-                          )} />
-                        </div>
-                        <span>{interview.title}</span>
-                      </div>
-                    ))}
-                  </div>
-                </PopoverContent>
-              </Popover>
-              {selectedInterviews.length !== groupedChapters.length && (
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
-                  className="text-muted-foreground"
-                >
-                  Show all
-                </Button>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Chapters Grid */}
-      <div className="bg-gray-50 py-12">
+      <div className="bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Search and Filter Options */}
+          <div className="pt-6 pb-4 flex items-center gap-4">
+            {/* Search */}
+            <div className="relative w-full max-w-md">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
+              <Input 
+                placeholder="Search chapters by title or content..." 
+                className="pl-9 h-9"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+            </div>
+
+            {/* Interview Selection */}
+            <Popover>
+              <PopoverTrigger asChild>
+                <Button variant="outline" className="w-[200px] justify-between h-9">
+                  <span className="truncate flex items-center gap-2">
+                    <span className="text-muted-foreground">Filter by interview</span>
+                    <Badge variant="secondary" className="rounded-sm px-1 font-normal">
+                      {selectedInterviews.length}
+                    </Badge>
+                  </span>
+                  <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent className="w-[200px] p-2" align="start">
+                <div className="space-y-2">
+                  <div className="flex gap-2 pb-2 border-b">
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 h-8"
+                      onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
+                    >
+                      Select all
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="flex-1 h-8"
+                      onClick={() => setSelectedInterviews([])}
+                    >
+                      Clear all
+                    </Button>
+                  </div>
+                  <div className="text-sm text-muted-foreground pb-1">
+                    Select multiple interviews:
+                  </div>
+                  {groupedChapters.map((interview) => (
+                    <div
+                      key={interview.id}
+                      role="button"
+                      onClick={() => {
+                        setSelectedInterviews((prev) =>
+                          prev.includes(interview.id)
+                            ? prev.filter((id) => id !== interview.id)
+                            : [...prev, interview.id]
+                        );
+                      }}
+                      className={cn(
+                        "flex items-center gap-2 px-2 py-1.5 rounded-sm text-sm relative select-none",
+                        "hover:bg-accent hover:text-accent-foreground cursor-pointer",
+                        selectedInterviews.includes(interview.id) && "bg-accent"
+                      )}
+                    >
+                      <div className={cn(
+                        "flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
+                        selectedInterviews.includes(interview.id)
+                          ? "bg-primary text-primary-foreground"
+                          : "opacity-50"
+                      )}>
+                        <Check className={cn(
+                          "h-3 w-3",
+                          selectedInterviews.includes(interview.id) ? "opacity-100" : "opacity-0"
+                        )} />
+                      </div>
+                      <span>{interview.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </PopoverContent>
+            </Popover>
+          </div>
+
+          {/* Selected Interviews Tags */}
+          {selectedInterviews.length > 0 && (
+            <div className="pb-4 flex flex-wrap gap-2">
+              {groupedChapters
+                .filter(interview => selectedInterviews.includes(interview.id))
+                .map((interview) => (
+                  <Badge 
+                    key={interview.id}
+                    variant="secondary"
+                    className="flex items-center gap-1 pr-1"
+                  >
+                    <span>{interview.title}</span>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="h-4 w-4 hover:bg-transparent"
+                      onClick={() => setSelectedInterviews(prev => 
+                        prev.filter(id => id !== interview.id)
+                      )}
+                    >
+                      <X className="h-3 w-3" />
+                      <span className="sr-only">Remove</span>
+                    </Button>
+                  </Badge>
+              ))}
+            </div>
+          )}
+
           <div className="relative">
-            {/* Left Scroll Button */}
+            {/* Left Edge Gradient */}
             {canScrollLeft && (
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 rounded-full bg-white shadow-lg border-gray-200 hover:bg-gray-50"
-                  onClick={() => scroll('left')}
-                >
-                  <ChevronLeft className="h-6 w-6" />
-                </Button>
-              </div>
+              <>
+                <div className="sticky left-4 top-[60%] z-50 float-left">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-12 w-12 rounded-full bg-white shadow-lg border-gray-200 hover:bg-gray-50"
+                    onClick={() => scroll('left')}
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                  </Button>
+                </div>
+                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-40" />
+              </>
             )}
 
-            {/* Left Fade */}
-            {canScrollLeft && (
-              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent z-[1] pointer-events-none" />
-            )}
-
-            {/* Right Scroll Button */}
+            {/* Right Edge Gradient */}
             {canScrollRight && (
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10">
-                <Button
-                  variant="outline"
-                  size="icon"
-                  className="h-12 w-12 rounded-full bg-white shadow-lg border-gray-200 hover:bg-gray-50"
-                  onClick={() => scroll('right')}
-                >
-                  <ChevronRight className="h-6 w-6" />
-                </Button>
-              </div>
-            )}
-
-            {/* Right Fade */}
-            {canScrollRight && (
-              <div className="absolute right-0 top-0 bottom-0 w-48 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none" />
+              <>
+                <div className="sticky right-4 top-[60%] z-50 float-right">
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="h-12 w-12 rounded-full bg-white shadow-lg border-gray-200 hover:bg-gray-50"
+                    onClick={() => scroll('right')}
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                  </Button>
+                </div>
+                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-40" />
+              </>
             )}
 
             {/* Scrollable Content */}
             <div 
               ref={scrollContainerRef}
-              className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none"
+              className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none relative"
             >
               {filteredGroups.map((group) => (
                 <div key={group.id} className="space-y-6 flex-none w-[400px]">
@@ -283,8 +292,8 @@ export default function ChaptersPage() {
                     </div>
                   </div>
 
-                  {/* Chapters Timeline */}
-                  <div className="space-y-3 overflow-y-auto max-h-[calc(100vh-300px)] pr-2 scrollbar-thin scrollbar-thumb-gray-200 hover:scrollbar-thumb-gray-300 relative">
+                  {/* Chapters Timeline - Remove max height restriction */}
+                  <div className="space-y-3 relative">
                     {group.chapters.map((chapter, index) => (
                       <Link 
                         key={`${group.id}-${index}`}
@@ -311,7 +320,6 @@ export default function ChaptersPage() {
                         </Card>
                       </Link>
                     ))}
-                    <div className="absolute right-0 bottom-0 h-24 w-full bg-gradient-to-t from-gray-50 to-transparent pointer-events-none" />
                   </div>
                 </div>
               ))}
