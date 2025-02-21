@@ -26,6 +26,23 @@ interface KeywordGroup {
   groupOperator: 'AND' | 'OR' | 'NOT';
 }
 
+function highlightText(text: string, query: string): React.ReactNode {
+  if (!query) return text;
+  
+  const parts = text.split(new RegExp(`(${query})`, 'gi'));
+  return (
+    <>
+      {parts.map((part, i) => 
+        part.toLowerCase() === query.toLowerCase() ? (
+          <span key={i} className="bg-yellow-200">{part}</span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}
+
 export default function ChaptersPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedInterviews, setSelectedInterviews] = useState<string[]>(
@@ -72,7 +89,8 @@ export default function ChaptersPage() {
         // Text search filter
         const matchesSearch = searchQuery
           ? chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            chapter.synopsis?.toLowerCase().includes(searchQuery.toLowerCase())
+            chapter.synopsis?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            chapter.tags?.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
           : true;
 
         // Evaluate all keyword groups
@@ -422,10 +440,10 @@ export default function ChaptersPage() {
                               </div>
                               <div className="flex-1">
                                 <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                  {chapter.title}
+                                  {highlightText(chapter.title, searchQuery)}
                                 </h3>
                                 <p className="text-xs text-gray-600 mt-1">
-                                  {chapter.synopsis}
+                                  {highlightText(chapter.synopsis || "", searchQuery)}
                                 </p>
                                 {chapter.tags && chapter.tags.length > 0 && (
                                   <div className="flex flex-wrap gap-1.5 mt-2">
@@ -437,7 +455,9 @@ export default function ChaptersPage() {
                                           "text-[10px] flex items-center gap-1",
                                           selectedKeywords.includes(tag)
                                             ? "bg-blue-100 text-blue-800 border-blue-200"
-                                            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                            : searchQuery && tag.toLowerCase().includes(searchQuery.toLowerCase())
+                                              ? "bg-yellow-100 text-yellow-800 border-yellow-200"
+                                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                         )}
                                         onClick={(e) => {
                                           e.preventDefault();
@@ -457,7 +477,9 @@ export default function ChaptersPage() {
                                           "text-[8px] px-1 rounded",
                                           selectedKeywords.includes(tag)
                                             ? "bg-blue-200"
-                                            : "bg-gray-200"
+                                            : searchQuery && tag.toLowerCase().includes(searchQuery.toLowerCase())
+                                              ? "bg-yellow-200"
+                                              : "bg-gray-200"
                                         )}>
                                           {keywordFrequencies[tag] || 0}
                                         </span>
