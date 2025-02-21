@@ -9,6 +9,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { formatDuration } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 
 export default function SearchClips() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,6 +44,20 @@ export default function SearchClips() {
         }}
         className="w-full"
       />
+      {searchQuery && (
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+          onClick={() => {
+            setSearchQuery("");
+            setIsSearching(false);
+          }}
+        >
+          <X className="h-4 w-4" />
+          <span className="sr-only">Clear search</span>
+        </Button>
+      )}
 
       {/* Search Results Dropdown */}
       {isSearching && (

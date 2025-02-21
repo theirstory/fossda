@@ -2,12 +2,13 @@
 
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { videoData } from "@/data/videos";
 import { Theme } from "@/data/themes";
 import { iconMap } from "@/data/icons";
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 interface ThemeFiltersProps {
   selectedInterviewees: string[];
@@ -64,6 +65,17 @@ export default function ThemeFilters({
           onChange={(e) => setSearchQuery(e.target.value)}
           className="pl-10 bg-gray-50 border-0"
         />
+        {searchQuery && (
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+            onClick={() => setSearchQuery("")}
+          >
+            <X className="h-4 w-4" />
+            <span className="sr-only">Clear search</span>
+          </Button>
+        )}
       </div>
 
       {/* Filter Section */}

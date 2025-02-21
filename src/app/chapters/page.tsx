@@ -124,6 +124,17 @@ export default function ChaptersPage() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
+              {searchQuery && (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+                  onClick={() => setSearchQuery("")}
+                >
+                  <X className="h-4 w-4" />
+                  <span className="sr-only">Clear search</span>
+                </Button>
+              )}
             </div>
 
             {/* Interview Selection */}
@@ -309,11 +320,11 @@ export default function ChaptersPage() {
                                 <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                                   {chapter.title}
                                 </h3>
-                                <p className="text-xs text-gray-600 mt-1 line-clamp-2">
+                                <p className="text-xs text-gray-600 mt-1">
                                   {chapter.synopsis}
                                 </p>
                               </div>
-                              <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-blue-600 transition-colors" />
+                              <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" />
                             </div>
                           </div>
                         </Card>

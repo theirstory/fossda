@@ -8,9 +8,10 @@ import { Input } from "@/components/ui/input";
 import { videoData } from "@/data/videos";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Filter } from "lucide-react";
+import { Search, Filter, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { iconMap } from "@/data/icons";
+import { Button } from "@/components/ui/button";
 
 interface ClipsGridProps {
   clips: Clip[];
@@ -108,6 +109,17 @@ export default function ClipsGrid({
             onChange={(e) => setSearchQuery?.(e.target.value)}
             className="pl-10 bg-gray-50 border-0"
           />
+          {searchQuery && (
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+              onClick={() => setSearchQuery?.("")}
+            >
+              <X className="h-4 w-4" />
+              <span className="sr-only">Clear search</span>
+            </Button>
+          )}
         </div>
 
         {/* Filter Section */}
