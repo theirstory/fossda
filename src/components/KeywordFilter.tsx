@@ -84,11 +84,17 @@ export default function KeywordFilter({
     onKeywordGroupsChange(
       keywordGroups.map(group =>
         group.id === groupId
-          ? { ...group, keywords: [...group.keywords, keyword] }
+          ? group.keywords.includes(keyword)
+            ? group // Skip if keyword already exists in this group
+            : { ...group, keywords: [...group.keywords, keyword] }
           : group
       )
     );
-    onKeywordsChange([...selectedKeywords, keyword]);
+    // Only update selectedKeywords if the keyword was actually added
+    const targetGroup = keywordGroups.find(g => g.id === groupId);
+    if (targetGroup && !targetGroup.keywords.includes(keyword)) {
+      onKeywordsChange([...selectedKeywords, keyword]);
+    }
   };
 
   // Remove a keyword from a group
@@ -148,9 +154,11 @@ export default function KeywordFilter({
   };
 
   const toggleKeyword = (keyword: string) => {
-    if (!selectedKeywords.includes(keyword) && keywordGroups.length > 0) {
+    if (keywordGroups.length > 0) {
+      // Always add to the last group
       addKeywordToGroup(keywordGroups[keywordGroups.length - 1].id, keyword);
-    } else if (!selectedKeywords.includes(keyword)) {
+    } else {
+      // Create a new group if none exist
       const newGroup: KeywordGroup = { 
         id: Math.random().toString(), 
         keywords: [keyword], 
