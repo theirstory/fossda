@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { ChapterMetadata } from '@/types/transcript';
 import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
@@ -16,6 +16,20 @@ export default function VideoChapters({
   isPlaying
 }: VideoChaptersProps) {
   const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
+  const chapterListRef = useRef<HTMLDivElement>(null);
+
+  // Add effect to scroll active chapter into view
+  useEffect(() => {
+    if (chapterListRef.current) {
+      const chapterElements = chapterListRef.current.children;
+      if (chapterElements[currentChapterIndex]) {
+        chapterElements[currentChapterIndex].scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest'
+        });
+      }
+    }
+  }, [currentChapterIndex]);
 
   // Add effect to update current chapter based on video time
   useEffect(() => {
@@ -118,7 +132,7 @@ export default function VideoChapters({
   return (
     <Card className="h-full overflow-hidden">
       <div className="h-full flex">
-        <div className="w-64 border-r bg-gray-50 overflow-y-auto">
+        <div ref={chapterListRef} className="w-64 border-r bg-gray-50 overflow-y-auto">
           {chapters.map((chapter, index) => (
             <button
               key={chapter.time.start}
