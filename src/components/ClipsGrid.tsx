@@ -207,7 +207,6 @@ export default function ClipsGrid({
                         fill
                         className="object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
                       <div className="absolute bottom-2 right-2">
                         <Badge variant="secondary" className="bg-black/70 text-white border-0">
                           {formatDuration(clip.duration)}

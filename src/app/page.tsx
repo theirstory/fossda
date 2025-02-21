@@ -72,10 +72,10 @@ export default function Home() {
                   height={1080}
                   className="w-full aspect-video object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-semibold text-white drop-shadow-lg">{heroVideo.title}</h3>
-                  <p className="mt-2 text-gray-200 text-sm drop-shadow-lg">{heroVideo.sentence}</p>
+                  <h3 className="text-xl font-semibold text-white text-shadow-lg">{heroVideo.title}</h3>
+                  <p className="mt-2 text-gray-100 text-sm text-shadow-lg">{heroVideo.sentence}</p>
                 </div>
               </Link>
             </div>
@@ -107,10 +107,10 @@ export default function Home() {
                       height={720}
                       className="w-full aspect-video object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-lg font-semibold text-white drop-shadow-lg">{video.title}</h3>
-                      <p className="mt-2 text-gray-100 text-sm line-clamp-2 drop-shadow-lg leading-relaxed">{video.sentence}</p>
+                      <h3 className="text-lg font-semibold text-white text-shadow-lg">{video.title}</h3>
+                      <p className="mt-2 text-gray-100 text-sm line-clamp-2 text-shadow-lg leading-relaxed">{video.sentence}</p>
                     </div>
                   </div>
                 </Link>
