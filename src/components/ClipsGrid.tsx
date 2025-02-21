@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import React from "react";
 import { Clip } from "@/types";
 import { Theme } from "@/data/themes";
@@ -9,11 +8,20 @@ import { Input } from "@/components/ui/input";
 import { videoData } from "@/data/videos";
 import Link from "next/link";
 import Image from "next/image";
+import { Search, Filter } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface ClipsGridProps {
   clips: Clip[];
   interviewees: { id: string; title: string; }[];
   themes: Theme[];
+  variant?: 'filters' | 'clips';
+  selectedInterviewees?: string[];
+  setSelectedInterviewees?: React.Dispatch<React.SetStateAction<string[]>>;
+  selectedThemes?: string[];
+  setSelectedThemes?: React.Dispatch<React.SetStateAction<string[]>>;
+  searchQuery?: string;
+  setSearchQuery?: React.Dispatch<React.SetStateAction<string>>;
 }
 
 function highlightText(text: string, query: string): React.ReactNode {
@@ -33,17 +41,25 @@ function highlightText(text: string, query: string): React.ReactNode {
   );
 }
 
-export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProps) {
-  const [selectedInterviewees, setSelectedInterviewees] = useState<string[]>([]);
-  const [selectedThemes, setSelectedThemes] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState("");
-
+export default function ClipsGrid({ 
+  clips, 
+  interviewees, 
+  themes, 
+  variant = 'clips',
+  selectedInterviewees = [],
+  setSelectedInterviewees,
+  selectedThemes = [],
+  setSelectedThemes,
+  searchQuery = "",
+  setSearchQuery
+}: ClipsGridProps) {
   const filteredClips = clips.filter(clip => {
     const matchesInterviewee = selectedInterviewees.length === 0 || 
                               selectedInterviewees.includes(clip.interviewId);
     const matchesTheme = selectedThemes.length === 0 || 
                         clip.themes.some(theme => selectedThemes.includes(theme));
-    const matchesSearch = clip.transcript.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    const matchesSearch = !searchQuery || 
+                         clip.transcript.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          clip.title.toLowerCase().includes(searchQuery.toLowerCase());
     
     return matchesInterviewee && matchesTheme && matchesSearch;
@@ -56,71 +72,105 @@ export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProp
   }
 
   const handleIntervieweeChange = (value: string) => {
-    const intervieweeId = value;
-    setSelectedInterviewees(prev => {
-      if (prev.includes(intervieweeId)) {
-        return prev.filter(id => id !== intervieweeId);
-      }
-      return [...prev, intervieweeId];
-    });
+    if (setSelectedInterviewees) {
+      setSelectedInterviewees((prev: string[]) => {
+        if (prev.includes(value)) {
+          return prev.filter((id: string) => id !== value);
+        }
+        return [...prev, value];
+      });
+    }
   };
 
   const handleThemeChange = (value: string) => {
-    const themeId = value;
-    setSelectedThemes(prev => {
-      if (prev.includes(themeId)) {
-        return prev.filter(id => id !== themeId);
-      }
-      return [...prev, themeId];
-    });
+    if (setSelectedThemes) {
+      setSelectedThemes((prev: string[]) => {
+        if (prev.includes(value)) {
+          return prev.filter((id: string) => id !== value);
+        }
+        return [...prev, value];
+      });
+    }
   };
 
-  return (
-    <div className="space-y-6">
-      {/* Filters */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Input
-          placeholder="Search clips..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full"
-        />
-        
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Interviewees</label>
-          <div className="flex flex-wrap gap-2">
-            {interviewees.map((interviewee) => (
-              <Badge
-                key={interviewee.id}
-                variant={selectedInterviewees.includes(interviewee.id) ? "default" : "outline"}
-                className="cursor-pointer"
-                onClick={() => handleIntervieweeChange(interviewee.id)}
-              >
-                {interviewee.title}
-              </Badge>
-            ))}
+  if (variant === 'filters') {
+    return (
+      <div className="space-y-4">
+        {/* Search */}
+        <div className="relative">
+          <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+            <Search className="h-5 w-5 text-gray-400" />
           </div>
+          <Input
+            placeholder="Search clips..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery?.(e.target.value)}
+            className="pl-10 bg-gray-50 border-0"
+          />
         </div>
 
-        <div className="space-y-2">
-          <label className="text-sm font-medium">Themes</label>
-          <div className="flex flex-wrap gap-2">
-            {themes.map((theme) => (
-              <Badge
-                key={theme.id}
-                variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
-                className={`cursor-pointer hover:${theme.color}`}
-                onClick={() => handleThemeChange(theme.id)}
-              >
-                {theme.title}
-              </Badge>
-            ))}
+        {/* Filter Section */}
+        <div className="space-y-4">
+          <div className="flex items-center gap-2 text-sm text-gray-500">
+            <Filter className="h-4 w-4" />
+            <span>Filter clips by:</span>
+          </div>
+
+          {/* Interviewees */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Interviewees</label>
+            <div className="flex flex-col gap-2">
+              {interviewees.map((interviewee) => (
+                <Badge
+                  key={interviewee.id}
+                  variant={selectedInterviewees.includes(interviewee.id) ? "default" : "outline"}
+                  className={cn(
+                    "cursor-pointer transition-colors justify-start",
+                    selectedInterviewees.includes(interviewee.id) 
+                      ? "bg-blue-600 hover:bg-blue-700" 
+                      : "hover:bg-gray-100"
+                  )}
+                  onClick={() => handleIntervieweeChange(interviewee.id)}
+                >
+                  {interviewee.title}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          {/* Themes */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-gray-700">Themes</label>
+            <div className="flex flex-col gap-2">
+              {themes.map((theme) => (
+                <Badge
+                  key={theme.id}
+                  variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
+                  className={cn(
+                    "cursor-pointer transition-colors justify-start",
+                    selectedThemes.includes(theme.id)
+                      ? theme.color
+                      : cn(
+                          theme.color.replace('hover:', ''),
+                          "hover:border-transparent"
+                        )
+                  )}
+                  onClick={() => handleThemeChange(theme.id)}
+                >
+                  {theme.title}
+                </Badge>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+    );
+  }
 
+  return (
+    <div className="space-y-4">
       {/* Results count */}
-      <div className="text-sm text-gray-600">
+      <div className="text-sm text-gray-600 pb-3 border-b">
         Showing {filteredClips.length} clips
       </div>
 
@@ -131,69 +181,72 @@ export default function ClipsGrid({ clips, interviewees, themes }: ClipsGridProp
           return (
             <div 
               key={clip.id}
-              className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow"
+              className="group bg-white rounded-lg overflow-hidden shadow-sm transform transition duration-300 hover:shadow-md hover:scale-[1.01]"
             >
-              <div className="flex gap-6">
+              <div className="flex gap-4 p-3">
                 <div className="relative w-48 flex-shrink-0">
-                  <Link 
-                    href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
-                    className="block cursor-pointer"
-                  >
-                    <div className="relative aspect-video rounded-md overflow-hidden">
+                  <Link href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}>
+                    <div className="relative aspect-video rounded-lg overflow-hidden">
                       <Image
                         src={video.thumbnail}
                         alt={video.title}
                         fill
                         className="object-cover"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20" />
                       <div className="absolute bottom-2 right-2">
                         <Badge variant="secondary" className="bg-black/70 text-white border-0">
                           {formatDuration(clip.duration)}
                         </Badge>
                       </div>
                     </div>
-                    <div className="mt-2 text-sm text-gray-600 truncate">
-                      {video.title}
-                    </div>
                   </Link>
                 </div>
 
-                <div className="flex-1">
-                  <div className="flex justify-between items-start mb-2">
-                    <div>
-                      <h3 className="text-lg font-semibold mb-1">
+                <div className="flex-1 min-w-0 space-y-2">
+                  <div>
+                    <Link href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}>
+                      <h3 className="text-base font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                         {highlightText(clip.title, searchQuery)}
                       </h3>
                       <div className="text-sm text-gray-500">
-                        Chapter: {highlightText(clip.chapter.title, searchQuery)}
+                        From: {video.title} • {clip.chapter.title}
                       </div>
-                    </div>
+                    </Link>
                   </div>
                   
-                  <blockquote className="text-gray-600 mb-4 border-l-4 pl-4 italic">
-                    {highlightText(clip.transcript, searchQuery)}
-                  </blockquote>
+                  <Link href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}>
+                    <blockquote className="text-gray-700 border-l-4 pl-4 italic line-clamp-2 text-sm">
+                      {highlightText(clip.transcript, searchQuery)}
+                    </blockquote>
+                  </Link>
                   
-                  <div className="flex items-center justify-between">
-                    <div className="flex gap-2">
+                  <div className="flex items-center justify-between pt-1">
+                    <div className="flex gap-1">
                       {clip.themes.map(themeId => {
                         const theme = themes.find(t => t.id === themeId);
                         return theme ? (
-                          <Link key={themeId} href={`/theme/${themeId}`}>
-                            <Badge 
-                              variant="outline" 
-                              className={`hover:${theme.color} hover:text-white transition-colors`}
-                            >
-                              {theme.title}
-                            </Badge>
-                          </Link>
+                          <div key={themeId}>
+                            <Link href={`/theme/${themeId}`}>
+                              <Badge 
+                                variant="outline" 
+                                className={cn(
+                                  "transition-colors text-xs",
+                                  theme.color.replace('hover:', ''),
+                                  "hover:border-transparent"
+                                )}
+                              >
+                                {theme.title}
+                              </Badge>
+                            </Link>
+                          </div>
                         ) : null;
                       })}
                     </div>
                     
                     <Link 
                       href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
-                      className="text-sm text-blue-600 hover:text-blue-800"
+                      className="text-sm text-blue-600 group-hover:text-blue-800 transition-colors"
                     >
                       Watch in Interview →
                     </Link>
