@@ -52,11 +52,11 @@ export default async function VideoPage({ params }: Props) {
         </div>
 
         <div className="relative max-w-[1920px] mx-auto px-2 py-3">
-          <div className="text-center">
-            <h1 className="text-xl font-bold tracking-tight text-white sm:text-2xl">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-xl font-bold tracking-tight text-white sm:text-2xl mb-2">
               {currentVideo.title}
             </h1>
-            <p className="mt-1 text-sm text-gray-300 max-w-3xl mx-auto">
+            <p className="text-sm text-gray-300">
               {currentVideo.sentence}
             </p>
           </div>
@@ -64,7 +64,7 @@ export default async function VideoPage({ params }: Props) {
       </div>
 
       {/* Main Content Area */}
-      <div className="bg-gray-50 flex-1 overflow-hidden">
+      <div className="bg-gray-50 flex-1 min-h-0">
         <div className="max-w-[1920px] h-full mx-auto px-2 py-2">
           <Suspense fallback={<div>Loading...</div>}>
             <VideoSection
