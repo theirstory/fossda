@@ -89,6 +89,18 @@ export default function MainNavigation() {
             </Link>
 
             <Link
+              href="/interviews"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                pathname === "/interviews"
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              )}
+            >
+              Interviews
+            </Link>
+
+            <Link
               href="/clips"
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary whitespace-nowrap",
