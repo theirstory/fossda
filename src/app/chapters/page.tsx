@@ -6,20 +6,22 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Search, ChevronRight, X, ChevronLeft } from "lucide-react";
+import { Clock, Search, ChevronRight, ChevronLeft, Check, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
+import { Badge } from "@/components/ui/badge";
 
 export default function ChaptersPage() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedInterviews, setSelectedInterviews] = useState<string[]>([]);
+  const [selectedInterviews, setSelectedInterviews] = useState<string[]>(
+    Object.entries(chapterData).map(([videoId]) => videoId)
+  );
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -39,7 +41,7 @@ export default function ChaptersPage() {
 
   // Filter chapters based on search and selected interviews
   const filteredGroups = groupedChapters
-    .filter(group => selectedInterviews.length === 0 || selectedInterviews.includes(group.id))
+    .filter(group => selectedInterviews.includes(group.id))
     .map(group => ({
       ...group,
       chapters: group.chapters.filter(chapter =>
@@ -50,10 +52,6 @@ export default function ChaptersPage() {
       )
     }))
     .filter(group => group.chapters.length > 0);
-
-  // Available interviews for selection
-  const availableInterviews = groupedChapters
-    .filter(group => !selectedInterviews.includes(group.id));
 
   // Check scroll position
   useEffect(() => {
@@ -128,41 +126,87 @@ export default function ChaptersPage() {
 
           {/* Interview Selection */}
           <div className="flex items-center gap-4">
-            <div className="flex-1">
-              <div className="flex flex-wrap gap-2">
-                {selectedInterviews.map(interviewId => {
-                  const interview = groupedChapters.find(g => g.id === interviewId);
-                  return (
-                    <Button
-                      key={interviewId}
-                      variant="secondary"
-                      size="sm"
-                      onClick={() => setSelectedInterviews(prev => prev.filter(id => id !== interviewId))}
-                      className="group"
-                    >
-                      {interview?.title}
-                      <X className="w-4 h-4 ml-2 opacity-50 group-hover:opacity-100" />
-                    </Button>
-                  );
-                })}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              <Popover>
+                <PopoverTrigger asChild>
+                  <Button variant="outline" className="w-[200px] justify-between" role="combobox">
+                    <span className="truncate flex items-center gap-2">
+                      <span className="text-muted-foreground">Filter by interview</span>
+                      <Badge variant="secondary" className="rounded-sm px-1 font-normal">
+                        {selectedInterviews.length}
+                      </Badge>
+                    </span>
+                    <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
+                  </Button>
+                </PopoverTrigger>
+                <PopoverContent className="w-[200px] p-2" align="start">
+                  <div className="space-y-2">
+                    <div className="flex gap-2 pb-2 border-b">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex-1 h-8"
+                        onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
+                      >
+                        Select all
+                      </Button>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="flex-1 h-8"
+                        onClick={() => setSelectedInterviews([])}
+                      >
+                        Clear all
+                      </Button>
+                    </div>
+                    <div className="text-sm text-muted-foreground pb-1">
+                      Select multiple interviews:
+                    </div>
+                    {groupedChapters.map((interview) => (
+                      <div
+                        key={interview.id}
+                        role="button"
+                        onClick={() => {
+                          setSelectedInterviews((prev) =>
+                            prev.includes(interview.id)
+                              ? prev.filter((id) => id !== interview.id)
+                              : [...prev, interview.id]
+                          );
+                        }}
+                        className={cn(
+                          "flex items-center gap-2 px-2 py-1.5 rounded-sm text-sm relative select-none",
+                          "hover:bg-accent hover:text-accent-foreground cursor-pointer",
+                          selectedInterviews.includes(interview.id) && "bg-accent"
+                        )}
+                      >
+                        <div className={cn(
+                          "flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
+                          selectedInterviews.includes(interview.id)
+                            ? "bg-primary text-primary-foreground"
+                            : "opacity-50"
+                        )}>
+                          <Check className={cn(
+                            "h-3 w-3",
+                            selectedInterviews.includes(interview.id) ? "opacity-100" : "opacity-0"
+                          )} />
+                        </div>
+                        <span>{interview.title}</span>
+                      </div>
+                    ))}
+                  </div>
+                </PopoverContent>
+              </Popover>
+              {selectedInterviews.length !== groupedChapters.length && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
+                  className="text-muted-foreground"
+                >
+                  Show all
+                </Button>
+              )}
             </div>
-            {availableInterviews.length > 0 && (
-              <Select
-                onValueChange={(value) => setSelectedInterviews(prev => [...prev, value])}
-              >
-                <SelectTrigger className="w-[200px]">
-                  <SelectValue placeholder="Add interview" />
-                </SelectTrigger>
-                <SelectContent>
-                  {availableInterviews.map(interview => (
-                    <SelectItem key={interview.id} value={interview.id}>
-                      {interview.title}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            )}
           </div>
         </div>
       </div>
