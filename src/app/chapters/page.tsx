@@ -112,7 +112,7 @@ export default function ChaptersPage() {
 
       {/* Chapters Grid */}
       <div className="bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* Search and Filter Options */}
           <div className="pt-6 pb-4 flex items-center gap-4">
             {/* Search */}
@@ -278,10 +278,10 @@ export default function ChaptersPage() {
               className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none relative"
             >
               {filteredGroups.map((group) => (
-                <div key={group.id} className="space-y-6 flex-none w-[400px]">
+                <div key={group.id} className="space-y-6 flex-none w-[500px]">
                   {/* Interview Header */}
-                  <div className="flex items-center gap-4">
-                    <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+                  <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
+                    <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-blue-500 transition-all">
                       <Image
                         src={group.thumbnail}
                         alt={group.title}
@@ -290,7 +290,7 @@ export default function ChaptersPage() {
                       />
                     </div>
                     <div>
-                      <h2 className="text-xl font-bold text-gray-900">
+                      <h2 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                         {group.title}
                       </h2>
                       <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
@@ -300,7 +300,7 @@ export default function ChaptersPage() {
                         {group.chapters.length} chapters
                       </div>
                     </div>
-                  </div>
+                  </Link>
 
                   {/* Chapters Timeline - Remove max height restriction */}
                   <div className="space-y-3 relative">

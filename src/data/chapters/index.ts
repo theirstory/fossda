@@ -12,6 +12,27 @@ interface ChapterData {
   metadata: ChapterMetadata[];
 }
 
+// Define the raw metadata type from JSON
+interface RawChapterMetadata {
+  title: string;
+  timecode: string;
+  time: {
+    start: number;
+    end: number | null;
+  };
+  synopsis: string;
+  keywords?: string;
+}
+
+// Helper function to process chapter metadata
+function processChapterMetadata(metadata: RawChapterMetadata[]): ChapterMetadata[] {
+  return metadata.map(chapter => ({
+    ...chapter,
+    // Convert keywords string to array of tags
+    tags: chapter.keywords ? chapter.keywords.split(', ') : []
+  }));
+}
+
 // // Create a default chapter structure
 // const defaultChapter: ChapterData = {
 //   title: "",
@@ -26,25 +47,25 @@ export const chapterData: Record<string, ChapterData> = {
     title: "Introduction to FOSSDA",
     created_at: "2024-02-14T00:00:00Z",
     updated_at: "2024-02-14T00:00:00Z",
-    metadata: introChapters.metadata || []
+    metadata: processChapterMetadata(introChapters.metadata || [])
   },
   'heather-meeker': {
     title: "Heather Meeker",
     created_at: "2024-02-14T00:00:00Z",
     updated_at: "2024-02-14T00:00:00Z",
-    metadata: heatherChapters.metadata || []
+    metadata: processChapterMetadata(heatherChapters.metadata || [])
   },
   'deb-goodkin': {
     title: "Deb Goodkin",
     created_at: "2024-02-14T00:00:00Z",
     updated_at: "2024-02-14T00:00:00Z",
-    metadata: debChapters.metadata || []
+    metadata: processChapterMetadata(debChapters.metadata || [])
   },
   'bruce-perens': {
     title: "Bruce Perens",
     created_at: "2024-02-14T00:00:00Z",
     updated_at: "2024-02-14T00:00:00Z",
-    metadata: bruceChapters.metadata || []
+    metadata: processChapterMetadata(bruceChapters.metadata || [])
   }
 };
 
