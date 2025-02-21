@@ -133,6 +133,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
                   transcriptHtml={transcriptHtml}
                   videoRef={videoRef}
                   isPlaying={isPlaying}
+                  chapters={videoChapters.metadata}
                 />
               </div>
             </TabsContent>

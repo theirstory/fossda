@@ -24,7 +24,6 @@ export default function ChaptersPage() {
   );
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
-  const [isFilterExpanded, setIsFilterExpanded] = useState(true);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Group chapters by interview

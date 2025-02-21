@@ -6,11 +6,13 @@ import { useScripts } from "@/hooks/useScript";
 import { addTimecodesToTranscript } from "@/lib/transcript";
 import { MuxPlayerElement } from '@mux/mux-player-react';
 import { useSearchParams } from 'next/navigation';
+import { ChapterMetadata } from "@/types/transcript";
 
 interface InteractiveTranscriptProps {
   transcriptHtml: string;
   videoRef: React.RefObject<MuxPlayerElement | null>;
   isPlaying: boolean;
+  chapters: ChapterMetadata[];
 }
 
 const transcriptStyles = `
@@ -24,7 +26,8 @@ const transcriptStyles = `
 export default function InteractiveTranscript({
   transcriptHtml,
   videoRef,
-  isPlaying
+  isPlaying,
+  chapters
 }: InteractiveTranscriptProps) {
   const transcriptRef = useRef<HTMLDivElement>(null);
   const transcriptContainerRef = useRef<HTMLDivElement>(null);
@@ -77,9 +80,9 @@ export default function InteractiveTranscript({
 
   useEffect(() => {
     if (mounted && typeof window !== 'undefined') {
-      setProcessedHtml(addTimecodesToTranscript(transcriptHtml));
+      setProcessedHtml(addTimecodesToTranscript(transcriptHtml, chapters));
     }
-  }, [transcriptHtml, mounted]);
+  }, [transcriptHtml, chapters, mounted]);
 
   // Create a stable click handler using useCallback
   const handleSpanClick = useCallback((event: Event) => {
