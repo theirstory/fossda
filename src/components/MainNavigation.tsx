@@ -127,7 +127,7 @@ export default function MainNavigation() {
             {/* Modified Themes Dropdown */}
             {mounted && (
               <Select 
-                onValueChange={(value) => {
+                onValueChange={(value: string) => {
                   router.push(`/theme/${value}`);
                   const selectElement = document.querySelector('[role="combobox"]') as HTMLElement;
                   if (selectElement) {
