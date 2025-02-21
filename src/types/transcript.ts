@@ -26,6 +26,7 @@ export interface ChapterMetadata {
     end: number | null;
   };
   synopsis: string;
+  tags?: string[];
 }
 
 export interface TranscriptIndex {

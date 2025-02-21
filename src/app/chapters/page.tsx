@@ -323,6 +323,19 @@ export default function ChaptersPage() {
                                 <p className="text-xs text-gray-600 mt-1">
                                   {chapter.synopsis}
                                 </p>
+                                {chapter.tags && chapter.tags.length > 0 && (
+                                  <div className="flex flex-wrap gap-1.5 mt-2">
+                                    {chapter.tags.map((tag, i) => (
+                                      <Badge 
+                                        key={i} 
+                                        variant="secondary" 
+                                        className="text-[10px] bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                      >
+                                        {tag}
+                                      </Badge>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
                               <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" />
                             </div>

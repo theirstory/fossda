@@ -1,0 +1,1532 @@
+{
+  "introduction-to-fossda": {
+    "segments": [
+      {
+        "speaker": "Heather Meeker",
+        "text": "Welcome to the open source stories, digital archive, or FOSSDA. Open source has changed the world. And it's changed the world greatly for the better. It's a movement that's been going on for quite a while now, and it didn't start because of a government, or a company, or a politician."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "It started really from people who wanted to change the way people had access to software because software is so important to our lives now. Whether you know it or not, you are using open-source software right now, and you're probably using it every moment of your life. And that's due to a very dedicated group of people who started, and who grew this movement over many years."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Because this is such an important change in our world, and because it happened in the way it did. I thought it was important to capture the personal stories of people involved in this movement. What made them so dedicated? What made them understand that this was so important?"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "And so I've asked lots of my friends, and colleagues, and people I don't even know to contribute their stories to this oral history, so that the generations who go"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "beyond and take open source forward into the 21st"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "century will understand, how such a movement could have come about."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Now, it's only fair that I tell my own story and it's certainly not the most interesting story you're going to hear, but I was a computer programmer a long time ago back in the 1980s."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "It was so long ago, we called ourselves computer programmers instead of software engineers. I wrote code in compiled Basic."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Now, for people who are in the tech industry, that is, you know, a very lightweight way of doing computer programming, but hey, you can't judge, because it actually worked really well for what we were doing at the time. But I was very interested in software as a result. And by the way, I got into software just by kind of talking my way into a job. It's not like you went to school to get a job in that back in those days. And eventually, when I went to law"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "school and then I graduated, I found that there was all this really interesting stuff going on in software licensing."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "My clients started to ask me, \"What about these open source licenses?\""
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "And they were really something new. They were not like anything anyone had seen before. And for the most part, they weren't really written entirely by lawyers or much like normal software licenses. Most of the people I worked with at the time had the attitude of, well, you know, you can't use this stuff. We don't understand it. You don't know where it's been. It's kind of like when your mother says, \"Don't put that in your mouth. You don't know where it's been.\" And but my clients kept asking me about it, and I thought that instead of the answer just being, \"No\", which was the answer most lawyers were giving it the time,"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "I had to say, \"Yes, if...\""
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "And so I started trying to figure out how to do that and there wasn't much out there. Not a lot of information out there. And so I actually started creating some of the information. And I found it was just an absolutely fascinating thing."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "I mean, people get into the law for different reasons, but I think actually for a lot of lawyers, they get into it because being a lawyer is like solving all these really intricate puzzles. And by the way, that's very similar to what programming is like and I love both of those things."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "So I started trying to unpack this puzzle and figure it out. And it's been so interesting and sustained me for decades now in my practice, and it's made my practice better than I could have ever expected. Just the pure interest value of, it is really what gets me out of bed and at my desk every morning,"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "So I have had a wonderful time focusing on open source software licensing over the years."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, I hope you enjoy listening to the stories in this archive,"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "and I hope it helps make you think about how people can change the world."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Thanks so much for listening."
+      }
+    ],
+    "entities": {
+      "PERSON": [],
+      "ORG": [
+        "FOSSDA"
+      ],
+      "GPE": [],
+      "DATE": [
+        "many years",
+        "the 21st century",
+        "the 1980s",
+        "those days",
+        "decades",
+        "the years"
+      ],
+      "PRODUCT": [],
+      "EVENT": []
+    }
+  },
+  "bruce-perens": {
+    "segments": [
+      {
+        "speaker": "Heather Meeker",
+        "text": "Okay, I think we're going. All right. Hello. I am very happy today to be talking to Bruce Perens, who is one of the founders of the Open Source movement and who created the 'open source' definition. You know, it's impossible to catalog all of Bruce's achievements in a short introduction and to most in the open source world, he doesn't need any introduction."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "But I'll mention a couple of things. He's the creator of BusyBox, which is a key software utility for Linux system that everybody uses all the time, and he was a key developer at Pixar, helping to create the technology of 3D animated feature films. Bruce, welcome to FOSSDA!"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Well, thank you very much, Heather."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "So glad that you're willing to take the time to talk to me today. So, I'd like to know what got you involved in open source? How'd you decide to get involved in/create this movement of open source?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Well, obviously, I'm standing on the shoulders of giants because the work of Richard Stallman preceeded mine, and the basic concepts of open source are those created by Richard for free software. What we did with open source was create a marketing program for the free software concept which would reach different people. So, Richard's approach was very well suited for programmers, but it depended on the apriori understanding of the usefulness of software freedom."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And our approach was more based on just having a big collection of software that you could build, whether it was a business or any project that you wanted to, you could build these upon, you could share the development of the software and my feeling personally was that the philosophy would come later for a lot of the people who participated."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, obviously, we were successful beyond our wildest dreams. We took over, essentially, the software industry. Open source is everywhere. Whether you understand it or not, you encounter it in your life all day. And so, that has been very fulfilling."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "We did not achieve all of our goals. Actually, I would have liked it if people did appreciate the need for software freedom, which is something that is becoming more meaningful today, especially in the context of privacy and people seeing the large web companies, as sort of privacy eating giants, don't really have your best interest in mind."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And open source, though very successful, I think, has evolved a extremely capable open source, exploitation industry. So, I'm not quite so happy about that, I actually am working on solutions."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, so, tell me at the very beginning - and by the way, I kind of know some of the answer to this because you and I have known each other for a long time but -"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Yeah but we have an audience so let's conquer that!"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Yeah, right! How did you actually get involved in the development of open source? What was the motivation for doing that in the first place?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Well, I had been a Unix systems programmer since 1981 and that was at the lab that was the predecessor of Pixar. It was at New York Tech, a otherwise not-very-memorable college, that had the computer graphics laboratory - almost a hobby of the chancellor of this college, the late Alexander Schure - and we were creating 3D feature character animation in that laboratory."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "A lot of the people went on to Pixar, also many other places - Disney, Dreamworks, all over. And so, I was into Unix and eventually went to work for Pixar. And one day, I actually sat across from Steve Jobs' office, not because I was important, I think they wanted to keep an eye on me."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, one day, Steve made his peace with Bill Gates and where there had been a NeXT workstation on Steve's desk, there was now a Windows laptop and for a time at Pixar, Steve felt that computing would just all turn to Microsoft Windows and I have asserted down on that. I didn't actually think of it as a very capable system, especially at the time because Microsoft didn't have competition that would give it a strong quality incentive like they have now."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, Linux started to come along because of a number of factors. The Canoe project had developed all of what we call runtime. So all of the programs that would run on it, and the libraries for the most part were a product of the Canoe project - but the Canoe project was not successful in developing a kernel, which is the part that connects the hardware and the software - and so, Linus Torvalds came along and made a successful kernel."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "At the start it didn't have networking, you know, people don't remember the Linux didn't actually work on the net successfully for quite a while and people started to create Linux distributions and there were a number of for-profit ones, most of which no one has ever heard of today. And Ian Murdock saw this happening and said, well, let's create a non-profit one and he created Debian which most people actually know through Ubuntu today and I joined, I guess, there must have been 50 people on the whole project at the time, and eventually became the Debian project leader."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Ian went on to other things and took the project and did something that no one knew was possible at that time, which was that Ian had made all of the core of the project, everything that it needed to boot and run and install packages, had been produced by Ian."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I took it and obviously didn't have the time to work on all of these packages and fanned them out to 50 people who I only knew from email correspondence on the net. I was a Debian project leader, I had never actually met another Debian developer, and fanned it out. And these 50 people who also did not physically know each other combined to create a working, running, operating system. And obviously, the software was very modular and that certainly helped us get away with that but also the fact that open source let us all sort of look over each other's shoulders and help each other was very useful as well."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "So all of these people who had no common employer, who hadn't met at that time, and who really only had their own private goals driving this - I think, at that point, none of them were actually doing this for their employer - combined to create a working operating system that among other things, flew on the space shuttle controlling an experiment, was very, very successful."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And most of the work that we did at that time survives in the Linux system that you are using today, some of it in your Android telephones. Because I wrote BusyBox, BusyBox was the installer. The whole idea of BusyBox is it's all of the commands that you might need to install an operating system on a computer made smaller so that they all would fit on a floppy disk."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Okay, that's how far back this goes. We had those three-and-a-half inch plastic floppy disks and the kernel fit on one and all of the runtime and BusyBox fit on the second one. And so, you would boot your system using these two floppy disks and then you would be able to put a CD in the CD drive and install the entire distribution from it."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "I don't think we even had bootable CD at that point. And if you didn't have a CD, we also had a way to make rather large collection of floppy disks, and you would also just keep feeding floppies into your computer until you had a system installed. You know, going back this far, I think I had 240 megabyte hard drives on the computer I was using for development. So, thats actually practical to feed this all with that amount of floppies, and this worked!"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I, actually, for all of the work that other people have done upon it and all of the legal issues, which later popped up, I worked on BusyBox for an entire month and I never touched it again. I created about 35 programs in that month and subsequent to that, it was adopted by a series of other programmers who made tremendous improvements to it, but I actually checked and my code is still in it."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I used the GPL license, and the GPL license is a share-and-share-alike license and thus, if you made improvements to this program, you had to share the improvement. So my original investment of a month of evenings I should have been spending with my wife, really, was tremendously, tremendously expanded by the subsequent work of all of these people which they did under the GPL license contribute when in some cases the incentive for them would have been to keep their modifications private."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "So we had two embedded systems- companies that decided to make embedded Linux and deal it to a number of commercial companies that were putting it on various kinds of hardware. And one of them was Linio and I don't even remember the name of the other now."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And those companies achieved a six months time to market lead by using my software rather than creating their own and this was in terms of- it might have taken some of their guys that long to add all of the software and make it all work. And so they built on my software and the software became much much larger, got up above a hundred and thirty commands."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "So bigger than a floppy disk?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Yeah and essentially a small but capable command line system that you could do many different things with. And so, that system became part of a lot of Android telephones, of part of wireless access points, if you use- well, the open source project OpenWrt uses it."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Then many commercial, wireless access point designs are derived from that. For example, there are very many embedded devices for the most mundane uses - aquarium temperature controllers that all have this software in them, and webcams, all kinds of things."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, for something that I spent a month upon, I did not ever receive financial compensation directly from it, but it has tens and hundreds of millions of users. All right. Users who don't necessarily even know that it exists but there is some pride in that, just as an artist likes to have their paintings appreciated, a programmer likes to have lots of users and lots of things happening with their software."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And today, I know that a jet plane does not fly without using BusyBox and you don't, you probably don't wake up and get into your day without using BusyBox. And so, that's really fun and it was worth that months of evenings and Valerie and I are still together even though I probably neglected her for that whole month."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, we didn't receive direct payment for this, but I did receive a great deal of notoriety which has led to a lot of other opportunities. One of the most fun was I was in a commercial for IBM Linux after they bought Red Hat. I think this was actually a mistake that the casting person cast me and then I think there was quite a to-do within IBM because they would have vastly preferred to cast someone from Red Hat, but I ended up being the face of Linux for IBM for a good eight months and actually IBM's conference that year."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "They opened with an extended video from the commercial. So, the conference opens and the very first thing that people see is my face and I got fifty thousand dollars for a couple hours work. You know, Hollywood is that way when you're successful and I'm sure it's very, very difficult when you're not."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so that was one of the things but I've had most of my employment and consulting opportunities are connected to this work that I did - oh gee, now it's coming up on 30 years ago - and so that's just been great fun. Obviously, I have some regrets over the way that things have come out, but it's been incredibly more successful than anyone could have ever asked so those things are very tempered. So, that's probably enough for one question."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, that's really great. Thank you. I mean, you were doing this all during the time you were still working at Pixar, isn't that right?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Yeah, I was working at Pixar and, as I said, I worked for Steve Jobs. Not directly, I had managers. There was Ed Catmull, the CEO, who now, I guess, is a CEO of Disney, if he's still there. And I was a Systems Programmer for Imaging for the most part so I invented image composing language and did a great deal of work for them."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "But one of the things I noticed was that, for the most part, my work for Pixar, all end of life while I was still working there, was replaced with something else. And of course, when you make software for a movie, we go on to the next movie and we don't always use the same software."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And, so, during this time, Pixar made their IPO, which was very useful because I had enough money from the IPO to pay off my mortgage and I could be a flake because unlike everybody else in Silicon Valley, I didn't have this incredible mortgage that I would take many, many years to pay off. And so, I could work full-time on open source and, you know, see where the money came in, which it usually did."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, I remember at the time someone saying to me \"well, Pixar is having its IPO and you have Toy Story coming out, and isn't this wonderful?\" And at the time, the space shuttle had just launched with Debian Linux and the biosciences project on it and I said well, you know, it's cool to have a movie in theaters and to have an IPO that's being very successful but my hobby project is orbiting in space and that's actually more fulfilling to me."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I remember actually finding out that this would happen. The way it happened was, someone wrote to me, someone who I did not know, and I was at my desk at Pixar and and said, can I boot Debian on a serial console? And I had never done this because I had only developed on desktops that had VGA cards at the time, you know, lower resolution graphical displays."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I said, well, that's interesting and I have on my desk here at Pixar, would I need to test that? So, I took 15 minutes from Pixar, and I tested it and took another 15 minutes and documented my changes back to back out so I could get back to my work at Pixar and wrote back to the Sky Sebastian Kuznetsky and said here's what you need to do. And he wrote back and said that works great, this is going on the next space shuttle."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, you know, imagine me at my desk at Pixar with my jaw now unhinged and on the floor somewhere and I got up and I walked all around the building looking for someone to tell this to. And the only person who understood about Linux was Loren Carpenter, a very famous computer graphic person, and Loren was working from home that day so that there was no one at Pixar I could tell this to who would have a clue of what was happening and not think I was crazy."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And that kind of decided me that Pixar wasn't really my future. And there had been other things they had actually restarted vesting from zero and I'd been there for eight years, which was kind of annoying. And so I, at that point, you know, said to myself, I'm going to have to work for this company 12 years to be vested in my stock."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And Pixar had actually gone bankrupt once or twice on the way to success and Steve had funded them out of pocket. His advisor, his financial advisor, told him, you know, you probably shouldn't do this again, but he gave us another chance. And so, essentially, the day after I was fully vested after 12 years at Pixar, I left and went to work for my first venture capital operation was called Linux Capital group and it was not successful; I'm in another unsuccessful one today."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, I worked for them for a while and that did not work out and then I left that company essentially so that they would not have to pay me and they'd be able to keep Progeny Linux systems, which was Ian's company, afloat. That worked for 7 years, but they eventually closed that one, too."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, I went to work for Hewlett-Packard as Senior Global Strategist of Linux and Open Source and that was all because of the notoriety that I had accumulated as, you know, an open source spokesperson and developer."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "So, I remember leaving Pixar and walked into Steve's office and, you know, there were a lot of stories about Steve. Steve was never nasty to me and probably because I got there first. I was a pretty obnoxious guy, you know, still am in many ways, and I was very aggressive. And so I think that Steve and I were sort of on the same wavelength in that regard."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so I walked in and he knew I was leaving and I said \"You still don't believe in this Linux stuff\" and Steve, you know, Mr. Ego, said to me \"Well, I've been involved in creating two of the three great operating systems\" - and by that, he meant, Mac OS and NeXTSTEP - \"and all of them took a billion-dollar laboratory and I don't think that you can get over the hump because you don't have the billion-dollar laboratory\"."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, you know, shook Steve's hand, said goodbye. Never actually communicated with Steve, again. I sent him one or two emails and never got a reply. He wasn't one to talk to ex-employees."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And a year later though, Steve got on stage at Macworld and introduced the Safari browser. And the Safari browser was graphical web browser based on the KDE Open Source Graphics Project. So the point there was that graphics developed by open source had already exceeded what they could do inside Apple. And that Apple was leveraging upon it in order to get a leg up on the web browser development, which they were kind of behind on at that point, and if you ask me, they're still behind today."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, Steve stood on the stage at Macworld in front of a huge slide saying \"Open Source, We Love It\" and although Steve never acknowledged it, I won that argument."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Come on, Heather!"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, that's one of those things like 'revenge is a dish best served cold', something like that. Not exactly revenge, but everybody, I guess, comes around to open source eventually. It's just a matter of how long it takes them to do that, right?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Ah. Yeah, I mean, back then was when Craig Mundie had said Linux is a virus, it will steal your intellectual property. And today, obviously, Microsoft is part of the open-source exploitation industry."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "They're not just using it for their health but they are participants in open source to a degree that no one at Microsoft or outside would have believed when this all started. And that's what really gets me is, so many things have happened that no one would have believed. And mostly because the economics, though real, was not intuitive."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, if I had said to you, I'm going to get together with my friends who I've never met on the internet and develop an encyclopedia and it's going to put Encyclopedia Britannica out of business so far that they don't even make the printed version anymore, you would have said \"You're on drugs, Bruce\". And, you know, if I'd said I'm going to make an operating system that essentially takes over the industry, they would have said the same thing and all of these happened."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And without boring people to tears, there's a paper I wrote about this called \"The Emerging Economic Paradigm of Open Source\" and it's 15 years old and still current, and if you want to understand the economics, read that."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Yeah, it's really- it's been an amazing journey for everybody. I think that maybe for you, more than most people. You know, I'd like to ask a little bit more about like, what what was it like collaborating with 50 people you didn't know? I mean, you said that was considered impossible at the time. Now, I think, people probably almost take it as a given?"
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "I'd like to know your thoughts about how how that came about, why it worked, some cases where it didn't work - whatever you'd like to talk about about sort of the community aspect of it."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Um, I think that the software collaboration was very successful. A lot of the organizational efforts were not. For example, during this time, I drove the creation of software in the public interest, non-profit that's still very active in supporting open source projects, and there was vast distrust among the Debian developers of software in the public interest."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And I think that it would have been legally advantageous for the developers to be working on behalf of this non-profit which would actually take up the liability because they were individuals, and if they got sued, they were out of the game. And software in the public interest would probably have been able if it were sued to get help from kind people like you."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And so, this was vastly distrusted by the developers and, you know, it was a non-profit. I wasn't about to take the money and pocket it or even pay myself. So the reasons for it really escape me. So there were failures like that, but in general, if you were just making software, everybody was willing to give a hand in making software and at that time, I think email communication felt natural to us."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And there's actually an interesting but somewhat creepy aspect of it, which is, we don't really like to admit that a great many of us programmers are on the spectrum, and are very capable and had very successful lives, but may have been a little debilitated with regard to personal interaction."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And many of these people are actually more comfortable collaborating with the community entirely textually, not looking at their faces, not having to parse their voice tone. And to some degree, that may have actually helped us and it's actually sad that for the most part those people cannot collaborate in that way any longer that the technology is improved to the point that you and I are looking at each other's faces again, where we at the time, would not have heard each other's voice and would not have seen each other."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Yeah, I think that's very interesting that there's a kind of temporal disconnect and personal disconnect that's possible in these asynchronous, like, development platforms and so forth that work very well for some people."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Yeah, and also, if you're one of these programmers who has some social issues, computing is a very comfortable environment for you because your computer doesn't dislike you and not work with you because it doesn't like your face. Your program runs if it's correct, and it doesn't run until it's correct. And so these were the, that was also something that was very comfortable for the kind of person who really does like to stay in their cube and code, and, you know, do their work with the world that way."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Now, I sort of bridged both of those worlds. I think people know this by now, I am not neurotypical. And so I have some of those issues, but I'm also very, very well trained."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "While I think it might have been better at the time to put me in speech therapy, my schools didn't have that. So they just put me in rhetoric class every year. And so, I had, you know, practically an hour of public speech practice every day, for perhaps a decade of my life, and came out of this a really good public speaker and was able to evangelize this stuff where other people might not have."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And, in fact, I actually have the opposite of the fear of public speaking. I have a fear of being in audiences because I will feel so strongly about a subject that I'll be tempted to argue with the speaker, and actually have. So I'm actually more comfortable if I'm up there talking and that probably doesn't say good things about me."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, you certainly have been a beloved advocate for all these years and I think it's very interesting that some of that came out of dealing with a challenge, you know, but you you were able to turn it to something that benefitted everyone."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "An actual, actual physical handicap. I cound not talk clearly, I could not move the way other people moved. And, you know, these things, you can, sometimes, age out of them, but it was a great part of what made me, what I am."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Well, that's really great. So anything else you'd like to share before we wrap up? This has been a fascinating conversation and even though I've known you for a long time, always really like hearing about your story over again, or, you know, or different aspects of it. Anything else you'd like to share before we stop?"
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Well, I think that this is a kind of success that other people don't always achieve and I would encourage everyone to follow their dreams, work on what you love to the extent that you can. I mean, don't make your family broke. But sometimes, you can achieve these things and internet collaboration has made so much more of this possible."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "And that was something that I really touched upon it. That time, no one understood all of the implications that there were projects, that at the time, people just would have been considered nuts for working on. But when you have 50 nuts who believe the same as you on the internet, you're more powerful than any startup company. And so, today you can achieve incredible things and I would encourage everyone to give that a try. See if they can do it."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "That's great. Well, thanks so much, Bruce. I really appreciate your talking to me today and contributing this to FOSSDA."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Thanks very much, Heather."
+      },
+      {
+        "speaker": "Heather Meeker",
+        "text": "Okay, bye bye."
+      },
+      {
+        "speaker": "Bruce Perens",
+        "text": "Bye Bye!"
+      }
+    ],
+    "entities": {
+      "PERSON": [
+        "Bruce Perens",
+        "Bruce",
+        "Linux",
+        "Richard Stallman",
+        "Richard",
+        "Pixar",
+        "Alexander Schure",
+        "Steve Jobs'",
+        "Steve",
+        "Bill Gates",
+        "Linus Torvalds",
+        "Ian Murdock",
+        "Ian",
+        "Linio",
+        "Valerie",
+        "Steve Jobs",
+        "Ed Catmull",
+        "Toy Story",
+        "Debian Linux",
+        "the Sky Sebastian Kuznetsky",
+        "Loren Carpenter",
+        "Loren",
+        "Ego",
+        "Mac",
+        "Safari",
+        "Craig Mundie",
+        "Bye Bye"
+      ],
+      "ORG": [
+        "Open Source",
+        "BusyBox",
+        "Pixar",
+        "FOSSDA",
+        "Dreamworks",
+        "NeXT",
+        "Microsoft Windows",
+        "Microsoft",
+        "Canoe",
+        "Android",
+        "GPL",
+        "OpenWrt",
+        "IBM",
+        "Red Hat",
+        "Disney",
+        "IPO",
+        "VGA",
+        "Linux Capital",
+        "Hewlett-Packard",
+        "Macworld",
+        "the KDE Open Source Graphics Project",
+        "Apple"
+      ],
+      "GPE": [
+        "New York Tech",
+        "Linux",
+        "Hollywood"
+      ],
+      "DATE": [
+        "today",
+        "all day",
+        "1981",
+        "one day",
+        "an entire month",
+        "that month",
+        "a month",
+        "six months",
+        "that months",
+        "that whole month",
+        "a good eight months",
+        "that year",
+        "30 years ago",
+        "that day",
+        "eight years",
+        "12 years",
+        "the day",
+        "7 years",
+        "a year later",
+        "15 years old",
+        "every day",
+        "a decade",
+        "all these years"
+      ],
+      "PRODUCT": [
+        "Pixar"
+      ],
+      "EVENT": []
+    }
+  },
+  "heather-meeker": {
+    "segments": [
+      {
+        "speaker": "Zack",
+        "text": "Hi, I'm Zack Ellis interviewing Heather Meeker for FOSSDA, the Free and Open Source Stories Digital Archive. So Heather, I want to start off by asking you to tell me a little bit about yourself."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, I am a lawyer and a venture capitalist, and both in the area of open source software. And I've been practicing law for nearly 30 years, mostly in this area. And then I've been doing VC work for about three years in this area. I have a checkered past beyond that, but maybe not all that relevant to what we're doing. I've done a lot of stuff in life. Law was my third career and my best one. So, but that's what I'm doing these days."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Fantastic. So law and venture capital, so you've seen different sides of the open source world, it sounds like."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Yeah, definitely. And, you know, one of the reasons that I got to that dual role is that a lot of what I was doing as a lawyer ended up being more like business counseling. So that is actually a more natural evolution than you might think. So these days, it's a little hard to separate the two, except for you get paid differently for doing the two things."
+      },
+      {
+        "speaker": "Zack",
+        "text": "So how did that get started for you? And it sounds like, were you, walk me through a little bit, maybe of the high level, like the beginnings of your career into when you started to get involved in software, in open source?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, so I actually was a computer programmer in the 1980s. I know that just sounds absolutely ancient now. Doesn't sound ancient to me, but it's all a matter of perspective. And I got into that because there was a lot of demand for people to work in particularly applications programming. When I graduated from college, and I didn't have a degree in computer science, and in fact, most people didn't have degrees in computer science, you couldn't really get a degree in computer science, except for maybe, you know, some schools. I went to a liberal arts college, and I think they had a computer science major, but you had to kind of cobble it together. So I had actually learned programming as a kid, because my father taught me the basics of it. And then when I was in college, I took some computer science classes, basically, because the computer science lab was air conditioned. And I went to summer school, and it was really hot. Plus, I was interested in programming, you know, I thought it was kind of cool. So I graduated, and I quickly like moved into computer programming, because there was a lot of opportunity in that area. And nobody required a degree in it at that time, maybe because there just weren't enough people. So you could basically go and put your hand up and say, I'm interested. And if you had a college degree, or at least had been to college for some amount of time, that was a real plus, right. So I worked as a programmer for about four years. And then I went off and did some other stuff. I was a professional musician for a while, opened a business. And then after I went to law school, I realized that actually the law around computer software was very interesting to me because I had this background. So that's a long way of saying that when I started practicing law, I immediately started focusing on computer software licensing as a practice. And then very soon after that, people started to become aware of open source. And they started asking me questions about it. So, you know, I had to figure out the answers to the questions because there weren't many answers floating around there at that time. So I just, you know, started to try to figure out what the answers were. And when you're in an organization and you know 10% more than the person in the next room, you're the expert, you know, that's just the way the world works. And so people kept asking me questions and I kept trying to answer them and building up my knowledge. And that's how I got into it. I would say that the reason I put that effort in was that I just thought it was really interesting. I mean, it was something that I had never seen before. And there's really not been a lot like it in the law because it's just kind of a grassroots movement and from a legal point of view, it was very like messy and hard to understand, which I think most lawyers love stuff like that, right? We're puzzle solvers. And this was a really interesting puzzle that moreover had something to do with a topic that I was interested in. So that's how I got involved in it as a lawyer. And then after practicing for many years, I got more interested in how to make business models work in this area. And that's how I got into the venture capital."
+      },
+      {
+        "speaker": "Zack",
+        "text": "So it was kind of initially an interest in computer science or programming, but that kind of came from your dad introducing you to computers at a really early age. It did. Well, just out of curiosity, what did he do? And how did that come about where he was like, oh, yeah, he's going to love this. He was actually a programmer."
+      },
+      {
+        "speaker": "Heather",
+        "text": "And that doesn't sound extraordinary today at all, but it was incredibly extraordinary then. I mean, he actually worked in a think tank kind of place and they were starting to use computers to solve problems, which, you know, people just hadn't even done before that. And so he used to take me to work and I would see the computers with the big tape drives on them. And it's like a lot of really amusing stuff about going to these places and being exposed to that. But when I was a kid and people would ask me what my father did for a living, you know, I started saying he was like a spy, right, because it was easier to explain than telling people that he was a computer data processor, which is what he told me to say. Right. No one understood what that was. And and so I got a really early view into that. And of course, he did not have a technical education either, though, because at that time, nobody did basically."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Yeah. Yeah. So then so then you started studying programming. What like what what kept you interested in computer science?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Computer like programming is. It's an experience like almost nothing else, like when you are writing a program, you are in total control, right, subject to the rules of the language and the environment you're in, you tell the computer exactly what to do. If the computer doesn't do what you ask it to do, it's your fault. Right. I mean, that's not always true. It's almost always true. So that's like this experience. It's like pure engineering in a way. Like you're not even you're not even really bounded by the physical world in programming. Like it's like being a little megalomaniac, you know, it's like really exciting for that reason. Also, it's one of the most absorbing things I've ever done. Like when I was a coder, I would go to work and I'd get there, you know, at eight in the morning and then at five I would look up and the day would be over. And it was almost as if no time had passed because I was so focused on what I was doing. And I don't think I've ever experienced anything else quite like that. Nothing else I've ever done in my life, either for money or for fun, has has absorbed me that much. And I really loved it for that reason, but also got kind of burnt out on it for that reason. And and I stopped doing it. Not sure whether that was a good idea or a bad idea, but but it was what happened, you know. So that's what I loved about it. It was just you got to solve puzzles however you you know, and you were only really bounded by your ingenuity in doing that. I also thought coding was a very creative activity, and I'm not sure everybody thinks that. But but you have like so much control over how you do things. I just found that fascinating."
+      },
+      {
+        "speaker": "Zack",
+        "text": "And then so that kind of that that that sort of freedom and creativity kind of and just natural draw to it kind of kept you there. But then you then you left and went into law kind of but for programming and computer science. Tell me a little bit about kind of the departure from programming and then into law and kind of what attracted you to to law. And then we'll marry those together with open source. But tell me a little bit. Well, there was another step in there."
+      },
+      {
+        "speaker": "Heather",
+        "text": "I I went to music school. I went to a basically a trade school is a one year program. And I went to learn to play drums because I had been, you know, learning drums. And I had gotten the idea that I wanted to be a musician. By the way, that's a bad idea. But not because it's really fun to play music, but it's a terrible career. Anyway, a terrible career. Anyway, so I went to this school and and and then I started working professionally as a musician and I I opened a rehearsal studio. working professionally as a musician and I I opened a rehearsal studio. So I had this little business. And and and then I just realized, well, this is an awful career. You know, You know, there is really no future in this because you know how they say in the entertainment industry, industry, it's who, you know, that's not just like Sour Graves. It's really who, you know, and I didn't know anybody. Right. And I suppose there are some people who are like super brilliant, who can just make it without any connections. I was not one of those people. I mean, I was competent, but not great. By the way, I in music school, I I met people who were really brilliant. And I and I realized I'm not one of those people. Like I am not a super talented musician. Right. And that's OK. I still enjoy doing it. But but they understood that about myself. You know, I I could do it OK. But I would never be like this great player. So so I decide, OK, I'm not going to do that anymore. Plus, I was about nearly 30 at that time. And it's kind of a a young kid's profession. And and so what I did was I got a job as a as a temp secretary at a at a record label. I knew someone who worked at a at a record label. I knew someone who worked at the record label, and they were and I really needed a job because I didn't have any money. were and I really needed a job because I didn't have any money. I didn't have any health insurance."
+      },
+      {
+        "speaker": "Zack",
+        "text": "It was And and insurance. It was awful. And and so I started was awful. And and so I started working there and they put me in the legal department and actually"
+      },
+      {
+        "speaker": "Heather",
+        "text": "really enjoyed working in the legal department. So then they made me a paralegal and then they made me a lawyer. Then they made me a paralegal. One One of the paralegals left. They made me a paralegal. And then and then I I looked around and I thought I could make a lot more money doing the same work if I just went to law school. Now, that's a huge commitment of time and money. And and so that's that's what got me interested in law. Actually, you know, I was doing some work in that area and I thought it was really interesting. And by the way, I thought that I would become an entertainment lawyer because I had been working at an entertainment business. But when I got to law school and I realized you could work in technology and and that actually there was a big crossover to entertainment, I thought I found the perfect place for me. I graduated law school in 1994 and basically the World Wide Web happened for most people in about 95 or 96. And so there was something going on that they called convergence, meaning technology and media coming together. And that was just me. I was right at the intersection of those things. And when I found out you could work in that area, I thought I will never, never wanted to do anything else. This this was perfect for me."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Well, so I'm curious what you talked about, like being really consumed by programming early on and then all of a sudden, seemingly by surprise, loving legal. What was it about legal? And I'm curious if you saw any similarities or differences between the joy that you got from the legal work and from programming."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, you know, there were some similarities in in the in the joy I got from it. There are also a huge number of similarities between programming and legal, like, for instance, if you're a if you're a transactional lawyer like I was, I was doing deals. When you write contracts, you're writing rules for people. When you're programming, you're writing rules for computers to execute. There are a huge number of parallels between the two. So I don't know, maybe I just like writing rules. But but the kind of enjoyment I got was pretty different. Like it's it's they're both intellectual tasks, but they're very different intellectual tasks. Like computer programming is like pure problem solving and legal work is all more analysis. And and you have to deal with a lot more vagueness. Like computer programming pretty much is what it is. And you can't as a programmer, you usually can't change that. Like you're in an environment and there's well, you know, for people like me who are applications programmers, you just given the environment, you deal with the rules you're given for for law. The rules are fuzzy, which is why the world has so many lawyers, you know, so it's a different kind of task and much, much more human oriented. I mean, programmers just sit there all day in front of a machine and you don't have to interact with any human being. Lawyers have to, you know, that's actually about client service and you have to interact with people."
+      },
+      {
+        "speaker": "Zack",
+        "text": "I'm curious when you first started to get into law and saw this convergence of tech and law and entertainment on top of that. Who are some of the early influential figures in your career at that stage?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "It's kind of hard to say because I was mostly blazing my own path. I mean, I had colleagues who taught me a lot, but that was more about how to practice law. Law Law is a weird profession in that you go to professional school, which is three years long, and they teach you nothing about practicing law. They teach you some stuff about law, but not about being a lawyer at all. They're basically teaching you to be a judge. So most of us don't become judges and we go into private practice and then you have to learn how to be a lawyer. So I had wonderful colleagues who taught me how to be a lawyer. But as far as the open source expertise, you know, we were kind of writing the rules in a way like we were looking at these licenses and trying to figure out how to like plug them into a legal context. And one of the reasons I enjoyed the area is there just wasn't anything out there about it. So one of the things I started doing was writing about it because I really like to write. And I thought, OK, there are no materials. I'll I'll just write them. And so I was kind of on my own for a lot of it. I mean, I've had some friends, you know, whom I've been able to bounce things off of, but I wasn't like I don't know, there wasn't one person who was like guiding me at all."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Yeah, yeah. Like you said, it was kind of blazing your own path and it was new. And And like you were kind of people would clients would ask you questions. You'd have to figure it out."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Yeah, there were there weren't answers, really. You had to just kind of extrapolate from the basic legal answers that you knew. And that was it was scary and challenging. And but that's kind of what I liked about it, too."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Yeah. Can you remember like the the first time that you remember hearing about open source and what that was and that is something different than typical way?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "I think a client sent me a copy of one of the permissive licenses like the BSD license, which is a very short license. It's like a couple of paragraphs, two, three paragraphs. And and it didn't look like anything I'd ever seen. And then they were asking, is this OK to use? And there was no one around me to answer that question. So then I started reading everything I could about what was out there. And there was some stuff written about it, but it was mostly what I would call advocacy. So there were free software advocates who were saying, you know, software should be open. But that wasn't legal analysis. Right. And so the the legal objective legal analysis was not out there at all. So that's what I had to start, you know, trying to figure out. And there were other people trying to figure it out, too. But we weren't really working together at that point. So, yeah, I'm sure it was somebody sending me like the BSD license, a client asking. I don't remember what client it was, but client sends me BSD license. It says, hey, is this OK? And I got to answer that question is actually a very difficult question at the time."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Hmm. So what so what was I mean, what was that like to start to see some of these other types of licenses come up and you're going through trying to look at research that's out there? And what were the what were the challenging aspects? And how did that kind of evolve into something that became more? I don't know if formal is the right word, but they're like there are now practices and standard licenses around open source. Like, how did that kind of evolve over time?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, I should probably explain that when you're a lawyer and someone asks you a question, they'll present you with some facts and then you either know what the law is or you look it up, like you do some research and you maybe you read a case or you read a statute or something like that. And then you apply one to the other and you give an answer. So in open source, that didn't work at all. There there were there were like there's copyright law, but it doesn't tell you how to interpret open source licenses. There's contract law, but it doesn't tell you a lot about that either. So I was looking at this set of facts like this license, and then I had to go, OK, what do I know about the law that would ever apply to this thing? Because Because it's just a new thing. And I there was there were no cases to read. There were no statutes to read. There was there weren't even any like law review articles to read. And and so, you know, I just kind of had to reason from first principles about it. And and lawyers. That scares lawyers a lot. Like when they don't have rules, they get freaked out. They like rules. Right. So the experience was like walking out on a wire, you know. And and by the way, there were some people at the time and probably still some some people, some lawyers who just would not deal with it at all because it was too weird and too new. And they felt that it was risky to give advice about it. But but my clients had questions. You know, I couldn't just say, oh, no, I don't know the answer to that. Like, you have to figure it out."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Hmm. And then so so what started to happen after that? Like what happened next? I mean, after you started to write about it, you started to get more started to see this more. What happened?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, first of all, I started to meet other people who are interested in the topic. And so now we're like in the late 1990s, early 2000s. And and so now I'm meeting a few other lawyers who seem to be knowledgeable about it. And so, first of all, some communities developed around that so that we could bounce things off each other. And and then, you know, I started getting some reputation for knowing. You know about this thing and people would just call me out of the blue, you know, because they they were really at sea trying to figure this stuff out. And then and then what really developed over the next 10 years and continues to develop today is best practices around dealing with the licenses, because there's still not a lot of direct law on them. But there are practices that people agree are best practices. So that's that's really what happened next was some development of the law, but mostly a development of a way that people generally did things in order to deal with the licenses."
+      },
+      {
+        "speaker": "Zack",
+        "text": "What what was it like when you started to meet some of those other players in the open source space? And tell me a little bit. I know you've said to me before that there's there's different types of stakeholders in the open source community. Tell me a little bit about like the types of stakeholders and some of those early interactions you had as you started to meet like the world of players, if you will."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, I met clients who were interested in it. And so they were actually usually other lawyers who wanted to learn about it. So I was helping them learn as I learned about it. I I also had clients who were engineers and they're developers. So they're the people actually creating the software. They're the most important people, by the way. The lawyers are just, you know, on along for the ride. Right. So I met a lot of engineers who actually interested in writing open source software. I met other lawyers just, you know, who were not clients or colleagues who were interested in it. And I would say maybe the relationship I had with them was a little bit of frenemies, you you know, because we were competing with each other. But but on the other hand, there weren't so many of us that we could really afford not to collaborate, you know. And and then like there developed a lot of other categories of people involved, like community managers. So these may not actually be developers, but maybe they're people who help bring open source developers together. There were business people who wanted to, you know, use open source in their business or use open source as a business tool. So those were those are some of the main stakeholders that I started to interact with over time. Yeah."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Did any of those kind of early projects like really pique your interest or when did you start to see open source as something transformative?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "I really saw it as transformative almost from the beginning. I did not realize and I'm not sure very many people would have realized at that time how huge it would get. But it was just so different from everything else that you learned as a technology lawyer. Like if you do a regular software license, you know, it has a particular form and some terms that you would expect. So there's a there's like an industry practice about that. Open source is like bizarro world licensing. It's like exactly the opposite. It's It's like giving away rights and forcing people to give away rights instead of just like normal licensing is like just granting the minimum little thing necessary to get the deal done. But like being as stingy as possible. That's like what you do with proprietary license with open source. You You just like here it is. Do whatever you want with it. And there are very few limitations. If you got to really think hard about like what what are those? Those they're not really limitations like conditions. What does conditions mean and how do you comply with those? So it was just totally different. And I like that about it because there's a lot of mental gymnastics like involved in trying to switch from one paradigm to the other."
+      },
+      {
+        "speaker": "Zack",
+        "text": "What how how do those differences between open source and kind of proprietary systems? What kind of changes does that create, both from a business context, from how people interact? I'm going to see it's huge."
+      },
+      {
+        "speaker": "Heather",
+        "text": "I it's huge. I mean, you know, if you look back before so open source is used before. Open source is used by everybody is used before. Open source is used by everybody now. Like almost everyone in the technology industry now actually contributes to it. I mean, it's everywhere. We're using it right this minute to do this interview. It's in your phone. It's everywhere, right? And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. Right. And and today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact. You know, they were just strictly competitors and now they're collaborators. And even there are there are only like maybe two, three companies that are known for not doing it now. Right. If you go back 25 years, like no one was doing it. They were terrified about what these licenses meant and everything. So it's completely been absorbed in business. And that, you know, if you believe in markets, which I do because I studied economics and all that stuff, that wouldn't happen unless it worked. Right. It actually works as a paradigm. Like it produced a lot of really great stuff. And over that time, people became convinced of that and they overcame their fear about these licensing paradigms they didn't understand. So they got over the fear and then it really changed their behavior. So to me, it's changed everything about the way the technology industry operates."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Kind of looking back on your interactions with clients, and you mentioned earlier that kind of as being a lawyer is almost also being a business advisor. Whether, you know, what if any moments kind of stand out in your mind where whether it was was resistance to the idea of open source or where it just like clicked or like how you approach that?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "That's a tough question. I don't remember one instance so much as it seems to me like I've spent decades now talking people off the ledge because they're frightened. Everyone's frightened of things they don't understand. Right. So I spent many, many hours just explaining how things worked and trying to reduce people's level of fear. And by the way, that's not a normal task for a lawyer. Like most lawyers have the task of identifying risks and warning people about stuff. My career has been almost the opposite, like saying, no, you really don't need to worry about this. Yes, it's a theoretical risk, but in the end of the day, it won't matter. And and so that's what I remember is like years and years of doing that."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Where do you think that comes from? That kind of opposite disposition that you that you seem to have?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, maybe I, you know, maybe I never should have been a lawyer. You know, that's that's certainly, you know, open to question. Right. Because I think my personality is not is a little different from most lawyers. I'm very practical. And and maybe that's why I liked programming, too. You know, I'm I'm a very practical type. I think I am an engineer at heart. And so I like to create stuff and I like to create procedures and so forth. And I like to build stuff. And and that's not really a lawyer personality. I don't know where I got that, but I don't remember getting it. I think I just came into the situation with it."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Yeah. Yeah. It's interesting. You mentioned before, though, it's both like maybe you like creating rules, but you also mentioned how there is or it seemed to me like almost a certain freedom, at least when you were you were programming, where you're not bound, but, you know, by the real world. It's like this pure it's this pure creative endeavor. Yeah."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, to me, that's what it was. Yeah."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Yeah. So so talk me through some of the other kind of inflection points in your career as you then progressed as you met. Can you meet more people? What were some of the main inflection points from there?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, I changed law firms a couple of times. You know, I was at one place and I just felt like I wasn't succeeding there. And that was an important life lesson. And it was kind of painful, but it turned out OK. You know, part of the problem I had, I think, was that being an open source lawyer was not really a thing. Right. And and the people I worked with didn't even understand, like they didn't even think it was important. They They didn't particularly value this expertise. My clients valued it, but the people I was working for didn't. And so I just thought I need to be somewhere where I can just kind of carve my own path because I didn't want to go on the paths that were available. And nobody was going to go say, oh, we have an open source expert. Isn't that a great thing? Right. Today they would. But but at the time, no, like it just wasn't recognized as a career path. So that was a little painful because I had to move and I felt kind of like a failure. And but it was also a real learning experience. And, you know, what I would say about that is that everybody goes through those things. Like if you look at people and they seem to just have succeeded one in one thing after another, nobody does that. Right. Everybody crashes and burns. And and it's it's about how you react to that. It's not you know, it's not you can't avoid it in life. Right. You're going to have setbacks. Um, but I'm extremely persistent and I was very interested in the topic. And I just thought, well, I must find a situation where I can do this. The other thing is, um, I made a decision along the line that what I wanted from my law practice was to be the best lawyer I could be like. And I wanted to be the best in this area. You know, I wanted to to pursue excellence. And that is not the same as pursuing money. I mean, they do interact a lot at a good law firm. Right. But but I could have done other things to make more money. And I mean, don't get me wrong. I've been a partner at a big law firm for many years, and it's, you know, very well paying job. But but that was an important choice. You know, I could have gone in a different direction. I probably wouldn't have been as specialized. I would have done different kinds of work. But what gets me out of bed every morning at my desk is not like, oh, I'm going to make a lot a lot of money today or even I'm going to make a lot of money for my clients today. It's It's like I just want to do something really difficult and interesting. Like, that's what I wanted to do. And it's important to know, you know, what you want out of a career. And you never know it when you're starting out. You learn that over time. So so I made choices that led me down that path."
+      },
+      {
+        "speaker": "Zack",
+        "text": "And so what did that look like to then, you know, you left the the law firm felt like they didn't necessarily appreciate open source in the way that you did. And here's the thing, that there is this opportunity to dive into it more and pursue it. So what what did you do?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, in fact, they told me and this is this is kind of astonishing at this point. But I was told we don't really need people. This is at a technology law firm, too. We don't really need people with software expertise. I mean, it's like such a ridiculous statement because then the entire world, like as Andreas said, like software ate the world. Right. Like, why would you even say that? But that was just that that situation just was what it was. And and so, you know, I left and just went to another firm and I went to a place where they were a lot more agnostic about what your practice was. Basically, I interviewed at this place and I was talking to the guy that ran the firm and he asked me what I did. And And I said, oh, I'm a specialist in open source. And I explained something about my practice. And he said, I have no idea what you're talking about, but I have a couple of questions for you. Do you have clients? I said, oh, yeah, I've got a lot of clients. Do they pay you? I said, oh, yeah, they pay me. They're glad to pay me. He's like, great, you know. And so I really needed an environment like that. By the way, props were due. That was Greenberg, Trorig. And and they they were just so wonderful because they gave me this opportunity to make my own way. And And and that was that was huge for me. You know, I it was it's scary because then you've got to perform. Right. Right. But but that was the kind of place where they were like, look, if you've got a good practice, we welcome you. And it was it was less about their mission than about the mission of the people that worked there."
+      },
+      {
+        "speaker": "Zack",
+        "text": "And what did that feel like to kind of have this, again, like antithesis kind of thing where it was like, oh, it's almost like, you know, you're a VC. Oh, do you have traction? OK, well, there must be something here. I don't I don't know if I get it or not, but the market says that that there's. Yeah, exactly. Like, Like, what was what was that like? And what did that feel like to have someone kind of embrace you? Oh, it was it was great."
+      },
+      {
+        "speaker": "Heather",
+        "text": "I really felt appreciated and I really needed that at that point, you know, because I had been through this, you know, sort of difficult transition. And and I and I, like I said, I'm forever grateful that there was that opportunity, you know, because I could have not run into that opportunity. And another thing is that, like, it matters how people run businesses. You know, it's not you hear all the corporate messaging in a place you work. And that matters. Like the culture matters. And that particular business, like the first firm I worked at, you would go to a company event and they would say they had a mission statement. Here's our mission statement. Come along for the ride. And then I went to Greenberg and they and we would have a meeting and they would say and the management would say, how can we help you succeed? Like, you know what you're doing, OK? We want to hire you unless you knew what you were doing. How do we help you succeed? And that was like so empowering, right? It's a great way to run a business if you can run a business that way. And and it was it was a great feeling because I really like just having the freedom to to go in my own direction."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Could you talk a little bit about kind of from from that period of then really diving into practicing like open source law to becoming a VC in the open source community and how in the world did that happen? And that's a good question."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Yeah, yeah. So I didn't really intend that to happen. But but the the the person who runs the VC firm, Joseph Jacks, is he's called JJ. He just like contacted me out of the blue basically one day and said, hey, I'm starting a fund that's around open source. Do you want to be part of it? And my first inclination was, what do you want me for? Just I'm a lawyer. But then I talked to him more and I thought, oh, actually, this does make a lot of sense because I had been spending a lot of time counseling people on business models. And I I almost didn't realize how much of my time I was spending doing that. And there was this event that took place. And this is kind of inside baseball, but hopefully I can make it understandable. Somebody I knew came to me and asked me to write this license, a new kind of license. And they asked me to do it for free. It wasn't a client engagement. And I said, sure, you know, because I always help people do stuff, you know."
+      },
+      {
+        "speaker": "Zack",
+        "text": "And and so I wrote this thing or I actually led the drafting on is probably more accurate."
+      },
+      {
+        "speaker": "Heather",
+        "text": "And it got released and it was enormously controversial. This was something called the Commons Clause. And and I was roundly criticized for doing this. I mean, you know, there was all sorts of trolling and flame wars and stuff over this thing. And and I thought to myself at that point, oh, my goodness, you know, I did this for free. And, you know, no good deed goes unpunished and all this sort of thing. But then it turned out that although that particular project didn't really fly for a variety of reasons, people wanted to do similar things. And they were very interested in like the concept that this involved, a concept I didn't come up with. I just wrote the thing. Right. People told me what they want and I wrote it for them. And so I was just a craftsman there. But then people started coming to me and saying, well, I want to do something like that. And And and so over the course of maybe a year, I probably did a project like that for several dozen companies. I I mean, that's a lot of companies. You know, that's a lot of clients in that amount of time. So so I that involved a lot of discussion about business models. So I kind of fell into this thing just because somebody asked me to do something for them. And and then all of a sudden, like I was the person doing this thing. And I have to say that, you know, that changed my whole career because I started doing different kind of work. And that's kind of how I got into the business model counseling more than just kind of the pure licensing analysis. I did a favor for someone which seemed to be a very bad idea at the beginning, but it turned out to be a very good idea."
+      },
+      {
+        "speaker": "Zack",
+        "text": "I mean, maybe not not so different than the first client who said, hey, what do you think about this license? I don't know. Let me go look."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Oh, absolutely. Because like this was also new. This is new territory, too. But and and I guess, you know, there are probably it would have been a lot of people who would have said, no way I won't do that, particularly for free. But but I said, yeah, sure. Sign me up."
+      },
+      {
+        "speaker": "Zack",
+        "text": "There might be some some similar ethos there around free free and open source software. Yeah, absolutely."
+      },
+      {
+        "speaker": "Heather",
+        "text": "I mean, my my whole philosophy, like for all these years has been if somebody asked me to help, I help them if I can. Like and whether it's going to result in pain, work or not is kind of secondary for me. And I'm not sure. Again, I'm not sure that's a way to make the most money, you know, or be. But actually, I think it does make you successful. Like paying it forward really works in a service business. And it's also makes you happier, I think, because you get to help people. I like helping people."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Where do you think you'd be without open source if open source never existed? A starving drummer?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "No, I might be a starving musician, but more likely I'd just be doing like M&A deals, which is fine. You know, I've done tons of them, but but it it wouldn't have been as wild a ride. Open source is crazy. Like every time you think that you've seen everything, something absolutely crazy happens. Somebody is doing something totally nuts. And you wake up and you read the news and you're like, what? How could this happen? And and it's it's scary, but fun. It doesn't happen so much in like M&A deals."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Would it be worth in the last few minutes that we have here talking about Google versus Oracle? That was a big deal and you were involved. Yeah. Yeah, Yeah, that was an amazing experience."
+      },
+      {
+        "speaker": "Heather",
+        "text": "It was. I mean, I think for most. Well, there aren't so many software copyright lawyers running around out there. But for those of us in that area, that was like the case of the century. And it was also between two big companies that had a lot of money to litigate. And I loved working with Google. I mean, they're a great client to work with. And I just got it was so great to get to work on a landmark thing like that. And And I also thought it was really important to the industry. And I'm really glad we won."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Could you, you know, for the sake of history, I mean, could you talk just what were the implications of the case? What was at stake in kind of what was it about?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, on a on a doctrinal level, it was about whether you could copy the interface of some software in order to reengineer it. So so if if if there's some software and you don't like that software for a variety of reasons like you don't like the way it works or you don't like the licensing for it or whatever, can you take the interface for it and redo it yourself? Because that's basically what Google did with Android and as opposed to Java, which was what Oracle owned. And and there was and before that case in the software industry, pretty much everyone assumed you could do that and not have liability. And then this lawsuit happened. And in fact, the law was not very clear about it. And because you had two parties with a lot of money to litigate, you know, there was just every issue got, you know, argued to the max. Right. And eventually, the Supreme Court decided that that Google could do what they did in that case. But but the decision was, I think, unfortunately, a little bit limited to its facts, pretty much, which was that they could do that in that case. But that doesn't mean that you could go to the next situation and also do it. It was under something called a fair use doctrine, which is very fact specific. And, you know, ironically, one of the first I remember the first professional lecture I gave as a lawyer when I was an associate was on the fair use doctrine. And I had written a paper on it in law school. And then I ended up doing this huge case on it. So that was interesting because it's only because I wrote this paper in law school that I kind of knew that defense like the back of my hand. And then, you know, I got totally steeped in it for the 10 years of that case, you know, working on it on and off."
+      },
+      {
+        "speaker": "Zack",
+        "text": "What what did it mean to you to work on a case like that?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, it's great for cocktail party conversations like there's it's something that people outside of my sort of immediate sphere may have heard of. Right. Whereas open source stuff like most of them haven't really heard of it. So and I think it's it's understandable to people. So that's that's good. I thought it was hugely important case because if you can't rewrite software to suit your needs, then I don't know what that would even mean. I think what it would have meant is that you if you can't do that, then it would stifle innovation a huge amount. Just to give an example, like Linux, which is the operating system that's open source site that was created because for in exactly the same kind of project, they took the interface for Unix, which was a proprietary operating system, and then just and rewrote it. They rewrote a new system to that to Unix's specifications to avoid the licensing issues with Unix. And so if you couldn't do that. In a way, we wouldn't have had the open source movement at all. A lot of open source software is actually re-implementation of proprietary software. So that's one reason why it was hugely important to open source."
+      },
+      {
+        "speaker": "Zack",
+        "text": "In that sort of vein and kind of coming to a wrap here, I mean, where would the world be without open source? How has open source changed the world? And why does it matter? Why does it matter to you?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "I guess without Linux, we would all be just using Windows and Mac OS, I guess, or maybe Unix. Unix. And one thing that would mean is that the developing world would have less access to software access to software because they'd have to pay for every copy. The developing world couldn't, like, localize software for their own languages, and we would not have had this sea languages, and we would not have had this sea change in business where people now look, people now ask businesses to be collaborative with each other, as opposed to just fighting with each other and competing with each other. I other. I think it's it's it's changed the technology world and it's changed the business world. I once did this talk called, I think, like, it's a wonderful it's changed the business world. I once did this talk called, I think, like, it's a wonderful Linux or something. Or and and it was like, it's a wonderful life, like asking what would the world be like without open open source? And of course, it was dreary. Right, dreary. Right, right. Doom and gloom. Yeah."
+      },
+      {
+        "speaker": "Zack",
+        "text": "What What are you most proud of? What are you most proud of when you look back on on your career or anything else that you'd want to share kind of in closing? or anything else that you'd want to share kind of in closing? I guess I'm most proud of what I the knowledge I've shared with people."
+      },
+      {
+        "speaker": "Heather",
+        "text": "That's people. That's really it's really important to me to teach other people what you know. I mean, and even if you only know 10 percent more, it's OK, right, to teach other people. To teach other people. teach other people. To teach other people. And that's what I'm most proud that I was able to develop a career where I was able to do that and still have a successful career. Like, I'm glad I was able to give so much away, because when you look back over it, I think that's what gives you satisfaction is like, what did you do for other people? And and I think I've I've done that. I've certainly given away a lot of books and videos and all the knowledge that I could."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Absolutely. Anything else before we wrap?"
+      },
+      {
+        "speaker": "Heather",
+        "text": "No, that's it. I mean, it's been it's been really fun talking about this. I don't get asked to talk about myself that much. So, of course, everyone loves talking about themselves. But it was fun to look back over over the whole thing and, you know, try to figure out what the story arc is."
+      },
+      {
+        "speaker": "Zack",
+        "text": "Absolutely. Well, Heather, absolute pleasure and honor. And thank you for your time and contributing your story."
+      },
+      {
+        "speaker": "Heather",
+        "text": "Well, thanks for talking to me today. Absolutely."
+      }
+    ],
+    "entities": {
+      "PERSON": [
+        "Zack Ellis",
+        "Heather Meeker",
+        "VC",
+        "Law",
+        "Sour Graves",
+        "Law Law",
+        "Andreas",
+        "Greenberg",
+        "Joseph Jacks",
+        "Java",
+        "max",
+        "Linux"
+      ],
+      "ORG": [
+        "FOSSDA",
+        "BSD",
+        "Google",
+        "Android",
+        "Oracle",
+        "the Supreme Court",
+        "Windows"
+      ],
+      "GPE": [
+        "Linux"
+      ],
+      "DATE": [
+        "nearly 30 years",
+        "about three years",
+        "these days",
+        "the 1980s",
+        "about four years",
+        "many years",
+        "today",
+        "the day",
+        "one year",
+        "1994",
+        "96",
+        "all day",
+        "three years",
+        "the late 1990s",
+        "early 2000s",
+        "the next 10 years",
+        "25 years",
+        "decades",
+        "the end of the day",
+        "years",
+        "Today",
+        "one day",
+        "a year",
+        "all these years",
+        "the century",
+        "the 10 years"
+      ],
+      "PRODUCT": [],
+      "EVENT": []
+    }
+  },
+  "deb-goodkin": {
+    "segments": [
+      {
+        "speaker": "Karen Herman",
+        "text": "Hello, today is April 21st in the year 2023. I'm Karen Herman and I am delighted to be interviewing Deb Goodkin for the Free and Open Source Stories Digital Archive. So welcome and thank you so much for doing this. I'm very excited to be doing this with you today. And we're going to start right from the beginning, which is when and where were you born?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Oh, well, I was born in Hollywood, California. And I was born in 1961."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And where did you grow up?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So I grew up in Southern California. And so half my childhood was in Los Angeles. And then we moved to San Diego, which was great. And, and lived there until I graduated from college."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What did your parents do?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So my dad, it was always really hard to understand what he did. None of us kids really interested in it, not like he was in the CIA or anything. But he, he basically was in real estate, but helping large developers develop, like larger communities. And so he did that, as long as I knew, and was like, sort of known as an expert in that. And I worked for him when I was in high school, when I was in college, and he actually thought I would take over the business from him. And my mom worked until she had kids. And she wanted to be a doctor, and she would have been a great doctor, but she was a bacteriologist. And a lot of it was just because of the times."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And do you have any brothers or sisters?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I have two older brothers."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And what kind of kid were you?"
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Um, Um, I guess if I think about that, I, um, I don't know if it was because I had brothers, but I was very outdoorsy. And I always remember us kids just playing outside all the time. And I think growing up in Southern California, I mean, the weather was always beautiful. And so you could do that. And we had a swimming pool at home. And so we in the summers, we swam. And I always remember my oldest brother was into filming. So he had this old camera, and then he would set us up, we would do like war scenes, all sorts of things that we would play together. And so I think as a kid, I would have been referred to as a tomboy. But really, I mean, to me, that's just like being a kid, just being, you know, curious and active. And, because when one of my brothers was much older than me, he would take me backpacking and river rafting and things like that. So, so it was a good childhood."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Did you have any idea what you wanted to be when you grew up?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I wanted.. there are a lot of things I wanted to be. And I think that's what made it hard. And, and my parents, they never encouraged me to be anything, but they never limited it. So they never made me feel like there was anything I couldn't do. So I mean, I went from wanting to be an astronaut to a veterinarian to, you know, I thought about being a doctor. So, so, you know, so, so it was nice being able to think about it or knowing I had those options. And but, but it took time narrowing down, you know, where, where I thought I should go."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Did, did you have any interest in computing or computers as a kid?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, we didn't have a computer when I was growing up. So that was before home computers. And so I really, the only thing I knew about computers was really the word processors, which were fancy typewriters. And because my dad was also a writer, we had one at home. And so that was pretty novel. And but, but I didn't grow up with computers. So I didn't know anything, I really didn't know anything about them. And, and so it really wasn't until I went to college that I was exposed to computers. So really, before that, I mean, part of my growing up, and maybe because I had brothers too, I built a lot of things, I was really into, like building models, and we would build like, model cars and model airplanes and things like that. So I've always enjoyed that building things."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And where did you go to college?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I went to University of California in San Diego, and for my undergrad, and then I went to University of Santa Clara, up in Santa Clara, California."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And what did you study?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So for my undergrad, it was computer engineering, which was, at that time, it was part computer science and part electrical engineering. And then for my master's degree, I got a master's in electrical engineering."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "It's interesting, because you said that you really didn't have, you didn't know anything about computers till you got to college. How did you then decide to major in it?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yeah, I mean, that's a really good question. Because when I started college, actually, I was focused more on business, because like I said, before, the plan was really for me to take over my dad's business. But it wasn't something I was really interested in. And my mom actually helped me try to figure out what I was good at. And I grew up thinking, never thinking I was good at math, but my mom would always tell me how she was good at math. I don't even know why it would come up. But I knew that I knew my mom was good at math. And so I realized that I was also very good at math. And so in doing like an assessment test at that time, computer science, and engineering actually came up as a strength. And I thought, you know what, I, this would be a great major, because I could get a job. And so that was really why I went in that direction."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And was there something specific that you studied?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, Um, well, actually, I was really, so in the computer engineering, you get a lot of, you know, computer science theory, and like understanding algorithms, and you learn a lot of different programming languages from, we actually started with punch cards, just to check them out. So I mean, at that time, you had Pascal and Fortran and BASIC. And we did, we wrote an assembly language, we wrote compilers, so a lot of software development, and as well as understanding theory, but also electrical engineering side, so circuits and in all in the typical types of classes that you would get in electrical engineering, I took math all four years, just because, as an elective, just because I was good at it. And, and so I made sure I always took a math class."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And so then you went to graduate school. Again, was there was there something that you wanted to do specifically, at that point?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, so I didn't plan to go to grad school after I graduated. When I joined IBM, it was a time when they actually were hiring a lot of new college graduates. And so, so when I started IBM, and we had, I don't know how many, maybe there's 10, eight or 10 of us that were all new, and, and IBM offered to pay for your tuition to go to grad school. So we all considered doing it. And the choice really was between Stanford and University of Santa Clara, because both universities were right there. And I actually chose University of Santa Clara, because they had a new storage focus. So it was the first time any university that I knew of was actually teaching about storage devices and that type of technology, which made sense, because IBM, so I worked for IBM, that's what what we did there. And, and so and actually, Santa Clara Valley was growing into sort of a storage focused area. So, so that was my focus, even though it was electrical engineering. And, and it was really just, you know, to have that degree under my belt, and the fact that IBM paid for it. And actually, you could finish your last quarter semester as a full time student, and you still get got your salary at the time. So it was a pretty good deal."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Well, and where were the offices at IBM?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "They're in South San Jose. And that campus is gone. When I go there, I don't, I don't even recognize anything anymore. It was a large campus, though."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And you were working with storage?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I was working storage. Yeah, I, so it's not like now where you have a disk drive on your desk, and you actually see it. They were in big cabinets in on the, in the computer rooms, and in those air conditioned rooms. And so rarely would I actually go and look at it. But so I worked on a, you know, a small component of, of the storage device. And I also, so I did some firmware, or we called it microcode there, and, and also went into hardware development, doing logic design. And so, so I focused on the ECC, the error correct, error correction code. And, and that was a really nice opportunity, because one of the main architects of ECC, of the ECC there at IBM was working in our group, and I got to work under, under him. And so I learned a lot. So it was a great opportunity."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What year was that?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Oh, I don't know. That was, so I joined IBM in 1984."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Okay."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "And I worked for them for like three years, maybe."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What was the state of storage at that time? So different?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, storage. So I don't know, I don't remember how much you could store on those large storage devices. But, um, I mean, these were storage devices storage devices for large computers. So companies like, you know, like HP would use, well, they had their own computers. But, you know, basically, you, the the the the customer would have like an IBM 360 computer, which is also a big cabinet. And then they would have the storage that would go with it. When I was at IBM, the first PCs were coming out. And so, so we actually got those to use for development. And the first PC had a floppy drive, I don't think we had any hard storage on it. But I always remember getting my first disk drive that was five megabytes, which is nothing now. It was so much and then it doubled to we went to 10 megabytes. But, but it was so cool to be able to have your own computer with your own storage that you could save your own files to. And so the the disk drives we worked on at IBM, those were 14 inch platters or just, you know, just size. just size. And, and so once you had the personal computer, those were five and a quarter. So typically, if you see a disk drive, then it's it's usually like the older ones are five and a quarter. I don't know your know, if you can get those anymore. Nowadays, if you're still getting, you know, rotational disk, then it's it's three and a half or two, two and a half."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, you know, so they just kept getting smaller. And, and larger storage, as you know, now, they're in the terabytes."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "How long were you there at IBM?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I think I was there for three years. So, so it wasn't, it wasn't real long. And at that time, you when you joined IBM, you're a lifer, you people didn't leave IBM. And I mean, and they took care of you. And so there was really no reason to leave. But it's also when Silicon Valley was just coming alive. And, and so when you work for IBM, you were paid the same. It didn't matter where you, you lived in San Jose and the whole Bay Area was a pretty expensive place to live. And, and so I thought I could do better financially. Another company was one of the other startups. And there were quite a few storage companies starting out in that area. And so I went, that's when I, I left IBM. And really, that was the time others started leaving IBM too. So, so I think it was just how things were, you know, changing at the time with, with, you know, the emergence of this whole Silicon Valley."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What did you, what was the thing that you learned the most about at IBM?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "At IBM, it gave me a really good foundation on how to develop code. And so you didn't really have like a hacking mentality then, like you have now. And, and, and that's fine, too. It's just that you really had to think through, what are you trying to do? And then how are you going to do that? And then, And then, as like a junior level engineer, I would actually, so I'd have to come up with my plan or my design. And then you actually had a design that you hand wrote. So it wasn't a programming language yet. And, and so we actually refer to it as pseudocode. And then you would actually meet with others, your colleagues, and, and people would review your design. And so you wouldn't actually implement it until it got approved."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, so it was a great way to learn because if someone saw like a hole in that, or even a, you know, a better way to do something, you would learn from that. And so taking that time to think through, you know, what, really, what are you trying to achieve? And then how can you get there? I, that was a good skill to have, and philosophy to have. Also working with others to learn how to collaborate with others. I mean, you learn that in school, but, but now, you know, you have a real product. And, and the way IBM worked back then, too, is sometimes you had competing teams. And so they had the money to fund, like, similar teams, you didn't always know it. And, and so whoever came out with better product, you know, basically won. You didn't look at it like that, basically, they would cancel your product, project, and you'd move on to something else. So, because things were so new, back then, too. So you didn't, there was so much possibility for innovation. And so I think that philosophy, that IBM was able to do that, was great. I also learned a lot from my manager, who happened to be a female, and her background was electrical engineering, too. And she was such a good role model for me, as well as a lot of the other people there. So, so it was a great experience starting out."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Were there a lot of other women that you were working with at the time? Did you?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, there were real, I mean, I would say it was 50-50. But that group of people that they hired, the group of college students that they had hired when I joined, I almost want to say it was half and half of, of women and men. And, which was really cool, because it made it so, it made it just normal. And we were all, everyone was really sharp, and came from different backgrounds in different schools. And, but we're all young, and we came from college. And so we still wanted to enjoy ourselves. And so we actually formed great relationships with each other, too, where we would, you know, we'd go out on Friday nights together, go dancing and, and stuff. So it was really, it was a great friendship that we all had. And then, and which, it didn't carry over to the other companies I worked at. So, so it was a really interesting opportunity. And in, you know, going forward, I don't know if that's something that IBM continued to do. But it was just happened to be the timing when I joined that they were just hiring a bunch of new people."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Where did you go after IBM?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I went to Mac Store. And so they're a disk drive company, they were doing the five and a quarter inch drives. And so I didn't do any firmware for them, I actually joined as the applications engineer. And so what that meant was that, so you have the product, and it could have been in development, most time it was in development. And but I worked with the customers who wanted to use assist drives. And so most of the time, either I would have those systems of those companies, or I would actually go on site and, and basically make sure that it worked in their applications. And then if it didn't, debugging and, and figuring out or, you know, working with the engineering team, what, you know, is it on our side? Is it on the customer side? Do they need to make changes? And, and so it was really interesting, because I got to work with Sun Microsystems, DAC, HP, NeXT computer, which isn't around anymore, but that's like where Wasnik went after Apple. So that so working with NeXT was pretty exciting at that time, because they're pretty cool."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And you were early in Silicon Valley, that's really when things are totally booming. What was that like?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "It was just starting. Yeah, it was just I mean, it's funny, because I mean, tech, tech was there. But it wasn't like the big boom, which was happening, I think that was more in the 90s. But yeah, you had, you had Apple, and like I said, NeXT. And so you had these really innovative companies that were just starting out and growing. I mean, HP had been around for a while, DAC, same thing, but still working with some some of these, you know, longtime companies like DAC versus like, NeXT that came out with this black computer. Yeah, no one had done that before. It was really cool. It was really innovative. Sun was pretty well known. And, and so and so I got to work with engineers at all those companies. And so, so it was really good exposure, as well as learning, learning opportunities, and seeing how other companies worked. And, and also just really problem solving, trying to figure out why, why something doesn't work."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Was there a lot of secrecy, and, you know, kind of proprietary knowledge and things like that?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So everything was proprietary, but, um, but no, it wasn't like that. Like, so I think of secrecy, I think of like Apple, how, how, I mean, they're still like that. Really successful. That's how they work. So I mean, I came here and think of whether, you know, did we have NDAs? Did I have to worry about that? I actually don't remember that. But all of our stuff, like, so all the code that I wrote, that was all proprietary code. And, you know, and it's, I mean, basically, it was up to us to update that firm, and it was all firmware. And so it resided on the drive. And so it was up to us to update that if there were any problems."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Or do you find that collaborative as well? Or could you call people from other companies or things like that?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Well, it's definitely working with the other companies was definitely collaborative, because you wanted, you wanted it to work. So you didn't, so you had to work together. And there was nothing competitive about that. So, so I remember it as just, you know, friendly, friendly environment, when, oh, and when I would meet with when, oh, and when I would meet with companies, sometimes, especially like if it's somewhere totally different, like I went to Maine. And so the head engineering manager there took me on this little there took me on this little sightseeing tour with his wife, and which was, which was so nice. And I, and I remember in Alabama, going to the Space Center, when I was there, and I can't remember the company I was working with. But, but yeah, that's, yeah, you would have, over time, you'd build relationships with people. And so, so that was always fun when, when you had those opportunities, too. And then within the teams, I always remember, whether it was at IBM, or Maxstar, or any other, any of the other jobs, I had that it was always collaborative, you're always working together with other, other folks to create this product or solve a problem."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And Maxstar, you started to be more management, right? You started to manage people as well."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So Maxstar was the first time, yeah, I had a, I moved into a management job. Yes."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And where did you go from there?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, so Maxstar actually bought Miniscribe, which was based in Colorado. And, and so I want, at the time, I wanted to leave California for various reasons. And I was really interested in moving to Colorado. But at the time, they wouldn't transfer any engineers to Miniscribe. And for various reasons. And so, since I had started pursuing that, I thought, well, okay, let me just look around. And so I ended up working for a company called Sirius Logic. And so that was more, that was a chip company. So it was still in storage, but it was at a different level. Well, it was at a lower level. And that I'd been working at before and I stayed in applications engineering, but it was, we were referred to as field application engineers. So you worked directly with a salesperson and you had customers here in this region, and, and you actually went on site. And so typically, you would go to either help them bring something up, or if there was a problem, you would go and help debug it. And so it was sort of, it was more like a technical sales role. So it was, it was really interesting to see that. You know, it's just sales is so different than just engineering."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And it got you to Colorado."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "It got me to Colorado. Yep. So it got me what I wanted. It was a good, it was a good company. I have to say all the companies I worked for. They're great. And yeah, great experiences. Yeah, not I mean, it's not wasn't perfect. But, but yeah, they're good. So there I didn't, I didn't last. I maybe I worked for them for a year. I can't remember. It wasn't, it wasn't long term. I actually went from there and I went to work for Connor peripherals, which is was bought by Seagate eventually after I left. And so Connor peripherals was founded by these two guys. And one of the guys actually was based. Well, actually, I think they both were based out here. But one still was in charge of this facility and development center. And he was still a developer. And, and so I went back into firmware. And, and so and I worked on SCSI devices, just different computer interface. And, and so I had the opportunity to work with him, which was so cool. And, you so cool. And, you know, and back then, and maybe this is also different than, like working on a software project is that you have a smaller code set. And so you don't need a large group of people to work on it. So I basically own all the code that from the computer interface to the disk drive, to where you send the, the data off to the read, write logic. And hardware."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "How is that different from what came before? Was it was it completely? Was it the only way to make that happen?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yeah, you mean, in general, on a distress? Or?"
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Yeah."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "It was just a larger. Well, so like at IBM, you have a lot more circuitry. So, so when I wrote firmware there, I was just writing, I wrote the firmware that just basically wrote the data to the E squared prom. And so it's a really small, small component of this drive. Whereas at Connor, I was so you have a disk drive, disk drive talks to your computer. So you have your operating system, your host, and then it has you have your file, you want to write your file, you want to save it to the desk. So, so your operating system would send that file to the disk drive disk drive. So you have that interface. And that's the part that I would control. And so and I would take the so you communicate, you talk back and forth, take the data. So data is what you want to protect. So you don't want anything corrupted. And so and then you, you do whatever you need to do with it in the disk drive, and then the read write code takes it and actually writes it to, to the media, which is a lot more complicated."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And you were at how long were you at Connor?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I was at Connor for I can't remember, five years, I'd have to, I'd have to look back at, but you know, it was basically so caught. So Connor was, um, I think it was sort of the changing point in my career where, um, you know, I didn't quite like the nine to five type of life and having to be in meetings a lot and also judged on how many hours are you there actually at the office. And, um, and so I knew people who did what I did, but as consultants or contractors. And that's when I decided, I like the idea of being more flexible. And my skill was needed and desired. And there weren't a lot of people who wrote firmware. And so I took that chance of leaving and, and I had a contract when I left and, and I just contracted for years. And, and it was great because I felt like if people like the work I was doing, they would hire me and they would pay me. And I didn't have to spend a lot of time, um, in meetings. It didn't matter what my hours were during the day. And because one thing I really like to do, and I still do this is I like to start really early. And then I like to take one to two hours off, um, before lunch to go work out. And I love having that flexibility. And so, um, so it was, it was good. And I had, um, I contracted for Sony and Seagate and, uh, Maxdor and a lot of just different, uh, disk drive companies."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And is that, and were you doing that, um, when you, when you, um, went to the FreeBSD foundation? Was that?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So I, I, um, I wasn't quite doing that much anymore. What I, I have a gap really in my engineering career. Cause, uh, when 9/11 happened, um, it changed, um, well really affected the economy and, and companies and, uh, companies, when they could hire, um, it would be so hard for them to have a open a rack that they wouldn't want it to be full time. And, and what I was always trying to do was work part-time and maybe I would take two contracts, two part-time ones, or even just work part-time and cause I had young kids and that's what I wanted to do at the time. And, um, so I found it really difficult to find work. And so, um, so I, I took some time off. I did, um, jumped in, in and out of a few types of jobs. And then, um, and then I took on the foundation and I did take it on part-time at the beginning too. And it was really because they didn't have probably any money at the time. So I saw it as an opportunity."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Okay. Let's, let's, let's, let's, let's, let's actually back up a little bit and talk about that. How did you first, um, you know, hear about the FreeBSD foundation and how did, how were you connected?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, the FreeBSD foundation, I didn't know anything about. And, um, so, uh, my friend had contacted me and she said, so she was working at this, um, aerospace company here in Boulder. And, um, so I'm here in Boulder, Colorado. Um, and she said, I, there's a guy at my company. So she worked at an HR and she said, there's this guy in my company. He's running a nonprofit and he's looking for someone to run it. And I told him that I had a friend who is an engineer and looking for some work. And so anyway, so she connected us and that was the first time I had heard of FreeBSD and the FreeBSD foundation. And so, um, so the guy she was talking about was Justin Gibbs, who's the founder of the FreeBSD foundation. He's here in Boulder and he had started the foundation, I think it was about four or five years before that. And I bet he was working full time. And so it was growing to the point where he really couldn't run it. He, and he saw so much potential for growth that he wanted to find someone to run the company. And so, so he went to my friend, right. For just for advice on, you know, how do I find someone? And, um, and so we met at, had lunch together and decided that I was the right person. And, uh, so, so, you know, it, I, I always feel like I lucked out in the timing and the situation and, um, and it's been, it's been a great opportunity."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What did you know about the free and open source world before you started?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I knew nothing about it, which is just so weird because I mean, when I look at the history and stuff, cause I worked with Unix in the early days. So I knew about that, but, um, but because I was so focused on disk drives and storage and I worked, um, on optical storage, it was very focused what I did. And firmware is, um, it's almost at the hardware level. So you don't even have the bigger picture of software. And, um, and so we, none of the companies I worked at, we never used open source. And, uh, so I didn't have any exposure to it before that. So, uh, so that was all new and, and that's what made it so interesting working for the foundation because, um, I mean, I had the engineering background, but I didn't have operating system background. Um, open source didn't, that part didn't really matter. Um, but I never worked for a nonprofit, let alone run a nonprofit."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, so I was stepping into this whole new world and, um, and so it was really a good learning opportunity. I mean, you talk about like every day you have something, maybe not like fun, right? Cause it, maybe you're figuring out like, well, what can we legally do? Or, you know, cause I needed to hire myself and, uh, or employee myself. I was the first employee. And so what does that mean? What kind of, you know, what kind of federal and state laws do you have to follow to have an employee? And, uh, you know, so there's so many little things. And unfortunately the friend that I had at this one company that Justin worked at, um, she actually gave me advice on, cause since she was from HR, uh, she could actually give me a little bit of advice to, to get started. Like here, here's, here are the government sites where you can get this type of information. So, uh, so I was always trying to figure things out. And, um, and then, um, I, my focus was really more on FreeBSD as an operating system and trying to understand that, understanding, um, use cases and big companies. Why are they using FreeBSD and how are they using it? And so understanding that over it being open source.(something gibberish) Well, that's a really good question. Uh, because he, so basically he saw that, um, that he thought the engineering side of me would really help, uh, with project management. And so at the time we were really only funding projects and the biggest project was, uh, making sure the Java binaries from Sun, um, worked on FreeBSD. And, uh, so he thought I'd step in and project manage that, which I did. That was my first project. Um, he also thought, I don't know if I should make this on the recording or not, but he, he also thought as a mom that I'd be well organized to run a company. And I mean, little did he know, I really wasn't very organized. So just cause you're a mom, I mean, you're automatically an organized person, but it's, but, um, but maybe it helped me get a job."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Did you, did you have, um, did you have a lot of free reign when you started? I I mean, you basically had to create the whole thing."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yeah. I mean, he really wanted me to just, you know, please just, you know, let me hand this off to you and just go with it. But he was, he was always available when I had questions and, um, and so, so that's why, I mean, it was a good opportunity because I could do that. And so some of the stuff was just administration, like, oh, let's get a tax exempt, uh, certification. So we don't have to pay sales taxes to just how to, you know, which we do about taxes. And then, um, I, I did all of our accounting and, um, and actually that was one thing that I used to do for my dad too was, um, was accounting. So I had that, that background. Um, and so I did that for, for a really long time for the company until we really grew. And, uh, but yeah, he, he was available to ask questions. We also had a board of directors and they were at the time they were hands on. So, um, so if you needed someone to do like review, uh, a proposal or actually to even write an article for a newsletter, um, then it was always a board member that we do that. Cause it was just me. And then, um, and I was learning from them too. What, um, you know, what was the foundations, you know, what are our long-term goals? What are we really trying to do? And we're really defining that as time went by. Cause initially it was just to fund certain projects and, um, oh, provide travel grants to people to go to conferences. And, um, and so then from there, it's really, um, wasn't so much like, what do we want to do? What does the project need? Cause that's our purpose is to support the project and the community. And so, um, it's a lot of discussions on that, which was, um, which was always interesting. I mean, we still do that."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Talk about, so, so the, the FreeBSD foundation and then there's the FreeBSD, how, how does that work, um, in terms of, you know, how you work together or, or don't?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yeah, we're two totally different organizations. And so the FreeBSD project is, uh, made up of volunteers and, uh, from around the world and it's not a legal entity. And we have the FreeBSD foundation and, uh, which is a legal entity. It's, uh, um, here in the US we, it's, um, based, uh, when the IRS, um, uh, not certification, but, um, a definition, um, is this that we're a 501 C three. And so there's different types of nonprofits here. And so we're for the public good. And so our whole purpose is to support the project. So if FreeBSD went away, then we would most likely go away because we wouldn't have a purpose anymore. And so there's a lot of foundations out there that are umbrella organizations. And so it means that they have the foundation and then the project or multiple projects are under them. And so when you have it like that, then you have a lot more control of the project and I could tell, basically, uh, direct them and tell, tell them what to do. So the way that we work is that I always, like, if I create an org chart, I would put a side by side and we could step in. And since we're a legal entity, we could actually sign legal documents on behalf of the project. And, uh, but also, uh, when we see that there's needs or the project comes to us with, with needs, um, then we look at, we have funding and, um, and so we might be able to fund a project. Or, um, or we buy equipment for the FreeBSD infrastructure. And so, uh, so basically, uh, we'll provide resources for the project. We also do advocacy. And, um, so we, uh, travel around the world and give talks on FreeBSD. We'll have, uh, tables at conferences and we'll promote FreeBSD. We provide literature and educational material and, um, and things like that. So, so we're always trying to promote FreeBSD and, uh, we also talk to, uh, companies that use FreeBSD as well as potential users and, uh, work on like value propositions and why, why you should use FreeBSD. So we're also, we also act as salespeople for it, even though, you know, I mean, cause FreeBSD is a product, it doesn't cost anything to get it. Um, but we want to get more people using it."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "So if someone doesn't know what FreeBSD is, how would you describe it? And, you know, what's sort of your sales pitch for it?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, well, usually, I mean, sadly we'll say, have you heard of Unix? Cause I mean, not Unix, Linux, uh, cause most people have heard of Linux. And, um, and so we'll say, you know, it's, it's, uh, it's, it's, it's, it's a free computer operating system. It's based off of, uh, Unix, which is over 50 years old and, uh, came out of development out of, uh, out of Berkeley. And, um, and it's used on, uh, you know, you're, you're probably using FreeBSD right now. Cause if you watch Netflix, all those, um, shows and movies are being streamed off FreeBSD devices. And if you're running, if you have an iPhone, um, iOS and MacOS were all originally developed off of, um, BSD and then FreeBSD from that. And, oh, and the, the Sony PlayStation is also FreeBSD based. So, so once, um, you use examples of those types of companies that are using FreeBSD, then people are like, oh, and so, you know, so it's, it's a nice way to connect, uh, FreeBSD to, uh, what they know or what they're using today. Cause even with Linux is the same thing. It's like, they've heard of it, but are they running Linux on their computers? Yeah, most, most aren't. So, I mean, we all know windows and, um, and you know, MacOS."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And then, and then, and then in terms of the, in terms of the open source piece of it, um, talk about that."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Well, so FreeBSD has a really long history. Like I was saying, it, um, it branched off of the original Unix and, um, and Unix became open source eventually. And, um, it's like the real first unencumbered Unix like operating system actually came out of Berkeley and it was called, uh, 386 BSD. And that was back in the early eighties. And so basically Berkeley took Unix and developed on it. So some of it was for research. Um, well, most of it was for research. They're being funded by the government too, to work on it. And so, you know, the first open source really was, I think like in the early fifties, cause when these large companies like IBM and Amdahl, when they, uh, so they came, they developed these computers. And so when they'd sell a computer, that's where they made their money, not on the operating system or the software. So that they actually provided that too, because also it was to their benefit to have others make it work for them. And then it was more like when windows came out, maybe it wasn't windows cause it was DOS. Um, then you started having, seeing value in selling software and then that's when it became proprietary. And, um, so, so it had changed over time. Right. So when, um, so when like Berkeley Unix and then Linux came out and FreeBSD, um, that was, it was considered, um, you know, competitive to windows back then."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Okay. And talk to me..."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, so I get, so getting back to like open source, the FreeBSD, um, I mean, we, so we were really one of the first open source projects around. We weren't the first, but we were one first open source projects around. We weren't the first, but we were one of the first, um, and largest and most successful really. And we're still around and we're still growing. So still growing. So it's not like we're still just, you know, I mean, we're still, we're still growing. I mean, we're getting more still, we're still growing. I mean, we're getting more users and, um, you know, more companies using FreeBSD. So, so we have a very long history and, um, and also, and a lot of open source projects can learn from, you know, our government governance model, as well as some of the things that we did in the early days to, to make it successful."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Can you talk about that? What those things that you did in the early days?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, some of them were in, and I wasn't around for these, but, um, um, like they use a software, uh, source control, um, version control, um, back in the early days where when other projects done. Now I did, but he's, I did, that's something that we did. But apparently open source projects did not. And so it's something we still do on most projects. All, all, all of them, most of them will use Git now. Um, so that was one thing, a flat, um, um, a flat development model, meaning that, um, we, if you compare, uh, so a lot of, uh, comparisons happen between FreeBSD and Linux. And Linux, you have, um, Linus Torvalds, who is the one who came up with Linux and is still the head person there, and you have a lieutenant structure. And so when you make a change, it has to go up that hierarchy to get approved and, or reviewed."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "And within FreeBSD, it's a flat structure. And so you can submit something and someone within the team will review and either approve it or not. Uh, it doesn't mean it has low standards, but it, it does mean it's much easier to get your changes in because of time. You don't have so many people that it has to go through, or even just, even if it was just like a couple of people, it's just people have to be available to, to review. And so, um, so we find like, especially like with companies, um, that they like that because it is easier for them to get their changes in, um, as well as, uh, just contributors that, um, that they don't have to wait so long. And especially if you're new too, that, um, you can get changes in much quicker. So that, so that's a, that's a big thing that started from, um, the early days. Basically, the governance model was developed at Berkeley. And, um, and so they had, if I remember correctly, they had their small team of people who did commit the code, but they had a lot of other contributors outside and they would submit their changes. And then you'd have the Berkeley folks, um, who would actually commit the code to the, the source tree."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Got it. Um, talk about, about some of the main projects that, um, this foundation has funded."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, so like I mentioned, so early on Java binaries, um, that was big having that support in there. And then, um, and Java binaries moved on to being, uh, open source, the Java code, Java. Um, and so we haven't had to step in for that much. We do a little support there. Um, so, um, some of the projects that we've funded, well, if you look outside of development, so we're always focused on like what software development projects have we supported. And we have, um, also stepped in and put a lot of resources into this whole advocacy. So, um, from just providing literature, handouts, um, how to guides, um, putting together online content, getting speakers to talk about various parts of FreeBSD, um, that's, I mean, those are multiple projects, but all falls under advocacy. And that's one of the biggest things that we've grown over the past few years. Um, we, my head's like, sort of this blank right now on like what, like software projects, but we do have one, one big project that we did fund was, uh, what's called the Linux, Linuxulator. And, um, and basically what allows you to do is on FreeBSD, you can run Linux binaries that, um, so, and those will run on FreeBSD. Um, other things coming out of the project, just the open ZFS or ZFS support, and we have funded projects there. That's been big. Um, Jails was really the first containers that you hear about Docker, but Jails were the first containers that, um, that was developed on FreeBSD. That wasn't something that we did, but really, um, you know, one of the significant, um, you know, features, um, way back when, early 2000s."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "How, um, how are, uh, how do people, uh, get their projects funded? What's the process?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So there's a couple things, ways, uh, we do have a, a CFP or we have, uh, actually it's a project proposal application. And so we have information on our website on how to submit a proposal. So say you have an interest in implementing something and, um, but you need funding. So usually the case is this person, maybe they have to take time off of work to do this. And, uh, so they actually, so they write up the proposal, like what is it that they want to do? What are the outcomes and what's the timeframe? And then what's the cost? And then they submit that to us. And then what we do is, uh, we review it internally and then sometimes we'll actually, uh, send it to developers to get their input on, um, is this a project that would help FreeBSD? Because we're always looking at funding projects that really help further FreeBSD in various ways. And, uh, you know, it could be fixing a problem or it could be implementing a new feature and really just keeping it, uh, secure, stable, and, and innovative. So, so that's one way that we do it. Um, and then the other is that by working with companies and understanding, uh, their uses and their needs, as well as understanding market trends and just what's happening out there, then we also have internal roadmap. And, um, and so we look at how do we fund that work? And so, and we have software developers on our own staff and, um, and so we fund them to work in various areas. And we may hire someone to do specific work or we may just contract people too."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Do, um, the companies, the companies that you're doing some of that work with, do they also fund the projects as well for you?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Most, most of the funding is, so most of our funding does come from companies. And, um, and so it's, um, it's almost a hundred percent, uh, towards our general funds. So rarely do we take earmark funding, but we do do that. So if we have a project, so if a company wants something and we feel it's beneficial to FreeBSD in general, then, uh, if we have the resources, we'll do that work. And, uh, but most of the time companies will give to us because they know that, uh, the money that they're giving to us is helping, um, in these areas I talked about. So we have people on the security team, so it's helping with that. Uh, we have people on staff who will just step in and fix bugs right away, uh, whether they're our bugs or hardware bugs and, uh, just really having that, the resources available to get on top of things quickly. And so, um, so knowing that the money is going towards that, I mean, we, we try to be as transparent as possible with where our money is going. And, uh, we post more high level, um, state, you know, financial statements on our website, but we do try to be, um, open about how we're spending our money. And so, so anyway, that's, that's why that they'll give us money. We also get money from other companies that they might not use FreeBSD, but you know, or they know that they're benefiting by supporting us because it helps the open source ecosystem. And, um, and also there's components within FreeBSD that are used, um, by other companies in their products or just, um, just used in however way that they're using software operating systems."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Are most companies pretty open about, you know, saying that they use FreeBSD?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, some are, and I, no one is trying to be secretive about using it. It's It's just that that's not what's important to their product. So you wouldn't see, you wouldn't see Sony selling their PlayStation, you know, saying, oh, it runs on FreeBSD because it's the PlayStation that they're selling. That's, that's, what's important using FreeBSD is getting them what they need in order to create that, you know, that fabulous product that everyone wants. Um, then there's the other companies like Netflix is really good. They're a big advocate of FreeBSD and they, they've actually given talks about the high transfer rates that they achieve on the internet. And, uh, which is great. I mean, cause it helps FreeBSD, uh, we love to see it and we really appreciate it when, uh, when companies are really open about that and, um, and actually give talks or write articles about it."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Talk a bit about just the open source community in general. Um, do you, do you notice any trends or, or personality features about people that are in that community?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, I mean, I think you could say that in just tech in general, um, you know, and, and so I've been around a lot of different types of technical, technical people. Um, open source is, is interesting cause people are doing open source. Most of them are doing those because they're passionate about it. So they're not getting paid to work on it. So, um, so like any type of organization that uses volunteers, whether it's, you know, like the humane society, if you love animals, um, they're there because they're passionate about it. And so you see that. And so, and that's exciting. And to see people giving their time, their free time, which is pretty valuable. Um, it, it speaks a lot to it. And so, uh, I do see that a lot in our community. I see us as a pretty diverse, uh, but friendly community. And when I say diverse, I really mean in, um, like culture and backgrounds of people, um, experiences and cause you'll have people who they want to get involved in open source and they feel like, well, I'm not qualified. I'm not technical or I don't write code, but they want to be involved. And they think that they're lesser because of that. And I know in our project, um, like documentation is viewed so highly that if you come in and you write documentation, you're viewed highly. You're not any lesser because you're not writing code."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "And we have people who create videos on previous D cause they love it, but they, they can't write code or, you know, that's not their strength. And, um, and I love seeing these and, I mean, we could share these videos that they create. And, um, and so there's, there's just so many different ways that you contribute. And, and that's in general open source, but, um, but I do see this in previous D a lot more as far as being more equal. And, um, but also having, um, some of these original, um, Berkeley people still in our community. And when you go to our conferences that they're available to talk to, and they love telling stories and they help, um, bring up these new, like, you know, younger, usually it's like it's like younger people. Uh, Uh, and, uh, and that's always exciting to see. And then when we do have these conferences, there's so much that happens there. And, uh, and I, the biggest thing is you always have presentations, which are great. And that's usually why you go, but you have hallway tracks and, or social events and you have, oh, and we'll always have a hacker lounge too. And so you have this opportunity to work together and come up with new ideas, or maybe someone has an idea and now they're sharing that idea. And now you have other people who are interested in working on this. And so everyone always leaves these conferences pretty much exhausted, but really excited. So, uh, so those are extremely important."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Talk about the international aspect of it as well."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "The, yeah, it's, I mean, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. I think it's really important for us to figure out how to work well together. And one thing that I learned when I went to my first European conference was, um, I'm trying to remember what country we were in Malta, maybe. And we had this guy who, he organized the European conference and he asked me what I thought. And I said, and I told him, I go, \"I'm just exhausted because everyone has accents and it's so hard to understand.\" And he goes, \"but just think most of these people are native English speakers and how hard it is for them.\" And after he said that, I was like, \"yeah, I mean, what am I tired about?\" Like I'm, they're speaking my language to me. I don't have to deal with it being my second language. And so, um, so those are, that was a real important lesson to me. And, um, and so, but it's, but I've, I learned from our community and I, and I just find it so interesting, especially when we have this opportunity to go, we go to a different country in Europe every year for a conference and learning about, um, you know, their culture and, um, and meeting local people there. And that's, uh, that's been really educational. So, I mean, so we've gone to like Malta, Bulgaria, uh, Romania, uh, Norway, Sweden, Germany, France, um, you know, England, uh, Japan, Taiwan, we'll be in Taiwan next year. Uh, and so all these opportunities to meet people from around the world. And once, and also once we went and started doing these virtual conferences because of COVID, um, people who normally couldn't travel, it finally gave them the opportunity to, to attend some of these conferences, which was really nice."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "That's terrific. Did, um, how did COVID impact, uh, your work?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, um, so most of us were already working from home and, um, and so the impacts were, uh, uh, with our interns who are working in our office in Kitchener, Ontario. And, uh, so we have a, uh, intern or, um, there's a co-op program through the University of Waterloo that we participate in, which has been great. And, um, I think we had three interns and so they're all college students and they were working in our office there. So we have their computer setups there and they, and not all of them were from the Kitchener area either. And so we had to figure out how we can set them up to work from home, get them home and, um, and help them navigate working online and having to get their, like their supervision or mentoring online. So, um, so that, so that took an effort to figure out after that, after once we had finished that term and had another term, we were set up then, um, on how to do that. And so we're pretty much set up now to do that. And then really the other thing was, was travel. And what do we do about travel? Because we had been traveling, uh, to, like I was saying, around the world, attending different conferences, giving workshops, things like that. So, so what do we do? And, um, and what are our responsibilities as a corporation?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So, so really understanding that as well as like what were the government mandates and all that kind of stuff, understanding that, understanding to our investments and what could happen because we, we try to keep enough money to pay salaries for one to two years. And, um, you know, and the stock market dropped, you know, those first few days. And so, um, so it really made me spend a lot of time understanding and figuring out putting together some plans, talking to people. And also I was talking to people from other companies, bigger companies, like, are you traveling? Are you going to go to this conference that's still happening to give a talk? And, and so, um, so most of the people would say, no, our, you know, companies have travel restrictions now. And so, so then it was like, we could have travel restrictions too. And so, so we did do that. And also, um, making sure employees felt that, um, they didn't have to travel, that we were making sure protections were in place too. And even now, um, that in person conferences are happening again, um, not everyone is comfortable traveling yet. And I know I've been traveling, but also I'm very careful right now about getting exposed. And so I'm one of those who still wears a mask, but, but that's my decision. And, um, if someone on my team is not comfortable traveling or being in a big conference setting, then that's okay. So, so, um, uh, so we make sure that, um, you know, that we're, uh, there's, I don't think there's anything that we have to do that we have to actually go and be physical at, we've done everything online, which is great."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "That's really cool. Um, you had mentioned, you'd mentioned, um, that the originators of FreeBSD are still very involved in, in the foundation. Can Can you talk about some of those people?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yes. And hopefully you'll get their stories too. Um, cause there's some great stories there. Kirk McKusick, um, he's, he came from Berkeley. He was a PhD student when, I always want to say playing around with, uh, the Berkeley Annex, but really, I mean, it was, uh, it was a product that companies were using in their, um, doing research with it. And so, um, so he's one of the original people on, um, on BSD, Berkeley Annex, as well as in FreeBSD. But when you talk to him, he'll say, \"well, I wasn't one of the first, uh, people on FreeBSD because there was actually a lawsuit that was happening at the time and against Berkeley Annex. And, um, and so for like two years, I think, um, the developers from Berkeley, the students mostly, um, had to, um, had to focus on that.\" And, uh, so FreeBSD had branched out and from then there was FreeBSD and NetBSD at the beginning. And, um, so some of those folks, uh, Jordan Hubbard, Rodney Grimes, some other folks that, um, hopefully we'll get some, um, recordings from them to hear their stories too. Um, but they were part of FreeBSD when it first, um, you know, started out in 1993, which we're celebrating the 30th anniversary of this year."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And when did you join the foundation?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So I joined in 2005."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "And so, so since then, like what, what, um, what kind of changes have you seen just in the community and, and, you know, there's just, I mean, um, it's 18 years. So what, what, what's changed?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I know it's I know it's a long time. Um, I've seen it grow. Um, yeah, I've seen more people join. I've seen more younger people join too, which has been really cool. And that's something that we're really trying to increase too. So we're learning from them too, which is great. Like why, why would you be interested in, uh, contributing to FreeBSD or learning about FreeBSD? The other things from the foundation perspective is, uh, we're just funding so much more work. We're bringing in a lot more money. And like I said earlier on, when I first joined the foundation, I was part-time. And so until I start bringing in the funds, I stayed part-time, which I was fine with at the time. And so as we brought in more money, then we were able to hire more people. So, uh, we brought in, um, Ed Maust who now oversees all of our development work, but he, at the time, uh, he was doing, he was, uh, doing software development work himself for us. We hired a marketing director and that's when we started providing all that advocacy material and the online content and stuff like that. And then since, since then, um, we've hired more software developers. We've built our marketing. Um, and also we're identifying other, um, positions that would really help the project. And I just hired, uh, someone who's, who just stepped in as our director of partnership and research. And, uh, and that's really gonna help, um, like nurture and build these relationships that we have with companies. And, um, as well as helping get more companies, uh, to learn about previous D and why they should adopt it. And so have someone who could full-time work on that because that was my job before. And, and it's just hard to do, to run the organization and to, um, you know, be able to to follow up on, on that type of stuff. And the research component of that is really, um, part of it is policy to where, what should we get we get involved with?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "There's a lot of cybersecurity stuff going on now. Um, you know, making sure, um, our voices or our voice is included in some of the government, uh, discussions. And, um, also what are the trends that are happening out there and what should we be involved with? And, um, as well as looking at like what research is happening with freeBSD, there's a a lot of security work that's happening with freeBSD. And so not only spending the time doing that, but, um, publicizing that. And, uh, so users know and universities know and corporations know that freeBSD is a really good solution for like security. And, um, well with Earth Day tomorrow, um, yeah, low power consumption being more environmentally friendly. And, uh, so things like that. So, so we're looking at growing the team in ways like that, that helps freeBSD overall. So that's so how we've grown. So we have, I don't know, eight, nine employees now. Um, and then as far as the growth of the project, just, um, more companies using freeBSD or companies coming out of there would work too that have been using freeBSD that we didn't know about because it's not like we have this product and we're selling it. So we know all the users out there that are using it. It's the license allows anyone to use freeBSD and to make whatever changes that they want. And, um, so there's products out there that are using freeBSD that we have no idea. We would love to know, but they don't have to let us know. That's not their, that's not their priority. So, um, so anyway, so learning about those uses are interesting and really helpful."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What is your biggest challenge?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, I would say the biggest challenge that, well, a couple of things, uh, one is for the project, one's for us. So one would be getting the money that to do this work, to fund the work. Cause we, there's, there's so many things we know we can help with and we just don't have the resources to do it. know we can help with have the resources to do it. And, uh, we have these conversations all the time, like, oh, if we had someone who could step in to do this, that would be so beneficial. And, but we can't, can't do it cause we don't have the funding. So really is getting that funding and having the director of partnerships will, will really help that. Um, and then the other challenge is within the project that because it's a volunteer organization is getting people to do certain things. So, you know, if you're a volunteer and you're working on here on this project because you love it, you're passionate about it. But maybe there's like some boring task. Yeah. Well, there's a lot of boring tasks that have to be done. Yeah. Do you really want to spend your time on that? You want to do the exciting things. So, um, so a lot of times it's hard to find people to do more of the tactical type of things. And, um, and that's where actually we try to step in and help with, and, um, you know, is, is to, you know, fill those holes where you can't get a volunteer, but, um, but going back to the funding, we can't always do that. So I'd say like, those are the two biggest challenge challenges."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What do you think your leadership, your leadership style is?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Oh, mine? Um, I haven't really thought about that. Um, I, I'm pretty down to earth person. So I'm not, I don't know, pushy would be the word. I try to listen to, um, I listen and watch the staff, you know, what are their needs? What am I seeing that maybe they need help with and, and ask questions. And, um, and I really try to make sure that I think it's really important to have a good life work balance. And, um, and so I make sure that we're as accommodating as we can be. And, and because we are remote and most people, everyone works from home, um, it is easier to do that. I've always loved working from home. So, I mean, I love to not having a commute, just that hour, what can you do that hour? Um, and I love being able to just get up and start working at seven. So then I, like I was saying, so I can go for a run or whatever. And, um, so, so for me, it's really being available, listening, um, and asking questions of, you of, you know, what are your challenges? What do you like? You know, what, what are you doing that you really don't like? And, um, and then trying to work with them on making sure people are doing what they're interested in. And, um, you know, cause they can't, we have a lot of jobs or tasks that we have to do that maybe aren't the things that we love, just like what I was saying with the volunteers, but they have to be done. So making sure there's a good balance there too."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Have you had any challenges in your career, um, being a woman in sort of a man dominated field?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, well, yeah, I have, um, I mean, even, you know, starting out in college, um, there weren't that many women in, who are studying any, any of those disciplines, uh, computer science, engineering, computer engineering, and math. Cause those were, I think the areas that I touched on. Um, but I also found that because it was such a hard discipline that we really worked together to understand things that we had. Um, I mean, maybe you didn't have Google back then, but yeah, we had our own working group that spent a lot of time together. And so sometimes, so there might be six of us and really just teaching each other concepts, if someone doesn't understand it. So maybe I'd have another woman in there or maybe I'd be the only one and didn't really matter because we were all, we all felt like we're in the same boat. Yeah. Just trying to, to swim."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, there's definitely companies, uh, where it was hard, um, from being discriminated, discriminated against, um, to, you know, being in sales, being part of sales and being at social events, uh, you have to, I felt like I always had to to be, um, aware and, um, I feel like that in life, uh, you have to be aware of your surroundings and people around you anyway. So I don't think that that's any different. Um, but definitely have always felt that I had to work harder to do the same thing. And other people got recognition where, um, the standards were definitely lowered. And what I always found interesting was when people started complaining about having to have that diversity of making sure you have, yeah, bring more women. And I'll use that as an example of that. You have to lower standards for that. And it's like, I'm thinking, I think it's the opposite because I've, I've seen, um, you know, in many of, um, you know, my jobs that people were recognized and praised for not doing a very good job because there was a lot of competition. So I think having more women, um, does bring in more competition and it's just really, how do we get more women first interested in like STEM fields? And then the second would be staying. So, cause I, I left and, um, and cause it, it, it, it's hard. It's not really giving up. It's like, you look at your life and you look at what do I want to do? What do I want to deal with? And, um, and so maybe you take a step back for a little bit. I got back into tech and, um, and yeah, things still happen, but, um, but I'm seeing being back in tech and going to like these women and competing conferences from, uh, like Grace Hopper to, we have, um, ECM puts on these celebrations of women competing all around the world. And first seeing these students, seeing the speakers, it's, uh, so inspirational that there's a lot of women in STEM and, um, but I know in operating systems, it is hard. And, um, and I, and I don't know why. And, um, and so trying to figure that out and how to make it, um, you know, attract more people, um, is, uh, yeah, it's one of the things that we're trying to work on."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "What do you think has been your, um, greatest achievement so far in the field?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Well, so in the field or with the foundation?"
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Um, Um, first let's go first in the field and then, and then the foundation. I'd love that."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, so I would say, um, that for me, it's been telling my story to girls and women at these type of women competing conferences. Um, I remember being at, uh, there's a conference in Europe called Women Courage and it's put on by ACM. It's their, uh, it's their European women, celebration of women in computing conference. And I remember I was staffing a table and, and so I was there to promote FreeBSD and trying to encourage people to consider contributing or using FreeBSD. And I had so many women students come up to me and want to just talk to me about my background and my history, sort of like what we're doing here. And because a lot of times when you go to these conferences, you have, um, you don't have actual like female, um, engineers there. You'll have representatives of the company and usually they're recruiters or marketing, which is fine."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, and so, but they don't, they can't tell those types of stories. And so, uh, so, so much fun, um, you know, being asked these questions and then also just how excited they were about, um, you know, the potential and the opportunity. And, and so really that's what I feel like is an achievement. And, um, and it's funny because usually when you think of an achievement, you think of something that you developed and, you know, and I developed disk drives. I want to say that they were great and, um, implemented new features and stuff like that. But really what stands out to me is that being a role model or someone who's available to talk about that. Yeah, of course you can do it. And cause I was never told that I couldn't do it. And, um, and so it's really finding, you know, what are you interested in? And if you're, and you could be in tech and still, it doesn't have to be like you're on a computer and your mom's face just programming all day. It's, it can be so creative and, um, and you can be outgoing. And I mean, there's so many characteristics that aren't part of the stereotypical software person that, and so, so if we can model that and, um, and show more people who are like that, um, I think it'll really gain more interest of, of girls and women in the field."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Well, that's a great answer, but, uh, also what about your achievement at, uh, FreeBSD Foundation?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Um, Um, so to me, I guess it would be growing the company because like I said, I was the first employee, so we were hardly anything at the time. And, um, at the time. And, um, and now we're this, uh, team of passionate people about FreeBSD who can go to companies and talk to them who go around the world giving talks of FreeBSD. A lot of times it's me and, um, and I'm learning about FreeBSD and, um, and so what we've been able to contribute back to the project. And by doing that into the world, because when you look at FreeBSD as this product, um, I mean, companies use it and they benefit from it, but it's this free operating system that anyone around the world can use. And the hardware that it runs on can be really cheap. So you can go into, you know, underdeveloped countries. And I mean, we can't do this because we don't have the resources yet, but other people could do it. And so you can, um, teach people skills that will give them jobs and, um, you know, and make them marketable. And so, so really as, as this free product, there's so much potential for it."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "That's fantastic. Um, why do you think it's important to, to, to be documenting the history of, of the field?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Well, I mean, the history of everything, it's important. If it's not documented, then you can change it. So, right. I mean, we're, we're, I won't go into it, but I mean, right. I I mean, we change history and, um, and it's interesting. Um, I mean, it's an interesting question because when I give my talks on FreeBSD, I do go over the history because I think that's really important. But you can look at it as like, well, that's before who cares about that? You know, we want to know what, you know, what's important now or why it's so great now. But to me, it always goes back to the foundation of anything. So, you know, it can be multiplication. So understanding instead of memorizing tables, understanding that, you know, yeah. So it's very Montessori, you know, if you actually touch it and add it, you could see it and feel it. That's foundation and everything builds off of that. And so understanding the history, what really happened and why, and, you know, and the reasons can can be different for different people. Right. And so, um, so having the stories available for others, uh, is just really important. And yeah, hopefully people find it interesting. And I know that my story it's, you know, at the time I never really thought like, oh, you know, there's two women in all my engineering classes. Like I'm at the forefront of this. I never thought of that."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "I thought, oh, here's a skill I can get and I can have job and financial security and a good future. And so I really looked at it like that. And it was an opportunity and I was able, I wasn't limited, like, you know, when you think of people like Maria Montessori who wanted, she wanted to be an engineer and she could. They wouldn't allow women to be engineers. And I guess that was Italy. She became a medical doctor and she was able to do that. And then what she did was amazing with her, you know, way, her way of teaching and developing minds is so amazing and how they tried to limit her and she still figured out a way to do it. So actually probably because she became a doctor was because of that, because she worked with children and she learned how the brain worked. If she was an engineer, she probably would not have made that contribution. And I had never thought of that before."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "It's really interesting. Yeah, but I think, too, with things moving so quickly in the field, it's good to take a moment and capture a moment in time as well, you know."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "True. Yeah, yeah."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Yeah. Yeah. So one last question. And that is, if your great, great grandchild were to stumble on this recording 100 years from now, what would you want them to know? What would you want to say to them?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "If they stumble on this recording, so they're watching this recording, that I think I'd want them to know just that they can do anything that they want. And it doesn't mean it's easy. And usually you have to work hard towards it. But if you want it, then go for it. And don't let anyone stop you and tell you you can't do it. And just believe in yourself. But also try to find people to help you, too. And just try. And the other thing, too, is just we learn from our failures. I mean, you always hear that. But it's really true. And if you don't try something, you won't fail. And so you lose out on that learning opportunity."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "So when you do fail, it's pretty horrible at the time. But you get past it. And once you get past it, you use that knowledge to either do better and or be better or whatever it is. So I think that's it. Just the fact that there's so many opportunities out there. And really, try to figure out what you enjoy and what's your passion. And try it. Because really, when you look at your lifetime, it's a long time. And you can change. So if you make a decision to do something. And maybe you realize maybe that's not what you want, that's OK. That you have time to try something else. And what you bring with you is you gain that experience and knowledge, too. So that's what I would say. And hopefully, I will have great grandchildren."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "That's a great answer. So So is there anything you wanted to say that maybe we've skipped over that you feel is important that you'd like to get on the record?"
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "It's funny. Because to me, when I look back in my career, I don't see anything significant that I feel like I accomplished. But I also looked at when I was very career driven when I started out. And when I decided to have children, it really changed my perspective. And I think that happens to most people. And you realize what's important. And I think defining that or understanding that is what should drive you. And then you work around it. And if you're still really, I mean, I've always wanted to continue working and working hard and working in an area that I was interested in. But also realizing, too, that there's other things that are also as or more important. And so I feel really good about what I've done. And this isn't the end of my life. And so I see so much more that I could do, which is exciting, I think. I still have ideas going around my head of things that I would like to do. And I'm happy that I'm healthy and that I feel like I'll be able to do them. And I really appreciate the time that you gave me. And I look forward to hearing other stories. And that's what's exciting, too, about this project is going back, is being able to watch some of these other stories and learning from these people, too."
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "Well, thank you so, so much for sharing your story with us."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Oh, you're welcome. It has been really fun spending time just thinking back. I'm I'm like, what did I do? Why did I even choose going to TAC? Because it was so long ago, right?"
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "It certainly seemed like the right move."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "What's that?"
+      },
+      {
+        "speaker": "Karen Herman",
+        "text": "I said, it certainly seemed like the right move, though. When you really look back."
+      },
+      {
+        "speaker": "Deb Goodkin",
+        "text": "Yeah, yeah. I never regret not taking this path. So and I think that's important, too."
+      }
+    ],
+    "entities": {
+      "PERSON": [
+        "Karen Herman",
+        "Deb Goodkin",
+        "Pascal",
+        "Mac Store",
+        "Wasnik",
+        "NeXT",
+        "FreeBSD",
+        "Justin Gibbs",
+        "Java",
+        "Linux",
+        "MacOS",
+        "Berkeley",
+        "Linus Torvalds",
+        "Docker",
+        "Kirk McKusick",
+        "Berkeley Annex",
+        "Jordan Hubbard",
+        "Rodney Grimes",
+        "Ed",
+        "freeBSD",
+        "Women Courage",
+        "Maria Montessori"
+      ],
+      "ORG": [
+        "CIA",
+        "University of California",
+        "University of Santa Clara",
+        "IBM",
+        "Stanford",
+        "ECC",
+        "Sun Microsystems",
+        "DAC",
+        "HP",
+        "NeXT",
+        "Apple",
+        "Miniscribe",
+        "Sirius Logic",
+        "Seagate",
+        "SCSI",
+        "Sony",
+        "the FreeBSD foundation",
+        "Justin",
+        "Sun",
+        "IRS",
+        "Netflix",
+        "BSD",
+        "Amdahl",
+        "DOS",
+        "Berkeley Unix",
+        "ZFS",
+        "CFP",
+        "COVID",
+        "the University of Waterloo",
+        "Berkeley",
+        "Google",
+        "Grace Hopper",
+        "ECM",
+        "ACM",
+        "TAC"
+      ],
+      "GPE": [
+        "Hollywood",
+        "California",
+        "Los Angeles",
+        "San Diego",
+        "Santa Clara",
+        "Fortran",
+        "Santa Clara Valley",
+        "South San Jose",
+        "ECC",
+        "San Jose",
+        "Maine",
+        "Alabama",
+        "Maxstar",
+        "Colorado",
+        "Miniscribe",
+        "Boulder",
+        "US",
+        "Linux",
+        "Berkeley",
+        "Git",
+        "Netflix",
+        "Ukraine",
+        "Malta",
+        "Bulgaria",
+        "Romania",
+        "Norway",
+        "Sweden",
+        "Germany",
+        "France",
+        "England",
+        "Japan",
+        "Taiwan",
+        "Kitchener",
+        "Ontario",
+        "NetBSD",
+        "Italy"
+      ],
+      "DATE": [
+        "today",
+        "April 21st in the year 2023",
+        "1961",
+        "all four years",
+        "last quarter",
+        "1984",
+        "three years",
+        "five and a quarter",
+        "three and a half or two, two and a half",
+        "Friday",
+        "the 90s",
+        "a year",
+        "five years",
+        "years",
+        "the day",
+        "the early days",
+        "50 years old",
+        "the early eighties",
+        "the early fifties",
+        "the past few years",
+        "early 2000s",
+        "every year",
+        "next year",
+        "one to two years",
+        "those first few days",
+        "two years",
+        "1993",
+        "this year",
+        "2005",
+        "18 years",
+        "Earth Day",
+        "tomorrow",
+        "all day",
+        "100 years from now"
+      ],
+      "PRODUCT": [
+        "PlayStation",
+        "Annex"
+      ],
+      "EVENT": []
+    }
+  }
+}
