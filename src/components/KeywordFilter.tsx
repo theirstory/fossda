@@ -290,17 +290,26 @@ export default function KeywordFilter({
 
           // Always check if this keyword would return results based on the latest operator
           const wouldReturnResults = keywordGroups.length === 0 || 
-            chaptersMatchingCurrentGroups.some(chapter => {
-              if (!chapter.tags?.includes(keyword)) return false;
-              
-              // For NOT operator, check if adding this keyword would maintain the negative match
-              if (latestOperator === 'NOT') {
-                return !chapter.tags.includes(keyword);
-              }
-              
-              // For AND/OR, check if this keyword exists in matching chapters
-              return chapter.tags.includes(keyword);
-            });
+            Object.values(chapterData).some(interview =>
+              interview.metadata.some(chapter => {
+                if (!chapter.tags) return false;
+                
+                // For OR operator, any chapter with this keyword would be valid
+                if (latestOperator === 'OR') {
+                  return chapter.tags.includes(keyword);
+                }
+                
+                // For NOT operator, check if adding this keyword would maintain the negative match
+                if (latestOperator === 'NOT') {
+                  return !chapter.tags.includes(keyword);
+                }
+                
+                // For AND operator, check if this keyword exists in chapters that match current groups
+                return chaptersMatchingCurrentGroups.some(matchingChapter => 
+                  matchingChapter.tags?.includes(keyword)
+                );
+              })
+            );
 
           const showVisualFeedback = keywordGroups.length > 0;
 
