@@ -23,9 +23,17 @@ export default function VideoChapters({
     if (chapterListRef.current) {
       const chapterElements = chapterListRef.current.children;
       if (chapterElements[currentChapterIndex]) {
-        chapterElements[currentChapterIndex].scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest'
+        const chapterElement = chapterElements[currentChapterIndex] as HTMLElement;
+        const container = chapterListRef.current;
+        
+        // Calculate the scroll position to place the chapter higher up
+        const elementTop = chapterElement.offsetTop;
+        const containerHeight = container.clientHeight;
+        const offset = containerHeight * 0.6; // 60% from the top
+        
+        container.scrollTo({
+          top: Math.max(0, elementTop - offset),
+          behavior: 'smooth'
         });
       }
     }
