@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { ChapterMetadata } from '@/types/transcript';
 import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
@@ -86,7 +86,23 @@ export default function InteractiveTranscript({
     }
   }, [transcriptHtml, chapters, mounted]);
 
-  // Initialize HyperaudioLite
+  // Create a stable click handler using useCallback
+  const handleSpanClick = useCallback((event: Event) => {
+    const span = event.target as HTMLElement;
+    if (!span.hasAttribute('data-m')) return;
+
+    const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.currentTime = time;
+      if (isPlaying) {
+        videoElement.play().catch(console.error);
+      }
+      span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [isPlaying]);
+
+  // Initialize HyperaudioLite and click handlers
   useEffect(() => {
     if (!scriptLoaded || !mounted || !transcriptRef.current) {
       return undefined;
@@ -98,22 +114,10 @@ export default function InteractiveTranscript({
       return undefined;
     }
 
-    const setupClickHandlers = () => {
-      const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
-      spans.forEach(span => {
-        span.addEventListener('click', () => {
-          const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
-          const videoElement = document.getElementById('hyperplayer');
-          if (videoElement && 'currentTime' in videoElement) {
-            (videoElement as HTMLVideoElement).currentTime = time;
-            if (isPlaying) {
-              (videoElement as HTMLVideoElement).play();
-            }
-            span.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }
-        });
-      });
-    };
+    const transcriptElement = transcriptRef.current;
+
+    // Add click handler to the transcript container (using event delegation)
+    transcriptElement.addEventListener('click', handleSpanClick);
 
     // Create a MutationObserver to watch for player initialization
     const observer = new MutationObserver((mutations) => {
@@ -131,7 +135,6 @@ export default function InteractiveTranscript({
                 false,
                 false
               );
-              setupClickHandlers();
             }
             observer.disconnect();
           }
@@ -141,13 +144,12 @@ export default function InteractiveTranscript({
 
     observer.observe(player, { attributes: true });
 
-    // Set up initial click handlers
-    setupClickHandlers();
-
+    // Cleanup function
     return () => {
       observer.disconnect();
+      transcriptElement.removeEventListener('click', handleSpanClick);
     };
-  }, [scriptLoaded, mounted, isPlaying]);
+  }, [scriptLoaded, mounted, handleSpanClick]);
 
   // Add timeupdate listener to scroll transcript
   useEffect(() => {
@@ -312,35 +314,6 @@ export default function InteractiveTranscript({
       }
     }
   };
-
-  // Initialize click handlers
-  useEffect(() => {
-    if (!mounted || !transcriptRef.current || !videoRef.current) {
-      return undefined;
-    }
-
-    const handleSpanClick = (span: HTMLElement) => {
-      const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
-      if (videoRef.current) {
-        videoRef.current.currentTime = time;
-        if (isPlaying) {
-          videoRef.current.play().catch(console.error);
-        }
-        span.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    };
-
-    const spans = Array.from(transcriptRef.current.querySelectorAll<HTMLElement>('span[data-m]'));
-    spans.forEach(span => {
-      span.addEventListener('click', () => handleSpanClick(span));
-    });
-
-    return () => {
-      spans.forEach(span => {
-        span.removeEventListener('click', () => handleSpanClick(span));
-      });
-    };
-  }, [mounted, isPlaying, videoRef]);
 
   // Update the custom text selection effect to use Selection API
   useEffect(() => {
