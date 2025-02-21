@@ -13,6 +13,7 @@ import RelatedVideos from "./RelatedVideos";
 import VideoClips from "./VideoClips";
 import { useSearchParams } from 'next/navigation';
 import { clips } from "@/data/clips";
+import VideoChapters from "./VideoChapters";
 
 interface VideoSectionProps {
   videoId: string;
@@ -121,13 +122,19 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
             <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
           <div className="flex-1 overflow-hidden">
-            <TabsContent value="transcript" className="h-full overflow-auto p-4">
-              <InteractiveTranscript
-                transcriptHtml={transcriptHtml}
-                isPlaying={isPlaying}
-                videoRef={videoRef}
-                chapters={videoChapters.metadata}
-              />
+            <TabsContent value="transcript" className="h-full overflow-auto">
+              <div className="grid grid-cols-[250px,1fr] h-full gap-4">
+                <VideoChapters
+                  chapters={videoChapters.metadata}
+                  videoRef={videoRef}
+                  isPlaying={isPlaying}
+                />
+                <InteractiveTranscript
+                  transcriptHtml={transcriptHtml}
+                  videoRef={videoRef}
+                  isPlaying={isPlaying}
+                />
+              </div>
             </TabsContent>
             <TabsContent value="clips" className="h-full overflow-auto p-4">
               <VideoClips interviewId={videoId} onClipClick={handleClipClick} />
