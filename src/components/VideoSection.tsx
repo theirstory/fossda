@@ -81,57 +81,61 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
   const clipCount = clips.filter(clip => clip.interviewId === videoId).length;
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div className="grid grid-rows-[auto_1fr] gap-6">
-        <VideoPlayer
-          ref={videoRef}
-          playbackId={playbackId}
-          onPlayStateChange={handlePlayStateChange}
-          chapters={videoChapters.metadata}
-          thumbnail={currentVideo.thumbnail}
-          onLoadedMetadata={() => {
-            if (videoRef.current && startTime) {
-              const timeInSeconds = parseFloat(startTime);
-              if (!isNaN(timeInSeconds)) {
-                videoRef.current.currentTime = timeInSeconds;
+    <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-2 h-full">
+      <div className="flex flex-col gap-2">
+        <div className="bg-white rounded-lg shadow-lg">
+          <VideoPlayer
+            ref={videoRef}
+            playbackId={playbackId}
+            onPlayStateChange={handlePlayStateChange}
+            chapters={videoChapters.metadata}
+            thumbnail={currentVideo.thumbnail}
+            onLoadedMetadata={() => {
+              if (videoRef.current && startTime) {
+                const timeInSeconds = parseFloat(startTime);
+                if (!isNaN(timeInSeconds)) {
+                  videoRef.current.currentTime = timeInSeconds;
+                }
               }
-            }
-          }}
-        />
+            }}
+          />
+        </div>
 
-        <div className="bg-white rounded-lg shadow p-4 max-h-[300px]">
-          <h2 className="text-lg font-semibold text-gray-900 mb-2">
+        <div className="bg-white rounded-lg shadow-lg p-3">
+          <h2 className="text-sm font-semibold text-gray-900 mb-2">
             Summary
           </h2>
-          <div className="text-gray-700 leading-relaxed overflow-y-auto h-[calc(100%-2.5rem)]">
+          <div className="prose prose-sm max-w-none text-gray-600 max-h-[120px] overflow-y-auto">
             {currentVideo.summary}
           </div>
         </div>
       </div>
 
-      <div className="bg-white rounded-lg shadow">
-        <Tabs defaultValue="transcript">
-          <TabsList className="w-full">
+      <div className="bg-white rounded-lg shadow-lg h-full flex flex-col">
+        <Tabs defaultValue="transcript" className="flex-1 flex flex-col">
+          <TabsList className="w-full border-b">
             <TabsTrigger value="transcript">Transcription</TabsTrigger>
             <TabsTrigger value="clips">
               Clips ({clipCount})
             </TabsTrigger>
             <TabsTrigger value="related">Related Videos</TabsTrigger>
           </TabsList>
-          <TabsContent value="transcript" className="max-h-[600px] overflow-y-auto">
-            <InteractiveTranscript
-              transcriptHtml={transcriptHtml}
-              isPlaying={isPlaying}
-              videoRef={videoRef}
-              chapters={videoChapters.metadata}
-            />
-          </TabsContent>
-          <TabsContent value="clips" className="max-h-[600px] overflow-y-auto">
-            <VideoClips interviewId={videoId} onClipClick={handleClipClick} />
-          </TabsContent>
-          <TabsContent value="related" className="max-h-[600px] overflow-y-auto">
-            <RelatedVideos currentVideoId={currentVideo.id} />
-          </TabsContent>
+          <div className="p-2 flex-1 overflow-hidden">
+            <TabsContent value="transcript" className="mt-0 h-full overflow-y-auto">
+              <InteractiveTranscript
+                transcriptHtml={transcriptHtml}
+                isPlaying={isPlaying}
+                videoRef={videoRef}
+                chapters={videoChapters.metadata}
+              />
+            </TabsContent>
+            <TabsContent value="clips" className="mt-0 h-full overflow-y-auto">
+              <VideoClips interviewId={videoId} onClipClick={handleClipClick} />
+            </TabsContent>
+            <TabsContent value="related" className="mt-0 h-full overflow-y-auto">
+              <RelatedVideos currentVideoId={currentVideo.id} />
+            </TabsContent>
+          </div>
         </Tabs>
       </div>
     </div>
