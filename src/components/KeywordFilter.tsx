@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -57,9 +57,51 @@ export default function KeywordFilter({
 }: KeywordFilterProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [activeGroupId, setActiveGroupId] = useState<string | null>(null);
+
+  // Get all unique keywords from chapter data
+  const allKeywords = useMemo(() => {
+    const keywordSet = new Set<string>();
+    Object.values(chapterData).forEach(interview => {
+      interview.metadata.forEach(chapter => {
+        chapter.tags?.forEach(tag => {
+          keywordSet.add(tag);
+        });
+      });
+    });
+    return Array.from(keywordSet);
+  }, []);
+
+  // Add all keywords to their respective categories or create a new "Other" category
+  const enhancedCategories = useMemo(() => {
+    const categorizedKeywords = new Set<string>();
+    const categories = [...keywordCategories];
+    
+    // Add keywords to their categories
+    categories.forEach(category => {
+      category.keywords.forEach(keyword => {
+        categorizedKeywords.add(keyword);
+      });
+    });
+    
+    // Create "Other" category for uncategorized keywords
+    const uncategorizedKeywords = allKeywords.filter(keyword => !categorizedKeywords.has(keyword));
+    if (uncategorizedKeywords.length > 0) {
+      categories.push({
+        id: 'other',
+        title: 'Other Keywords',
+        description: 'Additional keywords found in chapters',
+        iconName: 'sparkles',
+        keywords: uncategorizedKeywords,
+        color: 'bg-gray-500'
+      });
+    }
+    
+    return categories;
+  }, [allKeywords]);
 
   // Filter keywords based on search query and selected categories
-  const filteredCategories = keywordCategories
+  const filteredCategories = enhancedCategories
     .filter(category => {
       if (selectedCategories.length > 0) {
         return selectedCategories.includes(category.id);
@@ -106,7 +148,7 @@ export default function KeywordFilter({
         group.id === groupId
           ? { ...group, keywords: group.keywords.filter(k => k !== keyword) }
           : group
-      ).filter(group => group.keywords.length > 0)
+      )
     );
     onKeywordsChange(selectedKeywords.filter(k => k !== keyword));
   };
@@ -156,8 +198,19 @@ export default function KeywordFilter({
   };
 
   const toggleKeyword = (keyword: string) => {
-    if (keywordGroups.length > 0) {
-      // Always add to the last group
+    if (activeGroupId) {
+      const activeGroup = keywordGroups.find(group => group.id === activeGroupId);
+      if (activeGroup) {
+        if (activeGroup.keywords.includes(keyword)) {
+          // Remove keyword from active group
+          removeKeywordFromGroup(activeGroup.id, keyword);
+        } else {
+          // Add keyword to active group
+          addKeywordToGroup(activeGroup.id, keyword);
+        }
+      }
+    } else if (keywordGroups.length > 0) {
+      // If no active group but groups exist, add to the last group
       addKeywordToGroup(keywordGroups[keywordGroups.length - 1].id, keyword);
     } else {
       // Create a new group if none exist
@@ -169,6 +222,7 @@ export default function KeywordFilter({
       };
       onKeywordGroupsChange([...keywordGroups, newGroup]);
       onKeywordsChange([...selectedKeywords, keyword]);
+      setActiveGroupId(newGroup.id);
     }
   };
 
@@ -225,9 +279,15 @@ export default function KeywordFilter({
 
     const latestOperator = getLatestOperator();
 
+    // Find the active group
+    const activeGroup = activeGroupId ? keywordGroups.find(group => group.id === activeGroupId) : null;
+
     return (
       <div className="flex flex-wrap gap-2">
         {sortedKeywords.map((keyword) => {
+          // Check if the keyword is in the active group
+          const isSelected = activeGroup ? activeGroup.keywords.includes(keyword) : false;
+
           // Always check if this keyword would return results based on the latest operator
           const wouldReturnResults = keywordGroups.length === 0 || 
             chaptersMatchingCurrentGroups.some(chapter => {
@@ -247,10 +307,10 @@ export default function KeywordFilter({
           return (
             <Badge
               key={keyword}
-              variant={selectedKeywords.includes(keyword) ? "default" : "outline"}
+              variant={isSelected ? "default" : "outline"}
               className={cn(
                 "cursor-pointer transition-colors flex items-center gap-1",
-                selectedKeywords.includes(keyword)
+                isSelected
                   ? "bg-blue-600 hover:bg-blue-700"
                   : showVisualFeedback
                     ? wouldReturnResults
@@ -263,7 +323,7 @@ export default function KeywordFilter({
               {keyword}
               <span className={cn(
                 "text-xs rounded-sm px-1",
-                selectedKeywords.includes(keyword)
+                isSelected
                   ? "bg-blue-700/50"
                   : showVisualFeedback
                     ? wouldReturnResults
@@ -319,7 +379,13 @@ export default function KeywordFilter({
                   <div className="flex-1 border-t border-gray-200" />
                 </div>
               )}
-              <Card className="p-2">
+              <Card 
+                className={cn(
+                  "p-2 cursor-pointer transition-colors",
+                  activeGroupId === group.id ? "ring-2 ring-blue-500" : "hover:bg-gray-50"
+                )}
+                onClick={() => setActiveGroupId(group.id)}
+              >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-sm font-medium">Group {groupIndex + 1}</span>
                   <Select
@@ -340,7 +406,13 @@ export default function KeywordFilter({
                     variant="ghost"
                     size="icon"
                     className="h-7 w-7 hover:bg-red-50 hover:text-red-600"
-                    onClick={() => removeGroup(group.id)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      if (activeGroupId === group.id) {
+                        setActiveGroupId(null);
+                      }
+                      removeGroup(group.id);
+                    }}
                   >
                     <Trash2 className="h-4 w-4" />
                     <span className="sr-only">Remove group</span>
@@ -361,7 +433,10 @@ export default function KeywordFilter({
                         variant="ghost"
                         size="icon"
                         className="h-4 w-4 ml-1 hover:bg-transparent"
-                        onClick={() => removeKeywordFromGroup(group.id, keyword)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          removeKeywordFromGroup(group.id, keyword);
+                        }}
                       >
                         <X className="h-3 w-3" />
                         <span className="sr-only">Remove</span>
