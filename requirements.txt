@@ -1,2 +1,4 @@
 beautifulsoup4==4.12.3
-spacy==3.7.4 
+spacy==3.7.4
+# Add spaCy English language model
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl 

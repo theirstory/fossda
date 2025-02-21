@@ -3,12 +3,13 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.*
+.pnp.js
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+!.yarn/install-state.gz
 
 # testing
 /coverage
@@ -31,7 +32,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
+.env*.local
 
 # vercel
 .vercel
@@ -40,3 +41,26 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 public/videos/*.mp4
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
