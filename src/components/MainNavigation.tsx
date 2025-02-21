@@ -112,6 +112,18 @@ export default function MainNavigation() {
               Browse Clips
             </Link>
 
+            <Link
+              href="/chapters"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary whitespace-nowrap",
+                pathname === "/chapters"
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              )}
+            >
+              Chapters
+            </Link>
+
             {/* Modified Themes Dropdown */}
             {mounted && (
               <Select 

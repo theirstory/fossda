@@ -117,6 +117,24 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Discover All Interviews */}
+          <div className="mt-12">
+            <Link href="/interviews">
+              <div className="bg-blue-600 rounded-lg p-8 text-white flex flex-col md:flex-row items-center justify-between hover:bg-blue-700 transition-colors">
+                <div>
+                  <h3 className="text-2xl font-bold">Discover All Interviews</h3>
+                  <p className="text-blue-100 mt-2">
+                    Explore our complete collection of interviews with open source pioneers and leaders.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 font-medium mt-4 md:mt-0">
+                  View All Interviews
+                  <ChevronRight className="h-5 w-5" />
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
 
