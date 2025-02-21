@@ -8,6 +8,8 @@ import { Card } from '@/components/ui/card';
 import { Search, X, Plus, Sparkles, Code2, Users, Heart, GraduationCap, Mountain, History, Trash2 } from 'lucide-react';
 import { keywordCategories } from '@/data/keywordCategories';
 import { cn } from '@/lib/utils';
+import { chapterData } from '@/data/chapters';
+import { ChapterMetadata } from '@/types/transcript';
 import {
   Select,
   SelectContent,
@@ -178,31 +180,102 @@ export default function KeywordFilter({
       return freqB - freqA;
     });
 
+    // Get all chapters that match the current groups' keywords
+    const chaptersMatchingCurrentGroups = Object.values(chapterData).flatMap(interview => 
+      (interview.metadata as ChapterMetadata[]).filter(chapter => {
+        if (!chapter.tags) return true;
+        const tags = chapter.tags || [];
+
+        // Evaluate all keyword groups
+        return keywordGroups.reduce((matches, group, index) => {
+          // Evaluate current group
+          const groupMatches = group.operator === 'NOT'
+            ? !group.keywords.some(keyword => tags.includes(keyword))
+            : group.operator === 'AND'
+              ? group.keywords.every(keyword => tags.includes(keyword))
+              : group.keywords.some(keyword => tags.includes(keyword));
+
+          // First group sets initial value
+          if (index === 0) return groupMatches;
+
+          // Apply group operator
+          switch (group.groupOperator) {
+            case 'AND': return matches && groupMatches;
+            case 'OR': return matches || groupMatches;
+            case 'NOT': return matches && !groupMatches;
+            default: return matches;
+          }
+        }, true);
+      })
+    );
+
+    // Get the latest operator being used (either within the last group or between groups)
+    const getLatestOperator = (): Operator => {
+      if (keywordGroups.length === 0) return 'AND';
+      const lastGroup = keywordGroups[keywordGroups.length - 1];
+      
+      // If this is the first group or it has no keywords yet, use its internal operator
+      if (keywordGroups.length === 1 || lastGroup.keywords.length === 0) {
+        return lastGroup.operator;
+      }
+      
+      // Otherwise, use the operator between groups
+      return lastGroup.groupOperator;
+    };
+
+    const latestOperator = getLatestOperator();
+
     return (
       <div className="flex flex-wrap gap-2">
-        {sortedKeywords.map((keyword) => (
-          <Badge
-            key={keyword}
-            variant={selectedKeywords.includes(keyword) ? "default" : "outline"}
-            className={cn(
-              "cursor-pointer transition-colors flex items-center gap-1",
-              selectedKeywords.includes(keyword)
-                ? "bg-blue-600 hover:bg-blue-700"
-                : "hover:bg-gray-100"
-            )}
-            onClick={() => toggleKeyword(keyword)}
-          >
-            {keyword}
-            <span className={cn(
-              "text-xs rounded-sm px-1",
-              selectedKeywords.includes(keyword)
-                ? "bg-blue-700/50"
-                : "bg-gray-100"
-            )}>
-              {frequencies[keyword] || 0}
-            </span>
-          </Badge>
-        ))}
+        {sortedKeywords.map((keyword) => {
+          // Always check if this keyword would return results based on the latest operator
+          const wouldReturnResults = keywordGroups.length === 0 || 
+            chaptersMatchingCurrentGroups.some(chapter => {
+              if (!chapter.tags?.includes(keyword)) return false;
+              
+              // For NOT operator, check if adding this keyword would maintain the negative match
+              if (latestOperator === 'NOT') {
+                return !chapter.tags.includes(keyword);
+              }
+              
+              // For AND/OR, check if this keyword exists in matching chapters
+              return chapter.tags.includes(keyword);
+            });
+
+          const showVisualFeedback = keywordGroups.length > 0;
+
+          return (
+            <Badge
+              key={keyword}
+              variant={selectedKeywords.includes(keyword) ? "default" : "outline"}
+              className={cn(
+                "cursor-pointer transition-colors flex items-center gap-1",
+                selectedKeywords.includes(keyword)
+                  ? "bg-blue-600 hover:bg-blue-700"
+                  : showVisualFeedback
+                    ? wouldReturnResults
+                      ? "hover:bg-gray-100 border-green-500"
+                      : "hover:bg-gray-100 border-red-300 opacity-50"
+                    : "hover:bg-gray-100"
+              )}
+              onClick={() => toggleKeyword(keyword)}
+            >
+              {keyword}
+              <span className={cn(
+                "text-xs rounded-sm px-1",
+                selectedKeywords.includes(keyword)
+                  ? "bg-blue-700/50"
+                  : showVisualFeedback
+                    ? wouldReturnResults
+                      ? "bg-green-100"
+                      : "bg-red-100"
+                    : "bg-gray-100"
+              )}>
+                {frequencies[keyword] || 0}
+              </span>
+            </Badge>
+          );
+        })}
       </div>
     );
   };
