@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
 import { useScripts } from "@/hooks/useScript";
 import { addTimecodesToTranscript } from "@/lib/transcript";
@@ -147,10 +146,16 @@ export default function InteractiveTranscript({
     };
   }, [scriptLoaded, mounted, handleSpanClick]);
 
-  // Add timeupdate listener to scroll transcript
+  // Update the timeupdate listener to use videoRef
   useEffect(() => {
+    const muxPlayer = videoRef.current;
+    if (!muxPlayer || !transcriptRef.current || !transcriptContainerRef.current) {
+      return undefined;
+    }
+
+    // Get the underlying video element
     const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-    if (!videoElement || !transcriptRef.current || !transcriptContainerRef.current) {
+    if (!videoElement) {
       return undefined;
     }
 
@@ -200,7 +205,7 @@ export default function InteractiveTranscript({
       videoElement.removeEventListener('timeupdate', handleTimeUpdate);
       videoElement.removeEventListener('seeking', handleTimeUpdate);
     };
-  }, [mounted]);
+  }, [mounted, videoRef]);
 
   // Update the custom text selection effect to use Selection API
   useEffect(() => {
