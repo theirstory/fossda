@@ -6,6 +6,8 @@ import { Search, Filter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { videoData } from "@/data/videos";
 import { Theme } from "@/data/themes";
+import { iconMap } from "@/data/icons";
+import React from "react";
 
 interface ThemeFiltersProps {
   selectedInterviewees: string[];
@@ -95,7 +97,7 @@ export default function ThemeFilters({
 
         {/* Related Themes */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-gray-700">Related Themes</label>
+          <label className="text-sm font-medium text-gray-700">Themes</label>
           <div className="flex flex-col gap-2">
             {themes
               .filter(theme => theme.id !== currentThemeId)
@@ -104,13 +106,17 @@ export default function ThemeFilters({
                   key={theme.id}
                   variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
                   className={cn(
-                    "cursor-pointer transition-colors justify-start",
+                    "cursor-pointer transition-colors justify-start gap-2",
                     selectedThemes.includes(theme.id)
                       ? "bg-blue-600 hover:bg-blue-700"
                       : "hover:bg-gray-100"
                   )}
                   onClick={() => handleThemeChange(theme.id)}
                 >
+                  {React.createElement(iconMap[theme.iconName], {
+                    className: "h-4 w-4",
+                    style: { color: theme.iconColor }
+                  })}
                   {theme.title}
                 </Badge>
               ))}

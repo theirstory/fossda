@@ -10,6 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Search, Filter } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { iconMap } from "@/data/icons";
 
 interface ClipsGridProps {
   clips: Clip[];
@@ -147,16 +148,17 @@ export default function ClipsGrid({
                   key={theme.id}
                   variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
                   className={cn(
-                    "cursor-pointer transition-colors justify-start",
+                    "cursor-pointer transition-colors justify-start gap-2",
                     selectedThemes.includes(theme.id)
-                      ? theme.color
-                      : cn(
-                          theme.color.replace('hover:', ''),
-                          "hover:border-transparent"
-                        )
+                      ? "bg-blue-600 hover:bg-blue-700"
+                      : "hover:bg-gray-100"
                   )}
                   onClick={() => handleThemeChange(theme.id)}
                 >
+                  {React.createElement(iconMap[theme.iconName], {
+                    className: "h-4 w-4",
+                    style: { color: theme.iconColor }
+                  })}
                   {theme.title}
                 </Badge>
               ))}
@@ -171,7 +173,7 @@ export default function ClipsGrid({
     <div className="space-y-4">
       {/* Results count */}
       <div className="text-sm text-gray-600 pb-3 border-b">
-        Showing {filteredClips.length} clips
+        Showing {filteredClips.length} {filteredClips.length === 1 ? 'clip' : 'clips'}
       </div>
 
       {/* Clips Grid */}

@@ -48,7 +48,7 @@ export default function ThemePageClient({ theme, themeClips, themes }: ThemePage
       {/* Clips Panel */}
       <div className="bg-white rounded-xl shadow-lg p-4">
         <div className="text-sm text-gray-600 pb-3 border-b">
-          Showing {filteredClips.length} of {themeClips.length} clips
+          Showing {filteredClips.length} {filteredClips.length === 1 ? 'clip' : 'clips'}
         </div>
         <div className="mt-4 grid gap-4">
           {filteredClips.map(clip => (
