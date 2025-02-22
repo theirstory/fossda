@@ -233,53 +233,50 @@ export default function KeywordFilter({
       return freqB.total - freqA.total;
     });
 
-    // Get all chapters that match the current groups' keywords
-    const chaptersMatchingCurrentGroups = Object.values(chapterData).flatMap(interview => 
-      (interview.metadata as ChapterMetadata[]).filter(chapter => {
-        if (!chapter.tags) return true;
-        const tags = chapter.tags || [];
-
-        // Evaluate all keyword groups
-        return keywordGroups.reduce((matches, group, index) => {
-          // Evaluate current group
-          const groupMatches = group.operator === 'NOT'
-            ? !group.keywords.some(keyword => tags.includes(keyword))
-            : group.operator === 'AND'
-              ? group.keywords.every(keyword => tags.includes(keyword))
-              : group.keywords.some(keyword => tags.includes(keyword));
-
-          // First group sets initial value
-          if (index === 0) return groupMatches;
-
-          // Apply group operator
-          switch (group.groupOperator) {
-            case 'AND': return matches && groupMatches;
-            case 'OR': return matches || groupMatches;
-            case 'NOT': return matches && !groupMatches;
-            default: return matches;
-          }
-        }, true);
-      })
-    );
-
-    // Get the latest operator being used (either within the last group or between groups)
-    const getLatestOperator = (): Operator => {
-      if (keywordGroups.length === 0) return 'AND';
-      const lastGroup = keywordGroups[keywordGroups.length - 1];
-      
-      // If this is the first group or it has no keywords yet, use its internal operator
-      if (keywordGroups.length === 1 || lastGroup.keywords.length === 0) {
-        return lastGroup.operator;
-      }
-      
-      // Otherwise, use the operator between groups
-      return lastGroup.groupOperator;
-    };
-
-    const latestOperator = getLatestOperator();
-
     // Find the active group
     const activeGroup = activeGroupId ? keywordGroups.find(group => group.id === activeGroupId) : null;
+
+    const evaluateChapters = (chapter: ChapterMetadata, groups: KeywordGroup[]) => {
+      return groups.reduce((matches, group, index) => {
+        const groupMatches = group.operator === 'NOT'
+          ? !group.keywords.some(keyword => chapter.tags?.includes(keyword))
+          : group.operator === 'AND'
+            ? group.keywords.every(keyword => chapter.tags?.includes(keyword))
+            : group.keywords.some(keyword => chapter.tags?.includes(keyword));
+
+        if (index === 0) return groupMatches;
+        
+        switch (group.groupOperator) {
+          case 'AND': return matches && groupMatches;
+          case 'OR': return matches || groupMatches;
+          case 'NOT': return matches && !groupMatches;
+          default: return matches;
+        }
+      }, true);
+    };
+
+    const getRelevantGroups = (activeGroupId: string | null): KeywordGroup[] => {
+      if (!activeGroupId || keywordGroups.length === 0) return keywordGroups;
+      
+      const activeGroupIndex = keywordGroups.findIndex(g => g.id === activeGroupId);
+      if (activeGroupIndex === -1) return keywordGroups;
+
+      // Find the range of AND-chained groups around the active group
+      let startIndex = activeGroupIndex;
+      let endIndex = activeGroupIndex;
+
+      // Look backwards for AND-chained groups
+      while (startIndex > 0 && keywordGroups[startIndex].groupOperator === 'AND') {
+        startIndex--;
+      }
+
+      // Look forwards for AND-chained groups
+      while (endIndex < keywordGroups.length - 1 && keywordGroups[endIndex + 1].groupOperator === 'AND') {
+        endIndex++;
+      }
+
+      return keywordGroups.slice(startIndex, endIndex + 1);
+    };
 
     return (
       <div className="flex flex-wrap gap-2">
@@ -290,26 +287,31 @@ export default function KeywordFilter({
           // Check if the keyword exists in any group (for visual feedback)
           const isInAnyGroup = keywordGroups.some(group => group.keywords.includes(keyword));
 
+          // Get the relevant groups for evaluation
+          const relevantGroups = getRelevantGroups(activeGroupId);
+
           // Always check if this keyword would return results based on the latest operator
           const wouldReturnResults = keywordGroups.length === 0 || 
             Object.values(chapterData).some(interview =>
               interview.metadata.some(chapter => {
                 if (!chapter.tags) return false;
                 
-                // For OR operator, any chapter with this keyword would be valid
-                if (latestOperator === 'OR') {
-                  return chapter.tags.includes(keyword);
+                if (!activeGroup) {
+                  // If no active group, evaluate against all groups
+                  return evaluateChapters(
+                    { ...chapter, tags: [...(chapter.tags || []), keyword] },
+                    keywordGroups
+                  );
                 }
-                
-                // For NOT operator, check if adding this keyword would maintain the negative match
-                if (latestOperator === 'NOT') {
-                  return !chapter.tags.includes(keyword);
-                }
-                
-                // For AND operator, check if this keyword exists in chapters that match current groups
-                return chaptersMatchingCurrentGroups.some(matchingChapter => 
-                  matchingChapter.tags?.includes(keyword)
+
+                // Create a temporary version of the active group with the new keyword
+                const modifiedGroups = relevantGroups.map(group =>
+                  group.id === activeGroup.id
+                    ? { ...group, keywords: [...group.keywords, keyword] }
+                    : group
                 );
+
+                return evaluateChapters(chapter, modifiedGroups);
               })
             );
 
