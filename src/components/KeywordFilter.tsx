@@ -45,7 +45,7 @@ interface KeywordFilterProps {
   onKeywordsChange: (keywords: string[]) => void;
   keywordGroups: KeywordGroup[];
   onKeywordGroupsChange: (groups: KeywordGroup[]) => void;
-  frequencies?: Record<string, number>;
+  frequencies?: Record<string, { total: number; interviews: number }>;
 }
 
 export default function KeywordFilter({
@@ -164,15 +164,14 @@ export default function KeywordFilter({
 
   // Add a new group
   const addNewGroup = () => {
-    onKeywordGroupsChange([
-      ...keywordGroups,
-      { 
-        id: Math.random().toString(), 
-        keywords: [], 
-        operator: 'AND',
-        groupOperator: keywordGroups.length === 0 ? 'AND' : 'OR'
-      }
-    ]);
+    const newGroup: KeywordGroup = { 
+      id: Math.random().toString(), 
+      keywords: [], 
+      operator: 'AND' as Operator,
+      groupOperator: keywordGroups.length === 0 ? 'AND' : 'OR' as Operator
+    };
+    onKeywordGroupsChange([...keywordGroups, newGroup]);
+    setActiveGroupId(newGroup.id);
   };
 
   // Update group operator
@@ -217,8 +216,8 @@ export default function KeywordFilter({
       const newGroup: KeywordGroup = { 
         id: Math.random().toString(), 
         keywords: [keyword], 
-        operator: 'AND',
-        groupOperator: 'AND'
+        operator: 'AND' as Operator,
+        groupOperator: 'AND' as Operator
       };
       onKeywordGroupsChange([...keywordGroups, newGroup]);
       onKeywordsChange([...selectedKeywords, keyword]);
@@ -229,9 +228,9 @@ export default function KeywordFilter({
   const renderKeywords = (category: KeywordCategory) => {
     // Sort keywords by frequency (highest to lowest)
     const sortedKeywords = [...category.keywords].sort((a, b) => {
-      const freqA = frequencies[a] || 0;
-      const freqB = frequencies[b] || 0;
-      return freqB - freqA;
+      const freqA = frequencies[a] || { total: 0, interviews: 0 };
+      const freqB = frequencies[b] || { total: 0, interviews: 0 };
+      return freqB.total - freqA.total;
     });
 
     // Get all chapters that match the current groups' keywords
@@ -288,6 +287,9 @@ export default function KeywordFilter({
           // Check if the keyword is in the active group
           const isSelected = activeGroup ? activeGroup.keywords.includes(keyword) : false;
 
+          // Check if the keyword exists in any group (for visual feedback)
+          const isInAnyGroup = keywordGroups.some(group => group.keywords.includes(keyword));
+
           // Always check if this keyword would return results based on the latest operator
           const wouldReturnResults = keywordGroups.length === 0 || 
             Object.values(chapterData).some(interview =>
@@ -323,25 +325,41 @@ export default function KeywordFilter({
                   ? "bg-blue-600 hover:bg-blue-700"
                   : showVisualFeedback
                     ? wouldReturnResults
-                      ? "hover:bg-gray-100 border-green-500"
+                      ? isInAnyGroup
+                        ? "hover:bg-gray-100 border-blue-300 bg-blue-50"
+                        : "hover:bg-gray-100 border-green-500"
                       : "hover:bg-gray-100 border-red-300 opacity-50"
                     : "hover:bg-gray-100"
               )}
               onClick={() => toggleKeyword(keyword)}
             >
               {keyword}
-              <span className={cn(
-                "text-xs rounded-sm px-1",
-                isSelected
-                  ? "bg-blue-700/50"
-                  : showVisualFeedback
-                    ? wouldReturnResults
-                      ? "bg-green-100"
-                      : "bg-red-100"
-                    : "bg-gray-100"
-              )}>
-                {frequencies[keyword] || 0}
-              </span>
+              <div className="flex gap-1">
+                <span className={cn(
+                  "text-xs rounded-sm px-1",
+                  isSelected
+                    ? "bg-blue-700/50"
+                    : showVisualFeedback
+                      ? wouldReturnResults
+                        ? "bg-green-100"
+                        : "bg-red-100"
+                      : "bg-gray-100"
+                )}>
+                  {frequencies?.[keyword]?.total || 0}
+                </span>
+                <span className={cn(
+                  "text-xs rounded-sm px-1",
+                  isSelected
+                    ? "bg-blue-700/50"
+                    : showVisualFeedback
+                      ? wouldReturnResults
+                        ? "bg-green-100/50"
+                        : "bg-red-100/50"
+                      : "bg-gray-100/50"
+                )}>
+                  {frequencies?.[keyword]?.interviews || 0}🎙️
+                </span>
+              </div>
             </Badge>
           );
         })}

@@ -55,16 +55,33 @@ export default function ChaptersPage() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   // Calculate keyword frequencies across all chapters
-  const keywordFrequencies = useMemo(() => {
-    const frequencies: Record<string, number> = {};
+  const keywordStats = useMemo(() => {
+    const stats: Record<string, { total: number; interviews: number }> = {};
+    
     Object.values(chapterData).forEach(interview => {
+      // Track which keywords appear in this interview
+      const interviewKeywords = new Set<string>();
+      
       interview.metadata.forEach(chapter => {
         chapter.tags?.forEach(tag => {
-          frequencies[tag] = (frequencies[tag] || 0) + 1;
+          // Initialize if not exists
+          if (!stats[tag]) {
+            stats[tag] = { total: 0, interviews: 0 };
+          }
+          // Increment total count
+          stats[tag].total += 1;
+          // Add to interview tracking set
+          interviewKeywords.add(tag);
         });
       });
+      
+      // Increment interview count for each keyword found in this interview
+      interviewKeywords.forEach(tag => {
+        stats[tag].interviews += 1;
+      });
     });
-    return frequencies;
+    
+    return stats;
   }, []);
 
   // Group chapters by interview
@@ -226,7 +243,7 @@ export default function ChaptersPage() {
                       onKeywordsChange={setSelectedKeywords}
                       keywordGroups={keywordGroups}
                       onKeywordGroupsChange={setKeywordGroups}
-                      frequencies={keywordFrequencies}
+                      frequencies={keywordStats}
                     />
                   </PopoverContent>
                 </Popover>
@@ -447,44 +464,59 @@ export default function ChaptersPage() {
                                 </p>
                                 {chapter.tags && chapter.tags.length > 0 && (
                                   <div className="flex flex-wrap gap-1.5 mt-2">
-                                    {chapter.tags.map((tag, i) => (
-                                      <Badge 
-                                        key={i} 
-                                        variant="secondary" 
-                                        className={cn(
-                                          "text-[10px] flex items-center gap-1",
-                                          selectedKeywords.includes(tag)
-                                            ? "bg-blue-100 text-blue-800 border-blue-200"
-                                            : searchQuery && tag.toLowerCase().includes(searchQuery.toLowerCase())
-                                              ? "bg-yellow-100 text-yellow-800 border-yellow-200"
-                                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                                        )}
-                                        onClick={(e) => {
-                                          e.preventDefault();
-                                          e.stopPropagation();
-                                          const newGroup: KeywordGroup = {
-                                            id: Math.random().toString(),
-                                            keywords: [tag],
-                                            operator: 'AND',
-                                            groupOperator: 'AND'
-                                          };
-                                          setKeywordGroups([...keywordGroups, newGroup]);
-                                          setSelectedKeywords([...selectedKeywords, tag]);
-                                        }}
-                                      >
-                                        <span>{tag}</span>
-                                        <span className={cn(
-                                          "text-[8px] px-1 rounded",
-                                          selectedKeywords.includes(tag)
-                                            ? "bg-blue-200"
-                                            : searchQuery && tag.toLowerCase().includes(searchQuery.toLowerCase())
-                                              ? "bg-yellow-200"
+                                    {chapter.tags.map((tag, i) => {
+                                      const isSelected = keywordGroups.some(group => 
+                                        group.keywords.includes(tag)
+                                      );
+                                      return (
+                                        <Badge
+                                          key={i}
+                                          variant={isSelected ? "default" : "outline"}
+                                          className={cn(
+                                            "flex items-center gap-1",
+                                            isSelected && "bg-blue-600 text-white hover:bg-blue-700"
+                                          )}
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            e.stopPropagation();
+                                            // If there's no active group, create one
+                                            if (keywordGroups.length === 0) {
+                                              const newGroup: KeywordGroup = {
+                                                id: Math.random().toString(),
+                                                keywords: [tag],
+                                                operator: 'AND',
+                                                groupOperator: 'AND'
+                                              };
+                                              setKeywordGroups([newGroup]);
+                                              setSelectedKeywords([...selectedKeywords, tag]);
+                                            } else {
+                                              // Add to the last group
+                                              const lastGroup = keywordGroups[keywordGroups.length - 1];
+                                              if (!lastGroup.keywords.includes(tag)) {
+                                                setKeywordGroups(
+                                                  keywordGroups.map((group, idx) =>
+                                                    idx === keywordGroups.length - 1
+                                                      ? { ...group, keywords: [...group.keywords, tag] }
+                                                      : group
+                                                  )
+                                                );
+                                                setSelectedKeywords([...selectedKeywords, tag]);
+                                              }
+                                            }
+                                          }}
+                                        >
+                                          {tag}
+                                          <span className={cn(
+                                            "text-xs rounded-sm px-1",
+                                            isSelected
+                                              ? "bg-blue-700/50"
                                               : "bg-gray-200"
-                                        )}>
-                                          {keywordFrequencies[tag] || 0}
-                                        </span>
-                                      </Badge>
-                                    ))}
+                                          )}>
+                                            {keywordStats[tag]?.total || 0}
+                                          </span>
+                                        </Badge>
+                                      );
+                                    })}
                                   </div>
                                 )}
                               </div>
