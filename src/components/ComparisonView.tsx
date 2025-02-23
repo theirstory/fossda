@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, useEffect } from 'react';
 import VideoPlayer from './VideoPlayer';
 import { Card } from './ui/card';

@@ -1,8 +1,13 @@
 import { NextResponse } from 'next/server';
 import { videoData } from '@/data/videos';
 
-export async function GET({ params }: { params: { id: string } }) {
-  const id = params.id;
+type RouteParams = { params: Promise<{ id: string }> };
+
+export async function GET(
+  _: Request,
+  props: RouteParams
+) {
+  const { id } = await props.params;
   const video = videoData[id];
 
   if (!video || !video.transcript) {
