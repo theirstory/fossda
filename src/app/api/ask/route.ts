@@ -1,29 +1,9 @@
 import { NextResponse } from 'next/server';
-import { searchTranscripts } from '@/lib/weaviate';
+import { searchTranscripts, TranscriptSegment } from '@/lib/weaviate';
 import { videoData } from '@/data/videos';
-
-interface TranscriptSegment {
-  text: string;
-  speaker: string;
-  interviewId: string;
-  timestamp: number;
-  chapterTitle: string;
-  _additional: {
-    certainty: number;
-  };
-}
 
 interface GroupedSegments {
   [key: string]: TranscriptSegment[];
-}
-
-interface Quote {
-  text: string;
-  interviewId: string;
-  title: string;
-  timestamp: number;
-  speaker: string;
-  relevance: string;
 }
 
 export async function POST(request: Request) {
@@ -77,7 +57,7 @@ export async function POST(request: Request) {
     }
 
     // Group segments by interview and chapter
-    const groupedSegments = results.reduce((acc: GroupedSegments, segment: TranscriptSegment) => {
+    const groupedSegments = results.reduce<GroupedSegments>((acc, segment) => {
       const key = `${segment.interviewId}:${segment.chapterTitle}`;
       if (!acc[key]) {
         acc[key] = [];
@@ -87,15 +67,15 @@ export async function POST(request: Request) {
     }, {});
 
     // Format quotes
-    const quotes = Object.entries(groupedSegments).map(([key, segments]: [string, TranscriptSegment[]]) => {
+    const quotes = Object.entries(groupedSegments).map(([key, segments]) => {
       const [interviewId, chapterTitle] = key.split(':');
       const videoTitle = videoData[interviewId]?.title || 'Unknown Speaker';
       const speaker = videoTitle.split(' - ')[0];
       
       // Combine nearby segments
       const combinedText = segments
-        .sort((a: TranscriptSegment, b: TranscriptSegment) => a.timestamp - b.timestamp)
-        .map((s: TranscriptSegment) => s.text)
+        .sort((a, b) => a.timestamp - b.timestamp)
+        .map(s => s.text)
         .join(' ');
 
       return {
@@ -104,18 +84,18 @@ export async function POST(request: Request) {
         title: chapterTitle,
         timestamp: segments[0].timestamp,
         speaker,
-        relevance: `This quote from ${speaker} discusses ${chapterTitle.toLowerCase()} and has a semantic similarity score of ${(segments[0]._additional.certainty * 100).toFixed(1)}%.`,
+        relevance: `This quote from ${speaker} discusses ${chapterTitle.toLowerCase()} and has a semantic similarity score of ${(segments[0]._additional?.certainty ?? 0 * 100).toFixed(1)}%.`,
       };
-    }) as Quote[];
+    });
 
     // Generate a response using the most relevant quotes
     const response = {
       text: `Based on the interviews, I found several relevant perspectives on your question. Here are the most relevant quotes from our archive:`,
-      quotes: quotes.sort((a: Quote, b: Quote) => {
-        const matchA = results.find((r: TranscriptSegment) => r.timestamp === a.timestamp);
-        const matchB = results.find((r: TranscriptSegment) => r.timestamp === b.timestamp);
-        const scoreA = matchA ? matchA._additional.certainty : 0;
-        const scoreB = matchB ? matchB._additional.certainty : 0;
+      quotes: quotes.sort((a, b) => {
+        const matchA = results.find(r => r.timestamp === a.timestamp);
+        const matchB = results.find(r => r.timestamp === b.timestamp);
+        const scoreA = matchA?._additional?.certainty ?? 0;
+        const scoreB = matchB?._additional?.certainty ?? 0;
         return scoreB - scoreA;
       }),
     };
