@@ -124,6 +124,18 @@ export default function MainNavigation() {
               Chapters
             </Link>
 
+            <Link
+              href="/ask"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary whitespace-nowrap",
+                pathname === "/ask"
+                  ? "text-primary"
+                  : "text-muted-foreground"
+              )}
+            >
+              Ask AI
+            </Link>
+
             {/* Modified Themes Dropdown */}
             {mounted && (
               <Select 
