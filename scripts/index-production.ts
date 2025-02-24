@@ -12,14 +12,14 @@ import path from 'path';
 // Load environment variables
 dotenv.config({ path: '.env.local' });
 
-interface TranscriptSegment {
+interface TranscriptSegmentBase {
   speaker: string;
   text: string;
   timestamp: number;
 }
 
-async function processHtmlTranscript(html: string): Promise<TranscriptSegment[]> {
-  const segments: TranscriptSegment[] = [];
+async function processHtmlTranscript(html: string): Promise<TranscriptSegmentBase[]> {
+  const segments: TranscriptSegmentBase[] = [];
   const dom = new JSDOM(html);
   const doc = dom.window.document;
   

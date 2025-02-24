@@ -53,12 +53,17 @@ export default function AskPage() {
         body: JSON.stringify({ question }),
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || 'Failed to get answer');
+        const errorText = await response.text();
+        try {
+          const errorJson = JSON.parse(errorText);
+          throw new Error(errorJson.error || 'Failed to get answer');
+        } catch {
+          throw new Error(errorText || 'Failed to get answer');
+        }
       }
 
+      const data = await response.json();
       setAnswer(data);
     } catch (error) {
       console.error('Error:', error);
