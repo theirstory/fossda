@@ -6,6 +6,15 @@ interface GroupedSegments {
   [key: string]: TranscriptSegment[];
 }
 
+interface Quote {
+  text: string;
+  interviewId: string;
+  title: string;
+  timestamp: number;
+  speaker: string;
+  relevance: string;
+}
+
 export async function POST(request: Request) {
   try {
     // Validate content type
@@ -38,7 +47,7 @@ export async function POST(request: Request) {
     }
 
     // Search for relevant transcript segments
-    let results;
+    let results: TranscriptSegment[];
     try {
       results = await searchTranscripts(question, 5);
     } catch (err) {
@@ -67,7 +76,7 @@ export async function POST(request: Request) {
     }, {});
 
     // Format quotes
-    const quotes = Object.entries(groupedSegments).map(([key, segments]) => {
+    const quotes: Quote[] = Object.entries(groupedSegments).map(([key, segments]) => {
       const [interviewId, chapterTitle] = key.split(':');
       const videoTitle = videoData[interviewId]?.title || 'Unknown Speaker';
       const speaker = videoTitle.split(' - ')[0];
