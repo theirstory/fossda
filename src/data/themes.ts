@@ -16,7 +16,7 @@ export const themes: Theme[] = [
     title: 'Early Exposure',
     description: 'First encounters with computers and programming',
     iconName: 'sparkles',
-    color: 'bg-blue-500',
+    color: 'bg-yellow-500',
     iconColor: '#FFD700',
     question: 'How did you first get into computers, technology, or programming?'
   },

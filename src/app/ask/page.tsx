@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useSearchParams } from 'next/navigation';
 
 interface Quote {
   text: string;
@@ -22,11 +23,51 @@ interface Answer {
 }
 
 export default function AskPage() {
-  const [question, setQuestion] = useState('');
+  const searchParams = useSearchParams();
+  const [question, setQuestion] = useState(searchParams.get('q') || '');
   const [isLoading, setIsLoading] = useState(false);
   const [answer, setAnswer] = useState<Answer | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [expandedQuotes, setExpandedQuotes] = useState<Set<number>>(new Set());
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    // Focus the textarea on mount
+    textareaRef.current?.focus();
+    
+    // If there's a question in the URL, submit it automatically
+    if (searchParams.get('q')) {
+      handleSubmit(new Event('submit') as unknown as React.FormEvent<HTMLFormElement>);
+    }
+  }, []);
+
+  // Save state to sessionStorage when it changes
+  useEffect(() => {
+    if (answer) {
+      sessionStorage.setItem('lastAnswer', JSON.stringify(answer));
+      sessionStorage.setItem('lastQuestion', question);
+    }
+  }, [answer, question]);
+
+  // Restore state from sessionStorage on mount
+  useEffect(() => {
+    if (!searchParams.get('q')) {
+      const lastAnswer = sessionStorage.getItem('lastAnswer');
+      const lastQuestion = sessionStorage.getItem('lastQuestion');
+      if (lastAnswer && lastQuestion) {
+        setAnswer(JSON.parse(lastAnswer));
+        setQuestion(lastQuestion);
+      }
+    }
+  }, []);
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    // Check for Command+Enter (Mac) or Control+Enter (Windows)
+    if ((e.metaKey || e.ctrlKey) && e.key === 'Enter') {
+      e.preventDefault();
+      handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
+    }
+  };
 
   const toggleQuote = (index: number) => {
     const newExpanded = new Set(expandedQuotes);
@@ -88,9 +129,11 @@ export default function AskPage() {
       <Card className="max-w-2xl mx-auto p-6 mb-8">
         <form onSubmit={handleSubmit}>
           <Textarea
+            ref={textareaRef}
             value={question}
             onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setQuestion(e.target.value)}
-            placeholder="Ask a question about open source..."
+            onKeyDown={handleKeyDown}
+            placeholder="Ask a question about open source... (Press ⌘+Enter to submit)"
             className="min-h-[100px] mb-4"
           />
           <Button 
