@@ -1,10 +1,7 @@
 import { NextResponse } from 'next/server';
 import { searchTranscripts, TranscriptSegment } from '@/lib/weaviate';
 import { videoData } from '@/data/videos';
-
-interface GroupedSegments {
-  [key: string]: TranscriptSegment[];
-}
+import OpenAI from 'openai';
 
 interface Quote {
   text: string;
@@ -13,6 +10,34 @@ interface Quote {
   timestamp: number;
   speaker: string;
   relevance: string;
+}
+
+interface QuoteGroups {
+  cited: Quote[];
+  uncited: Quote[];
+}
+
+// Define stream response types
+interface ContentMessage {
+  type: 'content';
+  content: string;
+}
+
+interface QuotesMessage {
+  type: 'quotes';
+  quotes: QuoteGroups;
+}
+
+type StreamMessage = ContentMessage | QuotesMessage;
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
+function formatTimestamp(seconds: number): string {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = Math.floor(seconds % 60);
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
 }
 
 export async function POST(request: Request) {
@@ -65,51 +90,139 @@ export async function POST(request: Request) {
       );
     }
 
-    // Group segments by interview and chapter
-    const groupedSegments = results.reduce<GroupedSegments>((acc, segment) => {
-      const key = `${segment.interviewId}:${segment.chapterTitle}`;
-      if (!acc[key]) {
-        acc[key] = [];
-      }
-      acc[key].push(segment);
-      return acc;
-    }, {});
-
-    // Format quotes
-    const quotes: Quote[] = Object.entries(groupedSegments).map(([key, segments]) => {
-      const [interviewId, chapterTitle] = key.split(':');
-      const videoTitle = videoData[interviewId]?.title || 'Unknown Speaker';
+    // Format quotes and prepare context for GPT
+    const quotes: Quote[] = results.map((segment) => {
+      const videoTitle = videoData[segment.interviewId]?.title || 'Unknown Speaker';
       const speaker = videoTitle.split(' - ')[0];
       
-      // Combine nearby segments
-      const combinedText = segments
-        .sort((a, b) => a.timestamp - b.timestamp)
-        .map(s => s.text)
-        .join(' ');
-
       return {
-        text: combinedText,
-        interviewId,
-        title: chapterTitle,
-        timestamp: segments[0].timestamp,
+        text: segment.text,
+        interviewId: segment.interviewId,
+        title: segment.chapterTitle,
+        timestamp: segment.timestamp,
         speaker,
-        relevance: `This quote from ${speaker} discusses ${chapterTitle.toLowerCase()} and has a semantic similarity score of ${(segments[0]._additional?.certainty ?? 0 * 100).toFixed(1)}%.`,
+        relevance: `This quote from ${speaker} discusses ${segment.chapterTitle.toLowerCase()} at ${formatTimestamp(segment.timestamp)} and has a semantic similarity score of ${(segment._additional?.certainty ?? 0 * 100).toFixed(1)}%.`,
       };
     });
 
-    // Generate a response using the most relevant quotes
-    const response = {
-      text: `Based on the interviews, I found several relevant perspectives on your question. Here are the most relevant quotes from our archive:`,
-      quotes: quotes.sort((a, b) => {
-        const matchA = results.find(r => r.timestamp === a.timestamp);
-        const matchB = results.find(r => r.timestamp === b.timestamp);
-        const scoreA = matchA?._additional?.certainty ?? 0;
-        const scoreB = matchB?._additional?.certainty ?? 0;
-        return scoreB - scoreA;
-      }),
-    };
+    // Prepare context for GPT
+    const context = quotes.map((quote, index) => {
+      return `[${index + 1}] ${quote.speaker} (${quote.title}): "${quote.text}"`;
+    }).join('\n\n');
 
-    return NextResponse.json(response);
+    // Generate response using GPT
+    const prompt = `You are a research assistant helping users understand open source interviews. Based on the following context from our interviews, provide a clear and concise answer to the user's question.
+
+Rules:
+1. Start with a clear topic sentence that does NOT repeat the question
+2. Use proper Markdown formatting:
+   - The question will be automatically added as a heading - do not add it yourself
+   - Use ## for section headings if needed
+   - Use bullet points with proper spacing
+   - Use **bold** for emphasis
+   - Use > for notable quotes. E.g. you could use a quote from the interviewee to start a paragraph.
+3. Keep paragraphs short and well-structured. Start paragraphs with one or a few words that summarize the paragraph. Because we're using Markdown, bold the first word of the paragraph to make it stand out using ** surrounding the words.
+4. Place citations [1], [2], etc. AFTER punctuation at the end of sentences
+5. Keep the total response under 150 words
+6. Ensure perfect grammar and professional tone
+7. NEVER use asterisks (**) in the middle of words, but feel free to surround words or phrases with them to make key phrases stand out. E.g. a phrase that starts the beginning of a paragraph with a colon which serves as a heading for the paragraph.
+8. NEVER combine or merge citation numbers
+9. Keep citations sequential (1, 2, 3, etc.)
+10. Start your response with a clear topic sentence, followed by supporting points
+11. NEVER include the question in your response - start directly with your answer
+
+Example citation placement:
+❌ The open source movement [1] has transformed software development.
+✅ The open source movement has transformed software development [1].
+
+Question: ${question}
+
+Context:
+${context}
+
+Remember to maintain high standards of clarity and grammar while staying under the 150-word limit.`;
+
+    // Create a new ReadableStream for streaming the response
+    const stream = new ReadableStream({
+      async start(controller) {
+        // First, send the question as a heading
+        const questionHeading: StreamMessage = { 
+          type: 'content', 
+          content: `# ${question}\n\n` 
+        };
+        controller.enqueue(new TextEncoder().encode(JSON.stringify(questionHeading) + '\n'));
+
+        const completion = await openai.chat.completions.create({
+          model: "gpt-4-turbo-preview",
+          messages: [
+            { 
+              role: "system", 
+              content: "You are a precise and articulate AI that provides clear, well-structured responses using Markdown formatting. Never repeat or reference the question - start directly with your response content."
+            },
+            {
+              role: "user",
+              content: prompt
+            }
+          ],
+          temperature: 0.2,
+          max_tokens: 300,
+          stream: true,
+        });
+
+        try {
+          const citedQuoteIndexes = new Set<number>();
+          let content = '';
+
+          for await (const chunk of completion) {
+            const chunkContent = chunk.choices[0]?.delta?.content || '';
+            if (chunkContent) {
+              content += chunkContent;
+              // Extract citation numbers from the content
+              const citations = content.match(/\[(\d+)\]/g) || [];
+              citations.forEach(citation => {
+                const index = parseInt(citation.match(/\d+/)?.[0] || '0') - 1;
+                if (index >= 0) citedQuoteIndexes.add(index);
+              });
+              
+              const data: StreamMessage = { type: 'content', content: chunkContent };
+              controller.enqueue(new TextEncoder().encode(JSON.stringify(data) + '\n'));
+            }
+          }
+
+          // Clear any previous quotes by sending an empty set first
+          const clearQuotes: StreamMessage = {
+            type: 'quotes',
+            quotes: { cited: [], uncited: [] }
+          };
+          controller.enqueue(new TextEncoder().encode(JSON.stringify(clearQuotes) + '\n'));
+
+          // Then send the actual quotes
+          const citedQuotes = quotes.filter((_, index) => citedQuoteIndexes.has(index));
+          const uncitedQuotes = quotes.filter((_, index) => !citedQuoteIndexes.has(index));
+
+          const quotesData: StreamMessage = { 
+            type: 'quotes', 
+            quotes: {
+              cited: citedQuotes,
+              uncited: uncitedQuotes
+            }
+          };
+          controller.enqueue(new TextEncoder().encode(JSON.stringify(quotesData) + '\n'));
+        } catch (error) {
+          controller.error(error);
+        } finally {
+          controller.close();
+        }
+      },
+    });
+
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+      },
+    });
   } catch (err) {
     console.error('Error processing request:', err);
     return NextResponse.json(

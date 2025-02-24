@@ -30,9 +30,10 @@ export function CommandMenu() {
 
   const handleSubmit = () => {
     if (question.trim()) {
-      // Encode the question for the URL
+      // Encode the question for the URL and add timestamp to force new response
       const encodedQuestion = encodeURIComponent(question);
-      router.push(`/ask?q=${encodedQuestion}`);
+      const timestamp = Date.now();
+      router.push(`/ask?q=${encodedQuestion}&t=${timestamp}`);
       setOpen(false);
       setQuestion('');
     }
@@ -56,7 +57,7 @@ export function CommandMenu() {
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask a question about open source... (Press ⌘+Enter to submit)"
+            placeholder="Ask a question about open source..."
             className="min-h-[100px] mb-4"
             autoFocus
           />
