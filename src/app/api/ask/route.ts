@@ -77,7 +77,7 @@ export async function POST(request: Request) {
     }
 
     // Group segments by interview and chapter
-    const groupedSegments = results.reduce((acc: GroupedSegments, segment) => {
+    const groupedSegments = results.reduce((acc: GroupedSegments, segment: TranscriptSegment) => {
       const key = `${segment.interviewId}:${segment.chapterTitle}`;
       if (!acc[key]) {
         acc[key] = [];
@@ -87,15 +87,15 @@ export async function POST(request: Request) {
     }, {});
 
     // Format quotes
-    const quotes = Object.entries(groupedSegments).map(([key, segments]) => {
+    const quotes = Object.entries(groupedSegments).map(([key, segments]: [string, TranscriptSegment[]]) => {
       const [interviewId, chapterTitle] = key.split(':');
       const videoTitle = videoData[interviewId]?.title || 'Unknown Speaker';
       const speaker = videoTitle.split(' - ')[0];
       
       // Combine nearby segments
       const combinedText = segments
-        .sort((a, b) => a.timestamp - b.timestamp)
-        .map(s => s.text)
+        .sort((a: TranscriptSegment, b: TranscriptSegment) => a.timestamp - b.timestamp)
+        .map((s: TranscriptSegment) => s.text)
         .join(' ');
 
       return {
@@ -106,7 +106,7 @@ export async function POST(request: Request) {
         speaker,
         relevance: `This quote from ${speaker} discusses ${chapterTitle.toLowerCase()} and has a semantic similarity score of ${(segments[0]._additional.certainty * 100).toFixed(1)}%.`,
       };
-    });
+    }) as Quote[];
 
     // Generate a response using the most relevant quotes
     const response = {
