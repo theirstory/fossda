@@ -23,7 +23,7 @@
       "@/*": ["./src/*"]
     },
     "baseUrl": ".",
-    "typeRoots": ["./node_modules/@types", "./src/types", "./src/lib"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -34,8 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "scripts/**/*.ts",
-    "src/lib/**/*.d.ts"
+    "scripts/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }

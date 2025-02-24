@@ -112,8 +112,8 @@ export async function POST(request: Request) {
     const response = {
       text: `Based on the interviews, I found several relevant perspectives on your question. Here are the most relevant quotes from our archive:`,
       quotes: quotes.sort((a: Quote, b: Quote) => {
-        const matchA = results.find(r => r.timestamp === a.timestamp);
-        const matchB = results.find(r => r.timestamp === b.timestamp);
+        const matchA = results.find((r: TranscriptSegment) => r.timestamp === a.timestamp);
+        const matchB = results.find((r: TranscriptSegment) => r.timestamp === b.timestamp);
         const scoreA = matchA ? matchA._additional.certainty : 0;
         const scoreB = matchB ? matchB._additional.certainty : 0;
         return scoreB - scoreA;
