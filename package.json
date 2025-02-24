@@ -7,12 +7,12 @@
     "build": "npm run typecheck && next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit && tsc --project scripts/tsconfig.json --noEmit",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "check": "npm run typecheck && npm run lint",
     "verify": "npm run check && npm run build",
-    "index-transcripts": "NODE_OPTIONS='-r tsconfig-paths/register' tsx src/scripts/indexTranscripts.ts",
-    "index-production": "NODE_OPTIONS='-r tsconfig-paths/register' tsx scripts/index-production.ts"
+    "index-transcripts": "tsx src/scripts/indexTranscripts.ts",
+    "index-production": "tsx scripts/index-production.ts"
   },
   "dependencies": {
     "@mux/mux-node": "^9.0.1",

@@ -1,9 +1,9 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { JSDOM } from 'jsdom';
-import { setupSchema, addTranscriptSegment } from '@/lib/weaviate';
-import { videoData } from '@/data/videos';
-import { chapterData } from '@/data/chapters';
+import { setupSchema, addTranscriptSegment } from '../lib/weaviate';
+import { videoData } from '../data/videos';
+import { chapterData } from '../data/chapters';
 
 interface TranscriptSegment {
   speaker: string;
