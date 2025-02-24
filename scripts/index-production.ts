@@ -2,9 +2,9 @@
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 import dotenv from 'dotenv';
-import { setupSchema, addTranscriptSegment } from '@/lib/weaviate';
-import { videoData } from '@/data/videos';
-import { chapterData } from '@/data/chapters';
+import { setupSchema, addTranscriptSegment } from '../src/lib/weaviate';
+import { videoData } from '../src/data/videos';
+import { chapterData } from '../src/data/chapters';
 import { JSDOM } from 'jsdom';
 import { promises as fs } from 'fs';
 import path from 'path';
