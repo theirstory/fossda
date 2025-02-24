@@ -1,18 +1,18 @@
+import { setupSchema, addTranscriptSegment } from '@/lib/weaviate';
+import { videoData } from '@/data/videos';
+import { chapterData } from '@/data/chapters';
+import { JSDOM } from 'jsdom';
 import { promises as fs } from 'fs';
 import path from 'path';
-import { JSDOM } from 'jsdom';
-import { setupSchema, addTranscriptSegment } from '../lib/weaviate';
-import { videoData } from '../data/videos';
-import { chapterData } from '../data/chapters';
 
-interface TranscriptSegment {
+interface TranscriptSegmentBase {
   speaker: string;
   text: string;
   timestamp: number;
 }
 
-async function processHtmlTranscript(html: string): Promise<TranscriptSegment[]> {
-  const segments: TranscriptSegment[] = [];
+async function processHtmlTranscript(html: string): Promise<TranscriptSegmentBase[]> {
+  const segments: TranscriptSegmentBase[] = [];
   const dom = new JSDOM(html);
   const doc = dom.window.document;
   
@@ -64,10 +64,10 @@ async function findChapterTitle(timestamp: number, interviewId: string): Promise
 
 async function indexTranscripts() {
   try {
-    // Set up Weaviate schema
+    console.log('Setting up schema...');
     await setupSchema();
     
-    // Process each interview
+    console.log('Processing interviews...');
     for (const interviewId of Object.keys(videoData)) {
       console.log(`Processing interview: ${interviewId}`);
       
@@ -79,6 +79,7 @@ async function indexTranscripts() {
       const segments = await processHtmlTranscript(html);
       
       // Index each segment
+      let indexedCount = 0;
       for (const segment of segments) {
         const chapterTitle = await findChapterTitle(segment.timestamp, interviewId);
         await addTranscriptSegment({
@@ -86,6 +87,10 @@ async function indexTranscripts() {
           interviewId,
           chapterTitle,
         });
+        indexedCount++;
+        if (indexedCount % 10 === 0) {
+          console.log(`Indexed ${indexedCount}/${segments.length} segments for ${interviewId}`);
+        }
       }
       
       console.log(`Completed indexing ${segments.length} segments for ${interviewId}`);
@@ -94,6 +99,7 @@ async function indexTranscripts() {
     console.log('Completed indexing all transcripts');
   } catch (error) {
     console.error('Error indexing transcripts:', error);
+    process.exit(1);
   }
 }
 
