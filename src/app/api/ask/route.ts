@@ -145,31 +145,24 @@ Remember to maintain high standards of clarity and grammar while staying under t
     // Create a new ReadableStream for streaming the response
     const stream = new ReadableStream({
       async start(controller) {
-        // First, send the question as a heading
-        const questionHeading: StreamMessage = { 
-          type: 'content', 
-          content: `# ${question}\n\n` 
-        };
-        controller.enqueue(new TextEncoder().encode(JSON.stringify(questionHeading) + '\n'));
-
-        const completion = await openai.chat.completions.create({
-          model: "gpt-4-turbo-preview",
-          messages: [
-            { 
-              role: "system", 
-              content: "You are a precise and articulate AI that provides clear, well-structured responses using Markdown formatting. Never repeat or reference the question - start directly with your response content."
-            },
-            {
-              role: "user",
-              content: prompt
-            }
-          ],
-          temperature: 0.2,
-          max_tokens: 300,
-          stream: true,
-        });
-
         try {
+          const completion = await openai.chat.completions.create({
+            model: "gpt-4-turbo-preview",
+            messages: [
+              { 
+                role: "system", 
+                content: "You are a precise and articulate AI that provides clear, well-structured responses using Markdown formatting. Never repeat or reference the question - start directly with your response content."
+              },
+              {
+                role: "user",
+                content: prompt
+              }
+            ],
+            temperature: 0.2,
+            max_tokens: 300,
+            stream: true,
+          });
+
           const citedQuoteIndexes = new Set<number>();
           let content = '';
 
@@ -189,14 +182,7 @@ Remember to maintain high standards of clarity and grammar while staying under t
             }
           }
 
-          // Clear any previous quotes by sending an empty set first
-          const clearQuotes: StreamMessage = {
-            type: 'quotes',
-            quotes: { cited: [], uncited: [] }
-          };
-          controller.enqueue(new TextEncoder().encode(JSON.stringify(clearQuotes) + '\n'));
-
-          // Then send the actual quotes
+          // After completion, send the quotes
           const citedQuotes = quotes.filter((_, index) => citedQuoteIndexes.has(index));
           const uncitedQuotes = quotes.filter((_, index) => !citedQuoteIndexes.has(index));
 
@@ -209,6 +195,7 @@ Remember to maintain high standards of clarity and grammar while staying under t
           };
           controller.enqueue(new TextEncoder().encode(JSON.stringify(quotesData) + '\n'));
         } catch (error) {
+          console.error('Streaming error:', error);
           controller.error(error);
         } finally {
           controller.close();

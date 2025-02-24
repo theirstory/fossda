@@ -77,13 +77,10 @@ export default function AskPage() {
     // Clear all states before starting a new query
     setStreamedAnswer('');
     setQuotes({ cited: [], uncited: [] });
-    setDisplayedQuestion('');
+    setDisplayedQuestion(queryQuestion);
     setError(null);
     setIsLoading(true);
     setIsStreaming(true);
-
-    // Set the displayed question
-    setDisplayedQuestion(queryQuestion);
 
     try {
       const response = await fetch('/api/ask', {
@@ -243,11 +240,8 @@ export default function AskPage() {
   const renderAnswerWithCitations = (text: string | undefined, quotes: QuoteGroups) => {
     if (!text) return null;
     
-    // Only remove the question if it starts with # and preserve all other content
-    const cleanedText = text.replace(/^# .*?(?=\n\n|\n$|$)/, '').trim();
-    
-    // First, split by paragraphs
-    const paragraphs = cleanedText.split(/\n\n+/);
+    // Don't remove the heading anymore since we want to display it
+    const paragraphs = text.split(/\n\n+/);
     
     // Keep track of used citations to ensure proper numbering
     const citationMap = new Map<string, number>();
