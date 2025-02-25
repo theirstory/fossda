@@ -8,12 +8,14 @@ interface VideoChaptersProps {
   chapters: ChapterMetadata[];
   videoRef: React.RefObject<MuxPlayerElement | null>;
   isPlaying: boolean;
+  className?: string;
 }
 
 export default function VideoChapters({
   chapters,
   videoRef,
-  isPlaying
+  isPlaying,
+  className
 }: VideoChaptersProps) {
   const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
   const chapterListRef = useRef<HTMLDivElement>(null);
@@ -29,7 +31,7 @@ export default function VideoChapters({
         // Calculate the scroll position to place the chapter higher up
         const elementTop = chapterElement.offsetTop;
         const containerHeight = container.clientHeight;
-        const offset = containerHeight * 0.6; // 60% from the top
+        const offset = containerHeight * 0.35; // 35% from the top
         
         container.scrollTo({
           top: Math.max(0, elementTop - offset),
@@ -138,26 +140,24 @@ export default function VideoChapters({
   };
 
   return (
-    <Card className="h-full overflow-hidden">
-      <div className="h-full flex">
-        <div ref={chapterListRef} className="w-64 border-r bg-gray-50 overflow-y-auto">
-          {chapters.map((chapter, index) => (
-            <button
-              key={chapter.time.start}
-              onClick={() => handleChapterClick(chapter.time.start)}
-              className={cn(
-                "text-left w-full p-3 hover:bg-gray-100 transition-colors border-b border-l-4",
-                index === currentChapterIndex 
-                  ? "bg-blue-50 border-l-blue-600" 
-                  : "border-l-transparent"
-              )}
-            >
-              <div className="text-sm font-medium">{chapter.title}</div>
-              <div className="text-xs text-gray-600 mt-1">{chapter.timecode}</div>
-              <div className="text-xs text-gray-500 mt-2 line-clamp-2">{chapter.synopsis}</div>
-            </button>
-          ))}
-        </div>
+    <Card className={cn("overflow-hidden", className)}>
+      <div ref={chapterListRef} className="h-full overflow-y-auto p-2 space-y-2">
+        {chapters.map((chapter, index) => (
+          <button
+            key={chapter.time.start}
+            onClick={() => handleChapterClick(chapter.time.start)}
+            className={cn(
+              "text-left w-full p-2 hover:bg-gray-100 transition-colors border-l-2",
+              index === currentChapterIndex 
+                ? "bg-blue-50 border-l-blue-600" 
+                : "border-l-transparent"
+            )}
+          >
+            <div className="text-sm font-medium">{chapter.title}</div>
+            <div className="text-xs text-gray-600">{chapter.timecode}</div>
+            <div className="text-xs text-gray-500 mt-1 line-clamp-2">{chapter.synopsis}</div>
+          </button>
+        ))}
       </div>
     </Card>
   );

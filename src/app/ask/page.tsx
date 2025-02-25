@@ -55,6 +55,7 @@ export default function AskPage() {
   const [error, setError] = useState<string | null>(null);
   const [isStreaming, setIsStreaming] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const lastProcessedTimestamp = useRef<string | null>(null);
   const [popoverPosition, setPopoverPosition] = useState<{
     top?: string;
     bottom?: string;
@@ -164,17 +165,31 @@ export default function AskPage() {
   useEffect(() => {
     // If there's a question in the URL, trigger the search
     const urlQuestion = searchParams.get('q');
-    if (urlQuestion) {
+    const timestamp = searchParams.get('t');
+    
+    if (urlQuestion && timestamp !== lastProcessedTimestamp.current) {
+      // Update the last processed timestamp
+      lastProcessedTimestamp.current = timestamp;
+      
+      // Cancel any existing request
+      if (isStreaming) {
+        setIsStreaming(false);
+      }
+      
       // Clear all states first
       setStreamedAnswer('');
       setQuotes({ cited: [], uncited: [] });
-      setDisplayedQuestion('');
       setError(null);
-      // Then set the new question and trigger search
+      setIsLoading(false);
+      
+      // Set both question and displayedQuestion
       setQuestion(urlQuestion);
+      setDisplayedQuestion(urlQuestion);
+      
+      // Start new request
       handleSubmit(null, urlQuestion);
     }
-  }, [searchParams, handleSubmit]);
+  }, [searchParams, handleSubmit, isStreaming]);
 
   useEffect(() => {
     // Save state whenever it changes
@@ -482,8 +497,8 @@ export default function AskPage() {
               <h1 className="text-2xl font-bold mb-4">{displayedQuestion}</h1>
               <div className="font-serif leading-relaxed">
                 {renderAnswerWithCitations(streamedAnswer, quotes)}
-                        </div>
-                      </div>
+              </div>
+            </div>
           </Card>
 
           {/* Quotes Column */}
@@ -494,8 +509,8 @@ export default function AskPage() {
                 <h3 className="text-lg font-semibold px-2">Supporting Quotes</h3>
                 <div className="space-y-4">
                   {quotes.cited.map((quote, index) => renderQuoteCard(quote, index))}
-                      </div>
-                    </div>
+                </div>
+              </div>
             )}
 
             {/* Additional Quotes */}
@@ -504,11 +519,11 @@ export default function AskPage() {
                 <h3 className="text-lg font-semibold px-2">Additional Quotes</h3>
                 <div className="space-y-4">
                   {quotes.uncited.map((quote, index) => renderQuoteCard(quote, index, false))}
-                  </div>
+                </div>
               </div>
             )}
-              </div>
-            </div>
+          </div>
+        </div>
       )}
     </div>
   );

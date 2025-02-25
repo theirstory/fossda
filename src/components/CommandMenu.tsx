@@ -30,12 +30,18 @@ export function CommandMenu() {
 
   const handleSubmit = () => {
     if (question.trim()) {
-      // Encode the question for the URL and add timestamp to force new response
-      const encodedQuestion = encodeURIComponent(question);
-      const timestamp = Date.now();
-      router.push(`/ask?q=${encodedQuestion}&t=${timestamp}`);
+      // Clear the command menu state first
       setOpen(false);
       setQuestion('');
+      
+      // Encode the question and use ISO string for consistent timestamp
+      const encodedQuestion = encodeURIComponent(question);
+      const timestamp = new Date().toISOString();
+      
+      // Use replace with scroll: false to avoid page jump
+      router.replace(`/ask?q=${encodedQuestion}&t=${encodeURIComponent(timestamp)}`, { 
+        scroll: false
+      });
     }
   };
 

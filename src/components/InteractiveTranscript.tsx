@@ -68,8 +68,24 @@ export default function InteractiveTranscript({
       // Remove any existing highlights
       spans.forEach(span => span.classList.remove('bg-yellow-100'));
       
-      // Scroll the span into view
-      targetSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      // Calculate offset for mobile header and tabs
+      const isMobile = window.innerWidth < 1024; // lg breakpoint
+      const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+      
+      // Get container dimensions
+      const containerRect = transcriptContainerRef.current.getBoundingClientRect();
+      const spanRect = targetSpan.getBoundingClientRect();
+      
+      // Calculate scroll position - use different positions for mobile and desktop
+      const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
+      const currentOffset = spanRect.top - containerRect.top;
+      const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
+      
+      // Scroll with the calculated offset
+      transcriptContainerRef.current.scrollTo({
+        top: transcriptContainerRef.current.scrollTop + scrollAdjustment,
+        behavior: 'smooth'
+      });
       
       // Set scroll complete after a short delay
       setTimeout(() => {
@@ -87,7 +103,7 @@ export default function InteractiveTranscript({
   // Create a stable click handler using useCallback
   const handleSpanClick = useCallback((event: Event) => {
     const span = event.target as HTMLElement;
-    if (!span.hasAttribute('data-m')) return;
+    if (!span.hasAttribute('data-m') || !transcriptContainerRef.current) return;
 
     const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
     const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
@@ -96,7 +112,25 @@ export default function InteractiveTranscript({
       if (isPlaying) {
         videoElement.play().catch(console.error);
       }
-      span.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      // Calculate offset for mobile header and tabs
+      const isMobile = window.innerWidth < 1024; // lg breakpoint
+      const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+      
+      // Get container dimensions
+      const containerRect = transcriptContainerRef.current.getBoundingClientRect();
+      const spanRect = span.getBoundingClientRect();
+      
+      // Calculate scroll position - use different positions for mobile and desktop
+      const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
+      const currentOffset = spanRect.top - containerRect.top;
+      const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
+      
+      // Scroll with the calculated offset
+      transcriptContainerRef.current.scrollTo({
+        top: transcriptContainerRef.current.scrollTop + scrollAdjustment,
+        behavior: 'smooth'
+      });
     }
   }, [isPlaying]);
 
@@ -179,15 +213,21 @@ export default function InteractiveTranscript({
       
       if (currentSpan && transcriptContainerRef.current) {
         const container = transcriptContainerRef.current;
+        
+        // Calculate offset for mobile header and tabs
+        const isMobile = window.innerWidth < 1024; // lg breakpoint
+        const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+        
+        // Get container dimensions
         const containerRect = container.getBoundingClientRect();
         const spanRect = (currentSpan as HTMLElement).getBoundingClientRect();
         
-        // Calculate the ideal position (2/3 from the top)
-        const targetPosition = containerRect.height * 0.33;
+        // Calculate scroll position - use different positions for mobile and desktop
+        const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
         const currentOffset = spanRect.top - containerRect.top;
-        const scrollAdjustment = currentOffset - targetPosition;
+        const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
         
-        // Smooth scroll to position
+        // Scroll with the calculated offset
         container.scrollTo({
           top: container.scrollTop + scrollAdjustment,
           behavior: 'smooth'
@@ -325,7 +365,7 @@ export default function InteractiveTranscript({
   }
 
   return (
-    <Card className="h-[calc(100vh-200px)] overflow-hidden">
+    <Card className="h-full overflow-hidden">
       <style>{transcriptStyles}</style>
       <div 
         ref={transcriptContainerRef}

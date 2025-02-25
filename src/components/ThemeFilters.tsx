@@ -9,6 +9,13 @@ import { Theme } from "@/data/themes";
 import { iconMap } from "@/data/icons";
 import React from "react";
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 interface ThemeFiltersProps {
   selectedInterviewees: string[];
@@ -19,6 +26,7 @@ interface ThemeFiltersProps {
   setSearchQuery: (value: string) => void;
   currentThemeId: string;
   themes: Theme[];
+  hideSearch?: boolean;
 }
 
 export default function ThemeFilters({
@@ -29,7 +37,8 @@ export default function ThemeFilters({
   searchQuery,
   setSearchQuery,
   currentThemeId,
-  themes
+  themes,
+  hideSearch = false
 }: ThemeFiltersProps) {
   const interviewees = Object.values(videoData).map(video => ({
     id: video.id,
@@ -52,32 +61,8 @@ export default function ThemeFilters({
     );
   };
 
-  return (
+  const renderFilters = () => (
     <div className="space-y-4">
-      {/* Search */}
-      <div className="relative">
-        <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
-          <Search className="h-5 w-5 text-gray-400" />
-        </div>
-        <Input
-          placeholder="Search clips..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          className="pl-10 bg-gray-50 border-0"
-        />
-        {searchQuery && (
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
-            onClick={() => setSearchQuery("")}
-          >
-            <X className="h-4 w-4" />
-            <span className="sr-only">Clear search</span>
-          </Button>
-        )}
-      </div>
-
       {/* Filter Section */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -134,6 +119,61 @@ export default function ThemeFilters({
               ))}
           </div>
         </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="space-y-4">
+      {/* Search - Only show if not hidden */}
+      {!hideSearch && (
+        <div className="relative">
+          <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+            <Search className="h-5 w-5 text-gray-400" />
+          </div>
+          <Input
+            placeholder="Search clips..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-10 bg-gray-50 border-0"
+          />
+          {searchQuery && (
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+              onClick={() => setSearchQuery("")}
+            >
+              <X className="h-4 w-4" />
+              <span className="sr-only">Clear search</span>
+            </Button>
+          )}
+        </div>
+      )}
+
+      {/* Mobile Filter Button */}
+      <div className="lg:hidden">
+        <Sheet>
+          <SheetTrigger asChild>
+            <Button variant="outline" className="w-full gap-2">
+              <Filter className="h-4 w-4" />
+              Filters
+            </Button>
+          </SheetTrigger>
+          <SheetContent side="left" className="w-full sm:w-[540px]">
+            <SheetHeader>
+              <SheetTitle>Filters</SheetTitle>
+            </SheetHeader>
+            <div className="mt-4">
+              {renderFilters()}
+            </div>
+          </SheetContent>
+        </Sheet>
+      </div>
+
+      {/* Desktop Filters */}
+      <div className="hidden lg:block">
+        {renderFilters()}
       </div>
     </div>
   );

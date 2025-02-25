@@ -122,7 +122,7 @@ Rules:
    - Use **bold** for emphasis
    - Use > for notable quotes. E.g. you could use a quote from the interviewee to start a paragraph.
 3. Keep paragraphs short and well-structured. Start paragraphs with one or a few words that summarize the paragraph. Because we're using Markdown, bold the first word of the paragraph to make it stand out using ** surrounding the words.
-4. Place citations [1], [2], etc. AFTER punctuation at the end of sentences
+4. Place citations [1], [2], etc. AFTER punctuation at the end of sentences, but BEFORE any newlines
 5. Keep the total response under 150 words
 6. Ensure perfect grammar and professional tone
 7. NEVER use asterisks (**) in the middle of words, but feel free to surround words or phrases with them to make key phrases stand out. E.g. a phrase that starts the beginning of a paragraph with a colon which serves as a heading for the paragraph.
@@ -133,7 +133,8 @@ Rules:
 
 Example citation placement:
 ❌ The open source movement [1] has transformed software development.
-✅ The open source movement has transformed software development [1].
+❌ The open source movement has transformed software development [1].\n
+✅ The open source movement has transformed software development.[1]\n
 
 Question: ${question}
 

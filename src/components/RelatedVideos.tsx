@@ -22,15 +22,15 @@ export default function RelatedVideos({ currentVideoId }: RelatedVideosProps) {
   }
 
   return (
-    <div className="p-4 space-y-4">
+    <div className="space-y-2 sm:space-y-4">
       {relatedVideos.map((video) => (
         <Link 
           key={video.id}
           href={`/video/${video.id}`}
           className="group bg-gray-50 rounded-lg overflow-hidden transform transition duration-300 hover:shadow-lg block"
         >
-          <div className="flex gap-6 p-4">
-            <div className="relative w-48 flex-shrink-0">
+          <div className="flex gap-3 p-2 lg:p-4">
+            <div className="relative w-32 lg:w-48 flex-shrink-0">
               <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
                   src={video.thumbnail}
@@ -38,22 +38,22 @@ export default function RelatedVideos({ currentVideoId }: RelatedVideosProps) {
                   fill
                   className="object-cover transition-transform group-hover:scale-105"
                 />
-                <div className="absolute bottom-2 right-2">
-                  <Badge variant="secondary" className="bg-black/70 text-white border-0">
+                <div className="absolute bottom-1 right-1 lg:bottom-2 lg:right-2">
+                  <Badge variant="secondary" className="bg-black/70 text-white border-0 text-xs">
                     {video.duration}
                   </Badge>
                 </div>
               </div>
             </div>
 
-            <div className="flex-1 min-w-0 py-1">
-              <h3 className="text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-1">
+            <div className="flex-1 min-w-0">
+              <h3 className="text-sm lg:text-lg font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                 {video.title}
               </h3>
-              <div className="text-sm text-gray-500 mb-2">
+              <div className="text-xs lg:text-sm text-gray-500 mb-1 lg:mb-2">
                 Full Interview
               </div>
-              <p className="text-gray-600 text-sm line-clamp-2">
+              <p className="text-xs lg:text-sm text-gray-600 line-clamp-2">
                 {video.sentence}
               </p>
             </div>

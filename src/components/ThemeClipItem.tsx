@@ -55,8 +55,8 @@ export default function ThemeClipItem({ clip, currentThemeId, themes, searchQuer
       href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}
       className="group bg-gray-50 rounded-lg overflow-hidden transform transition duration-300 hover:shadow-lg block"
     >
-      <div className="flex gap-6 p-4">
-        <div className="relative w-48 flex-shrink-0">
+      <div className="flex flex-col lg:flex-row gap-4 p-4">
+        <div className="relative w-full lg:w-48 flex-shrink-0">
           <div className="relative aspect-video rounded-lg overflow-hidden">
             <Image
               src={video.thumbnail}
