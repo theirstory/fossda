@@ -458,7 +458,7 @@ export default function AskPage() {
             className="flex-1 h-10"
           />
           <Button 
-            type="submit"
+            type="submit" 
             disabled={isLoading || !question.trim()}
           >
             {isLoading ? 'Searching...' : 'Ask'}
@@ -482,8 +482,8 @@ export default function AskPage() {
               <h1 className="text-2xl font-bold mb-4">{displayedQuestion}</h1>
               <div className="font-serif leading-relaxed">
                 {renderAnswerWithCitations(streamedAnswer, quotes)}
-              </div>
-            </div>
+                        </div>
+                      </div>
           </Card>
 
           {/* Quotes Column */}
@@ -494,8 +494,8 @@ export default function AskPage() {
                 <h3 className="text-lg font-semibold px-2">Supporting Quotes</h3>
                 <div className="space-y-4">
                   {quotes.cited.map((quote, index) => renderQuoteCard(quote, index))}
-                </div>
-              </div>
+                      </div>
+                    </div>
             )}
 
             {/* Additional Quotes */}
@@ -504,11 +504,11 @@ export default function AskPage() {
                 <h3 className="text-lg font-semibold px-2">Additional Quotes</h3>
                 <div className="space-y-4">
                   {quotes.uncited.map((quote, index) => renderQuoteCard(quote, index, false))}
-                </div>
+                  </div>
               </div>
             )}
-          </div>
-        </div>
+              </div>
+            </div>
       )}
     </div>
   );
