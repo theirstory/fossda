@@ -127,14 +127,23 @@ export default function VideoChapters({
     };
   }, [chapters]);
 
-  const handleChapterClick = (time: number) => {
+  const handleChapterClick = (time: number, e: React.MouseEvent | React.TouchEvent) => {
+    // Prevent default behavior
+    e.preventDefault();
+    e.stopPropagation();
+
     if (videoRef.current) {
       const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
       if (videoElement) {
+        // Force the time update
         videoElement.currentTime = time;
-        if (isPlaying) {
-          videoElement.play();
-        }
+        
+        // Add a small delay to ensure the time is set before playing
+        setTimeout(() => {
+          if (isPlaying) {
+            videoElement.play().catch(console.error);
+          }
+        }, 100);
       }
     }
   };
@@ -145,7 +154,8 @@ export default function VideoChapters({
         {chapters.map((chapter, index) => (
           <button
             key={chapter.time.start}
-            onClick={() => handleChapterClick(chapter.time.start)}
+            onClick={(e) => handleChapterClick(chapter.time.start, e)}
+            onTouchEnd={(e) => handleChapterClick(chapter.time.start, e)}
             className={cn(
               "text-left w-full p-2 hover:bg-gray-100 transition-colors border-l-2",
               index === currentChapterIndex 

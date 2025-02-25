@@ -18,9 +18,11 @@ interface MuxChapter {
 }
 
 const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
-  ({ playbackId, onPlayStateChange, chapters, thumbnail, onLoadedMetadata }, ref) => {
+  function VideoPlayer({ playbackId, onPlayStateChange, chapters, thumbnail, onLoadedMetadata }, ref) {
     const playerRef = useRef<MuxPlayerElement>(null);
     const [mounted, setMounted] = useState(false);
+    const lastTimeRef = useRef<number>(0);
+    const currentTimeRef = useRef<number | undefined>(undefined);
 
     // Add error handling for HLS
     useEffect(() => {
@@ -85,6 +87,54 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
         player.addChapters(muxChapters);
       }
     }, [mounted, chapters]);
+
+    useEffect(() => {
+      if (!playerRef.current) return;
+
+      const player = playerRef.current;
+
+      // Force a seek when currentTime is set externally
+      const handleTimeUpdate = () => {
+        if (player.currentTime !== lastTimeRef.current) {
+          lastTimeRef.current = player.currentTime;
+        }
+      };
+
+      // Handle seeking explicitly
+      const handleSeeking = () => {
+        // Force a time update when seeking
+        if (player.currentTime !== lastTimeRef.current) {
+          lastTimeRef.current = player.currentTime;
+          // Dispatch a custom event that other components can listen for
+          const event = new CustomEvent('videoSeeked', { 
+            detail: { time: player.currentTime } 
+          });
+          window.dispatchEvent(event);
+        }
+      };
+
+      player.addEventListener('timeupdate', handleTimeUpdate);
+      player.addEventListener('seeking', handleSeeking);
+      player.addEventListener('seeked', handleSeeking);
+
+      return () => {
+        player.removeEventListener('timeupdate', handleTimeUpdate);
+        player.removeEventListener('seeking', handleSeeking);
+        player.removeEventListener('seeked', handleSeeking);
+      };
+    }, []);
+
+    useEffect(() => {
+      if (!playerRef.current) return;
+
+      // Handle external time updates
+      const player = playerRef.current;
+      if (typeof currentTimeRef.current === 'number' && !isNaN(currentTimeRef.current)) {
+        // Force the time update and ensure it's applied
+        player.currentTime = currentTimeRef.current;
+        lastTimeRef.current = currentTimeRef.current;
+      }
+    }, []);
 
     if (!mounted) {
       return (

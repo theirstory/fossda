@@ -103,34 +103,44 @@ export default function InteractiveTranscript({
   // Create a stable click handler using useCallback
   const handleSpanClick = useCallback((event: Event) => {
     const span = event.target as HTMLElement;
-    if (!span.hasAttribute('data-m') || !transcriptContainerRef.current) return;
+    const container = transcriptContainerRef.current;
+    if (!span.hasAttribute('data-m') || !container) return;
+
+    // Ensure we prevent any default behavior that might interfere
+    event.preventDefault();
+    event.stopPropagation();
 
     const time = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
     const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
     if (videoElement) {
+      // Force the time update
       videoElement.currentTime = time;
-      if (isPlaying) {
-        videoElement.play().catch(console.error);
-      }
       
-      // Calculate offset for mobile header and tabs
-      const isMobile = window.innerWidth < 1024; // lg breakpoint
-      const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
-      
-      // Get container dimensions
-      const containerRect = transcriptContainerRef.current.getBoundingClientRect();
-      const spanRect = span.getBoundingClientRect();
-      
-      // Calculate scroll position - use different positions for mobile and desktop
-      const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
-      const currentOffset = spanRect.top - containerRect.top;
-      const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
-      
-      // Scroll with the calculated offset
-      transcriptContainerRef.current.scrollTo({
-        top: transcriptContainerRef.current.scrollTop + scrollAdjustment,
-        behavior: 'smooth'
-      });
+      // Add a small delay to ensure the time is set before playing
+      setTimeout(() => {
+        if (isPlaying) {
+          videoElement.play().catch(console.error);
+        }
+        
+        // Calculate offset for mobile header and tabs
+        const isMobile = window.innerWidth < 1024; // lg breakpoint
+        const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+        
+        // Get container dimensions
+        const containerRect = container.getBoundingClientRect();
+        const spanRect = span.getBoundingClientRect();
+        
+        // Calculate scroll position - use different positions for mobile and desktop
+        const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
+        const currentOffset = spanRect.top - containerRect.top;
+        const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
+        
+        // Scroll with the calculated offset
+        container.scrollTo({
+          top: container.scrollTop + scrollAdjustment,
+          behavior: 'smooth'
+        });
+      }, 100);
     }
   }, [isPlaying]);
 
@@ -148,8 +158,13 @@ export default function InteractiveTranscript({
 
     const transcriptElement = transcriptRef.current;
 
-    // Add click handler to the transcript container (using event delegation)
-    transcriptElement.addEventListener('click', handleSpanClick);
+    // Add both click and touch handlers to the transcript container
+    const handleInteraction = (e: Event) => {
+      handleSpanClick(e);
+    };
+
+    transcriptElement.addEventListener('click', handleInteraction);
+    transcriptElement.addEventListener('touchend', handleInteraction);
 
     // Create a MutationObserver to watch for player initialization
     const observer = new MutationObserver((mutations) => {
@@ -179,7 +194,8 @@ export default function InteractiveTranscript({
     // Cleanup function
     return () => {
       observer.disconnect();
-      transcriptElement.removeEventListener('click', handleSpanClick);
+      transcriptElement.removeEventListener('click', handleInteraction);
+      transcriptElement.removeEventListener('touchend', handleInteraction);
     };
   }, [scriptLoaded, mounted, handleSpanClick]);
 
