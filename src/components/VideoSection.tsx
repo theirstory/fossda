@@ -24,6 +24,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import CitationButton from "./CitationButton";
 
 interface VideoSectionProps {
   videoId: string;
@@ -182,12 +183,23 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
 
       <div className="bg-white rounded-lg shadow-lg h-full flex flex-col overflow-hidden">
         <Tabs defaultValue="transcript" className="flex-1 flex flex-col overflow-hidden">
-          <TabsList className="w-full border-b flex-shrink-0">
-            <TabsTrigger value="transcript">Transcription</TabsTrigger>
-            <TabsTrigger value="clips">
-              Clips ({clipCount})
-            </TabsTrigger>
-            <TabsTrigger value="related">Related Videos</TabsTrigger>
+          <TabsList className="w-full border-b flex-shrink-0 flex items-center px-2">
+            <div className="flex-1" />
+            <div className="flex gap-2">
+              <TabsTrigger value="transcript">Transcription</TabsTrigger>
+              <TabsTrigger value="clips">
+                Clips ({clipCount})
+              </TabsTrigger>
+              <TabsTrigger value="related">Related Videos</TabsTrigger>
+            </div>
+            <div className="flex-1 flex justify-end">
+              <CitationButton
+                title={currentVideo.title}
+                speaker={currentVideo.title.split(" - ")[0]}
+                url={typeof window !== 'undefined' ? window.location.href : ''}
+                duration={currentVideo.duration}
+              />
+            </div>
           </TabsList>
           <div className="flex-1 overflow-hidden">
             <TabsContent value="transcript" className="h-full overflow-auto">

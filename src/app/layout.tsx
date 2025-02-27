@@ -5,6 +5,7 @@ import Script from 'next/script';
 import { Suspense } from 'react';
 import MainNavigation from "@/components/MainNavigation";
 import { CommandMenu } from '@/components/CommandMenu';
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           {children}
         </Suspense>
         <CommandMenu />
+        <Toaster />
       </body>
     </html>
   );

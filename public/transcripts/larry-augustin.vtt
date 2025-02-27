@@ -1,0 +1,6958 @@
+WEBVTT
+
+1
+00:00:00.260 --> 00:00:03.691
+<v Elisabetta Mori>FOSSDA, the Free and Open Source
+Stories Digital Archive
+
+2
+00:00:03.751 --> 00:00:04.353
+<v Elisabetta Mori>Foundation.
+
+3
+00:00:05.382 --> 00:00:08.047
+<v Elisabetta Mori>It's the 16th of April 2024 and I
+
+4
+00:00:08.789 --> 00:00:12.481
+<v Elisabetta Mori>am Elisabetta Mori, an historian
+of computing currently based in
+
+5
+00:00:12.601 --> 00:00:16.889
+<v Elisabetta Mori>Italy and an oral history
+interview with FOSSDA.
+
+6
+00:00:17.771 --> 00:00:20.296
+<v Elisabetta Mori>Today I'll be talking to Larry
+Augustin.
+
+7
+00:00:21.903 --> 00:00:26.032
+<v Elisabetta Mori>Larry Augustin is an entrepreneur,
+angel investor and advisor to
+
+8
+00:00:26.073 --> 00:00:27.235
+<v Elisabetta Mori>technology companies.
+
+9
+00:00:27.235 --> 00:00:29.504
+<v Elisabetta Mori>He He was the founder of VA
+
+10
+00:00:29.524 --> 00:00:33.393
+<v Elisabetta Mori>Research that became VA Linux,
+SourceForge.
+
+11
+00:00:33.914 --> 00:00:37.245
+<v Elisabetta Mori>He was part of the team who who
+coined the term Open Software.
+
+12
+00:00:37.565 --> 00:00:42.776
+<v Elisabetta Mori>He was CEO of SugarCRM and the
+Vice President for Applications
+
+13
+00:00:42.776 --> 00:00:44.563
+<v Elisabetta Mori>and and Web Services.
+
+14
+00:00:45.705 --> 00:00:48.010
+<v Elisabetta Mori>We are recording on the story.io
+
+15
+00:00:48.771 --> 00:00:53.765
+<v Elisabetta Mori>and I am in Livorno, Tuscany,
+Italy, and Larry is in his home in
+
+16
+00:00:53.825 --> 00:00:55.147
+<v Elisabetta Mori>Los Altos, California.
+
+17
+00:00:56.069 --> 00:00:58.975
+<v Elisabetta Mori>So thank you and welcome, Larry.
+
+18
+00:01:00.344 --> 00:01:01.306
+<v Larry Augustin>Thank you, Elisabetta.
+
+19
+00:01:01.366 --> 00:01:02.189
+<v Larry Augustin>Happy to be here.
+
+20
+00:01:03.031 --> 00:01:03.874
+<v Larry Augustin>Happy to do this.
+
+21
+00:01:04.541 --> 00:01:07.388
+<v Elisabetta Mori>Yeah, so let's start from the
+
+22
+00:01:07.428 --> 00:01:07.789
+<v Elisabetta Mori>beginning.
+
+23
+00:01:07.870 --> 00:01:09.895
+<v Elisabetta Mori>So where and when were you born?
+
+24
+00:01:11.262 --> 00:01:19.914
+<v Larry Augustin>Oh, I was born 1962 in Dayton,
+Ohio, the middle of the country in
+
+25
+00:01:19.934 --> 00:01:20.535
+<v Larry Augustin>the US.
+
+26
+00:01:21.376 --> 00:01:24.986
+<v Larry Augustin>My father was in the Air Force and
+
+27
+00:01:25.026 --> 00:01:29.135
+<v Larry Augustin>we had settled in Dayton and ended
+up growing up there.
+
+28
+00:01:30.803 --> 00:01:35.472
+<v Larry Augustin>My mother's side of the family
+were farmers and had a farm in the
+
+29
+00:01:35.673 --> 00:01:37.901
+<v Larry Augustin>east coast of the US, New
+Hampshire.
+
+30
+00:01:38.963 --> 00:01:41.168
+<v Larry Augustin>And I spent a lot of times there.
+
+31
+00:01:41.228 --> 00:01:43.252
+<v Larry Augustin>In fact, if you look at sort of my
+
+32
+00:01:43.573 --> 00:01:49.810
+<v Larry Augustin>early life, the time I spent in
+summers working on the farm was
+
+33
+00:01:50.632 --> 00:01:52.395
+<v Larry Augustin>part of what helped me become an
+engineer.
+
+34
+00:01:53.202 --> 00:01:56.149
+<v Larry Augustin>My dad was an electrical engineer
+and so I sort of followed in his
+
+35
+00:01:56.209 --> 00:01:56.691
+<v Larry Augustin>footsteps.
+
+36
+00:01:57.172 --> 00:01:58.782
+<v Larry Augustin>That was my, you know, sort of
+
+37
+00:01:59.023 --> 00:02:01.932
+<v Larry Augustin>goal a whole life was to follow in
+his footsteps and also be an
+
+38
+00:02:01.972 --> 00:02:02.761
+<v Larry Augustin>electrical engineer.
+
+39
+00:02:03.442 --> 00:02:05.867
+<v Larry Augustin>But I spent the summers working on
+
+40
+00:02:05.927 --> 00:02:11.683
+<v Larry Augustin>the family farm in New Hampshire,
+you know, baling hay, doing, you
+
+41
+00:02:12.024 --> 00:02:14.107
+<v Larry Augustin>know, everything around the place.
+
+42
+00:02:14.788 --> 00:02:19.116
+<v Larry Augustin>And I developed this tendency to
+
+43
+00:02:19.156 --> 00:02:20.121
+<v Larry Augustin>just fix things.
+
+44
+00:02:21.104 --> 00:02:22.267
+<v Larry Augustin>It's part of what drove me to be
+
+45
+00:02:22.287 --> 00:02:22.848
+<v Larry Augustin>an engineer.
+
+46
+00:02:24.292 --> 00:02:25.515
+<v Larry Augustin>I often say, when you're out in
+
+47
+00:02:25.540 --> 00:02:27.967
+<v Larry Augustin>the field and the tractor breaks,
+there's nobody to call.
+
+48
+00:02:27.987 --> 00:02:31.203
+<v Larry Augustin>You know, we didn't have cell
+phones, there was no one there.
+
+49
+00:02:31.283 --> 00:02:33.389
+<v Larry Augustin>You had to just fix things
+yourself.
+
+50
+00:02:33.529 --> 00:02:37.804
+<v Larry Augustin>And so my whole life, that's how I
+kind of approach things, which is
+
+51
+00:02:37.905 --> 00:02:44.220
+<v Larry Augustin>just learn to do whatever needs to
+be done and be hands-on and fix
+
+52
+00:02:44.260 --> 00:02:44.501
+<v Larry Augustin>things.
+
+53
+00:02:46.624 --> 00:02:47.585
+<v Larry Augustin>And what about your mom?
+
+54
+00:02:47.625 --> 00:02:50.609
+<v Larry Augustin>What did she do?
+My mom is a nurse.
+
+55
+00:02:52.472 --> 00:02:59.627
+<v Larry Augustin>She grew up on the farm and then
+she was able to go to nursing
+
+56
+00:02:59.667 --> 00:03:03.895
+<v Larry Augustin>school and she became a nurse.
+
+57
+00:03:03.935 --> 00:03:08.228
+<v Larry Augustin>And then, you know, after I came
+
+58
+00:03:08.288 --> 00:03:11.375
+<v Larry Augustin>along, she retired from that and
+was a full-time mom.
+
+59
+00:03:13.264 --> 00:03:17.174
+<v Elisabetta Mori>And who were the important
+influences on you in your early
+
+60
+00:03:17.214 --> 00:03:20.064
+<v Elisabetta Mori>life?
+Oh, great question.
+
+61
+00:03:20.084 --> 00:03:24.212
+<v Larry Augustin>You know, obviously my parents.
+
+62
+00:03:24.332 --> 00:03:26.716
+<v Larry Augustin>I mean, I had just huge respects
+
+63
+00:03:26.780 --> 00:03:30.247
+<v Larry Augustin>there, wanting to follow in the
+footsteps of my dad in many ways.
+
+64
+00:03:33.112 --> 00:03:40.889
+<v Larry Augustin>But early on in life, I would say
+I was lucky to have great teachers
+
+65
+00:03:41.731 --> 00:03:47.905
+<v Larry Augustin>early in school, grade school and
+elementary, who really, I guess,
+
+66
+00:03:47.985 --> 00:03:56.885
+<v Larry Augustin>influenced me in the value of
+education, but in all sorts of
+
+67
+00:03:56.945 --> 00:04:01.094
+<v Larry Augustin>different disciplines, whether it
+was mathematics or science.
+
+68
+00:04:01.174 --> 00:04:04.425
+<v Larry Augustin>And, you know, I was lucky to have
+great teachers who helped me
+
+69
+00:04:04.445 --> 00:04:04.706
+<v Larry Augustin>there.
+
+70
+00:04:06.250 --> 00:04:08.234
+<v Larry Augustin>And, you know, some of that
+
+71
+00:04:08.274 --> 00:04:09.221
+<v Larry Augustin>certainly by random.
+
+72
+00:04:10.983 --> 00:04:11.584
+<v Larry Augustin>I was lucky.
+
+73
+00:04:11.684 --> 00:04:19.736
+<v Larry Augustin>And I was also lucky in that
+Dayton, Ohio, is home to something
+
+74
+00:04:19.796 --> 00:04:23.927
+<v Larry Augustin>called the Ham Fest, which I don't
+know if a lot of people know, but
+
+75
+00:04:24.008 --> 00:04:31.286
+<v Larry Augustin>it is a gathering of ham radio
+operators that happens every year.
+
+76
+00:04:33.390 --> 00:04:37.260
+<v Larry Augustin>But beyond that sort of just ham
+radio operators, it's really about
+
+77
+00:04:37.321 --> 00:04:39.745
+<v Larry Augustin>people who tinker with
+electronics.
+
+78
+00:04:40.888 --> 00:04:45.221
+<v Larry Augustin>And so I was lucky to have this
+exposure early on that this
+
+79
+00:04:45.481 --> 00:04:48.989
+<v Larry Augustin>interesting thing was happening
+and I wanted to learn.
+
+80
+00:04:50.332 --> 00:04:56.708
+<v Larry Augustin>And so I was a kid who always was
+experimenting with sort of basic
+
+81
+00:04:56.768 --> 00:04:57.549
+<v Larry Augustin>electronics.
+
+82
+00:04:58.792 --> 00:05:00.334
+<v Larry Augustin>I had the little kits as a kid
+
+83
+00:05:00.354 --> 00:05:06.270
+<v Larry Augustin>where you would build the radio
+from scratch or you would wire
+
+84
+00:05:06.310 --> 00:05:08.034
+<v Larry Augustin>together a little electronic
+circuits.
+
+85
+00:05:08.094 --> 00:05:12.011
+<v Larry Augustin>And I was always kind of tinkering
+or doing or building something
+
+86
+00:05:12.051 --> 00:05:12.392
+<v Larry Augustin>like that.
+
+87
+00:05:14.183 --> 00:05:15.566
+<v Elisabetta Mori>Which schools did you attend?
+
+88
+00:05:15.646 --> 00:05:20.656
+<v Elisabetta Mori>And is there any, you know, an
+event or episode that shaped you?
+
+89
+00:05:22.183 --> 00:05:23.165
+<v Larry Augustin>Oh, wow.
+
+90
+00:05:23.285 --> 00:05:27.072
+<v Larry Augustin>So, you know, I went through the
+
+91
+00:05:27.172 --> 00:05:31.927
+<v Larry Augustin>sort of public school system
+growing up in Ohio.
+
+92
+00:05:32.408 --> 00:05:34.774
+<v Larry Augustin>I went to high school, a little
+place called Stebbins High School.
+
+93
+00:05:37.085 --> 00:05:40.334
+<v Larry Augustin>I'm not sure I would say Stebbins
+is famous for just about anything.
+
+94
+00:05:42.402 --> 00:05:46.668
+<v Larry Augustin>It was just a great place to grow
+up and be a kid.
+
+95
+00:05:48.771 --> 00:05:55.505
+<v Larry Augustin>And from there, my mother had
+always had this dream that I grew
+
+96
+00:05:55.545 --> 00:05:59.613
+<v Larry Augustin>up Catholic and my family was
+Catholic and that her son should
+
+97
+00:05:59.673 --> 00:06:01.542
+<v Larry Augustin>go to the University of Notre
+Dame.
+
+98
+00:06:02.964 --> 00:06:05.369
+<v Larry Augustin>And I applied.
+
+99
+00:06:05.450 --> 00:06:07.113
+<v Larry Augustin>And to be honest, to this day, I'm
+
+100
+00:06:07.133 --> 00:06:08.015
+<v Larry Augustin>not sure how I got in.
+
+101
+00:06:08.520 --> 00:06:10.564
+<v Larry Augustin>I was a good student, not the
+
+102
+00:06:10.604 --> 00:06:13.069
+<v Larry Augustin>best, but a good student.
+
+103
+00:06:13.169 --> 00:06:18.083
+<v Larry Augustin>And if I look today, you know, the
+
+104
+00:06:18.143 --> 00:06:21.911
+<v Larry Augustin>students that apply to
+universities today are absolutely
+
+105
+00:06:21.951 --> 00:06:22.492
+<v Larry Augustin>amazing.
+
+106
+00:06:22.513 --> 00:06:22.994
+<v Larry Augustin>I don't know.
+
+107
+00:06:23.294 --> 00:06:25.563
+<v Larry Augustin>I was far from absolutely amazing.
+
+108
+00:06:27.106 --> 00:06:28.729
+<v Larry Augustin>And I got in.
+
+109
+00:06:28.769 --> 00:06:32.176
+<v Larry Augustin>So I ended up going to college at
+Notre Dame.
+
+110
+00:06:33.285 --> 00:06:38.309
+<v Elisabetta Mori>And what was the subject?
+Oh, that's where I followed my
+
+111
+00:06:38.350 --> 00:06:40.315
+<v Larry Augustin>dad's footsteps and I went into
+electrical engineering.
+
+112
+00:06:42.163 --> 00:06:48.533
+<v Larry Augustin>And that's really where I sort of
+spent my first time, sort of more
+
+113
+00:06:48.573 --> 00:06:50.036
+<v Larry Augustin>hands-on with computers.
+
+114
+00:06:50.420 --> 00:06:52.388
+<v Larry Augustin>There was one thing in my high
+
+115
+00:06:52.428 --> 00:06:53.492
+<v Larry Augustin>school that was interesting.
+
+116
+00:06:55.264 --> 00:06:57.208
+<v Larry Augustin>There was a course I took as I
+
+117
+00:06:57.248 --> 00:07:00.375
+<v Larry Augustin>began to try and understand
+electronics and computers, but
+
+118
+00:07:00.395 --> 00:07:04.790
+<v Larry Augustin>more a course at this time.
+
+119
+00:07:04.850 --> 00:07:06.694
+<v Larry Augustin>And gosh, you look back and you
+
+120
+00:07:06.734 --> 00:07:10.107
+<v Larry Augustin>realize how far the world has
+come.
+
+121
+00:07:10.508 --> 00:07:15.604
+<v Larry Augustin>That my first sort of exposure to
+doing anything with programming
+
+122
+00:07:15.664 --> 00:07:17.688
+<v Larry Augustin>was punched cards with cobalt.
+
+123
+00:07:19.732 --> 00:07:22.803
+<v Larry Augustin>And as a high school student, I
+
+124
+00:07:22.863 --> 00:07:27.775
+<v Larry Augustin>was able to take a course where we
+didn't even have a punch card
+
+125
+00:07:27.815 --> 00:07:28.116
+<v Larry Augustin>machine.
+
+126
+00:07:28.602 --> 00:07:31.909
+<v Larry Augustin>We had these big coding forms, big
+
+127
+00:07:32.289 --> 00:07:37.404
+<v Larry Augustin>ledger sheets of paper, 11 by 17
+pieces of paper with lines on
+
+128
+00:07:37.444 --> 00:07:37.584
+<v Larry Augustin>them.
+
+129
+00:07:37.624 --> 00:07:40.670
+<v Larry Augustin>And there were 80 columns on a
+
+130
+00:07:40.951 --> 00:07:41.652
+<v Larry Augustin>punch card.
+
+131
+00:07:42.133 --> 00:07:45.664
+<v Larry Augustin>And you literally wrote in clean
+
+132
+00:07:45.804 --> 00:07:49.250
+<v Larry Augustin>print across these sheets of
+paper.
+
+133
+00:07:49.710 --> 00:07:51.293
+<v Larry Augustin>And we would send them in.
+
+134
+00:07:51.754 --> 00:07:54.001
+<v Larry Augustin>So I'd have to write my program
+
+135
+00:07:54.142 --> 00:07:57.488
+<v Larry Augustin>out by hand on a piece of paper.
+
+136
+00:07:57.528 --> 00:07:59.812
+<v Larry Augustin>You'd send it in.
+
+137
+00:08:00.313 --> 00:08:03.664
+<v Larry Augustin>People would punch those into the
+punch card machines.
+
+138
+00:08:04.466 --> 00:08:06.612
+<v Larry Augustin>You would get back decks of cards.
+
+139
+00:08:06.712 --> 00:08:09.965
+<v Larry Augustin>And then you sorted the cards into
+
+140
+00:08:10.106 --> 00:08:10.847
+<v Larry Augustin>a program.
+
+141
+00:08:10.887 --> 00:08:13.574
+<v Larry Augustin>And then you sent the cards in to
+
+142
+00:08:13.654 --> 00:08:13.855
+<v Larry Augustin>run.
+
+143
+00:08:15.142 --> 00:08:19.050
+<v Larry Augustin>So we think today about fast turn
+
+144
+00:08:19.110 --> 00:08:21.616
+<v Larry Augustin>and programming and developing
+code.
+
+145
+00:08:24.104 --> 00:08:29.314
+<v Larry Augustin>The productivity in that sense of
+lines of code was pretty low.
+
+146
+00:08:29.334 --> 00:08:33.626
+<v Larry Augustin>It was, you know, you spent a day
+writing forms.
+
+147
+00:08:34.429 --> 00:08:35.631
+<v Larry Augustin>You sent it in.
+
+148
+00:08:35.671 --> 00:08:37.315
+<v Larry Augustin>You got punched cards back.
+
+149
+00:08:37.434 --> 00:08:40.684
+<v Larry Augustin>I mean, it took a week to turn
+around.
+
+150
+00:08:40.905 --> 00:08:47.321
+<v Larry Augustin>And if you made one change, a
+comma in a different place, one
+
+151
+00:08:47.381 --> 00:08:52.170
+<v Larry Augustin>different line, it was a week to
+make a minor change.
+
+152
+00:08:52.610 --> 00:08:55.054
+<v Larry Augustin>So you had to get that right.
+
+153
+00:08:56.841 --> 00:08:59.387
+<v Larry Augustin>You had to make sure that was sort
+
+154
+00:08:59.487 --> 00:09:03.075
+<v Larry Augustin>of perfect when it went in because
+the turnaround was very slow.
+
+155
+00:09:05.424 --> 00:09:08.549
+<v Larry Augustin>Then when I got to college, we
+began to discover real
+
+156
+00:09:09.270 --> 00:09:12.316
+<v Larry Augustin>programmable machines,
+microcontrollers.
+
+157
+00:09:15.403 --> 00:09:20.751
+<v Larry Augustin>At the time, there were new
+machines like the TRS-80.
+
+158
+00:09:22.234 --> 00:09:26.465
+<v Larry Augustin>And eventually by the time I
+graduated, the IBM PC and the
+
+159
+00:09:26.565 --> 00:09:28.329
+<v Larry Augustin>Apple machines had come out.
+
+160
+00:09:29.632 --> 00:09:31.035
+<v Larry Augustin>But that was my earliest exposure,
+
+161
+00:09:31.260 --> 00:09:35.587
+<v Larry Augustin>was writing COBOL programs, long
+form.
+
+162
+00:09:37.290 --> 00:09:39.313
+<v Elisabetta Mori>So you go to Notre Dame, 1980,
+1984.
+
+163
+00:09:41.721 --> 00:09:47.875
+<v Elisabetta Mori>And then in 1984, you get the
+fellowship from Bell Labs to go.
+
+164
+00:09:47.980 --> 00:09:48.220
+<v Larry Augustin>Yes.
+
+165
+00:09:48.260 --> 00:09:52.308
+<v Larry Augustin>So Notre Dame was a great, great
+
+166
+00:09:52.348 --> 00:09:52.809
+<v Larry Augustin>place to me.
+
+167
+00:09:52.849 --> 00:09:55.174
+<v Larry Augustin>I had an opportunity to experience
+
+168
+00:09:55.214 --> 00:10:03.888
+<v Larry Augustin>a lot of different opportunities,
+ranging from sort of those initial
+
+169
+00:10:04.049 --> 00:10:07.255
+<v Larry Augustin>exposures to real sort of
+programmable machines,
+
+170
+00:10:10.064 --> 00:10:12.690
+<v Larry Augustin>microcontrollers, learning that.
+
+171
+00:10:12.710 --> 00:10:14.935
+<v Larry Augustin>I was lucky enough to be part of a
+
+172
+00:10:14.995 --> 00:10:19.948
+<v Larry Augustin>group that created the first
+personal computer lab there for
+
+173
+00:10:19.968 --> 00:10:21.871
+<v Larry Augustin>the grant from IBM.
+
+174
+00:10:23.514 --> 00:10:25.180
+<v Larry Augustin>I was lucky enough to be able to
+
+175
+00:10:25.280 --> 00:10:35.892
+<v Larry Augustin>work on a, we took an IBM PC and
+modified it to run IBM 370 code.
+
+176
+00:10:35.912 --> 00:10:45.432
+<v Larry Augustin>So IBM 370 being being the sort of
+de facto standard of large scale
+
+177
+00:10:45.472 --> 00:10:46.975
+<v Larry Augustin>computing from the mainframe
+world.
+
+178
+00:10:48.844 --> 00:10:52.914
+<v Larry Augustin>This was a time when there were
+these two, I would say two worlds
+
+179
+00:10:52.954 --> 00:10:55.923
+<v Larry Augustin>of computing that were colliding.
+
+180
+00:10:56.184 --> 00:11:00.991
+<v Larry Augustin>The world of the, maybe that COBOL
+
+181
+00:11:01.031 --> 00:11:08.145
+<v Larry Augustin>world, if you will, big mainframe
+machines, a slow turnaround,
+
+182
+00:11:08.446 --> 00:11:14.456
+<v Larry Augustin>hugely powerful, but you could see
+the microprocessor world coming.
+
+183
+00:11:14.680 --> 00:11:17.727
+<v Larry Augustin>You know, we had the 8080, we had
+the IBM PC.
+
+184
+00:11:18.508 --> 00:11:23.603
+<v Larry Augustin>And I was lucky enough to be part
+of a project that re-micro-coded
+
+185
+00:11:23.844 --> 00:11:25.440
+<v Larry Augustin>the mineral to 68,000.
+
+186
+00:11:26.489 --> 00:11:28.352
+<v Larry Augustin>My part was working on a cache
+
+187
+00:11:28.433 --> 00:11:38.972
+<v Larry Augustin>memory system, and we built the
+first IBM 370 inside a IBM PC.
+
+188
+00:11:38.992 --> 00:11:43.358
+<v Larry Augustin>So I had an opportunity to work on
+some really, really great
+
+189
+00:11:44.463 --> 00:11:46.146
+<v Larry Augustin>computing things there.
+
+190
+00:11:46.346 --> 00:11:50.693
+<v Larry Augustin>And then following, as I graduated
+
+191
+00:11:50.713 --> 00:11:57.146
+<v Larry Augustin>there, Bell Labs had this
+fantastic program where they would
+
+192
+00:11:58.949 --> 00:12:02.515
+<v Larry Augustin>recruit students out of college
+with no experience.
+
+193
+00:12:03.717 --> 00:12:05.505
+<v Larry Augustin>And it's interesting, I
+interesting, I watch today,
+
+194
+00:12:06.087 --> 00:12:10.216
+<v Larry Augustin>students coming out of college and
+some of these programs don't exist
+
+195
+00:12:10.297 --> 00:12:10.637
+<v Larry Augustin>anymore.
+
+196
+00:12:10.637 --> 00:12:10.657
+<v Larry Augustin>I anymore.
+
+197
+00:12:10.657 --> 00:12:13.847
+<v Larry Augustin>I think we need more of those.
+
+198
+00:12:14.188 --> 00:12:16.512
+<v Larry Augustin>I think I was a beneficiary of
+
+199
+00:12:16.593 --> 00:12:20.202
+<v Larry Augustin>companies that did those things
+when did those things when I
+
+200
+00:12:20.242 --> 00:12:20.923
+<v Larry Augustin>graduated.
+
+201
+00:12:23.708 --> 00:12:25.971
+<v Larry Augustin>They would recruit students out of
+
+202
+00:12:26.031 --> 00:12:30.081
+<v Larry Augustin>college and to work at Bell Labs
+at the time, you had to have a
+
+203
+00:12:30.121 --> 00:12:31.584
+<v Larry Augustin>minimum of a master's degree.
+
+204
+00:12:32.727 --> 00:12:34.029
+<v Larry Augustin>I didn't have a master's degree,
+
+205
+00:12:35.272 --> 00:12:40.268
+<v Larry Augustin>but they also had identified that
+there weren't enough people with
+
+206
+00:12:40.328 --> 00:12:41.230
+<v Larry Augustin>master's degrees.
+
+207
+00:12:41.892 --> 00:12:43.721
+<v Larry Augustin>And so they would recruit kids
+
+208
+00:12:44.503 --> 00:12:48.593
+<v Larry Augustin>right out of their undergraduate,
+they would bring them in, they'd
+
+209
+00:12:48.613 --> 00:12:51.043
+<v Larry Augustin>give them an opportunity to work
+for a year, and then they would
+
+210
+00:12:51.084 --> 00:12:55.955
+<v Larry Augustin>send them off to school to get
+their master's, get advanced
+
+211
+00:12:55.980 --> 00:12:56.480
+<v Larry Augustin>degrees.
+
+212
+00:12:56.761 --> 00:12:58.604
+<v Larry Augustin>Fabulous, fabulous program.
+
+213
+00:12:59.986 --> 00:13:03.192
+<v Larry Augustin>I was lucky enough to get accepted
+into that.
+
+214
+00:13:03.653 --> 00:13:11.049
+<v Larry Augustin>And I went from South Bend,
+Indiana, Notre Dame, to Holmdel,
+
+215
+00:13:11.089 --> 00:13:20.069
+<v Larry Augustin>New Jersey, the home of the
+transistor, and Bell Labs, the
+
+216
+00:13:20.129 --> 00:13:27.404
+<v Larry Augustin>place where the Big Bang was
+discovered, and I got an
+
+217
+00:13:27.524 --> 00:13:31.570
+<v Larry Augustin>opportunity to just learn more.
+
+218
+00:13:32.071 --> 00:13:34.895
+<v Larry Augustin>And as part of that program, they
+
+219
+00:13:34.915 --> 00:13:40.169
+<v Larry Augustin>sent me to Stanford University to
+get my master's degree in
+
+220
+00:13:40.189 --> 00:13:41.151
+<v Larry Augustin>electrical engineering.
+
+221
+00:13:42.072 --> 00:13:43.475
+<v Larry Augustin>Think heavily, though, computing.
+
+222
+00:13:45.665 --> 00:13:48.774
+<v Larry Augustin>Back then, computer science, by
+the way, was kind of this...
+
+223
+00:13:50.706 --> 00:13:53.034
+<v Larry Augustin>When I went to Notre Dame, there
+was not a computer science
+
+224
+00:13:53.074 --> 00:13:54.945
+<v Larry Augustin>department, put put it that way.
+
+225
+00:13:55.486 --> 00:13:56.930
+<v Larry Augustin>It was electrical engineering, and
+
+226
+00:13:56.970 --> 00:13:58.193
+<v Larry Augustin>computing was an offshoot.
+
+227
+00:13:58.915 --> 00:14:01.026
+<v Larry Augustin>So if you think about, in other
+
+228
+00:14:01.066 --> 00:14:03.913
+<v Larry Augustin>places, the, you know, computer
+science being an offshoot of
+
+229
+00:14:03.953 --> 00:14:11.814
+<v Larry Augustin>mathematics, for example, those
+were the years when those sorts of
+
+230
+00:14:11.874 --> 00:14:15.403
+<v Larry Augustin>departments were new, in some
+sense, thinking of computing as a
+
+231
+00:14:15.443 --> 00:14:16.064
+<v Larry Augustin>separate thing.
+
+232
+00:14:18.388 --> 00:14:18.889
+<v Larry Augustin>But I was...
+
+233
+00:14:18.909 --> 00:14:26.104
+<v Larry Augustin>If you are a young, excited
+engineer who loves building
+
+234
+00:14:26.184 --> 00:14:30.854
+<v Larry Augustin>things, and loves electronics, and
+is excited about what you've been
+
+235
+00:14:30.894 --> 00:14:35.607
+<v Larry Augustin>able to do with computers, and you
+get the opportunity to go to
+
+236
+00:14:37.050 --> 00:14:45.605
+<v Larry Augustin>Silicon Valley and Stanford in
+1985, it's just a magical place,
+
+237
+00:14:46.286 --> 00:14:48.489
+<v Larry Augustin>and you stay.
+
+238
+00:14:49.430 --> 00:14:53.676
+<v Larry Augustin>So I spent a couple of years in
+
+239
+00:14:53.716 --> 00:14:59.147
+<v Larry Augustin>New Jersey with Bell Labs, Labs,
+but ultimately, I was drawn back
+
+240
+00:14:59.288 --> 00:15:04.380
+<v Larry Augustin>to, you know, that world of
+computing in the early years, in
+
+241
+00:15:04.440 --> 00:15:07.946
+<v Larry Augustin>the mid-80s, in Silicon Valley.
+
+242
+00:15:08.887 --> 00:15:12.733
+<v Larry Augustin>And after a year or two at Bell
+
+243
+00:15:12.753 --> 00:15:17.285
+<v Larry Augustin>Labs, I ended up back at Stanford
+for my PhD. So in 1987, you moved
+
+244
+00:15:18.848 --> 00:15:23.863
+<v Elisabetta Mori>back to Stanford, and what was
+your PhD about?
+
+245
+00:15:24.725 --> 00:15:26.048
+<v Larry Augustin>Electrical engineering.
+
+246
+00:15:26.810 --> 00:15:29.115
+<v Larry Augustin>And I've stayed in that, although,
+
+247
+00:15:29.180 --> 00:15:34.873
+<v Larry Augustin>I will say, at this point, getting
+a lot harder to distinguish what I
+
+248
+00:15:34.913 --> 00:15:36.200
+<v Larry Augustin>was doing from computer science.
+
+249
+00:15:37.923 --> 00:15:42.231
+<v Larry Augustin>It was a lot less electrical, and
+
+250
+00:15:42.271 --> 00:15:43.693
+<v Larry Augustin>a lot more computer science.
+
+251
+00:15:44.775 --> 00:15:46.000
+<v Larry Augustin>I did blend the two together.
+
+252
+00:15:47.142 --> 00:15:57.255
+<v Larry Augustin>I worked on verifying, creating
+ways to verify circuit designs.
+
+253
+00:15:58.156 --> 00:16:05.692
+<v Larry Augustin>At the time, the world of
+electronic design automation was
+
+254
+00:16:05.893 --> 00:16:09.746
+<v Larry Augustin>new and exciting, and we were
+developing software that helped
+
+255
+00:16:09.766 --> 00:16:11.973
+<v Larry Augustin>people build electronics.
+
+256
+00:16:14.784 --> 00:16:16.528
+<v Larry Augustin>There was this world that I spent
+
+257
+00:16:16.588 --> 00:16:20.235
+<v Larry Augustin>much of my time there called
+hardware description languages,
+
+258
+00:16:20.981 --> 00:16:21.522
+<v Larry Augustin>HDLs.
+
+259
+00:16:21.823 --> 00:16:24.509
+<v Larry Augustin>That is a programming language for
+
+260
+00:16:24.549 --> 00:16:27.355
+<v Larry Augustin>describing circuits, circuit
+design hardware.
+
+261
+00:16:28.602 --> 00:16:33.113
+<v Larry Augustin>And I worked on verifying timing
+properties of circuits described
+
+262
+00:16:33.153 --> 00:16:34.440
+<v Larry Augustin>in hardware description languages.
+
+263
+00:16:37.224 --> 00:16:41.711
+<v Larry Augustin>And that's where I ultimately
+
+264
+00:16:41.751 --> 00:16:52.029
+<v Larry Augustin>developed my thesis on validating,
+both through simulation and formal
+
+265
+00:16:52.069 --> 00:16:57.497
+<v Larry Augustin>logic, that a circuit held certain
+timing properties.
+
+266
+00:16:59.825 --> 00:17:04.374
+<v Elisabetta Mori>And so, when did you get involved
+with Linux?
+
+267
+00:17:05.236 --> 00:17:10.372
+<v Elisabetta Mori>What was it?
+One of the things that we did in
+
+268
+00:17:10.412 --> 00:17:14.044
+<v Larry Augustin>those early days in electronic
+design automation, most of the
+
+269
+00:17:14.084 --> 00:17:15.848
+<v Larry Augustin>work was done at universities.
+
+270
+00:17:16.108 --> 00:17:19.775
+<v Larry Augustin>So Stanford, we collaborated and
+
+271
+00:17:20.415 --> 00:17:24.830
+<v Larry Augustin>used a lot of tools of tools that
+were written by the University of
+
+272
+00:17:24.851 --> 00:17:26.494
+<v Larry Augustin>California, Berkeley, UC Berkeley.
+
+273
+00:17:28.163 --> 00:17:29.946
+<v Larry Augustin>All of that software was available
+
+274
+00:17:30.327 --> 00:17:35.276
+<v Larry Augustin>for sharing on this thing, in
+hindsight, the internet.
+
+275
+00:17:37.363 --> 00:17:44.974
+<v Larry Augustin>But the internet at the time was a
+collection mostly of universities
+
+276
+00:17:45.055 --> 00:17:49.210
+<v Larry Augustin>and a few research labs that were
+able to share and distribute
+
+277
+00:17:49.231 --> 00:17:49.692
+<v Larry Augustin>software.
+
+278
+00:17:51.343 --> 00:17:53.367
+<v Larry Augustin>And everything that I tended to
+
+279
+00:17:53.427 --> 00:17:58.256
+<v Larry Augustin>work with was software that was
+available for free.
+
+280
+00:18:00.045 --> 00:18:02.953
+<v Larry Augustin>I mentioned earlier that I'm kind
+of one of these people that just
+
+281
+00:18:03.160 --> 00:18:06.672
+<v Larry Augustin>dives in and sees things and wants
+to fix things.
+
+282
+00:18:09.164 --> 00:18:15.696
+<v Larry Augustin>I had ended up, for my research
+group at Stanford, doing a lot of
+
+283
+00:18:15.956 --> 00:18:17.519
+<v Larry Augustin>system administration work.
+
+284
+00:18:17.519 --> 00:18:19.728
+<v Larry Augustin>Just, again, administration work.
+
+285
+00:18:19.728 --> 00:18:22.013
+<v Larry Augustin>Just, again, I see things that
+need to be done.
+
+286
+00:18:22.033 --> 00:18:24.299
+<v Larry Augustin>I have a tendency to just kind of
+dive in and do it.
+
+287
+00:18:24.299 --> 00:18:25.787
+<v Larry Augustin>And I didn't of dive in and do it.
+
+288
+00:18:25.787 --> 00:18:26.770
+<v Larry Augustin>And I didn't know anything about
+
+289
+00:18:26.810 --> 00:18:28.514
+<v Larry Augustin>the things at the time.
+
+290
+00:18:28.815 --> 00:18:30.179
+<v Larry Augustin>I'd been lucky enough to spend my
+
+291
+00:18:30.219 --> 00:18:31.276
+<v Larry Augustin>time at Bell Labs, been lucky
+enough to spend my time at Bell
+
+292
+00:18:31.276 --> 00:18:34.855
+<v Larry Augustin>Labs, where I had taken a few
+courses in Unix, and I had the
+
+293
+00:18:34.915 --> 00:18:37.827
+<v Larry Augustin>opportunity to dive in and really
+to dive in and really play with
+
+294
+00:18:37.847 --> 00:18:39.230
+<v Larry Augustin>some interesting Unix machines.
+
+295
+00:18:41.455 --> 00:18:43.179
+<v Larry Augustin>But out at Stanford, we used, at
+
+296
+00:18:43.299 --> 00:18:43.549
+<v Larry Augustin>the time, Sun workstations for
+most of our work.
+
+297
+00:18:43.549 --> 00:18:43.894
+<v Larry Augustin>And whenever out at Stanford, we
+used, at the time, Sun
+
+298
+00:18:43.894 --> 00:18:43.954
+<v Larry Augustin>workstations for most of our work.
+
+299
+00:18:43.954 --> 00:18:44.605
+<v Larry Augustin>And whenever we'd get a Sun
+
+300
+00:18:44.826 --> 00:18:56.496
+<v Larry Augustin>workstation, one of the things
+that I would help with and did was
+
+301
+00:18:56.796 --> 00:19:00.310
+<v Larry Augustin>to take that machine and install
+all the software that we used to
+
+302
+00:19:00.350 --> 00:19:00.971
+<v Larry Augustin>do our research.
+
+303
+00:19:02.295 --> 00:19:03.790
+<v Larry Augustin>Primarily electronic design
+
+304
+00:19:03.790 --> 00:19:05.050
+<v Larry Augustin>automation tools.
+
+305
+00:19:05.050 --> 00:19:07.240
+<v Larry Augustin>Many of, as I said, were developed
+
+306
+00:19:07.240 --> 00:19:10.510
+<v Larry Augustin>and just given away for free by
+other universities.
+
+307
+00:19:11.170 --> 00:19:16.090
+<v Larry Augustin>I recall carrying around with me
+at the time was a, you know, a
+
+308
+00:19:16.090 --> 00:19:17.050
+<v Larry Augustin>hard disk drive.
+
+309
+00:19:17.050 --> 00:19:18.460
+<v Larry Augustin>And now we would look at it as
+
+310
+00:19:18.490 --> 00:19:21.340
+<v Larry Augustin>kind of a little tiny USB thumb
+drive.
+
+311
+00:19:21.370 --> 00:19:26.290
+<v Larry Augustin>But, you know, when I carried it
+around, it was big and I would
+
+312
+00:19:26.290 --> 00:19:31.920
+<v Larry Augustin>plug that in and, and essentially
+upload all of this free software
+
+313
+00:19:32.910 --> 00:19:34.890
+<v Larry Augustin>onto this commercial machine.
+
+314
+00:19:34.890 --> 00:19:38.070
+<v Larry Augustin>And it was because, it wasn't
+
+315
+00:19:38.070 --> 00:19:42.420
+<v Larry Augustin>because we couldn't afford or get
+any software we wanted.
+
+316
+00:19:42.960 --> 00:19:47.820
+<v Larry Augustin>As a research team at Stanford, we
+had access to to essentially
+
+317
+00:19:47.820 --> 00:19:50.400
+<v Larry Augustin>anything we wanted to access to
+commercially.
+
+318
+00:19:50.430 --> 00:19:51.840
+<v Larry Augustin>We could get that.
+
+319
+00:19:51.840 --> 00:19:55.290
+<v Larry Augustin>But the software that we used was
+
+320
+00:19:55.290 --> 00:19:59.910
+<v Larry Augustin>easier to work with, was better,
+was available for free.
+
+321
+00:20:00.480 --> 00:20:09.650
+<v Larry Augustin>And that's where I really learned
+that, that, uh, a community of
+
+322
+00:20:09.751 --> 00:20:15.280
+<v Larry Augustin>people working together with the
+goal of producing great software
+
+323
+00:20:15.280 --> 00:20:17.669
+<v Larry Augustin>was often producing things that
+were better than what was
+
+324
+00:20:17.689 --> 00:20:19.513
+<v Larry Augustin>available commercially.
+
+325
+00:20:20.740 --> 00:20:23.024
+<v Larry Augustin>And so that's where I began to
+
+326
+00:20:23.084 --> 00:20:27.272
+<v Larry Augustin>learn that I could see that
+difference from early on.
+
+327
+00:20:30.140 --> 00:20:36.669
+<v Larry Augustin>For example, early on, we did much
+of our work in C. And the Sun
+
+328
+00:20:37.029 --> 00:20:46.868
+<v Larry Augustin>machine always came with the C And
+the Sun machine always came with
+
+329
+00:20:46.888 --> 00:20:47.709
+<v Larry Augustin>the C compiler.
+
+330
+00:20:47.749 --> 00:20:50.094
+<v Larry Augustin>C compiler was part of Unix.
+
+331
+00:20:51.921 --> 00:20:57.011
+<v Larry Augustin>But Richard Stallman over at the
+Free Software Foundation at MIT
+
+332
+00:20:57.211 --> 00:21:08.391
+<v Larry Augustin>had started building a C compiler,
+GNU C, which was vastly superior
+
+333
+00:21:09.433 --> 00:21:12.357
+<v Larry Augustin>to what came with the machines
+commercially.
+
+334
+00:21:12.861 --> 00:21:15.766
+<v Larry Augustin>And so we would install it and use
+that.
+
+335
+00:21:15.866 --> 00:21:21.782
+<v Larry Augustin>And again, lucky enough to be at
+Stanford, the gentleman in the
+
+336
+00:21:21.923 --> 00:21:26.054
+<v Larry Augustin>office across the hall from me,
+Michael Tiemann, was one of the
+
+337
+00:21:26.094 --> 00:21:30.646
+<v Larry Augustin>core contributors to GNU C, in
+particular C++.
+
+338
+00:21:32.309 --> 00:21:37.841
+<v Larry Augustin>And we were lucky enough to be
+able to sort of see that evolve
+
+339
+00:21:38.562 --> 00:21:43.712
+<v Larry Augustin>and develop quickly and be
+superior to what was available
+
+340
+00:21:44.293 --> 00:21:44.834
+<v Larry Augustin>commercially.
+
+341
+00:21:45.135 --> 00:21:46.041
+<v Larry Augustin>And so that's where I really
+
+342
+00:21:46.101 --> 00:21:47.163
+<v Larry Augustin>learned that difference.
+
+343
+00:21:49.086 --> 00:21:51.050
+<v Larry Augustin>From early on, though, all that
+
+344
+00:21:51.471 --> 00:21:58.608
+<v Larry Augustin>work was done on these powerful
+Sun workstations, which were
+
+345
+00:21:58.688 --> 00:21:59.289
+<v Larry Augustin>expensive.
+
+346
+00:22:01.052 --> 00:22:03.076
+<v Larry Augustin>And I had this dream of being able
+
+347
+00:22:03.156 --> 00:22:07.726
+<v Larry Augustin>to use Unix and work from home.
+
+348
+00:22:09.729 --> 00:22:10.991
+<v Larry Augustin>That would have been fantastic.
+
+349
+00:22:12.253 --> 00:22:15.160
+<v Larry Augustin>So I began looking around at ways
+to do that.
+
+350
+00:22:17.423 --> 00:22:22.851
+<v Larry Augustin>And it turns out there were
+several people that had begun
+
+351
+00:22:23.251 --> 00:22:29.604
+<v Larry Augustin>releasing variants of Unix that
+ran on the IBM PC.
+
+352
+00:22:29.784 --> 00:22:35.174
+<v Larry Augustin>You're sort of at the time where
+the Intel processors had reached
+
+353
+00:22:35.515 --> 00:22:41.069
+<v Larry Augustin>the point with the release of the
+386, where the processor was
+
+354
+00:22:41.169 --> 00:22:45.280
+<v Larry Augustin>powerful enough to run a real Unix
+virtual machine.
+
+355
+00:22:46.483 --> 00:22:51.111
+<v Larry Augustin>And code from a variety of
+sources, it was the core of Unix,
+
+356
+00:22:51.612 --> 00:22:53.235
+<v Larry Augustin>had begun to be available.
+
+357
+00:22:53.660 --> 00:22:54.804
+<v Larry Augustin>And I had played around with some
+
+358
+00:22:54.844 --> 00:22:55.225
+<v Larry Augustin>other things.
+
+359
+00:22:55.245 --> 00:22:56.791
+<v Larry Augustin>There were some Unix variants that
+
+360
+00:22:56.851 --> 00:23:01.426
+<v Larry Augustin>were commercially available, but
+to be honest, they were slow and
+
+361
+00:23:01.447 --> 00:23:04.492
+<v Larry Augustin>clunky.
+
+362
+00:23:05.113 --> 00:23:06.535
+<v Larry Augustin>So I began trying ones off the
+
+363
+00:23:06.555 --> 00:23:09.884
+<v Larry Augustin>internet, as I did with any
+software.
+
+364
+00:23:11.225 --> 00:23:15.711
+<v Larry Augustin>And I compared two systems at the
+time.
+
+365
+00:23:15.791 --> 00:23:23.946
+<v Larry Augustin>So one was releases of the
+Berkeley Unix system, VSD, that
+
+366
+00:23:24.347 --> 00:23:26.731
+<v Larry Augustin>had been released for PC for the
+386.
+
+367
+00:23:26.731 --> 00:23:34.207
+<v Larry Augustin>And the other was the system that
+this student in Finland, Linus
+
+368
+00:23:34.227 --> 00:23:38.875
+<v Larry Augustin>Tormalds, had begun to put
+together, and that various people
+
+369
+00:23:38.955 --> 00:23:41.624
+<v Larry Augustin>had bundled up systems around it.
+
+370
+00:23:43.207 --> 00:23:45.332
+<v Larry Augustin>And I remember downloading and
+
+371
+00:23:45.372 --> 00:23:51.847
+<v Larry Augustin>installing my first version of
+Linux Slackware.
+
+372
+00:23:53.269 --> 00:24:06.249
+<v Larry Augustin>I want to say it took 40 to 50,
+1.44 megabyte floppy disks to copy
+
+373
+00:24:06.289 --> 00:24:10.855
+<v Larry Augustin>and install a Linux distribution
+at the time.
+
+374
+00:24:11.496 --> 00:24:19.552
+<v Larry Augustin>And in hindsight, looking back, it
+wasn't a very big system, but we
+
+375
+00:24:19.592 --> 00:24:22.481
+<v Larry Augustin>weren't running around with a lot
+of storage in space either.
+
+376
+00:24:22.581 --> 00:24:29.095
+<v Larry Augustin>And managing your collection of
+floppy disks was part of the
+
+377
+00:24:29.135 --> 00:24:29.536
+<v Larry Augustin>challenge.
+
+378
+00:24:31.685 --> 00:24:32.627
+<v Larry Augustin>But it was interesting.
+
+379
+00:24:32.647 --> 00:24:35.153
+<v Larry Augustin>I had enough computer science
+background.
+
+380
+00:24:35.173 --> 00:24:40.369
+<v Larry Augustin>I had done in-depth operating
+system understanding and work that
+
+381
+00:24:40.991 --> 00:24:44.663
+<v Larry Augustin>I understood that the architecture
+of the Berkeley system was, I
+
+382
+00:24:44.683 --> 00:24:50.920
+<v Larry Augustin>don't know if the right word is
+maybe a little bit cleaner, maybe
+
+383
+00:24:50.940 --> 00:24:53.005
+<v Larry Augustin>a little bit more formal, a little
+bit more mature.
+
+384
+00:24:53.025 --> 00:24:59.743
+<v Larry Augustin>However, Linus's system was
+evolving much faster.
+
+385
+00:25:01.285 --> 00:25:04.630
+<v Larry Augustin>And I played with both systems.
+
+386
+00:25:06.233 --> 00:25:08.657
+<v Larry Augustin>The Linux machine was super fast.
+
+387
+00:25:10.403 --> 00:25:16.655
+<v Larry Augustin>And I looked at the, at the time,
+Usenet newsgroups was a big part
+
+388
+00:25:16.675 --> 00:25:17.601
+<v Larry Augustin>of how people communicated.
+
+389
+00:25:17.661 --> 00:25:19.787
+<v Larry Augustin>I looked at the traffic and usage
+
+390
+00:25:20.229 --> 00:25:21.412
+<v Larry Augustin>and the pace of development.
+
+391
+00:25:21.613 --> 00:25:24.906
+<v Larry Augustin>And I said, you know, there are
+
+392
+00:25:25.307 --> 00:25:28.695
+<v Larry Augustin>more sophisticated operating
+system features that the Berkeley
+
+393
+00:25:29.501 --> 00:25:33.447
+<v Larry Augustin>Unix has that Linux does not have
+today.
+
+394
+00:25:35.250 --> 00:25:39.877
+<v Larry Augustin>But the pace of development, this
+path is going to cross.
+
+395
+00:25:40.941 --> 00:25:49.610
+<v Larry Augustin>And so I built a home workstation
+running on a 386 PC running Linux
+
+396
+00:25:50.351 --> 00:26:00.208
+<v Larry Augustin>and brought all of my software
+over that I used that I had gotten
+
+397
+00:26:00.248 --> 00:26:04.902
+<v Larry Augustin>off the internet and was now able
+to pursue my research working from
+
+398
+00:26:04.962 --> 00:26:05.182
+<v Larry Augustin>home.
+
+399
+00:26:08.869 --> 00:26:11.613
+<v Larry Augustin>Other people saw what I had put
+
+400
+00:26:11.713 --> 00:26:12.194
+<v Larry Augustin>together.
+
+401
+00:26:12.214 --> 00:26:14.302
+<v Larry Augustin>I said, that is, that is really
+
+402
+00:26:14.422 --> 00:26:14.783
+<v Larry Augustin>cool.
+
+403
+00:26:14.803 --> 00:26:16.126
+<v Larry Augustin>I want one of those too.
+
+404
+00:26:16.146 --> 00:26:19.975
+<v Larry Augustin>A business is born.
+
+405
+00:26:19.975 --> 00:26:23.285
+<v Larry Augustin>I want I want to say this was, at
+
+406
+00:26:23.305 --> 00:26:27.353
+<v Larry Augustin>this point, we have reached the
+early 90s.
+
+407
+00:26:30.080 --> 00:26:43.822
+<v Larry Augustin>I think around 93 was when I
+looked at this and said, this was
+
+408
+00:26:43.842 --> 00:26:47.850
+<v Larry Augustin>shortly after I had finished my
+PhD, I defended my thesis.
+
+409
+00:26:47.870 --> 00:26:52.441
+<v Larry Augustin>I was working as a research staff
+at Stanford.
+
+410
+00:26:52.481 --> 00:26:55.786
+<v Larry Augustin>And I realized I could have, as
+one person characterized it to me
+
+411
+00:27:03.921 --> 00:27:06.024
+<v Larry Augustin>as a lemonade stand as a kid.
+
+412
+00:27:06.045 --> 00:27:07.207
+<v Larry Augustin>But I started a side business of
+
+413
+00:27:07.227 --> 00:27:15.804
+<v Larry Augustin>selling people pre-configured
+Linux workstations.
+
+414
+00:27:15.824 --> 00:27:28.367
+<v Larry Augustin>And I went from sort of friends
+and family to, there was this new
+
+415
+00:27:28.487 --> 00:27:32.719
+<v Larry Augustin>thing that had developed on the
+internet called the World Wide
+
+416
+00:27:32.739 --> 00:27:32.819
+<v Larry Augustin>Web.
+
+417
+00:27:32.819 --> 00:27:32.889
+<v Larry Augustin>You could create, there was a new
+
+418
+00:27:32.889 --> 00:27:32.939
+<v Larry Augustin>called the World Wide Web.
+
+419
+00:27:32.939 --> 00:27:33.009
+<v Larry Augustin>You could create, there was a new
+
+420
+00:27:33.009 --> 00:27:34.388
+<v Larry Augustin>brand new thing called a web
+browser.
+
+421
+00:27:37.540 --> 00:27:38.562
+<v Larry Augustin>You could create a visual UI.
+
+422
+00:27:38.602 --> 00:27:41.146
+<v Larry Augustin>By the way, this is all pre-CSS.
+
+423
+00:27:48.320 --> 00:27:49.021
+<v Larry Augustin>Pre-JavaScript.
+
+424
+00:27:49.101 --> 00:27:53.169
+<v Larry Augustin>You had HTML with some basic
+
+425
+00:27:53.189 --> 00:27:54.070
+<v Larry Augustin>structuring tags.
+
+426
+00:27:54.211 --> 00:27:57.036
+<v Larry Augustin>And I put up a web page.
+
+427
+00:27:57.036 --> 00:27:58.562
+<v Larry Augustin>A web page, a web page offering
+Linux workstations.
+
+428
+00:27:58.582 --> 00:27:59.363
+<v Larry Augustin>And it was kind of odd.
+
+429
+00:27:59.383 --> 00:28:09.381
+<v Larry Augustin>At this time, as I said, the web
+
+430
+00:28:09.481 --> 00:28:09.882
+<v Larry Augustin>was new.
+
+431
+00:28:11.466 --> 00:28:15.517
+<v Larry Augustin>Intel had discovered the web and
+
+432
+00:28:15.557 --> 00:28:16.519
+<v Larry Augustin>Intel had a website.
+
+433
+00:28:16.519 --> 00:28:16.579
+<v Larry Augustin>And on their website, they listed
+
+434
+00:28:16.579 --> 00:28:16.965
+<v Larry Augustin>other companies.
+
+435
+00:28:16.965 --> 00:28:17.025
+<v Larry Augustin>web and Intel had a website.
+
+436
+00:28:17.025 --> 00:28:17.105
+<v Larry Augustin>And on their website, they listed
+other companies.
+
+437
+00:28:17.105 --> 00:28:23.265
+<v Larry Augustin>They listed companies selling
+Intel-based computers.
+
+438
+00:28:23.285 --> 00:28:24.708
+<v Larry Augustin>And I think they had five
+companies listed.
+
+439
+00:28:28.701 --> 00:28:32.772
+<v Larry Augustin>And I think they had five
+companies selling Intel-based
+
+440
+00:28:32.873 --> 00:28:33.414
+<v Larry Augustin>computers.
+
+441
+00:28:34.321 --> 00:28:35.984
+<v Larry Augustin>And I think they had five
+
+442
+00:28:37.065 --> 00:28:43.916
+<v Larry Augustin>companies listed on the Intel
+website that were selling Intel
+
+443
+00:28:43.936 --> 00:28:46.324
+<v Larry Augustin>computers, Intel-based computers
+on the internet.
+
+444
+00:28:46.384 --> 00:28:50.934
+<v Larry Augustin>They were Dell, Compaq, Gateway,
+and me.
+
+445
+00:28:52.844 --> 00:28:54.128
+<v Larry Augustin>And I think there was one other.
+
+446
+00:28:54.148 --> 00:28:56.034
+<v Larry Augustin>I'm not sure who the other was.
+
+447
+00:28:58.363 --> 00:29:03.389
+<v Larry Augustin>And talk about a surprise.
+
+448
+00:29:03.429 --> 00:29:04.571
+<v Larry Augustin>Where does that come from?
+
+449
+00:29:07.775 --> 00:29:09.317
+<v Larry Augustin>But I was in some excellent
+company.
+
+450
+00:29:10.304 --> 00:29:14.271
+<v Elisabetta Mori>What was the name of the website?
+So that was VA Research.
+
+451
+00:29:14.862 --> 00:29:15.243
+<v Larry Augustin>Okay.
+
+452
+00:29:15.624 --> 00:29:17.912
+<v Larry Augustin>So that is when VA Research was
+
+453
+00:29:17.992 --> 00:29:18.253
+<v Larry Augustin>born.
+
+454
+00:29:19.083 --> 00:29:20.630
+<v Larry Augustin>That's when VA Research was born.
+
+455
+00:29:21.140 --> 00:29:22.605
+<v Elisabetta Mori>And what's the name?
+VA?
+
+456
+00:29:26.442 --> 00:29:27.664
+<v Larry Augustin>Oh, oh, oh, oh.
+
+457
+00:29:27.704 --> 00:29:30.691
+<v Larry Augustin>So I had started doing this with
+
+458
+00:29:30.771 --> 00:29:32.855
+<v Larry Augustin>my co-worker and friend, James
+Vera.
+
+459
+00:29:33.982 --> 00:29:38.232
+<v Larry Augustin>And so we were trying to figure
+out what do we call this as we put
+
+460
+00:29:38.252 --> 00:29:38.754
+<v Larry Augustin>it up there.
+
+461
+00:29:38.814 --> 00:29:40.382
+<v Larry Augustin>And James and I were having this
+
+462
+00:29:40.402 --> 00:29:41.184
+<v Larry Augustin>conversation.
+
+463
+00:29:41.926 --> 00:29:45.073
+<v Larry Augustin>And we were inspired by Hewlett
+
+464
+00:29:45.113 --> 00:29:50.249
+<v Larry Augustin>and Packard in the garage in
+Silicon Valley.
+
+465
+00:29:50.831 --> 00:29:52.555
+<v Larry Augustin>So we had Vera and Augustin.
+
+466
+00:29:54.345 --> 00:29:56.231
+<v Larry Augustin>But in hindsight, probably a
+
+467
+00:29:56.291 --> 00:29:57.074
+<v Larry Augustin>terrible name.
+
+468
+00:30:00.224 --> 00:30:01.627
+<v Larry Augustin>Everyone thinks the company was
+
+469
+00:30:01.667 --> 00:30:02.409
+<v Larry Augustin>from Virginia.
+
+470
+00:30:02.429 --> 00:30:05.595
+<v Larry Augustin>It was VA, the abbreviation.
+
+471
+00:30:06.603 --> 00:30:08.268
+<v Larry Augustin>But that's what we ended up with.
+
+472
+00:30:09.271 --> 00:30:10.354
+<v Larry Augustin>That's what we ended up with.
+
+473
+00:30:12.262 --> 00:30:18.791
+<v Larry Augustin>And so we launched that business,
+I want to say around 93, we began
+
+474
+00:30:18.811 --> 00:30:19.272
+<v Larry Augustin>doing this.
+
+475
+00:30:29.924 --> 00:30:32.289
+<v Larry Augustin>People would send us a check.
+
+476
+00:30:32.790 --> 00:30:35.456
+<v Larry Augustin>This is just an amazing way of
+bootstrapping.
+
+477
+00:30:35.520 --> 00:30:41.713
+<v Larry Augustin>And to me, I always look for
+today, I love the entrepreneurial
+
+478
+00:30:41.753 --> 00:30:45.426
+<v Larry Augustin>part of the world and people
+launching and building things.
+
+479
+00:30:45.566 --> 00:30:53.126
+<v Larry Augustin>And we got people to send us
+checks for the computers they
+
+480
+00:30:53.186 --> 00:30:57.655
+<v Larry Augustin>wanted, because we were selling a
+physical device.
+
+481
+00:30:58.200 --> 00:31:01.708
+<v Larry Augustin>And to me, these things were
+hugely expensive.
+
+482
+00:31:01.768 --> 00:31:04.286
+<v Larry Augustin>I mean, somewhere between $1,000
+and $3,000.
+
+483
+00:31:07.283 --> 00:31:15.273
+<v Larry Augustin>And I couldn't afford to buy the
+parts to send someone.
+
+484
+00:31:16.334 --> 00:31:19.061
+<v Larry Augustin>Well, a system that had been put
+together.
+
+485
+00:31:20.102 --> 00:31:23.088
+<v Larry Augustin>People sent us a check ahead of
+time.
+
+486
+00:31:23.709 --> 00:31:29.042
+<v Larry Augustin>We would cash the check, go buy
+the parts, have an assembly party
+
+487
+00:31:29.083 --> 00:31:35.716
+<v Larry Augustin>in the living room of my apartment
+and ship them out.
+
+488
+00:31:37.423 --> 00:31:41.190
+<v Larry Augustin>And that was what the business was
+initially.
+
+489
+00:31:41.690 --> 00:31:45.501
+<v Larry Augustin>And then sometimes we would get a
+little more sophisticated.
+
+490
+00:31:45.561 --> 00:31:51.554
+<v Larry Augustin>We'd run up the bill on our credit
+cards and get a little bit of a
+
+491
+00:31:51.594 --> 00:31:56.511
+<v Larry Augustin>better deal on parts sometime, be
+willing to buy ahead a little bit.
+
+492
+00:31:56.912 --> 00:31:58.797
+<v Larry Augustin>But that's how we funded the
+business.
+
+493
+00:31:58.797 --> 00:32:01.305
+<v Larry Augustin>That's the business.
+
+494
+00:32:01.305 --> 00:32:02.327
+<v Larry Augustin>That's how we funded the business.
+
+495
+00:32:03.789 --> 00:32:12.166
+<v Larry Augustin>I had been doing some consulting
+work for a company in the EDA
+
+496
+00:32:12.226 --> 00:32:19.957
+<v Larry Augustin>space and struck a deal where I
+was able to work out of that
+
+497
+00:32:20.077 --> 00:32:20.498
+<v Larry Augustin>space.
+
+498
+00:32:23.222 --> 00:32:27.989
+<v Larry Augustin>In Menlo Park and struck a deal
+
+499
+00:32:28.049 --> 00:32:34.397
+<v Larry Augustin>there and began working that sort
+of more full time.
+
+500
+00:32:38.865 --> 00:32:45.003
+<v Elisabetta Mori>So how did the company evolve?
+And so we went through.
+
+501
+00:32:45.023 --> 00:32:48.307
+<v Larry Augustin>So I eventually decided I am
+spending more time on this side
+
+502
+00:32:48.588 --> 00:33:02.951
+<v Larry Augustin>hobby than I am doing my research
+job at Stanford.
+
+503
+00:33:03.492 --> 00:33:08.204
+<v Larry Augustin>So I decided it was time to dive
+in and do that a full time.
+
+504
+00:33:09.728 --> 00:33:17.687
+<v Larry Augustin>I was also inspired here by the
+fact that it's kind of what you do
+
+505
+00:33:17.707 --> 00:33:21.355
+<v Larry Augustin>around a place like Silicon Valley
+and Stanford.
+
+506
+00:33:22.963 --> 00:33:27.292
+<v Larry Augustin>You see other people doing this
+and you see people diving into
+
+507
+00:33:27.332 --> 00:33:29.015
+<v Larry Augustin>this full time.
+
+508
+00:33:30.582 --> 00:33:31.985
+<v Larry Augustin>So I dove into it full time.
+
+509
+00:33:32.005 --> 00:33:33.628
+<v Larry Augustin>I looked for help there.
+
+510
+00:33:33.728 --> 00:33:42.526
+<v Larry Augustin>At one point, I had found a
+
+511
+00:33:42.586 --> 00:33:46.535
+<v Larry Augustin>company I was partnering with
+called Umax, a Taiwanese company.
+
+512
+00:33:50.644 --> 00:33:52.567
+<v Larry Augustin>We worked out of Umax for a little
+while.
+
+513
+00:33:53.970 --> 00:33:58.121
+<v Larry Augustin>Just whatever we could do to sort
+of fund and keep the business
+
+514
+00:33:58.181 --> 00:33:58.622
+<v Larry Augustin>around.
+
+515
+00:34:02.487 --> 00:34:06.814
+<v Larry Augustin>As I said, people would send us
+
+516
+00:34:06.874 --> 00:34:08.696
+<v Larry Augustin>checks to fund the business.
+
+517
+00:34:08.795 --> 00:34:12.264
+<v Larry Augustin>I got my first office, a little
+
+518
+00:34:12.304 --> 00:34:15.550
+<v Larry Augustin>place called Pear Avenue in
+Mountain View.
+
+519
+00:34:17.914 --> 00:34:23.985
+<v Larry Augustin>Coincidentally, now the Microsoft
+Silicon Valley building is where
+
+520
+00:34:24.045 --> 00:34:32.297
+<v Larry Augustin>my office was in Mountain View
+with VA Linux.
+
+521
+00:34:34.303 --> 00:34:39.754
+<v Larry Augustin>There was a, again, I have no
+idea, I have no idea sometimes why
+
+522
+00:34:39.793 --> 00:34:43.306
+<v Larry Augustin>these things happen, but I was
+lucky enough to find office space.
+
+523
+00:34:43.949 --> 00:34:47.101
+<v Larry Augustin>To be honest, I don't know why
+they were willing to sign a lease
+
+524
+00:34:47.222 --> 00:34:52.010
+<v Larry Augustin>with a kid who was barely breaking
+even.
+
+525
+00:34:52.350 --> 00:34:58.464
+<v Larry Augustin>I think it was a rental
+foreclosure and I got an office
+
+526
+00:34:59.105 --> 00:35:01.989
+<v Larry Augustin>and fired up the business for
+real.
+
+527
+00:35:02.010 --> 00:35:07.724
+<v Larry Augustin>We ran hand to mouth, was the
+business.
+
+528
+00:35:07.884 --> 00:35:13.363
+<v Larry Augustin>Literally, a big part of the job
+was how do you juggle checks
+
+529
+00:35:13.423 --> 00:35:18.194
+<v Larry Augustin>coming in from customers so that
+you could buy the parts to create
+
+530
+00:35:18.234 --> 00:35:22.246
+<v Larry Augustin>the systems to send to those
+customers, balancing that.
+
+531
+00:35:24.250 --> 00:35:30.886
+<v Larry Augustin>At the same time, I was very
+active with the Linux groups on
+
+532
+00:35:30.906 --> 00:35:36.616
+<v Larry Augustin>the internet, staying close to
+that, watching the development of
+
+533
+00:35:36.676 --> 00:35:41.131
+<v Larry Augustin>that, because all the software we
+used was software that was coming
+
+534
+00:35:41.172 --> 00:35:42.114
+<v Larry Augustin>off the internet for free.
+
+535
+00:35:43.643 --> 00:35:45.527
+<v Larry Augustin>I really had this vision, if you
+
+536
+00:35:45.587 --> 00:35:45.908
+<v Larry Augustin>will.
+
+537
+00:35:47.371 --> 00:35:48.995
+<v Larry Augustin>Dell had been very inspirational
+
+538
+00:35:49.035 --> 00:35:49.275
+<v Larry Augustin>to me.
+
+539
+00:35:50.102 --> 00:35:52.168
+<v Larry Augustin>If you look at the start of Dell
+
+540
+00:35:52.188 --> 00:35:57.906
+<v Larry Augustin>Computers with Michael Dell and
+his dorm room at, I think it was
+
+541
+00:35:58.006 --> 00:36:01.352
+<v Larry Augustin>UT Austin, assembling PCs.
+
+542
+00:36:02.714 --> 00:36:04.301
+<v Larry Augustin>I was doing the same, except I was
+
+543
+00:36:04.341 --> 00:36:06.768
+<v Larry Augustin>doing it in the Unix world.
+
+544
+00:36:09.033 --> 00:36:13.405
+<v Larry Augustin>If you look, Dell is effectively a
+
+545
+00:36:13.765 --> 00:36:15.368
+<v Larry Augustin>logistics company in many ways.
+
+546
+00:36:16.049 --> 00:36:22.423
+<v Larry Augustin>That is, they bring together a lot
+
+547
+00:36:22.563 --> 00:36:25.469
+<v Larry Augustin>of components to create what they
+create.
+
+548
+00:36:26.811 --> 00:36:30.264
+<v Larry Augustin>We were doing the same, bringing
+together components to assemble
+
+549
+00:36:30.284 --> 00:36:32.712
+<v Larry Augustin>the hardware, but we were doing a
+similar thing on the software
+
+550
+00:36:32.732 --> 00:36:32.973
+<v Larry Augustin>side.
+
+551
+00:36:34.442 --> 00:36:36.646
+<v Larry Augustin>I thought of what we were doing as
+
+552
+00:36:36.726 --> 00:36:42.421
+<v Larry Augustin>extending the Dell model from not
+just Dell for hardware, but Dell
+
+553
+00:36:42.461 --> 00:36:43.123
+<v Larry Augustin>for software.
+
+554
+00:36:43.864 --> 00:36:47.252
+<v Larry Augustin>That is, we are going to assemble,
+
+555
+00:36:47.412 --> 00:36:55.010
+<v Larry Augustin>package, configure, maintain,
+support the software side in a
+
+556
+00:36:55.070 --> 00:36:56.392
+<v Larry Augustin>similar model.
+
+557
+00:36:56.653 --> 00:36:59.502
+<v Larry Augustin>Our supply chain for software was
+
+558
+00:36:59.542 --> 00:37:00.003
+<v Larry Augustin>the internet.
+
+559
+00:37:01.307 --> 00:37:03.612
+<v Larry Augustin>At the time, it was all called
+
+560
+00:37:03.673 --> 00:37:04.455
+<v Larry Augustin>free software.
+
+561
+00:37:08.423 --> 00:37:10.547
+<v Larry Augustin>The business became about bringing
+
+562
+00:37:10.607 --> 00:37:15.316
+<v Larry Augustin>the two of those together to
+create a traditional Unix
+
+563
+00:37:15.440 --> 00:37:22.190
+<v Larry Augustin>workstation business in the line
+of Sun, but where the hardware was
+
+564
+00:37:22.731 --> 00:37:27.463
+<v Larry Augustin>open Intel technology hardware,
+where we could bring together
+
+565
+00:37:27.523 --> 00:37:29.327
+<v Larry Augustin>components from a variety of
+places.
+
+566
+00:37:29.849 --> 00:37:33.423
+<v Larry Augustin>The software was open free
+software, where we could bring
+
+567
+00:37:33.463 --> 00:37:36.852
+<v Larry Augustin>together software from a variety
+of places.
+
+568
+00:37:36.892 --> 00:37:42.828
+<v Larry Augustin>The combination of that was really
+the vision and view of, at the
+
+569
+00:37:42.888 --> 00:37:43.990
+<v Larry Augustin>time, VA research.
+
+570
+00:37:44.711 --> 00:37:47.676
+<v Larry Augustin>We decided research was in the
+
+571
+00:37:47.696 --> 00:37:51.228
+<v Larry Augustin>wrong connotation and Linux was
+beginning to get some reference
+
+572
+00:37:51.288 --> 00:37:53.954
+<v Larry Augustin>and brand name, and it became VA
+Linux.
+
+573
+00:37:56.883 --> 00:38:06.015
+<v Larry Augustin>As I was doing this, two of my
+friends from Stanford had raised
+
+574
+00:38:06.436 --> 00:38:07.097
+<v Larry Augustin>venture funding.
+
+575
+00:38:11.643 --> 00:38:14.387
+<v Larry Augustin>Two gentlemen by the name of Jerry
+
+576
+00:38:14.407 --> 00:38:15.649
+<v Larry Augustin>Yang and David Filo.
+
+577
+00:38:17.191 --> 00:38:20.216
+<v Larry Augustin>You may recall those names as
+
+578
+00:38:20.276 --> 00:38:24.527
+<v Larry Augustin>their little company they had
+started was Yahoo.
+
+579
+00:38:24.587 --> 00:38:31.366
+<v Larry Augustin>Dave and Jerry were both PhD
+students in EDA, Electronic Design
+
+580
+00:38:31.406 --> 00:38:33.611
+<v Larry Augustin>Automation, at Stanford.
+
+581
+00:38:33.651 --> 00:38:34.713
+<v Larry Augustin>They had started this little
+
+582
+00:38:34.753 --> 00:38:40.252
+<v Larry Augustin>directory of the web on a machine
+under their desk in their office
+
+583
+00:38:40.333 --> 00:38:40.854
+<v Larry Augustin>at Stanford.
+
+584
+00:38:41.842 --> 00:38:47.453
+<v Larry Augustin>And Dave, Jerry, and I, and there
+
+585
+00:38:47.493 --> 00:38:51.506
+<v Larry Augustin>was a fourth person, David Koo,
+had been considering ways that we
+
+586
+00:38:51.526 --> 00:38:55.015
+<v Larry Augustin>could turn the things we were
+doing into businesses.
+
+587
+00:38:57.284 --> 00:38:58.446
+<v Larry Augustin>We looked at the internet.
+
+588
+00:39:00.290 --> 00:39:01.873
+<v Larry Augustin>We considered various ways you
+
+589
+00:39:01.913 --> 00:39:06.225
+<v Larry Augustin>could turn the internet into
+commerce, create a business.
+
+590
+00:39:06.245 --> 00:39:15.402
+<v Larry Augustin>At the same time, I was doing this
+Linux workstation idea.
+
+591
+00:39:16.604 --> 00:39:22.712
+<v Larry Augustin>They were playing with this
+directory of the internet, and
+
+592
+00:39:23.634 --> 00:39:31.066
+<v Larry Augustin>they had gotten Sequoia Capital to
+fund that.
+
+593
+00:39:32.888 --> 00:39:40.057
+<v Larry Augustin>They said one day, said, Larry,
+you ought to meet the guys up at
+
+594
+00:39:40.077 --> 00:39:46.232
+<v Larry Augustin>Sequoia, gentlemen by the name of
+Doug Leone, and see if there's a
+
+595
+00:39:46.292 --> 00:39:52.609
+<v Larry Augustin>way you could take capital and
+grow what you're doing.
+
+596
+00:39:52.830 --> 00:39:54.774
+<v Larry Augustin>I said, well, that sounds like a
+great idea.
+
+597
+00:39:54.834 --> 00:40:00.169
+<v Larry Augustin>We've been living hand to mouth,
+trying to build this business, and
+
+598
+00:40:01.291 --> 00:40:06.005
+<v Larry Augustin>all along trying to do interesting
+things with the growth of Linux
+
+599
+00:40:06.085 --> 00:40:08.009
+<v Larry Augustin>and development through software.
+
+600
+00:40:08.831 --> 00:40:10.374
+<v Larry Augustin>They introduced me to Doug Leone
+
+601
+00:40:10.995 --> 00:40:12.062
+<v Larry Augustin>over at Sequoia Capital.
+
+602
+00:40:12.463 --> 00:40:14.968
+<v Larry Augustin>I went up to Sequoia, had my first
+
+603
+00:40:15.009 --> 00:40:15.289
+<v Larry Augustin>pitch.
+
+604
+00:40:16.692 --> 00:40:18.280
+<v Larry Augustin>In hindsight, I have no idea why
+
+605
+00:40:18.300 --> 00:40:19.583
+<v Larry Augustin>Doug continued to talk to me.
+
+606
+00:40:19.603 --> 00:40:23.091
+<v Larry Augustin>He knew more about entrepreneurs
+
+607
+00:40:23.152 --> 00:40:24.615
+<v Larry Augustin>than I knew about anything.
+
+608
+00:40:26.241 --> 00:40:32.969
+<v Larry Augustin>And it was a fantastic first
+
+609
+00:40:33.029 --> 00:40:41.137
+<v Larry Augustin>conversation, but all of their
+checks said, oh, this Linux stuff,
+
+610
+00:40:41.260 --> 00:40:41.961
+<v Larry Augustin>I don't know.
+
+611
+00:40:41.981 --> 00:40:43.924
+<v Larry Augustin>It's kind of a toy.
+
+612
+00:40:46.308 --> 00:40:51.096
+<v Larry Augustin>We really like you, Larry, but
+we're not ready to invest
+
+613
+00:40:51.140 --> 00:40:51.681
+<v Larry Augustin>something there.
+
+614
+00:40:52.082 --> 00:40:54.087
+<v Larry Augustin>And I said, that's fine.
+
+615
+00:40:55.450 --> 00:40:56.433
+<v Larry Augustin>I didn't know anybody else.
+
+616
+00:40:56.453 --> 00:40:57.841
+<v Larry Augustin>I knew nothing about venture
+
+617
+00:40:57.861 --> 00:40:58.362
+<v Larry Augustin>capital.
+
+618
+00:40:58.422 --> 00:40:59.946
+<v Larry Augustin>I really had no idea what I was
+
+619
+00:40:59.986 --> 00:41:00.267
+<v Larry Augustin>doing.
+
+620
+00:41:02.592 --> 00:41:04.015
+<v Larry Augustin>But every few months, I would send
+
+621
+00:41:04.080 --> 00:41:12.415
+<v Larry Augustin>Doug an email update with how the
+business was going and what was
+
+622
+00:41:12.455 --> 00:41:13.540
+<v Larry Augustin>happening in the world of Linux.
+
+623
+00:41:14.442 --> 00:41:15.724
+<v Larry Augustin>And it was interesting because
+
+624
+00:41:15.744 --> 00:41:19.951
+<v Larry Augustin>Doug is an incredibly smart
+gentleman.
+
+625
+00:41:20.693 --> 00:41:25.405
+<v Larry Augustin>And he did a little bit of the
+same things when I looked at
+
+626
+00:41:28.291 --> 00:41:29.733
+<v Larry Augustin>Berkeley Unix versus Linux.
+
+627
+00:41:29.814 --> 00:41:30.796
+<v Larry Augustin>I ultimately made the decision
+
+628
+00:41:30.880 --> 00:41:34.488
+<v Larry Augustin>that the acceleration path of
+Linux is higher.
+
+629
+00:41:34.508 --> 00:41:38.000
+<v Larry Augustin>Doug had done certain kind of
+asking and questions around.
+
+630
+00:41:38.080 --> 00:41:45.113
+<v Larry Augustin>And he had kept hearing, no, Linux
+is kind of a toy.
+
+631
+00:41:45.153 --> 00:41:46.956
+<v Larry Augustin>But he was watching things
+develop.
+
+632
+00:41:47.200 --> 00:41:50.064
+<v Larry Augustin>And I kept sending him updates.
+
+633
+00:41:50.925 --> 00:41:57.475
+<v Larry Augustin>And Forbes magazine had figured
+
+634
+00:41:57.495 --> 00:41:57.896
+<v Larry Augustin>this out.
+
+635
+00:41:57.956 --> 00:41:59.521
+<v Larry Augustin>And they put Linus Torvalds on the
+
+636
+00:41:59.561 --> 00:42:01.564
+<v Larry Augustin>cover.
+
+637
+00:42:03.247 --> 00:42:06.772
+<v Larry Augustin>And it was kind of a pivotal
+
+638
+00:42:06.832 --> 00:42:08.455
+<v Larry Augustin>moment.
+
+639
+00:42:08.715 --> 00:42:09.757
+<v Larry Augustin>I had sent this to Doug.
+
+640
+00:42:10.801 --> 00:42:17.152
+<v Larry Augustin>And Doug, and by the way, this was
+also shortly after Red Hat
+
+641
+00:42:17.252 --> 00:42:22.824
+<v Larry Augustin>Software and Bob Young had gotten
+funded.
+
+642
+00:42:23.184 --> 00:42:30.095
+<v Larry Augustin>Eric Trone, Bob Young, that whole
+team, great, great people had
+
+643
+00:42:30.135 --> 00:42:30.776
+<v Larry Augustin>gotten funded.
+
+644
+00:42:31.300 --> 00:42:32.864
+<v Larry Augustin>And Sequoia looked over.
+
+645
+00:42:32.964 --> 00:42:36.272
+<v Larry Augustin>And I think it was literally
+something to the phrase of, Larry,
+
+646
+00:42:38.462 --> 00:42:43.833
+<v Larry Augustin>we don't quite know what's going
+on here, but we need to do
+
+647
+00:42:43.893 --> 00:42:46.905
+<v Larry Augustin>something in this Linux space
+because something is happening
+
+648
+00:42:46.945 --> 00:42:47.166
+<v Larry Augustin>there.
+
+649
+00:42:47.908 --> 00:42:49.293
+<v Larry Augustin>And you're the only guy we know.
+
+650
+00:42:54.164 --> 00:43:00.155
+<v Larry Augustin>Which, if you know Doug, is just a
+fantastic endorsement, if you
+
+651
+00:43:00.195 --> 00:43:00.376
+<v Larry Augustin>will.
+
+652
+00:43:03.124 --> 00:43:03.966
+<v Larry Augustin>Incredible person.
+
+653
+00:43:04.046 --> 00:43:05.169
+<v Larry Augustin>And they showed up.
+
+654
+00:43:05.329 --> 00:43:07.694
+<v Larry Augustin>And I took the first outside
+
+655
+00:43:07.734 --> 00:43:08.175
+<v Larry Augustin>investment.
+
+656
+00:43:10.222 --> 00:43:17.371
+<v Larry Augustin>And at the same time, I was really
+
+657
+00:43:17.451 --> 00:43:22.958
+<v Larry Augustin>about advancing the state of the
+world of free software and what
+
+658
+00:43:22.958 --> 00:43:23.843
+<v Larry Augustin>you could and what you could do
+with Linux.
+
+659
+00:43:26.027 --> 00:43:30.494
+<v Larry Augustin>I had been tracking down contacts
+at Intel for years.
+
+660
+00:43:31.476 --> 00:43:34.386
+<v Larry Augustin>And Intel felt something was going
+on there as well.
+
+661
+00:43:34.907 --> 00:43:42.285
+<v Larry Augustin>So Intel joined the Series A to
+invest in us with the idea that
+
+662
+00:43:43.187 --> 00:43:47.995
+<v Larry Augustin>this could be a part of the market
+in which they were not a major
+
+663
+00:43:48.055 --> 00:43:51.586
+<v Larry Augustin>player, but now they could begin
+to move into the server
+
+664
+00:43:51.867 --> 00:43:56.115
+<v Larry Augustin>workstation world with Unix and
+Linux.
+
+665
+00:43:57.021 --> 00:44:07.755
+<v Larry Augustin>And so that effectively moved us
+from a small business to, okay,
+
+666
+00:44:07.815 --> 00:44:10.000
+<v Larry Augustin>now how do we build a big
+business?
+
+667
+00:44:11.763 --> 00:44:12.644
+<v Larry Augustin>That was a big step.
+
+668
+00:44:13.546 --> 00:44:14.427
+<v Larry Augustin>That was a big step.
+
+669
+00:44:17.692 --> 00:44:23.947
+<v Larry Augustin>I would be remiss to not point out
+just, again, how lucky we were to
+
+670
+00:44:24.007 --> 00:44:27.595
+<v Larry Augustin>be in the right place at the right
+time with people around Silicon
+
+671
+00:44:27.680 --> 00:44:31.787
+<v Larry Augustin>Valley and the community of people
+that was building the software.
+
+672
+00:44:35.794 --> 00:44:41.328
+<v Larry Augustin>I hired a gentleman, Leonard
+Zubkoff, as our CTO, who was one
+
+673
+00:44:41.388 --> 00:44:41.869
+<v Larry Augustin>of the...
+
+674
+00:44:42.390 --> 00:44:44.354
+<v Larry Augustin>Leonard ultimately did the first
+
+675
+00:44:44.434 --> 00:44:49.048
+<v Larry Augustin>multiprocessor kernel work
+developing Linux.
+
+676
+00:44:49.289 --> 00:44:51.975
+<v Larry Augustin>He did significant work on other
+parts of the system.
+
+677
+00:44:55.385 --> 00:45:02.785
+<v Larry Augustin>We were always contributing back
+or looking for ways to be part of
+
+678
+00:45:02.966 --> 00:45:03.968
+<v Larry Augustin>the help of that community.
+
+679
+00:45:04.348 --> 00:45:11.608
+<v Larry Augustin>At one time, interestingly, much
+
+680
+00:45:11.628 --> 00:45:15.757
+<v Larry Augustin>of the software that we developed
+was built by Richard Stallman's
+
+681
+00:45:16.258 --> 00:45:16.800
+<v Larry Augustin>Free Software Foundation.
+
+682
+00:45:16.800 --> 00:45:16.863
+<v Larry Augustin>At one time, the machine that was,
+
+683
+00:45:16.863 --> 00:45:16.913
+<v Larry Augustin>Richard Stallman's Free Software
+Foundation.
+
+684
+00:45:16.913 --> 00:45:18.786
+<v Larry Augustin>At one time, the machine that was,
+in fact, the machine on the
+
+685
+00:45:19.026 --> 00:45:26.442
+<v Larry Augustin>internet distributing that
+software on the internet
+
+686
+00:45:26.542 --> 00:45:30.510
+<v Larry Augustin>distributing that software sat in
+the back of our office.
+
+687
+00:45:32.273 --> 00:45:40.352
+<v Larry Augustin>It was a MIT.edu internet address,
+but the actual server was in the
+
+688
+00:45:40.412 --> 00:45:44.304
+<v Larry Augustin>back of our office because we
+donated that that to the Free
+
+689
+00:45:44.344 --> 00:45:47.331
+<v Larry Augustin>Software Foundation to distribute
+software.
+
+690
+00:45:47.371 --> 00:45:49.315
+<v Larry Augustin>And you think today about the
+cloud.
+
+691
+00:45:50.842 --> 00:46:01.776
+<v Larry Augustin>In the late 90s, the cloud was a
+smaller machine with just a lot of
+
+692
+00:46:01.816 --> 00:46:07.408
+<v Larry Augustin>disk drives sitting under
+somebody's desk in the back of an
+
+693
+00:46:07.508 --> 00:46:09.732
+<v Larry Augustin>office in Mount V, if you will.
+
+694
+00:46:09.932 --> 00:46:12.036
+<v Larry Augustin>And that was common in those days.
+
+695
+00:46:13.142 --> 00:46:19.774
+<v Larry Augustin>So that began sort of the launch
+of how do we turn this into a
+
+696
+00:46:19.835 --> 00:46:20.436
+<v Larry Augustin>larger business.
+
+697
+00:46:22.466 --> 00:46:24.752
+<v Elisabetta Mori>So what year was this when you
+
+698
+00:46:24.792 --> 00:46:25.254
+<v Elisabetta Mori>finally...
+
+699
+00:46:25.254 --> 00:46:30.286
+<v Larry Augustin>Uh, that was probably 1997.
+
+700
+00:46:30.286 --> 00:46:33.763
+<v Larry Augustin>And we grew the business very
+rapidly from that point.
+
+701
+00:46:33.783 --> 00:46:34.722
+<v Larry Augustin>We went public in 99.
+
+702
+00:46:50.465 --> 00:46:54.011
+<v Larry Augustin>So it was at most two years from
+
+703
+00:46:54.131 --> 00:46:55.453
+<v Larry Augustin>first funding to IPO.
+
+704
+00:46:55.473 --> 00:46:58.278
+<v Larry Augustin>And the world of Linux was just on
+
+705
+00:46:58.298 --> 00:46:58.388
+<v Larry Augustin>fire then.
+
+706
+00:46:58.388 --> 00:46:58.441
+<v Larry Augustin>I remember just on fire then.
+
+707
+00:46:58.441 --> 00:47:01.306
+<v Larry Augustin>I remember we helped organize some
+of the first large-scale Linux
+
+708
+00:47:01.346 --> 00:47:04.230
+<v Larry Augustin>events in Silicon Valley.
+
+709
+00:47:08.280 --> 00:47:09.962
+<v Larry Augustin>At some point, you don't quite
+
+710
+00:47:10.543 --> 00:47:17.292
+<v Larry Augustin>realize the scale of the internet
+at the time, nowhere near what it
+
+711
+00:47:20.800 --> 00:47:22.444
+<v Larry Augustin>is today.
+
+712
+00:47:22.464 --> 00:47:24.589
+<v Larry Augustin>And it wasn't always obvious how
+
+713
+00:47:24.629 --> 00:47:26.534
+<v Larry Augustin>many people were out there.
+
+714
+00:47:26.554 --> 00:47:27.606
+<v Larry Augustin>You could watch traffic on Usenet
+
+715
+00:47:27.606 --> 00:47:27.616
+<v Larry Augustin>groups.
+
+716
+00:47:27.616 --> 00:47:27.721
+<v Larry Augustin>We could traffic on Usenet groups.
+
+717
+00:47:27.721 --> 00:47:29.144
+<v Larry Augustin>We could share code and contribute
+to the community.
+
+718
+00:47:29.164 --> 00:47:35.603
+<v Larry Augustin>And we were the first large
+traffic on Usenet groups.
+
+719
+00:47:36.265 --> 00:47:37.828
+<v Larry Augustin>We could share code and
+contribute.
+
+720
+00:47:39.792 --> 00:47:41.941
+<v Larry Augustin>But you didn't always quite
+realize the scale.
+
+721
+00:47:43.243 --> 00:47:47.271
+<v Larry Augustin>And we organized an event in
+Silicon Valley called the Future
+
+722
+00:47:47.291 --> 00:47:52.585
+<v Larry Augustin>of Linux, where I was able to get
+people from Intel and from
+
+723
+00:47:53.306 --> 00:47:54.248
+<v Larry Augustin>different groups.
+
+724
+00:47:56.472 --> 00:47:57.915
+<v Larry Augustin>Companies like Cisco would just
+
+725
+00:47:57.955 --> 00:48:02.989
+<v Larry Augustin>give us the space because they
+wanted to support local user
+
+726
+00:48:03.029 --> 00:48:03.350
+<v Larry Augustin>groups.
+
+727
+00:48:04.192 --> 00:48:06.196
+<v Larry Augustin>And we ran this event.
+
+728
+00:48:07.883 --> 00:48:09.446
+<v Larry Augustin>We called it the Future of Linux.
+
+729
+00:48:09.466 --> 00:48:10.347
+<v Larry Augustin>It was the first...
+
+730
+00:48:11.650 --> 00:48:17.384
+<v Larry Augustin>I'll say prior to that, the Linux
+user group meeting was a dozen
+
+731
+00:48:17.444 --> 00:48:20.770
+<v Larry Augustin>people in a fast food restaurant
+in Silicon Valley.
+
+732
+00:48:22.253 --> 00:48:23.195
+<v Larry Augustin>But we promoted this.
+
+733
+00:48:23.820 --> 00:48:25.485
+<v Larry Augustin>And we had over a thousand people
+
+734
+00:48:25.545 --> 00:48:27.670
+<v Larry Augustin>show up, standing room only.
+
+735
+00:48:27.811 --> 00:48:29.300
+<v Larry Augustin>We completely overwhelmed the
+
+736
+00:48:29.340 --> 00:48:37.314
+<v Larry Augustin>conference facilities that we had
+been able to beg, borrow, and get
+
+737
+00:48:37.354 --> 00:48:37.895
+<v Larry Augustin>donated.
+
+738
+00:48:37.915 --> 00:48:41.405
+<v Larry Augustin>And again, that was another point
+
+739
+00:48:41.645 --> 00:48:49.042
+<v Larry Augustin>at which people like Sequoia
+Capital began to realize there's
+
+740
+00:48:49.082 --> 00:48:50.044
+<v Larry Augustin>some momentum here.
+
+741
+00:48:51.628 --> 00:48:54.954
+<v Larry Augustin>And the scale is bigger than you
+
+742
+00:48:54.974 --> 00:48:55.616
+<v Larry Augustin>may realize.
+
+743
+00:48:56.820 --> 00:49:00.872
+<v Larry Augustin>I think a lot of people point to
+
+744
+00:49:00.912 --> 00:49:04.966
+<v Larry Augustin>that event as a turning point.
+
+745
+00:49:05.426 --> 00:49:07.810
+<v Larry Augustin>And I'll say the recognition by
+
+746
+00:49:07.891 --> 00:49:13.784
+<v Larry Augustin>many people around Silicon Valley
+and that ecosystem that there was
+
+747
+00:49:13.945 --> 00:49:15.327
+<v Larry Augustin>something here.
+
+748
+00:49:18.553 --> 00:49:19.755
+<v Larry Augustin>I think it would be pretentious
+
+749
+00:49:19.775 --> 00:49:23.186
+<v Larry Augustin>for anyone to say we knew what it
+was in that sense.
+
+750
+00:49:23.748 --> 00:49:29.605
+<v Larry Augustin>But just the number of people that
+would come together, it was
+
+751
+00:49:29.645 --> 00:49:30.387
+<v Larry Augustin>fantastic.
+
+752
+00:49:31.810 --> 00:49:34.355
+<v Larry Augustin>So there was an event like that.
+
+753
+00:49:38.186 --> 00:49:49.765
+<v Larry Augustin>As this was developing, more and
+more of us were I think struggling
+
+754
+00:49:49.806 --> 00:49:57.645
+<v Larry Augustin>a little bit with a divide in the
+community between why we were
+
+755
+00:49:57.706 --> 00:50:02.575
+<v Larry Augustin>building software in an open model
+like this on the internet.
+
+756
+00:50:04.824 --> 00:50:10.073
+<v Larry Augustin>If you listen to my story, I was
+using software that was freely
+
+757
+00:50:10.113 --> 00:50:11.576
+<v Larry Augustin>available because it was better.
+
+758
+00:50:13.103 --> 00:50:14.646
+<v Larry Augustin>To me, that was always the model.
+
+759
+00:50:16.250 --> 00:50:19.742
+<v Larry Augustin>I used the GNU C compiler because
+it was better than the C compilers
+
+760
+00:50:19.762 --> 00:50:26.955
+<v Larry Augustin>that came from Sun. The same was
+similar for user interface tools.
+
+761
+00:50:27.120 --> 00:50:32.870
+<v Larry Augustin>Linux was a free operating system.
+
+762
+00:50:33.291 --> 00:50:35.555
+<v Larry Augustin>There were commercial Unix systems
+
+763
+00:50:35.575 --> 00:50:37.844
+<v Larry Augustin>that were available, but the fact
+is Linux were available, but the
+
+764
+00:50:37.844 --> 00:50:39.488
+<v Larry Augustin>fact is Linux is better for the PC
+than the commercial systems.
+
+765
+00:50:39.589 --> 00:50:42.120
+<v Larry Augustin>And that had always been my
+philosophy.
+
+766
+00:50:42.141 --> 00:50:44.125
+<v Larry Augustin>This is a philosophy that's very
+different from the Free Software
+
+767
+00:50:44.145 --> 00:50:50.022
+<v Larry Augustin>Foundation and Richard Stallman's
+motivation.
+
+768
+00:50:50.363 --> 00:50:55.883
+<v Larry Augustin>It had been very, you know, driven
+by the notion that software is
+
+769
+00:50:56.203 --> 00:50:58.529
+<v Larry Augustin>something that should be freely
+available to everyone.
+
+770
+00:51:03.225 --> 00:51:09.938
+<v Larry Augustin>And he had developed the GNU model
+and the GNU licensing model that
+
+771
+00:51:09.958 --> 00:51:10.889
+<v Larry Augustin>was designed to encourage that.
+
+772
+00:51:10.889 --> 00:51:10.949
+<v Larry Augustin>But this split was developing and
+
+773
+00:51:10.949 --> 00:51:11.059
+<v Larry Augustin>was, I think, licensing model that
+was designed to encourage that.
+
+774
+00:51:11.059 --> 00:51:11.564
+<v Larry Augustin>But this split was developing and
+was, I think, exacerbated by
+
+775
+00:51:11.584 --> 00:51:23.308
+<v Larry Augustin>groups of us that had been
+building businesses around free
+
+776
+00:51:23.328 --> 00:51:23.829
+<v Larry Augustin>software.
+
+777
+00:51:25.071 --> 00:51:27.916
+<v Larry Augustin>And if you look at the concept of
+
+778
+00:51:27.936 --> 00:51:35.073
+<v Larry Augustin>I am selling you something that's
+free, it's kind of an odd concept.
+
+779
+00:51:35.093 --> 00:51:37.738
+<v Larry Augustin>It takes people a moment to get
+their heads around this concept.
+
+780
+00:51:37.738 --> 00:51:37.858
+<v Larry Augustin>And the people a moment to get
+their heads around this concept.
+
+781
+00:51:37.858 --> 00:51:43.342
+<v Larry Augustin>And the gentleman by the name of
+Eric Raymond, just a great thought
+
+782
+00:51:43.362 --> 00:51:48.170
+<v Larry Augustin>leader, Eric is, had written a
+paper called The Cathedral and the
+
+783
+00:51:48.191 --> 00:51:55.486
+<v Larry Augustin>Bazaar, where Eric described this
+idea of software built in an open
+
+784
+00:51:55.506 --> 00:52:03.462
+<v Larry Augustin>model, in an open way where
+everyone could see what was
+
+785
+00:52:03.482 --> 00:52:05.626
+<v Larry Augustin>happening, versus software built
+in a closed way.
+
+786
+00:52:05.707 --> 00:52:11.385
+<v Larry Augustin>And he had written a paper called
+The Cathedral and the Bazaar,
+
+787
+00:52:11.486 --> 00:52:14.289
+<v Larry Augustin>where Eric described this idea of
+software built in a closed, you
+
+788
+00:52:14.289 --> 00:52:14.834
+<v Larry Augustin>know, in his world, the cathedral
+this idea of software built in a
+
+789
+00:52:14.834 --> 00:52:15.525
+<v Larry Augustin>closed, you know, in his world,
+the cathedral model.
+
+790
+00:52:16.367 --> 00:52:23.044
+<v Larry Augustin>And this really resonated with me,
+because I think Eric had finally
+
+791
+00:52:23.184 --> 00:52:27.435
+<v Larry Augustin>captured what many of us had been
+thinking or trying to understand.
+
+792
+00:52:28.822 --> 00:52:35.613
+<v Larry Augustin>But as Eric is, he's just sort of
+brilliant at coalescing ideas.
+
+793
+00:52:35.874 --> 00:52:38.723
+<v Larry Augustin>He had written it down well and
+articulated it well.
+
+794
+00:52:40.266 --> 00:52:42.651
+<v Larry Augustin>And some of it came together for
+me.
+
+795
+00:52:42.671 --> 00:52:45.441
+<v Larry Augustin>I'll tell you a very small
+anecdote here.
+
+796
+00:52:50.367 --> 00:52:56.615
+<v Larry Augustin>When I was building VA Research
+and then VA Linux, we were using,
+
+797
+00:52:57.576 --> 00:53:00.405
+<v Larry Augustin>I had chosen QuickBooks as our
+accounting software.
+
+798
+00:53:01.086 --> 00:53:05.461
+<v Larry Augustin>At the time, QuickBooks was very
+new, but still small business
+
+799
+00:53:06.063 --> 00:53:08.049
+<v Larry Augustin>accounting software, you have to
+have something.
+
+800
+00:53:08.069 --> 00:53:09.714
+<v Larry Augustin>I had chosen QuickBooks.
+
+801
+00:53:12.962 --> 00:53:15.746
+<v Larry Augustin>I had found a bug in QuickBooks.
+
+802
+00:53:17.008 --> 00:53:25.903
+<v Larry Augustin>And for the old time DOS
+programmers and geeks, this bug
+
+803
+00:53:25.983 --> 00:53:28.488
+<v Larry Augustin>was the system would crash when I
+would try and print.
+
+804
+00:53:30.251 --> 00:53:36.648
+<v Larry Augustin>And this happened because, this
+happened whenever I tried to print
+
+805
+00:53:36.729 --> 00:53:39.475
+<v Larry Augustin>to a network attached printer.
+
+806
+00:53:40.702 --> 00:53:42.908
+<v Larry Augustin>And it turns out that network
+
+807
+00:53:43.128 --> 00:53:45.795
+<v Larry Augustin>printers could have names longer
+than 11 characters.
+
+808
+00:53:47.102 --> 00:53:53.233
+<v Larry Augustin>And experimenting with this crash,
+I discovered that if the name of
+
+809
+00:53:53.293 --> 00:53:55.883
+<v Larry Augustin>the printer was 11 characters
+left, everything worked.
+
+810
+00:53:56.806 --> 00:53:59.073
+<v Larry Augustin>And if it was longer than 11
+characters, it crashed.
+
+811
+00:54:00.522 --> 00:54:05.610
+<v Larry Augustin>And if you are a developer, you
+could see what was happening.
+
+812
+00:54:07.814 --> 00:54:10.643
+<v Larry Augustin>There was a buffer of 11
+characters, which by the way, is
+
+813
+00:54:10.723 --> 00:54:13.991
+<v Larry Augustin>exactly the same number of
+characters of a file name in DOS,
+
+814
+00:54:15.194 --> 00:54:16.322
+<v Larry Augustin>which is where it came from.
+
+815
+00:54:16.342 --> 00:54:18.808
+<v Larry Augustin>And printers were attached to file
+
+816
+00:54:18.849 --> 00:54:19.129
+<v Larry Augustin>names.
+
+817
+00:54:19.891 --> 00:54:21.114
+<v Larry Augustin>So without being too technical
+
+818
+00:54:21.155 --> 00:54:27.595
+<v Larry Augustin>here, someone had a piece of code
+that had an 11 character buffer
+
+819
+00:54:27.636 --> 00:54:28.237
+<v Larry Augustin>for the name.
+
+820
+00:54:28.838 --> 00:54:30.119
+<v Larry Augustin>And when it was longer than 11
+
+821
+00:54:30.169 --> 00:54:33.159
+<v Larry Augustin>characters, it ran off the end of
+this and it crashed the program.
+
+822
+00:54:33.159 --> 00:54:34.447
+<v Larry Augustin>I could it crashed the program.
+
+823
+00:54:34.447 --> 00:54:35.229
+<v Larry Augustin>I could see this in my head.
+
+824
+00:54:35.249 --> 00:54:39.850
+<v Larry Augustin>And I know this is not necessarily
+a mission critical story, but I
+
+825
+00:54:39.850 --> 00:54:42.687
+<v Larry Augustin>critical story, but I called up
+into it.
+
+826
+00:54:43.228 --> 00:54:44.710
+<v Larry Augustin>I called up tech support.
+
+827
+00:54:45.952 --> 00:54:48.255
+<v Larry Augustin>I thought to myself, this is
+
+828
+00:54:48.396 --> 00:54:48.776
+<v Larry Augustin>great.
+
+829
+00:54:49.738 --> 00:54:55.528
+<v Larry Augustin>I can contribute can contribute
+
+830
+00:54:56.750 --> 00:54:59.153
+<v Larry Augustin>and tell them what to look for.
+
+831
+00:55:00.174 --> 00:55:02.056
+<v Larry Augustin>I could not get any attention.
+
+832
+00:55:02.237 --> 00:55:03.621
+<v Larry Augustin>I could not get anyone to care.
+
+833
+00:55:04.142 --> 00:55:07.608
+<v Larry Augustin>I could crash their software very
+
+834
+00:55:07.809 --> 00:55:08.269
+<v Larry Augustin>easily.
+
+835
+00:55:09.571 --> 00:55:13.543
+<v Larry Augustin>And I could imagine the fix in my
+
+836
+00:55:13.583 --> 00:55:16.994
+<v Larry Augustin>head as a programmer, and I could
+not get anyone to care.
+
+837
+00:55:18.202 --> 00:55:24.495
+<v Larry Augustin>And all I could think was, if I
+had the source code, I could fix
+
+838
+00:55:24.555 --> 00:55:24.695
+<v Larry Augustin>this.
+
+839
+00:55:26.162 --> 00:55:30.928
+<v Larry Augustin>Now, to me, that little experience
+
+840
+00:55:31.509 --> 00:55:37.361
+<v Larry Augustin>really crystallized what we had
+been doing and what people like
+
+841
+00:55:37.481 --> 00:55:43.893
+<v Larry Augustin>Eric had begun to write about,
+which is this notion that you
+
+842
+00:55:43.974 --> 00:55:48.466
+<v Larry Augustin>empower the person, the user, with
+access.
+
+843
+00:55:48.506 --> 00:55:49.508
+<v Larry Augustin>You enable them.
+
+844
+00:55:50.250 --> 00:55:52.474
+<v Larry Augustin>Whether I could have fixed that
+
+845
+00:55:52.574 --> 00:55:56.729
+<v Larry Augustin>code in my case, you know, I like
+to think I could have fixed the
+
+846
+00:55:56.769 --> 00:55:57.049
+<v Larry Augustin>code.
+
+847
+00:55:57.190 --> 00:56:00.624
+<v Larry Augustin>But if I had had access, maybe I
+
+848
+00:56:00.644 --> 00:56:02.287
+<v Larry Augustin>could have hired someone to fix
+the code.
+
+849
+00:56:03.269 --> 00:56:06.401
+<v Larry Augustin>Or if it had been open, I could
+have contributed a fix.
+
+850
+00:56:07.103 --> 00:56:10.051
+<v Larry Augustin>But none of that was possible
+because the software was built in
+
+851
+00:56:10.112 --> 00:56:14.048
+<v Larry Augustin>a cathedral, and it was built in a
+black box, and it was hidden, and
+
+852
+00:56:14.088 --> 00:56:16.715
+<v Larry Augustin>there was nothing you could do
+about that.
+
+853
+00:56:19.342 --> 00:56:30.255
+<v Larry Augustin>And ultimately, Eric's book had
+gotten the attention of Netscape
+
+854
+00:56:30.275 --> 00:56:34.365
+<v Larry Augustin>Software and Mark Andreessen at
+the time, and they had invited
+
+855
+00:56:34.465 --> 00:56:40.344
+<v Larry Augustin>Eric to come out to Silicon
+Valley, and I hosted Eric for a
+
+856
+00:56:40.404 --> 00:56:41.426
+<v Larry Augustin>bit when he came out.
+
+857
+00:56:41.486 --> 00:56:45.174
+<v Larry Augustin>He came by the office, and I don't
+
+858
+00:56:45.194 --> 00:56:49.448
+<v Larry Augustin>think we had ever met face-to-face
+before that.
+
+859
+00:56:50.049 --> 00:56:52.314
+<v Larry Augustin>It's interesting, you know, many
+of these relationships all
+
+860
+00:56:52.354 --> 00:56:53.341
+<v Larry Augustin>developed online.
+
+861
+00:56:55.224 --> 00:56:58.930
+<v Larry Augustin>And we convened a meeting at our
+
+862
+00:56:58.990 --> 00:57:04.542
+<v Larry Augustin>offices in Mountain View where we
+were discussing this, and Eric was
+
+863
+00:57:04.642 --> 00:57:08.828
+<v Larry Augustin>driving the idea that we should
+rebrand.
+
+864
+00:57:11.552 --> 00:57:18.148
+<v Larry Augustin>We should push the, we need to
+emphasize the notion that what we
+
+865
+00:57:18.188 --> 00:57:20.034
+<v Larry Augustin>care about is creating great
+software.
+
+866
+00:57:22.765 --> 00:57:25.091
+<v Larry Augustin>We're not making a religious
+statement.
+
+867
+00:57:25.111 --> 00:57:26.575
+<v Larry Augustin>We're not making a political
+statement.
+
+868
+00:57:27.983 --> 00:57:31.592
+<v Larry Augustin>We are simply saying we want to
+create great software, and we have
+
+869
+00:57:31.632 --> 00:57:35.465
+<v Larry Augustin>discovered a model that we believe
+creates better software.
+
+870
+00:57:36.427 --> 00:57:41.220
+<v Larry Augustin>Maybe not in all cases, but
+certainly from our observation, in
+
+871
+00:57:41.240 --> 00:57:42.021
+<v Larry Augustin>a lot of cases.
+
+872
+00:57:42.942 --> 00:57:48.490
+<v Larry Augustin>And we need to emphasize that.
+
+873
+00:57:50.092 --> 00:57:54.541
+<v Larry Augustin>And so, we held a meeting at my
+office in Pear Avenue.
+
+874
+00:57:55.903 --> 00:58:02.895
+<v Larry Augustin>We got Linus on the phone, and
+ultimately, the idea was we're
+
+875
+00:58:02.935 --> 00:58:07.987
+<v Larry Augustin>going to brand this open source,
+because the openness of the source
+
+876
+00:58:08.047 --> 00:58:10.832
+<v Larry Augustin>code was what was important.
+
+877
+00:58:12.474 --> 00:58:19.527
+<v Larry Augustin>We're going to Bruce Perens, at
+
+878
+00:58:19.547 --> 00:58:25.135
+<v Larry Augustin>the time, the head of the Debian
+project, had created a set of
+
+879
+00:58:25.215 --> 00:58:29.106
+<v Larry Augustin>definitions for software that
+could be part of Debian.
+
+880
+00:58:29.587 --> 00:58:33.242
+<v Larry Augustin>And we realized the world here
+needed to separate the notion
+
+881
+00:58:33.280 --> 00:58:39.952
+<v Larry Augustin>notion of software in which the
+source code is available from free
+
+882
+00:58:39.992 --> 00:58:44.945
+<v Larry Augustin>software, and we coined the term
+open source to do that.
+
+883
+00:58:45.005 --> 00:58:51.616
+<v Larry Augustin>And we all agreed to promote and
+develop this, and that became the
+
+884
+00:58:51.660 --> 00:58:54.743
+<v Larry Augustin>genesis for the term open source.
+
+885
+00:58:57.986 --> 00:58:58.386
+<v Larry Augustin>And this was in 1998?
+
+886
+00:58:58.386 --> 00:58:58.787
+<v Larry Augustin>I think it was 1998.
+
+887
+00:58:58.787 --> 00:59:10.421
+<v Larry Augustin>I will tell you I'm not as good
+
+888
+00:59:10.501 --> 00:59:15.474
+<v Larry Augustin>with the years and the dates as I
+should be, so I encourage anyone
+
+889
+00:59:15.494 --> 00:59:21.849
+<v Larry Augustin>listening to this to just go to
+the opensource.org website, and
+
+890
+00:59:22.490 --> 00:59:27.601
+<v Larry Augustin>it's well documented there, and
+they have made sure the dates are
+
+891
+00:59:27.621 --> 00:59:28.022
+<v Larry Augustin>correct.
+
+892
+00:59:29.565 --> 00:59:30.086
+<v Larry Augustin>How's that?
+
+893
+00:59:30.948 --> 00:59:32.050
+<v Elisabetta Mori>Yeah.
+
+894
+00:59:32.070 --> 00:59:34.515
+<v Elisabetta Mori>So, during these years, I would
+
+895
+00:59:34.535 --> 00:59:35.981
+<v Elisabetta Mori>like to ask you a couple of
+things.
+
+896
+00:59:37.083 --> 00:59:38.385
+<v Elisabetta Mori>Two things are personal.
+
+897
+00:59:39.106 --> 00:59:40.128
+<v Elisabetta Mori>Yes.
+
+898
+00:59:40.188 --> 00:59:47.965
+<v Elisabetta Mori>First, when was your first
+encounter with Linus Torvalds?
+
+899
+00:59:47.985 --> 00:59:51.691
+<v Elisabetta Mori>Oh, you know, excellent question.
+
+900
+01:00:00.863 --> 01:00:05.289
+<v Larry Augustin>I don't have a great recollection
+
+901
+01:00:06.070 --> 01:00:07.432
+<v Larry Augustin>of the first meeting.
+
+902
+01:00:07.632 --> 01:00:15.462
+<v Larry Augustin>I'm sure I was so in awe that I
+
+903
+01:00:15.542 --> 01:00:22.328
+<v Larry Augustin>just was probably standing
+stunned.
+
+904
+01:00:25.712 --> 01:00:33.342
+<v Larry Augustin>I believe it was in the back of a
+fast food restaurant at a local
+
+905
+01:00:33.423 --> 01:00:36.649
+<v Larry Augustin>Linux user group after he had
+moved.
+
+906
+01:00:37.130 --> 01:00:43.207
+<v Larry Augustin>You know, many of this happened
+remotely, and then Linus moved to
+
+907
+01:00:43.568 --> 01:00:46.895
+<v Larry Augustin>Silicon Valley in the Bay Area,
+and I believe it was the back of a
+
+908
+01:00:47.020 --> 01:00:49.864
+<v Larry Augustin>fast food restaurant at a small
+Linux user group meeting.
+
+909
+01:00:54.010 --> 01:01:02.506
+<v Larry Augustin>I was always in awe of just
+fantastic talent that came into
+
+910
+01:01:02.546 --> 01:01:03.287
+<v Larry Augustin>this community.
+
+911
+01:01:07.413 --> 01:01:08.855
+<v Larry Augustin>When it comes to coding and
+
+912
+01:01:08.895 --> 01:01:13.427
+<v Larry Augustin>development, I'm more of a
+sysadmin hack.
+
+913
+01:01:14.589 --> 01:01:20.563
+<v Larry Augustin>I get some of these things, and I
+can pull things together and such,
+
+914
+01:01:20.984 --> 01:01:27.593
+<v Larry Augustin>but the ability of people like
+Linus, my CTO and VA gentleman,
+
+915
+01:01:27.673 --> 01:01:35.068
+<v Larry Augustin>and the talent that comes together
+is just incredible, and the depth
+
+916
+01:01:36.170 --> 01:01:36.992
+<v Larry Augustin>is incredible there.
+
+917
+01:01:37.333 --> 01:01:39.080
+<v Larry Augustin>So, we had small Linux user group
+
+918
+01:01:39.100 --> 01:01:51.235
+<v Larry Augustin>meetings around the Valley, and
+then I was eventually sort of able
+
+919
+01:01:51.255 --> 01:01:59.749
+<v Larry Augustin>to develop a friendship there and
+pull Linus into some of those
+
+920
+01:01:59.809 --> 01:02:04.697
+<v Larry Augustin>events like that Future of Linux
+event that I talked about.
+
+921
+01:02:04.697 --> 01:02:05.051
+<v Elisabetta Mori>Okay.
+
+922
+01:02:05.922 --> 01:02:05.922
+<v Elisabetta Mori>Okay.
+
+923
+01:02:06.143 --> 01:02:10.171
+<v Elisabetta Mori>So, we're going to just talk
+briefly about your personal life.
+
+924
+01:02:10.531 --> 01:02:15.285
+<v Elisabetta Mori>So, when did you get married and
+when your daughter was born?
+
+925
+01:02:15.305 --> 01:02:17.349
+<v Larry Augustin>Oh, wow.
+
+926
+01:02:17.469 --> 01:02:17.810
+<v Larry Augustin>Okay.
+
+927
+01:02:17.970 --> 01:02:18.271
+<v Larry Augustin>Okay.
+
+928
+01:02:18.571 --> 01:02:23.403
+<v Larry Augustin>So, yes, during this, I had met my
+
+929
+01:02:23.443 --> 01:02:32.685
+<v Larry Augustin>wife at Stanford, Alice, and we
+were married in, I want to say,
+
+930
+01:02:32.685 --> 01:02:43.652
+<v Larry Augustin>96, and our daughter was born a
+year later, Andrea, and Alice had
+
+931
+01:02:43.772 --> 01:02:50.543
+<v Larry Augustin>joined me at VA Research in the
+early days and was our first
+
+932
+01:02:51.384 --> 01:02:52.025
+<v Larry Augustin>salesperson.
+
+933
+01:02:53.287 --> 01:02:56.391
+<v Larry Augustin>So, the success of the business,
+
+934
+01:02:58.013 --> 01:03:06.130
+<v Larry Augustin>very much driven by her on the
+phone with customers, talking with
+
+935
+01:03:06.170 --> 01:03:09.576
+<v Larry Augustin>customers and helping us create
+business.
+
+936
+01:03:10.762 --> 01:03:14.148
+<v Elisabetta Mori>You met at Stanford, what was she
+studying or researching?
+
+937
+01:03:14.268 --> 01:03:20.926
+<v Larry Augustin>So, she had gone to San Francisco
+State and was working in a staff
+
+938
+01:03:20.946 --> 01:03:24.995
+<v Larry Augustin>position at Stanford in our
+research lab, what we've had.
+
+939
+01:03:26.723 --> 01:03:27.043
+<v Elisabetta Mori>Okay.
+
+940
+01:03:27.083 --> 01:03:28.042
+<v Elisabetta Mori>So, we are like 1997, 1998.
+
+941
+01:03:28.042 --> 01:03:28.166
+<v Elisabetta Mori>Yes.
+
+942
+01:03:28.166 --> 01:03:29.448
+<v Elisabetta Mori>Then we arrived to 1999, which is
+
+943
+01:03:29.548 --> 01:03:29.849
+<v Elisabetta Mori>important.
+
+944
+01:03:34.581 --> 01:03:36.825
+<v Elisabetta Mori>The end of 1999 is important for
+
+945
+01:03:36.925 --> 01:03:38.127
+<v Elisabetta Mori>two reasons.
+
+946
+01:03:39.970 --> 01:03:43.355
+<v Elisabetta Mori>One is SourceForge, we're talking
+
+947
+01:03:43.395 --> 01:03:48.829
+<v Elisabetta Mori>about number 1999, and the second
+one is VA Linux.
+
+948
+01:03:49.350 --> 01:03:53.403
+<v Elisabetta Mori>But if you remember, it's not
+important, when did you change the
+
+949
+01:03:53.423 --> 01:03:57.074
+<v Elisabetta Mori>name from VA Research to VA Linux,
+if you remember?
+
+950
+01:03:58.162 --> 01:04:03.174
+<v Larry Augustin>I don't remember exactly the date,
+but it was the, part of it was
+
+951
+01:04:03.255 --> 01:04:11.510
+<v Larry Augustin>the, it may have been in part the
+funding.
+
+952
+01:04:12.432 --> 01:04:17.903
+<v Larry Augustin>And then as we were thinking about
+branding coming into the IPO, the
+
+953
+01:04:17.944 --> 01:04:23.833
+<v Larry Augustin>term research, just people didn't
+quite understand what we did.
+
+954
+01:04:24.615 --> 01:04:25.800
+<v Larry Augustin>So, we put Linux in the name.
+
+955
+01:04:26.321 --> 01:04:26.682
+<v Elisabetta Mori>So, yes.
+
+956
+01:04:26.742 --> 01:04:29.288
+<v Elisabetta Mori>So, the two main things that
+happened in 1999, the end of 1999,
+
+957
+01:04:29.288 --> 01:04:37.729
+<v Elisabetta Mori>November, SourceForge and
+September IPO.
+
+958
+01:04:38.149 --> 01:04:38.390
+<v Larry Augustin>Yeah.
+
+959
+01:04:38.510 --> 01:04:40.052
+<v Larry Augustin>SourceForge, let me tell you a
+
+960
+01:04:40.072 --> 01:04:42.096
+<v Larry Augustin>little bit about SourceForge.
+
+961
+01:04:42.280 --> 01:04:47.469
+<v Larry Augustin>So, I mentioned before that we
+
+962
+01:04:47.489 --> 01:04:50.856
+<v Larry Augustin>would do things such as host a
+machine for the Free Software
+
+963
+01:04:50.900 --> 01:04:51.541
+<v Larry Augustin>Foundation.
+
+964
+01:04:51.941 --> 01:04:57.489
+<v Larry Augustin>And my vision of a software supply
+
+965
+01:04:57.570 --> 01:05:02.961
+<v Larry Augustin>chain, if you will, where the
+software created for free on the
+
+966
+01:05:03.021 --> 01:05:09.574
+<v Larry Augustin>internet, openly on the internet,
+was our supply chain that we would
+
+967
+01:05:09.994 --> 01:05:11.421
+<v Larry Augustin>build together into systems.
+
+968
+01:05:14.224 --> 01:05:15.366
+<v Larry Augustin>I wanted to enable that.
+
+969
+01:05:15.806 --> 01:05:25.121
+<v Larry Augustin>And we wanted to create and enable
+more people to do that and make it
+
+970
+01:05:25.181 --> 01:05:25.522
+<v Larry Augustin>easier.
+
+971
+01:05:26.263 --> 01:05:31.671
+<v Larry Augustin>So, we regularly hosted websites
+
+972
+01:05:32.452 --> 01:05:38.765
+<v Larry Augustin>and software distribution FTP
+sites for free free software, open
+
+973
+01:05:38.805 --> 01:05:40.969
+<v Larry Augustin>source, now open source projects.
+
+974
+01:05:42.011 --> 01:05:42.693
+<v Larry Augustin>That was common.
+
+975
+01:05:44.436 --> 01:05:51.150
+<v Larry Augustin>At one point, we were, I believe,
+hosting upwards of 20 major
+
+976
+01:05:51.911 --> 01:05:53.333
+<v Larry Augustin>projects like this.
+
+977
+01:05:55.296 --> 01:05:59.708
+<v Larry Augustin>And we observed that the people
+
+978
+01:05:59.808 --> 01:06:02.976
+<v Larry Augustin>running these projects all had a
+set of common needs.
+
+979
+01:06:03.577 --> 01:06:06.670
+<v Larry Augustin>You know, they wanted a website,
+but they wanted FTP distribution,
+
+980
+01:06:06.690 --> 01:06:08.274
+<v Larry Augustin>and they wanted a mailing list.
+
+981
+01:06:09.443 --> 01:06:10.687
+<v Larry Augustin>Sometimes they wanted discussion
+
+982
+01:06:10.747 --> 01:06:11.249
+<v Larry Augustin>forums.
+
+983
+01:06:11.289 --> 01:06:12.954
+<v Larry Augustin>They wanted to host FAQs.
+
+984
+01:06:15.963 --> 01:06:21.473
+<v Larry Augustin>There was a new, I would say,
+somewhat new concept that was
+
+985
+01:06:21.513 --> 01:06:24.762
+<v Larry Augustin>becoming more common among the
+groups, which was source code
+
+986
+01:06:24.802 --> 01:06:25.564
+<v Larry Augustin>repositories.
+
+987
+01:06:27.107 --> 01:06:30.955
+<v Larry Augustin>Now people just, you know, GitHub.
+
+988
+01:06:31.456 --> 01:06:35.909
+<v Larry Augustin>And we didn't have Git at the
+time.
+
+989
+01:06:36.670 --> 01:06:40.784
+<v Larry Augustin>We had a few different revision
+control systems, but most free
+
+990
+01:06:40.824 --> 01:06:43.953
+<v Larry Augustin>software was not built revision
+control, but people were starting
+
+991
+01:06:43.973 --> 01:06:49.332
+<v Larry Augustin>to say, well, gee, you don't want
+to have a CDS or similar revision
+
+992
+01:06:49.352 --> 01:06:50.275
+<v Larry Augustin>control system site.
+
+993
+01:06:50.901 --> 01:06:55.830
+<v Larry Augustin>Well, at the same time, there was
+
+994
+01:06:55.870 --> 01:07:01.444
+<v Larry Augustin>a project underway to recreate the
+history of Linux, the history of
+
+995
+01:07:01.464 --> 01:07:02.346
+<v Larry Augustin>the Linux source code.
+
+996
+01:07:04.169 --> 01:07:06.614
+<v Larry Augustin>Again, most people at the time
+
+997
+01:07:06.674 --> 01:07:09.302
+<v Larry Augustin>starting out with a project didn't
+start out with revision control.
+
+998
+01:07:09.904 --> 01:07:12.468
+<v Larry Augustin>Now it's just a given.
+
+999
+01:07:12.829 --> 01:07:14.011
+<v Larry Augustin>You just do it.
+
+1000
+01:07:15.894 --> 01:07:19.866
+<v Larry Augustin>And Linux had never done revision
+control.
+
+1001
+01:07:20.828 --> 01:07:26.238
+<v Larry Augustin>He released, you know, he would
+release a new version of Linux a
+
+1002
+01:07:26.238 --> 01:07:27.693
+<v Larry Augustin>new version of Linux out on the
+internet, and he didn't
+
+1003
+01:07:27.713 --> 01:07:28.696
+<v Larry Augustin>necessarily keep old versions.
+
+1004
+01:07:28.696 --> 01:07:31.029
+<v Larry Augustin>That's, That's, you know, I
+
+1005
+01:07:31.129 --> 01:07:32.052
+<v Larry Augustin>released it on the internet.
+
+1006
+01:07:32.092 --> 01:07:33.536
+<v Larry Augustin>I moved on, create a new version.
+
+1007
+01:07:33.596 --> 01:07:33.857
+<v Larry Augustin>And so, new version.
+
+1008
+01:07:33.857 --> 01:07:33.961
+<v Larry Augustin>And so, new version.
+
+1009
+01:07:33.961 --> 01:07:34.001
+<v Larry Augustin>And so, new version.
+
+1010
+01:07:34.001 --> 01:07:37.046
+<v Larry Augustin>And so, I was observing that we
+
+1011
+01:07:37.066 --> 01:07:47.327
+<v Larry Augustin>were at a, we were at risk of
+losing information that could
+
+1012
+01:07:47.407 --> 01:07:51.716
+<v Larry Augustin>become important to us as we built
+software.
+
+1013
+01:07:54.143 --> 01:08:00.274
+<v Larry Augustin>Another personal anecdote, I had
+discovered at this time a bug in a
+
+1014
+01:08:00.314 --> 01:08:06.090
+<v Larry Augustin>piece of software on the Linux
+system, the bash shell, which is
+
+1015
+01:08:06.130 --> 01:08:07.533
+<v Larry Augustin>the command line interpreter.
+
+1016
+01:08:08.215 --> 01:08:12.306
+<v Larry Augustin>And I went to look for the source
+
+1017
+01:08:12.367 --> 01:08:17.716
+<v Larry Augustin>code to see if I could fix the
+bug, and actually couldn't find
+
+1018
+01:08:18.180 --> 01:08:18.782
+<v Larry Augustin>the source code.
+
+1019
+01:08:18.801 --> 01:08:21.589
+<v Larry Augustin>Because the version I was running
+
+1020
+01:08:21.649 --> 01:08:27.309
+<v Larry Augustin>was two releases behind, and none
+of the distribution sites kept the
+
+1021
+01:08:27.349 --> 01:08:27.950
+<v Larry Augustin>old releases.
+
+1022
+01:08:28.511 --> 01:08:29.755
+<v Larry Augustin>So, kind of all of these things
+
+1023
+01:08:29.795 --> 01:08:32.224
+<v Larry Augustin>were coming together at the same
+time.
+
+1024
+01:08:32.243 --> 01:08:34.790
+<v Larry Augustin>So, I did a little math
+calculation.
+
+1025
+01:08:35.652 --> 01:08:42.948
+<v Larry Augustin>And at the time, it's a pretty
+good ability to look and
+
+1026
+01:08:42.988 --> 01:08:47.323
+<v Larry Augustin>understand how much source code
+was released, open source and free
+
+1027
+01:08:47.363 --> 01:08:48.706
+<v Larry Augustin>software on the internet every
+year.
+
+1028
+01:08:48.727 --> 01:08:54.202
+<v Larry Augustin>And I realized, if you took all of
+that code and you kept it
+
+1029
+01:08:54.261 --> 01:09:01.836
+<v Larry Augustin>permanently, it almost tracked to
+the size of a large disk drive
+
+1030
+01:09:01.856 --> 01:09:06.627
+<v Larry Augustin>that you could buy at a very
+modest price.
+
+1031
+01:09:07.609 --> 01:09:11.600
+<v Larry Augustin>And so, I realized, there's no,
+there's not, you don't need to
+
+1032
+01:09:11.640 --> 01:09:14.904
+<v Larry Augustin>delete anything ever again for
+source code.
+
+1033
+01:09:16.045 --> 01:09:26.961
+<v Larry Augustin>So, I wanted to begin to archive
+the history of source code.
+
+1034
+01:09:28.282 --> 01:09:37.996
+<v Larry Augustin>And we had acquired at VA Linux,
+we had begun to acquire a set of
+
+1035
+01:09:38.036 --> 01:09:42.868
+<v Larry Augustin>internet sites that supported free
+software and similar development.
+
+1036
+01:09:43.751 --> 01:09:46.801
+<v Larry Augustin>And one of those sites was a site
+called Fresh Meat.
+
+1037
+01:09:48.663 --> 01:09:56.935
+<v Larry Augustin>Odd name, but Fresh Meat was the
+de facto announcement site at the
+
+1038
+01:09:56.995 --> 01:09:57.276
+<v Larry Augustin>time.
+
+1039
+01:09:57.736 --> 01:10:02.748
+<v Larry Augustin>So, all free software, that open
+
+1040
+01:10:02.788 --> 01:10:07.316
+<v Larry Augustin>source software that was released,
+was announced on Fresh Meat.
+
+1041
+01:10:09.023 --> 01:10:14.775
+<v Larry Augustin>And I came up with this vision,
+which was, we need to archive all
+
+1042
+01:10:14.795 --> 01:10:15.036
+<v Larry Augustin>of that.
+
+1043
+01:10:16.002 --> 01:10:17.646
+<v Larry Augustin>So, my vision was to connect Fresh
+
+1044
+01:10:17.726 --> 01:10:21.315
+<v Larry Augustin>Meat to an archive site, and I
+called it cold storage.
+
+1045
+01:10:23.123 --> 01:10:26.630
+<v Larry Augustin>So, the idea was to put all Fresh
+Meat in cold storage and keep it
+
+1046
+01:10:26.690 --> 01:10:27.030
+<v Larry Augustin>forever.
+
+1047
+01:10:28.153 --> 01:10:30.822
+<v Larry Augustin>Because we did not want to lose
+
+1048
+01:10:30.922 --> 01:10:34.531
+<v Larry Augustin>our history, we wanted to
+understand how and why things had
+
+1049
+01:10:34.571 --> 01:10:35.072
+<v Larry Augustin>been built.
+
+1050
+01:10:35.513 --> 01:10:38.244
+<v Larry Augustin>So, I began this archive project.
+
+1051
+01:10:39.226 --> 01:10:44.304
+<v Larry Augustin>And the team at VA Linux that I
+gave this job to, actually,
+
+1052
+01:10:44.822 --> 01:10:48.591
+<v Larry Augustin>actually, it was kind of a side
+project, if you will, for them,
+
+1053
+01:10:49.192 --> 01:10:59.994
+<v Larry Augustin>was also the team that, in IT,
+that was hosting, helping projects
+
+1054
+01:11:00.054 --> 01:11:01.857
+<v Larry Augustin>host and build these internet
+sites.
+
+1055
+01:11:02.802 --> 01:11:05.972
+<v Larry Augustin>But if you go back, we famously,
+we love doing t-shirts for
+
+1056
+01:11:06.012 --> 01:11:06.373
+<v Larry Augustin>everything.
+
+1057
+01:11:06.433 --> 01:11:10.487
+<v Larry Augustin>It's a developer Silicon Valley
+
+1058
+01:11:10.507 --> 01:11:11.449
+<v Larry Augustin>thing, I guess.
+
+1059
+01:11:11.789 --> 01:11:13.052
+<v Larry Augustin>But I have these famously, these
+
+1060
+01:11:13.152 --> 01:11:16.384
+<v Larry Augustin>cold storage t-shirts, we launched
+this project.
+
+1061
+01:11:16.905 --> 01:11:20.855
+<v Larry Augustin>And that team looked at that idea,
+and they said, well, that's nice,
+
+1062
+01:11:20.920 --> 01:11:25.431
+<v Larry Augustin>Larry, but we spend a lot of our
+time helping people build these
+
+1063
+01:11:25.652 --> 01:11:25.953
+<v Larry Augustin>sites.
+
+1064
+01:11:26.013 --> 01:11:27.281
+<v Larry Augustin>So, we want to bring those ideas
+
+1065
+01:11:27.341 --> 01:11:27.742
+<v Larry Augustin>together.
+
+1066
+01:11:29.505 --> 01:11:32.331
+<v Larry Augustin>And they brought those ideas
+
+1067
+01:11:32.371 --> 01:11:39.288
+<v Larry Augustin>together and ultimately turned
+that into, let's not just store an
+
+1068
+01:11:39.368 --> 01:11:43.716
+<v Larry Augustin>archive, but let's make it easy
+for people to build and launch.
+
+1069
+01:11:45.823 --> 01:11:50.051
+<v Larry Augustin>Cold storage turned out to be a
+difficult internet name, and they
+
+1070
+01:11:50.091 --> 01:11:51.273
+<v Larry Augustin>came up with SourceForge.
+
+1071
+01:11:52.275 --> 01:11:56.105
+<v Larry Augustin>And we launched SourceForge as the
+
+1072
+01:11:56.245 --> 01:12:03.356
+<v Larry Augustin>first collaborative development
+system for devs on the internet.
+
+1073
+01:12:06.004 --> 01:12:09.430
+<v Larry Augustin>And our ideas, we wanted to enable
+everybody.
+
+1074
+01:12:10.512 --> 01:12:14.988
+<v Larry Augustin>If you wanted to build an open
+source project, we wanted to give
+
+1075
+01:12:15.008 --> 01:12:16.233
+<v Larry Augustin>you the infrastructure to do it.
+
+1076
+01:12:20.301 --> 01:12:23.808
+<v Larry Augustin>We had even solicited Intel to
+
+1077
+01:12:23.849 --> 01:12:26.855
+<v Larry Augustin>provide servers to sit behind this
+so that people could compile and
+
+1078
+01:12:26.860 --> 01:12:28.843
+<v Larry Augustin>build on the back end.
+
+1079
+01:12:30.927 --> 01:12:32.029
+<v Larry Augustin>We had a great vision there.
+
+1080
+01:12:32.069 --> 01:12:37.522
+<v Larry Augustin>And so, we were very excited to be
+able to able to offer that to the
+
+1081
+01:12:37.562 --> 01:12:41.529
+<v Larry Augustin>community when we launched it.
+
+1082
+01:12:43.993 --> 01:12:45.296
+<v Larry Augustin>That's a little bit of the history
+
+1083
+01:12:45.336 --> 01:12:46.121
+<v Larry Augustin>behind SourceForge.
+
+1084
+01:12:47.403 --> 01:12:49.976
+<v Elisabetta Mori>And then on the 9th of December,
+
+1085
+01:12:49.976 --> 01:12:51.450
+<v Elisabetta Mori>1999, there was the IPO.
+
+1086
+01:12:51.471 --> 01:12:51.691
+<v Larry Augustin>Yes, yes.
+
+1087
+01:12:57.224 --> 01:13:02.234
+<v Larry Augustin>Our business, so the original
+business around VA Linux had been
+
+1088
+01:13:02.274 --> 01:13:05.427
+<v Larry Augustin>built around the sort of Sun
+workstation concept.
+
+1089
+01:13:06.029 --> 01:13:12.148
+<v Larry Augustin>As the internet had grown, Linux
+and open source software were
+
+1090
+01:13:12.168 --> 01:13:16.196
+<v Larry Augustin>becoming the de facto software to
+use to build the internet.
+
+1091
+01:13:17.522 --> 01:13:23.054
+<v Larry Augustin>That placed us at a key junction
+point in the development of
+
+1092
+01:13:23.114 --> 01:13:24.076
+<v Larry Augustin>internet technology.
+
+1093
+01:13:27.223 --> 01:13:30.047
+<v Larry Augustin>And our business had become all
+
+1094
+01:13:30.127 --> 01:13:41.024
+<v Larry Augustin>about making high performance,
+easy to use systems at a
+
+1095
+01:13:41.084 --> 01:13:45.372
+<v Larry Augustin>reasonable cost available to
+people who wanted to build out and
+
+1096
+01:13:45.412 --> 01:13:46.835
+<v Larry Augustin>host internet sites.
+
+1097
+01:13:47.340 --> 01:13:50.045
+<v Larry Augustin>That had become the most
+
+1098
+01:13:50.065 --> 01:13:52.349
+<v Larry Augustin>significant part of the market.
+
+1099
+01:13:53.331 --> 01:13:56.316
+<v Larry Augustin>And it was growing rapidly,
+
+1100
+01:13:56.881 --> 01:13:57.983
+<v Larry Augustin>rapidly at the time.
+
+1101
+01:13:58.965 --> 01:14:02.473
+<v Larry Augustin>And that led us to grow a very
+
+1102
+01:14:02.593 --> 01:14:03.735
+<v Larry Augustin>significant business.
+
+1103
+01:14:05.442 --> 01:14:07.425
+<v Larry Augustin>We were doing about 60 million in
+
+1104
+01:14:07.485 --> 01:14:09.408
+<v Larry Augustin>revenue at the time.
+
+1105
+01:14:10.350 --> 01:14:14.456
+<v Larry Augustin>And we decided to go public.
+
+1106
+01:14:17.025 --> 01:14:19.991
+<v Larry Augustin>Today, you'd wait a little bit
+longer, I think.
+
+1107
+01:14:20.151 --> 01:14:23.418
+<v Larry Augustin>But then, there were smaller
+public companies.
+
+1108
+01:14:23.418 --> 01:14:24.404
+<v Larry Augustin>And public companies.
+
+1109
+01:14:24.404 --> 01:14:25.546
+<v Larry Augustin>And we were right at the forefront
+
+1110
+01:14:25.586 --> 01:14:25.926
+<v Larry Augustin>of that.
+
+1111
+01:14:26.527 --> 01:14:31.857
+<v Larry Augustin>So, we set out to define that as
+
+1112
+01:14:31.897 --> 01:14:32.378
+<v Larry Augustin>the business.
+
+1113
+01:14:32.378 --> 01:14:32.428
+<v Larry Augustin>And we went public December 1999.
+
+1114
+01:14:32.428 --> 01:14:32.468
+<v Larry Augustin>that as the business.
+
+1115
+01:14:32.468 --> 01:14:33.102
+<v Larry Augustin>And we went public December 1999.
+
+1116
+01:14:33.102 --> 01:14:43.960
+<v Larry Augustin>And ultimately, that became the
+largest first day gain ever in an
+
+1117
+01:14:44.040 --> 01:14:44.140
+<v Larry Augustin>IPO.
+
+1118
+01:14:44.180 --> 01:14:45.742
+<v Larry Augustin>We priced the IPO, and I believe
+
+1119
+01:14:45.762 --> 01:14:46.603
+<v Larry Augustin>it was $30 a share.
+
+1120
+01:14:57.839 --> 01:15:00.583
+<v Larry Augustin>And the first opening trade was at
+
+1121
+01:15:00.583 --> 01:15:04.010
+<v Larry Augustin>$299 a share, as there was just
+huge demand.
+
+1122
+01:15:07.600 --> 01:15:11.466
+<v Larry Augustin>As part of that, we also did what
+I think was also the first ever
+
+1123
+01:15:11.486 --> 01:15:18.781
+<v Larry Augustin>large-scale community involvement
+in an IPO.
+
+1124
+01:15:19.402 --> 01:15:23.547
+<v Larry Augustin>There was a concept that I began
+developing.
+
+1125
+01:15:24.609 --> 01:15:32.902
+<v Larry Augustin>I had hired a team of people at VA
+Linux to do what we call community
+
+1126
+01:15:32.942 --> 01:15:33.483
+<v Larry Augustin>marketing.
+
+1127
+01:15:33.503 --> 01:15:35.987
+<v Larry Augustin>This is outreach to Linux users
+
+1128
+01:15:36.007 --> 01:15:44.785
+<v Larry Augustin>groups, outreach to developers,
+people working on the Linux
+
+1129
+01:15:44.826 --> 01:15:45.166
+<v Larry Augustin>kernel.
+
+1130
+01:15:45.186 --> 01:15:46.168
+<v Larry Augustin>And we assembled a list of core
+
+1131
+01:15:49.360 --> 01:15:51.623
+<v Larry Augustin>contributors to Linux and open
+source.
+
+1132
+01:15:51.643 --> 01:16:01.160
+<v Larry Augustin>And we included them in the IPO,
+gave them the opportunity to get
+
+1133
+01:16:01.181 --> 01:16:01.221
+<v Larry Augustin>in.
+
+1134
+01:16:01.541 --> 01:16:03.685
+<v Larry Augustin>And hopefully, let them make some
+
+1135
+01:16:03.705 --> 01:16:05.548
+<v Larry Augustin>money for all their hard-earned
+work off of that.
+
+1136
+01:16:11.100 --> 01:16:13.646
+<v Larry Augustin>And to this day, I still get
+people from those days telling me
+
+1137
+01:16:13.666 --> 01:16:18.642
+<v Larry Augustin>that that made a difference for
+them, which is just hugely
+
+1138
+01:16:18.723 --> 01:16:19.545
+<v Larry Augustin>gratifying for me.
+
+1139
+01:16:19.565 --> 01:16:20.507
+<v Larry Augustin>But we did this in a large scale.
+
+1140
+01:16:20.647 --> 01:16:26.686
+<v Larry Augustin>And the bankers, to be honest, at
+first, weren't really quite sure
+
+1141
+01:16:27.027 --> 01:16:27.628
+<v Larry Augustin>how to do this.
+
+1142
+01:16:27.689 --> 01:16:31.160
+<v Larry Augustin>So we had to come up with a lot of
+
+1143
+01:16:31.180 --> 01:16:31.321
+<v Larry Augustin>ideas.
+
+1144
+01:16:31.341 --> 01:16:32.062
+<v Larry Augustin>And the banking team had to be
+
+1145
+01:16:32.082 --> 01:16:38.541
+<v Larry Augustin>invented in order for us to have
+several thousand people from all
+
+1146
+01:16:38.561 --> 01:16:47.304
+<v Larry Augustin>over the world participate, many
+of whom were just their name was
+
+1147
+01:16:47.364 --> 01:16:48.046
+<v Larry Augustin>in the Linux kernel.
+
+1148
+01:16:48.066 --> 01:16:49.911
+<v Larry Augustin>And they were a contributor.
+
+1149
+01:16:49.931 --> 01:16:51.846
+<v Larry Augustin>And we wanted to try and help them
+or reward them.
+
+1150
+01:16:51.846 --> 01:16:51.956
+<v Larry Augustin>So we wanted to try and help them
+or reward them.
+
+1151
+01:16:51.956 --> 01:16:52.102
+<v Larry Augustin>So we did that.
+
+1152
+01:16:52.122 --> 01:16:55.230
+<v Larry Augustin>How many people were employed by
+
+1153
+01:16:55.250 --> 01:17:08.541
+<v Larry Augustin>you at the time?
+I want to say at the IPO time, the
+
+1154
+01:17:08.581 --> 01:17:12.449
+<v Larry Augustin>company was still relatively
+small.
+
+1155
+01:17:13.732 --> 01:17:16.042
+<v Larry Augustin>I will say 250 people, ultimately
+ultimately growing to about 800
+
+1156
+01:17:16.042 --> 01:17:18.007
+<v Larry Augustin>people over the course of the next
+two years.
+
+1157
+01:17:20.720 --> 01:17:23.525
+<v Elisabetta Mori>And in 2000, Word Magazine named
+you to their list of the top 50
+
+1158
+01:17:23.525 --> 01:17:23.605
+<v Elisabetta Mori>CEOs.
+
+1159
+01:17:29.120 --> 01:17:31.669
+<v Larry Augustin>Yes, yes, yes.
+
+1160
+01:17:34.142 --> 01:17:38.711
+<v Larry Augustin>You know, learning on the job was
+a lot of that.
+
+1161
+01:17:38.851 --> 01:17:43.066
+<v Larry Augustin>I just had some fantastic people
+around people around me and
+
+1162
+01:17:43.086 --> 01:17:45.212
+<v Larry Augustin>fantastic investors in Sequoia
+Capital.
+
+1163
+01:17:46.902 --> 01:17:48.785
+<v Larry Augustin>And I was able to get a lot of
+people involved.
+
+1164
+01:17:48.805 --> 01:17:50.188
+<v Larry Augustin>And I was able to get a lot of
+people involved.
+
+1165
+01:17:54.421 --> 01:18:03.409
+<v Larry Augustin>And fantastic investors in Sequoia
+Capital, fantastic mentors who
+
+1166
+01:18:03.469 --> 01:18:08.016
+<v Larry Augustin>helped the company and joined
+around the board from people like
+
+1167
+01:18:08.580 --> 01:18:10.243
+<v Larry Augustin>Doug Leonio at Sequoia.
+
+1168
+01:18:12.568 --> 01:18:14.251
+<v Larry Augustin>Carol Bartz was a great mentor for
+
+1169
+01:18:14.291 --> 01:18:15.895
+<v Larry Augustin>me on the board.
+
+1170
+01:18:16.015 --> 01:18:19.385
+<v Larry Augustin>Carol had run marketing at Sun.
+
+1171
+01:18:21.008 --> 01:18:23.553
+<v Larry Augustin>And at the time, she sat on our
+board.
+
+1172
+01:18:23.573 --> 01:18:26.101
+<v Larry Augustin>I believe she was the CEO of
+Autodesk.
+
+1173
+01:18:28.045 --> 01:18:31.713
+<v Larry Augustin>Later, interestingly, to sort of
+bring some things full circle, she
+
+1174
+01:18:31.753 --> 01:18:34.503
+<v Larry Augustin>became the CEO of Yahoo for a
+while.
+
+1175
+01:18:37.548 --> 01:18:42.896
+<v Larry Augustin>But just, you know, fantastic,
+fantastic people all around.
+
+1176
+01:18:45.505 --> 01:18:49.854
+<v Elisabetta Mori>So what happened between the 2000
+and the year 2002 when you left?
+
+1177
+01:18:52.923 --> 01:18:53.584
+<v Larry Augustin>Yes.
+
+1178
+01:18:53.824 --> 01:18:56.348
+<v Larry Augustin>So, so our business had been
+
+1179
+01:18:56.668 --> 01:19:02.857
+<v Larry Augustin>heavily defined by companies, the
+dot com world at that time.
+
+1180
+01:19:03.898 --> 01:19:07.766
+<v Larry Augustin>And and And and the business was
+growing very, very rapidly.
+
+1181
+01:19:07.786 --> 01:19:17.842
+<v Larry Augustin>And that was all going well until
+the dot com crash, if you will.
+
+1182
+01:19:18.483 --> 01:19:26.596
+<v Larry Augustin>The the companies that we were
+selling to were a who's who of dot
+
+1183
+01:19:26.656 --> 01:19:26.996
+<v Larry Augustin>coms.
+
+1184
+01:19:29.465 --> 01:19:31.088
+<v Larry Augustin>You know, companies like Pets.com
+
+1185
+01:19:31.589 --> 01:19:35.817
+<v Larry Augustin>come up as a sort of poster child
+here.
+
+1186
+01:19:35.917 --> 01:19:44.114
+<v Larry Augustin>But over the course of about six
+months, many of our customers
+
+1187
+01:19:45.076 --> 01:19:48.384
+<v Larry Augustin>either went out of business or out
+of business or just stopped,
+
+1188
+01:19:49.146 --> 01:19:49.907
+<v Larry Augustin>stopped by.
+
+1189
+01:19:51.189 --> 01:19:54.815
+<v Larry Augustin>And it was a big crash for us in
+
+1190
+01:19:54.855 --> 01:19:55.516
+<v Larry Augustin>that space.
+
+1191
+01:19:56.217 --> 01:19:58.404
+<v Larry Augustin>And ultimately, we restructured
+
+1192
+01:19:58.464 --> 01:20:03.213
+<v Larry Augustin>the company to focus around
+SourceForge and the software
+
+1193
+01:20:03.233 --> 01:20:07.365
+<v Larry Augustin>business and less about Internet
+servers.
+
+1194
+01:20:08.488 --> 01:20:11.234
+<v Larry Augustin>And we did we did many innovative
+things in the Internet Service
+
+1195
+01:20:11.274 --> 01:20:11.675
+<v Larry Augustin>Society.
+
+1196
+01:20:11.700 --> 01:20:13.104
+<v Larry Augustin>We built the first high density
+
+1197
+01:20:13.224 --> 01:20:16.172
+<v Larry Augustin>rack mount servers that went into
+data centers.
+
+1198
+01:20:16.212 --> 01:20:17.641
+<v Larry Augustin>We did that to run the dot coms.
+
+1199
+01:20:19.163 --> 01:20:24.391
+<v Larry Augustin>But ultimately, when that part of
+
+1200
+01:20:24.411 --> 01:20:29.062
+<v Larry Augustin>the market crashed, it became very
+difficult for us to maintain that
+
+1201
+01:20:29.122 --> 01:20:29.482
+<v Larry Augustin>business.
+
+1202
+01:20:30.404 --> 01:20:32.689
+<v Larry Augustin>So we started restructuring the
+
+1203
+01:20:32.729 --> 01:20:38.003
+<v Larry Augustin>business, ultimately had to
+downsize, went through a very,
+
+1204
+01:20:38.083 --> 01:20:46.937
+<v Larry Augustin>very painful time where we had to
+we had to lay off groups of people
+
+1205
+01:20:47.921 --> 01:20:48.542
+<v Larry Augustin>to get there.
+
+1206
+01:20:49.003 --> 01:20:52.549
+<v Larry Augustin>And we emerged as a smaller
+
+1207
+01:20:52.589 --> 01:20:56.456
+<v Larry Augustin>company, more software focused,
+focused around SourceForge.
+
+1208
+01:20:59.064 --> 01:21:05.534
+<v Larry Augustin>And I'm very proud that we were
+able to sort of survive through
+
+1209
+01:21:05.594 --> 01:21:06.996
+<v Larry Augustin>that crash and downturn.
+
+1210
+01:21:09.003 --> 01:21:10.165
+<v Larry Augustin>But for me, it was a different
+
+1211
+01:21:10.185 --> 01:21:10.626
+<v Larry Augustin>business.
+
+1212
+01:21:11.808 --> 01:21:15.796
+<v Larry Augustin>And when I got it to that point,
+
+1213
+01:21:17.343 --> 01:21:20.349
+<v Larry Augustin>it was no longer as interesting or
+exciting for me.
+
+1214
+01:21:20.369 --> 01:21:24.361
+<v Larry Augustin>And it was time for me to go on
+and do something different.
+
+1215
+01:21:26.745 --> 01:21:31.474
+<v Larry Augustin>And what did you do in 2002?
+So at that point, looking for
+
+1216
+01:21:31.494 --> 01:21:36.408
+<v Larry Augustin>looking for kind of the next phase
+of my career, some friends of mine
+
+1217
+01:21:36.448 --> 01:21:40.662
+<v Larry Augustin>had joined, had created, had
+founded a venture capital firm up
+
+1218
+01:21:40.722 --> 01:21:42.586
+<v Larry Augustin>in San Francisco called Azure
+Capital.
+
+1219
+01:21:43.688 --> 01:21:47.740
+<v Larry Augustin>I loved, I loved the entrepreneur
+stage.
+
+1220
+01:21:47.801 --> 01:21:49.605
+<v Larry Augustin>I loved everything I'd learned
+there.
+
+1221
+01:21:50.006 --> 01:21:53.861
+<v Larry Augustin>And I had met many great people
+who were launching businesses.
+
+1222
+01:21:54.221 --> 01:22:02.174
+<v Larry Augustin>And many people told me that the
+VA Linux IPO had been very
+
+1223
+01:22:02.294 --> 01:22:04.983
+<v Larry Augustin>inspirational to them,
+particularly coming out of the
+
+1224
+01:22:05.064 --> 01:22:08.780
+<v Larry Augustin>open source software world with
+the idea that that you could
+
+1225
+01:22:08.820 --> 01:22:11.448
+<v Larry Augustin>create something here, you could
+create something potentially world
+
+1226
+01:22:11.488 --> 01:22:11.909
+<v Larry Augustin>changing.
+
+1227
+01:22:12.631 --> 01:22:16.766
+<v Larry Augustin>And so I I joined my friends up at
+
+1228
+01:22:16.826 --> 01:22:22.764
+<v Larry Augustin>Azure Capital and began to learn
+the venture capital side of the
+
+1229
+01:22:22.884 --> 01:22:23.325
+<v Larry Augustin>business.
+
+1230
+01:22:23.867 --> 01:22:25.210
+<v Larry Augustin>And I wanted to take my
+
+1231
+01:22:25.271 --> 01:22:29.707
+<v Larry Augustin>experiences and share them and
+help others that were looking to
+
+1232
+01:22:29.747 --> 01:22:30.188
+<v Larry Augustin>do that.
+
+1233
+01:22:30.268 --> 01:22:32.473
+<v Larry Augustin>And so I spent a few years up at
+
+1234
+01:22:32.533 --> 01:22:40.233
+<v Larry Augustin>Azure Capital, ultimately decided,
+it's a fantastic firm, I love, I
+
+1235
+01:22:40.294 --> 01:22:41.195
+<v Larry Augustin>love those guys.
+
+1236
+01:22:41.296 --> 01:22:44.025
+<v Larry Augustin>And they're all great friends.
+
+1237
+01:22:45.207 --> 01:22:52.687
+<v Larry Augustin>Today, to this day, ultimately
+decided that I really wanted to do
+
+1238
+01:22:52.747 --> 01:23:02.094
+<v Larry Augustin>it on my own, in the sense that I
+wanted to back and follow
+
+1239
+01:23:02.114 --> 01:23:04.639
+<v Larry Augustin>entrepreneurs that I wanted to
+spend time with, it didn't
+
+1240
+01:23:04.659 --> 01:23:04.970
+<v Larry Augustin>necessarily make sense for a firm
+to be investing in.
+
+1241
+01:23:04.970 --> 01:23:05.104
+<v Larry Augustin>So I spent I wanted to spend time
+with, it didn't necessarily make
+
+1242
+01:23:05.104 --> 01:23:05.184
+<v Larry Augustin>sense for a firm to be investing
+in.
+
+1243
+01:23:05.184 --> 01:23:06.247
+<v Larry Augustin>So I spent a few years at Azure
+Capital.
+
+1244
+01:23:06.327 --> 01:23:12.924
+<v Larry Augustin>And then I spent a few years on my
+own, angel investing, and helping
+
+1245
+01:23:12.944 --> 01:23:13.745
+<v Larry Augustin>early stage companies.
+
+1246
+01:23:14.646 --> 01:23:23.663
+<v Larry Augustin>Again, just early stage companies,
+
+1247
+01:23:24.385 --> 01:23:27.993
+<v Larry Augustin>again, just lucky enough to be
+involved with some fantastic
+
+1248
+01:23:28.093 --> 01:23:28.835
+<v Larry Augustin>entrepreneurs.
+
+1249
+01:23:31.723 --> 01:23:33.827
+<v Larry Augustin>Early on, people like Mark Fleury,
+
+1250
+01:23:33.887 --> 01:23:40.663
+<v Larry Augustin>who was the founder of JBoss, I
+sat on that board, and companies
+
+1251
+01:23:40.703 --> 01:23:47.515
+<v Larry Augustin>like Zensource, Spring, and
+Pentaho, Richard Daly over there
+
+1252
+01:23:47.555 --> 01:23:51.693
+<v Larry Augustin>built a incredible company around
+open source business intelligence.
+
+1253
+01:23:53.302 --> 01:24:00.234
+<v Larry Augustin>And I was lucky enough to be
+involved with many great open
+
+1254
+01:24:00.394 --> 01:24:04.184
+<v Larry Augustin>source primarily, businesses and
+entrepreneurs.
+
+1255
+01:24:06.368 --> 01:24:07.350
+<v Larry Augustin>Learned a ton.
+
+1256
+01:24:08.592 --> 01:24:09.674
+<v Larry Augustin>It's one of the things that I
+
+1257
+01:24:09.694 --> 01:24:12.965
+<v Larry Augustin>always, I was like doing things in
+my career where I learned new
+
+1258
+01:24:13.005 --> 01:24:13.326
+<v Larry Augustin>things.
+
+1259
+01:24:14.369 --> 01:24:15.713
+<v Larry Augustin>Going into venture capital was
+
+1260
+01:24:15.753 --> 01:24:16.580
+<v Larry Augustin>learning a new thing.
+
+1261
+01:24:18.826 --> 01:24:20.550
+<v Larry Augustin>Doing it on my own was learning a
+
+1262
+01:24:20.590 --> 01:24:21.072
+<v Larry Augustin>new thing.
+
+1263
+01:24:21.172 --> 01:24:23.041
+<v Larry Augustin>Every one of these companies, I
+
+1264
+01:24:23.141 --> 01:24:27.270
+<v Larry Augustin>learned tremendously from every
+one of those great entrepreneurs
+
+1265
+01:24:27.330 --> 01:24:28.051
+<v Larry Augustin>and CEOs.
+
+1266
+01:24:30.095 --> 01:24:36.788
+<v Larry Augustin>And along the way, I had been
+
+1267
+01:24:37.088 --> 01:24:42.860
+<v Larry Augustin>invited to come help out as an
+independent board member, and
+
+1268
+01:24:42.920 --> 01:24:49.029
+<v Larry Augustin>advisor to an open source company
+in the CRM space, SugarCRM.
+
+1269
+01:24:50.671 --> 01:24:58.567
+<v Larry Augustin>And so I joined the board over at
+SugarCRM and put a little money as
+
+1270
+01:24:58.608 --> 01:25:03.081
+<v Larry Augustin>an investor, and had spent several
+years on the board there.
+
+1271
+01:25:03.101 --> 01:25:09.174
+<v Larry Augustin>And there was a theme I was
+developing, which was that open
+
+1272
+01:25:09.194 --> 01:25:11.002
+<v Larry Augustin>source was moving up the software
+stack.
+
+1273
+01:25:13.387 --> 01:25:19.623
+<v Larry Augustin>Now there's the famous quote that
+software eats the world, and open
+
+1274
+01:25:19.663 --> 01:25:22.127
+<v Larry Augustin>source eats all software, if you
+will.
+
+1275
+01:25:22.608 --> 01:25:27.056
+<v Larry Augustin>Right?
+I did not coin those phrases, but
+
+1276
+01:25:28.703 --> 01:25:29.344
+<v Larry Augustin>very true.
+
+1277
+01:25:30.265 --> 01:25:34.333
+<v Larry Augustin>And I had spent more time moving
+
+1278
+01:25:34.393 --> 01:25:36.056
+<v Larry Augustin>up and learning business
+applications.
+
+1279
+01:25:37.642 --> 01:25:44.715
+<v Larry Augustin>Ultimately, the investors over at
+SugarCRM said, Larry, we need to
+
+1280
+01:25:44.735 --> 01:25:46.181
+<v Larry Augustin>figure out what to do with this
+business.
+
+1281
+01:25:47.243 --> 01:25:48.646
+<v Larry Augustin>We've been kind of stalled.
+
+1282
+01:25:49.187 --> 01:25:50.290
+<v Larry Augustin>Would you take a look at it?
+
+1283
+01:25:50.671 --> 01:25:53.200
+<v Larry Augustin>You're the operating person here.
+
+1284
+01:25:53.481 --> 01:25:54.885
+<v Larry Augustin>You've run the business.
+
+1285
+01:25:54.945 --> 01:25:56.689
+<v Larry Augustin>You know open source.
+
+1286
+01:25:56.709 --> 01:25:58.814
+<v Larry Augustin>You don't know CRM, but will you
+
+1287
+01:25:58.854 --> 01:26:01.845
+<v Larry Augustin>take a look?
+And I ultimately spent 10 years in
+
+1288
+01:26:01.865 --> 01:26:02.386
+<v Larry Augustin>that company.
+
+1289
+01:26:03.768 --> 01:26:07.595
+<v Larry Augustin>Grew it into, in many ways, I
+
+1290
+01:26:07.635 --> 01:26:11.227
+<v Larry Augustin>think a very influential company
+for the open source world in the
+
+1291
+01:26:11.267 --> 01:26:12.129
+<v Larry Augustin>CRM space.
+
+1292
+01:26:12.791 --> 01:26:15.821
+<v Larry Augustin>We had fantastic customers, such
+
+1293
+01:26:15.921 --> 01:26:23.774
+<v Larry Augustin>as IBM and Apple, SugarCRM
+customers, and grew that business
+
+1294
+01:26:23.794 --> 01:26:28.065
+<v Larry Augustin>for many years before selling into
+a private equity firm, XLKKR.
+
+1295
+01:26:30.610 --> 01:26:31.852
+<v Larry Augustin>Fantastic experience.
+
+1296
+01:26:32.033 --> 01:26:33.375
+<v Larry Augustin>Great, great team.
+
+1297
+01:26:33.435 --> 01:26:38.608
+<v Larry Augustin>I was lucky enough to be able to
+write off of the efforts of
+
+1298
+01:26:38.688 --> 01:26:40.431
+<v Larry Augustin>founders there, such as Quintor.
+
+1299
+01:26:42.535 --> 01:26:46.644
+<v Larry Augustin>Just incredible team.
+
+1300
+01:26:46.864 --> 01:26:50.750
+<v Elisabetta Mori>Okay, so you became CEO in 2009?
+Yes.
+
+1301
+01:26:50.830 --> 01:26:53.013
+<v Elisabetta Mori>And you left in 2019?
+Yes, yes.
+
+1302
+01:26:58.243 --> 01:27:04.532
+<v Elisabetta Mori>What did you do in 2019?
+Yes, so after we sold the company
+
+1303
+01:27:04.552 --> 01:27:08.017
+<v Larry Augustin>to XLKKR, I left SugarCRM.
+
+1304
+01:27:09.482 --> 01:27:12.648
+<v Larry Augustin>I got a call from Amazon, an
+
+1305
+01:27:12.688 --> 01:27:25.709
+<v Larry Augustin>interest in developing and
+building more of the software that
+
+1306
+01:27:25.749 --> 01:27:28.593
+<v Larry Augustin>was moving up the stack on AWS.
+
+1307
+01:27:29.414 --> 01:27:31.097
+<v Larry Augustin>Amazon had built a set of
+
+1308
+01:27:31.741 --> 01:27:36.650
+<v Larry Augustin>products, particular things like
+their Connect call center product,
+
+1309
+01:27:36.931 --> 01:27:41.984
+<v Larry Augustin>their WorkDocs file management
+product, messaging and
+
+1310
+01:27:42.024 --> 01:27:48.475
+<v Larry Augustin>communications, video
+conferencing, and chat.
+
+1311
+01:27:49.055 --> 01:27:51.005
+<v Larry Augustin>And they were trying to figure out
+what to do with these products,
+
+1312
+01:27:51.066 --> 01:27:52.652
+<v Larry Augustin>and they put them together into a
+group.
+
+1313
+01:27:53.201 --> 01:27:56.749
+<v Larry Augustin>And we're looking for someone to
+help grow and develop that and
+
+1314
+01:27:56.809 --> 01:28:01.703
+<v Larry Augustin>understand where to go with those
+applications on AWS.
+
+1315
+01:28:02.424 --> 01:28:10.617
+<v Larry Augustin>And if you are an entrepreneur,
+and you've been building in the
+
+1316
+01:28:14.124 --> 01:28:17.490
+<v Larry Augustin>mid to late 2000s, you're probably
+building on AWS.
+
+1317
+01:28:18.312 --> 01:28:23.027
+<v Larry Augustin>One of the things we had done at
+SugarCRM was move to AWS for many
+
+1318
+01:28:23.067 --> 01:28:23.829
+<v Larry Augustin>of our services.
+
+1319
+01:28:24.470 --> 01:28:25.934
+<v Larry Augustin>And this was a common theme.
+
+1320
+01:28:28.364 --> 01:28:31.451
+<v Larry Augustin>So I went over to AWS and was
+lucky enough to be able to run
+
+1321
+01:28:31.471 --> 01:28:37.728
+<v Larry Augustin>some very significant businesses
+there for a couple of years and
+
+1322
+01:28:37.748 --> 01:28:39.571
+<v Larry Augustin>help build those out.
+
+1323
+01:28:39.952 --> 01:28:40.934
+<v Larry Augustin>It was fantastic.
+
+1324
+01:28:40.954 --> 01:28:41.856
+<v Larry Augustin>I enjoyed it.
+
+1325
+01:28:41.856 --> 01:28:44.255
+<v Larry Augustin>It's it.
+
+1326
+01:28:44.255 --> 01:28:45.569
+<v Larry Augustin>It's a little bit of a different
+experience.
+
+1327
+01:28:47.694 --> 01:28:49.899
+<v Larry Augustin>Again, I wanted to learn.
+
+1328
+01:28:53.088 --> 01:28:55.913
+<v Larry Augustin>If you look at my career, I've
+
+1329
+01:28:55.953 --> 01:28:59.280
+<v Larry Augustin>made decisions all along the way
+to do things that I've never done
+
+1330
+01:28:59.280 --> 01:28:59.484
+<v Larry Augustin>before, because I want to learn
+and I want to understand, the way
+
+1331
+01:28:59.484 --> 01:28:59.614
+<v Larry Augustin>to do things that I've never done
+before, because I want to learn
+
+1332
+01:28:59.614 --> 01:29:02.230
+<v Larry Augustin>and I want to understand, and I
+want to stretch myself.
+
+1333
+01:29:02.250 --> 01:29:12.454
+<v Larry Augustin>And I'm never afraid to try things
+that I don't know how to do.
+
+1334
+01:29:12.474 --> 01:29:15.779
+<v Larry Augustin>I had a great experience over at
+AWS for that.
+
+1335
+01:29:15.779 --> 01:29:15.899
+<v Larry Augustin>Ultimately, I decided had a great
+experience over at AWS for that.
+
+1336
+01:29:15.899 --> 01:29:18.066
+<v Larry Augustin>Ultimately, I decided that I
+wasn't going to stay in that big
+
+1337
+01:29:18.086 --> 01:29:27.223
+<v Larry Augustin>company for a long time and went
+back to being an angel investor
+
+1338
+01:29:27.263 --> 01:29:32.552
+<v Larry Augustin>and advising and working with
+early stage companies.
+
+1339
+01:29:35.480 --> 01:29:37.004
+<v Larry Augustin>And that's what I'm doing today.
+
+1340
+01:29:37.525 --> 01:29:38.768
+<v Elisabetta Mori>So did you move to Seattle when
+
+1341
+01:29:38.808 --> 01:29:44.085
+<v Elisabetta Mori>you... I did not move to Seattle.
+
+1342
+01:29:45.468 --> 01:29:46.911
+<v Larry Augustin>I did Seattle part-time.
+
+1343
+01:29:46.931 --> 01:29:53.106
+<v Larry Augustin>So I had just the schedule that
+was every other week.
+
+1344
+01:29:54.408 --> 01:29:58.294
+<v Larry Augustin>So I'm a firm believer, just
+philosophically, that you have to
+
+1345
+01:29:58.334 --> 01:29:59.916
+<v Larry Augustin>be near the team and the people.
+
+1346
+01:30:00.921 --> 01:30:06.131
+<v Larry Augustin>And so I got an apartment in
+
+1347
+01:30:06.151 --> 01:30:08.435
+<v Larry Augustin>Seattle, and I went to Seattle
+every other week and spend time
+
+1348
+01:30:08.475 --> 01:30:08.656
+<v Larry Augustin>there.
+
+1349
+01:30:08.960 --> 01:30:10.283
+<v Larry Augustin>I also, by the way, had teams in
+
+1350
+01:30:10.303 --> 01:30:10.784
+<v Larry Augustin>the Bay Area.
+
+1351
+01:30:11.366 --> 01:30:14.673
+<v Larry Augustin>So I had offices in San Francisco
+
+1352
+01:30:14.734 --> 01:30:19.209
+<v Larry Augustin>and Seattle, and I had teams in
+Silicon Valley, San Francisco,
+
+1353
+01:30:19.229 --> 01:30:22.643
+<v Larry Augustin>Seattle, and around Washington, as
+well as around the country,
+
+1354
+01:30:23.966 --> 01:30:25.349
+<v Larry Augustin>working for me at AWS.
+
+1355
+01:30:25.410 --> 01:30:27.335
+<v Larry Augustin>And so I would go back and forth.
+
+1356
+01:30:28.942 --> 01:30:39.415
+<v Elisabetta Mori>So now that you're only focused on
+being an angel investor, what is
+
+1357
+01:30:39.435 --> 01:30:45.065
+<v Elisabetta Mori>your angel investment strategy?
+So, or let me rephrase, how did
+
+1358
+01:30:45.286 --> 01:30:49.512
+<v Elisabetta Mori>your strategy evolve from the
+beginning?
+
+1359
+01:30:49.812 --> 01:30:57.707
+<v Elisabetta Mori>And if it at all changed, if it
+evolved from the beginning?
+
+1360
+01:30:57.907 --> 01:31:00.892
+<v Larry Augustin>Sure, sure, sure.
+
+1361
+01:31:02.154 --> 01:31:05.063
+<v Larry Augustin>It's interesting watching the
+
+1362
+01:31:05.123 --> 01:31:08.832
+<v Larry Augustin>history of open source and
+commercial companies, because it's
+
+1363
+01:31:08.852 --> 01:31:09.955
+<v Larry Augustin>gone through some cycles.
+
+1364
+01:31:11.402 --> 01:31:14.728
+<v Larry Augustin>Where it was very popular, less
+
+1365
+01:31:14.808 --> 01:31:15.429
+<v Larry Augustin>popular.
+
+1366
+01:31:16.191 --> 01:31:18.114
+<v Larry Augustin>Now, it's very popular, and it's
+
+1367
+01:31:18.154 --> 01:31:18.795
+<v Larry Augustin>very common.
+
+1368
+01:31:19.380 --> 01:31:20.945
+<v Larry Augustin>And I think many people realize
+
+1369
+01:31:20.965 --> 01:31:26.365
+<v Larry Augustin>that you can build a great,
+significant business around and
+
+1370
+01:31:26.425 --> 01:31:29.892
+<v Larry Augustin>related to and using open source
+technologies.
+
+1371
+01:31:29.972 --> 01:31:33.264
+<v Larry Augustin>And to the point where you'll see
+many companies that talk about
+
+1372
+01:31:33.304 --> 01:31:36.774
+<v Larry Augustin>proprietary software, and
+investors will look at them and
+
+1373
+01:31:36.800 --> 01:31:39.871
+<v Larry Augustin>actually ask the question, should
+you be doing some of this open
+
+1374
+01:31:39.911 --> 01:31:45.408
+<v Larry Augustin>source?
+So I don't mind open source,
+
+1375
+01:31:45.508 --> 01:31:45.989
+<v Larry Augustin>obviously.
+
+1376
+01:31:48.153 --> 01:31:49.555
+<v Larry Augustin>I've always felt one could build a
+
+1377
+01:31:49.575 --> 01:31:50.641
+<v Larry Augustin>great business around it.
+
+1378
+01:31:51.724 --> 01:31:52.927
+<v Larry Augustin>I've always felt that companies
+
+1379
+01:31:52.967 --> 01:31:55.914
+<v Larry Augustin>have been too protective of their
+source code.
+
+1380
+01:31:56.320 --> 01:32:02.171
+<v Larry Augustin>But in fact, the value is in the
+people and the culture and
+
+1381
+01:32:03.413 --> 01:32:05.923
+<v Larry Augustin>everything you've built around
+that, and and not necessarily in
+
+1382
+01:32:05.943 --> 01:32:07.808
+<v Larry Augustin>just access to the code.
+
+1383
+01:32:08.088 --> 01:32:09.211
+<v Larry Augustin>So I do a lot of open source.
+
+1384
+01:32:09.853 --> 01:32:12.305
+<v Larry Augustin>It's a long way of saying I do a
+lot of investing around open
+
+1385
+01:32:12.345 --> 01:32:16.822
+<v Larry Augustin>source, because I think it's a
+great, great incubator for great
+
+1386
+01:32:16.862 --> 01:32:17.563
+<v Larry Augustin>technologies.
+
+1387
+01:32:18.806 --> 01:32:20.910
+<v Larry Augustin>I love helping entrepreneurs that
+
+1388
+01:32:20.990 --> 01:32:24.962
+<v Larry Augustin>are first time entrepreneurs, that
+are trying to understand how to go
+
+1389
+01:32:24.983 --> 01:32:27.086
+<v Larry Augustin>through the process.
+
+1390
+01:32:28.369 --> 01:32:31.634
+<v Larry Augustin>I love seeing interesting
+
+1391
+01:32:31.674 --> 01:32:32.356
+<v Larry Augustin>technologies.
+
+1392
+01:32:32.760 --> 01:32:35.305
+<v Larry Augustin>I've been lucky enough to be at
+
+1393
+01:32:35.346 --> 01:32:39.795
+<v Larry Augustin>the forefront of some very
+interesting technological changes
+
+1394
+01:32:40.741 --> 01:32:41.803
+<v Larry Augustin>in our world and culture.
+
+1395
+01:32:43.485 --> 01:32:46.330
+<v Larry Augustin>Linux, open source, I spent time
+
+1396
+01:32:46.390 --> 01:32:52.884
+<v Larry Augustin>at AWS, the internet and web, I've
+just been around those.
+
+1397
+01:32:54.747 --> 01:32:58.355
+<v Larry Augustin>I think we are at a similar
+junction right now with AI.
+
+1398
+01:32:58.600 --> 01:33:02.893
+<v Larry Augustin>I know I'm not unique in saying
+that, but I believe that many
+
+1399
+01:33:04.222 --> 01:33:08.230
+<v Larry Augustin>types of software and applications
+are going to be fundamentally
+
+1400
+01:33:08.250 --> 01:33:13.503
+<v Larry Augustin>restructured in how they're built,
+and how they solve problems for
+
+1401
+01:33:13.563 --> 01:33:15.646
+<v Larry Augustin>people using AI.
+
+1402
+01:33:18.410 --> 01:33:22.076
+<v Larry Augustin>And so I look a lot of ways of
+
+1403
+01:33:22.116 --> 01:33:29.932
+<v Larry Augustin>just how can we rethink a problem
+and be able to solve it with AI.
+
+1404
+01:33:29.952 --> 01:33:35.486
+<v Larry Augustin>I mean, my computer science
+background comes out here a bit in
+
+1405
+01:33:35.547 --> 01:33:38.474
+<v Larry Augustin>the sense that there are many
+problems that are algorithmically
+
+1406
+01:33:38.680 --> 01:33:39.281
+<v Larry Augustin>very hard.
+
+1407
+01:33:39.943 --> 01:33:42.129
+<v Larry Augustin>Problems that we might
+
+1408
+01:33:42.169 --> 01:33:48.508
+<v Larry Augustin>traditionally have said fall into
+the NP complete path where they're
+
+1409
+01:33:49.230 --> 01:33:51.876
+<v Larry Augustin>non-polynomial time solutions.
+
+1410
+01:33:51.916 --> 01:33:53.239
+<v Larry Augustin>They're very complicated, and
+
+1411
+01:33:53.339 --> 01:33:53.749
+<v Larry Augustin>they're hard, and they take a lot
+of time to solve.
+
+1412
+01:33:53.749 --> 01:33:59.640
+<v Larry Augustin>But we can now, using machine
+learning, create some pretty good
+
+1413
+01:33:59.660 --> 01:34:02.225
+<v Larry Augustin>approximations to solutions that
+we couldn't in the past.
+
+1414
+01:34:02.425 --> 01:34:10.487
+<v Larry Augustin>We can now do processing around We
+can now do processing around
+
+1415
+01:34:10.567 --> 01:34:12.674
+<v Larry Augustin>natural language that we couldn't
+do in the past.
+
+1416
+01:34:14.285 --> 01:34:17.113
+<v Larry Augustin>I'm super excited about the things
+that we can do as a result of
+
+1417
+01:34:17.153 --> 01:34:17.374
+<v Larry Augustin>that.
+
+1418
+01:34:18.082 --> 01:34:20.328
+<v Larry Augustin>So those are some of the things,
+
+1419
+01:34:21.370 --> 01:34:22.794
+<v Larry Augustin>some of the things that I think
+about there.
+
+1420
+01:34:26.304 --> 01:34:29.010
+<v Elisabetta Mori>You don't look back at your life
+until now.
+
+1421
+01:34:30.192 --> 01:34:31.856
+<v Elisabetta Mori>What are your proudest
+achievements?
+
+1422
+01:34:35.605 --> 01:34:41.675
+<v Larry Augustin>Oh, I will start with something we
+haven't talked a lot about, but I
+
+1423
+01:34:41.695 --> 01:34:42.797
+<v Larry Augustin>have a wonderful family.
+
+1424
+01:34:45.124 --> 01:34:46.626
+<v Larry Augustin>My daughter is my proudest
+
+1425
+01:34:46.687 --> 01:34:47.228
+<v Larry Augustin>achievement.
+
+1426
+01:34:50.033 --> 01:34:51.155
+<v Larry Augustin>My daughter is my proudest
+
+1427
+01:34:51.195 --> 01:34:51.696
+<v Larry Augustin>achievement.
+
+1428
+01:34:54.044 --> 01:34:56.188
+<v Larry Augustin>She studied computer engineering
+
+1429
+01:34:56.488 --> 01:34:59.554
+<v Larry Augustin>and gaming, and theater, film, and
+television.
+
+1430
+01:35:00.336 --> 01:35:05.573
+<v Larry Augustin>So I'm just super proud as a dad.
+
+1431
+01:35:10.223 --> 01:35:15.733
+<v Larry Augustin>On the sort of career side, I'm
+
+1432
+01:35:15.793 --> 01:35:21.586
+<v Larry Augustin>proud that I've been able to help
+some people create the things that
+
+1433
+01:35:21.606 --> 01:35:22.528
+<v Larry Augustin>they've been able to do.
+
+1434
+01:35:24.672 --> 01:35:26.074
+<v Larry Augustin>In many ways, I look back, and
+
+1435
+01:35:26.555 --> 01:35:30.988
+<v Larry Augustin>I've said I'm something of a hack
+when it comes to being able to
+
+1436
+01:35:31.048 --> 01:35:34.802
+<v Larry Augustin>create things in code, and I'm
+super proud that I think I've been
+
+1437
+01:35:34.842 --> 01:35:37.891
+<v Larry Augustin>able to support and help some
+people who are just brilliant that
+
+1438
+01:35:37.931 --> 01:35:44.630
+<v Larry Augustin>have created some technology that
+makes the world better for
+
+1439
+01:35:44.690 --> 01:35:44.930
+<v Larry Augustin>everyone.
+
+1440
+01:35:47.475 --> 01:35:48.336
+<v Larry Augustin>There's a little bit for you.
+
+1441
+01:35:49.582 --> 01:35:55.014
+<v Elisabetta Mori>And is there anything if you had
+your time again you would do
+
+1442
+01:35:55.114 --> 01:36:00.608
+<v Elisabetta Mori>differently?
+You know, it's hard to say
+
+1443
+01:36:00.688 --> 01:36:06.061
+<v Larry Augustin>because, you know, as I look back
+now, I realize how naive I was at
+
+1444
+01:36:06.121 --> 01:36:14.292
+<v Larry Augustin>every stage, but that's how we
+learn.
+
+1445
+01:36:16.455 --> 01:36:21.988
+<v Larry Augustin>So I'm not big on the would have,
+should have, could have done it
+
+1446
+01:36:22.208 --> 01:36:22.769
+<v Larry Augustin>differently.
+
+1447
+01:36:22.789 --> 01:36:25.715
+<v Larry Augustin>I think everyone has to go through
+
+1448
+01:36:25.720 --> 01:36:35.622
+<v Larry Augustin>the learning phases, and there's a
+ton of things that I got wrong all
+
+1449
+01:36:35.682 --> 01:36:36.083
+<v Larry Augustin>the time.
+
+1450
+01:36:36.504 --> 01:36:41.852
+<v Larry Augustin>There's a ton of, but I listened a
+
+1451
+01:36:41.892 --> 01:36:45.543
+<v Larry Augustin>lot, and I hope I learned from
+those, and I hope I don't, you
+
+1452
+01:36:45.563 --> 01:36:48.352
+<v Larry Augustin>know, I hope I've learned along
+the way, and that I get better,
+
+1453
+01:36:48.372 --> 01:36:49.741
+<v Larry Augustin>and I can impart some of that
+knowledge.
+
+1454
+01:36:50.784 --> 01:36:53.451
+<v Larry Augustin>But I also believe people also
+have to go through some of that.
+
+1455
+01:36:53.532 --> 01:36:56.746
+<v Larry Augustin>So this is a little of my
+philosophy when I advise
+
+1456
+01:36:56.826 --> 01:36:57.789
+<v Larry Augustin>entrepreneurs and companies.
+
+1457
+01:36:57.829 --> 01:36:59.173
+<v Larry Augustin>I give them advice, but I also
+
+1458
+01:36:59.194 --> 01:37:03.127
+<v Larry Augustin>think they have to learn
+themselves, and people make
+
+1459
+01:37:03.167 --> 01:37:03.668
+<v Larry Augustin>mistakes.
+
+1460
+01:37:06.133 --> 01:37:07.415
+<v Larry Augustin>That's part of the learning
+
+1461
+01:37:07.455 --> 01:37:07.856
+<v Larry Augustin>process.
+
+1462
+01:37:07.960 --> 01:37:09.043
+<v Larry Augustin>It's one of the things I think is
+
+1463
+01:37:09.063 --> 01:37:16.146
+<v Larry Augustin>great about the Silicon Valley
+culture is that it's a culture in
+
+1464
+01:37:16.206 --> 01:37:20.134
+<v Larry Augustin>which people learn from making
+mistakes, and you can make a
+
+1465
+01:37:20.154 --> 01:37:22.824
+<v Larry Augustin>mistake, and get better, and
+learn, and come back, and that's
+
+1466
+01:37:22.904 --> 01:37:23.265
+<v Larry Augustin>okay.
+
+1467
+01:37:25.730 --> 01:37:28.175
+<v Larry Augustin>So that's how I think about,
+
+1468
+01:37:28.681 --> 01:37:30.069
+<v Larry Augustin>that's how I think about that
+question.
+
+1469
+01:37:34.524 --> 01:37:39.293
+<v Elisabetta Mori>So what's your relationship with
+the community, you know, free and
+
+1470
+01:37:39.373 --> 01:37:43.185
+<v Elisabetta Mori>open source community, like what's
+your relationship with old
+
+1471
+01:37:43.266 --> 01:37:50.406
+<v Elisabetta Mori>acquaintances like Dolman,
+Torvalds, Mad Dog Hall?
+
+1472
+01:37:50.606 --> 01:37:54.815
+<v Larry Augustin>I was on the Clinics Foundation
+Board of Directors for a long
+
+1473
+01:37:54.875 --> 01:37:55.276
+<v Larry Augustin>time.
+
+1474
+01:37:55.276 --> 01:37:59.227
+<v Larry Augustin>I was an early person who helped
+
+1475
+01:37:59.568 --> 01:38:02.453
+<v Larry Augustin>get that organization going.
+
+1476
+01:38:02.854 --> 01:38:04.701
+<v Larry Augustin>I work with a lot of open source
+
+1477
+01:38:04.881 --> 01:38:06.163
+<v Larry Augustin>entrepreneurs today.
+
+1478
+01:38:06.183 --> 01:38:09.889
+<v Larry Augustin>I love that community.
+
+1479
+01:38:09.909 --> 01:38:15.042
+<v Larry Augustin>I don't spend as much time online
+as I used to.
+
+1480
+01:38:15.122 --> 01:38:20.495
+<v Larry Augustin>Now there's more time for family
+and other things in my life.
+
+1481
+01:38:23.304 --> 01:38:27.934
+<v Larry Augustin>But I still spend a lot of time,
+if you look at the angel investing
+
+1482
+01:38:27.974 --> 01:38:32.927
+<v Larry Augustin>and places where I go, I spend a
+lot of time with people there, and
+
+1483
+01:38:32.967 --> 01:38:37.596
+<v Larry Augustin>it's just been fantastic and
+lucky, and I've loved it.
+
+1484
+01:38:39.904 --> 01:38:44.033
+<v Elisabetta Mori>Maybe we already covered this a
+little bit because, you know, we
+
+1485
+01:38:44.053 --> 01:38:47.926
+<v Elisabetta Mori>were talking about learning from,
+you know, errors and mistakes that
+
+1486
+01:38:48.087 --> 01:38:51.800
+<v Elisabetta Mori>one can go through, but what
+advice would you give to someone
+
+1487
+01:38:52.281 --> 01:38:58.811
+<v Elisabetta Mori>willing to pursue your career?
+I would say a couple of things.
+
+1488
+01:39:00.353 --> 01:39:03.000
+<v Larry Augustin>One is pursue things that you
+love.
+
+1489
+01:39:04.804 --> 01:39:06.126
+<v Larry Augustin>I think that's very important.
+
+1490
+01:39:06.687 --> 01:39:08.972
+<v Larry Augustin>I have always made decisions for
+
+1491
+01:39:09.032 --> 01:39:15.708
+<v Larry Augustin>me about doing things that I
+personally thought were important
+
+1492
+01:39:15.849 --> 01:39:19.596
+<v Larry Augustin>or loved or enjoyed or wanted to
+be involved with.
+
+1493
+01:39:21.522 --> 01:39:30.095
+<v Larry Augustin>Not because I thought I could make
+money doing that, and I don't know
+
+1494
+01:39:30.135 --> 01:39:31.137
+<v Larry Augustin>if that's great advice.
+
+1495
+01:39:32.202 --> 01:39:33.024
+<v Larry Augustin>It's worked for me.
+
+1496
+01:39:33.866 --> 01:39:34.848
+<v Larry Augustin>I'll just say that.
+
+1497
+01:39:35.569 --> 01:39:37.434
+<v Larry Augustin>I have been lucky that it's left
+
+1498
+01:39:37.454 --> 01:39:40.905
+<v Larry Augustin>me in a position where I can
+continue to do more of that, and I
+
+1499
+01:39:40.965 --> 01:39:42.428
+<v Larry Augustin>think there's something to that.
+
+1500
+01:39:44.994 --> 01:39:46.401
+<v Larry Augustin>Pursuing things for passion, I
+
+1501
+01:39:46.481 --> 01:39:52.333
+<v Larry Augustin>think, brings you a certain depth
+to them that pursuing them just
+
+1502
+01:39:52.373 --> 01:39:55.927
+<v Larry Augustin>for money doesn't, so I always
+encourage that.
+
+1503
+01:39:55.947 --> 01:39:58.114
+<v Larry Augustin>I always encourage learning.
+
+1504
+01:40:03.044 --> 01:40:04.407
+<v Larry Augustin>You know, I go back to kind of my
+
+1505
+01:40:04.427 --> 01:40:08.796
+<v Larry Augustin>early life where I told the story,
+you know, you're in the field and
+
+1506
+01:40:08.800 --> 01:40:09.642
+<v Larry Augustin>the tractor breaks.
+
+1507
+01:40:09.662 --> 01:40:10.824
+<v Larry Augustin>I don't know anything about
+
+1508
+01:40:10.864 --> 01:40:15.374
+<v Larry Augustin>tractors, but I can figure it out,
+you know.
+
+1509
+01:40:15.855 --> 01:40:16.341
+<v Larry Augustin>I'll try it.
+
+1510
+01:40:16.401 --> 01:40:17.203
+<v Larry Augustin>What's the worst case?
+
+1511
+01:40:17.263 --> 01:40:19.509
+<v Larry Augustin>It's broken already, you know.
+
+1512
+01:40:19.609 --> 01:40:20.853
+<v Larry Augustin>Maybe I'll break it more, but
+
+1513
+01:40:20.913 --> 01:40:25.267
+<v Larry Augustin>maybe I'll fix it, and by the way,
+if I don't fix it, I don't know
+
+1514
+01:40:25.307 --> 01:40:31.104
+<v Larry Augustin>who is, so it's okay to dive into
+things that you don't know, and
+
+1515
+01:40:31.244 --> 01:40:35.135
+<v Larry Augustin>maybe you'll learn something along
+the way and improve things.
+
+1516
+01:40:40.865 --> 01:40:42.930
+<v Larry Augustin>I really encourage people with
+this.
+
+1517
+01:40:43.551 --> 01:40:49.686
+<v Larry Augustin>I worry sometimes that our society
+in some ways has become too
+
+1518
+01:40:49.726 --> 01:40:58.404
+<v Larry Augustin>cautious around people, you know,
+willing to just fix or figure out
+
+1519
+01:40:58.464 --> 01:41:03.735
+<v Larry Augustin>or dive in and solve a problem,
+and I encourage people.
+
+1520
+01:41:05.283 --> 01:41:05.884
+<v Larry Augustin>You don't know.
+
+1521
+01:41:07.908 --> 01:41:08.629
+<v Larry Augustin>You don't know how to do
+
+1522
+01:41:08.689 --> 01:41:09.110
+<v Larry Augustin>something.
+
+1523
+01:41:09.130 --> 01:41:12.096
+<v Larry Augustin>It's okay, you know, but by the
+
+1524
+01:41:12.116 --> 01:41:15.488
+<v Larry Augustin>way, you'll probably make
+mistakes, you know, figuring it
+
+1525
+01:41:15.608 --> 01:41:18.535
+<v Larry Augustin>out, but don't let that stop you.
+
+1526
+01:41:21.005 --> 01:41:24.872
+<v Larry Augustin>Try, learn, dive into things.
+
+1527
+01:41:26.055 --> 01:41:27.698
+<v Larry Augustin>Many of the things I've done in my
+career, I didn't know what I was
+
+1528
+01:41:27.698 --> 01:41:27.828
+<v Larry Augustin>doing when I started, but things
+I've done in my career, I didn't
+
+1529
+01:41:27.828 --> 01:41:28.905
+<v Larry Augustin>know what I was doing when I
+started, but I listened, I
+
+1530
+01:41:28.925 --> 01:41:43.235
+<v Larry Augustin>learned, and ultimately,
+ultimately, I helped create things
+
+1531
+01:41:43.255 --> 01:41:47.220
+<v Larry Augustin>that were better, and I learned a
+lot and educated a lot and
+
+1532
+01:41:47.220 --> 01:41:49.879
+<v Larry Augustin>educated myself in that, so take
+those risks.
+
+1533
+01:41:52.231 --> 01:41:55.039
+<v Elisabetta Mori>Is there anything you would like
+to add that we haven't covered
+
+1534
+01:41:55.079 --> 01:41:59.874
+<v Elisabetta Mori>today?
+This has been a great,
+
+1535
+01:41:59.994 --> 01:42:01.979
+<v Larry Augustin>wide-ranging discussion, and I
+want to thank you.
+
+1536
+01:42:01.979 --> 01:42:02.835
+<v Elisabetta Mori>Okay, so thank you.
+
+1537
+01:42:03.022 --> 01:42:03.840
+<v Larry Augustin>Thank you, Elisabetta.
+
+1538
+01:42:03.840 --> 01:42:06.065
+<v Larry Augustin>And it's been a real pleasure
+talking to you today.
+
+1539
+01:42:06.406 --> 01:42:07.769
+<v Larry Augustin>Thank you very much.
+
+1540
+01:42:09.920 --> 01:42:10.261
+<v Elisabetta Mori>Thank you.
+

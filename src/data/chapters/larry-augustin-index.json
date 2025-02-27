@@ -1,0 +1,1746 @@
+{
+  "title": "AI-generated Index",
+  "metadata": [
+    {
+      "index": 0,
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 1,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 2,
+          "line": "# Introduction",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 3,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 4,
+          "line": "> Elisabetta Mori introduces the Free and Open Source Stories Digital Archive Foundation (FOSSDA) and herself as a historian of computing interviewing Larry Augustin, an entrepreneur, investor, and important figure in the open software movement.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 5,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 6,
+          "line": "**FOSSDA, computing history, open software, entrepreneur**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**FOSSDA, computing history, open software, entrepreneur**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Introduction",
+      "synopsis": "Elisabetta Mori introduces the Free and Open Source Stories Digital Archive Foundation (FOSSDA) and herself as a historian of computing interviewing Larry Augustin, an entrepreneur, investor, and important figure in the open software movement.",
+      "notes": "",
+      "keywords": "FOSSDA, computing history, open software, entrepreneur"
+    },
+    {
+      "index": 7,
+      "timecode": "00:01:04",
+      "time": {
+        "start": 64,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 8,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 9,
+          "line": "# Background and Early Life",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 10,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 11,
+          "line": "> Larry Augustin describes his early life in Dayton, Ohio, where he grew up in a family with a farming and military background. He discusses how his upbringing and his father's influence led him to pursue a career in engineering, particularly influenced by summers spent working on the family farm.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 12,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 13,
+          "line": "**Dayton, engineering, family influences, early career**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**Dayton, engineering, family influences, early career**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Background and Early Life",
+      "synopsis": "Larry Augustin describes his early life in Dayton, Ohio, where he grew up in a family with a farming and military background. He discusses how his upbringing and his father's influence led him to pursue a career in engineering, particularly influenced by summers spent working on the family farm.",
+      "notes": "",
+      "keywords": "Dayton, engineering, family influences, early career"
+    },
+    {
+      "index": 14,
+      "timecode": "00:03:13",
+      "time": {
+        "start": 193,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 15,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 16,
+          "line": "# Influential People and Education",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 17,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 18,
+          "line": "> Augustin reflects on the influential figures in his early life, including his parents and teachers, and discusses his educational journey through public schools and eventually the University of Notre Dame, where he studied electrical engineering.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 19,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 20,
+          "line": "**education, influential figures, University of Notre Dame, electrical engineering**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**education, influential figures, University of Notre Dame, electrical engineering**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Influential People and Education",
+      "synopsis": "Augustin reflects on the influential figures in his early life, including his parents and teachers, and discusses his educational journey through public schools and eventually the University of Notre Dame, where he studied electrical engineering.",
+      "notes": "",
+      "keywords": "education, influential figures, University of Notre Dame, electrical engineering"
+    },
+    {
+      "index": 21,
+      "timecode": "00:05:14",
+      "time": {
+        "start": 314,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 22,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 23,
+          "line": "# Early Academic and Professional Experiences",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 24,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 25,
+          "line": "> Larry shares his initial experiences with computers and programming during high school and college, including his early interactions with COBOL programming and his involvement in setting up the first personal computer lab at Notre Dame.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 26,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 27,
+          "line": "**early computing, COBOL, University of Notre Dame, personal computer lab**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**early computing, COBOL, University of Notre Dame, personal computer lab**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Early Academic and Professional Experiences",
+      "synopsis": "Larry shares his initial experiences with computers and programming during high school and college, including his early interactions with COBOL programming and his involvement in setting up the first personal computer lab at Notre Dame.",
+      "notes": "",
+      "keywords": "early computing, COBOL, University of Notre Dame, personal computer lab"
+    },
+    {
+      "index": 28,
+      "timecode": "00:06:35",
+      "time": {
+        "start": 395,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 29,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 30,
+          "line": "# Advanced Education and Early Career",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 31,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 32,
+          "line": "> Discussing his postgraduate journey, Larry talks about receiving a fellowship from Bell Labs, moving to Stanford for his master's degree, and his work in electronic design automation, which led to a significant contribution in re-microcoding.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 33,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 34,
+          "line": "**Bell Labs, Stanford University, electronic design automation, microcoding**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**Bell Labs, Stanford University, electronic design automation, microcoding**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Advanced Education and Early Career",
+      "synopsis": "Discussing his postgraduate journey, Larry talks about receiving a fellowship from Bell Labs, moving to Stanford for his master's degree, and his work in electronic design automation, which led to a significant contribution in re-microcoding.",
+      "notes": "",
+      "keywords": "Bell Labs, Stanford University, electronic design automation, microcoding"
+    },
+    {
+      "index": 35,
+      "timecode": "00:09:41",
+      "time": {
+        "start": 581,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 36,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 37,
+          "line": "# Transition to Entrepreneurship",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 38,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 39,
+          "line": "> Augustin describes the transition from academia to entrepreneurship, founding VA Research (later VA Linux), and the evolution of his business from a side project to a major player in the technology sector.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 40,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 41,
+          "line": "**entrepreneurship, VA Research, VA Linux, technology sector**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**entrepreneurship, VA Research, VA Linux, technology sector**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Transition to Entrepreneurship",
+      "synopsis": "Augustin describes the transition from academia to entrepreneurship, founding VA Research (later VA Linux), and the evolution of his business from a side project to a major player in the technology sector.",
+      "notes": "",
+      "keywords": "entrepreneurship, VA Research, VA Linux, technology sector"
+    },
+    {
+      "index": 42,
+      "timecode": "00:15:22",
+      "time": {
+        "start": 922,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 43,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 44,
+          "line": "# Involvement with Linux and Open Source",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 45,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 46,
+          "line": "> Larry details his introduction to Linux and the open source movement, his early contributions to system administration at Stanford, and the beginnings of his company's shift towards supporting Linux systems.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 47,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 48,
+          "line": "**Linux, open source, system administration, Stanford**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**Linux, open source, system administration, Stanford**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Involvement with Linux and Open Source",
+      "synopsis": "Larry details his introduction to Linux and the open source movement, his early contributions to system administration at Stanford, and the beginnings of his company's shift towards supporting Linux systems.",
+      "notes": "",
+      "keywords": "Linux, open source, system administration, Stanford"
+    },
+    {
+      "index": 49,
+      "timecode": "00:29:12",
+      "time": {
+        "start": 1752,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 50,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 51,
+          "line": "# VA Research and the Birth of VA Linux",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 52,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 53,
+          "line": "> The discussion covers the origins of VA Linux, the choice of company name, and the growth of the business through the late 1990s, including the creation of SourceForge.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 54,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 55,
+          "line": "**VA Linux, SourceForge, company growth, 1990s**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**VA Linux, SourceForge, company growth, 1990s**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "VA Research and the Birth of VA Linux",
+      "synopsis": "The discussion covers the origins of VA Linux, the choice of company name, and the growth of the business through the late 1990s, including the creation of SourceForge.",
+      "notes": "",
+      "keywords": "VA Linux, SourceForge, company growth, 1990s"
+    },
+    {
+      "index": 56,
+      "timecode": "00:32:37",
+      "time": {
+        "start": 1957,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 57,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 58,
+          "line": "# Challenges and Growth",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 59,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 60,
+          "line": "> Larry talks about the challenges faced while scaling VA Linux, the decision to focus full-time on the venture, and partnerships that helped sustain the business.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 61,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 62,
+          "line": "**VA Linux, business challenges, growth strategies, partnerships**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**VA Linux, business challenges, growth strategies, partnerships**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Challenges and Growth",
+      "synopsis": "Larry talks about the challenges faced while scaling VA Linux, the decision to focus full-time on the venture, and partnerships that helped sustain the business.",
+      "notes": "",
+      "keywords": "VA Linux, business challenges, growth strategies, partnerships"
+    },
+    {
+      "index": 63,
+      "timecode": "00:46:30",
+      "time": {
+        "start": 2790,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 64,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 65,
+          "line": "# VA Linux IPO and the Tech Boom",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 66,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 67,
+          "line": "> Augustin recalls the VA Linux initial public offering (IPO) in 1999, which was one of the most successful in history, and discusses the impact of the tech boom on his company.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 68,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 69,
+          "line": "**VA Linux, IPO, tech boom, 1999**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**VA Linux, IPO, tech boom, 1999**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "VA Linux IPO and the Tech Boom",
+      "synopsis": "Augustin recalls the VA Linux initial public offering (IPO) in 1999, which was one of the most successful in history, and discusses the impact of the tech boom on his company.",
+      "notes": "",
+      "keywords": "VA Linux, IPO, tech boom, 1999"
+    },
+    {
+      "index": 70,
+      "timecode": "00:59:35",
+      "time": {
+        "start": 3575,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 71,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 72,
+          "line": "# Personal Reflections and Future Directions",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 73,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 74,
+          "line": "> Larry shares personal stories from his career, including his first meeting with Linus Torvalds, and discusses his thoughts on the future of open source and his current role in the tech community.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 75,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 76,
+          "line": "**Linus Torvalds, open source, technology community, personal reflections**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**Linus Torvalds, open source, technology community, personal reflections**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Personal Reflections and Future Directions",
+      "synopsis": "Larry shares personal stories from his career, including his first meeting with Linus Torvalds, and discusses his thoughts on the future of open source and his current role in the tech community.",
+      "notes": "",
+      "keywords": "Linus Torvalds, open source, technology community, personal reflections"
+    },
+    {
+      "index": 77,
+      "timecode": "01:17:34",
+      "time": {
+        "start": 4654,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 78,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 79,
+          "line": "# Career Transition to Venture Capital and Angel Investing",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 80,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 81,
+          "line": "> Discussing his move from CEO to venture capital, Larry explains his motivations and experiences in supporting new startups and the impact of open source software on the business landscape.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 82,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 83,
+          "line": "**venture capital, angel investing, startups, open source software**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**venture capital, angel investing, startups, open source software**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Career Transition to Venture Capital and Angel Investing",
+      "synopsis": "Discussing his move from CEO to venture capital, Larry explains his motivations and experiences in supporting new startups and the impact of open source software on the business landscape.",
+      "notes": "",
+      "keywords": "venture capital, angel investing, startups, open source software"
+    },
+    {
+      "index": 84,
+      "timecode": "01:26:58",
+      "time": {
+        "start": 5218,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 85,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 86,
+          "line": "# Reflections on Leadership and Legacy",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 87,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 88,
+          "line": "> Augustin reflects on his leadership at SugarCRM, his tenure there, and the company's growth under his direction, followed by his move to Amazon Web Services and subsequent return to angel investing.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 89,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 90,
+          "line": "**SugarCRM, leadership, AWS, angel investing**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**SugarCRM, leadership, AWS, angel investing**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Reflections on Leadership and Legacy",
+      "synopsis": "Augustin reflects on his leadership at SugarCRM, his tenure there, and the company's growth under his direction, followed by his move to Amazon Web Services and subsequent return to angel investing.",
+      "notes": "",
+      "keywords": "SugarCRM, leadership, AWS, angel investing"
+    },
+    {
+      "index": 91,
+      "timecode": "01:39:02",
+      "time": {
+        "start": 5942,
+        "end": null
+      },
+      "lines": [
+        {
+          "index": 92,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 93,
+          "line": "# Advice for Aspiring Entrepreneurs",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 94,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 95,
+          "line": "> Larry provides advice for aspiring entrepreneurs and reflects on the importance of pursuing passions and learning from experiences.",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 96,
+          "line": "",
+          "empty": true,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": []
+        },
+        {
+          "index": 97,
+          "line": "**advice, entrepreneurship, learning, career development**",
+          "empty": false,
+          "timecodes": [],
+          "times": [],
+          "matches": [],
+          "keywords": [
+            [
+              "**advice, entrepreneurship, learning, career development**",
+              "",
+              "**"
+            ]
+          ]
+        }
+      ],
+      "timecodes": [],
+      "title": "Advice for Aspiring Entrepreneurs",
+      "synopsis": "Larry provides advice for aspiring entrepreneurs and reflects on the importance of pursuing passions and learning from experiences.",
+      "notes": "",
+      "keywords": "advice, entrepreneurship, learning, career development"
+    }
+  ],
+  "notes": [
+    {
+      "children": [
+        {
+          "text": "[00:00:00]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Introduction"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Elisabetta Mori introduces the Free and Open Source Stories Digital Archive Foundation (FOSSDA) and herself as a historian of computing interviewing Larry Augustin, an entrepreneur, investor, and important figure in the open software movement."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**FOSSDA, computing history, open software, entrepreneur**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:01:04]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Background and Early Life"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry Augustin describes his early life in Dayton, Ohio, where he grew up in a family with a farming and military background. He discusses how his upbringing and his father's influence led him to pursue a career in engineering, particularly influenced by summers spent working on the family farm."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**Dayton, engineering, family influences, early career**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:03:13]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Influential People and Education"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Augustin reflects on the influential figures in his early life, including his parents and teachers, and discusses his educational journey through public schools and eventually the University of Notre Dame, where he studied electrical engineering."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**education, influential figures, University of Notre Dame, electrical engineering**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:05:14]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Early Academic and Professional Experiences"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry shares his initial experiences with computers and programming during high school and college, including his early interactions with COBOL programming and his involvement in setting up the first personal computer lab at Notre Dame."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**early computing, COBOL, University of Notre Dame, personal computer lab**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:06:35]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Advanced Education and Early Career"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Discussing his postgraduate journey, Larry talks about receiving a fellowship from Bell Labs, moving to Stanford for his master's degree, and his work in electronic design automation, which led to a significant contribution in re-microcoding."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**Bell Labs, Stanford University, electronic design automation, microcoding**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:09:41]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Transition to Entrepreneurship"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Augustin describes the transition from academia to entrepreneurship, founding VA Research (later VA Linux), and the evolution of his business from a side project to a major player in the technology sector."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**entrepreneurship, VA Research, VA Linux, technology sector**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:15:22]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Involvement with Linux and Open Source"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry details his introduction to Linux and the open source movement, his early contributions to system administration at Stanford, and the beginnings of his company's shift towards supporting Linux systems."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**Linux, open source, system administration, Stanford**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:29:12]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# VA Research and the Birth of VA Linux"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> The discussion covers the origins of VA Linux, the choice of company name, and the growth of the business through the late 1990s, including the creation of SourceForge."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**VA Linux, SourceForge, company growth, 1990s**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:32:37]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Challenges and Growth"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry talks about the challenges faced while scaling VA Linux, the decision to focus full-time on the venture, and partnerships that helped sustain the business."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**VA Linux, business challenges, growth strategies, partnerships**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:46:30]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# VA Linux IPO and the Tech Boom"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Augustin recalls the VA Linux initial public offering (IPO) in 1999, which was one of the most successful in history, and discusses the impact of the tech boom on his company."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**VA Linux, IPO, tech boom, 1999**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[00:59:35]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Personal Reflections and Future Directions"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry shares personal stories from his career, including his first meeting with Linus Torvalds, and discusses his thoughts on the future of open source and his current role in the tech community."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**Linus Torvalds, open source, technology community, personal reflections**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[01:17:34]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Career Transition to Venture Capital and Angel Investing"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Discussing his move from CEO to venture capital, Larry explains his motivations and experiences in supporting new startups and the impact of open source software on the business landscape."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**venture capital, angel investing, startups, open source software**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[01:26:58]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Reflections on Leadership and Legacy"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Augustin reflects on his leadership at SugarCRM, his tenure there, and the company's growth under his direction, followed by his move to Amazon Web Services and subsequent return to angel investing."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**SugarCRM, leadership, AWS, angel investing**"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "[01:39:02]"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "# Advice for Aspiring Entrepreneurs"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "> Larry provides advice for aspiring entrepreneurs and reflects on the importance of pursuing passions and learning from experiences."
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "text": "**advice, entrepreneurship, learning, career development**"
+        }
+      ]
+    }
+  ],
+  "_id": "6620186a8fc0240f20988a40",
+  "created_at": "2024-04-17T18:43:54.857Z",
+  "updated_at": "2024-09-13T16:58:50.649Z"
+}

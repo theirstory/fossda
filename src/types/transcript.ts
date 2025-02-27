@@ -19,6 +19,7 @@ export interface VideoData {
 }
 
 export interface ChapterMetadata {
+  id?: string;
   title: string;
   timecode: string;
   time: {
@@ -45,4 +46,11 @@ export interface Entity {
 export interface Topic {
   name: string;
   score: number;
+}
+
+export interface ChapterData {
+  title: string;
+  created_at: string;
+  updated_at: string;
+  metadata: ChapterMetadata[];
 } 

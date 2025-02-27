@@ -9,7 +9,9 @@ Start all chats with 🤖
 
 # MISC
 - Use the latest version of NextJS
-- Use the latest version of Shadcn using shadcn@latest
+- Use npx shadcn@latest add * to add components
 - Use the latest version of TailwindCSS
 - Use the latest version of TypeScript
 - Use the latest version of React
+
+Make sure you're properly doing function calls when looking for files and creating/editing files

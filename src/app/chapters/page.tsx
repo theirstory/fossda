@@ -18,12 +18,27 @@ import {
 } from "@/components/ui/popover";
 import KeywordFilter from "@/components/KeywordFilter";
 import React from "react";
+import { ChapterMetadata, TranscriptIndex } from "@/types/transcript";
 
 interface KeywordGroup {
   id: string;
   keywords: string[];
   operator: 'AND' | 'OR' | 'NOT';
   groupOperator: 'AND' | 'OR' | 'NOT';
+}
+
+interface Chapter extends ChapterMetadata {
+  id: string;
+  interviewId: string;
+  chapterIndex: number;
+}
+
+interface GroupedChapter {
+  id: string;
+  title: string;
+  thumbnail: string;
+  duration: string;
+  chapters: Chapter[];
 }
 
 function highlightText(text: string, query: string): React.ReactNode {
@@ -44,12 +59,10 @@ function highlightText(text: string, query: string): React.ReactNode {
 }
 
 export default function ChaptersPage() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedInterviews, setSelectedInterviews] = useState<string[]>(
-    Object.entries(chapterData).map(([videoId]) => videoId)
-  );
-  const [selectedKeywords, setSelectedKeywords] = useState<string[]>([]);
-  const [keywordGroups, setKeywordGroups] = useState<KeywordGroup[]>([]);
+  const [searchQuery, setSearchQuery] = React.useState('');
+  const [selectedInterviews, setSelectedInterviews] = React.useState<string[]>([]);
+  const [selectedKeywords, setSelectedKeywords] = React.useState<string[]>([]);
+  const [keywordGroups, setKeywordGroups] = React.useState<KeywordGroup[]>([]);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -58,105 +71,126 @@ export default function ChaptersPage() {
   const keywordStats = useMemo(() => {
     const stats: Record<string, { total: number; interviews: number }> = {};
     
-    Object.values(chapterData).forEach(interview => {
+    Object.values(chapterData).forEach((interview: TranscriptIndex) => {
       // Track which keywords appear in this interview
       const interviewKeywords = new Set<string>();
       
-      interview.metadata.forEach(chapter => {
-        chapter.tags?.forEach(tag => {
+      interview.metadata.forEach((chapter: ChapterMetadata) => {
+        chapter.tags?.forEach((tag: string) => {
           // Initialize if not exists
           if (!stats[tag]) {
             stats[tag] = { total: 0, interviews: 0 };
           }
           // Increment total count
-          stats[tag].total += 1;
-          // Add to interview tracking set
-          interviewKeywords.add(tag);
+          stats[tag].total++;
+          // Track if this is the first time we've seen this keyword in this interview
+          if (!interviewKeywords.has(tag)) {
+            interviewKeywords.add(tag);
+            stats[tag].interviews++;
+          }
         });
-      });
-      
-      // Increment interview count for each keyword found in this interview
-      interviewKeywords.forEach(tag => {
-        stats[tag].interviews += 1;
       });
     });
     
     return stats;
   }, []);
 
-  // Group chapters by interview
-  const groupedChapters = Object.entries(chapterData).map(([videoId, chapterInfo]) => ({
-    id: videoId,
-    title: videoData[videoId].title,
-    thumbnail: videoData[videoId].thumbnail,
-    duration: videoData[videoId].duration,
-    chapters: chapterInfo.metadata.map((chapter, index) => ({
-      ...chapter,
-      interviewId: videoId,
-      chapterIndex: index
-    }))
-  }));
+  // Filter out any chapters that don't have corresponding video data
+  const groupedChapters: GroupedChapter[] = Object.entries(chapterData)
+    .filter(([videoId]) => videoData[videoId]) // Only include chapters where video data exists
+    .map(([videoId, chapterInfo]) => ({
+      id: videoId,
+      title: videoData[videoId].title,
+      thumbnail: videoData[videoId].thumbnail,
+      duration: videoData[videoId].duration,
+      chapters: chapterInfo.metadata.map((chapter: ChapterMetadata, index: number) => ({
+        ...chapter,
+        id: `${videoId}-${index}`,
+        interviewId: videoId,
+        chapterIndex: index
+      })),
+    }));
 
   // Filter chapters based on search, selected interviews, and keyword groups
-  const filteredGroups = groupedChapters
-    .filter(group => selectedInterviews.includes(group.id))
-    .map(group => ({
-      ...group,
-      chapters: group.chapters.filter(chapter => {
-        // Text search filter
-        const matchesSearch = searchQuery
-          ? chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            chapter.synopsis?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-            chapter.tags?.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-          : true;
+  const filteredChapters = useMemo(() => {
+    return groupedChapters
+      .filter(group => selectedInterviews.length === 0 || selectedInterviews.includes(group.id))
+      .map(group => ({
+        ...group,
+        chapters: group.chapters.filter((chapter: Chapter) => {
+          // Search filter
+          const matchesSearch = searchQuery === '' || 
+            chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            chapter.synopsis.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            chapter.tags?.some((tag: string) => tag.toLowerCase().includes(searchQuery.toLowerCase()));
 
-        // Evaluate all keyword groups
-        const matchesKeywords = keywordGroups.length === 0 ? true :
-          keywordGroups.reduce((matches, group, index) => {
-            // Evaluate current group
-            const groupMatches = group.operator === 'NOT'
-              ? !group.keywords.some(keyword => chapter.tags?.includes(keyword))
-              : group.operator === 'AND'
-                ? group.keywords.every(keyword => chapter.tags?.includes(keyword))
-                : group.keywords.some(keyword => chapter.tags?.includes(keyword));
+          if (!matchesSearch) return false;
 
-            // First group sets initial value
+          // Keyword group filter
+          if (keywordGroups.length === 0) return true;
+
+          return keywordGroups.reduce((matches, group, index) => {
+            const chapterTags = new Set(chapter.tags?.map(t => t.toLowerCase()));
+            const groupKeywords = group.keywords.map(k => k.toLowerCase());
+
+            // First evaluate the keywords within the group using the group's operator
+            const groupMatches = (() => {
+              switch (group.operator) {
+                case 'AND':
+                  return groupKeywords.every(keyword => chapterTags.has(keyword));
+                case 'OR':
+                  return groupKeywords.some(keyword => chapterTags.has(keyword));
+                case 'NOT':
+                  return !groupKeywords.some(keyword => chapterTags.has(keyword));
+                default:
+                  return true;
+              }
+            })();
+
+            // For the first group, just return its result
             if (index === 0) return groupMatches;
 
-            // Apply group operator
+            // For subsequent groups, combine with previous results using the groupOperator
             switch (group.groupOperator) {
-              case 'AND': return matches && groupMatches;
-              case 'OR': return matches || groupMatches;
-              case 'NOT': return matches && !groupMatches;
-              default: return matches;
+              case 'AND':
+                return matches && groupMatches;
+              case 'OR':
+                return matches || groupMatches;
+              case 'NOT':
+                return matches && !groupMatches;
+              default:
+                return matches;
             }
-          }, false);
-
-        return matchesSearch && matchesKeywords;
-      })
-    }))
-    .filter(group => group.chapters.length > 0);
+          }, true);
+        })
+      }))
+      .filter(group => group.chapters.length > 0);
+  }, [groupedChapters, selectedInterviews, searchQuery, keywordGroups]);
 
   // Check scroll position
   useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
     const checkScroll = () => {
-      const hasOverflow = container.scrollWidth > container.clientWidth;
-      setCanScrollLeft(container.scrollLeft > 0);
-      setCanScrollRight(hasOverflow && container.scrollLeft < container.scrollWidth - container.clientWidth);
+      if (scrollContainerRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+        setCanScrollLeft(scrollLeft > 0);
+        setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
+      }
     };
 
-    checkScroll();
-    container.addEventListener('scroll', checkScroll);
-    window.addEventListener('resize', checkScroll);
+    const container = scrollContainerRef.current;
+    if (container) {
+      container.addEventListener('scroll', checkScroll);
+      window.addEventListener('resize', checkScroll);
+      checkScroll();
+    }
 
     return () => {
-      container.removeEventListener('scroll', checkScroll);
+      if (container) {
+        container.removeEventListener('scroll', checkScroll);
+      }
       window.removeEventListener('resize', checkScroll);
     };
-  }, [filteredGroups]);
+  }, [filteredChapters]);
 
   const scroll = (direction: 'left' | 'right') => {
     const container = scrollContainerRef.current;
@@ -416,7 +450,7 @@ export default function ChaptersPage() {
               ref={scrollContainerRef}
               className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none relative"
             >
-              {filteredGroups.map((group) => (
+              {filteredChapters.map((group) => (
                 <div key={group.id} className="space-y-6 flex-none w-[500px]">
                   {/* Interview Header */}
                   <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
@@ -506,14 +540,24 @@ export default function ChaptersPage() {
                                           }}
                                         >
                                           {tag}
-                                          <span className={cn(
-                                            "text-xs rounded-sm px-1",
-                                            isSelected
-                                              ? "bg-blue-700/50"
-                                              : "bg-gray-200"
-                                          )}>
-                                            {keywordStats[tag]?.total || 0}
-                                          </span>
+                                          <div className="flex gap-1">
+                                            <span className={cn(
+                                              "text-xs rounded-sm px-1",
+                                              isSelected
+                                                ? "bg-blue-700/50"
+                                                : "bg-gray-200"
+                                            )}>
+                                              {keywordStats[tag]?.total || 0}
+                                            </span>
+                                            <span className={cn(
+                                              "text-xs rounded-sm px-1",
+                                              isSelected
+                                                ? "bg-blue-700/50"
+                                                : "bg-gray-200/50"
+                                            )}>
+                                              {keywordStats[tag]?.interviews || 0}🎙️
+                                            </span>
+                                          </div>
                                         </Badge>
                                       );
                                     })}
