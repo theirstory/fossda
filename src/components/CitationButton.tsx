@@ -41,9 +41,13 @@ export default function CitationButton({ title, speaker, url, duration, publishe
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="sm" className="gap-2">
-          <Quote className="h-4 w-4" />
-          <span className="hidden sm:inline">Cite</span>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="lg:h-8 h-[38px] flex-1 flex items-center justify-between p-3 rounded-lg bg-white shadow lg:shadow-none lg:p-2"
+        >
+          <span className="text-sm font-semibold text-gray-900 lg:font-normal">Cite</span>
+          <Quote className="h-3.5 w-3.5" />
         </Button>
       </DialogTrigger>
       <DialogContent>

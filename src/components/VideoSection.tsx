@@ -279,11 +279,11 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
 
         {/* Summary and Chapters Section - Mobile Only */}
         <div className="lg:hidden">
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between gap-2 mb-2">
             <Button
               variant="ghost"
               onClick={() => setIsSummaryExpanded(!isSummaryExpanded)}
-              className="w-[48%] flex items-center justify-between p-4 rounded-lg bg-white shadow"
+              className="flex-1 flex items-center justify-between p-4 rounded-lg bg-white shadow"
             >
               <span className="text-sm font-semibold text-gray-900">Summary</span>
               {isSummaryExpanded ? (
@@ -297,7 +297,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
-                  className="w-[48%] flex items-center justify-between p-4 rounded-lg bg-white shadow"
+                  className="flex-1 flex items-center justify-between p-4 rounded-lg bg-white shadow"
                 >
                   <span className="text-sm font-semibold text-gray-900">Chapters</span>
                   <Menu className="h-4 w-4" />
@@ -316,6 +316,18 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
                 </div>
               </SheetContent>
             </Sheet>
+
+            <ShareButtons
+              title={currentVideo.title}
+              url={currentUrl}
+              summary={currentVideo.description}
+            />
+            <CitationButton
+              title={currentVideo.title}
+              speaker={currentVideo.title.split(" - ")[0]}
+              url={currentUrl}
+              duration={currentVideo.duration}
+            />
           </div>
 
           <div className={cn(
@@ -355,17 +367,19 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
               <TabsTrigger value="related">Related Videos</TabsTrigger>
             </div>
             <div className="flex-1 flex justify-end gap-2">
-              <ShareButtons
-                title={currentVideo.title}
-                url={currentUrl}
-                summary={currentVideo.description}
-              />
-              <CitationButton
-                title={currentVideo.title}
-                speaker={currentVideo.title.split(" - ")[0]}
-                url={currentUrl}
-                duration={currentVideo.duration}
-              />
+              <div className="hidden lg:flex gap-2">
+                <ShareButtons
+                  title={currentVideo.title}
+                  url={currentUrl}
+                  summary={currentVideo.description}
+                />
+                <CitationButton
+                  title={currentVideo.title}
+                  speaker={currentVideo.title.split(" - ")[0]}
+                  url={currentUrl}
+                  duration={currentVideo.duration}
+                />
+              </div>
             </div>
           </TabsList>
           <div className="flex-1 overflow-hidden">

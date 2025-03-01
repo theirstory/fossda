@@ -60,12 +60,12 @@ export function ShareButtons({ title, url, summary }: ShareButtonsProps) {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="outline"
+          variant="ghost"
           size="sm"
-          className="h-8 gap-2"
+          className="lg:h-8 h-[38px] flex-1 flex items-center justify-between p-3 rounded-lg bg-white shadow lg:shadow-none lg:p-2"
         >
-          <Share2 className="h-4 w-4" />
-          <span className="hidden sm:inline">Share</span>
+          <span className="text-sm font-semibold text-gray-900 lg:font-normal">Share</span>
+          <Share2 className="h-3.5 w-3.5" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
