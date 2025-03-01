@@ -44,9 +44,9 @@ export default function CitationButton({ title, speaker, url, duration, publishe
         <Button
           variant="ghost"
           size="sm"
-          className="lg:h-8 h-[38px] flex-1 flex items-center justify-between p-3 rounded-lg bg-white shadow lg:shadow-none lg:p-2"
+          className="lg:h-8 h-[38px] flex-1 flex items-center justify-center lg:justify-between p-3 rounded-lg bg-white shadow lg:shadow-none lg:p-2"
         >
-          <span className="text-sm font-semibold text-gray-900 lg:font-normal">Cite</span>
+          <span className="hidden lg:inline text-sm font-semibold text-gray-900 lg:font-normal">Cite</span>
           <Quote className="h-3.5 w-3.5" />
         </Button>
       </DialogTrigger>
