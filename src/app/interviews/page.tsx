@@ -1,11 +1,57 @@
+"use client";
+
 import { videoData } from "@/data/videos";
 import Link from "next/link";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, ArrowRight } from "lucide-react";
+import { Clock, ArrowRight, LayoutGrid, List, Search, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { Input } from "@/components/ui/input";
 
 export default function InterviewsPage() {
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 640); // sm breakpoint
+    };
+    
+    // Initial check
+    checkMobile();
+    
+    // Add resize listener
+    window.addEventListener('resize', checkMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const effectiveViewMode = isMobile ? 'grid' : viewMode;
+
+  // Helper function to highlight search terms
+  const highlightText = (text: string, query: string) => {
+    if (!query) return text;
+
+    const parts = text.split(new RegExp(`(${query})`, 'gi'));
+    return parts.map((part, i) => 
+      part.toLowerCase() === query.toLowerCase() ? 
+        <span key={i} className="bg-yellow-100">{part}</span> : 
+        part
+    );
+  };
+
+  const filteredInterviews = Object.values(videoData).filter(interview => {
+    const query = searchQuery.toLowerCase();
+    return (
+      interview.title.toLowerCase().includes(query) ||
+      interview.summary.toLowerCase().includes(query)
+    );
+  });
+
   return (
     <main>
       {/* Hero Section */}
@@ -18,12 +64,12 @@ export default function InterviewsPage() {
           }} />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               FOSSDA Interviews
             </h1>
-            <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="mt-2 text-lg text-gray-300 max-w-3xl mx-auto">
               Explore in-depth conversations with pioneers and leaders of the open source movement.
               Each interview captures unique perspectives and experiences that shaped the world of software.
             </p>
@@ -31,43 +77,171 @@ export default function InterviewsPage() {
         </div>
       </div>
 
-      {/* Interviews Grid */}
-      <div className="bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {Object.values(videoData).map((interview) => (
-              <Card key={interview.id} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <Link href={`/video/${interview.id}`}>
-                  <div className="relative aspect-video">
+      {/* Interviews Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+        <div className="flex flex-col sm:flex-row justify-between gap-4 mb-4">
+          {/* Search Box */}
+          <div className="relative w-full sm:w-1/2">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
+            <Input 
+              placeholder="Search interviews by title or summary..." 
+              className="pl-9"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+            {searchQuery && (
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-1 top-1/2 transform -translate-y-1/2 h-7 w-7 hover:bg-gray-100"
+                onClick={() => setSearchQuery("")}
+              >
+                <X className="h-4 w-4" />
+                <span className="sr-only">Clear search</span>
+              </Button>
+            )}
+          </div>
+
+          {/* View Toggle - Hidden on Mobile */}
+          <div className="hidden sm:flex bg-white rounded-lg shadow-sm p-1 gap-1 self-start">
+            <Button
+              variant={viewMode === 'list' ? 'default' : 'ghost'}
+              size="sm"
+              onClick={() => setViewMode('list')}
+              className="gap-2"
+            >
+              <List className="h-4 w-4" />
+              <span className="inline">List</span>
+            </Button>
+            <Button
+              variant={viewMode === 'list' ? 'ghost' : 'default'}
+              size="sm"
+              onClick={() => setViewMode('grid')}
+              className="gap-2"
+            >
+              <LayoutGrid className="h-4 w-4" />
+              <span className="inline">Grid</span>
+            </Button>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow overflow-hidden">
+          {/* Table Header - Only show on desktop list view */}
+          {effectiveViewMode === 'list' && (
+            <div className="px-4 py-3 bg-gray-50 border-b">
+              <div className="grid grid-cols-[200px_250px_1fr_100px] gap-2 font-medium text-sm text-gray-500">
+                <div>Thumbnail</div>
+                <div>Interview</div>
+                <div className="-ml-4">Summary</div>
+                <div className="text-center">Duration</div>
+              </div>
+            </div>
+          )}
+
+          {effectiveViewMode === 'grid' ? (
+            // Grid View
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+              {filteredInterviews.map((interview) => (
+                <Card key={interview.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                  <Link href={`/video/${interview.id}`}>
+                    <div className="relative aspect-video">
+                      <Image
+                        src={interview.thumbnail}
+                        alt={interview.title}
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute bottom-2 right-2">
+                        <Badge variant="secondary" className="flex items-center gap-1 text-xs">
+                          <Clock className="h-3 w-3" />
+                          {interview.duration}
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <h2 className="text-lg font-semibold text-gray-900 mb-2">
+                        {highlightText(interview.title, searchQuery)}
+                      </h2>
+                      <p className="text-sm text-gray-600 mb-3 line-clamp-2">
+                        {highlightText(interview.summary, searchQuery)}
+                      </p>
+                      <div className="flex items-center text-sm text-blue-600 font-medium">
+                        Watch Interview
+                        <ArrowRight className="h-3 w-3 ml-1" />
+                      </div>
+                    </div>
+                  </Link>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            // List View (Table Style) - Only shown on desktop
+            <div className="divide-y">
+              {filteredInterviews.map((interview) => (
+                <Link 
+                  key={interview.id} 
+                  href={`/video/${interview.id}`}
+                  className="block sm:grid sm:grid-cols-[200px_250px_1fr_100px] gap-2 p-4 hover:bg-gray-50"
+                >
+                  {/* Mobile Layout */}
+                  <div className="sm:hidden space-y-3">
+                    <div className="flex gap-3">
+                      {/* Thumbnail */}
+                      <div className="relative w-32 aspect-video rounded-lg overflow-hidden flex-shrink-0">
+                        <Image
+                          src={interview.thumbnail}
+                          alt={interview.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      
+                      <div className="min-w-0 flex-1">
+                        {/* Title and Duration */}
+                        <div className="flex justify-between items-start gap-2">
+                          <h3 className="text-sm font-medium text-gray-900 line-clamp-2">
+                            {highlightText(interview.title, searchQuery)}
+                          </h3>
+                          <span className="text-xs text-gray-500 whitespace-nowrap">
+                            {interview.duration}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Summary for mobile */}
+                    <p className="text-sm text-gray-500 line-clamp-2">
+                      {highlightText(interview.summary, searchQuery)}
+                    </p>
+                  </div>
+
+                  {/* Desktop Layout */}
+                  <div className="hidden sm:block relative aspect-video rounded-lg overflow-hidden">
                     <Image
                       src={interview.thumbnail}
                       alt={interview.title}
                       fill
                       className="object-cover"
                     />
-                    <div className="absolute bottom-4 right-4">
-                      <Badge variant="secondary" className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
-                        {interview.duration}
-                      </Badge>
-                    </div>
                   </div>
-                  <div className="p-6">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-3">
-                      {interview.title}
-                    </h2>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
-                      {interview.summary}
-                    </p>
-                    <div className="flex items-center text-blue-600 font-medium">
-                      Watch Interview
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </div>
+                  
+                  <div className="hidden sm:block min-w-0">
+                    <h3 className="text-sm font-medium text-gray-900 truncate">
+                      {highlightText(interview.title, searchQuery)}
+                    </h3>
+                  </div>
+                  
+                  <div className="hidden sm:block text-sm text-gray-500 pr-4 -ml-4">
+                    {highlightText(interview.summary, searchQuery)}
+                  </div>
+                  
+                  <div className="hidden sm:block text-sm text-gray-500 text-center">
+                    {interview.duration}
                   </div>
                 </Link>
-              </Card>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </main>

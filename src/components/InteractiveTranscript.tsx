@@ -35,7 +35,7 @@ export default function InteractiveTranscript({
   const [processedHtml, setProcessedHtml] = useState(transcriptHtml);
   const [mounted, setMounted] = useState(false);
   const searchParams = useSearchParams();
-  const startTime = searchParams.get('t');
+  const startTime = searchParams.get('start') || searchParams.get('t');
   const endTime = searchParams.get('end');
   const [selectionStart, setSelectionStart] = useState<number | null>(null);
   const [selectionEnd, setSelectionEnd] = useState<number | null>(null);

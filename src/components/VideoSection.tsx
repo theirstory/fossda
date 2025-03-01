@@ -11,7 +11,7 @@ import { MuxPlayerElement } from '@mux/mux-player-react';
 // import { ChapterMetadata } from "@/types/transcript";
 import RelatedVideos from "./RelatedVideos";
 import VideoClips from "./VideoClips";
-import { useSearchParams } from 'next/navigation';
+import { useSearchParams, usePathname } from 'next/navigation';
 import { clips } from "@/data/clips";
 import VideoChapters from "./VideoChapters";
 import { Button } from "./ui/button";
@@ -25,6 +25,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import CitationButton from "./CitationButton";
+import { ShareButtons } from "./ShareButtons";
 
 interface VideoSectionProps {
   videoId: string;
@@ -44,9 +45,14 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
   const videoRef = useRef<MuxPlayerElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const searchParams = useSearchParams();
-  const startTime = searchParams.get('t');
+  const pathname = usePathname();
+  const startTime = searchParams.get('start') || searchParams.get('t');
   const [isSummaryExpanded, setIsSummaryExpanded] = useState(false);
   const [isChaptersOpen, setIsChaptersOpen] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState('');
+  const transcriptRef = useRef<HTMLDivElement>(null);
+  const transcriptContainerRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
   
   // Add error handling and fallback for chapter data
   const videoChapters = chapterData[videoId] || {
@@ -55,6 +61,92 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
     updated_at: new Date().toISOString(),
     metadata: []
   };
+
+  // Helper function to construct URL with ordered parameters
+  const constructOrderedUrl = (url: URL, currentTime?: number) => {
+    // Create a new URL to avoid modifying the original
+    const orderedUrl = new URL(url.toString());
+    
+    // Clear all existing parameters
+    orderedUrl.search = '';
+    
+    // Add parameters in desired order
+    if (currentTime !== undefined && currentTime > 0) {
+      orderedUrl.searchParams.set('start', currentTime.toString());
+    } else if (url.searchParams.has('start')) {
+      orderedUrl.searchParams.set('start', url.searchParams.get('start')!);
+    } else if (url.searchParams.has('t')) {
+      // Handle legacy 't' parameter by converting it to 'start'
+      orderedUrl.searchParams.set('start', url.searchParams.get('t')!);
+    }
+    
+    if (url.searchParams.has('end')) {
+      orderedUrl.searchParams.set('end', url.searchParams.get('end')!);
+    }
+    
+    // Add any other parameters that might exist
+    url.searchParams.forEach((value, key) => {
+      if (key !== 'start' && key !== 'end' && key !== 't') {
+        orderedUrl.searchParams.set(key, value);
+      }
+    });
+    
+    return orderedUrl;
+  };
+
+  // Initial URL update to convert 't' to 'start' and order parameters
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      const tParam = url.searchParams.get('t');
+      const startParam = url.searchParams.get('start');
+      
+      if (tParam || startParam) {
+        const orderedUrl = constructOrderedUrl(url, tParam ? parseFloat(tParam) : parseFloat(startParam!));
+        window.history.replaceState({}, '', orderedUrl.toString());
+        setCurrentUrl(orderedUrl.toString());
+      } else {
+        const orderedUrl = constructOrderedUrl(url);
+        if (orderedUrl.toString() !== url.toString()) {
+          window.history.replaceState({}, '', orderedUrl.toString());
+        }
+        setCurrentUrl(orderedUrl.toString());
+      }
+    }
+  }, []);
+
+  // Update URL when video changes or timestamp changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const url = new URL(window.location.href);
+      const currentTime = videoRef.current ? videoRef.current.currentTime : undefined;
+      const orderedUrl = constructOrderedUrl(url, currentTime);
+      setCurrentUrl(orderedUrl.toString());
+    }
+  }, [pathname, videoId, startTime]);
+
+  // Update URL when video time changes
+  useEffect(() => {
+    const updateUrlWithTimestamp = () => {
+      if (typeof window !== 'undefined' && videoRef.current) {
+        const url = new URL(window.location.href);
+        const currentTime = videoRef.current.currentTime;
+        const orderedUrl = constructOrderedUrl(url, currentTime);
+        setCurrentUrl(orderedUrl.toString());
+      }
+    };
+
+    const muxPlayer = videoRef.current;
+    if (muxPlayer) {
+      muxPlayer.ontimeupdate = updateUrlWithTimestamp;
+      return () => {
+        if (muxPlayer) {
+          muxPlayer.ontimeupdate = null;
+        }
+      };
+    }
+    return () => {}; // Add empty cleanup function for when muxPlayer is null
+  }, [videoRef]);
 
   // Handle initial timestamp
   useEffect(() => {
@@ -93,6 +185,76 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
 
   // Get number of clips for this video
   const clipCount = clips.filter(clip => clip.interviewId === videoId).length;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Update the timeupdate listener to use videoRef
+  useEffect(() => {
+    const muxPlayer = videoRef.current;
+    if (!muxPlayer || !transcriptRef.current || !transcriptContainerRef.current) {
+      return undefined;
+    }
+
+    // Get the underlying video element
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (!videoElement) {
+      return undefined;
+    }
+
+    const handleTimeUpdate = () => {
+      const currentTime = videoElement.currentTime * 1000; // Convert to ms
+      const spans = Array.from(transcriptRef.current?.querySelectorAll('span[data-m]') || []);
+      
+      // Find the current or next span
+      let currentSpan: HTMLSpanElement | null = null;
+      for (const span of spans as HTMLSpanElement[]) {
+        const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+        if (spanTime <= currentTime) {
+          currentSpan = span;
+        } else {
+          break;
+        }
+      }
+      
+      if (currentSpan && transcriptContainerRef.current) {
+        const container = transcriptContainerRef.current;
+        
+        // Calculate offset for mobile header and tabs
+        const isMobile = window.innerWidth < 1024; // lg breakpoint
+        const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+        
+        // Get container dimensions
+        const containerRect = container.getBoundingClientRect();
+        const spanRect = currentSpan.getBoundingClientRect();
+        
+        // Calculate scroll position - use different positions for mobile and desktop
+        const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
+        const currentOffset = spanRect.top - containerRect.top;
+        const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
+        
+        // Scroll with the calculated offset
+        container.scrollTo({
+          top: container.scrollTop + scrollAdjustment,
+          behavior: 'smooth'
+        });
+
+        // Highlight current span
+        spans.forEach((span: Element) => span.classList.remove('bg-yellow-100'));
+        currentSpan.classList.add('bg-yellow-100');
+      }
+    };
+
+    videoElement.addEventListener('timeupdate', handleTimeUpdate);
+    videoElement.addEventListener('seeking', handleTimeUpdate);
+    
+    return () => {
+      videoElement.removeEventListener('timeupdate', handleTimeUpdate);
+      videoElement.removeEventListener('seeking', handleTimeUpdate);
+      return undefined;
+    };
+  }, [mounted, videoRef]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-4 h-full">
@@ -192,11 +354,16 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
               </TabsTrigger>
               <TabsTrigger value="related">Related Videos</TabsTrigger>
             </div>
-            <div className="flex-1 flex justify-end">
+            <div className="flex-1 flex justify-end gap-2">
+              <ShareButtons
+                title={currentVideo.title}
+                url={currentUrl}
+                summary={currentVideo.description}
+              />
               <CitationButton
                 title={currentVideo.title}
                 speaker={currentVideo.title.split(" - ")[0]}
-                url={typeof window !== 'undefined' ? window.location.href : ''}
+                url={currentUrl}
                 duration={currentVideo.duration}
               />
             </div>
