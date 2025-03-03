@@ -14,7 +14,8 @@ const PLAYBACK_IDS: Record<string, string> = {
   'introduction-to-fossda': 'Tj25JqqJzvm9yUVnHhkzh4SI4OpEsMDDEwn00nuaVCqo',
   'deb-goodkin': 'FjnuVlu9beaFgCNI01Bo3mkaaS89DRXWulNlcT57e8z8',
   'heather-meeker': 'BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg3KI7irM',
-  'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ'
+  'bruce-perens': 'QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ',
+  'larry-augustin': '2jUmuwHSE25GwP1aecZ22TIMHO3klAgQ8lqF501uYLrE'
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

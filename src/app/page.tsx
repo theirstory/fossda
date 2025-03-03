@@ -1,19 +1,56 @@
+"use client";
+
 // import VideoCard from "@/components/VideoCard";
 import ThemeExplorer from "@/components/ThemeExplorer";
 import { videoData } from "@/data/videos";
-import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ChevronRight, Play } from "lucide-react";
+import { ChevronRight, Play, ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
 export default function Home() {
   const heroVideo = videoData["introduction-to-fossda"];
   const featuredVideos = [
     videoData["heather-meeker"],
-    videoData["deb-goodkin"],
-    videoData["bruce-perens"]
+    videoData["larry-augustin"],
+    videoData["bruce-perens"],
+    videoData["deb-goodkin"]
   ];
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [showLeftScroll, setShowLeftScroll] = useState(false);
+  const [showRightScroll, setShowRightScroll] = useState(false);
+
+  const checkScroll = () => {
+    if (scrollContainerRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current;
+      setShowLeftScroll(scrollLeft > 0);
+      setShowRightScroll(scrollLeft < scrollWidth - clientWidth - 10);
+    }
+  };
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      checkScroll();
+      scrollContainer.addEventListener('scroll', checkScroll);
+      window.addEventListener('resize', checkScroll);
+
+      return () => {
+        scrollContainer.removeEventListener('scroll', checkScroll);
+        window.removeEventListener('resize', checkScroll);
+      };
+    }
+    return undefined;
+  }, []);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = direction === 'left' ? -400 : 400;
+      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   return (
     <main>
@@ -95,27 +132,56 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredVideos.map((video) => (
-              <div key={video.id} className="group">
-                <Link href={`/video/${video.id}`}>
-                  <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02]">
-                    <Image
-                      src={video.thumbnail}
-                      alt={video.title}
-                      width={1280}
-                      height={720}
-                      className="w-full aspect-video object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-lg font-semibold text-white text-shadow-lg">{video.title}</h3>
-                      <p className="mt-2 text-gray-100 text-sm line-clamp-2 text-shadow-lg leading-relaxed">{video.sentence}</p>
+          <div className="relative">
+            {/* Scroll Buttons */}
+            {showLeftScroll && (
+              <Button
+                variant="outline"
+                size="icon"
+                className="absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full"
+                onClick={() => scroll('left')}
+              >
+                <ArrowLeft className="h-4 w-4" />
+              </Button>
+            )}
+            {showRightScroll && (
+              <Button
+                variant="outline"
+                size="icon"
+                className="absolute -right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg rounded-full"
+                onClick={() => scroll('right')}
+              >
+                <ArrowRight className="h-4 w-4" />
+              </Button>
+            )}
+
+            {/* Scrollable Container */}
+            <div 
+              ref={scrollContainerRef}
+              className="flex gap-8 overflow-x-auto pb-4 px-4 -mx-4 scrollbar-hide scroll-smooth"
+              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+            >
+              {featuredVideos.map((video) => (
+                <div key={video.id} className="flex-none w-[400px]">
+                  <Link href={`/video/${video.id}`}>
+                    <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-500 hover:scale-[1.02]">
+                      <Image
+                        src={video.thumbnail}
+                        alt={video.title}
+                        width={1280}
+                        height={720}
+                        className="w-full aspect-video object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 className="text-lg font-semibold text-white text-shadow-lg">{video.title}</h3>
+                        <p className="mt-2 text-gray-100 text-sm line-clamp-2 text-shadow-lg leading-relaxed">{video.sentence}</p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Discover All Interviews */}
@@ -156,9 +222,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
-
-export const metadata: Metadata = {
-  title: 'Free Open Source Stories Digital Archive',
-  description: 'A digital archive of stories from the free and open source software community',
-}; 
+} 

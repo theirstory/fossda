@@ -270,8 +270,173 @@ export const clips: Clip[] = [
     "interviewTitle": "Heather Meeker",
     "transcript": "Heather Meeker: And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. And today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact.",
     "themes": ["evolution", "community"]
-  }
+  },
+  // Larry Augustin Clips
+  {
+    "id": "augustin-early-engineering",
+    "title": "Problem-Solving Mindset on the Farm",
+    "startTime": 124,
+    "endTime": 161,
+    "duration": 37,
+    "chapter": {
+      "id": "background",
+      "title": "Background and Early Life"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "I spent the summers working on the family farm in New Hampshire, baling hay, doing everything around the place. And I developed this tendency to just fix things. When you're out in the field and the tractor breaks, there's nobody to call. You had to just fix things yourself. And so my whole life, that's how I kind of approach things, which is just learn to do whatever needs to be done and be hands-on and fix things.",
+    "themes": ["mission-values"]
+  },
+  {
+    "id": "augustin-early-exposure",
+    "title": "Early Exposure to Electronics and Tinkering",
+    "startTime": 255.129,
+    "endTime": 312.392,
+    "duration": 57.263,
+    "chapter": {
+      "id": "early-academic-and-professional-experiences",
+      "title": "Early Academic and Professional Experiences"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "I was also lucky in that Dayton, Ohio, is home to something called the Ham Fest, which I don't know if a lot of people know, but it is a gathering of ham radio operators that happens every year. But beyond that sort of just ham radio operators, it's really about people who tinker with electronics. And so I was lucky to have this exposure early on that this interesting thing was happening and I wanted to learn. And so I was a kid who always was experimenting with sort of basic electronics. I had the little kits as a kid where you would build the radio from scratch or you would wire together a little electronic circuits. And I was always kind of tinkering or doing or building something like that.",
+    "themes": ["exposure"]
+  },
+  {
+    "id": "augustin-early-programming",
+    "title": "Early Programming Experiences with Punch Cards",
+    "startTime": 410.420,
+    "endTime": 543.075,
+    "duration": 132.655,
+    "chapter": {
+      "id": "advanced-education-and-early-career",
+      "title": "Advanced Education and Early Career"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "There was one thing in my high school that was interesting. There was a course I took as I began to try and understand electronics and computers, but more a course at this time. And gosh, you look back and you realize how far the world has come. That my first sort of exposure to doing anything with programming was punched cards with cobalt. And as a high school student, I was able to take a course where we didn't even have a punch card machine. We had these big coding forms, big ledger sheets of paper, 11 by 17 pieces of paper with lines on them. And there were 80 columns on a punch card. And you literally wrote in clean print across these sheets of paper. And we would send them in. So I'd have to write my program out by hand on a piece of paper. You'd send it in. People would punch those into the punch card machines. You would get back decks of cards. And then you sorted the cards into a program. And then you sent the cards in to run. So we think today about fast turn and programming and developing code. The productivity in that sense of lines of code was pretty low. It was, you know, you spent a day writing forms. You sent it in. You got punched cards back. I mean, it took a week to turn around. And if you made one change, a comma in a different place, one different line, it was a week to make a minor change. So you had to get that right. You had to make sure that was sort of perfect when it went in because the turnaround was very slow.",
+    "themes": ["exposure", "education"]
+  },
+  {
+    "id": "coining-open-source",
+    "title": "Coining 'Open Source'",
+    "startTime": 3475.903,
+    "endTime": 3538.787,
+    "duration": 62.884,
+    "transcript": "We got Linus on the phone, and ultimately, the idea was we're going to brand this open source, because the openness of the source code was what was important. Bruce Perens, at the time, the head of the Debian project, had created a set of definitions for software that could be part of Debian. And we realized the world here needed to separate the notion of software in which the source code is available from free software, and we coined the term open source to do that. And we all agreed to promote and develop this, and that became the genesis for the term open source. And this was in 1998.",
+    "themes": ["evolution", "mission-values"],
+    "chapter": {
+      "id": "evolution",
+      "title": "The Genesis of Open Source"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin"
+  },
+  {
+    "id": "augustin-bell-labs",
+    "title": "Bell Labs Opportunity",
+    "startTime": 761.892,
+    "endTime": 815.095,
+    "duration": 53.203,
+    "chapter": {
+      "id": "education",
+      "title": "Advanced Education and Early Career"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "They would recruit kids right out of their undergraduate, they would bring them in, they'd give them an opportunity to work for a year, and then they would send them off to school to get their master's, get advanced degrees. Fabulous, fabulous program. I was lucky enough to get accepted into that. And I went from South Bend, Indiana, Notre Dame, to Holmdel, New Jersey, the home of the transistor, and Bell Labs, the place where the Big Bang was discovered.",
+    "themes": ["education", "exposure"]
+  },
+  {
+    "id": "augustin-stanford-software",
+    "title": "Appreciating Free Software at Stanford",
+    "startTime": 1180.920,
+    "endTime": 1219.513,
+    "duration": 38.593,
+    "chapter": {
+      "id": "evolution",
+      "title": "Early Open Source Experience"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "As a research team at Stanford, we had access to essentially anything we wanted to access to commercially. We could get that. But the software that we used was easier to work with, was better, was available for free. And that's where I really learned that a community of people working together with the goal of producing great software was often producing things that were better than what was available commercially.",
+    "themes": ["evolution", "community"]
+  },
+  {
+    "id": "augustin-va-linux-founding",
+    "title": "The Vision Behind VA Linux",
+    "startTime": 2147.371,
+    "endTime": 2273.954,
+    "duration": 45.531,
+    "chapter": {
+      "id": "evolution",
+      "title": "Building VA Linux"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "Dell had been very inspirational to me. If you look at the start of Dell Computers with Michael Dell and his dorm room at, I think it was UT Austin, assembling PCs. I was doing the same, except I was doing it in the Unix world.",
+    "themes": ["evolution", "mission-values", "projects"]
+  },
+  {
+    "id": "augustin-business-model",
+    "title": "The Cathedral and the Bazaar Impact",
+    "startTime": 3087.555,
+    "endTime": 3124.204,
+    "duration": 36.649,
+    "chapter": {
+      "id": "challenges",
+      "title": "Business Challenges in Open Source"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "If you look at the concept of I am selling you something that's free, it's kind of an odd concept. It takes people a moment to get their heads around this concept.",
+    "themes": ["challenges", "evolution", "community", "education", "mission-values"]
+  },
+  {
+    "id": "augustin-stanford-yahoo",
+    "title": "Stanford, Yahoo, Sequoia, and VA Linux's First Venture Funding",
+    "startTime": 2276.883,
+    "endTime": 2320.433,
+    "duration": 43.550,
+    "chapter": {
+      "id": "evolution",
+      "title": "Early Business Development"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "As I was doing this, two of my friends from Stanford had raised venture funding. Two gentlemen by the name of Jerry Yang and David Filo. You may recall those names as their little company they had started was Yahoo. Dave and Jerry were both PhD students in EDA, Electronic Design Automation, at Stanford. They had started this little directory of the web on a machine under their desk in their office at Stanford.",
+    "themes": ["evolution", "community"]
+  },
+  {
+    "id": "augustin-entrepreneurial-advice",
+    "title": "Bootstrapping and Persistence in Entrepreneurship",
+    "startTime": 1832.790,
+    "endTime": 1900.669,
+    "duration": 67.879,
+    "chapter": {
+      "id": "challenges",
+      "title": "Entrepreneurial Lessons and Growth"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "This is just an amazing way of bootstrapping. And to me, I always look for today, I love the entrepreneurial part of the world and people launching and building things. We got people to send us checks for the computers they wanted, because we were selling a physical device. And to me, these things were hugely expensive. I mean, somewhere between $1,000 and $3,000. And I couldn't afford to buy the parts to send someone. People sent us a check ahead of time. We would cash the check, go buy the parts, have an assembly party in the living room of my apartment and ship them out. And that was what the business was initially.",
+    "themes": ["challenges", "evolution", "mission-values"]
+  },
+  {
+    "id": "augustin-learning-philosophy",
+    "title": "Learning by Doing",
+    "startTime": 5995.947,
+    "endTime": 6109.879,
+    "duration": 113.932,
+    "chapter": {
+      "id": "challenges",
+      "title": "Entrepreneurial Lessons and Growth"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "I always encourage learning. You know, as I look back now, I realize how naive I was at every stage, but that's how we learn. So I'm not big on the would have, should have, could have done it differently. I think everyone has to go through the learning phases, and there's a ton of things that I got wrong all the time. But I listened a lot, and I hope I learned from those. This is a little of my philosophy when I advise entrepreneurs and companies - I give them advice, but I also think they have to learn themselves. People make mistakes, that's part of the learning process. It's one of the things I think is great about the Silicon Valley culture - it's a culture in which people learn from making mistakes, and you can make a mistake, and get better, and learn, and come back, and that's okay.",
+    "themes": ["education", "mission-values", "challenges"]
+  },
 ];
-
 // Remove the dynamic functions and just export the static data
 export default clips; 

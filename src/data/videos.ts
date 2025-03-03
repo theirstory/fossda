@@ -34,5 +34,13 @@ export const videoData: Record<string, VideoData> = {
     thumbnail: "/thumbnails/bruce-perens.png",
     summary: `Bruce Perens provides a firsthand account of the early days of the open source movement and his instrumental role in shaping its direction. From his work at Pixar to creating foundational open source tools and definitions, his interview offers unique insights into how open source transformed from a radical idea to a fundamental part of modern software development.`,
     sentence: "From Pixar animation to open source advocacy - the story of how defining the Open Source Definition helped transform software development forever."
+  },
+  "larry-augustin": {
+    id: "larry-augustin",
+    title: "Larry Augustin",
+    duration: "1:12:45",
+    thumbnail: "/thumbnails/larry-augustin.png",
+    summary: `Larry Augustin shares his journey from founding VA Linux to his pivotal role in the early days of open source business. His interview provides valuable insights into the commercialization of open source software and the creation of SourceForge, which became a cornerstone of collaborative software development.`,
+    sentence: "From VA Linux to pioneering open source business models - exploring the early days of commercial open source software."
   }
 }; 
