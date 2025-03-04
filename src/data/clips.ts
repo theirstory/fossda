@@ -34,24 +34,24 @@ export const clips: Clip[] = [
   {
     "id": "perens-debian-community",
     "title": "Building the Debian Community",
-    "startTime": 476.5,
-    "endTime": 554.2,
-    "duration": 77.7,
+    "startTime": 466.200,
+    "endTime": 612.000,
+    "duration": 145.800,
     "chapter": {
       "id": "community",
       "title": "Debian Project Leadership and Community Building"
     },
     "interviewId": "bruce-perens",
     "interviewTitle": "Bruce Perens",
-    "transcript": "Bruce Perens: And I took it and obviously didn't have the time to work on all of these packages and fanned them out to 50 people who I only knew from email correspondence on the net. I was a Debian project leader, I had never actually met another Debian developer, and fanned it out. And these 50 people who also did not physically know each other combined to create a working, running, operating system. And obviously, the software was very modular and that certainly helped us get away with that but also the fact that open source let us all sort of look over each other's shoulders and help each other was very useful as well.",
+    "transcript": "Bruce Perens: I joined, I guess, there must have been 50 people on the whole project at the time, and eventually became the Debian project leader. Ian went on to other things and took the project and did something that no one knew was possible at that time, which was that Ian had made all of the core of the project, everything that it needed to boot and run and install packages, had been produced by Ian. And I took it and obviously didn't have the time to work on all of these packages and fanned them out to 50 people who I only knew from email correspondence on the net. I was a Debian project leader, I had never actually met another Debian developer, and fanned it out. And these 50 people who also did not physically know each other combined to create a working, running, operating system. And obviously, the software was very modular and that certainly helped us get away with that but also the fact that open source let us all sort of look over each other's shoulders and help each other was very useful as well.",
     "themes": ["community", "projects"]
   },
   {
     "id": "perens-busybox-project",
     "title": "The Creation of BusyBox",
-    "startTime": 600.781,
-    "endTime": 660.563,
-    "duration": 59.782,
+    "startTime": 619.800,
+    "endTime": 800.600,
+    "duration": 180.800,
     "chapter": {
       "id": "projects",
       "title": "The Creation and Impact of BusyBox"
@@ -62,34 +62,124 @@ export const clips: Clip[] = [
     "themes": ["projects", "evolution"]
   },
   {
-    "id": "goodkin-early-computers",
-    "title": "First Computer Experiences", 
-    "startTime": 224.624,
-    "endTime": 281.673,
-    "duration": 57.049,
+    "id": "goodkin-early-tech-exposure",
+    "title": "Building Models as a Child",
+    "startTime": 226.368,
+    "endTime": 267.867,
+    "duration": 41.499,
     "chapter": {
       "id": "exposure",
-      "title": "College Education and Introduction to Computing"
+      "title": "Early Interest in Building Things"
     },
     "interviewId": "deb-goodkin",
     "interviewTitle": "Deb Goodkin",
-    "transcript": "Karen Herman: Did you have any interest in computing or computers as a kid? Deb Goodkin: So, we didn't have a computer when I was growing up. So that was before home computers. And so I really, the only thing I knew about computers was really the word processors, which were fancy typewriters. And because my dad was also a writer, we had one at home. And so that was pretty novel. And but, but I didn't grow up with computers. So I didn't know anything, I really didn't know anything about them.",
-    "themes": ["exposure"]
+    "transcript": "Karen Herman: Did, did you have any interest in computing or computers as a kid? Deb Goodkin: So, um, we didn't have a computer when I was growing up. So that was before home computers. And so I really, the only thing I knew about computers was really the word processors, which were fancy typewriters. And because my dad was also a writer, we had one at home. And so that was pretty novel. And but, but I didn't grow up with computers. So I didn't know anything, I really didn't know anything about them. And, and so it really wasn't until I went to college that I was exposed to computers. So really, before that, I mean, part of my growing up, and maybe because I had brothers too, I built a lot of things, I was really into, like building models, and we would build like, model cars and model airplanes and things like that. So I've always enjoyed that building things.",
+    "themes": ["exposure", "education"]
   },
   {
-    "id": "goodkin-freebsd-projects",
-    "title": "FreeBSD Foundation Project Selection",
-    "startTime": 1560.781,
-    "endTime": 1620.563,
-    "duration": 59.782,
+    "id": "goodkin-college-tech-choice",
+    "title": "Discovering Computer Engineering in College",
+    "startTime": 316.264,
+    "endTime": 383.775,
+    "duration": 67.511,
     "chapter": {
-      "id": "projects",
-      "title": "Funding and Supporting Open Source Development"
+      "id": "education",
+      "title": "Finding the Path to Technology"
     },
     "interviewId": "deb-goodkin",
     "interviewTitle": "Deb Goodkin",
-    "transcript": "Karen Herman: How do people get their projects funded? What's the process? Deb Goodkin: So there's a couple things, ways, uh, we do have a, a CFP or we have, uh, actually it's a project proposal application. And so we have information on our website on how to submit a proposal. So say you have an interest in implementing something and, um, but you need funding. So usually the case is this person, maybe they have to take time off of work to do this. And, uh, so they actually, so they write up the proposal, like what is it that they want to do? What are the outcomes and what's the timeframe? And then what's the cost?",
-    "themes": ["projects", "community"]
+    "transcript": "Karen Herman: It's interesting, because you said that you really didn't have, you didn't know anything about computers till you got to college. How did you then decide to major in it? Deb Goodkin: Yeah, I mean, that's a really good question. Because when I started college, actually, I was focused more on business, because like I said, before, the plan was really for me to take over my dad's business. But it wasn't something I was really interested in. And my mom actually helped me try to figure out what I was good at. And I grew up thinking, never thinking I was good at math, but my mom would always tell me how she was good at math. I don't even know why it would come up. But I knew that I knew my mom was good at math. And so I realized that I was also very good at math. And so in doing like an assessment test at that time, computer science, and engineering actually came up as a strength. And I thought, you know what, I, this would be a great major, because I could get a job. And so that was really why I went in that direction.",
+    "themes": ["education", "exposure"]
+  },
+  {
+    "id": "goodkin-ibm-experience",
+    "title": "Learning Software Development at IBM",
+    "startTime": 847.467,
+    "endTime": 1002.793,
+    "duration": 155.326,
+    "chapter": {
+      "id": "education",
+      "title": "Professional Formation at IBM"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: What did you, what was the thing that you learned the most about at IBM? Deb Goodkin: At IBM, it gave me a really good foundation on how to develop code. And so you didn't really have like a hacking mentality then, like you have now. And, and, and that's fine, too. It's just that you really had to think through, what are you trying to do? And then how are you going to do that? And then, And then, as like a junior level engineer, I would actually, so I'd have to come up with my plan or my design. And then you actually had a design that you hand wrote. So it wasn't a programming language yet. And, and so we actually refer to it as pseudocode. And then you would actually meet with others, your colleagues, and, and people would review your design. And so you wouldn't actually implement it until it got approved. So, so it was a great way to learn because if someone saw like a hole in that, or even a, you know, a better way to do something, you would learn from that. And so taking that time to think through, you know, what, really, what are you trying to achieve? And then how can you get there? I, that was a good skill to have, and philosophy to have. Also working with others to learn how to collaborate with others. I mean, you learn that in school, but, but now, you know, you have a real product. And, and the way IBM worked back then, too, is sometimes you had competing teams. And so they had the money to fund, like, similar teams, you didn't always know it. And, and so whoever came out with better product, you know, basically won. You didn't look at it like that, basically, they would cancel your product, project, and you'd move on to something else. So, because things were so new, back then, too. So you didn't, there was so much possibility for innovation. And so I think that philosophy, that IBM was able to do that, was great. I also learned a lot from my manager, who happened to be a female, and her background was electrical engineering, too. And she was such a good role model for me, as well as a lot of the other people there. So, so it was a great experience starting out.",
+    "themes": ["education", "community"]
+  },
+  {
+    "id": "goodkin-freebsd-introduction",
+    "title": "Introduction to the FreeBSD Foundation",
+    "startTime": 1907.480,
+    "endTime": 2014.696,
+    "duration": 107.216,
+    "chapter": {
+      "id": "mission-values",
+      "title": "Finding Purpose in Open Source"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: How did you first, um, you know, hear about the FreeBSD foundation and how did, how were you connected? Deb Goodkin: So, um, the FreeBSD foundation, I didn't know anything about. And, um, so, uh, my friend had contacted me and she said, so she was working at this, um, aerospace company here in Boulder. And, um, so I'm here in Boulder, Colorado. Um, and she said, I, there's a guy at my company. So she worked at an HR and she said, there's this guy in my company. He's running a nonprofit and he's looking for someone to run it. And I told him that I had a friend who is an engineer and looking for some work. And so anyway, so she connected us and that was the first time I had heard of FreeBSD and the FreeBSD foundation. And so, um, so the guy she was talking about was Justin Gibbs, who's the founder of the FreeBSD foundation. He's here in Boulder and he had started the foundation, I think it was about four or five years before that. And I bet he was working full time. And so it was growing to the point where he really couldn't run it. He, and he saw so much potential for growth that he wanted to find someone to run the company.",
+    "themes": ["mission-values", "exposure", "projects"]
+  },
+  {
+    "id": "goodkin-freebsd-versus-project",
+    "title": "Relationship Between FreeBSD Foundation and FreeBSD Project",
+    "startTime": 2371.203,
+    "endTime": 2545.292,
+    "duration": 174.089,
+    "chapter": {
+      "id": "projects",
+      "title": "Understanding the Foundation's Role"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: Talk about, so, so the, the FreeBSD foundation and then there's the FreeBSD, how, how does that work, um, in terms of, you know, how you work together or, or don't? Deb Goodkin: Yeah, we're two totally different organizations. And so the FreeBSD project is, uh, made up of volunteers and, uh, from around the world and it's not a legal entity. And we have the FreeBSD foundation and, uh, which is a legal entity. It's, uh, um, here in the US we, it's, um, based, uh, when the IRS, um, uh, not certification, but, um, a definition, um, is this that we're a 501 C three. And so there's different types of nonprofits here. And so we're for the public good. And so our whole purpose is to support the project. So if FreeBSD went away, then we would most likely go away because we wouldn't have a purpose anymore.",
+    "themes": ["projects", "community", "mission-values"]
+  },
+  {
+    "id": "goodkin-open-source-challenges",
+    "title": "Challenges in Open Source Development",
+    "startTime": 4427.786,
+    "endTime": 4521.610,
+    "duration": 93.824,
+    "chapter": {
+      "id": "challenges",
+      "title": "Overcoming Obstacles in Open Source Work"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: What is your biggest challenge? Deb Goodkin: Um, I would say the biggest challenge that, well, a couple of things, uh, one is for the project, one's for us. So one would be getting the money that to do this work, to fund the work. Cause we, there's, there's so many things we know we can help with and we just don't have the resources to do it. And, uh, we have these conversations all the time, like, oh, if we had someone who could step in to do this, that would be so beneficial. And, but we can't, can't do it cause we don't have the funding.",
+    "themes": ["challenges", "community"]
+  },
+  {
+    "id": "goodkin-women-in-tech",
+    "title": "Being a Woman in a Male-Dominated Field",
+    "startTime": 4640.677,
+    "endTime": 4883.234,
+    "duration": 242.557,
+    "chapter": {
+      "id": "challenges",
+      "title": "Gender and Technology"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: Have you had any challenges in your career, um, being a woman in sort of a man dominated field? Deb Goodkin: Um, well, yeah, I have, um, I mean, even, you know, starting out in college, um, there weren't that many women in, who are studying any, any of those disciplines, uh, computer science, engineering, computer engineering, and math. Cause those were, I think the areas that I touched on. Um, but I also found that because it was such a hard discipline that we really worked together to understand things that we had. Um, I mean, maybe you didn't have Google back then, but yeah, we had our own working group that spent a lot of time together. And so sometimes, so there might be six of us and really just teaching each other concepts, if someone doesn't understand it.",
+    "themes": ["challenges", "community", "education"]
+  },
+  {
+    "id": "goodkin-international-collaboration",
+    "title": "The Global Open Source Community",
+    "startTime": 3640.346,
+    "endTime": 3819.850,
+    "duration": 179.504,
+    "chapter": {
+      "id": "community",
+      "title": "International Open Source Collaboration"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: Talk about the international aspect of it as well. Deb Goodkin: The, yeah, it's, I mean, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. Um, I think it's really important for us to figure out how to work well together.",
+    "themes": ["community", "evolution"]
   },
   {
     "id": "meeker-early-programming",
@@ -103,30 +193,30 @@ export const clips: Clip[] = [
     },
     "interviewId": "heather-meeker",
     "interviewTitle": "Heather Meeker",
-    "transcript": "Zack Ellis: Could you talk a little bit about kind of the high level, like the beginnings of your career into when you started to get involved in software, in open source? Heather Meeker: Well, so I actually was a computer programmer in the 1980s. I know that just sounds absolutely ancient now. Doesn't sound ancient to me, but it's all a matter of perspective. And I got into that because there was a lot of demand for people to work in particularly applications programming. When I graduated from college, and I didn't have a degree in computer science, and in fact, most people didn't have degrees in computer science, you couldn't really get a degree in computer science, except for maybe, you know, some schools.",
+    "transcript": "Well, so I actually was a computer programmer in the 1980s. I know that just sounds absolutely ancient now. Doesn't sound ancient to me, but it's all a matter of perspective. And I got into that because there was a lot of demand for people to work in particularly applications programming. When I graduated from college, and I didn't have a degree in computer science, and in fact, most people didn't have degrees in computer science, you couldn't really get a degree in computer science, except for maybe, you know, some schools.",
     "themes": ["exposure", "education"]
   },
   {
-    "id": "meeker-early-exposure",
-    "title": "Early Computer Exposure Through Family",
-    "startTime": 360.781,
-    "endTime": 420.563,
-    "duration": 59.782,
+    "id": "meeker-programming-passion",
+    "title": "A Passion for Programming",
+    "startTime": 461.783,
+    "endTime": 597.887,
+    "duration": 136.104,
     "chapter": {
       "id": "exposure",
-      "title": "Introduction to Computers and Programming"
+      "title": "Passion for Programming"
     },
     "interviewId": "heather-meeker",
     "interviewTitle": "Heather Meeker",
-    "transcript": "Zack Ellis: Well, just out of curiosity, what did he do? And how did that come about where he was like, oh, yeah, he's going to love this? Heather Meeker: He was actually a programmer. And that doesn't sound extraordinary today at all, but it was incredibly extraordinary then. I mean, he actually worked in a think tank kind of place and they were starting to use computers to solve problems, which, you know, people just hadn't even done before that. And so he used to take me to work and I would see the computers with the big tape drives on them.",
+    "transcript": "Zack Ellis: What kept you interested in computer science? Heather Meeker: Computer...like programming is, it's an experience like almost nothing else, like when you are writing a program, you are in total control, right, subject to the rules of the language and the environment you're in, you tell the computer exactly what to do. If the computer doesn't do what you ask it to do, it's your fault. Right. I mean, that's not always true. It's almost always true. So that's like this experience. It's like pure engineering in a way. Like you're not even you're not even really bounded by the physical world in programming. Like it's like being a little megalomaniac, you know, it's like really exciting for that reason. Also, it's one of the most absorbing things I've ever done. Like when I was a coder, I would go to work and I'd get there, you know, at eight in the morning and then at five I would look up and the day would be over. And it was almost as if no time had passed because I was so focused on what I was doing. And I don't think I've ever experienced anything else quite like that. Nothing else I've ever done in my life, either for money or for fun, has has absorbed me that much. And I really loved it for that reason, but also got kind of burnt out on it for that reason. And and I stopped doing it. Not sure whether that was a good idea or a bad idea, but but it was what happened, you know. So that's what I loved about it. It was just you got to solve puzzles however you you know, and you were only really bounded by your ingenuity in doing that. I also thought coding was a very creative activity, and I'm not sure everybody thinks that. But but you have like so much control over how you do things. I just found that fascinating.",
     "themes": ["exposure", "education"]
   },
   {
     "id": "perens-software-freedom-challenge",
     "title": "Challenges in Open Source Success",
-    "startTime": 208.8,
-    "endTime": 236.454,
-    "duration": 27.654,
+    "startTime": 186.800,
+    "endTime": 238.500,
+    "duration": 51.700,
     "chapter": {
       "id": "challenges",
       "title": "Open Source Success and Challenges"
@@ -139,39 +229,24 @@ export const clips: Clip[] = [
   {
     "id": "meeker-legal-challenges",
     "title": "Navigating Uncharted Legal Territory",
-    "startTime": 1260.563,
-    "endTime": 1320.781,
-    "duration": 60.218,
+    "startTime": 1338.805,
+    "endTime": 1376.409,
+    "duration": 37.604,
     "chapter": {
       "id": "challenges",
       "title": "Early Experiences in Open Source Law"
     },
     "interviewId": "heather-meeker",
     "interviewTitle": "Heather Meeker",
-    "transcript": "Heather Meeker: That scares lawyers a lot. Like when they don't have rules, they get freaked out. They like rules. So the experience was like walking out on a wire, you know. And by the way, there were some people at the time and probably still some some people, some lawyers who just would not deal with it at all because it was too weird and too new. And they felt that it was risky to give advice about it. But but my clients had questions. You know, I couldn't just say, oh, no, I don't know the answer to that.",
+    "transcript": "Heather Meeker: That scares lawyers a lot. Like when they don't have rules, they get freaked out. They like rules. So the experience was like walking out on a wire, you know. And by the way, there were some people at the time and probably still some some people, some lawyers who just would not deal with it at all because it was too weird and too new. And they felt that it was risky to give advice about it. But but my clients had questions. You know, I couldn't just say, oh, no, I don't know the answer to that. Like, you have to figure it out.",
     "themes": ["challenges", "education"]
-  },
-  {
-    "id": "goodkin-foundation-challenges",
-    "title": "FreeBSD Foundation's Main Challenges",
-    "startTime": 2280.781,
-    "endTime": 2340.563,
-    "duration": 59.782,
-    "chapter": {
-      "id": "challenges",
-      "title": "Open Source Community Culture and Challenges"
-    },
-    "interviewId": "deb-goodkin",
-    "interviewTitle": "Deb Goodkin",
-    "transcript": "Karen Herman: What is your biggest challenge? Deb Goodkin: Um, I would say the biggest challenge that, well, a couple of things, uh, one is for the project, one's for us. So one would be getting the money that to do this work, to fund the work. Cause we, there's, there's so many things we know we can help with and we just don't have the resources to do it. And, uh, we have these conversations all the time, like, oh, if we had someone who could step in to do this, that would be so beneficial. And, but we can't, can't do it cause we don't have the funding.",
-    "themes": ["challenges", "community"]
   },
   {
     "id": "perens-volunteer-challenges",
     "title": "Managing Volunteer Contributions",
-    "startTime": 1860.781,
-    "endTime": 1920.563,
-    "duration": 59.782,
+    "startTime": 1835.600,
+    "endTime": 2079.500,
+    "duration": 243.900,
     "chapter": {
       "id": "challenges",
       "title": "Community Collaboration and its Challenges"
@@ -212,63 +287,33 @@ export const clips: Clip[] = [
     "themes": ["mission-values", "community"]
   },
   {
-    "id": "goodkin-mission-values",
-    "title": "Making Technology Accessible Worldwide",
-    "startTime": 1540.820,
-    "endTime": 1586.275,
-    "duration": 45.455,
-    "chapter": {
-      "id": "mission-values",
-      "title": "Legacy Contributors and FreeBSD's 30-Year History"
-    },
-    "interviewId": "deb-goodkin",
-    "interviewTitle": "Deb Goodkin",
-    "transcript": "Deb Goodkin: And by doing that into the world, because when you look at Pre-BSD as this product, um, I mean, companies use it and they benefit from it, but it's this free operating system that anyone around the world can use. And the hardware that it runs on can be really cheap. So you can go into, you know, underdeveloped countries. And I mean, we can't do this because we don't have the resources yet, but other people could do it. And so you can, um, teach people skills that will give them jobs and, um, you know, and make them marketable.",
-    "themes": ["mission-values", "community"]
-  },
-  {
-    "id": "goodkin-education",
-    "title": "Learning Computer Engineering",
-    "startTime": 380.781,
-    "endTime": 430.563,
-    "duration": 59.782,
-    "chapter": {
-      "id": "education",
-      "title": "College Education and Introduction to Computing"
-    },
-    "interviewId": "deb-goodkin",
-    "interviewTitle": "Deb Goodkin",
-    "transcript": "Deb Goodkin: I was focused more on business, because like I said, before, the plan was really for me to take over my dad's business. But it wasn't something I was really interested in. And my mom actually helped me try to figure out what I was good at. And I grew up thinking, never thinking I was good at math, but my mom would always tell me how she was good at math. And so I realized that I was also very good at math. And so in doing like an assessment test at that time, computer science, and engineering actually came up as a strength.",
-    "themes": ["education", "exposure"]
-  },
-  {
     "id": "meeker-mission-values",
     "title": "Why Open Source Matters",
-    "startTime": 1380.781,
-    "endTime": 1440.563,
-    "duration": 59.782,
+    "startTime": 1606.666,
+    "endTime": 1698.292,
+    "duration": 91.626,
     "chapter": {
       "id": "mission-values",
       "title": "Open Source as a Transformative Force"
     },
     "interviewId": "heather-meeker",
     "interviewTitle": "Heather Meeker",
-    "transcript": "Heather Meeker: I really saw it as transformative almost from the beginning. I did not realize and I'm not sure very many people would have realized at that time how huge it would get. But it was just so different from everything else that you learned as a technology lawyer. Like if you do a regular software license, you know, it has a particular form and some terms that you would expect. Open source is like bizarro world licensing. It's like exactly the opposite. It's like giving away rights and forcing people to give away rights instead of just like normal licensing.",
+    "transcript": "Zack Ellis: When did you start to see open source as something transformative? Heather Meeker: I really saw it as transformative almost from the beginning. I did not realize and I'm not sure very many people would have realized at that time how huge it would get. But it was just so different from everything else that you learned as a technology lawyer. Like if you do a regular software license, you know, it has a particular form and some terms that you would expect. Open source is like bizarro world licensing. It's like exactly the opposite. It's like giving away rights and forcing people to give away rights instead of just like normal licensing.",
     "themes": ["mission-values", "evolution"]
   },
   {
     "id": "meeker-evolution",
     "title": "Evolution of Open Source in Business",
-    "startTime": 1740.781,
-    "endTime": 1800.563,
-    "duration": 59.782,
+    "startTime": 1727.012,
+    "endTime": 1842.754,
+    "duration": 115.742,
     "chapter": {
       "id": "evolution",
       "title": "Impact of Open Source on Business and Collaboration"
     },
     "interviewId": "heather-meeker",
     "interviewTitle": "Heather Meeker",
-    "transcript": "Heather Meeker: And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. And today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact.",
+    "transcript": "Heather Meeker: so open source is used by everybody now. Like almost everyone in the technology industry now actually contributes to it. I mean, it's everywhere. We're using it right this minute to do this interview. It's in your phone. It's everywhere, right? And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. Right. And and today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact. You know, they were just strictly competitors and now they're collaborators. And even there are there are only like maybe two, three companies that are known for not doing it now. Right. If you go back 25 years, like no one was doing it. They were terrified about what these licenses meant and everything. So it's completely been absorbed in business. And that, you know, if you believe in markets, which I do because I studied economics and all that stuff, that wouldn't happen unless it worked. Right. It actually works as a paradigm. Like it produced a lot of really great stuff. And over that time, people became convinced of that and they overcame their fear about these licensing paradigms they didn't understand. So they got over the fear and then it really changed their behavior. So to me, it's changed everything about the way the technology industry operates.",
     "themes": ["evolution", "community"]
   },
   // Larry Augustin Clips
