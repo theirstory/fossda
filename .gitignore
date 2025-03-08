@@ -24,6 +24,7 @@
 # misc
 .DS_Store
 *.pem
+.auth-token
 
 # debug
 npm-debug.log*
@@ -37,6 +38,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+.vercel/
 
 # typescript
 *.tsbuildinfo
@@ -65,3 +67,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Project specific
+/data/
+.cursorrules
