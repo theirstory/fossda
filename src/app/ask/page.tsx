@@ -8,6 +8,7 @@ import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'marked-react';
+import { videoData } from "@/data/videos";
 
 interface Quote {
   text: string;
@@ -212,7 +213,7 @@ export default function AskPage() {
           className="relative w-48 flex-shrink-0 group"
         >
           <Image
-            src={`/thumbnails/${quote.interviewId === 'introduction-to-fossda' ? 'fossda-intro' : quote.interviewId}.png`}
+            src={videoData[quote.interviewId].thumbnail}
             alt={`Thumbnail for ${quote.speaker}'s interview`}
             width={640}
             height={360}
@@ -327,7 +328,7 @@ export default function AskPage() {
                         className="block relative w-full h-48 group"
                       >
                         <Image
-                          src={`/thumbnails/${quote.interviewId === 'introduction-to-fossda' ? 'fossda-intro' : quote.interviewId}.png`}
+                          src={videoData[quote.interviewId].thumbnail}
                           alt={`Thumbnail for ${quote.speaker}'s interview`}
                           width={640}
                           height={360}

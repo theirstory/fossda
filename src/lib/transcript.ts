@@ -263,4 +263,60 @@ export function formatTimestamp(seconds: number): string {
     return `${hours}:${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
   }
   return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
+
+// Browser-only functions
+export const browserUtils = {
+  htmlToSrt(html: string): string {
+    if (typeof window === 'undefined') {
+      throw new Error('This function can only be used in the browser');
+    }
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const spans = doc.querySelectorAll('span[data-m]');
+    let srtContent = '';
+    let counter = 1;
+    let currentSpeaker = '';
+
+    for (let i = 0; i < spans.length; i++) {
+      const span = spans[i];
+      const nextSpan = spans[i + 1];
+      
+      // Get timing information
+      const startTime = parseInt(span.getAttribute('data-m') || '0', 10) / 1000;
+      const duration = parseInt(span.getAttribute('data-d') || '0', 10) / 1000;
+      const endTime = nextSpan ? 
+        parseInt(nextSpan.getAttribute('data-m') || '0', 10) / 1000 : 
+        startTime + duration;
+
+      // Update speaker if this is a speaker span
+      if (span.classList.contains('speaker')) {
+        currentSpeaker = span.textContent?.trim() || '';
+        continue;
+      }
+
+      // Format times
+      const startTimeStr = formatSrtTime(startTime);
+      const endTimeStr = formatSrtTime(endTime);
+
+      // Add subtitle entry
+      srtContent += `${counter}\n`;
+      srtContent += `${startTimeStr} --> ${endTimeStr}\n`;
+      srtContent += `${currentSpeaker}${span.textContent}\n\n`;
+
+      counter++;
+    }
+
+    return srtContent;
+  }
+};
+
+function formatSrtTime(seconds: number): string {
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const secs = Math.floor(seconds % 60);
+  const ms = Math.floor((seconds % 1) * 1000);
+
+  return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')},${String(ms).padStart(3, '0')}`;
 } 

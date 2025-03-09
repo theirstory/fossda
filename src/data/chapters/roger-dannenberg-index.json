@@ -1,0 +1,74 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction to Roger Dannenberg",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": 62
+      },
+      "synopsis": "The speaker introduces Roger Dannenberg, a professor at Carnegie Mellon University with a unique combination of expertise in computer science, art, and music. Roger is also known for his roles as a trumpeter, composer, and notably, as the co-creator of the popular open-source digital audio editor, Audacity.",
+      "keywords": "introduction, background, computer science, music, art"
+    },
+    {
+      "title": "The Genesis of Audacity",
+      "timecode": "00:01:02",
+      "time": {
+        "start": 62,
+        "end": 261.5
+      },
+      "synopsis": "The speaker discusses the inception of Audacity, which originated from a research project focused on developing algorithms for computers to recognize hummed or sung tunes. The need for a tool to visualize audio data and analyze pitch recognition failures led to the creation of Audacity, which was intended to be a general-purpose tool for audio and music research.",
+      "keywords": "audacity, research, development, music recognition, visualization"
+    },
+    {
+      "title": "Choosing the Open Source Path",
+      "timecode": "00:04:21",
+      "time": {
+        "start": 261.5,
+        "end": 488
+      },
+      "synopsis": "The decision to make Audacity an open-source project was influenced by Dominic Mazzoni, a graduate student who played a significant role in its development. Dominic suggested the integration of basic editing functions into the tool, which was initially meant for data display. The speaker credits Dominic with the idea of using the GNU license and organizing the project as an open-source distribution.",
+      "keywords": "open source, GNU license, collaboration, development"
+    },
+    {
+      "title": "Open Source and Academic Parallels",
+      "timecode": "00:08:08",
+      "time": {
+        "start": 488,
+        "end": 785
+      },
+      "synopsis": "The speaker reflects on the parallels between open-source software and the academic world, where the primary rewards are recognition and contribution to the field rather than financial gain. He notes that in academia, publishing is not for profit, and this ethos extends to the development of software, where the focus is on sharing and experimentation rather than selling.",
+      "keywords": "academia, open source, collaboration, sharing"
+    },
+    {
+      "title": "Audacity's Growth and Simplicity",
+      "timecode": "00:13:05",
+      "time": {
+        "start": 785,
+        "end": 1009
+      },
+      "synopsis": "The speaker learned from Audacity's development that simplicity and ease of use were key factors in its widespread adoption. He acknowledges Dominic's insistence on a user-friendly interface, which set Audacity apart from more complex studio software. The speaker also discusses the advantage of open-source projects in focusing on user needs without the pressure to constantly add new features for profit.",
+      "keywords": "user interface, simplicity, adoption, user experience"
+    },
+    {
+      "title": "Community Building and Governance Challenges",
+      "timecode": "00:16:49",
+      "time": {
+        "start": 1009,
+        "end": 1316
+      },
+      "synopsis": "Despite Audacity's success, the speaker identifies challenges in building a community and governance within an open-source project. He discusses the difficulty of encouraging collaboration rather than forking, the dynamics between core teams and external contributors, and the importance of leadership in maintaining the project's direction and focus.",
+      "keywords": "community, governance, collaboration, leadership"
+    },
+    {
+      "title": "Monetization and Sustainability of Open Source",
+      "timecode": "00:21:56",
+      "time": {
+        "start": 1316,
+        "end": 1519.72
+      },
+      "synopsis": "The speaker concludes by highlighting the potential for open-source projects to generate income, which can support the project's sustainability. He mentions the possibilities of consulting, adapting software for commercial use, and generating revenue through advertising on download pages. This income can help cover costs and allow for investment in the project's development.",
+      "keywords": "monetization, sustainability, business model, funding"
+    }
+  ]
+} 

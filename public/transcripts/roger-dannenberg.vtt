@@ -1,0 +1,2078 @@
+WEBVTT
+
+1
+00:00:02.900 --> 00:00:03.800
+<v Heather Meeker:>All right.
+
+2
+00:00:05.400 --> 00:00:10.000
+<v Heather Meeker:>Well, today, I am talking to Roger
+
+3
+00:00:10.000 --> 00:00:12.900
+<v Heather Meeker:>Dannenberg, who is a professor of community
+
+4
+00:00:13.200 --> 00:00:15.207
+<v Heather Meeker:>of Computer Science, Art and Music.
+
+5
+00:00:16.700 --> 00:00:18.587
+<v Heather Meeker:>What a wonderful group of things to
+
+6
+00:00:18.587 --> 00:00:20.000
+<v Heather Meeker:>be a professor of, by the way
+
+7
+00:00:20.600 --> 00:00:23.600
+<v Heather Meeker:>at Carnegie Mellon University and he is
+
+8
+00:00:23.600 --> 00:00:26.900
+<v Heather Meeker:>also a Trumpeter, a Composer and a
+
+9
+00:00:26.900 --> 00:00:29.500
+<v Heather Meeker:>Computer Scientist, of course, and he's the
+
+10
+00:00:29.500 --> 00:00:33.500
+<v Heather Meeker:>co-creator of Audacity, which is an extremely
+
+11
+00:00:33.500 --> 00:00:36.699
+<v Heather Meeker:>popular open source digital audio editor and
+
+12
+00:00:36.800 --> 00:00:38.300
+<v Heather Meeker:>recording application.
+
+13
+00:00:38.800 --> 00:00:40.561
+<v Heather Meeker:>Roger, welcome to FOSSDA.
+
+14
+00:00:42.400 --> 00:00:45.300
+<v Heather Meeker:>I'm so happy that you're willing to
+
+15
+00:00:45.300 --> 00:00:47.100
+<v Heather Meeker:>chat with us for a while today.
+
+16
+00:00:48.000 --> 00:00:50.100
+<v Heather Meeker:>So I'm going to just dive in
+
+17
+00:00:50.500 --> 00:00:53.400
+<v Heather Meeker:>and say what was it that brought
+
+18
+00:00:53.400 --> 00:00:56.400
+<v Heather Meeker:>you to working with an open to
+
+19
+00:00:56.400 --> 00:00:58.600
+<v Heather Meeker:>creating an open source project?
+
+20
+00:00:58.600 --> 00:01:00.200
+<v Heather Meeker:>How did you make the decision to
+
+21
+00:01:00.200 --> 00:01:00.800
+<v Heather Meeker:>do that?
+
+22
+00:01:03.000 --> 00:01:09.100
+<v Roger Dannenberg:>Well, the project started basically from research
+
+23
+00:01:09.500 --> 00:01:15.400
+<v Roger Dannenberg:>needs that that we have that we
+
+24
+00:01:15.400 --> 00:01:20.900
+<v Roger Dannenberg:>were working on actually on query by
+
+25
+00:01:20.900 --> 00:01:24.200
+<v Roger Dannenberg:>humming, which was getting computers to recognize
+
+26
+00:01:24.200 --> 00:01:26.500
+<v Roger Dannenberg:>tunes that people might sing or hum
+
+27
+00:01:26.800 --> 00:01:29.146
+<v Roger Dannenberg:>and search a database for them and
+
+28
+00:01:29.800 --> 00:01:36.400
+<v Roger Dannenberg:>part of that is just recognizing pitch
+
+29
+00:01:36.400 --> 00:01:39.800
+<v Roger Dannenberg:>and tunes and we were working on
+
+30
+00:01:39.800 --> 00:01:41.700
+<v Roger Dannenberg:>some algorithms to improve that.
+
+31
+00:01:41.700 --> 00:01:45.000
+<v Roger Dannenberg:>And of course algorithms fail and then
+
+32
+00:01:45.000 --> 00:01:46.200
+<v Roger Dannenberg:>when they fail, you want to see
+
+33
+00:01:46.200 --> 00:01:49.000
+<v Roger Dannenberg:>what happened and we were trying to
+
+34
+00:01:49.000 --> 00:01:54.800
+<v Roger Dannenberg:>visualize audio and the analyses that we
+
+35
+00:01:54.800 --> 00:01:57.600
+<v Roger Dannenberg:>did and figure out what was going
+
+36
+00:01:57.600 --> 00:01:59.199
+<v Roger Dannenberg:>wrong and we just felt like it
+
+37
+00:01:59.200 --> 00:02:00.300
+<v Roger Dannenberg:>would be really great to have a
+
+38
+00:02:00.300 --> 00:02:04.500
+<v Roger Dannenberg:>tool that could help us display audio
+
+39
+00:02:04.500 --> 00:02:07.300
+<v Roger Dannenberg:>data in different formats and deal with
+
+40
+00:02:07.300 --> 00:02:08.500
+<v Roger Dannenberg:>different audio files.
+
+41
+00:02:08.500 --> 00:02:11.200
+<v Roger Dannenberg:>This comes up over and over again
+
+42
+00:02:11.200 --> 00:02:14.787
+<v Roger Dannenberg:>in audio and music research and at
+
+43
+00:02:14.788 --> 00:02:17.500
+<v Roger Dannenberg:>the time there, the tools that were
+
+44
+00:02:17.500 --> 00:02:19.800
+<v Roger Dannenberg:>there, just, you know, didn't seem very
+
+45
+00:02:19.800 --> 00:02:20.300
+<v Roger Dannenberg:>good.
+
+46
+00:02:20.400 --> 00:02:23.299
+<v Roger Dannenberg:>They were either very proprietary and we
+
+47
+00:02:23.300 --> 00:02:25.900
+<v Roger Dannenberg:>had problems, you know, moving from one
+
+48
+00:02:26.100 --> 00:02:30.299
+<v Roger Dannenberg:>computer to another or they were designed
+
+49
+00:02:30.300 --> 00:02:32.100
+<v Roger Dannenberg:>for a special purpose and we were
+
+50
+00:02:32.100 --> 00:02:34.500
+<v Roger Dannenberg:>doing research and wanted something more general
+
+51
+00:02:34.500 --> 00:02:35.000
+<v Roger Dannenberg:>purpose.
+
+52
+00:02:35.400 --> 00:02:38.000
+<v Roger Dannenberg:>And so, you know, maybe it was
+
+53
+00:02:38.700 --> 00:02:40.700
+<v Roger Dannenberg:>foolish to think that well, we could
+
+54
+00:02:40.700 --> 00:02:43.100
+<v Roger Dannenberg:>just start from scratch and build our
+
+55
+00:02:43.100 --> 00:02:44.600
+<v Roger Dannenberg:>own but that's what we did.
+
+56
+00:02:44.900 --> 00:02:50.700
+<v Roger Dannenberg:>And yeah, and so the actually, you
+
+57
+00:02:50.700 --> 00:02:53.700
+<v Roger Dannenberg:>know, I'm not sure that we ever
+
+58
+00:02:53.700 --> 00:02:57.299
+<v Roger Dannenberg:>certainly I never made an initial decision
+
+59
+00:02:57.300 --> 00:02:58.600
+<v Roger Dannenberg:>that "Oh, I want to build an
+
+60
+00:02:58.600 --> 00:03:02.100
+<v Roger Dannenberg:>open source audio editor distributed in the
+
+61
+00:03:02.100 --> 00:03:04.168
+<v Roger Dannenberg:>world and it'll become the most popular."
+
+62
+00:03:06.000 --> 00:03:06.500
+<v Roger Dannenberg:>Yeah.
+
+63
+00:03:06.500 --> 00:03:12.600
+<v Roger Dannenberg:>that It'll be the primary editor of
+
+64
+00:03:12.600 --> 00:03:15.500
+<v Roger Dannenberg:>its kind in the world that just
+
+65
+00:03:15.500 --> 00:03:16.900
+<v Roger Dannenberg:>never crossed our minds.
+
+66
+00:03:16.900 --> 00:03:20.100
+<v Roger Dannenberg:>In fact, even, you know, at that
+
+67
+00:03:20.100 --> 00:03:26.400
+<v Roger Dannenberg:>time which was around 2000, you know,
+
+68
+00:03:26.400 --> 00:03:28.500
+<v Roger Dannenberg:>most people in the world didn't have
+
+69
+00:03:28.500 --> 00:03:31.900
+<v Roger Dannenberg:>the kinds of computers or the kinds
+
+70
+00:03:31.900 --> 00:03:34.410
+<v Roger Dannenberg:>of network connections and everything else that
+
+71
+00:03:34.410 --> 00:03:37.300
+<v Roger Dannenberg:>you would need to even distribute something
+
+72
+00:03:37.300 --> 00:03:38.000
+<v Roger Dannenberg:>like this.
+
+73
+00:03:38.300 --> 00:03:42.100
+<v Roger Dannenberg:>So, you know, it grew out of
+
+74
+00:03:43.400 --> 00:03:49.700
+<v Roger Dannenberg:>some, some very personal goals and needs
+
+75
+00:03:49.700 --> 00:03:50.500
+<v Roger Dannenberg:>in a lab.
+
+76
+00:03:50.500 --> 00:03:54.200
+<v Roger Dannenberg:>And it just it kind of happened
+
+77
+00:03:54.200 --> 00:03:59.400
+<v Roger Dannenberg:>to be useful for some other things
+
+78
+00:03:59.400 --> 00:04:03.000
+<v Roger Dannenberg:>and make its way gradually out into
+
+79
+00:04:03.000 --> 00:04:04.799
+<v Roger Dannenberg:>the world and develop into what it
+
+80
+00:04:04.800 --> 00:04:05.000
+<v Roger Dannenberg:>is now.
+
+81
+00:04:05.000 --> 00:04:08.600
+<v Heather Meeker:>Is there a decision point that you
+
+82
+00:04:08.600 --> 00:04:10.500
+<v Heather Meeker:>recall where you decided?
+
+83
+00:04:10.800 --> 00:04:12.400
+<v Heather Meeker:>This is going to be open source,
+
+84
+00:04:12.400 --> 00:04:15.500
+<v Heather Meeker:>and we're going to collect, you know
+
+85
+00:04:15.500 --> 00:04:18.500
+<v Heather Meeker:>input from a lot of people.
+
+86
+00:04:18.500 --> 00:04:20.600
+<v Heather Meeker:>How did that decision come about?
+
+87
+00:04:21.500 --> 00:04:26.461
+<v Roger Dannenberg:>Yeah, a lot of from Dominic Mazzoni
+
+88
+00:04:26.600 --> 00:04:29.000
+<v Roger Dannenberg:>who was a grad student at the
+
+89
+00:04:29.000 --> 00:04:35.100
+<v Roger Dannenberg:>time and Dominic did did more of
+
+90
+00:04:35.100 --> 00:04:37.700
+<v Roger Dannenberg:>the work than anyone else.
+
+91
+00:04:38.100 --> 00:04:39.799
+<v Roger Dannenberg:>It was mainly the two of us
+
+92
+00:04:39.800 --> 00:04:42.800
+<v Roger Dannenberg:>and I was contributing some kind of
+
+93
+00:04:42.800 --> 00:04:45.700
+<v Roger Dannenberg:>low-level audio drivers that I had built
+
+94
+00:04:45.800 --> 00:04:52.200
+<v Roger Dannenberg:>and and worked on some symbolic display
+
+95
+00:04:52.200 --> 00:04:55.700
+<v Roger Dannenberg:>as opposed to audio waveform display, but
+
+96
+00:04:55.700 --> 00:05:00.068
+<v Roger Dannenberg:>Dominic really put together the basic waveform
+
+97
+00:05:02.800 --> 00:05:04.400
+<v Roger Dannenberg:>display and interaction.
+
+98
+00:05:04.700 --> 00:05:06.900
+<v Roger Dannenberg:>And it was it was Dominic that
+
+99
+00:05:08.500 --> 00:05:10.799
+<v Roger Dannenberg:>suggested in the very beginning that if
+
+100
+00:05:11.100 --> 00:05:13.200
+<v Roger Dannenberg:>if we are going to build something
+
+101
+00:05:13.200 --> 00:05:15.500
+<v Roger Dannenberg:>to display data , it really wouldn't
+
+102
+00:05:15.500 --> 00:05:20.500
+<v Roger Dannenberg:>be much additional work to cut copy
+
+103
+00:05:20.500 --> 00:05:22.700
+<v Roger Dannenberg:>paste and right, you know, and write
+
+104
+00:05:22.700 --> 00:05:23.800
+<v Roger Dannenberg:>it back out to disk.
+
+105
+00:05:23.800 --> 00:05:26.100
+<v Roger Dannenberg:>So you could, we could integrate some
+
+106
+00:05:26.100 --> 00:05:29.700
+<v Roger Dannenberg:>basic editing functions and I thought, well,
+
+107
+00:05:29.700 --> 00:05:30.800
+<v Roger Dannenberg:>yeah, it makes sense.
+
+108
+00:05:30.800 --> 00:05:34.099
+<v Roger Dannenberg:>That's a great idea, but don't spend
+
+109
+00:05:34.100 --> 00:05:35.299
+<v Roger Dannenberg:>too much time on it.
+
+110
+00:05:38.800 --> 00:05:40.300
+<v Roger Dannenberg:>So that worked out and and then
+
+111
+00:05:40.300 --> 00:05:43.300
+<v Roger Dannenberg:>it was really Dominic that that had
+
+112
+00:05:43.300 --> 00:05:48.000
+<v Roger Dannenberg:>some particular ideas about, for example, using
+
+113
+00:05:48.000 --> 00:05:52.599
+<v Roger Dannenberg:>the canoe license.
+
+114
+00:05:52.600 --> 00:05:55.000
+<v Roger Dannenberg:>And, you know, sort of how things
+
+115
+00:05:55.000 --> 00:05:58.000
+<v Roger Dannenberg:>would be organized and made into a
+
+116
+00:05:59.500 --> 00:06:00.991
+<v Roger Dannenberg:>open source distribution.
+
+117
+00:06:01.700 --> 00:06:05.800
+<v Roger Dannenberg:>I had previously done a lot of
+
+118
+00:06:05.800 --> 00:06:08.900
+<v Roger Dannenberg:>software and made it available and not
+
+119
+00:06:08.900 --> 00:06:12.099
+<v Roger Dannenberg:>never really worried much about licensing or
+
+120
+00:06:12.100 --> 00:06:13.900
+<v Roger Dannenberg:>any of these details.
+
+121
+00:06:13.900 --> 00:06:18.400
+<v Roger Dannenberg:>So I was happy also to get
+
+122
+00:06:18.400 --> 00:06:20.299
+<v Roger Dannenberg:>the software out there, especially since we
+
+123
+00:06:20.300 --> 00:06:23.300
+<v Roger Dannenberg:>incorporated these editing functions and we thought
+
+124
+00:06:23.300 --> 00:06:25.299
+<v Roger Dannenberg:>it would be helpful at least other
+
+125
+00:06:25.300 --> 00:06:26.100
+<v Roger Dannenberg:>researchers.
+
+126
+00:06:26.100 --> 00:06:30.300
+<v Roger Dannenberg:>And so, you know that and then
+
+127
+00:06:30.300 --> 00:06:32.700
+<v Roger Dannenberg:>the idea of a community and bringing
+
+128
+00:06:32.700 --> 00:06:36.300
+<v Roger Dannenberg:>people in really came about after the
+
+129
+00:06:36.300 --> 00:06:37.800
+<v Roger Dannenberg:>initial work.
+
+130
+00:06:38.300 --> 00:06:40.800
+<v Roger Dannenberg:>We, you know, it was just us
+
+131
+00:06:40.800 --> 00:06:43.300
+<v Roger Dannenberg:>and we were using the software and
+
+132
+00:06:46.800 --> 00:06:48.400
+<v Roger Dannenberg:>released it the software.
+
+133
+00:06:48.600 --> 00:06:53.099
+<v Roger Dannenberg:>And, but then later other people sort
+
+134
+00:06:53.100 --> 00:06:55.100
+<v Roger Dannenberg:>of started using it and wanted to
+
+135
+00:06:55.100 --> 00:06:58.400
+<v Roger Dannenberg:>make improvements and most of that actually
+
+136
+00:06:58.400 --> 00:07:03.800
+<v Roger Dannenberg:>happened interacting with he was he was
+
+137
+00:07:03.800 --> 00:07:07.599
+<v Roger Dannenberg:>the one that sort of pushed it
+
+138
+00:07:07.600 --> 00:07:09.000
+<v Roger Dannenberg:>out there and he was the one
+
+139
+00:07:09.000 --> 00:07:10.800
+<v Roger Dannenberg:>that people got in contact with and
+
+140
+00:07:10.900 --> 00:07:12.000
+<v Roger Dannenberg:>and I had a lot of other
+
+141
+00:07:12.500 --> 00:07:16.200
+<v Roger Dannenberg:>other duties teaching and researching and doing
+
+142
+00:07:16.200 --> 00:07:17.799
+<v Roger Dannenberg:>doing my stuff back at Carnegie Mellon.
+
+143
+00:07:17.800 --> 00:07:21.800
+<v Roger Dannenberg:>So I was, you know, it kind
+
+144
+00:07:21.800 --> 00:07:25.799
+<v Roger Dannenberg:>of just evolved that way and then
+
+145
+00:07:25.900 --> 00:07:27.800
+<v Roger Dannenberg:>because I was still a user and
+
+146
+00:07:27.800 --> 00:07:29.600
+<v Roger Dannenberg:>I have written some of the software
+
+147
+00:07:29.600 --> 00:07:33.800
+<v Roger Dannenberg:>and I was helping to do some
+
+148
+00:07:33.800 --> 00:07:36.300
+<v Roger Dannenberg:>maintenance at at some point, you know,
+
+149
+00:07:36.300 --> 00:07:37.300
+<v Roger Dannenberg:>much later in the game.
+
+150
+00:07:37.300 --> 00:07:38.800
+<v Roger Dannenberg:>I kind of came back into the
+
+151
+00:07:39.400 --> 00:07:43.100
+<v Roger Dannenberg:>group and started working much more with
+
+152
+00:07:43.100 --> 00:07:44.599
+<v Roger Dannenberg:>the group and, with audacity.
+
+153
+00:07:46.400 --> 00:07:49.300
+<v Heather Meeker:>So you said you'd developed other software
+
+154
+00:07:49.300 --> 00:07:49.761
+<v Heather Meeker:>before.
+
+155
+00:07:49.761 --> 00:07:52.700
+<v Heather Meeker:>Do you perceive a difference?
+
+156
+00:07:52.700 --> 00:07:55.200
+<v Heather Meeker:>Given this was an open source project
+
+157
+00:07:55.200 --> 00:07:56.900
+<v Heather Meeker:>from sort of other projects you had
+
+158
+00:07:56.900 --> 00:07:57.200
+<v Heather Meeker:>done.
+
+159
+00:07:57.200 --> 00:07:59.500
+<v Heather Meeker:>Like, did that change the character of
+
+160
+00:07:59.500 --> 00:08:01.200
+<v Heather Meeker:>the experience for you?
+
+161
+00:08:01.500 --> 00:08:03.700
+<v Heather Meeker:>Or what?
+
+162
+00:08:03.900 --> 00:08:04.599
+<v Heather Meeker:>What was it about?
+
+163
+00:08:04.600 --> 00:08:06.900
+<v Heather Meeker:>It being open source that that made
+
+164
+00:08:06.900 --> 00:08:07.800
+<v Heather Meeker:>any difference.
+
+165
+00:08:08.900 --> 00:08:14.400
+<v Roger Dannenberg:>Well, I think maybe open sources is
+
+166
+00:08:14.400 --> 00:08:18.200
+<v Roger Dannenberg:>really an outgrowth and maybe I just
+
+167
+00:08:18.200 --> 00:08:20.099
+<v Roger Dannenberg:>see it this way, but maybe it
+
+168
+00:08:20.100 --> 00:08:24.400
+<v Roger Dannenberg:>really is an outgrowth of the academic
+
+169
+00:08:24.400 --> 00:08:25.000
+<v Roger Dannenberg:>world.
+
+170
+00:08:25.000 --> 00:08:30.000
+<v Roger Dannenberg:>Where in academia we do research and
+
+171
+00:08:30.000 --> 00:08:32.900
+<v Roger Dannenberg:>you know, we get the rewards are
+
+172
+00:08:32.900 --> 00:08:35.284
+<v Roger Dannenberg:>not so much money, but recognition.
+
+173
+00:08:35.284 --> 00:08:37.799
+<v Roger Dannenberg:>That people want to want to be
+
+174
+00:08:37.799 --> 00:08:44.200
+<v Roger Dannenberg:>recognized for being, for making contributions to
+
+175
+00:08:44.200 --> 00:08:47.000
+<v Roger Dannenberg:>whatever field, they do research or public
+
+176
+00:08:47.100 --> 00:08:48.000
+<v Roger Dannenberg:>or writing in.
+
+177
+00:08:48.300 --> 00:08:50.699
+<v Roger Dannenberg:>And so, we publish, but we don't,
+
+178
+00:08:50.700 --> 00:08:53.300
+<v Roger Dannenberg:>we don't publish, you know, and signed
+
+179
+00:08:53.300 --> 00:08:54.200
+<v Roger Dannenberg:>book deals.
+
+180
+00:08:54.700 --> 00:08:56.900
+<v Roger Dannenberg:>Well, actually, we do sign book deals,
+
+181
+00:08:56.900 --> 00:08:59.199
+<v Roger Dannenberg:>but terrible deals, right?
+
+182
+00:09:00.500 --> 00:09:01.200
+<v Roger Dannenberg:>We're lucky.
+
+183
+00:09:02.200 --> 00:09:03.699
+<v Roger Dannenberg:>We're lucky to get anyone to publish
+
+184
+00:09:03.700 --> 00:09:09.500
+<v Roger Dannenberg:>anything because dry academic stuff and, similarly
+
+185
+00:09:09.500 --> 00:09:12.300
+<v Roger Dannenberg:>with journal articles, like, you know, in
+
+186
+00:09:12.300 --> 00:09:16.900
+<v Roger Dannenberg:>some sense, we're professional writers, but we
+
+187
+00:09:16.900 --> 00:09:18.376
+<v Roger Dannenberg:>don't get paid by the publishers.
+
+188
+00:09:18.376 --> 00:09:21.000
+<v Roger Dannenberg:>Well, I don't know, if everybody knows
+
+189
+00:09:21.000 --> 00:09:23.099
+<v Roger Dannenberg:>this or not, but if you didn't
+
+190
+00:09:23.100 --> 00:09:26.100
+<v Roger Dannenberg:>know, it might be interesting that, you
+
+191
+00:09:26.100 --> 00:09:29.500
+<v Roger Dannenberg:>know, these thousands and thousands of scientific
+
+192
+00:09:29.500 --> 00:09:34.300
+<v Roger Dannenberg:>papers that get, published the author's, typically
+
+193
+00:09:34.300 --> 00:09:38.500
+<v Roger Dannenberg:>get zero and, and, the publishers.
+
+194
+00:09:39.700 --> 00:09:45.800
+<v Roger Dannenberg:>Many of the publishers are nonprofit organizations,
+
+195
+00:09:45.800 --> 00:09:48.100
+<v Roger Dannenberg:>like communications for the associate.
+
+196
+00:09:48.800 --> 00:09:53.000
+<v Roger Dannenberg:>I mean, the association for computing machinery,
+
+197
+00:09:53.000 --> 00:09:54.900
+<v Roger Dannenberg:>the ACM, or IEEE.
+
+198
+00:09:55.600 --> 00:09:57.600
+<v Roger Dannenberg:>These are nonprofit organizations.
+
+199
+00:09:57.900 --> 00:10:00.521
+<v Roger Dannenberg:>So, you know, the point is just
+
+200
+00:10:00.522 --> 00:10:02.199
+<v Roger Dannenberg:>to get the literature out there and
+
+201
+00:10:02.200 --> 00:10:04.500
+<v Roger Dannenberg:>and share it and and then our,
+
+202
+00:10:04.900 --> 00:10:06.900
+<v Roger Dannenberg:>you know, hiring and promotion is kind
+
+203
+00:10:06.900 --> 00:10:10.300
+<v Roger Dannenberg:>of based on peer review and our
+
+204
+00:10:11.000 --> 00:10:12.400
+<v Roger Dannenberg:>recognition in the world.
+
+205
+00:10:12.400 --> 00:10:17.000
+<v Roger Dannenberg:>So, we don't get anything directly from
+
+206
+00:10:17.000 --> 00:10:21.100
+<v Roger Dannenberg:>publishing and and I think software is
+
+207
+00:10:22.700 --> 00:10:25.500
+<v Roger Dannenberg:>at least when I was going through
+
+208
+00:10:25.500 --> 00:10:30.500
+<v Roger Dannenberg:>school and, you know, decades ago software
+
+209
+00:10:30.500 --> 00:10:32.400
+<v Roger Dannenberg:>was kind of in the same category
+
+210
+00:10:32.400 --> 00:10:33.176
+<v Roger Dannenberg:>as publishing.
+
+211
+00:10:33.176 --> 00:10:36.600
+<v Roger Dannenberg:>People would write software, but academic publishing
+
+212
+00:10:36.600 --> 00:10:39.500
+<v Roger Dannenberg:>people would write software and systems and
+
+213
+00:10:39.500 --> 00:10:40.600
+<v Roger Dannenberg:>and they put it out there and
+
+214
+00:10:40.600 --> 00:10:41.992
+<v Roger Dannenberg:>see if other people will use it
+
+215
+00:10:42.900 --> 00:10:44.400
+<v Roger Dannenberg:>and that was just kind of like
+
+216
+00:10:44.400 --> 00:10:46.800
+<v Roger Dannenberg:>a form of experimental science to see
+
+217
+00:10:46.800 --> 00:10:49.300
+<v Roger Dannenberg:>what works and what doesn't and so
+
+218
+00:10:49.300 --> 00:10:52.300
+<v Roger Dannenberg:>it seems it was almost unnatural to
+
+219
+00:10:52.300 --> 00:10:57.400
+<v Roger Dannenberg:>me, to think about selling software and,
+
+220
+00:10:59.500 --> 00:11:02.400
+<v Roger Dannenberg:>I do actually have a few patents.
+
+221
+00:11:02.400 --> 00:11:04.500
+<v Roger Dannenberg:>The first patent that I got was,
+
+222
+00:11:04.800 --> 00:11:07.300
+<v Roger Dannenberg:>essentially a software patent, which a lot
+
+223
+00:11:07.300 --> 00:11:09.100
+<v Roger Dannenberg:>of people said "oh, you can't do
+
+224
+00:11:09.100 --> 00:11:12.500
+<v Roger Dannenberg:>that" and some people said it was
+
+225
+00:11:12.500 --> 00:11:13.100
+<v Roger Dannenberg:>wrong.
+
+226
+00:11:14.300 --> 00:11:20.100
+<v Roger Dannenberg:>I felt like it was, I mean,
+
+227
+00:11:20.100 --> 00:11:22.300
+<v Roger Dannenberg:>this particular patent, we won't go into
+
+228
+00:11:22.300 --> 00:11:24.154
+<v Roger Dannenberg:>it, but it was unless you want,
+
+229
+00:11:24.600 --> 00:11:27.100
+<v Roger Dannenberg:>it was you know for a very
+
+230
+00:11:27.100 --> 00:11:30.400
+<v Roger Dannenberg:>specific invention and a very specific application,
+
+231
+00:11:30.400 --> 00:11:33.000
+<v Roger Dannenberg:>that seemed to have some real commercial
+
+232
+00:11:33.000 --> 00:11:36.100
+<v Roger Dannenberg:>use and the patent was actually key
+
+233
+00:11:36.100 --> 00:11:38.699
+<v Roger Dannenberg:>in enabling it to be commercialized.
+
+234
+00:11:38.700 --> 00:11:41.600
+<v Roger Dannenberg:>So, but other than that, you know,
+
+235
+00:11:41.600 --> 00:11:43.000
+<v Roger Dannenberg:>most of the stuff we do, we
+
+236
+00:11:43.000 --> 00:11:46.199
+<v Roger Dannenberg:>don't like, we never expected anyone to
+
+237
+00:11:46.200 --> 00:11:47.800
+<v Roger Dannenberg:>pay for this audio editor.
+
+238
+00:11:47.800 --> 00:11:50.200
+<v Roger Dannenberg:>There were plenty of audio editor products
+
+239
+00:11:50.200 --> 00:11:57.500
+<v Roger Dannenberg:>out there that were available, but we
+
+240
+00:11:57.500 --> 00:12:01.000
+<v Roger Dannenberg:>wanted to make something free that would
+
+241
+00:12:01.000 --> 00:12:02.900
+<v Roger Dannenberg:>help people do the kind of work
+
+242
+00:12:02.900 --> 00:12:05.900
+<v Roger Dannenberg:>that we were doing and we were
+
+243
+00:12:05.900 --> 00:12:09.200
+<v Roger Dannenberg:>very fortunate to have some support through
+
+244
+00:12:09.200 --> 00:12:11.300
+<v Roger Dannenberg:>other means, so we could afford to
+
+245
+00:12:11.900 --> 00:12:13.200
+<v Roger Dannenberg:>do it and make it free.
+
+246
+00:12:14.200 --> 00:12:14.500
+<v Heather Meeker:>Yeah.
+
+247
+00:12:14.500 --> 00:12:17.300
+<v Heather Meeker:>Well, so for anyone who's watching and
+
+248
+00:12:17.300 --> 00:12:19.215
+<v Heather Meeker:>isn't aware of it, I mean, Audacity
+
+249
+00:12:19.600 --> 00:12:22.100
+<v Heather Meeker:>is basically on, I mean, I would
+
+250
+00:12:22.100 --> 00:12:26.300
+<v Heather Meeker:>think on the top of every musician
+
+251
+00:12:26.300 --> 00:12:29.900
+<v Heather Meeker:>and you know, audio editor and everybody
+
+252
+00:12:29.900 --> 00:12:31.100
+<v Heather Meeker:>uses this tool.
+
+253
+00:12:31.100 --> 00:12:34.500
+<v Heather Meeker:>So clearly it evolved from something that
+
+254
+00:12:34.500 --> 00:12:37.700
+<v Heather Meeker:>was basically a research project to something
+
+255
+00:12:37.700 --> 00:12:40.400
+<v Heather Meeker:>that had, you know, an incredible like
+
+256
+00:12:40.400 --> 00:12:44.199
+<v Heather Meeker:>mass audience and users everywhere.
+
+257
+00:12:44.200 --> 00:12:47.900
+<v Heather Meeker:>So as the project changed from what
+
+258
+00:12:47.900 --> 00:12:50.699
+<v Heather Meeker:>it was originally to what it was
+
+259
+00:12:50.700 --> 00:12:51.376
+<v Heather Meeker:>eventually.
+
+260
+00:12:53.100 --> 00:12:55.800
+<v Heather Meeker:>Like how did how did the experience
+
+261
+00:12:55.800 --> 00:12:57.900
+<v Heather Meeker:>of participating in the project?
+
+262
+00:12:57.900 --> 00:12:59.699
+<v Heather Meeker:>Did it change for you at all?
+
+263
+00:12:59.700 --> 00:13:03.100
+<v Heather Meeker:>When it like took a step up
+
+264
+00:13:03.100 --> 00:13:04.515
+<v Heather Meeker:>and got so popular?
+
+265
+00:13:04.800 --> 00:13:09.000
+<v Roger Dannenberg:>Yeah, I think I mean I learned,
+
+266
+00:13:09.000 --> 00:13:12.300
+<v Roger Dannenberg:>I certainly learned some things from this.
+
+267
+00:13:12.300 --> 00:13:14.900
+<v Roger Dannenberg:>And one thing, one thing I learned
+
+268
+00:13:14.900 --> 00:13:18.115
+<v Roger Dannenberg:>just from observation was, is that Audacity
+
+269
+00:13:19.500 --> 00:13:23.100
+<v Roger Dannenberg:>is very simple to use.
+
+270
+00:13:24.100 --> 00:13:26.500
+<v Roger Dannenberg:>And I mean, some people would say
+
+271
+00:13:26.500 --> 00:13:28.700
+<v Roger Dannenberg:>no, it's not really that simple but
+
+272
+00:13:29.400 --> 00:13:32.300
+<v Roger Dannenberg:>compared to the kind of software that
+
+273
+00:13:32.300 --> 00:13:34.900
+<v Roger Dannenberg:>people are using in studios that, you
+
+274
+00:13:34.900 --> 00:13:37.000
+<v Roger Dannenberg:>know, really take some work to get
+
+275
+00:13:37.000 --> 00:13:38.300
+<v Roger Dannenberg:>into and to get things done.
+
+276
+00:13:39.600 --> 00:13:43.200
+<v Roger Dannenberg:>Audacity was deliberately made to be a
+
+277
+00:13:43.200 --> 00:13:47.200
+<v Roger Dannenberg:>kind of what-you-see-is-what-you-get editor with direct manipulation
+
+278
+00:13:47.600 --> 00:13:52.000
+<v Roger Dannenberg:>and very simple menu commands and all
+
+279
+00:13:52.000 --> 00:13:56.900
+<v Roger Dannenberg:>of that stuff was there and on
+
+280
+00:13:56.900 --> 00:13:59.199
+<v Roger Dannenberg:>purpose, you know, we talked about it.
+
+281
+00:13:59.500 --> 00:14:02.600
+<v Roger Dannenberg:>And again, I have to give Dominic
+
+282
+00:14:03.900 --> 00:14:06.500
+<v Roger Dannenberg:>credit for wanting it to be that
+
+283
+00:14:06.500 --> 00:14:11.599
+<v Roger Dannenberg:>way because I think other developers including
+
+284
+00:14:11.600 --> 00:14:15.699
+<v Roger Dannenberg:>me just trying to you know add
+
+285
+00:14:15.700 --> 00:14:17.500
+<v Roger Dannenberg:>features I needed to do this.
+
+286
+00:14:17.500 --> 00:14:19.000
+<v Roger Dannenberg:>Let's do it like this and then
+
+287
+00:14:19.700 --> 00:14:20.700
+<v Roger Dannenberg:>you know, if you do that too
+
+288
+00:14:20.700 --> 00:14:22.699
+<v Roger Dannenberg:>many times you end up with this
+
+289
+00:14:22.700 --> 00:14:24.800
+<v Roger Dannenberg:>monster that nobody understands.
+
+290
+00:14:24.900 --> 00:14:28.600
+<v Roger Dannenberg:>Yeah, and so Dominic was always kind
+
+291
+00:14:28.600 --> 00:14:31.600
+<v Roger Dannenberg:>of the back pressure saying yeah, we
+
+292
+00:14:31.600 --> 00:14:32.300
+<v Roger Dannenberg:>could do that.
+
+293
+00:14:32.300 --> 00:14:34.800
+<v Roger Dannenberg:>But you know that's going to be
+
+294
+00:14:34.800 --> 00:14:35.500
+<v Roger Dannenberg:>confusing.
+
+295
+00:14:35.500 --> 00:14:37.100
+<v Roger Dannenberg:>What if we did it like this?
+
+296
+00:14:37.100 --> 00:14:41.700
+<v Roger Dannenberg:>Or what if you know, or maybe
+
+297
+00:14:41.700 --> 00:14:43.600
+<v Roger Dannenberg:>maybe we just shouldn't do that at
+
+298
+00:14:43.600 --> 00:14:44.000
+<v Roger Dannenberg:>all.
+
+299
+00:14:45.700 --> 00:14:47.400
+<v Roger Dannenberg:>You can do that, you know with
+
+300
+00:14:47.400 --> 00:14:49.400
+<v Roger Dannenberg:>your own private extension or do it
+
+301
+00:14:49.400 --> 00:14:51.300
+<v Roger Dannenberg:>with another piece of software or something
+
+302
+00:14:51.600 --> 00:14:54.000
+<v Roger Dannenberg:>and kind of that attitude of, this
+
+303
+00:14:54.000 --> 00:14:55.900
+<v Roger Dannenberg:>has to be really simple, so that
+
+304
+00:14:55.900 --> 00:14:58.900
+<v Roger Dannenberg:>anybody can just download it and start
+
+305
+00:14:58.900 --> 00:14:59.900
+<v Roger Dannenberg:>using it right away.
+
+306
+00:15:00.900 --> 00:15:03.100
+<v Roger Dannenberg:>Really, it was a huge contribution.
+
+307
+00:15:03.500 --> 00:15:06.400
+<v Roger Dannenberg:>And I think that's also something, you
+
+308
+00:15:06.400 --> 00:15:08.699
+<v Roger Dannenberg:>know, maybe that open-source can do much
+
+309
+00:15:08.700 --> 00:15:14.800
+<v Roger Dannenberg:>better than commercial ventures, which is that
+
+310
+00:15:14.800 --> 00:15:19.000
+<v Roger Dannenberg:>and I've learned this from the commercial
+
+311
+00:15:19.000 --> 00:15:22.314
+<v Roger Dannenberg:>side that products have to have features
+
+312
+00:15:22.315 --> 00:15:27.448
+<v Roger Dannenberg:>and products in order to market products,
+
+313
+00:15:27.448 --> 00:15:30.900
+<v Roger Dannenberg:>at least the belief is that you
+
+314
+00:15:30.900 --> 00:15:32.500
+<v Roger Dannenberg:>have to have a long feature list
+
+315
+00:15:32.600 --> 00:15:34.900
+<v Roger Dannenberg:>and you have to in order to
+
+316
+00:15:34.900 --> 00:15:37.199
+<v Roger Dannenberg:>keep generating revenues you have to add
+
+317
+00:15:37.200 --> 00:15:39.500
+<v Roger Dannenberg:>new features and the list, get longer
+
+318
+00:15:39.500 --> 00:15:41.600
+<v Roger Dannenberg:>and longer and longer and the interface
+
+319
+00:15:41.600 --> 00:15:43.400
+<v Roger Dannenberg:>is get more and more complicated.
+
+320
+00:15:43.600 --> 00:15:45.800
+<v Roger Dannenberg:>And what we can do with open
+
+321
+00:15:45.800 --> 00:15:47.400
+<v Roger Dannenberg:>source is safe, like we just don't
+
+322
+00:15:47.400 --> 00:15:52.738
+<v Roger Dannenberg:>care about selling, you know a new,
+
+323
+00:15:53.200 --> 00:15:55.600
+<v Roger Dannenberg:>improved version with more features to people.
+
+324
+00:15:55.600 --> 00:15:57.000
+<v Roger Dannenberg:>We just want to make the most
+
+325
+00:15:57.000 --> 00:15:59.100
+<v Roger Dannenberg:>useful thing for people to use right
+
+326
+00:15:59.100 --> 00:16:01.800
+<v Roger Dannenberg:>now and if they like it, maybe
+
+327
+00:16:01.800 --> 00:16:03.700
+<v Roger Dannenberg:>they'll upgrade in a few years.
+
+328
+00:16:03.800 --> 00:16:06.100
+<v Roger Dannenberg:>And when they upgrade, you know, we'll
+
+329
+00:16:06.100 --> 00:16:09.600
+<v Roger Dannenberg:>get a penny from advertising or something
+
+330
+00:16:09.600 --> 00:16:11.000
+<v Roger Dannenberg:>but it just doesn't matter.
+
+331
+00:16:11.100 --> 00:16:13.100
+<v Roger Dannenberg:>And so we can really focus on
+
+332
+00:16:13.100 --> 00:16:15.300
+<v Roger Dannenberg:>what's important for users.
+
+333
+00:16:16.600 --> 00:16:18.400
+<v Heather Meeker:>Yeah, that's that's great.
+
+334
+00:16:19.500 --> 00:16:23.000
+<v Heather Meeker:>So was there anything about the Open
+
+335
+00:16:23.000 --> 00:16:25.200
+<v Heather Meeker:>Source process?
+
+336
+00:16:25.200 --> 00:16:29.400
+<v Heather Meeker:>Participation, you know participated in running a
+
+337
+00:16:29.400 --> 00:16:32.600
+<v Heather Meeker:>project and so forth, anything that you
+
+338
+00:16:32.800 --> 00:16:35.700
+<v Heather Meeker:>wish you'd done differently, or that was
+
+339
+00:16:35.700 --> 00:16:40.000
+<v Heather Meeker:>a problem or a challenge and that
+
+340
+00:16:40.000 --> 00:16:42.199
+<v Heather Meeker:>you figured out how to solve or
+
+341
+00:16:43.100 --> 00:16:46.500
+<v Heather Meeker:>what were the downsides and how did
+
+342
+00:16:46.500 --> 00:16:48.400
+<v Heather Meeker:>you and the team react to those?
+
+343
+00:16:49.500 --> 00:16:53.300
+<v Roger Dannenberg:>Well, I think Audacity, you know, as
+
+344
+00:16:53.300 --> 00:16:56.200
+<v Roger Dannenberg:>you said it was incredibly successful and
+
+345
+00:16:57.300 --> 00:16:59.800
+<v Roger Dannenberg:>I don't think anyone could hope to
+
+346
+00:17:00.000 --> 00:17:02.100
+<v Roger Dannenberg:>do something so successful, you know, by
+
+347
+00:17:02.100 --> 00:17:03.900
+<v Roger Dannenberg:>design it just right.
+
+348
+00:17:06.000 --> 00:17:07.700
+<v Roger Dannenberg:>I've, in fact, I've tried to do
+
+349
+00:17:07.700 --> 00:17:11.000
+<v Roger Dannenberg:>multiple other things by design, if they
+
+350
+00:17:11.000 --> 00:17:12.854
+<v Roger Dannenberg:>haven't worked out nearly as well, so..
+
+351
+00:17:12.900 --> 00:17:14.500
+<v Heather Meeker:>And if someone came to you and
+
+352
+00:17:14.500 --> 00:17:17.000
+<v Heather Meeker:>said, we're going to make this program
+
+353
+00:17:17.000 --> 00:17:18.800
+<v Heather Meeker:>that's going to be wildly successful.
+
+354
+00:17:18.800 --> 00:17:19.900
+<v Heather Meeker:>How do we do that in?
+
+355
+00:17:19.900 --> 00:17:21.400
+<v Heather Meeker:>People would have just said?
+
+356
+00:17:21.400 --> 00:17:22.618
+<v Heather Meeker:>No, that's not possible.
+
+357
+00:17:23.200 --> 00:17:34.000
+<v Roger Dannenberg:>Yeah, so but some issues that have
+
+358
+00:17:34.000 --> 00:17:34.800
+<v Roger Dannenberg:>come up.
+
+359
+00:17:35.300 --> 00:17:38.300
+<v Roger Dannenberg:>I would say that the main issues
+
+360
+00:17:38.300 --> 00:17:42.000
+<v Roger Dannenberg:>are getting people to work together.
+
+361
+00:17:42.500 --> 00:17:52.300
+<v Roger Dannenberg:>I'm working and I haven't really touched
+
+362
+00:17:52.300 --> 00:17:53.600
+<v Roger Dannenberg:>it in a long time.
+
+363
+00:17:54.000 --> 00:17:58.899
+<v Roger Dannenberg:>And I went back to sort of
+
+364
+00:17:58.900 --> 00:18:02.200
+<v Roger Dannenberg:>see look for other versions and see
+
+365
+00:18:02.200 --> 00:18:04.000
+<v Roger Dannenberg:>if there are any bug fixes or
+
+366
+00:18:04.000 --> 00:18:06.700
+<v Roger Dannenberg:>things that uou know, may have happened
+
+367
+00:18:06.700 --> 00:18:08.399
+<v Roger Dannenberg:>on the side without me knowing about
+
+368
+00:18:08.400 --> 00:18:10.900
+<v Roger Dannenberg:>it and sure enough I found like
+
+369
+00:18:10.900 --> 00:18:14.500
+<v Roger Dannenberg:>a hundred different repos on GitHub that
+
+370
+00:18:14.500 --> 00:18:17.900
+<v Roger Dannenberg:>had clones of my software and various
+
+371
+00:18:17.900 --> 00:18:18.400
+<v Roger Dannenberg:>things.
+
+372
+00:18:18.400 --> 00:18:25.000
+<v Roger Dannenberg:>So, one thing that's, you know, that
+
+373
+00:18:25.000 --> 00:18:28.600
+<v Roger Dannenberg:>I've learned that's difficult, is to really
+
+374
+00:18:28.600 --> 00:18:31.100
+<v Roger Dannenberg:>build a community of people that are
+
+375
+00:18:31.200 --> 00:18:35.154
+<v Roger Dannenberg:>working together to support the some thing
+
+376
+00:18:35.600 --> 00:18:38.200
+<v Roger Dannenberg:>and I'm not really sure how that
+
+377
+00:18:38.200 --> 00:18:40.100
+<v Roger Dannenberg:>worked on Audacity.
+
+378
+00:18:40.100 --> 00:18:41.399
+<v Roger Dannenberg:>Maybe it was just you know, the
+
+379
+00:18:41.400 --> 00:18:46.600
+<v Roger Dannenberg:>luck of having having the right people
+
+380
+00:18:46.600 --> 00:18:49.200
+<v Roger Dannenberg:>kind of sign up and also just
+
+381
+00:18:49.200 --> 00:18:52.500
+<v Roger Dannenberg:>having some very generous people that wanted
+
+382
+00:18:52.500 --> 00:18:53.600
+<v Roger Dannenberg:>to say "well I'm you know, I'm
+
+383
+00:18:53.600 --> 00:18:55.699
+<v Roger Dannenberg:>not just going to take Audacity and
+
+384
+00:18:55.700 --> 00:18:58.700
+<v Roger Dannenberg:>add some features and rebranded or something.
+
+385
+00:18:58.700 --> 00:19:00.400
+<v Roger Dannenberg:>I'm going to I'm going to work
+
+386
+00:19:00.400 --> 00:19:00.500
+<v Roger Dannenberg:>on.
+
+387
+00:19:00.500 --> 00:19:02.100
+<v Roger Dannenberg:>I'm going to join the Audacity project.
+
+388
+00:19:02.100 --> 00:19:04.000
+<v Roger Dannenberg:>I'm going to contribute to this one
+
+389
+00:19:04.000 --> 00:19:08.100
+<v Roger Dannenberg:>project and make it good." And, having
+
+390
+00:19:08.100 --> 00:19:13.100
+<v Roger Dannenberg:>so getting people to actually contribute instead
+
+391
+00:19:13.100 --> 00:19:15.900
+<v Roger Dannenberg:>of just, you know, maybe take the
+
+392
+00:19:15.900 --> 00:19:17.400
+<v Roger Dannenberg:>software and send you email saying you
+
+393
+00:19:17.400 --> 00:19:18.000
+<v Roger Dannenberg:>should fix this.
+
+394
+00:19:18.000 --> 00:19:20.300
+<v Roger Dannenberg:>You should fix that not putting any
+
+395
+00:19:20.300 --> 00:19:20.800
+<v Roger Dannenberg:>time into it.
+
+396
+00:19:20.800 --> 00:19:25.300
+<v Roger Dannenberg:>That's, I think that's a real problem.
+
+397
+00:19:25.300 --> 00:19:31.800
+<v Roger Dannenberg:>So another problem is when you do
+
+398
+00:19:31.800 --> 00:19:34.600
+<v Roger Dannenberg:>have people that are contributing and very
+
+399
+00:19:34.600 --> 00:19:38.569
+<v Roger Dannenberg:>generous, you, well, at least with Audacity,
+
+400
+00:19:40.200 --> 00:19:44.899
+<v Roger Dannenberg:>there was a team of people that
+
+401
+00:19:44.900 --> 00:19:45.523
+<v Roger Dannenberg:>developed.
+
+402
+00:19:45.523 --> 00:19:50.000
+<v Roger Dannenberg:>So it was kind of like an
+
+403
+00:19:50.000 --> 00:19:52.600
+<v Roger Dannenberg:>inside, you know, it's as if you've
+
+404
+00:19:52.600 --> 00:19:55.800
+<v Roger Dannenberg:>got the inside group that has kind
+
+405
+00:19:55.800 --> 00:19:58.000
+<v Roger Dannenberg:>of all the power and all, you
+
+406
+00:19:58.000 --> 00:20:01.500
+<v Roger Dannenberg:>know, carries all the all the decisions
+
+407
+00:20:01.500 --> 00:20:03.800
+<v Roger Dannenberg:>and you have the outside group, which
+
+408
+00:20:03.800 --> 00:20:06.100
+<v Roger Dannenberg:>you also hope is there, you know,
+
+409
+00:20:06.100 --> 00:20:10.300
+<v Roger Dannenberg:>making contributions, but you know, the governance
+
+410
+00:20:10.300 --> 00:20:15.100
+<v Roger Dannenberg:>of very loose volunteer organization is really
+
+411
+00:20:15.100 --> 00:20:18.400
+<v Roger Dannenberg:>difficult because I think if it is
+
+412
+00:20:18.400 --> 00:20:21.000
+<v Roger Dannenberg:>completely open and everybody has an equal
+
+413
+00:20:21.000 --> 00:20:24.800
+<v Roger Dannenberg:>vote, then it's very easy to get
+
+414
+00:20:24.800 --> 00:20:25.300
+<v Roger Dannenberg:>distracted.
+
+415
+00:20:25.300 --> 00:20:28.500
+<v Roger Dannenberg:>You know, someone will come in and
+
+416
+00:20:28.500 --> 00:20:33.000
+<v Roger Dannenberg:>just make a lot of noise and
+
+417
+00:20:33.300 --> 00:20:35.300
+<v Roger Dannenberg:>maybe not have much to contribute but
+
+418
+00:20:35.300 --> 00:20:36.648
+<v Roger Dannenberg:>it can be a real distraction.
+
+419
+00:20:36.648 --> 00:20:39.100
+<v Roger Dannenberg:>On the other hand, if you have
+
+420
+00:20:39.100 --> 00:20:41.900
+<v Roger Dannenberg:>sort of a core team that, that
+
+421
+00:20:41.900 --> 00:20:47.300
+<v Roger Dannenberg:>team can you know, it runs the
+
+422
+00:20:47.300 --> 00:20:50.100
+<v Roger Dannenberg:>risks of alienating other people or being
+
+423
+00:20:50.100 --> 00:20:51.700
+<v Roger Dannenberg:>disconnected from other people.
+
+424
+00:20:52.300 --> 00:20:55.500
+<v Roger Dannenberg:>And, you know, I think Audacity's had
+
+425
+00:20:55.700 --> 00:20:59.300
+<v Roger Dannenberg:>some very generous people, you know, we've
+
+426
+00:20:59.300 --> 00:21:01.500
+<v Roger Dannenberg:>often referred to Dominic as the benevolent
+
+427
+00:21:01.500 --> 00:21:07.000
+<v Roger Dannenberg:>dictator, which is a good description.
+
+428
+00:21:07.000 --> 00:21:08.700
+<v Roger Dannenberg:>You know, he really put his heart
+
+429
+00:21:08.700 --> 00:21:11.500
+<v Roger Dannenberg:>into it and did a lot to
+
+430
+00:21:11.500 --> 00:21:13.899
+<v Roger Dannenberg:>keep things going and made really good
+
+431
+00:21:13.900 --> 00:21:15.300
+<v Roger Dannenberg:>decisions all along.
+
+432
+00:21:16.100 --> 00:21:19.500
+<v Roger Dannenberg:>So, but how do you how do
+
+433
+00:21:19.500 --> 00:21:20.100
+<v Roger Dannenberg:>you do that?
+
+434
+00:21:20.100 --> 00:21:21.500
+<v Roger Dannenberg:>Or how would you repeat that?
+
+435
+00:21:21.700 --> 00:21:23.899
+<v Roger Dannenberg:>It's I think those are some really
+
+436
+00:21:23.900 --> 00:21:25.000
+<v Roger Dannenberg:>difficult problems.
+
+437
+00:21:26.100 --> 00:21:28.600
+<v Heather Meeker:>Yeah, I think leadership matters, no matter
+
+438
+00:21:28.600 --> 00:21:29.900
+<v Heather Meeker:>what you're doing, right?
+
+439
+00:21:30.800 --> 00:21:32.399
+<v Heather Meeker:>And a big project, a lot of
+
+440
+00:21:32.400 --> 00:21:34.100
+<v Heather Meeker:>what lots of volunteers can be very
+
+441
+00:21:34.100 --> 00:21:36.100
+<v Heather Meeker:>challenging right?
+
+442
+00:21:36.200 --> 00:21:37.000
+<v Heather Meeker:>Definitely.
+
+443
+00:21:38.000 --> 00:21:41.600
+<v Heather Meeker:>Well, so anything else you want to
+
+444
+00:21:41.900 --> 00:21:42.200
+<v Heather Meeker:>add?
+
+445
+00:21:42.200 --> 00:21:45.300
+<v Heather Meeker:>Before we wrap it up a, anything
+
+446
+00:21:45.600 --> 00:21:48.700
+<v Heather Meeker:>you want to that you're looking at
+
+447
+00:21:48.700 --> 00:21:51.700
+<v Heather Meeker:>in the future or anything you want
+
+448
+00:21:51.700 --> 00:21:54.300
+<v Heather Meeker:>to say about what your experiences have
+
+449
+00:21:54.300 --> 00:21:54.700
+<v Heather Meeker:>been?
+
+450
+00:21:57.700 --> 00:22:04.600
+<v Roger Dannenberg:>Yeah, I would I guess I would
+
+451
+00:22:04.800 --> 00:22:05.800
+<v Roger Dannenberg:>say that.
+
+452
+00:22:06.100 --> 00:22:09.600
+<v Roger Dannenberg:>I mean one thing that came out
+
+453
+00:22:09.600 --> 00:22:11.400
+<v Roger Dannenberg:>of that, you know, that I learned
+
+454
+00:22:11.400 --> 00:22:15.300
+<v Roger Dannenberg:>from this project, that might not be
+
+455
+00:22:15.300 --> 00:22:17.700
+<v Roger Dannenberg:>obvious to people thinking about open source
+
+456
+00:22:17.700 --> 00:22:21.899
+<v Roger Dannenberg:>is that there are a lot of
+
+457
+00:22:22.300 --> 00:22:27.300
+<v Roger Dannenberg:>possibilities for generating income and one of
+
+458
+00:22:27.300 --> 00:22:29.100
+<v Roger Dannenberg:>those is, you know, some of some
+
+459
+00:22:29.100 --> 00:22:33.500
+<v Roger Dannenberg:>of the Audacity developers, did some consulting
+
+460
+00:22:33.500 --> 00:22:34.300
+<v Roger Dannenberg:>on the side.
+
+461
+00:22:34.300 --> 00:22:37.115
+<v Roger Dannenberg:>So they would, for example, adapt Audacity
+
+462
+00:22:37.400 --> 00:22:41.300
+<v Roger Dannenberg:>for to be packaged with a product
+
+463
+00:22:41.300 --> 00:22:43.800
+<v Roger Dannenberg:>or are bundled with a crime or
+
+464
+00:22:43.800 --> 00:22:47.600
+<v Roger Dannenberg:>they would, you know, work with researchers
+
+465
+00:22:47.600 --> 00:22:50.000
+<v Roger Dannenberg:>and get some money to add some
+
+466
+00:22:50.000 --> 00:22:51.900
+<v Roger Dannenberg:>feature for them or something like that.
+
+467
+00:22:51.900 --> 00:22:57.000
+<v Roger Dannenberg:>Another possibility is that, you know, when
+
+468
+00:22:57.000 --> 00:22:59.600
+<v Roger Dannenberg:>you go and download software, you think
+
+469
+00:22:59.600 --> 00:22:59.900
+<v Roger Dannenberg:>of it?
+
+470
+00:22:59.900 --> 00:23:00.600
+<v Roger Dannenberg:>Oh, well great.
+
+471
+00:23:00.600 --> 00:23:01.400
+<v Roger Dannenberg:>This is free.
+
+472
+00:23:01.800 --> 00:23:04.700
+<v Roger Dannenberg:>And you might wonder if you thought
+
+473
+00:23:04.700 --> 00:23:06.899
+<v Roger Dannenberg:>about it, you know, who's paying the
+
+474
+00:23:06.900 --> 00:23:11.300
+<v Roger Dannenberg:>researcher, who's paying the electricity, and for
+
+475
+00:23:11.300 --> 00:23:13.300
+<v Roger Dannenberg:>those servers like if we're downloading a
+
+476
+00:23:13.300 --> 00:23:17.800
+<v Roger Dannenberg:>million copies of Audacity a month, that's
+
+477
+00:23:17.800 --> 00:23:21.400
+<v Roger Dannenberg:>actually pretty expensive to provide that much
+
+478
+00:23:21.400 --> 00:23:21.900
+<v Roger Dannenberg:>service.
+
+479
+00:23:21.900 --> 00:23:25.500
+<v Roger Dannenberg:>You can't just, you know, run that
+
+480
+00:23:25.500 --> 00:23:29.100
+<v Roger Dannenberg:>from home and so you might think,
+
+481
+00:23:29.100 --> 00:23:30.399
+<v Roger Dannenberg:>oh, well, you know how could an
+
+482
+00:23:30.400 --> 00:23:32.300
+<v Roger Dannenberg:>open source project even afford to do
+
+483
+00:23:32.300 --> 00:23:32.700
+<v Roger Dannenberg:>that.
+
+484
+00:23:33.000 --> 00:23:35.500
+<v Roger Dannenberg:>And part of the answer is that
+
+485
+00:23:36.400 --> 00:23:39.800
+<v Roger Dannenberg:>depending on where downloads take place, most
+
+486
+00:23:39.800 --> 00:23:42.800
+<v Roger Dannenberg:>downloading services run ads.
+
+487
+00:23:43.200 --> 00:23:46.100
+<v Roger Dannenberg:>And so the downloaders will actually pay
+
+488
+00:23:46.100 --> 00:23:49.500
+<v Roger Dannenberg:>for the privilege of providing the servers
+
+489
+00:23:49.500 --> 00:23:50.900
+<v Roger Dannenberg:>to download your software.
+
+490
+00:23:51.800 --> 00:23:53.200
+<v Roger Dannenberg:>It's not a lot of money.
+
+491
+00:23:53.200 --> 00:23:57.500
+<v Roger Dannenberg:>So, and maybe that's a good thing
+
+492
+00:23:58.600 --> 00:24:00.800
+<v Roger Dannenberg:>because if nobody's ever going to really
+
+493
+00:24:00.800 --> 00:24:02.500
+<v Roger Dannenberg:>get rich off of it, then it
+
+494
+00:24:02.500 --> 00:24:05.100
+<v Roger Dannenberg:>just kind of can help grease the
+
+495
+00:24:05.100 --> 00:24:07.300
+<v Roger Dannenberg:>wheels and you know, pay for an
+
+496
+00:24:07.300 --> 00:24:14.199
+<v Roger Dannenberg:>occasional machine or allow you to contract
+
+497
+00:24:14.200 --> 00:24:15.900
+<v Roger Dannenberg:>out something that really needs to get
+
+498
+00:24:15.900 --> 00:24:18.300
+<v Roger Dannenberg:>done that, nobody wants to do for
+
+499
+00:24:18.500 --> 00:24:20.600
+<v Roger Dannenberg:>pay for a graphics designer or you
+
+500
+00:24:20.600 --> 00:24:22.800
+<v Roger Dannenberg:>know, there's it gives you some flexibility
+
+501
+00:24:23.700 --> 00:24:25.600
+<v Roger Dannenberg:>in a mostly volunteer effort, and so
+
+502
+00:24:25.600 --> 00:24:28.100
+<v Roger Dannenberg:>anyway, those you know kind of the
+
+503
+00:24:28.100 --> 00:24:30.000
+<v Roger Dannenberg:>business and money side is something we
+
+504
+00:24:30.000 --> 00:24:32.900
+<v Roger Dannenberg:>don't normally like to talk about but
+
+505
+00:24:33.500 --> 00:24:36.800
+<v Roger Dannenberg:>are and it gets tricky.
+
+506
+00:24:36.800 --> 00:24:38.800
+<v Roger Dannenberg:>But it is real and I think
+
+507
+00:24:38.800 --> 00:24:42.100
+<v Roger Dannenberg:>it's part of the story thats interesting.
+
+508
+00:24:42.700 --> 00:24:44.100
+<v Heather Meeker:>Yeah, very interesting.
+
+509
+00:24:44.900 --> 00:24:47.500
+<v Heather Meeker:>Well, thank you so much for talking
+
+510
+00:24:47.500 --> 00:24:50.899
+<v Heather Meeker:>to me today is really interesting to
+
+511
+00:24:50.900 --> 00:24:54.500
+<v Heather Meeker:>hear about the project and your participation
+
+512
+00:24:54.500 --> 00:24:56.600
+<v Heather Meeker:>in it and And thank you for
+
+513
+00:24:56.600 --> 00:24:58.500
+<v Heather Meeker:>all the work you did because I
+
+514
+00:24:58.600 --> 00:25:01.000
+<v Heather Meeker:>love the project myself particularly.
+
+515
+00:25:02.300 --> 00:25:05.600
+<v Heather Meeker:>So thanks so much for participating and
+
+516
+00:25:05.600 --> 00:25:06.500
+<v Heather Meeker:>have a great day.
+
+517
+00:25:07.100 --> 00:25:07.800
+<v Roger Dannenberg:>Yeah, thank you.
+
+518
+00:25:07.800 --> 00:25:08.700
+<v Roger Dannenberg:>This has been great.
+
+519
+00:25:15.400 --> 00:25:15.753
+<v Heather Meeker:>Okay, bye-bye.
+

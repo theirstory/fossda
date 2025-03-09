@@ -42,5 +42,21 @@ export const videoData: Record<string, VideoData> = {
     thumbnail: "/thumbnails/larry-augustin.png",
     summary: `Larry Augustin shares his journey from founding VA Linux to his pivotal role in the early days of open source business. His interview provides valuable insights into the commercialization of open source software and the creation of SourceForge, which became a cornerstone of collaborative software development.`,
     sentence: "From VA Linux to pioneering open source business models - exploring the early days of commercial open source software."
+  },
+  "roger-dannenberg": {
+    id: "roger-dannenberg",
+    title: "Roger Dannenberg",
+    duration: "25:20",
+    thumbnail: "/thumbnails/roger-dannenberg.png",
+    summary: `Roger Dannenberg, a professor at Carnegie Mellon University, shares his journey as the co-creator of Audacity, one of the most widely used open-source audio editors. His unique perspective combines computer science, art, and music, offering insights into how open source can empower creative tools and make them accessible to everyone.`,
+    sentence: "From research project to worldwide impact - the story of how Audacity became one of the most popular open source audio tools."
+  },
+  "bart": {
+    id: "bart",
+    title: "Bart Decrem",
+    duration: "1:15:00", // We'll need to update this with the actual duration
+    thumbnail: "https://image.mux.com/31cm889ntl2r00w9514HD1w6v02m98aSOThhZ7EyRbGzo/animated.gif?width=320&start=5&end=10",
+    summary: `Bart Decrem shares his journey in the open source movement and his role in various open source initiatives. His interview provides valuable insights into the evolution of open source software and its impact on the technology industry.`,
+    sentence: "From open source advocacy to entrepreneurship - exploring the intersection of open source and business innovation."
   }
 }; 

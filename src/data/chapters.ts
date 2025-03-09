@@ -4,6 +4,8 @@ import debChapters from './chapters/deb-goodkin-index.json';
 import heatherChapters from './chapters/heather-meeker-index.json';
 import bruceChapters from './chapters/bruce-perens-index.json';
 import larryChapters from './chapters/larry-augustin-index.json';
+import rogerChapters from './chapters/roger-dannenberg-index.json';
+import bartChapters from './chapters/bart-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -57,5 +59,17 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2024-03-20",
     updated_at: "2024-03-20",
     metadata: processChapterMetadata(larryChapters.metadata)
+  },
+  "roger-dannenberg": {
+    title: "Roger Dannenberg Interview",
+    created_at: "2024-03-20",
+    updated_at: "2024-03-20",
+    metadata: processChapterMetadata(rogerChapters.metadata)
+  },
+  "bart": {
+    title: "Bart Decrem interview with FOSSDA",
+    created_at: "2025-03-08",
+    updated_at: "2025-03-08",
+    metadata: processChapterMetadata(bartChapters.metadata)
   }
 }; 

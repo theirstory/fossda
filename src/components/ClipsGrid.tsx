@@ -34,6 +34,9 @@ interface ClipsGridProps {
   hideSearch?: boolean;
 }
 
+// Add a default thumbnail URL - you can replace this with your own default image
+const DEFAULT_THUMBNAIL = '/images/default-thumbnail.jpg';
+
 function highlightText(text: string, query: string): React.ReactNode {
   if (!query) return text;
   
@@ -242,7 +245,7 @@ export default function ClipsGrid({
                   <Link href={`/video/${clip.interviewId}?t=${clip.startTime}&end=${clip.endTime}`}>
                     <div className="relative aspect-video rounded-lg overflow-hidden">
                       <Image
-                        src={video.thumbnail}
+                        src={video.thumbnail || DEFAULT_THUMBNAIL}
                         alt={video.title}
                         fill
                         className="object-cover"
