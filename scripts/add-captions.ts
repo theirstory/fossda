@@ -4,29 +4,21 @@ import Mux from '@mux/mux-node';
 import { JSDOM } from 'jsdom';
 import dotenv from 'dotenv';
 
-// Load environment variables based on APP_ENV instead of NODE_ENV
-const isDevelopment = !process.env.APP_ENV || process.env.APP_ENV === 'development';
+// In development, try to load from .env.local first
+console.log('Attempting to load .env.local...');
+const envLocalResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });
 
-if (isDevelopment) {
-  // In development, try to load from .env.local first
-  console.log('Attempting to load .env.local...');
-  const envLocalResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });
-  
-  if (envLocalResult.error) {
-    console.log('No .env.local found, falling back to .env');
-    const envResult = dotenv.config({ path: path.join(process.cwd(), '.env') });
-    if (envResult.error) {
-      console.error('Error loading environment variables:', envResult.error);
-      process.exit(1);
-    }
-  } else {
-    console.log('.env.local loaded successfully');
-    // Override any existing env vars with .env.local values
-    Object.assign(process.env, envLocalResult.parsed);
+if (envLocalResult.error) {
+  console.log('No .env.local found, falling back to .env');
+  const envResult = dotenv.config({ path: path.join(process.cwd(), '.env') });
+  if (envResult.error) {
+    console.error('Error loading environment variables:', envResult.error);
+    process.exit(1);
   }
 } else {
-  // In production (Vercel), environment variables are automatically loaded
-  console.log('Running in production mode, using system environment variables');
+  console.log('.env.local loaded successfully');
+  // Override any existing env vars with .env.local values
+  Object.assign(process.env, envLocalResult.parsed);
 }
 
 // Validate required environment variables
