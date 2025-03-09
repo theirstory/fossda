@@ -8,6 +8,7 @@ import OpenAI from 'openai';
 import dotenv from 'dotenv';
 import { videoData } from '../src/data/videos';
 import { chapterData } from '../src/data/chapters';
+import { realignClips } from './realign-clips';
 
 // Load environment variables from .env.local
 dotenv.config({ path: '.env.local' });
@@ -234,6 +235,12 @@ export default clips;`;
       clipsContent,
       'utf-8'
     );
+
+    // After writing the clips file, realign the timecodes
+    console.log('\nRealigning clip timecodes...');
+    await realignClips(interviewId);
+
+    console.log('\nAll done! Clips have been created and timecodes have been realigned.');
 
     console.log(`Successfully added ${newClips.length} clips from interview!`);
     console.log('\nNew clips:');

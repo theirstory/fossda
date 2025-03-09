@@ -588,9 +588,9 @@ export const clips: Clip[] = [
   {
     "id": "roger-dannenberg-origins-of-audacity",
     "title": "Origins of Audacity",
-    "startTime": 51.2,
-    "endTime": 122.4,
-    "duration": 71.2,
+    "startTime": 63,
+    "endTime": 101.7,
+    "duration": 38.7,
     "chapter": {
       "id": "origins-of-audacity",
       "title": "Origins of Audacity"
@@ -606,9 +606,9 @@ export const clips: Clip[] = [
   {
     "id": "roger-dannenberg-decision-to-go-open-source",
     "title": "Decision to Go Open Source",
-    "startTime": 237.5,
-    "endTime": 327.1,
-    "duration": 89.60000000000002,
+    "startTime": 261.5,
+    "endTime": 277.7,
+    "duration": 16.19999999999999,
     "chapter": {
       "id": "decision-to-go-open-source",
       "title": "Decision to Go Open Source"
@@ -625,9 +625,9 @@ export const clips: Clip[] = [
   {
     "id": "roger-dannenberg-learning-from-open-source",
     "title": "Learning from Open Source",
-    "startTime": 471.9,
-    "endTime": 587.4,
-    "duration": 115.5,
+    "startTime": 488.9,
+    "endTime": 529.5,
+    "duration": 40.60000000000002,
     "chapter": {
       "id": "learning-from-open-source",
       "title": "Learning from Open Source"
@@ -643,9 +643,9 @@ export const clips: Clip[] = [
   {
     "id": "roger-dannenberg-the-success-of-audacity-and-community-effort",
     "title": "The Success of Audacity and Community Effort",
-    "startTime": 934.7,
-    "endTime": 1056.8,
-    "duration": 122.09999999999991,
+    "startTime": 1165.3,
+    "endTime": 1185.5230000000001,
+    "duration": 20.223000000000184,
     "chapter": {
       "id": "the-success-of-audacity-and-community-effort",
       "title": "The Success of Audacity and Community Effort"
@@ -661,9 +661,9 @@ export const clips: Clip[] = [
   {
     "id": "roger-dannenberg-open-source-financing-and-sustainability",
     "title": "Open Source Financing and Sustainability",
-    "startTime": 1229.5,
-    "endTime": 1333.5,
-    "duration": 104,
+    "startTime": 1317.7,
+    "endTime": 1354.3,
+    "duration": 36.59999999999991,
     "chapter": {
       "id": "open-source-financing-and-sustainability",
       "title": "Open Source Financing and Sustainability"
@@ -680,9 +680,9 @@ export const clips: Clip[] = [
   {
     "id": "bart-from-pirate-radio-to-tech-entrepreneurship",
     "title": "From Pirate Radio to Tech Entrepreneurship",
-    "startTime": 175.1,
-    "endTime": 305,
-    "duration": 129.9,
+    "startTime": 103.07,
+    "endTime": 141.95000000000002,
+    "duration": 38.880000000000024,
     "chapter": {
       "id": "moving-to-the-united-states-and-discovering-silicon-valley",
       "title": "Moving to the United States and Discovering Silicon Valley"
@@ -698,9 +698,9 @@ export const clips: Clip[] = [
   {
     "id": "bart-discovering-the-free-software-movement",
     "title": "Discovering the Free Software Movement",
-    "startTime": 1676.4,
-    "endTime": 1824.6,
-    "duration": 148.19999999999982,
+    "startTime": 803.36,
+    "endTime": 980.36,
+    "duration": 177,
     "chapter": {
       "id": "leading-the-firefox-launch",
       "title": "Leading the Firefox Launch"
@@ -716,9 +716,9 @@ export const clips: Clip[] = [
   {
     "id": "bart-joining-and-contributing-to-the-mozilla-foundation",
     "title": "Joining and Contributing to the Mozilla Foundation",
-    "startTime": 2034,
-    "endTime": 2098.7,
-    "duration": 64.69999999999982,
+    "startTime": 1614.04,
+    "endTime": 1624.06,
+    "duration": 10.019999999999982,
     "chapter": {
       "id": "leading-the-firefox-launch",
       "title": "Leading the Firefox Launch"
@@ -734,9 +734,9 @@ export const clips: Clip[] = [
   {
     "id": "bart-reflections-on-the-open-source-community",
     "title": "Reflections on the Open Source Community",
-    "startTime": 4521.2,
-    "endTime": 4582.6,
-    "duration": 61.400000000000546,
+    "startTime": 6375.15,
+    "endTime": 6489.25,
+    "duration": 114.10000000000036,
     "chapter": {
       "id": "leaving-disney-and-founding-the-hobby",
       "title": "Leaving Disney and Founding The Hobby"
@@ -752,9 +752,9 @@ export const clips: Clip[] = [
   {
     "id": "bart-concerns-and-hopes-for-the-future-of-the-internet",
     "title": "Concerns and Hopes for the Future of the Internet",
-    "startTime": 4653.1,
-    "endTime": 4725.4,
-    "duration": 72.29999999999927,
+    "startTime": 6766.85,
+    "endTime": 6789.47,
+    "duration": 22.61999999999989,
     "chapter": {
       "id": "leaving-disney-and-founding-the-hobby",
       "title": "Leaving Disney and Founding The Hobby"
