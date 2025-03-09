@@ -1,12 +1,15 @@
 #!/bin/bash
 
+# Set NODE_ENV for the entire script
+export NODE_ENV=production
+
 # Run type checking
 echo "Running type check..."
 npm run typecheck
 
 # Run production build
 echo "Running production build..."
-NODE_ENV=production npm run build
+npm run build
 
 # Run linting if you have ESLint configured
 echo "Running linter..."

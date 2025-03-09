@@ -4,8 +4,10 @@ import Mux from '@mux/mux-node';
 import { JSDOM } from 'jsdom';
 import dotenv from 'dotenv';
 
-// Load environment variables
-if (process.env.NODE_ENV !== 'production') {
+// Load environment variables based on NODE_ENV
+const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+
+if (isDevelopment) {
   // In development, try to load from .env.local first
   console.log('Attempting to load .env.local...');
   const envLocalResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });
