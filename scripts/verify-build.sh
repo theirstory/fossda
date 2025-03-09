@@ -1,7 +1,11 @@
 #!/bin/bash
 
 # Set NODE_ENV for the entire script
+# Only use 'development', 'production', or 'test' for NODE_ENV
 export NODE_ENV=production
+
+# Use APP_ENV for any custom environment needs
+export APP_ENV=${APP_ENV:-production}
 
 # Run type checking
 echo "Running type check..."
