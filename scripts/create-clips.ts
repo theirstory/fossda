@@ -138,22 +138,50 @@ ${transcript}`;
   }
 }
 
+// Define valid interview IDs
+type InterviewId = keyof typeof videoData;
+
+// Helper function to create a valid variable name from an ID
+function createValidVariableName(id: string): InterviewId {
+  // Map of known IDs to their meaningful names
+  const nameMap: Record<string, InterviewId> = {
+    '61929022c65d8e0005450522': 'tristan',
+    // Add more mappings here as needed
+  };
+
+  // If we have a meaningful name for this ID, use it
+  if (nameMap[id]) {
+    return nameMap[id];
+  }
+
+  // Otherwise, use the ID itself if it's already a valid name
+  const cleanId = id.replace(/[^a-zA-Z0-9]/g, '');
+  if (cleanId in videoData) {
+    return cleanId as InterviewId;
+  }
+
+  throw new Error(`Invalid interview ID: ${id}`);
+}
+
 async function createClipsFromStory(interviewId: string) {
   try {
+    // Convert interviewId to safe variable name
+    const safeId = createValidVariableName(interviewId);
+
     // Get video data
-    const video = videoData[interviewId];
+    const video = videoData[safeId];
     if (!video) {
-      throw new Error(`No video data found for ${interviewId}`);
+      throw new Error(`No video data found for ${interviewId} (${safeId})`);
     }
 
     // Get chapter data
-    const chapters = chapterData[interviewId];
+    const chapters = chapterData[safeId];
     if (!chapters) {
-      throw new Error(`No chapter data found for ${interviewId}`);
+      throw new Error(`No chapter data found for ${interviewId} (${safeId})`);
     }
 
     // Read HTML transcript
-    const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${interviewId}.html`);
+    const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${safeId}.html`);
     const transcriptHtml = await fs.readFile(transcriptPath, 'utf-8');
 
     // Parse HTML
@@ -181,7 +209,7 @@ async function createClipsFromStory(interviewId: string) {
     
     // Get clip suggestions from GPT
     console.log('Analyzing transcript with GPT...');
-    const clipSuggestions = await analyzeTranscriptWithGPT(plainTranscript, interviewId);
+    const clipSuggestions = await analyzeTranscriptWithGPT(plainTranscript, safeId);
     
     // Transform GPT suggestions into clips
     const newClips: Clip[] = await Promise.all(clipSuggestions.map(async suggestion => {
@@ -198,7 +226,7 @@ async function createClipsFromStory(interviewId: string) {
       });
 
       return {
-        id: `${interviewId}-${cleanId}`,
+        id: `${safeId}-${cleanId}`,
         title: suggestion.title,
         startTime: suggestion.startTime,
         endTime: suggestion.endTime,
@@ -207,7 +235,7 @@ async function createClipsFromStory(interviewId: string) {
           id: chapterMetadata?.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || cleanId,
           title: chapterMetadata?.title || suggestion.title
         },
-        interviewId: interviewId,
+        interviewId: safeId,
         interviewTitle: video.title || 'Untitled Interview',
         transcript: suggestion.transcript,
         themes: suggestion.themes
@@ -238,7 +266,7 @@ export default clips;`;
 
     // After writing the clips file, realign the timecodes
     console.log('\nRealigning clip timecodes...');
-    await realignClips(interviewId);
+    await realignClips(safeId);
 
     console.log('\nAll done! Clips have been created and timecodes have been realigned.');
 

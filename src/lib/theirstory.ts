@@ -1,4 +1,5 @@
 import { Clip } from '@/types/index';
+import { VideoId } from '@/data/videos';
 
 interface TheirStoryAPIResponse {
   id: string;
@@ -7,7 +8,7 @@ interface TheirStoryAPIResponse {
   startTime: number;
   endTime: number;
   metadata: {
-    interviewId: string;
+    interviewId: VideoId;
     interviewTitle: string;
     chapter: {
       id: string;

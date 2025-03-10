@@ -1,9 +1,10 @@
 "use client";
 
 import VideoSection from './VideoSection';
+import { VideoId } from "@/data/videos";
 
-interface ClientVideoSectionProps {
-  videoId: string;
+interface Props {
+  videoId: VideoId;
   transcriptHtml: string;
   playbackId: string;
   currentVideo: {
@@ -16,7 +17,7 @@ interface ClientVideoSectionProps {
   };
 }
 
-export function ClientVideoSection({ videoId, transcriptHtml, playbackId, currentVideo }: ClientVideoSectionProps) {
+export default function ClientVideoSection({ videoId, transcriptHtml, playbackId, currentVideo }: Props) {
   return (
     <VideoSection 
       videoId={videoId}

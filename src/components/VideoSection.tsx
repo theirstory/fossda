@@ -4,11 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import VideoPlayer from "./VideoPlayer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import InteractiveTranscript from "./InteractiveTranscript";
-// import InsightsPanel from "./InsightsPanel";
 import { chapterData } from '@/data/chapters';
-// import { config } from '@/lib/config';
 import { MuxPlayerElement } from '@mux/mux-player-react';
-// import { ChapterMetadata } from "@/types/transcript";
 import RelatedVideos from "./RelatedVideos";
 import VideoClips from "./VideoClips";
 import { useSearchParams, usePathname } from 'next/navigation';
@@ -26,9 +23,10 @@ import {
 } from "@/components/ui/sheet";
 import CitationButton from "./CitationButton";
 import { ShareButtons } from "./ShareButtons";
+import { VideoId } from "@/data/videos";
 
 interface VideoSectionProps {
-  videoId: string;
+  videoId: VideoId;
   transcriptHtml: string;
   playbackId: string;
   currentVideo: {

@@ -1,14 +1,14 @@
 import { clips } from "@/data/clips";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import { videoData } from "@/data/videos";
+import { videoData, VideoId } from "@/data/videos";
 import { themes } from "@/data/themes";
 import { iconMap } from "@/data/icons";
 import React from "react";
 import { useRouter } from "next/navigation";
 
 interface VideoClipsProps {
-  interviewId: string;
+  interviewId: VideoId;
   onClipClick?: (timestamp: number) => void;
 }
 

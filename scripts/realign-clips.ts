@@ -13,25 +13,45 @@ interface Word {
 function cleanText(text: string): string {
   return text
     .toLowerCase()
-    // Remove other punctuation except ellipses
-    .replace(/[.,!?;:'"]/g, '')
-    // Normalize whitespace
+    // Remove speaker attribution with or without ellipses
+    .replace(/^[^:]+:\s*(?:\.{3,}\s*)?/i, '')
+    // Remove leading ellipses
+    .replace(/^\.{3,}\s*/i, '')
+    // Remove trailing ellipses
+    .replace(/\s*\.{3,}$/i, '')
+    // Remove other punctuation except periods
+    .replace(/[,!?;:'"()\[\]{}]/g, '')
+    // Replace multiple spaces with single space
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-function findStartAndEndMatch(words: Word[], searchText: string): { start: number; end: number } | null {
-  // Split on ellipses to get start and end segments
-  const segments = searchText.split(/\.{3,}/g).map(s => s.trim());
-  const startSegment = segments[0];
-  const endSegment = segments[segments.length - 1];
+function splitIntoSegments(text: string): string[] {
+  // Split on ellipses and periods, but keep the first segment if it's substantial
+  const segments = text
+    .split(/\.{3,}|\./g)
+    .map(s => cleanText(s))
+    .filter(s => s.length > 0 && s.split(' ').length >= 5);
 
-  console.log('\nLooking for start segment:', startSegment);
-  console.log('Looking for end segment:', endSegment);
+  if (segments.length === 0) {
+    // If no substantial segments found, try with the whole text
+    const cleanedText = cleanText(text);
+    if (cleanedText.length > 0) {
+      return [cleanedText];
+    }
+  }
 
-  // Get first ~10 words of start segment and last ~10 words of end segment
-  const startWords = cleanText(startSegment).split(' ').slice(0, 10).join(' ');
-  const endWords = cleanText(endSegment).split(' ').slice(-10).join(' ');
+  return segments;
+}
+
+function findStartAndEndMatch(words: Word[], searchText: string, originalDuration?: number): { start: number; end: number } | null {
+  // Clean and split the search text into segments
+  const segments = splitIntoSegments(searchText);
+  
+  if (segments.length === 0) {
+    console.log('No valid segments found in search text');
+    return null;
+  }
 
   // Create clean version of transcript words
   const cleanTranscriptWords = words.map(w => ({
@@ -39,138 +59,180 @@ function findStartAndEndMatch(words: Word[], searchText: string): { start: numbe
     clean: cleanText(w.text)
   }));
 
-  // Find best match for start
-  let bestStartMatch = null;
-  let bestStartScore = 0;
-  let bestStartIndex = 0;
+  // Try to find any of the segments in the transcript
+  let bestMatch: number | null = null;
+  let bestScore = 0;
+  let bestIndex = 0;
+  let bestText = '';
+  let matchedSegment = '';
 
-  // Build running text for each position
-  for (let i = 0; i < cleanTranscriptWords.length - 3; i++) {
-    let runningText = '';
-    for (let j = 0; j < 10 && i + j < cleanTranscriptWords.length; j++) {
-      runningText += cleanTranscriptWords[i + j].clean + ' ';
-      const score = calculateMatchScore(runningText.trim(), startWords);
-      if (score > bestStartScore) {
-        bestStartScore = score;
-        bestStartMatch = cleanTranscriptWords[i].timestamp;
-        bestStartIndex = i;
-      }
-    }
-  }
+  // Always try the first clear segment first
+  const firstSegment = segments[0];
+  console.log('\nTrying to match first clear segment:', firstSegment);
 
-  if (bestStartScore >= 0.2) {
-    console.log('Found start match with score:', bestStartScore);
-    console.log('Start time:', bestStartMatch);
-    console.log('Matched start text:', cleanTranscriptWords[bestStartIndex].text);
-  } else {
-    console.log('No good start match found');
-    return null;
-  }
+  // Look in a window around the expected start time if available
+  const originalStartTime = words[0]?.timestamp || 0;
+  console.log('Trying to find match near expected start time:', originalStartTime);
+  
+  // Look in a wider window around the expected start time
+  const windowStart = Math.max(0, Math.floor(originalStartTime) - 30); // 30 seconds before
+  const windowEnd = Math.min(words.length - 1, Math.floor(originalStartTime) + 300); // 5 minutes after
+  
+  for (let i = 0; i < cleanTranscriptWords.length; i++) {
+    const timestamp = cleanTranscriptWords[i].timestamp;
+    if (timestamp < windowStart) continue;
+    if (timestamp > windowEnd) break;
 
-  // Find best match for end, starting from after the start match
-  let bestEndMatch = null;
-  let bestEndScore = 0;
-  let bestEndIndex = 0;
+    // Skip speaker attributions
+    if (cleanTranscriptWords[i].text.includes(':')) continue;
 
-  // Look for end match incrementally, starting with 3 minutes and expanding if needed
-  const WINDOW_SIZE = 180; // 3 minutes in seconds
-  const MAX_WINDOWS = 5; // Try up to 15 minutes total
-  let currentWindow = 1;
-
-  while (currentWindow <= MAX_WINDOWS && !bestEndMatch) {
-    console.log(`\nSearching in window ${currentWindow} (${currentWindow * 3} minutes)`);
-    const searchEndIndex = bestStartIndex + (200 * currentWindow); // Increase search range with each window
-
-    // Try to find the exact end segment within current window
-    for (let i = bestStartIndex + 5; i < Math.min(searchEndIndex, cleanTranscriptWords.length - 3); i++) {
-      const currentTimestamp = cleanTranscriptWords[i].timestamp;
-      
-      // Skip if we're beyond current window
-      if (bestStartMatch && currentTimestamp - bestStartMatch > WINDOW_SIZE * currentWindow) {
-        break;
-      }
-
+    // Try different window sizes
+    for (let windowSize = 15; windowSize <= 40; windowSize += 5) {
       let runningText = '';
-      for (let j = 0; j < 10 && i + j < cleanTranscriptWords.length; j++) {
-        runningText = cleanTranscriptWords[i + j].clean + ' ' + runningText;
-        const score = calculateMatchScore(runningText.trim(), endWords);
-        if (score > bestEndScore) {
-          bestEndScore = score;
-          bestEndMatch = cleanTranscriptWords[i + j].timestamp +
-                        (cleanTranscriptWords[i + j].duration || 2);
-          bestEndIndex = i + j;
-          console.log('Found potential end match:', {
-            score,
-            text: runningText.trim(),
-            target: endWords,
-            time: bestEndMatch,
-            window: `${currentWindow * 3} minutes`
-          });
-        }
-      }
-    }
+      let wordCount = 0;
+      let j = i;
 
-    // If we found a good match, break out
-    if (bestEndScore >= 0.3 && bestEndMatch !== null && bestStartMatch && bestEndMatch > bestStartMatch) {
-      console.log('Found good match in window', currentWindow);
-      break;
-    } else {
-      // Reset bestEndMatch but keep the score for comparison
-      bestEndMatch = null;
-      currentWindow++;
+      while (wordCount < windowSize && j < cleanTranscriptWords.length) {
+        if (!cleanTranscriptWords[j].text.includes(':')) {
+          runningText += cleanTranscriptWords[j].clean + ' ';
+          wordCount++;
+        }
+        j++;
+      }
+
+      const score = calculateMatchScore(runningText.trim(), firstSegment);
+      
+      if (score > 0.3) { // Higher threshold for initial matches
+        console.log(`Potential match (score ${score.toFixed(2)}):`, runningText.trim());
+      }
+      
+      if (score > bestScore) {
+        bestScore = score;
+        bestMatch = cleanTranscriptWords[i].timestamp;
+        bestIndex = i;
+        bestText = runningText.trim();
+        matchedSegment = firstSegment;
+      }
     }
   }
 
-  // If we found a good end match, use it
-  if (bestEndScore >= 0.3 && bestEndMatch !== null && bestStartMatch && bestEndMatch > bestStartMatch) {
-    console.log('Using matched end with score:', bestEndScore);
-    console.log('End time:', bestEndMatch);
-    console.log('Matched end text:', cleanTranscriptWords[bestEndIndex].text);
-    console.log('Clip duration:', bestEndMatch - bestStartMatch, 'seconds');
-    return { start: bestStartMatch, end: bestEndMatch };
-  }
-
-  // Otherwise, look for the next sentence ending within the maximum search window
-  console.log('Looking for sentence ending...');
-  if (bestStartMatch) {
-    const maxSearchIndex = Math.min(bestStartIndex + (200 * MAX_WINDOWS), cleanTranscriptWords.length);
+  // If we didn't find a good match near the expected time, search the whole transcript
+  if (bestScore < 0.3) {
+    console.log('\nNo good match found near expected time, searching entire transcript...');
     
-    for (let i = bestStartIndex + 5; i < maxSearchIndex; i++) {
-      const text = cleanTranscriptWords[i].text;
-      if (text.match(/[.!?]$/)) {
-        bestEndMatch = cleanTranscriptWords[i].timestamp +
-                      (cleanTranscriptWords[i].duration || 2);
-        console.log('Found sentence ending:', {
-          text,
-          time: bestEndMatch,
-          duration: bestEndMatch - bestStartMatch
-        });
+    for (let i = 0; i < cleanTranscriptWords.length; i++) {
+      // Skip speaker attributions
+      if (cleanTranscriptWords[i].text.includes(':')) continue;
+
+      // Try different window sizes
+      for (let windowSize = 15; windowSize <= 40; windowSize += 5) {
+        let runningText = '';
+        let wordCount = 0;
+        let j = i;
+
+        while (wordCount < windowSize && j < cleanTranscriptWords.length) {
+          if (!cleanTranscriptWords[j].text.includes(':')) {
+            runningText += cleanTranscriptWords[j].clean + ' ';
+            wordCount++;
+          }
+          j++;
+        }
+
+        const score = calculateMatchScore(runningText.trim(), firstSegment);
         
-        // If this makes for a very short clip, keep looking
-        if (bestEndMatch - bestStartMatch < 10) {
-          continue;
+        if (score > 0.3) {
+          console.log(`Potential match (score ${score.toFixed(2)}):`, runningText.trim());
         }
         
-        return {
-          start: bestStartMatch,
-          end: bestEndMatch
-        };
+        if (score > bestScore) {
+          bestScore = score;
+          bestMatch = cleanTranscriptWords[i].timestamp;
+          bestIndex = i;
+          bestText = runningText.trim();
+          matchedSegment = firstSegment;
+        }
       }
     }
+  }
 
-    // If we still haven't found a good end, use a reasonable default duration
-    const defaultEnd = Math.min(
-      bestStartMatch + WINDOW_SIZE, // Default to 3 minutes
-      words[words.length - 1].timestamp // Don't go past end of transcript
-    );
+  // Require a reasonable threshold for matches
+  if (bestScore >= 0.3 && bestMatch !== null) {
+    console.log('\nFound match:');
+    console.log('Score:', bestScore.toFixed(2));
+    console.log('Time:', bestMatch);
+    console.log('Matched text:', bestText);
+    console.log('Matched segment:', matchedSegment);
     
-    console.log('Using default end time:', defaultEnd);
+    // Try to find a good end point
+    const segmentIndex = segments.indexOf(matchedSegment);
+    const remainingSegments = segments.slice(segmentIndex + 1);
+    
+    if (remainingSegments.length > 0) {
+      console.log('\nLooking for end segments:', remainingSegments);
+      
+      let bestEndMatch: number | null = null;
+      let bestEndScore = 0;
+      let bestEndIndex = 0;
+      let bestEndText = '';
+
+      // Look for end match in a narrower window (2 minutes)
+      const searchEndIndex = Math.min(bestIndex + 120, cleanTranscriptWords.length - 1);
+      
+      for (let i = bestIndex + 5; i < searchEndIndex; i++) {
+        if (cleanTranscriptWords[i].text.includes(':')) continue;
+        
+        // Try each remaining segment
+        for (const endSegment of remainingSegments) {
+          if (endSegment.split(' ').length < 5) continue;
+
+          for (let windowSize = 15; windowSize <= 40; windowSize += 5) {
+            let runningText = '';
+            let wordCount = 0;
+            let j = i;
+
+            while (wordCount < windowSize && j < cleanTranscriptWords.length) {
+              if (!cleanTranscriptWords[j].text.includes(':')) {
+                runningText = cleanTranscriptWords[j].clean + ' ' + runningText;
+                wordCount++;
+              }
+              j++;
+            }
+
+            const score = calculateMatchScore(runningText.trim(), endSegment);
+            
+            if (score > 0.3) { // Higher threshold for end matches
+              console.log(`Potential end match (score ${score.toFixed(2)}):`, runningText.trim());
+            }
+            
+            if (score > bestEndScore) {
+              bestEndScore = score;
+              const endWord = cleanTranscriptWords[Math.min(i + j - 1, cleanTranscriptWords.length - 1)];
+              bestEndMatch = endWord.timestamp + (endWord.duration || 2);
+              bestEndIndex = i + j - 1;
+              bestEndText = runningText.trim();
+            }
+          }
+        }
+      }
+
+      if (bestEndScore >= 0.3 && bestEndMatch !== null && bestEndMatch > bestMatch) {
+        console.log('\nFound end match:');
+        console.log('Score:', bestEndScore.toFixed(2));
+        console.log('End time:', bestEndMatch);
+        console.log('Matched text:', bestEndText);
+        return { start: bestMatch, end: bestEndMatch };
+      }
+    }
+    
+    // If no end segment or no good end match found, use original duration or reasonable default
+    const duration = originalDuration || 60; // Use original duration if available, otherwise 1 minute
     return {
-      start: bestStartMatch,
-      end: defaultEnd
+      start: bestMatch,
+      end: bestMatch + duration
     };
   }
 
+  console.log('No good match found');
   return null;
 }
 
@@ -284,7 +346,8 @@ export async function realignClips(interviewId?: string): Promise<void> {
         console.log('Original transcript:', clip.transcript);
         console.log(`Original times: ${clip.startTime} -> ${clip.endTime}`);
 
-        const match = findStartAndEndMatch(words, clip.transcript);
+        const originalDuration = clip.endTime - clip.startTime;
+        const match = findStartAndEndMatch(words, clip.transcript, originalDuration);
         if (match) {
           // Update the clip in the full clips array
           const clipIndex = updatedClips.findIndex(c => c.id === clip.id);
@@ -327,5 +390,9 @@ export default clips;`;
 // Run if called directly
 if (require.main === module) {
   const interviewId = process.argv[2];
+  if (!interviewId) {
+    console.error('Please provide an interview ID as an argument');
+    process.exit(1);
+  }
   realignClips(interviewId).catch(console.error);
 } 

@@ -3,7 +3,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 import dotenv from 'dotenv';
 import { setupSchema, addTranscriptSegment } from '../src/lib/weaviate';
-import { videoData } from '../src/data/videos';
+import { videoData, VideoId } from '../src/data/videos';
 import { chapterData } from '../src/data/chapters';
 import { JSDOM } from 'jsdom';
 import { promises as fs } from 'fs';
@@ -90,8 +90,10 @@ async function indexTranscripts() {
       for (const segment of segments) {
         const chapterTitle = await findChapterTitle(segment.timestamp, interviewId);
         await addTranscriptSegment({
-          ...segment,
-          interviewId,
+          text: segment.text,
+          speaker: segment.speaker,
+          interviewId: interviewId as VideoId,
+          timestamp: segment.timestamp,
           chapterTitle,
         });
         indexedCount++;

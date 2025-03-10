@@ -1,11 +1,11 @@
 import { ChapterMetadata } from "@/types/transcript";
 import { chapterData } from "./chapters";
-import { videoData } from "./videos";
+import { videoData, VideoId } from "./videos";
 
 export interface Story {
   id: string;
   title: string;
-  interviewId: string;
+  interviewId: VideoId;
   character: {
     name: string;
     role: string;
@@ -25,7 +25,7 @@ export interface Story {
 }
 
 export interface GroupedStories {
-  interviewId: string;
+  interviewId: VideoId;
   interviewTitle: string;
   thumbnail: string;
   duration: string;

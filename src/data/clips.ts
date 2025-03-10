@@ -766,6 +766,95 @@ export const clips: Clip[] = [
       "evolution",
       "challenges"
     ]
+  },
+  {
+    "id": "tristan-early-exposure-to-computers-the-trs-80",
+    "title": "Early Exposure to Computers: The TRS-80",
+    "startTime": 47.2,
+    "endTime": 153.8,
+    "duration": 106.6,
+    "chapter": {
+      "id": "introduction-and-early-interest-in-computing",
+      "title": "Introduction and Early Interest in Computing"
+    },
+    "interviewId": "tristan",
+    "interviewTitle": "Tristan Nitot",
+    "transcript": "Tristan Nitot: ...for some reason, a friend of my parents' bought a TRS-80...and thought 'oh, the young Tristan may be interested in this new thing'. And so, he was going on vacation for two weeks and so, before going to vacation, he dropped it at the house...and for 15 days in a row, I was stuck in front of it. You know, opening the manual page 1 and starting to read...",
+    "themes": [
+      "exposure"
+    ]
+  },
+  {
+    "id": "tristan-joining-netscape-and-the-dawn-of-open-source",
+    "title": "Joining Netscape and the Dawn of Open Source",
+    "startTime": 808.2,
+    "endTime": 868.9,
+    "duration": 60.7,
+    "chapter": {
+      "id": "challenges-of-open-source-adoption",
+      "title": "Challenges of Open Source Adoption"
+    },
+    "interviewId": "tristan",
+    "interviewTitle": "Tristan Nitot",
+    "transcript": "Tristan Nitot: I made it into Netscape, it was in '97 and it was a lot of work, but it was fun with smart people. In '98, then Netscape decides to open up the source code for Netscape Communicator.",
+    "themes": [
+      "projects",
+      "evolution"
+    ]
+  },
+  {
+    "id": "tristan-the-creation-of-the-mozilla-foundation",
+    "title": "The Creation of the Mozilla Foundation",
+    "startTime": 1139.6,
+    "endTime": 1259.300,
+    "duration": 119.7,
+    "chapter": {
+      "id": "the-creation-of-the-mozilla-foundation",
+      "title": "The Creation of the Mozilla Foundation"
+    },
+    "interviewId": "tristan",
+    "interviewTitle": "Tristan Nitot",
+    "transcript": "Netscape made - well, created - the Mozilla project and along with it came Bugzilla. Which was a complete game changer, even if it was not beautiful and not super easy to use, it was amazing.",
+    "themes": [
+      "evolution",
+      "projects"
+    ]
+  },
+  {
+    "id": "tristan-launching-firefox-and-challenging-the-web",
+    "title": "Launching Firefox and Challenging the Web",
+    "startTime": 3502.600,
+    "endTime": 3920.400,
+    "duration": 417.8,
+    "chapter": {
+      "id": "building-mozilla-europe-and-firefox-s-growth",
+      "title": "Building Mozilla Europe and Firefox's Growth"
+    },
+    "interviewId": "tristan",
+    "interviewTitle": "Tristan Nitot",
+    "transcript": "Tristan Nitot:...Firefox was making progress...it started to be the response to that. It was delivering, really...People got excited. It became viral...And so I stayed there, making sure that we would launch Firefox in Europe, probably even though I was kind of starving financially...",
+    "themes": [
+      "community",
+      "projects",
+      "challenges"
+    ]
+  },
+  {
+    "id": "tristan-personal-reflections-on-open-source",
+    "title": "Personal Reflections on Open Source",
+    "startTime": 4260.207,
+    "endTime": 4320.207,
+    "duration": 60,
+    "chapter": {
+      "id": "the-power-of-open-source-a-key-demo",
+      "title": "The Power of Open Source: A Key Demo"
+    },
+    "interviewId": "tristan",
+    "interviewTitle": "Tristan Nitot",
+    "transcript": "Tristan Nitot:...Now, there is software everywhere. And if I want to be free as a citizen, then I need free software...the guy who controls the software, kind of more or less controls my life decides...And if I want to have control over that...I need free software.",
+    "themes": [
+      "mission-values"
+    ]
   }
 ];
 

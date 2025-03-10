@@ -1,11 +1,11 @@
 import { NextResponse } from 'next/server';
 import { searchTranscripts, TranscriptSegment } from '@/lib/weaviate';
-import { videoData } from '@/data/videos';
+import { videoData, VideoId } from '@/data/videos';
 import OpenAI from 'openai';
 
 interface Quote {
   text: string;
-  interviewId: string;
+  interviewId: VideoId;
   title: string;
   timestamp: number;
   speaker: string;

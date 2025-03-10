@@ -1,0 +1,164 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Early Interest in Computing",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Tristan Nitot introduces himself and shares his early experiences with computers, beginning with a TRS-80 in rural Normandy. He describes his fascination with programming in BASIC and how it set him apart as a child.",
+      "keywords": "introduction, childhood, TRS-80, programming, BASIC"
+    },
+    {
+      "title": "The Centre Mondial Informatique and Early Community",
+      "timecode": "00:02:37",
+      "time": {
+        "start": 157,
+        "end": null
+      },
+      "synopsis": "Nitot recounts moving to Paris and discovering the Centre Mondial Informatique, a hub for computing enthusiasts. He describes learning Logo, hacking terminals, and meeting Richard Stallman. The center became an incubator for future IT professionals in France.",
+      "keywords": "Paris, computing center, hacking, Logo, Richard Stallman"
+    },
+    {
+      "title": "Early Encounters with Free Software",
+      "timecode": "00:08:50",
+      "time": {
+        "start": 530,
+        "end": null
+      },
+      "synopsis": "Nitot reflects on his early understanding of software sharing, distinguishing between legality and technical feasibility. He admits he didn't initially grasp the significance of free software but later recognized its importance.",
+      "keywords": "free software, software sharing, legality, ethics"
+    },
+    {
+      "title": "Discovering the Web and Joining Netscape",
+      "timecode": "00:09:58",
+      "time": {
+        "start": 598,
+        "end": null
+      },
+      "synopsis": "In 1996, Nitot creates his first website, inspired by the rise of personal homepages. He applies for a job at Netscape and, despite delays due to a hiring freeze, joins the company in 1997 as an evangelist for the web.",
+      "keywords": "Netscape, web development, personal homepage, job application"
+    },
+    {
+      "title": "Open Source and the Birth of Mozilla",
+      "timecode": "00:12:43",
+      "time": {
+        "start": 763,
+        "end": null
+      },
+      "synopsis": "Nitot explains how Netscape's decision to release its browser code as open source in 1998 led to the Mozilla project. He contrasts the open-source philosophy with free software, highlighting the business-friendly approach advocated by Eric Raymond.",
+      "keywords": "Mozilla, Netscape, open source, free software, Eric Raymond"
+    },
+    {
+      "title": "Challenges of Open Source Adoption",
+      "timecode": "00:15:46",
+      "time": {
+        "start": 946,
+        "end": null
+      },
+      "synopsis": "Nitot describes the difficulty of explaining open source to businesses and customers in France. He recalls skepticism about the benefits of opening the source code and the technical challenges of making it work.",
+      "keywords": "open source, business adoption, skepticism, Mozilla"
+    },
+    {
+      "title": "The Web and Collaboration through Bugzilla",
+      "timecode": "00:17:56",
+      "time": {
+        "start": 1076,
+        "end": null
+      },
+      "synopsis": "The web transformed how developers collaborated. Nitot discusses Bugzilla as an early issue tracker that allowed anyone to contribute, democratizing software development.",
+      "keywords": "Bugzilla, open source collaboration, web development"
+    },
+    {
+      "title": "Struggles with Netscape and AOL Acquisition",
+      "timecode": "00:21:00",
+      "time": {
+        "start": 1260,
+        "end": null
+      },
+      "synopsis": "Netscape's open-source efforts were hampered by technical debt, incomplete code releases, and AOL's acquisition. Nitot describes how AOL's disinterest in Mozilla and its eventual legal settlement with Microsoft led to massive layoffs.",
+      "keywords": "Netscape, AOL, Microsoft, layoffs, Mozilla project"
+    },
+    {
+      "title": "The Creation of the Mozilla Foundation",
+      "timecode": "00:27:05",
+      "time": {
+        "start": 1625,
+        "end": null
+      },
+      "synopsis": "After AOL abandoned Mozilla, the Mozilla Foundation was formed in 2003 with limited resources. Nitot recalls the uncertainty and challenges but notes that independence from AOL ultimately strengthened the project.",
+      "keywords": "Mozilla Foundation, AOL, independence, open-source survival"
+    },
+    {
+      "title": "The Emergence of Firefox and the Fight for Simplicity",
+      "timecode": "00:38:57",
+      "time": {
+        "start": 2337,
+        "end": null
+      },
+      "synopsis": "Nitot explains the internal debates within Mozilla about product simplicity versus community contributions. The Firefox project emerged as a streamlined browser, but it initially faced resistance from the open-source community.",
+      "keywords": "Firefox, simplicity, user experience, feature debates"
+    },
+    {
+      "title": "Extensions and Firefox’s Breakthrough",
+      "timecode": "00:46:35",
+      "time": {
+        "start": 2795,
+        "end": null
+      },
+      "synopsis": "The introduction of extensions in Firefox helped bridge the gap between customization and simplicity. This decision became a key factor in Firefox’s long-term success and influenced all modern browsers.",
+      "keywords": "Firefox, browser extensions, customization, user engagement"
+    },
+    {
+      "title": "Building Mozilla Europe and Firefox’s Growth",
+      "timecode": "00:49:01",
+      "time": {
+        "start": 2941,
+        "end": null
+      },
+      "synopsis": "After being laid off, Nitot and others worked to establish Mozilla Europe, ensuring Firefox’s adoption across different languages and cultures. The browser's rapid success was fueled by frustration with Internet Explorer.",
+      "keywords": "Mozilla Europe, Firefox launch, web standards, market growth"
+    },
+    {
+      "title": "Firefox Goes Viral",
+      "timecode": "01:03:03",
+      "time": {
+        "start": 3783,
+        "end": null
+      },
+      "synopsis": "The grassroots campaign \"Spread Firefox\" helped Firefox gain traction. Nitot describes how developers and users rallied behind it, making it a viral success story and a major challenge to Microsoft.",
+      "keywords": "Firefox adoption, marketing, Spread Firefox, web standards"
+    },
+    {
+      "title": "The Power of Open Source: A Key Demo",
+      "timecode": "01:06:13",
+      "time": {
+        "start": 3973,
+        "end": null
+      },
+      "synopsis": "Nitot recalls a pivotal moment when he demonstrated Gecko’s performance advantages over Netscape Communicator, exciting developers and reinforcing his commitment to Mozilla.",
+      "keywords": "Gecko engine, open-source power, developer engagement"
+    },
+    {
+      "title": "The Importance of Free Software for Society",
+      "timecode": "01:09:55",
+      "time": {
+        "start": 4195,
+        "end": null
+      },
+      "synopsis": "Nitot reflects on how software has become essential in daily life and argues that free software is necessary to ensure individual freedom and control over technology.",
+      "keywords": "free software, digital freedom, software control, future vision"
+    },
+    {
+      "title": "Closing Thoughts on Open Source",
+      "timecode": "01:11:55",
+      "time": {
+        "start": 4315,
+        "end": null
+      },
+      "synopsis": "Nitot expresses his continued belief in open source, despite its challenges. He thanks the interviewer and reflects on his journey from early computing to shaping the web.",
+      "keywords": "open source, reflections, gratitude, career journey"
+    }
+  ]
+}

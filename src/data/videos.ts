@@ -1,6 +1,18 @@
 import { VideoData } from "@/types/transcript";
 
-export const videoData: Record<string, VideoData> = {
+// Define a type for all valid video IDs
+export type VideoId = 
+  | "introduction-to-fossda"
+  | "tristan"
+  | "deb-goodkin"
+  | "heather-meeker"
+  | "bruce-perens"
+  | "larry-augustin"
+  | "roger-dannenberg"
+  | "bart";
+
+// Type the videoData object with Record<VideoId, VideoData>
+export const videoData: Record<VideoId, VideoData> = {
   "introduction-to-fossda": {
     id: "introduction-to-fossda",
     title: "Introduction to FOSSDA",
@@ -10,6 +22,14 @@ export const videoData: Record<string, VideoData> = {
     who envisioned a better way to share software. FOSSDA captures the personal stories of those who built this 
     movement, preserving their experiences for future generations who will carry open source forward into the 21st century.`,
     sentence: "An introduction to the Free and Open Source Stories Digital Archive and its mission."
+  },
+  "tristan": {
+    id: "tristan",
+    title: "Tristan Nitot",
+    duration: "72:24",
+    thumbnail: "/thumbnails/tristan-nitot.png",
+    summary: "Tristan Nitot tells the story of Netscape, AOL, Mozilla and Firefox, and how they shaped the modern Web discussing their journey and contributions to open source software.",
+    sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
   },
   "deb-goodkin": {
     id: "deb-goodkin",

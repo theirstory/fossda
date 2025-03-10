@@ -1,3 +1,5 @@
+import { VideoId } from "@/data/videos";
+
 export interface Chapter {
   id: string;
   title: string;
@@ -10,7 +12,7 @@ export interface Clip {
   endTime: number;
   duration: number;
   chapter: Chapter;
-  interviewId: string;
+  interviewId: VideoId;
   interviewTitle: string;
   transcript: string;
   themes: string[];

@@ -6,16 +6,16 @@ import { Card } from './ui/card';
 import { Search, Filter, X, Clock } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { videoData } from '@/data/videos';
+import { videoData, VideoId } from '@/data/videos';
 import { formatDuration } from '@/lib/utils';
 
 interface SearchResult {
-  videoId: string;
+  videoId: VideoId;
   timestamp: number;
   text: string;
-  type: 'transcript' | 'entity';
-  entityType?: string;
-  context?: string;
+  speaker: string;
+  chapterTitle: string;
+  certainty: number;
 }
 
 interface AdvancedSearchProps {
@@ -61,12 +61,12 @@ export default function AdvancedSearch({ entities, transcripts }: AdvancedSearch
             transcript.segments.forEach((segment, index) => {
               if (segment.text.toLowerCase().includes(person.toLowerCase())) {
                 searchResults.push({
-                  videoId,
-                  timestamp: index * 10, // Approximate timestamp
+                  videoId: videoId as VideoId,
+                  timestamp: index * 10,
                   text: person,
-                  type: 'entity',
-                  entityType: 'PERSON',
-                  context: segment.text
+                  speaker: segment.speaker,
+                  chapterTitle: "Unknown",
+                  certainty: 1.0
                 });
               }
             });
@@ -81,11 +81,12 @@ export default function AdvancedSearch({ entities, transcripts }: AdvancedSearch
       transcript.segments.forEach((segment, index) => {
         if (segment.text.toLowerCase().includes(searchQuery.toLowerCase())) {
           searchResults.push({
-            videoId,
-            timestamp: index * 10, // Approximate timestamp
+            videoId: videoId as VideoId,
+            timestamp: index * 10,
             text: segment.text,
-            type: 'transcript',
-            context: `${segment.speaker}: ${segment.text}`
+            speaker: segment.speaker,
+            chapterTitle: "Unknown",
+            certainty: 1.0
           });
         }
       });
@@ -185,13 +186,10 @@ export default function AdvancedSearch({ entities, transcripts }: AdvancedSearch
                         <Clock className="h-3 w-3" />
                         {formatDuration(result.timestamp)}
                       </Badge>
-                      {result.type === 'entity' && (
-                        <Badge>{result.entityType}</Badge>
-                      )}
                     </div>
-                    <p className="text-sm text-gray-600 line-clamp-2">
-                      {result.context}
-                    </p>
+                    <div className="text-sm text-gray-600 line-clamp-2">
+                      {result.text}
+                    </div>
                   </div>
                 </div>
               </Card>

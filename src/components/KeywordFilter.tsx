@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -58,6 +58,31 @@ export default function KeywordFilter({
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [activeGroupId, setActiveGroupId] = useState<string | null>(null);
+
+  // Set active group when component mounts or when keywordGroups change
+  useEffect(() => {
+    if (keywordGroups.length > 0 && !activeGroupId) {
+      setActiveGroupId(keywordGroups[keywordGroups.length - 1].id);
+    }
+  }, [keywordGroups, activeGroupId]);
+
+  // Listen for setActiveGroup events
+  useEffect(() => {
+    const handleSetActiveGroup = (event: CustomEvent<{ groupId: string }>) => {
+      setActiveGroupId(event.detail.groupId);
+    };
+
+    const element = document.querySelector('[data-keyword-filter]');
+    if (element) {
+      element.addEventListener('setActiveGroup', handleSetActiveGroup as EventListener);
+    }
+
+    return () => {
+      if (element) {
+        element.removeEventListener('setActiveGroup', handleSetActiveGroup as EventListener);
+      }
+    };
+  }, []);
 
   // Get all unique keywords from chapter data
   const allKeywords = useMemo(() => {

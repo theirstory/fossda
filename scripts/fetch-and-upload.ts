@@ -9,6 +9,7 @@ import * as path from 'path';
 import dotenv from 'dotenv';
 import { JSDOM } from 'jsdom';
 import Mux from '@mux/mux-node';
+import { VideoId } from "@/data/videos";
 
 // Load environment variables from .env.local first
 const envResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });
@@ -199,7 +200,7 @@ async function indexTranscript(interviewId: string, transcriptHtml: string) {
     await addTranscriptSegment({
       text: segment.text,
       speaker: segment.speaker,
-      interviewId,
+      interviewId: interviewId as VideoId,
       timestamp: segment.timestamp,
       chapterTitle
     });

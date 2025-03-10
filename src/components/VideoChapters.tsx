@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import { ChapterMetadata } from '@/types/transcript';
 import { cn } from '@/lib/utils';
 import { Card } from './ui/card';
@@ -11,163 +11,217 @@ interface VideoChaptersProps {
   className?: string;
 }
 
+// Extend MuxPlayerElement type to include event methods
+interface ExtendedMuxPlayer extends MuxPlayerElement {
+  on?: (event: string, handler: () => void) => void;
+  off?: (event: string, handler: () => void) => void;
+}
+
 export default function VideoChapters({
   chapters,
   videoRef,
   isPlaying,
   className
 }: VideoChaptersProps) {
-  const [currentChapterIndex, setCurrentChapterIndex] = useState(0);
+  const [activeChapter, setActiveChapter] = useState<ChapterMetadata | null>(null);
   const chapterListRef = useRef<HTMLDivElement>(null);
+  const lastTimeRef = useRef<number>(0);
 
-  // Add effect to scroll active chapter into view
-  useEffect(() => {
-    if (chapterListRef.current) {
-      const chapterElements = chapterListRef.current.children;
-      if (chapterElements[currentChapterIndex]) {
-        const chapterElement = chapterElements[currentChapterIndex] as HTMLElement;
-        const container = chapterListRef.current;
-        
-        // Calculate the scroll position to place the chapter higher up
-        const elementTop = chapterElement.offsetTop;
-        const containerHeight = container.clientHeight;
-        const offset = containerHeight * 0.35; // 35% from the top
-        
-        container.scrollTo({
-          top: Math.max(0, elementTop - offset),
-          behavior: 'smooth'
+  // Function to find the active chapter based on current time
+  const findActiveChapter = useCallback((currentTime: number) => {
+    // If we're at the same time as before, return the current active chapter
+    if (currentTime === lastTimeRef.current && activeChapter) {
+      return activeChapter;
+    }
+    
+    // Update the last time we checked
+    lastTimeRef.current = currentTime;
+    
+    console.log('Finding chapter for time:', currentTime);
+    
+    // Sort chapters by start time to ensure proper order
+    const sortedChapters = [...chapters].sort((a, b) => a.time.start - b.time.start);
+    
+    // Find the chapter that contains the current time
+    for (let i = 0; i < sortedChapters.length; i++) {
+      const chapter = sortedChapters[i];
+      const nextChapter = sortedChapters[i + 1];
+      
+      const chapterStart = chapter.time.start;
+      const chapterEnd = nextChapter ? nextChapter.time.start : Infinity;
+      
+      if (currentTime >= chapterStart && currentTime < chapterEnd) {
+        console.log('Found matching chapter:', {
+          title: chapter.title,
+          start: chapterStart,
+          end: chapterEnd,
+          currentTime
         });
+        return chapter;
       }
     }
-  }, [currentChapterIndex]);
-
-  // Add effect to update current chapter based on video time
-  useEffect(() => {
-    const findVideoElement = () => document.getElementById('hyperplayer') as HTMLVideoElement;
-    let mediaElement = findVideoElement();
     
-    const handleTimeChange = () => {
-      mediaElement = findVideoElement();
-      if (!mediaElement) return;
+    // If we're before the first chapter
+    if (sortedChapters.length > 0 && currentTime < sortedChapters[0].time.start) {
+      console.log('Before first chapter, returning first chapter:', sortedChapters[0].title);
+      return sortedChapters[0];
+    }
+    
+    console.log('No matching chapter found');
+    return null;
+  }, [chapters, activeChapter]);
 
-      const currentTime = mediaElement.currentTime;
+  // Scroll to chapter helper function
+  const scrollToChapter = useCallback((chapter: ChapterMetadata) => {
+    if (!chapter || !chapterListRef.current) return;
+
+    const chapterElements = chapterListRef.current.children;
+    const index = chapters.findIndex((c) => c.time.start === chapter.time.start);
+    if (chapterElements[index]) {
+      const chapterElement = chapterElements[index] as HTMLElement;
+      const container = chapterListRef.current;
       
-      // Find the current chapter based on time
-      const newChapterIndex = chapters.findIndex((chapter, index) => {
-        const nextChapter = chapters[index + 1];
-        const chapterEnd = nextChapter ? nextChapter.time.start : Infinity;
-        return currentTime >= chapter.time.start && currentTime < chapterEnd;
+      const elementTop = chapterElement.offsetTop;
+      const containerHeight = container.clientHeight;
+      const offset = containerHeight * 0.35;
+      
+      container.scrollTo({
+        top: Math.max(0, elementTop - offset),
+        behavior: 'smooth'
       });
-
-      // If we're before the first chapter, select the first chapter
-      if (newChapterIndex === -1 && currentTime < chapters[0].time.start) {
-        setCurrentChapterIndex(0);
-        return;
-      }
-      
-      // If we're after the last chapter, select the last chapter
-      if (newChapterIndex === -1 && currentTime >= chapters[chapters.length - 1].time.start) {
-        setCurrentChapterIndex(chapters.length - 1);
-        return;
-      }
-
-      if (newChapterIndex !== -1) {
-        setCurrentChapterIndex(newChapterIndex);
-      }
-    };
-
-    // Create a MutationObserver to watch for player initialization/changes
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.type === 'attributes' && mutation.attributeName === 'data-media-status') {
-          const status = mediaElement?.getAttribute('data-media-status');
-          if (status === 'ready') {
-            handleTimeChange();
-          }
-        }
-      });
-    });
-
-    const setupEventListeners = () => {
-      if (!mediaElement) return;
-      
-      // Remove any existing listeners first
-      const events = ['timeupdate', 'seeking', 'seeked', 'loadedmetadata', 'play'];
-      events.forEach(event => {
-        mediaElement.removeEventListener(event, handleTimeChange);
-        mediaElement.addEventListener(event, handleTimeChange);
-      });
-      
-      // Observe changes to the video element
-      observer.observe(mediaElement, { attributes: true });
-      
-      // Initial check
-      handleTimeChange();
-    };
-
-    // Set up initial listeners
-    setupEventListeners();
-
-    // Check periodically for video element and reset listeners if needed
-    const checkInterval = setInterval(() => {
-      const currentElement = findVideoElement();
-      if (currentElement && currentElement !== mediaElement) {
-        mediaElement = currentElement;
-        setupEventListeners();
-      }
-    }, 1000);
-
-    return () => {
-      observer.disconnect();
-      clearInterval(checkInterval);
-      if (mediaElement) {
-        const events = ['timeupdate', 'seeking', 'seeked', 'loadedmetadata', 'play'];
-        events.forEach(event => mediaElement.removeEventListener(event, handleTimeChange));
-      }
-    };
+    }
   }, [chapters]);
 
-  const handleChapterClick = (time: number, e: React.MouseEvent | React.TouchEvent) => {
-    // Prevent default behavior
+  // Update active chapter based on current time
+  const updateActiveChapter = useCallback((currentTime: number) => {
+    const newActiveChapter = findActiveChapter(currentTime);
+    
+    if (newActiveChapter && (!activeChapter || newActiveChapter.time.start !== activeChapter.time.start)) {
+      console.log('Setting active chapter:', {
+        title: newActiveChapter.title,
+        start: newActiveChapter.time.start,
+        currentTime,
+        wasActive: activeChapter?.title
+      });
+      
+      setActiveChapter(newActiveChapter);
+      scrollToChapter(newActiveChapter);
+    }
+  }, [findActiveChapter, activeChapter, scrollToChapter]);
+
+  // Set initial active chapter
+  useEffect(() => {
+    if (!chapters || chapters.length === 0) return;
+    
+    console.log('Setting initial active chapter');
+    const initialChapter = chapters[0];
+    setActiveChapter(initialChapter);
+    scrollToChapter(initialChapter);
+  }, [chapters, scrollToChapter]);
+
+  // Effect for time updates
+  useEffect(() => {
+    console.log('Setting up time updates. Chapters:', chapters?.length);
+    if (!videoRef?.current || !chapters || chapters.length === 0) return;
+
+    const muxPlayer = videoRef.current as ExtendedMuxPlayer;
+
+    // Handle time updates
+    const handleTimeUpdate = () => {
+      const currentTime = muxPlayer.currentTime;
+      updateActiveChapter(currentTime);
+    };
+
+    // Handle seeking
+    const handleSeeking = () => {
+      const currentTime = muxPlayer.currentTime;
+      console.log('Seek event:', currentTime);
+      updateActiveChapter(currentTime);
+    };
+
+    // Try to use Mux Player's event system
+    if (muxPlayer.on) {
+      console.log('Using Mux Player event system');
+      muxPlayer.on('timeupdate', handleTimeUpdate);
+      muxPlayer.on('seeking', handleSeeking);
+      muxPlayer.on('seeked', handleSeeking);
+    }
+    
+    // Set initial chapter based on current time
+    if (typeof muxPlayer.currentTime === 'number') {
+      updateActiveChapter(muxPlayer.currentTime);
+    }
+    
+    // Set up polling as a backup
+    const pollInterval = setInterval(() => {
+      if (typeof muxPlayer.currentTime === 'number') {
+        updateActiveChapter(muxPlayer.currentTime);
+      }
+    }, 1000); // Poll every second
+    
+    return () => {
+      if (muxPlayer.off) {
+        muxPlayer.off('timeupdate', handleTimeUpdate);
+        muxPlayer.off('seeking', handleSeeking);
+        muxPlayer.off('seeked', handleSeeking);
+      }
+      clearInterval(pollInterval);
+    };
+  }, [chapters, videoRef, updateActiveChapter]);
+
+  const handleChapterClick = (chapter: ChapterMetadata, e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
+    console.log('Chapter clicked:', chapter.title);
+
     if (videoRef.current) {
-      const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-      if (videoElement) {
-        // Force the time update
-        videoElement.currentTime = time;
+      const muxPlayer = videoRef.current;
+      console.log('Seeking to time:', chapter.time.start);
+      
+      // Set the current time using the Mux Player element
+      if (typeof muxPlayer.currentTime === 'number') {
+        muxPlayer.currentTime = chapter.time.start;
+        setActiveChapter(chapter);
         
-        // Add a small delay to ensure the time is set before playing
-        setTimeout(() => {
-          if (isPlaying) {
-            videoElement.play().catch(console.error);
-          }
-        }, 100);
+        if (isPlaying && typeof muxPlayer.play === 'function') {
+          muxPlayer.play().catch(console.error);
+        }
       }
     }
   };
 
+  if (!chapters || chapters.length === 0) {
+    return (
+      <Card className={cn("overflow-hidden", className)}>
+        <div className="p-4 text-center text-gray-500">
+          No chapters available for this video.
+        </div>
+      </Card>
+    );
+  }
+
   return (
     <Card className={cn("overflow-hidden", className)}>
       <div ref={chapterListRef} className="h-full overflow-y-auto p-2 space-y-2">
-        {chapters.map((chapter, index) => (
-          <button
-            key={chapter.time.start}
-            onClick={(e) => handleChapterClick(chapter.time.start, e)}
-            onTouchEnd={(e) => handleChapterClick(chapter.time.start, e)}
-            className={cn(
-              "text-left w-full p-2 hover:bg-gray-100 transition-colors border-l-2",
-              index === currentChapterIndex 
-                ? "bg-blue-50 border-l-blue-600" 
-                : "border-l-transparent"
-            )}
-          >
-            <div className="text-sm font-medium">{chapter.title}</div>
-            <div className="text-xs text-gray-600">{chapter.timecode}</div>
-            <div className="text-xs text-gray-500 mt-1 line-clamp-2">{chapter.synopsis}</div>
-          </button>
-        ))}
+        {chapters.map((chapter) => {
+          const isActive = activeChapter?.time.start === chapter.time.start;
+          return (
+            <button
+              key={chapter.time.start}
+              onClick={(e) => handleChapterClick(chapter, e)}
+              onTouchEnd={(e) => handleChapterClick(chapter, e)}
+              className={cn(
+                "text-left w-full p-2 hover:bg-gray-100 transition-colors border-l-2",
+                isActive ? "bg-blue-50 border-l-blue-600 font-medium" : "border-l-transparent"
+              )}
+            >
+              <div className="text-sm font-medium">{chapter.title}</div>
+              <div className="text-xs text-gray-600">{chapter.timecode}</div>
+              <div className="text-xs text-gray-500 mt-1 line-clamp-2">{chapter.synopsis}</div>
+            </button>
+          );
+        })}
       </div>
     </Card>
   );

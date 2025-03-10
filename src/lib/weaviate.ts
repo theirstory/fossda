@@ -1,9 +1,10 @@
 import weaviate, { ApiKey } from 'weaviate-ts-client';
+import { VideoId } from '@/data/videos';
 
 export interface TranscriptSegment {
   text: string;
   speaker: string;
-  interviewId: string;
+  interviewId: VideoId;
   timestamp: number;
   chapterTitle: string;
   _additional?: {

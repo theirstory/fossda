@@ -8,11 +8,11 @@ import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'marked-react';
-import { videoData } from "@/data/videos";
+import { videoData, VideoId } from "@/data/videos";
 
 interface Quote {
   text: string;
-  interviewId: string;
+  interviewId: VideoId;
   title: string;
   timestamp: number;
   speaker: string;
@@ -214,10 +214,9 @@ export default function AskPage() {
         >
           <Image
             src={videoData[quote.interviewId].thumbnail}
-            alt={`Thumbnail for ${quote.speaker}'s interview`}
-            width={640}
-            height={360}
-            className="h-full w-full object-cover transition-opacity group-hover:opacity-90"
+            alt={quote.title}
+            fill
+            className="object-cover"
           />
           {isCited && (
             <div className="absolute top-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
@@ -329,7 +328,7 @@ export default function AskPage() {
                       >
                         <Image
                           src={videoData[quote.interviewId].thumbnail}
-                          alt={`Thumbnail for ${quote.speaker}'s interview`}
+                          alt={quote.title}
                           width={640}
                           height={360}
                           className="w-full h-full object-cover transition-opacity group-hover:opacity-90"

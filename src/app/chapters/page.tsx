@@ -19,6 +19,7 @@ import {
 import KeywordFilter from "@/components/KeywordFilter";
 import React from "react";
 import { ChapterMetadata, TranscriptIndex } from "@/types/transcript";
+import { VideoId } from "@/data/videos";
 
 interface KeywordGroup {
   id: string;
@@ -27,9 +28,18 @@ interface KeywordGroup {
   groupOperator: 'AND' | 'OR' | 'NOT';
 }
 
+interface VideoData {
+  id: string;
+  title: string;
+  duration: string;
+  thumbnail: string;
+  summary: string;
+  sentence: string;
+}
+
 interface Chapter extends ChapterMetadata {
   id: string;
-  interviewId: string;
+  interviewId: VideoId;
   chapterIndex: number;
 }
 
@@ -97,16 +107,16 @@ export default function ChaptersPage() {
 
   // Filter out any chapters that don't have corresponding video data
   const groupedChapters: GroupedChapter[] = Object.entries(chapterData)
-    .filter(([videoId]) => videoData[videoId]) // Only include chapters where video data exists
+    .filter(([videoId]) => (videoData as Record<string, VideoData>)[videoId]) // Only include chapters where video data exists
     .map(([videoId, chapterInfo]) => ({
-      id: videoId,
-      title: videoData[videoId].title,
-      thumbnail: videoData[videoId].thumbnail,
-      duration: videoData[videoId].duration,
+      id: videoId as VideoId,
+      title: (videoData as Record<string, VideoData>)[videoId].title,
+      thumbnail: (videoData as Record<string, VideoData>)[videoId].thumbnail,
+      duration: (videoData as Record<string, VideoData>)[videoId].duration,
       chapters: chapterInfo.metadata.map((chapter: ChapterMetadata, index: number) => ({
         ...chapter,
         id: `${videoId}-${index}`,
-        interviewId: videoId,
+        interviewId: videoId as VideoId,
         chapterIndex: index
       })),
     }));
@@ -272,13 +282,15 @@ export default function ChaptersPage() {
                     </Button>
                   </PopoverTrigger>
                   <PopoverContent className="w-[800px] p-4" align="start" side="bottom" sideOffset={8}>
-                    <KeywordFilter
-                      selectedKeywords={selectedKeywords}
-                      onKeywordsChange={setSelectedKeywords}
-                      keywordGroups={keywordGroups}
-                      onKeywordGroupsChange={setKeywordGroups}
-                      frequencies={keywordStats}
-                    />
+                    <div data-keyword-filter>
+                      <KeywordFilter
+                        selectedKeywords={selectedKeywords}
+                        onKeywordsChange={setSelectedKeywords}
+                        keywordGroups={keywordGroups}
+                        onKeywordGroupsChange={setKeywordGroups}
+                        frequencies={keywordStats}
+                      />
+                    </div>
                   </PopoverContent>
                 </Popover>
 
@@ -515,7 +527,7 @@ export default function ChaptersPage() {
                                             e.stopPropagation();
                                             // If there's no active group, create one
                                             if (keywordGroups.length === 0) {
-                                              const newGroup: KeywordGroup = {
+                                              const newGroup: { id: string; keywords: string[]; operator: 'AND' | 'OR' | 'NOT'; groupOperator: 'AND' | 'OR' | 'NOT' } = {
                                                 id: Math.random().toString(),
                                                 keywords: [tag],
                                                 operator: 'AND',
@@ -523,6 +535,16 @@ export default function ChaptersPage() {
                                               };
                                               setKeywordGroups([newGroup]);
                                               setSelectedKeywords([...selectedKeywords, tag]);
+                                              // Set the active group in the filter
+                                              setTimeout(() => {
+                                                const filterElement = document.querySelector('[data-keyword-filter]');
+                                                if (filterElement) {
+                                                  filterElement.dispatchEvent(new CustomEvent('setActiveGroup', { 
+                                                    detail: { groupId: newGroup.id },
+                                                    bubbles: true
+                                                  }));
+                                                }
+                                              }, 0);
                                             } else {
                                               // Add to the last group
                                               const lastGroup = keywordGroups[keywordGroups.length - 1];
@@ -535,6 +557,16 @@ export default function ChaptersPage() {
                                                   )
                                                 );
                                                 setSelectedKeywords([...selectedKeywords, tag]);
+                                                // Set the active group in the filter
+                                                setTimeout(() => {
+                                                  const filterElement = document.querySelector('[data-keyword-filter]');
+                                                  if (filterElement) {
+                                                    filterElement.dispatchEvent(new CustomEvent('setActiveGroup', { 
+                                                      detail: { groupId: lastGroup.id },
+                                                      bubbles: true
+                                                    }));
+                                                  }
+                                                }, 0);
                                               }
                                             }
                                           }}

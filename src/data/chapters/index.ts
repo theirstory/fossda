@@ -3,6 +3,7 @@ import introChapters from './introduction-to-fossda-index.json';
 import debChapters from './deb-goodkin-index.json';
 import heatherChapters from './heather-meeker-index.json';
 import bruceChapters from './bruce-perens-index.json';
+import tristanChapters from './tristan-index.json';
 
 // First, let's create a type for our chapter data
 interface ChapterData {
@@ -66,6 +67,12 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2024-02-14T00:00:00Z",
     updated_at: "2024-02-14T00:00:00Z",
     metadata: processChapterMetadata(bruceChapters.metadata || [])
+  },
+  'tristan': {
+    title: "Tristan Nitot",
+    created_at: "2024-03-09T00:00:00Z",
+    updated_at: "2024-03-09T00:00:00Z",
+    metadata: processChapterMetadata(tristanChapters.metadata || [])
   }
 };
 
@@ -75,5 +82,6 @@ console.log('Chapter data initialized:', {
   hasDeb: !!debChapters,
   hasHeather: !!heatherChapters,
   hasBruce: !!bruceChapters,
+  hasTristan: !!tristanChapters,
   keys: Object.keys(chapterData)
 }); 

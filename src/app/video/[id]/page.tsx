@@ -2,7 +2,7 @@ import VideoSection from "@/components/VideoSection";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Suspense } from "react";
-import { videoData } from "@/data/videos";
+import { videoData, VideoId } from "@/data/videos";
 import { Metadata } from 'next';
 import { PLAYBACK_IDS } from "@/config/playback-ids";
 
@@ -13,7 +13,8 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
-  const video = videoData[resolvedParams.id];
+  const videoId = resolvedParams.id as VideoId;
+  const video = videoData[videoId];
   
   return {
     title: `${video.title} | Free Open Source Stories Digital Archive`,
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function VideoPage({ params }: Props) {
   const resolvedParams = await params;
-  const videoId = resolvedParams.id;
+  const videoId = resolvedParams.id as VideoId;
   const currentVideo = videoData[videoId];
   
   if (!currentVideo) {
