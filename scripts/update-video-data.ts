@@ -47,9 +47,16 @@ async function updateVideoData() {
 
       // Also update the duration if it's in the mapping
       if (mapping.duration) {
-        const minutes = Math.floor(mapping.duration / 60);
+        const hours = Math.floor(mapping.duration / 3600);
+        const minutes = Math.floor((mapping.duration % 3600) / 60);
         const seconds = Math.round(mapping.duration % 60);
-        const durationStr = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        
+        let durationStr;
+        if (hours > 0) {
+          durationStr = `${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        } else {
+          durationStr = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
         
         const durationRegex = new RegExp(`(${mapping.storyId}":[\\s\\S]*?duration:)[^\\n]*`);
         updatedContent = updatedContent.replace(

@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs';
 import * as path from 'path';
 import { JSDOM } from 'jsdom';
-import { clips } from '../src/data/clips';
 import type { Clip } from '../src/types';
 
 interface Word {
@@ -294,7 +293,7 @@ function calculateLevenshteinRatio(s1: string, s2: string): number {
   return (maxLength - distance) / maxLength;
 }
 
-export async function realignClips(interviewId?: string): Promise<void> {
+export async function realignClips(clips: Clip[], interviewId?: string): Promise<Clip[]> {
   try {
     // Filter clips if interviewId is provided
     const clipsToProcess = interviewId 
@@ -303,7 +302,7 @@ export async function realignClips(interviewId?: string): Promise<void> {
 
     if (clipsToProcess.length === 0) {
       console.log('No clips found to process');
-      return;
+      return clips;
     }
 
     // Group clips by interview
@@ -366,21 +365,7 @@ export async function realignClips(interviewId?: string): Promise<void> {
       }
     }
 
-    // Write updated clips back to file
-    const clipsContent = `import type { Clip } from '../types';
-
-export const clips: Clip[] = ${JSON.stringify(updatedClips, null, 2)};
-
-// Remove the dynamic functions and just export the static data
-export default clips;`;
-
-    await fs.writeFile(
-      path.join(process.cwd(), 'src/data/clips.ts'),
-      clipsContent,
-      'utf-8'
-    );
-
-    console.log('\nSuccessfully updated clips file');
+    return updatedClips;
   } catch (error) {
     console.error('Error realigning clips:', error);
     throw error;
@@ -394,5 +379,23 @@ if (require.main === module) {
     console.error('Please provide an interview ID as an argument');
     process.exit(1);
   }
-  realignClips(interviewId).catch(console.error);
+  import('../src/data/clips').then(({ clips }) => {
+    realignClips(clips, interviewId).then(async (updatedClips) => {
+      // Write updated clips back to file
+      const clipsContent = `import type { Clip } from '../types';
+
+export const clips: Clip[] = ${JSON.stringify(updatedClips, null, 2)};
+
+// Remove the dynamic functions and just export the static data
+export default clips;`;
+
+      await fs.writeFile(
+        path.join(process.cwd(), 'src/data/clips.ts'),
+        clipsContent,
+        'utf-8'
+      );
+
+      console.log('\nSuccessfully updated clips file');
+    }).catch(console.error);
+  }).catch(console.error);
 } 

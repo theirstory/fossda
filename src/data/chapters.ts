@@ -5,8 +5,9 @@ import heatherChapters from './chapters/heather-meeker-index.json';
 import bruceChapters from './chapters/bruce-perens-index.json';
 import larryChapters from './chapters/larry-augustin-index.json';
 import rogerChapters from './chapters/roger-dannenberg-index.json';
-import bartChapters from './chapters/bart-index.json';
-import tristanChapters from './chapters/tristan-index.json';
+import bartChapters from './chapters/bart-decrem-index.json';
+import tristanChapters from './chapters/tristan-nitot-index.json';
+import lawrenceChapters from './chapters/lawrence-rosen-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -67,16 +68,22 @@ export const chapterData: Record<string, ChapterData> = {
     updated_at: "2024-03-20",
     metadata: processChapterMetadata(rogerChapters.metadata)
   },
-  "bart": {
+  "bart-decrem": {
     title: "Bart Decrem interview with FOSSDA",
     created_at: "2025-03-08",
     updated_at: "2025-03-08",
     metadata: processChapterMetadata(bartChapters.metadata)
   },
-  "tristan": {
+  "tristan-nitot": {
     title: "Tristan Nitot",
     created_at: "2025-03-09",
     updated_at: "2025-03-09",
     metadata: processChapterMetadata(tristanChapters.metadata)
+  },
+  "lawrence-rosen": {
+    title: "Lawrence (Larry) Rosen",
+    created_at: "2025-03-11",
+    updated_at: "2025-03-11",
+    metadata: processChapterMetadata(lawrenceChapters.metadata)
   }
 }; 

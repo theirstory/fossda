@@ -2,21 +2,93 @@ import type { Clip } from '../types';
 
 export const clips: Clip[] = [
   {
-    "id": "meeker-personal-journey",
-    "title": "Personal Journey into Open Source",
-    "startTime": 102.9,
-    "endTime": 141.054,
-    "duration": 38.154,
+    "id": "bart-from-pirate-radio-to-tech-entrepreneurship",
+    "title": "From Pirate Radio to Tech Entrepreneurship",
+    "startTime": 103.07,
+    "endTime": 141.95000000000002,
+    "duration": 38.880000000000024,
     "chapter": {
-      "id": "exposure",
-      "title": "Heather Meeker's Personal Journey into Technology"
+      "id": "moving-to-the-united-states-and-discovering-silicon-valley",
+      "title": "Moving to the United States and Discovering Silicon Valley"
     },
-    "interviewId": "introduction-to-fossda",
-    "interviewTitle": "Introduction to FOSSDA",
-    "transcript": "Heather Meeker: Now, it's only fair that I tell my own story and it's certainly not the most interesting story you're going to hear, but I was a computer programmer a long time ago back in the 1980s. It was so long ago, we called ourselves computer programmers instead of software engineers. I wrote code in compiled Basic. Now, for people who are in the tech industry, that is, you know, a very lightweight way of doing computer programming, but hey, you can't judge, because it actually worked really well for what we were doing at the time.",
+    "interviewId": "bart-decrem",
+    "interviewTitle": "Bart Decrem",
+    "transcript": "I started volunteering there and I made a little magazine, you know, compiling their Billboard chart...And so that's sort of a through line in my, in my career. It's like an aesthetic and cultural and philosophical political preference, you know.",
     "themes": [
       "exposure",
+      "community"
+    ]
+  },
+  {
+    "id": "bart-discovering-the-free-software-movement",
+    "title": "Discovering the Free Software Movement",
+    "startTime": 803.36,
+    "endTime": 980.36,
+    "duration": 177,
+    "chapter": {
+      "id": "leading-the-firefox-launch",
+      "title": "Leading the Firefox Launch"
+    },
+    "interviewId": "bart-decrem",
+    "interviewTitle": "Bart Decrem",
+    "transcript": "Andy was like, I've seen the light. Software should be free, at least the operating system...Software that should be part of the commons in the way that the phone system is, is a utility.",
+    "themes": [
+      "mission-values",
       "evolution"
+    ]
+  },
+  {
+    "id": "bart-joining-and-contributing-to-the-mozilla-foundation",
+    "title": "Joining and Contributing to the Mozilla Foundation",
+    "startTime": 1614.04,
+    "endTime": 1624.06,
+    "duration": 10.019999999999982,
+    "chapter": {
+      "id": "leading-the-firefox-launch",
+      "title": "Leading the Firefox Launch"
+    },
+    "interviewId": "bart-decrem",
+    "interviewTitle": "Bart Decrem",
+    "transcript": "Mitchell connected with Mitch and they were talking about, can we create a gnome fund, a mozilla Foundation? Uh, and I think the two of them put their heads together. And out of that came the Mozilla Foundation.",
+    "themes": [
+      "projects",
+      "community"
+    ]
+  },
+  {
+    "id": "bart-reflections-on-the-open-source-community",
+    "title": "Reflections on the Open Source Community",
+    "startTime": 6375.15,
+    "endTime": 6489.25,
+    "duration": 114.10000000000036,
+    "chapter": {
+      "id": "leaving-disney-and-founding-the-hobby",
+      "title": "Leaving Disney and Founding The Hobby"
+    },
+    "interviewId": "bart-decrem",
+    "interviewTitle": "Bart Decrem",
+    "transcript": "It's diverse community and people are there for different reasons...overindexes on folks with those drives building a better world and chasing our curiosity and sharing it with folks.",
+    "themes": [
+      "community",
+      "evolution"
+    ]
+  },
+  {
+    "id": "bart-concerns-and-hopes-for-the-future-of-the-internet",
+    "title": "Concerns and Hopes for the Future of the Internet",
+    "startTime": 6766.85,
+    "endTime": 6789.47,
+    "duration": 22.61999999999989,
+    "chapter": {
+      "id": "leaving-disney-and-founding-the-hobby",
+      "title": "Leaving Disney and Founding The Hobby"
+    },
+    "interviewId": "bart-decrem",
+    "interviewTitle": "Bart Decrem",
+    "transcript": "We believe that technology has a lot of risks...but we also have faith, you know, that technology can solve problems. And if we stay in the driver's seat, we can use this technology to solve important problems.",
+    "themes": [
+      "evolution",
+      "challenges"
     ]
   },
   {
@@ -36,6 +108,24 @@ export const clips: Clip[] = [
       "evolution",
       "mission-values",
       "community"
+    ]
+  },
+  {
+    "id": "perens-software-freedom-challenge",
+    "title": "Challenges in Open Source Success",
+    "startTime": 186.8,
+    "endTime": 238.5,
+    "duration": 51.7,
+    "chapter": {
+      "id": "challenges",
+      "title": "Open Source Success and Challenges"
+    },
+    "interviewId": "bruce-perens",
+    "interviewTitle": "Bruce Perens",
+    "transcript": "Bruce Perens: We did not achieve all of our goals. Actually, I would have liked it if people did appreciate the need for software freedom, which is something that is becoming more meaningful today, especially in the context of privacy and people seeing the large web companies, as sort of privacy eating giants, don't really have your best interest in mind. And open source, though very successful, I think, has evolved a extremely capable open source, exploitation industry. So, I'm not quite so happy about that, I actually am working on solutions.",
+    "themes": [
+      "challenges",
+      "evolution"
     ]
   },
   {
@@ -72,6 +162,24 @@ export const clips: Clip[] = [
     "themes": [
       "projects",
       "evolution"
+    ]
+  },
+  {
+    "id": "perens-volunteer-challenges",
+    "title": "Managing Volunteer Contributions",
+    "startTime": 1835.6,
+    "endTime": 2079.5,
+    "duration": 243.9,
+    "chapter": {
+      "id": "challenges",
+      "title": "Community Collaboration and its Challenges"
+    },
+    "interviewId": "bruce-perens",
+    "interviewTitle": "Bruce Perens",
+    "transcript": "Bruce Perens: Um, I think that the software collaboration was very successful. A lot of the organizational efforts were not. For example, during this time, I drove the creation of software in the public interest, non-profit that's still very active in supporting open source projects, and there was vast distrust among the Debian developers of software in the public interest.",
+    "themes": [
+      "challenges",
+      "community"
     ]
   },
   {
@@ -167,6 +275,24 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "goodkin-international-collaboration",
+    "title": "The Global Open Source Community",
+    "startTime": 3640.346,
+    "endTime": 3819.85,
+    "duration": 179.504,
+    "chapter": {
+      "id": "community",
+      "title": "International Open Source Collaboration"
+    },
+    "interviewId": "deb-goodkin",
+    "interviewTitle": "Deb Goodkin",
+    "transcript": "Karen Herman: Talk about the international aspect of it as well. Deb Goodkin: The, yeah, it's, I mean, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. Um, I think it's really important for us to figure out how to work well together.",
+    "themes": [
+      "community",
+      "evolution"
+    ]
+  },
+  {
     "id": "goodkin-open-source-challenges",
     "title": "Challenges in Open Source Development",
     "startTime": 4427.786,
@@ -201,24 +327,6 @@ export const clips: Clip[] = [
       "challenges",
       "community",
       "education"
-    ]
-  },
-  {
-    "id": "goodkin-international-collaboration",
-    "title": "The Global Open Source Community",
-    "startTime": 3640.346,
-    "endTime": 3819.85,
-    "duration": 179.504,
-    "chapter": {
-      "id": "community",
-      "title": "International Open Source Collaboration"
-    },
-    "interviewId": "deb-goodkin",
-    "interviewTitle": "Deb Goodkin",
-    "transcript": "Karen Herman: Talk about the international aspect of it as well. Deb Goodkin: The, yeah, it's, I mean, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. Um, I think it's really important for us to figure out how to work well together.",
-    "themes": [
-      "community",
-      "evolution"
     ]
   },
   {
@@ -258,24 +366,6 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "perens-software-freedom-challenge",
-    "title": "Challenges in Open Source Success",
-    "startTime": 186.8,
-    "endTime": 238.5,
-    "duration": 51.7,
-    "chapter": {
-      "id": "challenges",
-      "title": "Open Source Success and Challenges"
-    },
-    "interviewId": "bruce-perens",
-    "interviewTitle": "Bruce Perens",
-    "transcript": "Bruce Perens: We did not achieve all of our goals. Actually, I would have liked it if people did appreciate the need for software freedom, which is something that is becoming more meaningful today, especially in the context of privacy and people seeing the large web companies, as sort of privacy eating giants, don't really have your best interest in mind. And open source, though very successful, I think, has evolved a extremely capable open source, exploitation industry. So, I'm not quite so happy about that, I actually am working on solutions.",
-    "themes": [
-      "challenges",
-      "evolution"
-    ]
-  },
-  {
     "id": "meeker-legal-challenges",
     "title": "Navigating Uncharted Legal Territory",
     "startTime": 1338.805,
@@ -294,20 +384,38 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "perens-volunteer-challenges",
-    "title": "Managing Volunteer Contributions",
-    "startTime": 1835.6,
-    "endTime": 2079.5,
-    "duration": 243.9,
+    "id": "meeker-mission-values",
+    "title": "Why Open Source Matters",
+    "startTime": 1606.666,
+    "endTime": 1698.292,
+    "duration": 91.626,
     "chapter": {
-      "id": "challenges",
-      "title": "Community Collaboration and its Challenges"
+      "id": "mission-values",
+      "title": "Open Source as a Transformative Force"
     },
-    "interviewId": "bruce-perens",
-    "interviewTitle": "Bruce Perens",
-    "transcript": "Bruce Perens: Um, I think that the software collaboration was very successful. A lot of the organizational efforts were not. For example, during this time, I drove the creation of software in the public interest, non-profit that's still very active in supporting open source projects, and there was vast distrust among the Debian developers of software in the public interest.",
+    "interviewId": "heather-meeker",
+    "interviewTitle": "Heather Meeker",
+    "transcript": "Zack Ellis: When did you start to see open source as something transformative? Heather Meeker: I really saw it as transformative almost from the beginning. I did not realize and I'm not sure very many people would have realized at that time how huge it would get. But it was just so different from everything else that you learned as a technology lawyer. Like if you do a regular software license, you know, it has a particular form and some terms that you would expect. Open source is like bizarro world licensing. It's like exactly the opposite. It's like giving away rights and forcing people to give away rights instead of just like normal licensing.",
     "themes": [
-      "challenges",
+      "mission-values",
+      "evolution"
+    ]
+  },
+  {
+    "id": "meeker-evolution",
+    "title": "Evolution of Open Source in Business",
+    "startTime": 1727.012,
+    "endTime": 1842.754,
+    "duration": 115.742,
+    "chapter": {
+      "id": "evolution",
+      "title": "Impact of Open Source on Business and Collaboration"
+    },
+    "interviewId": "heather-meeker",
+    "interviewTitle": "Heather Meeker",
+    "transcript": "Heather Meeker: so open source is used by everybody now. Like almost everyone in the technology industry now actually contributes to it. I mean, it's everywhere. We're using it right this minute to do this interview. It's in your phone. It's everywhere, right? And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. Right. And and today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact. You know, they were just strictly competitors and now they're collaborators. And even there are there are only like maybe two, three companies that are known for not doing it now. Right. If you go back 25 years, like no one was doing it. They were terrified about what these licenses meant and everything. So it's completely been absorbed in business. And that, you know, if you believe in markets, which I do because I studied economics and all that stuff, that wouldn't happen unless it worked. Right. It actually works as a paradigm. Like it produced a lot of really great stuff. And over that time, people became convinced of that and they overcame their fear about these licensing paradigms they didn't understand. So they got over the fear and then it really changed their behavior. So to me, it's changed everything about the way the technology industry operates.",
+    "themes": [
+      "evolution",
       "community"
     ]
   },
@@ -348,39 +456,21 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "meeker-mission-values",
-    "title": "Why Open Source Matters",
-    "startTime": 1606.666,
-    "endTime": 1698.292,
-    "duration": 91.626,
+    "id": "meeker-personal-journey",
+    "title": "Personal Journey into Open Source",
+    "startTime": 102.9,
+    "endTime": 141.054,
+    "duration": 38.154,
     "chapter": {
-      "id": "mission-values",
-      "title": "Open Source as a Transformative Force"
+      "id": "exposure",
+      "title": "Heather Meeker's Personal Journey into Technology"
     },
-    "interviewId": "heather-meeker",
-    "interviewTitle": "Heather Meeker",
-    "transcript": "Zack Ellis: When did you start to see open source as something transformative? Heather Meeker: I really saw it as transformative almost from the beginning. I did not realize and I'm not sure very many people would have realized at that time how huge it would get. But it was just so different from everything else that you learned as a technology lawyer. Like if you do a regular software license, you know, it has a particular form and some terms that you would expect. Open source is like bizarro world licensing. It's like exactly the opposite. It's like giving away rights and forcing people to give away rights instead of just like normal licensing.",
+    "interviewId": "introduction-to-fossda",
+    "interviewTitle": "Introduction to FOSSDA",
+    "transcript": "Heather Meeker: Now, it's only fair that I tell my own story and it's certainly not the most interesting story you're going to hear, but I was a computer programmer a long time ago back in the 1980s. It was so long ago, we called ourselves computer programmers instead of software engineers. I wrote code in compiled Basic. Now, for people who are in the tech industry, that is, you know, a very lightweight way of doing computer programming, but hey, you can't judge, because it actually worked really well for what we were doing at the time.",
     "themes": [
-      "mission-values",
+      "exposure",
       "evolution"
-    ]
-  },
-  {
-    "id": "meeker-evolution",
-    "title": "Evolution of Open Source in Business",
-    "startTime": 1727.012,
-    "endTime": 1842.754,
-    "duration": 115.742,
-    "chapter": {
-      "id": "evolution",
-      "title": "Impact of Open Source on Business and Collaboration"
-    },
-    "interviewId": "heather-meeker",
-    "interviewTitle": "Heather Meeker",
-    "transcript": "Heather Meeker: so open source is used by everybody now. Like almost everyone in the technology industry now actually contributes to it. I mean, it's everywhere. We're using it right this minute to do this interview. It's in your phone. It's everywhere, right? And if you go back, I guess, 25 years, the notion that that private companies would do collaborate was not an idea. I mean, it wasn't a thing that it wasn't a thing. Right. And and today you have all these like big organizations and companies collaborating on things and giving stuff away. And that just wasn't done. I would say open source changed the entire face of technology because it it changed a paradigm for how people interact. You know, they were just strictly competitors and now they're collaborators. And even there are there are only like maybe two, three companies that are known for not doing it now. Right. If you go back 25 years, like no one was doing it. They were terrified about what these licenses meant and everything. So it's completely been absorbed in business. And that, you know, if you believe in markets, which I do because I studied economics and all that stuff, that wouldn't happen unless it worked. Right. It actually works as a paradigm. Like it produced a lot of really great stuff. And over that time, people became convinced of that and they overcame their fear about these licensing paradigms they didn't understand. So they got over the fear and then it really changed their behavior. So to me, it's changed everything about the way the technology industry operates.",
-    "themes": [
-      "evolution",
-      "community"
     ]
   },
   {
@@ -436,24 +526,6 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "coining-open-source",
-    "title": "Coining 'Open Source'",
-    "startTime": 3475.903,
-    "endTime": 3538.787,
-    "duration": 62.884,
-    "transcript": "We got Linus on the phone, and ultimately, the idea was we're going to brand this open source, because the openness of the source code was what was important. Bruce Perens, at the time, the head of the Debian project, had created a set of definitions for software that could be part of Debian. And we realized the world here needed to separate the notion of software in which the source code is available from free software, and we coined the term open source to do that. And we all agreed to promote and develop this, and that became the genesis for the term open source. And this was in 1998.",
-    "themes": [
-      "evolution",
-      "mission-values"
-    ],
-    "chapter": {
-      "id": "evolution",
-      "title": "The Genesis of Open Source"
-    },
-    "interviewId": "larry-augustin",
-    "interviewTitle": "Larry Augustin"
-  },
-  {
     "id": "augustin-bell-labs",
     "title": "Bell Labs Opportunity",
     "startTime": 761.892,
@@ -490,6 +562,25 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "augustin-entrepreneurial-advice",
+    "title": "Bootstrapping and Persistence in Entrepreneurship",
+    "startTime": 1832.79,
+    "endTime": 1900.669,
+    "duration": 67.879,
+    "chapter": {
+      "id": "challenges",
+      "title": "Entrepreneurial Lessons and Growth"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "This is just an amazing way of bootstrapping. And to me, I always look for today, I love the entrepreneurial part of the world and people launching and building things. We got people to send us checks for the computers they wanted, because we were selling a physical device. And to me, these things were hugely expensive. I mean, somewhere between $1,000 and $3,000. And I couldn't afford to buy the parts to send someone. People sent us a check ahead of time. We would cash the check, go buy the parts, have an assembly party in the living room of my apartment and ship them out. And that was what the business was initially.",
+    "themes": [
+      "challenges",
+      "evolution",
+      "mission-values"
+    ]
+  },
+  {
     "id": "augustin-va-linux-founding",
     "title": "The Vision Behind VA Linux",
     "startTime": 2147.371,
@@ -506,6 +597,24 @@ export const clips: Clip[] = [
       "evolution",
       "mission-values",
       "projects"
+    ]
+  },
+  {
+    "id": "augustin-stanford-yahoo",
+    "title": "Stanford, Yahoo, Sequoia, and VA Linux's First Venture Funding",
+    "startTime": 2276.883,
+    "endTime": 2320.433,
+    "duration": 43.55,
+    "chapter": {
+      "id": "evolution",
+      "title": "Early Business Development"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin",
+    "transcript": "As I was doing this, two of my friends from Stanford had raised venture funding. Two gentlemen by the name of Jerry Yang and David Filo. You may recall those names as their little company they had started was Yahoo. Dave and Jerry were both PhD students in EDA, Electronic Design Automation, at Stanford. They had started this little directory of the web on a machine under their desk in their office at Stanford.",
+    "themes": [
+      "evolution",
+      "community"
     ]
   },
   {
@@ -530,41 +639,22 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "augustin-stanford-yahoo",
-    "title": "Stanford, Yahoo, Sequoia, and VA Linux's First Venture Funding",
-    "startTime": 2276.883,
-    "endTime": 2320.433,
-    "duration": 43.55,
-    "chapter": {
-      "id": "evolution",
-      "title": "Early Business Development"
-    },
-    "interviewId": "larry-augustin",
-    "interviewTitle": "Larry Augustin",
-    "transcript": "As I was doing this, two of my friends from Stanford had raised venture funding. Two gentlemen by the name of Jerry Yang and David Filo. You may recall those names as their little company they had started was Yahoo. Dave and Jerry were both PhD students in EDA, Electronic Design Automation, at Stanford. They had started this little directory of the web on a machine under their desk in their office at Stanford.",
+    "id": "coining-open-source",
+    "title": "Coining 'Open Source'",
+    "startTime": 3475.903,
+    "endTime": 3538.787,
+    "duration": 62.884,
+    "transcript": "We got Linus on the phone, and ultimately, the idea was we're going to brand this open source, because the openness of the source code was what was important. Bruce Perens, at the time, the head of the Debian project, had created a set of definitions for software that could be part of Debian. And we realized the world here needed to separate the notion of software in which the source code is available from free software, and we coined the term open source to do that. And we all agreed to promote and develop this, and that became the genesis for the term open source. And this was in 1998.",
     "themes": [
-      "evolution",
-      "community"
-    ]
-  },
-  {
-    "id": "augustin-entrepreneurial-advice",
-    "title": "Bootstrapping and Persistence in Entrepreneurship",
-    "startTime": 1832.79,
-    "endTime": 1900.669,
-    "duration": 67.879,
-    "chapter": {
-      "id": "challenges",
-      "title": "Entrepreneurial Lessons and Growth"
-    },
-    "interviewId": "larry-augustin",
-    "interviewTitle": "Larry Augustin",
-    "transcript": "This is just an amazing way of bootstrapping. And to me, I always look for today, I love the entrepreneurial part of the world and people launching and building things. We got people to send us checks for the computers they wanted, because we were selling a physical device. And to me, these things were hugely expensive. I mean, somewhere between $1,000 and $3,000. And I couldn't afford to buy the parts to send someone. People sent us a check ahead of time. We would cash the check, go buy the parts, have an assembly party in the living room of my apartment and ship them out. And that was what the business was initially.",
-    "themes": [
-      "challenges",
       "evolution",
       "mission-values"
-    ]
+    ],
+    "chapter": {
+      "id": "evolution",
+      "title": "The Genesis of Open Source"
+    },
+    "interviewId": "larry-augustin",
+    "interviewTitle": "Larry Augustin"
   },
   {
     "id": "augustin-learning-philosophy",
@@ -583,6 +673,114 @@ export const clips: Clip[] = [
       "education",
       "mission-values",
       "challenges"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-early-exposure-to-computing-at-dartmouth",
+    "title": "Early Exposure to Computing at Dartmouth",
+    "startTime": 200.37,
+    "endTime": 290.37,
+    "duration": 90,
+    "chapter": {
+      "id": "childhood-and-education",
+      "title": "Childhood and Education"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "I studied computer science before there was a computer science department. Uh, I became a devotee of that. I played with the computers that they made available to all of us. They had computers in the student rooms...",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-first-programming-job-and-shift-to-rca",
+    "title": "First Programming Job and Shift to RCA",
+    "startTime": 354.16,
+    "endTime": 594.1600000000001,
+    "duration": 240.00000000000006,
+    "chapter": {
+      "id": "graduate-studies-and-early-career",
+      "title": "Graduate Studies and Early Career"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "The first program I remember working on was kind of weird. It was, um, it was a program to try to determine what people's sign was in their, uh, when they were born and what kinds of influences the planets were having on them...",
+    "themes": [
+      "projects",
+      "challenges"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-discovering-open-source-through-personal-connections",
+    "title": "Discovering Open Source Through Personal Connections",
+    "startTime": 1312.33,
+    "endTime": 1402.33,
+    "duration": 90,
+    "chapter": {
+      "id": "transition-to-law-and-open-source",
+      "title": "Transition to Law and Open Source"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "One of the friends that I met...worked for Xerox and, uh, developed Small talk...he said, you know, I'm, I'm working with this organization on the East Coast called the Open Source Initiative...",
+    "themes": [
+      "projects",
+      "mission-values"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-interaction-with-richard-stallman-and-free-software-foundation",
+    "title": "Interaction with Richard Stallman and Free Software Foundation",
+    "startTime": 1695.970,
+    "endTime": 1804.68,
+    "duration": 108.71,
+    "chapter": {
+      "id": "interactions-with-richard-stallman-and-osi",
+      "title": "Interactions with Richard Stallman and OSI"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "Karen Herman: Can you talk a little bit about Richard Stallman or your relationship with him? Larry Rosen: I met him through ISI. He was not on the OSI board, but he was, of course, a very powerful figure in the open source community.",
+    "themes": [
+      "community",
+      "challenges"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-experiences-and-lessons-at-apache-foundation",
+    "title": "Experiences and Lessons at Apache Foundation",
+    "startTime": 2813.39,
+    "endTime": 2993.39,
+    "duration": 180,
+    "chapter": {
+      "id": "writing-and-advocacy-in-open-source",
+      "title": "Writing and Advocacy in Open Source"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "I became a member of Apache...had a different philosophy, a very open philosophy, a philosophy where software could be developed into derivative works...",
+    "themes": [
+      "evolution",
+      "projects"
+    ]
+  },
+  {
+    "id": "lawrence-rosen-reflecting-on-the-success-of-open-source",
+    "title": "Reflecting on the Success of Open Source",
+    "startTime": 3878.62,
+    "endTime": 4028.62,
+    "duration": 150,
+    "chapter": {
+      "id": "reflections-on-open-source-and-legacy",
+      "title": "Reflections on Open Source and Legacy"
+    },
+    "interviewId": "lawrence-rosen",
+    "interviewTitle": "Lawrence (Larry) Rosen",
+    "transcript": "I think open source has been an enormous, enormous success...I want to accept some credit for having made good friends, for having not made as many enemies as I've made friends...",
+    "themes": [
+      "evolution",
+      "community"
     ]
   },
   {
@@ -678,96 +876,6 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "bart-from-pirate-radio-to-tech-entrepreneurship",
-    "title": "From Pirate Radio to Tech Entrepreneurship",
-    "startTime": 103.07,
-    "endTime": 141.95000000000002,
-    "duration": 38.880000000000024,
-    "chapter": {
-      "id": "moving-to-the-united-states-and-discovering-silicon-valley",
-      "title": "Moving to the United States and Discovering Silicon Valley"
-    },
-    "interviewId": "bart",
-    "interviewTitle": "Bart Decrem",
-    "transcript": "I started volunteering there and I made a little magazine, you know, compiling their Billboard chart...And so that's sort of a through line in my, in my career. It's like an aesthetic and cultural and philosophical political preference, you know.",
-    "themes": [
-      "exposure",
-      "community"
-    ]
-  },
-  {
-    "id": "bart-discovering-the-free-software-movement",
-    "title": "Discovering the Free Software Movement",
-    "startTime": 803.36,
-    "endTime": 980.36,
-    "duration": 177,
-    "chapter": {
-      "id": "leading-the-firefox-launch",
-      "title": "Leading the Firefox Launch"
-    },
-    "interviewId": "bart",
-    "interviewTitle": "Bart Decrem",
-    "transcript": "Andy was like, I've seen the light. Software should be free, at least the operating system...Software that should be part of the commons in the way that the phone system is, is a utility.",
-    "themes": [
-      "mission-values",
-      "evolution"
-    ]
-  },
-  {
-    "id": "bart-joining-and-contributing-to-the-mozilla-foundation",
-    "title": "Joining and Contributing to the Mozilla Foundation",
-    "startTime": 1614.04,
-    "endTime": 1624.06,
-    "duration": 10.019999999999982,
-    "chapter": {
-      "id": "leading-the-firefox-launch",
-      "title": "Leading the Firefox Launch"
-    },
-    "interviewId": "bart",
-    "interviewTitle": "Bart Decrem",
-    "transcript": "Mitchell connected with Mitch and they were talking about, can we create a gnome fund, a mozilla Foundation? Uh, and I think the two of them put their heads together. And out of that came the Mozilla Foundation.",
-    "themes": [
-      "projects",
-      "community"
-    ]
-  },
-  {
-    "id": "bart-reflections-on-the-open-source-community",
-    "title": "Reflections on the Open Source Community",
-    "startTime": 6375.15,
-    "endTime": 6489.25,
-    "duration": 114.10000000000036,
-    "chapter": {
-      "id": "leaving-disney-and-founding-the-hobby",
-      "title": "Leaving Disney and Founding The Hobby"
-    },
-    "interviewId": "bart",
-    "interviewTitle": "Bart Decrem",
-    "transcript": "It's diverse community and people are there for different reasons...overindexes on folks with those drives building a better world and chasing our curiosity and sharing it with folks.",
-    "themes": [
-      "community",
-      "evolution"
-    ]
-  },
-  {
-    "id": "bart-concerns-and-hopes-for-the-future-of-the-internet",
-    "title": "Concerns and Hopes for the Future of the Internet",
-    "startTime": 6766.85,
-    "endTime": 6789.47,
-    "duration": 22.61999999999989,
-    "chapter": {
-      "id": "leaving-disney-and-founding-the-hobby",
-      "title": "Leaving Disney and Founding The Hobby"
-    },
-    "interviewId": "bart",
-    "interviewTitle": "Bart Decrem",
-    "transcript": "We believe that technology has a lot of risks...but we also have faith, you know, that technology can solve problems. And if we stay in the driver's seat, we can use this technology to solve important problems.",
-    "themes": [
-      "evolution",
-      "challenges"
-    ]
-  },
-  {
     "id": "tristan-early-exposure-to-computers-the-trs-80",
     "title": "Early Exposure to Computers: The TRS-80",
     "startTime": 47.2,
@@ -777,7 +885,7 @@ export const clips: Clip[] = [
       "id": "introduction-and-early-interest-in-computing",
       "title": "Introduction and Early Interest in Computing"
     },
-    "interviewId": "tristan",
+    "interviewId": "tristan-nitot",
     "interviewTitle": "Tristan Nitot",
     "transcript": "Tristan Nitot: ...for some reason, a friend of my parents' bought a TRS-80...and thought 'oh, the young Tristan may be interested in this new thing'. And so, he was going on vacation for two weeks and so, before going to vacation, he dropped it at the house...and for 15 days in a row, I was stuck in front of it. You know, opening the manual page 1 and starting to read...",
     "themes": [
@@ -794,7 +902,7 @@ export const clips: Clip[] = [
       "id": "challenges-of-open-source-adoption",
       "title": "Challenges of Open Source Adoption"
     },
-    "interviewId": "tristan",
+    "interviewId": "tristan-nitot",
     "interviewTitle": "Tristan Nitot",
     "transcript": "Tristan Nitot: I made it into Netscape, it was in '97 and it was a lot of work, but it was fun with smart people. In '98, then Netscape decides to open up the source code for Netscape Communicator.",
     "themes": [
@@ -806,13 +914,13 @@ export const clips: Clip[] = [
     "id": "tristan-the-creation-of-the-mozilla-foundation",
     "title": "The Creation of the Mozilla Foundation",
     "startTime": 1139.6,
-    "endTime": 1259.300,
+    "endTime": 1259.3,
     "duration": 119.7,
     "chapter": {
       "id": "the-creation-of-the-mozilla-foundation",
       "title": "The Creation of the Mozilla Foundation"
     },
-    "interviewId": "tristan",
+    "interviewId": "tristan-nitot",
     "interviewTitle": "Tristan Nitot",
     "transcript": "Netscape made - well, created - the Mozilla project and along with it came Bugzilla. Which was a complete game changer, even if it was not beautiful and not super easy to use, it was amazing.",
     "themes": [
@@ -823,14 +931,14 @@ export const clips: Clip[] = [
   {
     "id": "tristan-launching-firefox-and-challenging-the-web",
     "title": "Launching Firefox and Challenging the Web",
-    "startTime": 3502.600,
-    "endTime": 3920.400,
+    "startTime": 3502.6,
+    "endTime": 3920.4,
     "duration": 417.8,
     "chapter": {
       "id": "building-mozilla-europe-and-firefox-s-growth",
       "title": "Building Mozilla Europe and Firefox's Growth"
     },
-    "interviewId": "tristan",
+    "interviewId": "tristan-nitot",
     "interviewTitle": "Tristan Nitot",
     "transcript": "Tristan Nitot:...Firefox was making progress...it started to be the response to that. It was delivering, really...People got excited. It became viral...And so I stayed there, making sure that we would launch Firefox in Europe, probably even though I was kind of starving financially...",
     "themes": [
@@ -849,7 +957,7 @@ export const clips: Clip[] = [
       "id": "the-power-of-open-source-a-key-demo",
       "title": "The Power of Open Source: A Key Demo"
     },
-    "interviewId": "tristan",
+    "interviewId": "tristan-nitot",
     "interviewTitle": "Tristan Nitot",
     "transcript": "Tristan Nitot:...Now, there is software everywhere. And if I want to be free as a citizen, then I need free software...the guy who controls the software, kind of more or less controls my life decides...And if I want to have control over that...I need free software.",
     "themes": [

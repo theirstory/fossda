@@ -9,6 +9,7 @@ import dotenv from 'dotenv';
 import { videoData } from '../src/data/videos';
 import { chapterData } from '../src/data/chapters';
 import { realignClips } from './realign-clips';
+import { ChapterMetadata } from '../src/types/transcript';
 
 // Load environment variables from .env.local
 dotenv.config({ path: '.env.local' });
@@ -145,22 +146,36 @@ type InterviewId = keyof typeof videoData;
 function createValidVariableName(id: string): InterviewId {
   // Map of known IDs to their meaningful names
   const nameMap: Record<string, InterviewId> = {
-    '61929022c65d8e0005450522': 'tristan',
+    '61929022c65d8e0005450522': 'tristan-nitot',
+    '6722525779bcaab8e35fa012': 'lawrence-rosen',
+    '61929022c65d8e0005450523': 'bart-decrem'
     // Add more mappings here as needed
   };
 
-  // If we have a meaningful name for this ID, use it
+  // First check if it's a numeric ID that maps to a known name
   if (nameMap[id]) {
     return nameMap[id];
   }
 
-  // Otherwise, use the ID itself if it's already a valid name
-  const cleanId = id.replace(/[^a-zA-Z0-9]/g, '');
+  // Then check if it's already a valid VideoId
+  if (id in videoData) {
+    return id as InterviewId;
+  }
+
+  // Finally try cleaning the ID and check again
+  const cleanId = id.toLowerCase().replace(/[^a-z0-9-]/g, '');
   if (cleanId in videoData) {
     return cleanId as InterviewId;
   }
 
-  throw new Error(`Invalid interview ID: ${id}`);
+  // If we get here, show a helpful error message with valid options
+  const validNumericIds = Object.keys(nameMap).join('\n  ');
+  const validNamedIds = Object.keys(videoData).join('\n  ');
+  throw new Error(
+    `Invalid interview ID: ${id}\n\n` +
+    `Please use either a numeric story ID:\n  ${validNumericIds}\n\n` +
+    `Or a named ID:\n  ${validNamedIds}`
+  );
 }
 
 async function createClipsFromStory(interviewId: string) {
@@ -246,13 +261,45 @@ async function createClipsFromStory(interviewId: string) {
       return clip.duration >= MIN_DURATION && clip.duration <= MAX_DURATION;
     }));
 
-    // Combine with existing clips
-    const updatedClips = [...clips, ...newClips];
+    // Filter out any existing clips for this interview
+    const existingClips = clips.filter(clip => clip.interviewId !== safeId);
+    
+    // Create IDs for new clips and ensure chapter data is included
+    const newClipsWithIds = newClips.map(clip => {
+      const chapterMetadata = chapterData[safeId]?.metadata?.find((chapter: ChapterMetadata) => 
+        chapter.title === clip.chapter?.title || 
+        chapter.id === clip.chapter?.id
+      );
+
+      return {
+        ...clip,
+        id: `${safeId}-${clip.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`,
+        chapter: {
+          id: chapterMetadata?.id || clip.chapter?.id || 'unknown',
+          title: chapterMetadata?.title || clip.chapter?.title || clip.title
+        }
+      };
+    });
+
+    // Combine existing clips (excluding this interview) with new clips
+    const updatedClips = [...existingClips, ...newClipsWithIds];
+
+    // Sort clips by interviewId and startTime
+    updatedClips.sort((a, b) => {
+      if (a.interviewId !== b.interviewId) {
+        return a.interviewId.localeCompare(b.interviewId);
+      }
+      return a.startTime - b.startTime;
+    });
+
+    // Realign the timecodes
+    console.log('\nRealigning clip timecodes...');
+    const realignedClips = await realignClips(updatedClips, safeId);
 
     // Format the clips array as a string with proper indentation
     const clipsContent = `import type { Clip } from '../types';
 
-export const clips: Clip[] = ${JSON.stringify(updatedClips, null, 2)};
+export const clips: Clip[] = ${JSON.stringify(realignedClips, null, 2)};
 
 // Remove the dynamic functions and just export the static data
 export default clips;`;
@@ -263,10 +310,6 @@ export default clips;`;
       clipsContent,
       'utf-8'
     );
-
-    // After writing the clips file, realign the timecodes
-    console.log('\nRealigning clip timecodes...');
-    await realignClips(safeId);
 
     console.log('\nAll done! Clips have been created and timecodes have been realigned.');
 
@@ -289,7 +332,12 @@ export default clips;`;
 if (require.main === module) {
   const interviewId = process.argv[2];
   if (!interviewId) {
-    console.error('Please provide an interview ID as an argument');
+    console.error('\nPlease provide an interview ID as an argument.\n');
+    console.error('You can use either:');
+    console.error('1. A numeric story ID, e.g.:');
+    console.error('   npx ts-node scripts/create-clips.ts 6722525779bcaab8e35fa012\n');
+    console.error('2. A named ID, e.g.:');
+    console.error('   npx ts-node scripts/create-clips.ts lawrence-rosen\n');
     process.exit(1);
   }
   createClipsFromStory(interviewId).catch(console.error);

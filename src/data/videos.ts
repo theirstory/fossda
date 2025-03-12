@@ -3,13 +3,14 @@ import { VideoData } from "@/types/transcript";
 // Define a type for all valid video IDs
 export type VideoId = 
   | "introduction-to-fossda"
-  | "tristan"
+  | "tristan-nitot"
   | "deb-goodkin"
   | "heather-meeker"
   | "bruce-perens"
   | "larry-augustin"
   | "roger-dannenberg"
-  | "bart";
+  | "bart-decrem"
+  | "lawrence-rosen";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData: Record<VideoId, VideoData> = {
@@ -23,10 +24,18 @@ export const videoData: Record<VideoId, VideoData> = {
     movement, preserving their experiences for future generations who will carry open source forward into the 21st century.`,
     sentence: "An introduction to the Free and Open Source Stories Digital Archive and its mission."
   },
-  "tristan": {
-    id: "tristan",
+  "lawrence-rosen": {
+    id: "lawrence-rosen",
+    title: "Lawrence (Larry) Rosen",
+    duration: "1:18:47",
+    thumbnail: "https://image.mux.com/isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A/animated.gif?width=320&start=5&end=10",
+    summary: "Interview with Lawrence (Larry) Rosen discussing their journey and contributions to open source software.",
+    sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
+  },
+  "tristan-nitot": {
+    id: "tristan-nitot",
     title: "Tristan Nitot",
-    duration: "72:24",
+    duration: "1:12:24",
     thumbnail: "/thumbnails/tristan-nitot.png",
     summary: "Tristan Nitot tells the story of Netscape, AOL, Mozilla and Firefox, and how they shaped the modern Web discussing their journey and contributions to open source software.",
     sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
@@ -71,10 +80,10 @@ export const videoData: Record<VideoId, VideoData> = {
     summary: `Roger Dannenberg, a professor at Carnegie Mellon University, shares his journey as the co-creator of Audacity, one of the most widely used open-source audio editors. His unique perspective combines computer science, art, and music, offering insights into how open source can empower creative tools and make them accessible to everyone.`,
     sentence: "From research project to worldwide impact - the story of how Audacity became one of the most popular open source audio tools."
   },
-  "bart": {
-    id: "bart",
+  "bart-decrem": {
+    id: "bart-decrem",
     title: "Bart Decrem",
-    duration: "1:15:00", // We'll need to update this with the actual duration
+    duration: "1:15:00",
     thumbnail: "https://image.mux.com/31cm889ntl2r00w9514HD1w6v02m98aSOThhZ7EyRbGzo/animated.gif?width=320&start=5&end=10",
     summary: `Bart Decrem shares his journey in the open source movement and his role in various open source initiatives. His interview provides valuable insights into the evolution of open source software and its impact on the technology industry.`,
     sentence: "From open source advocacy to entrepreneurship - exploring the intersection of open source and business innovation."

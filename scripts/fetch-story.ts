@@ -134,8 +134,10 @@ async function fetchStory(storyId: string) {
     // Get the interview ID from the story title
     const interviewId = story.title
       .toLowerCase()
-      .split(' ')[0]
-      .replace(/[^a-z0-9]/g, '-');
+      .split(' ')
+      .slice(0, 2)
+      .join('-')
+      .replace(/[^a-z0-9-]/g, '');
 
     const transcriptPath = path.join(transcriptsDir, `${interviewId}.html`);
     await fs.writeFile(transcriptPath, transcriptHtml);

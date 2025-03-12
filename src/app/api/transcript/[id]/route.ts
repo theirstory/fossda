@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { videoData, VideoId } from '@/data/videos';
+import type { VideoData } from '@/types/transcript';
 
 export async function GET(
   request: Request,
@@ -7,14 +8,14 @@ export async function GET(
 ) {
   const params = await props.params;
   const id = params.id as VideoId;
-  const video = videoData[id];
+  const video = videoData[id] as VideoData;
 
-  if (!video || !video.transcript) {
+  if (!video) {
     return NextResponse.json(
-      { error: 'Transcript not found' },
+      { error: 'Video not found' },
       { status: 404 }
     );
   }
 
-  return NextResponse.json({ transcript: video.transcript });
+  return NextResponse.json({ transcript: video.transcript || [] });
 } 

@@ -3,7 +3,11 @@ import introChapters from './introduction-to-fossda-index.json';
 import debChapters from './deb-goodkin-index.json';
 import heatherChapters from './heather-meeker-index.json';
 import bruceChapters from './bruce-perens-index.json';
-import tristanChapters from './tristan-index.json';
+import larryChapters from './larry-augustin-index.json';
+import rogerChapters from './roger-dannenberg-index.json';
+import bartChapters from './bart-decrem-index.json';
+import tristanChapters from './tristan-nitot-index.json';
+import lawrenceChapters from './lawrence-rosen-index.json';
 
 // First, let's create a type for our chapter data
 interface ChapterData {
@@ -73,6 +77,30 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2024-03-09T00:00:00Z",
     updated_at: "2024-03-09T00:00:00Z",
     metadata: processChapterMetadata(tristanChapters.metadata || [])
+  },
+  'larry-augustin': {
+    title: "Larry Augustin",
+    created_at: "2024-03-09T00:00:00Z",
+    updated_at: "2024-03-09T00:00:00Z",
+    metadata: processChapterMetadata(larryChapters.metadata || [])
+  },
+  'roger-dannenberg': {
+    title: "Roger Dannenberg",
+    created_at: "2024-03-09T00:00:00Z",
+    updated_at: "2024-03-09T00:00:00Z",
+    metadata: processChapterMetadata(rogerChapters.metadata || [])
+  },
+  'bart-decrem': {
+    title: "Bart Decrem",
+    created_at: "2024-03-09T00:00:00Z",
+    updated_at: "2024-03-09T00:00:00Z",
+    metadata: processChapterMetadata(bartChapters.metadata || [])
+  },
+  'lawrence-rosen': {
+    title: "Lawrence Rosen",
+    created_at: "2024-03-09T00:00:00Z",
+    updated_at: "2024-03-09T00:00:00Z",
+    metadata: processChapterMetadata(lawrenceChapters.metadata || [])
   }
 };
 

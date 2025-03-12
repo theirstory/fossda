@@ -1,0 +1,124 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Background",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Karen Herman introduces the interview with Larry Rosen for the Free Stories Digital Archives Foundation. Larry shares his birth details, mentioning he was born in New York City on June 29, 1945.",
+      "keywords": "interview, introduction, New York City, birth, childhood"
+    },
+    {
+      "title": "Childhood and Education",
+      "timecode": "00:01:09",
+      "time": {
+        "start": 69,
+        "end": null
+      },
+      "synopsis": "Larry describes his upbringing in Colorado after his family moved for his father's health. He discusses his early education in Thornton, Colorado, and later attending Dartmouth College, where he studied English and computer science.",
+      "keywords": "childhood, Colorado, Dartmouth College, education, computer science"
+    },
+    {
+      "title": "Graduate Studies and Early Career",
+      "timecode": "00:05:05",
+      "time": {
+        "start": 305,
+        "end": null
+      },
+      "synopsis": "Larry talks about his time at the University of North Carolina at Chapel Hill, his dissatisfaction with the program, and his decision to leave. He moves to New York City and takes his first programming job, working on astrology software before joining RCA to develop database systems.",
+      "keywords": "graduate school, University of North Carolina, RCA, programming, database systems"
+    },
+    {
+      "title": "Career in the Tech Industry",
+      "timecode": "00:10:49",
+      "time": {
+        "start": 649,
+        "end": null
+      },
+      "synopsis": "Larry describes his transition from RCA to Memorex in California, where his job was unexpectedly cut upon arrival. He later finds work at ROLM, a telecommunications company, which is later acquired by IBM, and then Siemens. He discusses the challenges of corporate culture and bureaucracy.",
+      "keywords": "Memorex, ROLM, IBM, Siemens, telecommunications, career transitions"
+    },
+    {
+      "title": "Transition to Law and Open Source",
+      "timecode": "00:21:22",
+      "time": {
+        "start": 1282,
+        "end": null
+      },
+      "synopsis": "Larry shares his motivation for studying law at Santa Clara University while working at Stanford. He details his growing interest in open source licensing and his introduction to the Open Source Initiative (OSI), where he contributed his expertise in both law and software development.",
+      "keywords": "law school, Santa Clara University, Stanford, open source, Open Source Initiative (OSI)"
+    },
+    {
+      "title": "Interactions with Richard Stallman and OSI",
+      "timecode": "00:28:15",
+      "time": {
+        "start": 1695,
+        "end": null
+      },
+      "synopsis": "Larry recounts his interactions with Richard Stallman, his critiques of the GNU General Public License (GPL), and ideological differences between the Free Software Foundation and OSI. He describes the challenges of reconciling open source philosophies with commercial interests.",
+      "keywords": "Richard Stallman, Free Software Foundation, GPL, open source licensing, OSI"
+    },
+    {
+      "title": "Open Source Licensing and Philosophy",
+      "timecode": "00:36:54",
+      "time": {
+        "start": 2214,
+        "end": null
+      },
+      "synopsis": "Larry explains the differences between OSI and the Free Software Foundation's licensing approaches. He discusses the balance between openness and commercialization in open source software, and his concerns with the proliferation of licenses.",
+      "keywords": "open source licenses, GPL, OSI, commercialization, software development"
+    },
+    {
+      "title": "Writing and Advocacy in Open Source",
+      "timecode": "00:42:51",
+      "time": {
+        "start": 2571,
+        "end": null
+      },
+      "synopsis": "Larry talks about writing his book on open source licensing, aiming to clarify legal principles for developers. He reflects on the impact of his book, industry reception, and his advocacy efforts to bridge gaps between different open source philosophies.",
+      "keywords": "book, open source advocacy, licensing, software law, legal principles"
+    },
+    {
+      "title": "Reflections on Open Source and Legacy",
+      "timecode": "00:57:48",
+      "time": {
+        "start": 3468,
+        "end": null
+      },
+      "synopsis": "Larry reflects on his career in law and technology, his litigation work, and his role in shaping open source policy. He discusses the success of open source and its expansion into other fields like scientific research.",
+      "keywords": "career reflection, open source success, litigation, scientific community, legacy"
+    },
+    {
+      "title": "Personal Interests and Future Perspectives",
+      "timecode": "01:10:43",
+      "time": {
+        "start": 4243,
+        "end": null
+      },
+      "synopsis": "Larry shares his current interests in physics, cosmology, and science. He discusses how open source principles have influenced other fields and expresses his excitement about the future of technology and knowledge sharing.",
+      "keywords": "physics, cosmology, science, open source influence, personal reflections"
+    },
+    {
+      "title": "Message to Future Generations",
+      "timecode": "01:14:24",
+      "time": {
+        "start": 4464,
+        "end": null
+      },
+      "synopsis": "Larry offers advice to future generations, emphasizing the importance of innovation, service, and standing on the shoulders of those who came before. He reflects on a meaningful encounter with a young conference attendee and hopes for a bright future in open source.",
+      "keywords": "future generations, legacy, inspiration, open source community, mentorship"
+    },
+    {
+      "title": "Conclusion",
+      "timecode": "01:18:26",
+      "time": {
+        "start": 4706,
+        "end": null
+      },
+      "synopsis": "Karen Herman thanks Larry for his insights and contributions. Larry expresses gratitude for the opportunity to share his thoughts and experiences.",
+      "keywords": "interview conclusion, gratitude, reflections"
+    }
+  ]
+}
