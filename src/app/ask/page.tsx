@@ -204,53 +204,58 @@ export default function AskPage() {
     }
   };
 
-  const renderQuoteCard = (quote: Quote, index: number, isCited: boolean = true) => (
-    <Card key={quote.interviewId + index} className="overflow-hidden">
-      <div className="flex h-32">
-        {/* Thumbnail Section */}
-        <Link 
-          href={`/video/${quote.interviewId}?t=${Math.floor(quote.timestamp)}`}
-          className="relative w-48 flex-shrink-0 group"
-        >
-          <Image
-            src={videoData[quote.interviewId].thumbnail}
-            alt={quote.title}
-            fill
-            className="object-cover"
-          />
-          {isCited && (
-            <div className="absolute top-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
-              [{index + 1}]
-            </div>
-          )}
-        </Link>
-        
-        {/* Content Section */}
-        <div className="flex-1 p-4">
-          <div className="flex flex-col justify-between h-full">
-            <div>
-              <Link 
-                href={`/video/${quote.interviewId}?t=${Math.floor(quote.timestamp)}`}
-                className="group"
-              >
-                <h4 className="font-medium text-base mb-1 group-hover:text-blue-600 transition-colors">
-                  {quote.speaker}
-                </h4>
-              </Link>
-              
-              <div className="text-sm text-gray-600">
-                {quote.title}
-              </div>
-            </div>
+  const renderQuoteCard = (quote: Quote, index: number, isCited: boolean = true) => {
+    const video = videoData[quote.interviewId as VideoId];
+    if (!video) return null;
 
-            <div className="text-sm text-gray-700 line-clamp-2 font-serif">
-              {quote.text}
+    return (
+      <Card key={quote.interviewId + index} className="overflow-hidden">
+        <div className="flex h-32">
+          {/* Thumbnail Section */}
+          <Link 
+            href={`/video/${quote.interviewId}?t=${Math.floor(quote.timestamp)}`}
+            className="relative w-48 flex-shrink-0 group"
+          >
+            <Image
+              src={video.thumbnail}
+              alt={quote.title}
+              fill
+              className="object-cover"
+            />
+            {isCited && (
+              <div className="absolute top-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-sm">
+                [{index + 1}]
+              </div>
+            )}
+          </Link>
+          
+          {/* Content Section */}
+          <div className="flex-1 p-4">
+            <div className="flex flex-col justify-between h-full">
+              <div>
+                <Link 
+                  href={`/video/${quote.interviewId}?t=${Math.floor(quote.timestamp)}`}
+                  className="group"
+                >
+                  <h4 className="font-medium text-base mb-1 group-hover:text-blue-600 transition-colors">
+                    {quote.speaker}
+                  </h4>
+                </Link>
+                
+                <div className="text-sm text-gray-600">
+                  {quote.title}
+                </div>
+              </div>
+
+              <div className="text-sm text-gray-700 line-clamp-2 font-serif">
+                {quote.text}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </Card>
-  );
+      </Card>
+    );
+  };
 
   const renderAnswerWithCitations = (text: string | undefined, quotes: QuoteGroups) => {
     if (!text) return null;
