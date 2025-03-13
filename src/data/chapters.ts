@@ -8,6 +8,7 @@ import rogerChapters from './chapters/roger-dannenberg-index.json';
 import bartChapters from './chapters/bart-decrem-index.json';
 import tristanChapters from './chapters/tristan-nitot-index.json';
 import lawrenceChapters from './chapters/lawrence-rosen-index.json';
+import jonChapters from './chapters/jon-maddog-hall-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -85,5 +86,11 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2025-03-11",
     updated_at: "2025-03-11",
     metadata: processChapterMetadata(lawrenceChapters.metadata)
+  },
+  "jon-maddog-hall": {
+    title: "Jon \"Maddog\" Hall",
+    created_at: "2025-03-12",
+    updated_at: "2025-03-12",
+    metadata: processChapterMetadata(jonChapters.metadata)
   }
 }; 

@@ -31,7 +31,22 @@ export default async function VideoPage({ params }: Props) {
     throw new Error(`Video ${videoId} not found`);
   }
 
-  const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${videoId}.html`);
+  // Map video IDs to transcript filenames
+  const idMapping: Record<VideoId, string> = {
+    "introduction-to-fossda": "introduction-to-fossda",
+    "tristan-nitot": "tristan-nitot",
+    "deb-goodkin": "deb-goodkin",
+    "heather-meeker": "heather-meeker",
+    "bruce-perens": "bruce-perens",
+    "larry-augustin": "larry-augustin",
+    "roger-dannenberg": "roger-dannenberg",
+    "bart-decrem": "bart-decrem",
+    "lawrence-rosen": "lawrence-rosen",
+    "jon-maddog-hall": "jon-maddog-hall"
+  };
+
+  const transcriptFilename = idMapping[videoId] || videoId;
+  const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${transcriptFilename}.html`);
   const transcriptHtml = await fs.readFile(transcriptPath, 'utf-8');
 
   return (

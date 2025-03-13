@@ -39,9 +39,6 @@ async function updateConfigs(interviewId: string) {
     const mappingContent = await fs.readFile(mappingPath, 'utf-8');
     const mapping: VideoMapping = JSON.parse(mappingContent);
 
-    // Create a valid variable name for imports and IDs
-    const safeVariableName = createValidVariableName(interviewId);
-
     // 2. Update playback IDs in playback-ids.ts
     const playbackIdsPath = path.join(process.cwd(), 'src', 'config', 'playback-ids.ts');
     let playbackIdsContent = await fs.readFile(playbackIdsPath, 'utf-8');
@@ -55,8 +52,8 @@ async function updateConfigs(interviewId: string) {
     // Add new playback ID
     const existingIds = playbackIdsMatch[1];
     const updatedIds = existingIds.trim().endsWith(',')
-      ? existingIds + `\n  '${safeVariableName}': '${mapping.playbackId}',`
-      : existingIds + `,\n  '${safeVariableName}': '${mapping.playbackId}',`;
+      ? existingIds + `\n  '${interviewId}': '${mapping.playbackId}',`
+      : existingIds + `,\n  '${interviewId}': '${mapping.playbackId}',`;
     
     playbackIdsContent = playbackIdsContent.replace(playbackIdsMatch[0], `export const PLAYBACK_IDS = {${updatedIds}\n}`);
     await fs.writeFile(playbackIdsPath, playbackIdsContent);
@@ -71,7 +68,7 @@ async function updateConfigs(interviewId: string) {
     if (!lastImport) {
       throw new Error('Could not find imports in chapters.ts');
     }
-    const newImport = `import ${safeVariableName}Chapters from './chapters/${interviewId}-index.json';\n`;
+    const newImport = `import ${interviewId}Chapters from './chapters/${interviewId}-index.json';\n`;
     chaptersContent = chaptersContent.replace(lastImport, lastImport + newImport);
 
     // Add chapter data
@@ -83,11 +80,11 @@ async function updateConfigs(interviewId: string) {
     const existingChapters = chapterDataMatch[1];
     const today = new Date().toISOString().split('T')[0];
     const newChapter = `
-  "${safeVariableName}": {
+  "${interviewId}": {
     title: "${mapping.title}",
     created_at: "${today}",
     updated_at: "${today}",
-    metadata: processChapterMetadata(${safeVariableName}Chapters.metadata)
+    metadata: processChapterMetadata(${interviewId}Chapters.metadata)
   },`;
 
     // Ensure there's no double comma and the object is properly formatted
@@ -116,8 +113,8 @@ async function updateConfigs(interviewId: string) {
     // Add new video data
     const existingVideos = videoDataMatch[1];
     const newVideo = `
-  "${safeVariableName}": {
-    id: "${safeVariableName}",
+  "${interviewId}": {
+    id: "${interviewId}",
     title: "${mapping.title}",
     duration: "${Math.floor(mapping.duration / 60)}:${String(mapping.duration % 60).padStart(2, '0')}",
     thumbnail: "https://image.mux.com/${mapping.playbackId}/animated.gif?width=320&start=5&end=10",

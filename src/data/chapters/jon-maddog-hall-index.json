@@ -1,0 +1,204 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Background",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Elisabetta Mori introduces the Free and Open Source Stories Digital Archive (FOSSDA) and welcomes John \"Maddog\" Hall. She provides an overview of his extensive career in programming, system design, technical marketing, and leadership roles in open-source initiatives. Maddog expresses his gratitude for participating and shares his birthplace and historical context of his early years.",
+      "keywords": "FOSSDA, open source, John Maddog Hall, Linux, Unix, computing history"
+    },
+    {
+      "title": "Early Life and Influences",
+      "timecode": "00:02:19",
+      "time": {
+        "start": 139,
+        "end": null
+      },
+      "synopsis": "Maddog describes his parents' backgrounds, his sibling, and his childhood interests. His father, an airplane mechanic, introduced him to technical magazines that fueled his fascination with electronics. He recounts his high school experiences in electronics shops, where he learned to build and repair radios and TVs, shaping his interest in technology.",
+      "keywords": "childhood, family, education, electronics, technical curiosity"
+    },
+    {
+      "title": "University and Early Work at Western Electric",
+      "timecode": "00:05:07",
+      "time": {
+        "start": 307,
+        "end": null
+      },
+      "synopsis": "Maddog attends Drexel University to study electrical engineering. He explains the cooperative education model, which allowed him to work at Western Electric Corporation, where he was exposed to large-scale manufacturing. During his first co-op cycle, he learns programming on an IBM 1130, marking his entry into computing.",
+      "keywords": "Drexel University, electrical engineering, co-op education, IBM 1130, early computing"
+    },
+    {
+      "title": "First Programming Experiences and Transition to Computing",
+      "timecode": "00:08:24",
+      "time": {
+        "start": 504,
+        "end": null
+      },
+      "synopsis": "Maddog discusses his early programming experiences in 1969, writing engineering-oriented programs in machine language on the IBM 1130. He describes how his growing interest in computing led him to switch from a purely engineering curriculum to a hybrid of engineering and business, eventually graduating in 1973.",
+      "keywords": "programming, IBM 1130, machine language, computer science, career transition"
+    },
+    {
+      "title": "Aetna Life and Casualty: Mainframes and Early Software Development",
+      "timecode": "00:11:10",
+      "time": {
+        "start": 670,
+        "end": null
+      },
+      "synopsis": "Maddog begins working at Aetna Life and Casualty in Hartford, Connecticut, programming IBM 360 and 370 mainframes. He describes the massive computing infrastructure at Aetna, their reliance on IBM systems, and the strict software licensing practices of the time.",
+      "keywords": "Aetna, IBM 360, IBM 370, mainframe computing, enterprise software"
+    },
+    {
+      "title": "Earning a Master's in Computer Science at Night",
+      "timecode": "00:14:56",
+      "time": {
+        "start": 896,
+        "end": null
+      },
+      "synopsis": "While working at Aetna, Maddog pursues a master's degree at Rensselaer Polytechnic Institute's Hartford Graduate Center. He studies structured programming, relational databases, and software engineering, gaining exposure to industry pioneers. He also discusses the software licensing landscape before software patents were established.",
+      "keywords": "computer science, master's degree, software engineering, databases, licensing"
+    },
+    {
+      "title": "Transition to Teaching at Hartford State Technical College",
+      "timecode": "00:21:24",
+      "time": {
+        "start": 1284,
+        "end": null
+      },
+      "synopsis": "Maddog fulfills a long-held ambition to teach by taking a position at Hartford State Technical College. He discusses the hands-on computer science curriculum and how students, many of whom had never used a computer before, learned programming and system design. He enjoys teaching but faces financial constraints.",
+      "keywords": "teaching, technical education, curriculum design, Hartford State Technical College"
+    },
+    {
+      "title": "The Origin of \"Maddog\"",
+      "timecode": "00:26:18",
+      "time": {
+        "start": 1578,
+        "end": null
+      },
+      "synopsis": "Maddog explains how he got his nickname, which stemmed from heated arguments with the dean of instruction at Hartford State Technical College. The name stuck, contrasting with his later reputation as a friendly and kind storyteller.",
+      "keywords": "nickname, Maddog, teaching, personality"
+    },
+    {
+      "title": "Moving to Bell Labs and the World of UNIX",
+      "timecode": "00:27:55",
+      "time": {
+        "start": 1675,
+        "end": null
+      },
+      "synopsis": "Maddog transitions to Bell Labs, initially offered a role as a systems administrator for a Cyber 720. He insists on working with UNIX instead, recognizing its growing importance. Despite initial hesitation from Bell Labs, he secures the UNIX systems administrator role and deepens his expertise.",
+      "keywords": "Bell Labs, UNIX, systems administration, career development"
+    },
+    {
+      "title": "Joining Digital Equipment Corporation (DEC) and UNIX Growth",
+      "timecode": "00:32:51",
+      "time": {
+        "start": 1971,
+        "end": null
+      },
+      "synopsis": "In 1983, Maddog joins DEC, which was starting a new UNIX group. He describes the competition between proprietary operating systems and UNIX, as well as the growing interest in binary-only UNIX distributions. He also highlights DEC's role in shaping modern computing.",
+      "keywords": "DEC, UNIX, VMS, operating systems, corporate computing"
+    },
+    {
+      "title": "Encountering Linux and Supporting Linus Torvalds",
+      "timecode": "00:38:50",
+      "time": {
+        "start": 2330,
+        "end": null
+      },
+      "synopsis": "In 1994, Maddog meets Linus Torvalds at a DECUS event and immediately recognizes Linux's potential. He arranges for DEC to send Linus an Alpha processor, accelerating Linux's expansion to a 64-bit architecture. He describes the early days of Linux and its rapid growth.",
+      "keywords": "Linux, Linus Torvalds, DEC, Alpha processor, open-source growth"
+    },
+    {
+      "title": "Linux’s Commercialization and the Formation of Linux International",
+      "timecode": "00:50:09",
+      "time": {
+        "start": 3009,
+        "end": null
+      },
+      "synopsis": "Maddog joins Linux International, a non-profit advocating for Linux's commercial adoption. He helps defend the Linux trademark, establish the Linux Standard Base, and promote Linux at major industry events like Comdex and CBIT.",
+      "keywords": "Linux International, Linux trademark, open-source advocacy, software standardization"
+    },
+    {
+      "title": "Consulting for Governments and the United Nations",
+      "timecode": "01:05:01",
+      "time": {
+        "start": 3901,
+        "end": null
+      },
+      "synopsis": "Maddog discusses his consulting work for governments, including Malaysia, China, and Cuba, advocating for open-source software to reduce dependence on foreign technology. He emphasizes the economic and strategic advantages of free software.",
+      "keywords": "government consulting, open-source policy, economic independence, international projects"
+    },
+    {
+      "title": "Board Chair Role at Linux Professional Institute",
+      "timecode": "01:15:11",
+      "time": {
+        "start": 4511,
+        "end": null
+      },
+      "synopsis": "As board chair of the Linux Professional Institute, Maddog oversees policies related to certification, diversity, and inclusion. He discusses LPI's efforts to ensure fair representation and professionalization in the open-source community.",
+      "keywords": "LPI, certification, professionalization, diversity and inclusion"
+    },
+    {
+      "title": "Coming Out and Advocating for LGBTQ+ Rights",
+      "timecode": "01:19:06",
+      "time": {
+        "start": 4746,
+        "end": null
+      },
+      "synopsis": "Maddog publicly comes out in a 2012 article honoring Alan Turing. He describes his involvement in marriage equality efforts and the discrimination LGBTQ+ individuals face. He later marries his husband, Uku, and continues advocating for inclusivity.",
+      "keywords": "LGBTQ+ rights, Alan Turing, marriage equality, personal story"
+    },
+    {
+      "title": "Caninos Loucos: Open Hardware in Brazil",
+      "timecode": "01:27:02",
+      "time": {
+        "start": 5222,
+        "end": null
+      },
+      "synopsis": "Maddog discusses Caninos Loucos, a Brazilian initiative producing open hardware, including the Labrador and Pulga computers. He explains the economic challenges of importing technology to Brazil and the benefits of local manufacturing.",
+      "keywords": "Caninos Loucos, open hardware, Raspberry Pi, Brazil, technology accessibility"
+    },
+    {
+      "title": "Project Cauã: Empowering Students Through Open Source",
+      "timecode": "01:35:01",
+      "time": {
+        "start": 5701,
+        "end": null
+      },
+      "synopsis": "Project Cauã trains students to start small businesses providing IT services. This initiative enables low-income students to afford university education while promoting free and open-source software.",
+      "keywords": "Project Cauã, education, entrepreneurship, open source, student empowerment"
+    },
+    {
+      "title": "Future Challenges and Opportunities for Open Source",
+      "timecode": "01:45:25",
+      "time": {
+        "start": 6325,
+        "end": null
+      },
+      "synopsis": "Maddog discusses the future of open-source software, highlighting security concerns, RISC-V architecture, and artificial intelligence. He contrasts software freedom with \"software slavery\" and emphasizes the importance of user control.",
+      "keywords": "open source future, AI, security, RISC-V, software freedom"
+    },
+    {
+      "title": "Memories of Grace Hopper and Maurice Wilkes",
+      "timecode": "01:52:14",
+      "time": {
+        "start": 6734,
+        "end": null
+      },
+      "synopsis": "Maddog shares stories of meeting computing pioneers Grace Hopper and Maurice Wilkes. He reflects on their contributions to programming and computing, emphasizing their lasting influence on the industry.",
+      "keywords": "Grace Hopper, Maurice Wilkes, computing pioneers, historical impact"
+    },
+    {
+      "title": "Conclusion and Final Thoughts",
+      "timecode": "01:59:51",
+      "time": {
+        "start": 7191,
+        "end": null
+      },
+      "synopsis": "Maddog reflects on his career, achievements, and the importance of open-source software. Elisabetta thanks him for the interview, and he expresses willingness to continue the discussion in the future.",
+      "keywords": "reflection, legacy, open source, career summary"
+    }
+  ]
+}

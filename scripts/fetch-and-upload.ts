@@ -309,6 +309,23 @@ async function fetchAndUpload(storyId: string) {
     const story = responseData as Story;
     console.log(`Found story: ${story.title}`);
 
+    // Generate interview ID from title with improved logic
+    const interviewId = story.title
+      .toLowerCase()
+      // Remove common suffixes
+      .replace(/\s+interview\s+fossda$/i, '')
+      .replace(/\s+interview$/i, '')
+      // Replace quotes and special characters
+      .replace(/["']/g, '')
+      // Replace any non-alphanumeric characters with dash
+      .replace(/[^a-z0-9]+/g, '-')
+      // Replace multiple dashes with single dash
+      .replace(/-+/g, '-')
+      // Remove leading/trailing dashes
+      .replace(/^-|-$/g, '')
+      // Ensure we have at least one character
+      .replace(/^$/, 'untitled');
+
     // 2. Fetch transcript and video URL
     console.log('\nFetching transcript...');
     const transcriptResponse = await fetch(`https://node.theirstory.io/transcripts/${storyId}`, {
@@ -372,18 +389,19 @@ async function fetchAndUpload(storyId: string) {
       playbackId,
       title: data.story.title,
       duration: data.story.duration,
-      recordDate: data.story.record_date
+      recordDate: data.story.record_date,
+      interviewId // Add interview ID to mapping
     };
 
     await fs.mkdir('data', { recursive: true });
-    const mappingPath = path.join('data', `${storyId}.json`);
+    const mappingPath = path.join('data', `${interviewId}.json`);
     await fs.writeFile(mappingPath, JSON.stringify(mapping, null, 2));
     console.log('\nSaved mapping to:', mappingPath);
 
     // Run the config updates
     console.log('\nUpdating configuration files...');
     const { spawn } = require('child_process');
-    const updateProcess = spawn('npx', ['ts-node', 'scripts/update-config.ts', storyId], {
+    const updateProcess = spawn('npx', ['ts-node', 'scripts/update-config.ts', interviewId], {
       stdio: 'inherit'
     });
 
@@ -403,11 +421,6 @@ async function fetchAndUpload(storyId: string) {
     await fs.mkdir(transcriptsDir, { recursive: true });
     
     // Save HTML transcript
-    const interviewId = story.title
-      .toLowerCase()
-      .split(' ')[0]
-      .replace(/[^a-z0-9]/g, '-');
-
     const transcriptPath = path.join(transcriptsDir, `${interviewId}.html`);
     await fs.writeFile(transcriptPath, transcriptHtml);
     console.log('Saved HTML transcript to:', transcriptPath);

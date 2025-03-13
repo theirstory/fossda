@@ -1,4 +1,4 @@
-import { VideoData } from "@/types/transcript";
+import type { VideoData } from "@/types/transcript";
 
 // Define a type for all valid video IDs
 export type VideoId = 
@@ -10,7 +10,8 @@ export type VideoId =
   | "larry-augustin"
   | "roger-dannenberg"
   | "bart-decrem"
-  | "lawrence-rosen";
+  | "lawrence-rosen"
+  | "jon-maddog-hall";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData: Record<VideoId, VideoData> = {
@@ -23,6 +24,14 @@ export const videoData: Record<VideoId, VideoData> = {
     who envisioned a better way to share software. FOSSDA captures the personal stories of those who built this 
     movement, preserving their experiences for future generations who will carry open source forward into the 21st century.`,
     sentence: "An introduction to the Free and Open Source Stories Digital Archive and its mission."
+  },
+  "jon-maddog-hall": {
+    id: "jon-maddog-hall",
+    title: "Jon \"Maddog\" Hall",
+    duration: "2:00:13",
+    thumbnail: "/thumbnails/jon-maddog-hall.png",
+    summary: "Interview with Jon \"Maddog\" Hall Interview FOSSDA discussing their journey and contributions to open source software.",
+    sentence: "From early Unix days to Linux advocacy - exploring the evolution of open source through decades of experience."
   },
   "lawrence-rosen": {
     id: "lawrence-rosen",

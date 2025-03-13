@@ -7,5 +7,6 @@ export const PLAYBACK_IDS = {
   'roger-dannenberg': 'z014POanc7DQPjkJqJiWXRqVw7XdorgpCBEBxiP1qXH8',
   'bart-decrem': '31cm889ntl2r00w9514HD1w6v02m98aSOThhZ7EyRbGzo',
   'tristan-nitot': 'mKO7HRQtQBUHQ01NgKyn8fBJxFr01oNoEVmVmhrpiIh004',
-  'lawrence-rosen': 'isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A'
+  'lawrence-rosen': 'isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A',
+  'jon-maddog-hall': 'WCU59waRNnBy6vhLXILyEcoQlUj9XeVmWTiBnRcW0118'
 }; 

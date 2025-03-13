@@ -474,6 +474,137 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "jon-maddog-hall-early-influences-and-the-path-to-technology",
+    "title": "Early Influences and the Path to Technology",
+    "startTime": 204.001,
+    "endTime": 393.922,
+    "duration": 189.92100000000002,
+    "chapter": {
+      "id": "early-life-and-influences",
+      "title": "Early Life and Influences"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: My father was a good influence on me because he was very interested in mechanical things and machinery... I particularly liked the Popular Electronics magazines...",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-first-steps-in-computer-programming",
+    "title": "First Steps in Computer Programming",
+    "startTime": 452.7,
+    "endTime": 612.1310000000001,
+    "duration": 159.4310000000001,
+    "chapter": {
+      "id": "aetna-life-and-casualty-mainframes-and-early-software-development",
+      "title": "Aetna Life and Casualty: Mainframes and Early Software Development"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...I said, sure, I'll take the course and I would read the book at night and then I would go in and practice at night and on the weekends programming this IBM 1130...",
+    "themes": [
+      "education",
+      "exposure"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-challenges-faced-in-open-source-and-linux-s-evolution",
+    "title": "Challenges Faced in Open Source and Linux's Evolution",
+    "startTime": 2039.521,
+    "endTime": 2195.7649999999994,
+    "duration": 156.24399999999946,
+    "chapter": {
+      "id": "consulting-for-governments-and-the-united-nations",
+      "title": "Consulting for Governments and the United Nations"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...What happened was this company called Sun Microsystems decided that they were going to bring out a system that that was specifically for UNIX at a much lower price...",
+    "themes": [
+      "challenges",
+      "evolution",
+      "projects"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-the-journey-towards-open-source-advocacy",
+    "title": "The Journey Towards Open Source Advocacy",
+    "startTime": 2817.385,
+    "endTime": 2897.115,
+    "duration": 79.72999999999956,
+    "chapter": {
+      "id": "caninos-loucos-open-hardware-in-brazil",
+      "title": "Caninos Loucos: Open Hardware in Brazil"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...So this is how I got interested in Linux. And I could see because by this time I'd been in the computer industry a long time. And I could see the rate at which Linux was growing...",
+    "themes": [
+      "mission-values",
+      "projects",
+      "community"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-empowering-education-through-foss-initiatives",
+    "title": "Empowering Education through FOSS Initiatives",
+    "startTime": 3909.002,
+    "endTime": 4008.685,
+    "duration": 99.68299999999999,
+    "chapter": {
+      "id": "memories-of-grace-hopper-and-maurice-wilkes",
+      "title": "Memories of Grace Hopper and Maurice Wilkes"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...Malaysia, the Malaysian government was creating a five year program to use open source software. And Malaysia is particularly interesting because... 70% of the IT workforce were women...",
+    "themes": [
+      "community",
+      "education",
+      "mission-values"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-linux-professional-institute-and-inclusivity-efforts",
+    "title": "Linux Professional Institute and Inclusivity Efforts",
+    "startTime": 4548.502,
+    "endTime": 4628.266,
+    "duration": 79.76399999999921,
+    "chapter": {
+      "id": "conclusion-and-final-thoughts",
+      "title": "Conclusion and Final Thoughts"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...as an example, one of the things we did recently was a diversity and inclusion policy for for our organization because we have two hundred fifteen thousand certified people in one hundred eighty countries around the world...",
+    "themes": [
+      "projects",
+      "community",
+      "mission-values"
+    ]
+  },
+  {
+    "id": "jon-maddog-hall-fostering-open-source-in-latin-america-through-education",
+    "title": "Fostering Open Source in Latin America through Education",
+    "startTime": 5759.352,
+    "endTime": 5830.525000000001,
+    "duration": 71.17300000000068,
+    "chapter": {
+      "id": "conclusion-and-final-thoughts",
+      "title": "Conclusion and Final Thoughts"
+    },
+    "interviewId": "jon-maddog-hall",
+    "interviewTitle": "Jon \"Maddog\" Hall",
+    "transcript": "Maddog: ...40% of the students who qualify for a free university education [in Latin America] cannot accept it... Project Calwan teaches these young students how to set up their own business...",
+    "themes": [
+      "education",
+      "mission-values",
+      "projects"
+    ]
+  },
+  {
     "id": "augustin-early-engineering",
     "title": "Problem-Solving Mindset on the Farm",
     "startTime": 124,
@@ -732,7 +863,7 @@ export const clips: Clip[] = [
   {
     "id": "lawrence-rosen-interaction-with-richard-stallman-and-free-software-foundation",
     "title": "Interaction with Richard Stallman and Free Software Foundation",
-    "startTime": 1695.970,
+    "startTime": 1695.97,
     "endTime": 1804.68,
     "duration": 108.71,
     "chapter": {
