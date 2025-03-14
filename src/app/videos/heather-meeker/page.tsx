@@ -1,4 +1,4 @@
-import VideoSection from "@/components/VideoSection";
+import VideoSectionWrapper from "@/components/VideoSectionWrapper";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { videoData } from "@/data/videos"; // Fixed import path
@@ -11,7 +11,7 @@ export default async function HeatherMeekerPage() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <VideoSection
+      <VideoSectionWrapper
         videoId="heather-meeker"
         transcriptHtml={transcriptHtml}
         playbackId="BxDXf8F00tZ0201IRZ3Y8cgtxOJd02k3G00gmGzbg3KI7irM"

@@ -9,7 +9,7 @@ import * as path from 'path';
 import dotenv from 'dotenv';
 import { JSDOM } from 'jsdom';
 import Mux from '@mux/mux-node';
-import { VideoId } from "@/data/videos";
+import { videoData, VideoId } from '@/data/videos';
 
 // Load environment variables from .env.local first
 const envResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });
@@ -74,6 +74,14 @@ interface Story {
   title: string;
   description?: string;
   indexes?: Index[];
+}
+
+interface Segment {
+  text: string;
+  speaker: string;
+  timestamp: number;
+  interviewId: VideoId;
+  chapterTitle: string;
 }
 
 // VTT generation functions
@@ -163,7 +171,7 @@ function htmlToVtt(html: string): string {
   return vttContent;
 }
 
-async function indexTranscript(interviewId: string, transcriptHtml: string) {
+async function indexTranscript(interviewId: VideoId, transcriptHtml: string) {
   console.log('\nIndexing transcript in Weaviate...');
   
   // Parse HTML
@@ -172,7 +180,7 @@ async function indexTranscript(interviewId: string, transcriptHtml: string) {
   
   // Find all transcript segments
   const paragraphs = document.querySelectorAll('p[data-time]');
-  const segments = Array.from(paragraphs).map(p => {
+  const rawSegments = Array.from(paragraphs).map(p => {
     const timestamp = parseFloat(p.getAttribute('data-time') || '0');
     const text = p.textContent || '';
     
@@ -183,9 +191,20 @@ async function indexTranscript(interviewId: string, transcriptHtml: string) {
     return {
       text: content,
       speaker: speaker.trim(),
-      timestamp
+      timestamp,
+      interviewId
     };
   }).filter(segment => segment.text);
+
+  // Add chapter titles
+  const segments: Segment[] = [];
+  for (const segment of rawSegments) {
+    const chapterTitle = await findChapterTitle(segment.interviewId, segment.timestamp);
+    segments.push({
+      ...segment,
+      chapterTitle
+    });
+  }
 
   // Set up Weaviate schema if needed
   await setupSchema();
@@ -195,14 +214,14 @@ async function indexTranscript(interviewId: string, transcriptHtml: string) {
   let count = 0;
 
   for (const segment of segments) {
-    const chapterTitle = await findChapterTitle(segment.timestamp, interviewId);
-    
     await addTranscriptSegment({
       text: segment.text,
       speaker: segment.speaker,
-      interviewId: interviewId as VideoId,
+      interviewId: segment.interviewId,
       timestamp: segment.timestamp,
-      chapterTitle
+      chapterTitle: segment.chapterTitle,
+      interviewTitle: videoData[segment.interviewId].title,
+      thumbnail: videoData[segment.interviewId].thumbnail,
     });
 
     count++;
@@ -214,7 +233,7 @@ async function indexTranscript(interviewId: string, transcriptHtml: string) {
   console.log(`\nSuccessfully indexed ${count} segments for ${interviewId}`);
 }
 
-async function findChapterTitle(timestamp: number, interviewId: string): Promise<string> {
+async function findChapterTitle(interviewId: VideoId, timestamp: number): Promise<string> {
   const chapters = chapterData[interviewId]?.metadata || [];
   for (const chapter of chapters) {
     if (timestamp >= chapter.time.start && (!chapter.time.end || timestamp < chapter.time.end)) {
@@ -324,7 +343,7 @@ async function fetchAndUpload(storyId: string) {
       // Remove leading/trailing dashes
       .replace(/^-|-$/g, '')
       // Ensure we have at least one character
-      .replace(/^$/, 'untitled');
+      .replace(/^$/, 'untitled') as VideoId;
 
     // 2. Fetch transcript and video URL
     console.log('\nFetching transcript...');

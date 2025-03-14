@@ -5,8 +5,10 @@ export interface TranscriptSegment {
   text: string;
   speaker: string;
   interviewId: VideoId;
+  interviewTitle: string;
   timestamp: number;
   chapterTitle: string;
+  thumbnail: string;
   _additional?: {
     certainty: number;
   };
@@ -107,6 +109,16 @@ export async function setupSchema(): Promise<void> {
             }
           },
           {
+            name: 'interviewTitle',
+            dataType: ['text'],
+            description: 'Title of the interview',
+            moduleConfig: {
+              'text2vec-openai': {
+                skip: true
+              }
+            }
+          },
+          {
             name: 'timestamp',
             dataType: ['number'],
             description: 'Timestamp in seconds',
@@ -120,6 +132,18 @@ export async function setupSchema(): Promise<void> {
             name: 'chapterTitle',
             dataType: ['text'],
             description: 'Title of the chapter this segment belongs to',
+            moduleConfig: {
+              'text2vec-openai': {
+                skip: false,
+                vectorizePropertyName: false,
+                vectorize: true
+              }
+            }
+          },
+          {
+            name: 'thumbnail',
+            dataType: ['text'],
+            description: 'URL of the interview thumbnail',
             moduleConfig: {
               'text2vec-openai': {
                 skip: true
@@ -154,7 +178,7 @@ export async function searchTranscripts(query: string, limit: number): Promise<T
     const result = await client.graphql
       .get()
       .withClassName(TRANSCRIPT_CLASS_NAME)
-      .withFields('text speaker interviewId timestamp chapterTitle _additional { certainty }')
+      .withFields('text speaker interviewId interviewTitle timestamp chapterTitle thumbnail _additional { certainty }')
       .withNearText({
         concepts: [query],
         certainty: 0.7,

@@ -3,6 +3,10 @@ import { VideoId } from "@/data/videos";
 export interface Chapter {
   id: string;
   title: string;
+  start?: number;
+  end?: number;
+  description?: string;
+  keywords?: string[];
 }
 
 export interface Clip {

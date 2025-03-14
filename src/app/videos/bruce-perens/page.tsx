@@ -1,4 +1,4 @@
-import VideoSection from "@/components/VideoSection";
+import VideoSectionWrapper from "@/components/VideoSectionWrapper";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { videoData } from "@/data/videos";
@@ -11,7 +11,7 @@ export default async function BrucePerensPage() {
 
   return (
     <main className="container mx-auto px-4 py-8">
-      <VideoSection
+      <VideoSectionWrapper
         videoId="bruce-perens"
         transcriptHtml={transcriptHtml}
         playbackId="QHwKUN1BjwkwE4SvBHYcoRLzo4cr2HHsfoCRLfLocKQ"

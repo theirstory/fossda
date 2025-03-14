@@ -925,7 +925,7 @@ export const clips: Clip[] = [
       "title": "Origins of Audacity"
     },
     "interviewId": "roger-dannenberg",
-    "interviewTitle": "Roger Dannenberg and Audacity",
+    "interviewTitle": "Roger Dannenberg",
     "transcript": "Roger Dannenberg: Well, the project started basically from research needs that we have that we were working on actually on query by humming, which was getting computers to recognize tunes that people might sing or hum and search a database for them and part of that is just recognizing pitch and tunes and we were working on some algorithms to improve that. And of course algorithms fail and then when they fail, you want to see what happened and we were trying to visualize audio and the analyses that we did and figure out what was going wrong and we just felt like it would be really great to have a tool that could help us display audio data in different formats and deal with different audio files.",
     "themes": [
       "exposure",
@@ -943,7 +943,7 @@ export const clips: Clip[] = [
       "title": "Decision to Go Open Source"
     },
     "interviewId": "roger-dannenberg",
-    "interviewTitle": "Roger Dannenberg and Audacity",
+    "interviewTitle": "Roger Dannenberg",
     "transcript": "Roger Dannenberg: Yeah, a lot of from Dominic Mazzoni who was a grad student at the time and Dominic did did more of the work than anyone else. It was mainly the two of us and I was contributing some kind of low-level audio drivers that I had built and and worked on some symbolic display as opposed to audio waveform display, but Dominic really put together the basic waveform display and interaction. And, it was it was Dominic that suggested in the very beginning that if if we are going to build something to display data  , it really wouldn't be much additional work to cut copy paste and right, you know, and write it back out to disk.",
     "themes": [
       "projects",
@@ -962,7 +962,7 @@ export const clips: Clip[] = [
       "title": "Learning from Open Source"
     },
     "interviewId": "roger-dannenberg",
-    "interviewTitle": "Roger Dannenberg and Audacity",
+    "interviewTitle": "Roger Dannenberg",
     "transcript": "Roger Dannenberg: Well, I think maybe open sources is really an outgrowth and maybe I just see it this way, but maybe it really is an outgrowth of the academic world. Where in academia we do research and you know, we get the rewards are not so much money, but recognition. That people want to want to be recognized for being, for making contributions to whatever field, they do research or public or writing in.",
     "themes": [
       "education",
@@ -980,7 +980,7 @@ export const clips: Clip[] = [
       "title": "The Success of Audacity and Community Effort"
     },
     "interviewId": "roger-dannenberg",
-    "interviewTitle": "Roger Dannenberg and Audacity",
+    "interviewTitle": "Roger Dannenberg",
     "transcript": "Roger Dannenberg: So another problem is when you do have people that are contributing and very generous, you, well, at least with Audacity, there was a team of people that developed. So it was kind of like an inside, you know, it's as if you've got the inside group that has kind of all the power and all, you know, carries all the decisions and you have the outside group, which you also hope is there, you know, making contributions, but you know, the governance of very loose volunteer organization is really difficult because I think if it is completely open and everybody has an equal vote, then it's very easy to get distracted.",
     "themes": [
       "community",
@@ -998,7 +998,7 @@ export const clips: Clip[] = [
       "title": "Open Source Financing and Sustainability"
     },
     "interviewId": "roger-dannenberg",
-    "interviewTitle": "Roger Dannenberg and Audacity",
+    "interviewTitle": "Roger Dannenberg",
     "transcript": "Roger Dannenberg: Yeah, I would I guess I would say that. I mean one thing that came out of that, you know, that I learned from this project, that might not be obvious to people thinking about open source is that there are a lot of possibilities for generating income and one of those is, you know, some of some of the Audacity developers, did some consulting on the side. So they would, for example, adapt Audacity for to be packaged with a product or are bundled with a crime or they would, you know, work with researchers and get some money to add some feature for them or something like that.",
     "themes": [
       "community",

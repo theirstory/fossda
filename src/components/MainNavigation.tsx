@@ -15,7 +15,6 @@ import {
 import { themes } from "@/data/themes";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import SearchClips from "./SearchClips";
 import { iconMap } from "@/data/icons";
 import React from "react";
 import {
@@ -25,6 +24,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { SearchInput } from "@/components/SearchInput";
 
 export default function MainNavigation() {
   const pathname = usePathname();
@@ -105,8 +105,8 @@ export default function MainNavigation() {
               </div>
 
               {/* Desktop Search */}
-              <div className="hidden lg:block max-w-md w-full">
-                <SearchClips />
+              <div className="hidden lg:block flex-1">
+                <SearchInput />
               </div>
             </div>
 
@@ -126,7 +126,7 @@ export default function MainNavigation() {
                   <div className="mt-6 space-y-6">
                     {/* Mobile Search */}
                     <div className="lg:hidden">
-                      <SearchClips />
+                      <SearchInput />
                     </div>
 
                     {/* Navigation Links */}
