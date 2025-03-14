@@ -37,7 +37,12 @@ export function SearchResults({ query }: SearchResultsProps) {
           throw new Error(data.error || 'Failed to fetch results');
         }
 
-        setResults(Array.isArray(data) ? data : []);
+        if (!data.results || !Array.isArray(data.results)) {
+          setResults([]);
+          return;
+        }
+
+        setResults(data.results);
       } catch (err) {
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {

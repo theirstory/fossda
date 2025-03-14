@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { searchTranscripts, TranscriptSegment } from '@/lib/weaviate';
+import { searchTranscripts, SearchResult } from '@/lib/search';
 import { videoData, VideoId } from '@/data/videos';
 import OpenAI from 'openai';
 
@@ -34,12 +34,6 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-function formatTimestamp(seconds: number): string {
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = Math.floor(seconds % 60);
-  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
-}
-
 export async function POST(request: Request) {
   try {
     // Validate content type
@@ -72,9 +66,11 @@ export async function POST(request: Request) {
     }
 
     // Search for relevant transcript segments
-    let results: TranscriptSegment[];
+    let results: SearchResult[];
     try {
-      results = await searchTranscripts(question, 5);
+      results = await searchTranscripts(question);
+      // Take top 5 results
+      results = results.slice(0, 5);
     } catch (err) {
       console.error('Search error:', err);
       return NextResponse.json(
@@ -92,16 +88,16 @@ export async function POST(request: Request) {
 
     // Format quotes and prepare context for GPT
     const quotes: Quote[] = results.map((segment) => {
-      const videoTitle = videoData[segment.interviewId]?.title || 'Unknown Speaker';
+      const videoTitle = videoData[segment.interviewId as VideoId]?.title || 'Unknown Speaker';
       const speaker = videoTitle.split(' - ')[0];
       
       return {
         text: segment.text,
-        interviewId: segment.interviewId,
+        interviewId: segment.interviewId as VideoId,
         title: segment.chapterTitle,
         timestamp: segment.timestamp,
         speaker,
-        relevance: `This quote from ${speaker} discusses ${segment.chapterTitle.toLowerCase()} at ${formatTimestamp(segment.timestamp)} and has a semantic similarity score of ${(segment._additional?.certainty ?? 0 * 100).toFixed(1)}%.`,
+        relevance: `This quote from ${speaker} discusses ${segment.chapterTitle.toLowerCase()} and has a semantic similarity score of ${(segment.confidence * 100).toFixed(1)}%.`,
       };
     });
 

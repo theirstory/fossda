@@ -1,6 +1,6 @@
 import weaviate, { WeaviateClient } from 'weaviate-ts-client';
 
-interface SearchResult {
+export interface SearchResult {
   text: string;
   timestamp: number;
   interviewId: string;
@@ -30,22 +30,31 @@ export function getClient() {
     const apiKey = process.env.WEAVIATE_API_KEY;
     const openAIKey = process.env.OPENAI_API_KEY;
 
-    if (!host || !apiKey) {
-      throw new Error('Missing Weaviate configuration. Please check WEAVIATE_HOST and WEAVIATE_API_KEY environment variables.');
+    if (!host) {
+      throw new Error('Missing WEAVIATE_HOST environment variable');
+    }
+
+    if (!apiKey) {
+      throw new Error('Missing WEAVIATE_API_KEY environment variable');
     }
 
     if (!openAIKey) {
-      throw new Error('Missing OpenAI API key. Please check OPENAI_API_KEY environment variable.');
+      throw new Error('Missing OPENAI_API_KEY environment variable');
     }
 
-    client = weaviate.client({
-      scheme: 'https',
-      host,
-      apiKey: new weaviate.ApiKey(apiKey),
-      headers: {
-        'X-OpenAI-Api-Key': openAIKey,
-      },
-    });
+    try {
+      client = weaviate.client({
+        scheme: 'https',
+        host,
+        apiKey: new weaviate.ApiKey(apiKey),
+        headers: {
+          'X-OpenAI-Api-Key': openAIKey,
+        },
+      });
+    } catch (error) {
+      console.error('Error initializing Weaviate client:', error);
+      throw new Error('Failed to initialize Weaviate client. Please check your configuration.');
+    }
   }
   return client;
 }

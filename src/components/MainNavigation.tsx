@@ -83,9 +83,9 @@ export default function MainNavigation() {
                   <Image
                     src="/images/logo.png"
                     alt="FOSSDA Logo"
-                    width={77}
-                    height={39}
-                    className="w-[77px] h-auto"
+                    width={120}
+                    height={40}
+                    className="object-contain"
                   />
                   <span>FOSSDA</span>
                 </Link>
