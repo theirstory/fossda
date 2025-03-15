@@ -184,6 +184,11 @@ export default function VideoChapters({
         muxPlayer.currentTime = chapter.time.start;
         setActiveChapter(chapter);
         
+        // Update the URL with the start time
+        const url = new URL(window.location.href);
+        url.searchParams.set('start', chapter.time.start.toString());
+        window.history.pushState({}, '', url.toString());
+        
         if (isPlaying && typeof muxPlayer.play === 'function') {
           muxPlayer.play().catch(console.error);
         }
