@@ -13,11 +13,6 @@ interface ThemeExplorerProps {
 export default function ThemeExplorer({ currentThemeId }: ThemeExplorerProps) {
   const router = useRouter();
 
-  // Helper function to convert bg-color class to text-color class
-  const getTextColorClass = (bgColorClass: string) => {
-    return bgColorClass.replace('bg-', 'text-');
-  };
-
   // Calculate clip counts for each theme
   const themeClipCounts = themes.reduce((acc, theme) => {
     acc[theme.id] = clips.filter(clip => clip.themes.includes(theme.id)).length;
@@ -31,7 +26,6 @@ export default function ThemeExplorer({ currentThemeId }: ThemeExplorerProps) {
           .filter(theme => theme.id !== currentThemeId) // Filter out current theme
           .map((theme) => {
             const Icon = iconMap[theme.iconName];
-            const textColorClass = getTextColorClass(theme.color);
             const clipCount = themeClipCounts[theme.id];
             
             return (
@@ -46,7 +40,7 @@ export default function ThemeExplorer({ currentThemeId }: ThemeExplorerProps) {
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between gap-2">
-                      <h3 className={`text-sm font-medium ${textColorClass} group-hover:text-gray-900 transition-colors truncate`}>
+                      <h3 className={`text-sm font-medium text-gray-900 group-hover:text-gray-900 transition-colors truncate`}>
                         {theme.title}
                       </h3>
                       <span className="text-xs text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded-full whitespace-nowrap shrink-0">
