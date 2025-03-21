@@ -51,6 +51,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
   const transcriptRef = useRef<HTMLDivElement>(null);
   const transcriptContainerRef = useRef<HTMLDivElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [activeTab, setActiveTab] = useState("transcript");
   
   // Add error handling and fallback for chapter data
   const videoChapters = chapterData[videoId] || {
@@ -167,11 +168,9 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
 
   const handleClipClick = (timestamp: number) => {
     if (videoRef.current) {
-      const wasPlaying = isPlaying;
       videoRef.current.currentTime = timestamp;
-      if (wasPlaying) {
-        videoRef.current.play();
-      }
+      videoRef.current.play();
+      setActiveTab("transcript");
     }
   };
 
@@ -354,7 +353,7 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
       </div>
 
       <div className="bg-white rounded-lg shadow-lg h-full flex flex-col overflow-hidden">
-        <Tabs defaultValue="transcript" className="flex-1 flex flex-col overflow-hidden">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="flex-1 flex flex-col overflow-hidden">
           <TabsList className="w-full border-b flex-shrink-0 flex items-center px-2">
             <div className="flex-1" />
             <div className="flex gap-2">
