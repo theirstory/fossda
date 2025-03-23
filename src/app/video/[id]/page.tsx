@@ -42,7 +42,8 @@ export default async function VideoPage({ params }: Props) {
     "roger-dannenberg": "roger-dannenberg",
     "bart-decrem": "bart-decrem",
     "lawrence-rosen": "lawrence-rosen",
-    "jon-maddog-hall": "jon-maddog-hall"
+    "jon-maddog-hall": "jon-maddog-hall",
+    "tony-wasserman": "tony-wasserman"
   };
 
   const transcriptFilename = idMapping[videoId] || videoId;

@@ -286,7 +286,7 @@ export const clips: Clip[] = [
     },
     "interviewId": "deb-goodkin",
     "interviewTitle": "Deb Goodkin",
-    "transcript": "Karen Herman: Talk about the international aspect of it as well. Deb Goodkin: The, yeah, it's, I mean, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. Um, I think it's really important for us to figure out how to work well together.",
+    "transcript": "Karen Herman: Talk about the international aspect of it as well. Deb Goodkin: The, yeah, it's, it's a US focus because like the foundation, we're a US corporation, but, and I don't know, I can't remember what the breakout is of number of like US contributors to outside the US, but you have people from all over the world and, and, um, you know, we have lots of people in Europe and, uh, people in, uh, Ukraine, uh, Asia, uh, South America who are contributing to the project. And, um, and so you have, so you have different cultures, uh, and, and it's interesting. Um, you know, it's, it's interesting. Um, I think it's really important for us to figure out how to work well together.",
     "themes": [
       "community",
       "evolution"
@@ -1004,6 +1004,100 @@ export const clips: Clip[] = [
       "community",
       "challenges",
       "evolution"
+    ]
+  },
+  {
+    "id": "tony-wasserman-tony-wasserman-s-early-computing-experience-at-university",
+    "title": "Early Computing Experience at University",
+    "startTime": 40.56,
+    "endTime": 169.56,
+    "duration": 129,
+    "chapter": {
+      "id": "introduction-and-early-academic-pursuits",
+      "title": "Early Academic Pursuits"
+    },
+    "interviewId": "tony-wasserman",
+    "interviewTitle": "Tony Wasserman",
+    "transcript": "Tony Wasserman: So I went to Cal, University of California, Berkeley... the first computing course as a junior at Cal. And it was very quickly obvious to me that I was much better at programming and computing than I was at math or physics. And so having gone through Berkeley, I then went to graduate school at University of Wisconsin, Madison.",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "tony-wasserman-wasserman-s-introduction-to-open-source-through-ai-research",
+    "title": "Introduction to Open Source Through AI Research",
+    "startTime": 103.363,
+    "endTime": 320.363,
+    "duration": 217,
+    "chapter": {
+      "id": "introduction-and-early-academic-pursuits",
+      "title": "Introduction and Early Academic Pursuits"
+    },
+    "interviewId": "tony-wasserman",
+    "interviewTitle": "Tony Wasserman",
+    "transcript": "Tony Wasserman: ...And my original thought was that I would go for a master's degree, but they made me an RA and encouraged me to stay. So eventually I got a doctorate in, of all things, artificial intelligence... Rolls of teletype paper that printed 10 uppercase characters per second and clattered as it did it...",
+    "themes": [
+      "education",
+      "challenges",
+      "projects"
+    ]
+  },
+  {
+    "id": "tony-wasserman-early-exposure-to-unix-and-introduction-to-open-source-philosophy",
+    "title": "Exposure to UNIX and Introduction to Open Source Philosophy",
+    "startTime": 908.222,
+    "endTime": 1108.222,
+    "duration": 200,
+    "chapter": {
+      "id": "early-encounters-with-open-source-concepts",
+      "title": "Early Encounters with Open Source Concepts"
+    },
+    "interviewId": "tony-wasserman",
+    "interviewTitle": "Tony Wasserman",
+    "transcript": "Tony Wasserman: ...But then when UNIX came in the 1970s, I was on the faculty at UC San Francisco, and then I was also a lecturer at Berkeley... And Berkeley received a grant that involved enhancing AT&T UNIX. So Berkeley got the source code to AT&T UNIX and they made a bunch of changes, virtual memory being the one that is perhaps the most significant...",
+    "themes": [
+      "mission-values",
+      "projects",
+      "community"
+    ]
+  },
+  {
+    "id": "tony-wasserman-creating-software-through-pictures-and-early-open-source-contributions",
+    "title": "Creating Software Through Pictures and Early Open Source Contributions",
+    "startTime": 1379.527,
+    "endTime": 1612.527,
+    "duration": 233,
+    "chapter": {
+      "id": "founding-an-early-software-company",
+      "title": "Founding an Early Software Company"
+    },
+    "interviewId": "tony-wasserman",
+    "interviewTitle": "Tony Wasserman",
+    "transcript": "Tony Wasserman: ...we were distributing open source software in 1980... And the product was called Software Through Pictures. Ah, okay. So we were one of the first products to include open source software. I think we were second. I think Sun Microsystems was first...",
+    "themes": [
+      "projects",
+      "challenges",
+      "evolution"
+    ]
+  },
+  {
+    "id": "tony-wasserman-reflecting-on-challenges-and-the-future-of-open-source",
+    "title": "Reflecting on Challenges and the Future of Open Source",
+    "startTime": 4104.212,
+    "endTime": 4313.212,
+    "duration": 209,
+    "chapter": {
+      "id": "closing-thoughts-and-reflections",
+      "title": "Closing Thoughts and Reflections"
+    },
+    "interviewId": "tony-wasserman",
+    "interviewTitle": "Tony Wasserman",
+    "transcript": "Bryan Berhenshausen: What do you see as the biggest challenges for open source as an idea, or for open source as a movement, or even as a set of practices in the future? Tony Wasserman: Well, there are a lot of issues, of course... But the first part of it is that proprietary software isn't going away...",
+    "themes": [
+      "challenges",
+      "evolution",
+      "community"
     ]
   },
   {

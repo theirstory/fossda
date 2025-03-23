@@ -9,7 +9,7 @@ import * as path from 'path';
 import dotenv from 'dotenv';
 import { JSDOM } from 'jsdom';
 import Mux from '@mux/mux-node';
-import { videoData, VideoId } from '@/data/videos';
+import { videoData, VideoId } from '../src/data/videos';
 
 // Load environment variables from .env.local first
 const envResult = dotenv.config({ path: path.join(process.cwd(), '.env.local') });

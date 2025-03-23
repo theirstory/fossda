@@ -162,6 +162,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           defaultShowCaptions
           defaultShowChapters
           poster={thumbnail}
+          preload="none"
         />
       </div>
     );

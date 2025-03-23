@@ -1,5 +1,5 @@
 import { ChapterData, ChapterMetadata } from "@/types/transcript";
-import introChapters from './chapters/introduction-to-fossda-index.json';
+import introductionChapters from './chapters/introduction-to-fossda-index.json';
 import debChapters from './chapters/deb-goodkin-index.json';
 import heatherChapters from './chapters/heather-meeker-index.json';
 import bruceChapters from './chapters/bruce-perens-index.json';
@@ -9,6 +9,7 @@ import bartChapters from './chapters/bart-decrem-index.json';
 import tristanChapters from './chapters/tristan-nitot-index.json';
 import lawrenceChapters from './chapters/lawrence-rosen-index.json';
 import jonChapters from './chapters/jon-maddog-hall-index.json';
+import tonyWassermanChapters from './chapters/tony-wasserman-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -37,7 +38,7 @@ export const chapterData: Record<string, ChapterData> = {
     title: "Introduction to FOSSDA",
     created_at: "2024-03-20",
     updated_at: "2024-03-20",
-    metadata: processChapterMetadata(introChapters.metadata)
+    metadata: processChapterMetadata(introductionChapters.metadata)
   },
   "deb-goodkin": {
     title: "Deb Goodkin Interview",
@@ -92,5 +93,11 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2025-03-12",
     updated_at: "2025-03-12",
     metadata: processChapterMetadata(jonChapters.metadata)
-  }
+  },
+  "tony-wasserman": {
+    title: "Tony Wasserman FOSSDA Interview (Bryan Behrenshausen)",
+    created_at: "2025-03-23",
+    updated_at: "2025-03-23",
+    metadata: processChapterMetadata(tonyWassermanChapters.metadata)
+  },
 }; 

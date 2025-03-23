@@ -1,0 +1,94 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Early Academic Pursuits",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Bryan Behrenshausen interviews Tony Wasserman for the FOSSDA project. Tony discusses his academic background, including his studies in math and physics at UC Berkeley and his transition to computing. He also details his graduate studies at the University of Wisconsin, Madison, where he focused on artificial intelligence.",
+      "keywords": "FOSSDA, interview, academia, UC Berkeley, math, physics, artificial intelligence"
+    },
+    {
+      "title": "Discovering a Passion for Computing",
+      "timecode": "00:04:57",
+      "time": {
+        "start": 297,
+        "end": null
+      },
+      "synopsis": "Tony reflects on his natural aptitude for mathematics and physics and his eventual realization that he was more skilled at programming. He describes early experiences with computing, his dissertation work in AI, and the significance of human-computer interaction.",
+      "keywords": "computer science, AI, dissertation, human-computer interaction, programming, ALGOL, Burroughs computers"
+    },
+    {
+      "title": "Early Encounters with Open Source Concepts",
+      "timecode": "00:14:02",
+      "time": {
+        "start": 842,
+        "end": null
+      },
+      "synopsis": "Tony discusses his early exposure to software sharing through IBM Share and Guide and his involvement with UNIX at UC Berkeley. He explains how the Berkeley Software Distribution (BSD) license influenced open source practices before the term \"open source\" existed.",
+      "keywords": "UNIX, BSD, AT&T, open source origins, software sharing, academia, Berkeley, software licensing"
+    },
+    {
+      "title": "Founding an Early Software Company",
+      "timecode": "00:23:06",
+      "time": {
+        "start": 1386,
+        "end": null
+      },
+      "synopsis": "Tony describes his transition from academia to entrepreneurship, founding Interactive Development Environments (IDE) and creating one of the first software products to include open source components. He discusses early software industry trends and IDE’s role in commercial software.",
+      "keywords": "startup, IDE, software industry, commercial software, open source business, Sun Microsystems, early computing"
+    },
+    {
+      "title": "The Emergence of \"Open Source\" as a Term",
+      "timecode": "00:33:36",
+      "time": {
+        "start": 2016,
+        "end": null
+      },
+      "synopsis": "Tony recounts the transition from \"free software\" to \"open source\" and his awareness of Richard Stallman’s work. He describes the early days of open source business models and how companies like Sun Microsystems, Red Hat, and MySQL helped shape the movement.",
+      "keywords": "free software, Richard Stallman, open source adoption, Linux, Red Hat, MySQL, Sun Microsystems"
+    },
+    {
+      "title": "Evaluating and Adopting Open Source Software",
+      "timecode": "00:45:29",
+      "time": {
+        "start": 2729,
+        "end": null
+      },
+      "synopsis": "Tony discusses his research on open source software adoption, the challenges of evaluating business-ready open source solutions, and his work on the Business Readiness Rating. He reflects on how companies gradually embraced open source, particularly after the 2008 financial crisis.",
+      "keywords": "open source evaluation, business adoption, Business Readiness Rating, proprietary software, enterprise software"
+    },
+    {
+      "title": "The Future Challenges of Open Source",
+      "timecode": "01:08:27",
+      "time": {
+        "start": 4107,
+        "end": null
+      },
+      "synopsis": "Tony examines the long-term coexistence of proprietary and open source software, challenges in mobile computing, and the difficulties of monetizing open source. He considers whether open source depends on altruism and discusses the broader implications for the software industry.",
+      "keywords": "open source future, business models, software industry, proprietary software, mobile computing, altruism"
+    },
+    {
+      "title": "Reflections on Startups and Open Source Growth",
+      "timecode": "01:12:29",
+      "time": {
+        "start": 4349,
+        "end": null
+      },
+      "synopsis": "Tony shares insights from his work with startups, the difficulty of predicting successful ventures, and his involvement with Berkeley’s Skydeck accelerator. He reflects on the evolution of open source, entrepreneurship, and software development.",
+      "keywords": "startups, entrepreneurship, venture capital, software development, Skydeck, open source evolution"
+    },
+    {
+      "title": "Closing Thoughts and Reflections",
+      "timecode": "01:13:53",
+      "time": {
+        "start": 4433,
+        "end": null
+      },
+      "synopsis": "Tony and Bryan wrap up the interview, discussing the importance of preserving open source history. Tony reflects on his contributions and expresses interest in seeing the final version of the interview.",
+      "keywords": "open source history, reflections, FOSSDA, interview conclusion"
+    }
+  ]
+}

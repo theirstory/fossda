@@ -11,19 +11,26 @@ export type VideoId =
   | "roger-dannenberg"
   | "bart-decrem"
   | "lawrence-rosen"
-  | "jon-maddog-hall";
+  | "jon-maddog-hall"
+  | "tony-wasserman";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData: Record<VideoId, VideoData> = {
   "introduction-to-fossda": {
     id: "introduction-to-fossda",
     title: "Introduction to FOSSDA",
-    duration: "5:07",
-    thumbnail: "/thumbnails/fossda-intro.png",
-    summary: `Open source has transformed our world, not through governments or corporations, but through dedicated individuals 
-    who envisioned a better way to share software. FOSSDA captures the personal stories of those who built this 
-    movement, preserving their experiences for future generations who will carry open source forward into the 21st century.`,
-    sentence: "An introduction to the Free and Open Source Stories Digital Archive and its mission."
+    duration: "1:14:21",
+    thumbnail: "/thumbnails/introduction-to-fossda.jpg",
+    summary: "An introduction to the Free and Open Source Software Digital Archive project.",
+    sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "tony-wasserman": {
+    id: "tony-wasserman",
+    title: "Tony Wasserman",
+    duration: "1:14:21",
+    thumbnail: "/thumbnails/tony-wasserman.jpg",
+    summary: "Tony Wasserman, a distinguished computer science professor and open source pioneer, shares his journey from double-majoring in math and physics at UC Berkeley to becoming a leading figure in software engineering and open source development. His unique perspective bridges academic research and practical industry experience, offering valuable insights into the evolution of open source software and its impact on modern computing.",
+    sentence: "From early AI research to championing open source business models and adoption."
   },
   "jon-maddog-hall": {
     id: "jon-maddog-hall",

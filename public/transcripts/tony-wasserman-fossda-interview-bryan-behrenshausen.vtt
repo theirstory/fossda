@@ -1,0 +1,6770 @@
+WEBVTT
+
+1
+00:00:00.180 --> 00:00:04.851
+<v Bryan Berhenshausen:>Bryan Behrenshausen interviewing Tony Wasserman for the
+
+2
+00:00:04.851 --> 00:00:06.214
+<v Bryan Berhenshausen:>FOSSDA project.
+
+3
+00:00:06.274 --> 00:00:07.845
+<v Bryan Berhenshausen:>Tony, thanks so much for doing this.
+
+4
+00:00:07.906 --> 00:00:08.629
+<v Bryan Berhenshausen:>Really appreciate it.
+
+5
+00:00:10.262 --> 00:00:10.803
+<v Bryan Berhenshausen:>Absolutely.
+
+6
+00:00:12.346 --> 00:00:14.530
+<v Bryan Berhenshausen:>I want to start just to talk
+
+7
+00:00:14.590 --> 00:00:17.715
+<v Bryan Berhenshausen:>about your early academic pursuits, I guess,
+
+8
+00:00:18.140 --> 00:00:19.624
+<v Bryan Berhenshausen:>because I'm trying to paint a picture
+
+9
+00:00:19.684 --> 00:00:22.791
+<v Bryan Berhenshausen:>of what gets a person attracted to
+
+10
+00:00:22.952 --> 00:00:24.882
+<v Bryan Berhenshausen:>open source and how different people find
+
+11
+00:00:24.922 --> 00:00:27.227
+<v Bryan Berhenshausen:>their ways into computer science and open
+
+12
+00:00:27.248 --> 00:00:27.529
+<v Bryan Berhenshausen:>source.
+
+13
+00:00:27.569 --> 00:00:29.941
+<v Bryan Berhenshausen:>And so I want to talk about
+
+14
+00:00:29.941 --> 00:00:31.866
+<v Bryan Berhenshausen:>about where you went to college and
+
+15
+00:00:31.886 --> 00:00:32.869
+<v Bryan Berhenshausen:>what you went to college for.
+
+16
+00:00:32.909 --> 00:00:34.654
+<v Bryan Berhenshausen:>I think you were a double major,
+
+17
+00:00:34.740 --> 00:00:35.202
+<v Bryan Berhenshausen:>is that right?
+
+18
+00:00:35.907 --> 00:00:36.369
+<v Bryan Berhenshausen:>It's true.
+
+19
+00:00:37.122 --> 00:00:37.403
+<v Bryan Berhenshausen:>Yeah.
+
+20
+00:00:37.423 --> 00:00:38.386
+<v Bryan Berhenshausen:>Tell me a little bit about where
+
+21
+00:00:38.407 --> 00:00:39.330
+<v Bryan Berhenshausen:>you went to school and what you
+
+22
+00:00:39.350 --> 00:00:39.910
+<v Bryan Berhenshausen:>went to school for.
+
+23
+00:00:40.560 --> 00:00:41.964
+<v Tony Wasserman:>So I went to Cal, University of
+
+24
+00:00:41.984 --> 00:00:42.986
+<v Tony Wasserman:>California, Berkeley.
+
+25
+00:00:43.748 --> 00:00:46.641
+<v Tony Wasserman:>I went there from Coral Gables, Florida
+
+26
+00:00:46.681 --> 00:00:47.443
+<v Tony Wasserman:>of all places.
+
+27
+00:00:47.844 --> 00:00:49.930
+<v Tony Wasserman:>So I have my parents to thank
+
+28
+00:00:49.970 --> 00:00:50.992
+<v Tony Wasserman:>for letting me go all the way
+
+29
+00:00:51.033 --> 00:00:51.960
+<v Tony Wasserman:>across the country.
+
+30
+00:00:51.980 --> 00:00:58.190
+<v Tony Wasserman:>And it was really because I think
+
+31
+00:00:58.972 --> 00:01:00.553
+<v Tony Wasserman:>my father always wanted to move to
+
+32
+00:01:00.595 --> 00:01:02.020
+<v Tony Wasserman:>California and didn't.
+
+33
+00:01:02.601 --> 00:01:04.785
+<v Tony Wasserman:>And so it seemed like the place
+
+34
+00:01:04.805 --> 00:01:05.105
+<v Tony Wasserman:>to go.
+
+35
+00:01:06.227 --> 00:01:08.311
+<v Tony Wasserman:>So I did a double major in
+
+36
+00:01:08.351 --> 00:01:11.960
+<v Tony Wasserman:>math and physics at Berkeley, and I
+
+37
+00:01:12.000 --> 00:01:17.808
+<v Tony Wasserman:>took my first computing course as a
+
+38
+00:01:17.848 --> 00:01:19.991
+<v Tony Wasserman:>junior at Cal.
+
+39
+00:01:20.712 --> 00:01:23.595
+<v Tony Wasserman:>And it was very quickly obvious to
+
+40
+00:01:23.636 --> 00:01:25.464
+<v Tony Wasserman:>me that I was much better at
+
+41
+00:01:25.664 --> 00:01:27.851
+<v Tony Wasserman:>programming and computing than I was at
+
+42
+00:01:27.891 --> 00:01:28.714
+<v Tony Wasserman:>math or physics.
+
+43
+00:01:30.522 --> 00:01:37.071
+<v Tony Wasserman:>And so having gone through Berkeley, I
+
+44
+00:01:37.131 --> 00:01:41.295
+<v Tony Wasserman:>then went to graduate school at University
+
+45
+00:01:41.316 --> 00:01:42.501
+<v Tony Wasserman:>of Wisconsin, Madison.
+
+46
+00:01:43.363 --> 00:01:45.569
+<v Tony Wasserman:>And my original thought was that I
+
+47
+00:01:45.610 --> 00:01:47.334
+<v Tony Wasserman:>would go for a master's degree, but
+
+48
+00:01:48.682 --> 00:01:50.085
+<v Tony Wasserman:>they gave me money and made me
+
+49
+00:01:50.125 --> 00:01:52.589
+<v Tony Wasserman:>an RA and encouraged me to stay.
+
+50
+00:01:52.690 --> 00:01:56.483
+<v Tony Wasserman:>So eventually I got a doctorate in,
+
+51
+00:01:56.723 --> 00:01:58.849
+<v Tony Wasserman:>of all things, artificial intelligence.
+
+52
+00:01:59.471 --> 00:01:59.852
+<v Bryan Berhenshausen:>Yeah.
+
+53
+00:01:59.872 --> 00:02:01.100
+<v Bryan Berhenshausen:>I want to talk about that a
+
+54
+00:02:01.120 --> 00:02:01.861
+<v Bryan Berhenshausen:>little bit then too.
+
+55
+00:02:01.922 --> 00:02:02.362
+<v Tony Wasserman:>Yeah.
+
+56
+00:02:02.903 --> 00:02:07.972
+<v Tony Wasserman:>So that was very early in the
+
+57
+00:02:08.012 --> 00:02:11.039
+<v Tony Wasserman:>AI days during the initial wave of
+
+58
+00:02:11.140 --> 00:02:14.070
+<v Tony Wasserman:>excitement, which then went to sleep for
+
+59
+00:02:14.070 --> 00:02:14.646
+<v Tony Wasserman:>50 years.
+
+60
+00:02:16.168 --> 00:02:21.756
+<v Tony Wasserman:>So that was my academic education and
+
+61
+00:02:22.300 --> 00:02:22.881
+<v Tony Wasserman:>coming out.
+
+62
+00:02:23.682 --> 00:02:26.889
+<v Tony Wasserman:>I think the two things that stuck
+
+63
+00:02:26.929 --> 00:02:29.954
+<v Tony Wasserman:>with me from my graduate school was
+
+64
+00:02:30.556 --> 00:02:36.612
+<v Tony Wasserman:>one, writing interactive programs because the technology
+
+65
+00:02:36.632 --> 00:02:38.255
+<v Tony Wasserman:>at the time was really primitive.
+
+66
+00:02:39.742 --> 00:02:43.560
+<v Tony Wasserman:>Rolls of teletype paper that printed 10
+
+67
+00:02:43.969 --> 00:02:47.855
+<v Tony Wasserman:>uppercase characters per second and clattered as
+
+68
+00:02:47.936 --> 00:02:48.296
+<v Tony Wasserman:>it did it.
+
+69
+00:02:49.783 --> 00:02:51.066
+<v Tony Wasserman:>So when you put this in front
+
+70
+00:02:51.106 --> 00:02:53.611
+<v Tony Wasserman:>of somebody who was unfamiliar with computers,
+
+71
+00:02:54.233 --> 00:02:55.295
+<v Tony Wasserman:>as I had to do for my
+
+72
+00:02:55.380 --> 00:02:58.747
+<v Tony Wasserman:>research, it was really quite an interesting
+
+73
+00:02:58.827 --> 00:03:01.774
+<v Tony Wasserman:>exercise and taught me a lot at
+
+74
+00:03:01.834 --> 00:03:04.404
+<v Tony Wasserman:>this very, very early stage of computing
+
+75
+00:03:04.886 --> 00:03:08.995
+<v Tony Wasserman:>about user experiences and human computer interaction.
+
+76
+00:03:08.995 --> 00:03:10.924
+<v Tony Wasserman:>And And I did a little bit
+
+77
+00:03:10.985 --> 00:03:13.191
+<v Tony Wasserman:>more work on that over the years.
+
+78
+00:03:13.211 --> 00:03:14.194
+<v Tony Wasserman:>So that was one thing that I
+
+79
+00:03:14.234 --> 00:03:14.861
+<v Tony Wasserman:>came away with.
+
+80
+00:03:14.921 --> 00:03:16.024
+<v Tony Wasserman:>And the other thing that I came
+
+81
+00:03:16.084 --> 00:03:18.351
+<v Tony Wasserman:>away with was how to architect large
+
+82
+00:03:18.371 --> 00:03:22.185
+<v Tony Wasserman:>software systems, because my dissertation program got
+
+83
+00:03:22.305 --> 00:03:25.973
+<v Tony Wasserman:>to be quite large and being able
+
+84
+00:03:26.033 --> 00:03:27.459
+<v Tony Wasserman:>to read all this code after you've
+
+85
+00:03:27.460 --> 00:03:28.442
+<v Tony Wasserman:>you've written it for years.
+
+86
+00:03:28.522 --> 00:03:30.667
+<v Tony Wasserman:>And even if it's your own code,
+
+87
+00:03:32.731 --> 00:03:34.734
+<v Tony Wasserman:>being able to do all these things
+
+88
+00:03:34.795 --> 00:03:36.624
+<v Tony Wasserman:>that we now take for granted in
+
+89
+00:03:36.664 --> 00:03:40.734
+<v Tony Wasserman:>software engineering levels of abstraction and modularization.
+
+90
+00:03:41.822 --> 00:03:42.924
+<v Tony Wasserman:>I went back and I looked at
+
+91
+00:03:42.984 --> 00:03:47.011
+<v Tony Wasserman:>this 50-plus-year-old code not too long ago,
+
+92
+00:03:47.713 --> 00:03:49.476
+<v Tony Wasserman:>and it was written in ALGOL.
+
+93
+00:03:50.241 --> 00:03:53.250
+<v Tony Wasserman:>I've only ever heard of that language.
+
+94
+00:03:53.270 --> 00:03:54.333
+<v Tony Wasserman:>I don't think I've ever even seen
+
+95
+00:03:54.353 --> 00:03:54.393
+<v Tony Wasserman:>it.
+
+96
+00:03:55.161 --> 00:03:56.244
+<v Tony Wasserman:>ALGOL is wonderful.
+
+97
+00:03:56.364 --> 00:03:58.970
+<v Tony Wasserman:>I mean, it was perfect for these
+
+98
+00:03:59.051 --> 00:04:00.815
+<v Tony Wasserman:>stack architectures machines.
+
+99
+00:04:02.243 --> 00:04:04.869
+<v Tony Wasserman:>And ALGOL predates Fortran, actually.
+
+100
+00:04:05.731 --> 00:04:07.595
+<v Tony Wasserman:>Not by much, but it does.
+
+101
+00:04:08.221 --> 00:04:08.501
+<v Tony Wasserman:>Yeah.
+
+102
+00:04:08.762 --> 00:04:10.465
+<v Tony Wasserman:>And it was much more of an
+
+103
+00:04:10.505 --> 00:04:11.507
+<v Tony Wasserman:>international effort.
+
+104
+00:04:11.968 --> 00:04:13.590
+<v Tony Wasserman:>So it was great.
+
+105
+00:04:13.651 --> 00:04:16.541
+<v Tony Wasserman:>And I did this on a Burroughs
+
+106
+00:04:16.581 --> 00:04:17.042
+<v Tony Wasserman:>computer.
+
+107
+00:04:17.123 --> 00:04:18.847
+<v Tony Wasserman:>You've probably never heard of Burroughs computers
+
+108
+00:04:18.928 --> 00:04:19.148
+<v Tony Wasserman:>either.
+
+109
+00:04:19.850 --> 00:04:22.702
+<v Tony Wasserman:>But at the time, it was IBM
+
+110
+00:04:22.722 --> 00:04:26.209
+<v Tony Wasserman:>and the seven dwarfs, RCA and General
+
+111
+00:04:26.330 --> 00:04:29.275
+<v Tony Wasserman:>Electric and Honeywell and Burroughs and UNIVAC
+
+112
+00:04:29.600 --> 00:04:31.585
+<v Tony Wasserman:>and Control Data.
+
+113
+00:04:31.745 --> 00:04:32.407
+<v Tony Wasserman:>That's six.
+
+114
+00:04:32.467 --> 00:04:33.208
+<v Tony Wasserman:>That's not bad.
+
+115
+00:04:33.649 --> 00:04:34.331
+<v Tony Wasserman:>There's a seventh.
+
+116
+00:04:34.451 --> 00:04:35.654
+<v Tony Wasserman:>Oh, scientific data systems.
+
+117
+00:04:36.180 --> 00:04:36.941
+<v Tony Wasserman:>So that's seven.
+
+118
+00:04:38.304 --> 00:04:39.467
+<v Tony Wasserman:>Those are the seven dwarfs.
+
+119
+00:04:40.329 --> 00:04:41.751
+<v Tony Wasserman:>And IBM had like 70% market share.
+
+120
+00:04:48.463 --> 00:04:52.389
+<v Tony Wasserman:>But that was where I did my
+
+121
+00:04:52.450 --> 00:04:53.732
+<v Tony Wasserman:>work, and I learned about how to
+
+122
+00:04:54.713 --> 00:04:56.676
+<v Tony Wasserman:>design large systems.
+
+123
+00:04:57.361 --> 00:04:57.602
+<v Bryan Berhenshausen:>Yeah.
+
+124
+00:04:58.263 --> 00:04:58.744
+<v Bryan Berhenshausen:>So I want to...
+
+125
+00:04:59.205 --> 00:05:01.549
+<v Bryan Berhenshausen:>That's fascinating.
+
+126
+00:05:01.570 --> 00:05:03.413
+<v Bryan Berhenshausen:>I want to back up a little
+
+127
+00:05:03.433 --> 00:05:05.200
+<v Bryan Berhenshausen:>bit, just talk about that crossroads that
+
+128
+00:05:05.422 --> 00:05:06.304
+<v Bryan Berhenshausen:>you found yourself at.
+
+129
+00:05:06.324 --> 00:05:08.409
+<v Bryan Berhenshausen:>You sort of glossed over something I
+
+130
+00:05:08.429 --> 00:05:11.561
+<v Bryan Berhenshausen:>think is all too common for folks
+
+131
+00:05:11.601 --> 00:05:12.182
+<v Bryan Berhenshausen:>in academe.
+
+132
+00:05:12.202 --> 00:05:13.845
+<v Bryan Berhenshausen:>And that is, you had a set
+
+133
+00:05:13.885 --> 00:05:16.911
+<v Bryan Berhenshausen:>of interests that led you into certain
+
+134
+00:05:16.931 --> 00:05:20.943
+<v Bryan Berhenshausen:>fields, in this case, math and physics.
+
+135
+00:05:21.947 --> 00:05:23.512
+<v Bryan Berhenshausen:>And then there was something, and you
+
+136
+00:05:23.552 --> 00:05:24.801
+<v Bryan Berhenshausen:>said, because you were better at it.
+
+137
+00:05:25.102 --> 00:05:26.907
+<v Bryan Berhenshausen:>But I would venture to say that
+
+138
+00:05:26.928 --> 00:05:28.151
+<v Bryan Berhenshausen:>there's probably a lot of things you're
+
+139
+00:05:28.693 --> 00:05:30.242
+<v Bryan Berhenshausen:>good at or better at than math
+
+140
+00:05:30.283 --> 00:05:31.927
+<v Bryan Berhenshausen:>and physics that you didn't go into.
+
+141
+00:05:32.628 --> 00:05:34.392
+<v Bryan Berhenshausen:>So I guess my question is twofold.
+
+142
+00:05:35.275 --> 00:05:37.225
+<v Bryan Berhenshausen:>One, what do you think it was
+
+143
+00:05:37.285 --> 00:05:40.293
+<v Bryan Berhenshausen:>about you as a person that initially
+
+144
+00:05:40.333 --> 00:05:43.025
+<v Bryan Berhenshausen:>got started, math and physics?
+
+145
+00:05:43.065 --> 00:05:44.669
+<v Bryan Berhenshausen:>What about your personality led you to
+
+146
+00:05:44.709 --> 00:05:45.311
+<v Bryan Berhenshausen:>those fields?
+
+147
+00:05:45.411 --> 00:05:48.423
+<v Bryan Berhenshausen:>And then can you remember the moment
+
+148
+00:05:48.463 --> 00:05:51.529
+<v Bryan Berhenshausen:>where you realized like, oh, this is
+
+149
+00:05:51.609 --> 00:05:53.893
+<v Bryan Berhenshausen:>where I'm meant to go?
+
+150
+00:05:53.913 --> 00:05:55.456
+<v Bryan Berhenshausen:>Do you have any memories?
+
+151
+00:05:57.063 --> 00:05:57.664
+<v Tony Wasserman:>A little bit.
+
+152
+00:05:57.744 --> 00:05:59.628
+<v Tony Wasserman:>I mean, from the time that I
+
+153
+00:05:59.668 --> 00:06:03.014
+<v Tony Wasserman:>was very young, I was good at
+
+154
+00:06:03.054 --> 00:06:05.665
+<v Tony Wasserman:>arithmetic and mathematics and memory numbers, all
+
+155
+00:06:05.725 --> 00:06:06.727
+<v Tony Wasserman:>things numerical.
+
+156
+00:06:07.609 --> 00:06:09.674
+<v Tony Wasserman:>And so it seemed like the natural
+
+157
+00:06:09.760 --> 00:06:10.260
+<v Tony Wasserman:>direction.
+
+158
+00:06:10.722 --> 00:06:13.951
+<v Tony Wasserman:>And when you're in elementary school or
+
+159
+00:06:13.971 --> 00:06:16.041
+<v Tony Wasserman:>middle school or high school, there are
+
+160
+00:06:16.061 --> 00:06:20.510
+<v Tony Wasserman:>certain things that you don't have to
+
+161
+00:06:20.550 --> 00:06:21.172
+<v Tony Wasserman:>worry at all.
+
+162
+00:06:21.212 --> 00:06:22.194
+<v Tony Wasserman:>You just got it made.
+
+163
+00:06:22.875 --> 00:06:27.224
+<v Tony Wasserman:>If you're at that level.
+
+164
+00:06:28.387 --> 00:06:30.670
+<v Tony Wasserman:>And so it always seemed to me
+
+165
+00:06:31.572 --> 00:06:34.596
+<v Tony Wasserman:>that my ability in mathematics was so
+
+166
+00:06:34.676 --> 00:06:37.405
+<v Tony Wasserman:>natural, and that was reinforced by SAT
+
+167
+00:06:38.306 --> 00:06:42.415
+<v Tony Wasserman:>scores and high school grades and all
+
+168
+00:06:42.455 --> 00:06:43.236
+<v Tony Wasserman:>those kinds of things.
+
+169
+00:06:43.962 --> 00:06:46.186
+<v Tony Wasserman:>So when it came time to pick
+
+170
+00:06:46.226 --> 00:06:49.252
+<v Tony Wasserman:>a major, it wasn't as much as
+
+171
+00:06:49.312 --> 00:06:51.376
+<v Tony Wasserman:>I'm interested in history, for example.
+
+172
+00:06:51.376 --> 00:06:51.402
+<v Tony Wasserman:>I see.
+
+173
+00:06:51.402 --> 00:06:51.421
+<v Tony Wasserman:>I see.
+
+174
+00:06:53.262 --> 00:07:00.532
+<v Tony Wasserman:>And actually took some history courses at
+
+175
+00:07:00.912 --> 00:07:00.972
+<v Tony Wasserman:>Cal.
+
+176
+00:07:01.954 --> 00:07:02.835
+<v Tony Wasserman:>It wasn't what I was going to
+
+177
+00:07:02.875 --> 00:07:03.676
+<v Tony Wasserman:>do with my life.
+
+178
+00:07:03.817 --> 00:07:06.284
+<v Tony Wasserman:>I always had the impression that you
+
+179
+00:07:06.324 --> 00:07:08.669
+<v Tony Wasserman:>could make a living at mathematics.
+
+180
+00:07:09.932 --> 00:07:12.219
+<v Tony Wasserman:>And I guess that's true still.
+
+181
+00:07:13.122 --> 00:07:14.204
+<v Tony Wasserman:>Yeah, I assume so.
+
+182
+00:07:14.825 --> 00:07:16.707
+<v Tony Wasserman:>But I also assume that when you
+
+183
+00:07:16.768 --> 00:07:18.151
+<v Tony Wasserman:>were in school, in primary school,
+
+184
+00:07:21.020 --> 00:07:23.506
+<v Bryan Berhenshausen:>you didn't have access to computers, right?
+
+185
+00:07:23.547 --> 00:07:24.870
+<v Bryan Berhenshausen:>You wouldn't have known that you had
+
+186
+00:07:24.890 --> 00:07:29.308
+<v Bryan Berhenshausen:>an affinity for computational mathematics or computer
+
+187
+00:07:29.328 --> 00:07:32.584
+<v Bryan Berhenshausen:>science or computer hardware in general, because
+
+188
+00:07:32.865 --> 00:07:34.510
+<v Bryan Berhenshausen:>your first exposure to them was probably
+
+189
+00:07:34.530 --> 00:07:35.313
+<v Bryan Berhenshausen:>at the university level.
+
+190
+00:07:36.081 --> 00:07:36.321
+<v Tony Wasserman:>Right.
+
+191
+00:07:37.443 --> 00:07:38.085
+<v Tony Wasserman:>That's correct.
+
+192
+00:07:38.846 --> 00:07:41.631
+<v Tony Wasserman:>Because when I was seven years old,
+
+193
+00:07:42.873 --> 00:07:45.442
+<v Tony Wasserman:>there was a national election, and they
+
+194
+00:07:45.522 --> 00:07:48.167
+<v Tony Wasserman:>had the UNIVAC brain.
+
+195
+00:07:48.188 --> 00:07:49.672
+<v Tony Wasserman:>Yes, I remember.
+
+196
+00:07:49.712 --> 00:07:50.854
+<v Tony Wasserman:>Well, I've seen the footage.
+
+197
+00:07:52.523 --> 00:07:54.287
+<v Tony Wasserman:>Predicting the outcome of the election.
+
+198
+00:07:54.307 --> 00:07:57.213
+<v Tony Wasserman:>And that was kind of my first
+
+199
+00:07:57.293 --> 00:07:58.901
+<v Tony Wasserman:>introduction to computing, and and they made
+
+200
+00:07:58.961 --> 00:08:01.426
+<v Tony Wasserman:>it seem so mystical.
+
+201
+00:08:02.107 --> 00:08:05.053
+<v Tony Wasserman:>It was kind of there in the
+
+202
+00:08:05.093 --> 00:08:05.835
+<v Tony Wasserman:>back of my mind.
+
+203
+00:08:05.935 --> 00:08:11.788
+<v Tony Wasserman:>But computing really was not an issue
+
+204
+00:08:11.949 --> 00:08:15.855
+<v Tony Wasserman:>for people, certainly not until the late
+
+205
+00:08:15.875 --> 00:08:20.846
+<v Tony Wasserman:>1950s, when banks and airlines and the
+
+206
+00:08:20.886 --> 00:08:24.412
+<v Tony Wasserman:>like began using them for a lot
+
+207
+00:08:24.452 --> 00:08:26.155
+<v Tony Wasserman:>of their routine things.
+
+208
+00:08:26.416 --> 00:08:29.585
+<v Tony Wasserman:>Of course, computers were used in the
+
+209
+00:08:29.625 --> 00:08:33.533
+<v Tony Wasserman:>defense and military areas, but that was
+
+210
+00:08:33.573 --> 00:08:35.180
+<v Tony Wasserman:>not an area that I knew anything
+
+211
+00:08:35.260 --> 00:08:38.445
+<v Tony Wasserman:>about, nor did I have any interest
+
+212
+00:08:40.948 --> 00:08:41.128
+<v Tony Wasserman:>in.
+
+213
+00:08:41.789 --> 00:08:44.674
+<v Tony Wasserman:>So I've done a PhD as well,
+
+214
+00:08:44.935 --> 00:08:46.396
+<v Tony Wasserman:>and in my field in
+
+215
+00:08:46.500 --> 00:08:49.549
+<v Bryan Berhenshausen:>communication studies, the dissertation involves essentially like
+
+216
+00:08:49.569 --> 00:08:52.645
+<v Bryan Berhenshausen:>the production of a large monograph, essentially
+
+217
+00:08:52.665 --> 00:08:53.969
+<v Bryan Berhenshausen:>like a book-length monograph.
+
+218
+00:08:54.009 --> 00:08:55.300
+<v Bryan Berhenshausen:>But from what I understand, you you
+
+219
+00:08:55.320 --> 00:08:58.470
+<v Bryan Berhenshausen:>were saying earlier, your dissertation project involved,
+
+220
+00:08:58.630 --> 00:09:00.401
+<v Bryan Berhenshausen:>I'm sure, a significant amount of writing,
+
+221
+00:09:01.183 --> 00:09:03.629
+<v Bryan Berhenshausen:>but also building a program.
+
+222
+00:09:03.669 --> 00:09:04.089
+<v Bryan Berhenshausen:>Is that right?
+
+223
+00:09:04.792 --> 00:09:05.253
+<v Bryan Berhenshausen:>That's right.
+
+224
+00:09:05.273 --> 00:09:06.255
+<v Bryan Berhenshausen:>I mean, you know,
+
+225
+00:09:06.420 --> 00:09:09.007
+<v Tony Wasserman:>my dissertation runs 200 some odd pages.
+
+226
+00:09:09.027 --> 00:09:11.072
+<v Tony Wasserman:>I think I have a digital copy
+
+227
+00:09:11.112 --> 00:09:12.660
+<v Tony Wasserman:>of it on this machine somewhere.
+
+228
+00:09:15.825 --> 00:09:21.694
+<v Tony Wasserman:>But because it was systems-oriented, you had
+
+229
+00:09:21.734 --> 00:09:24.502
+<v Tony Wasserman:>to build something and demonstrate it.
+
+230
+00:09:24.622 --> 00:09:28.208
+<v Tony Wasserman:>So the code was somewhere above 10,000
+
+231
+00:09:29.070 --> 00:09:29.511
+<v Tony Wasserman:>lines.
+
+232
+00:09:29.531 --> 00:09:31.375
+<v Tony Wasserman:>I don't remember the exact count, but
+
+233
+00:09:31.395 --> 00:09:33.122
+<v Tony Wasserman:>it was a fair amount of code.
+
+234
+00:09:33.824 --> 00:09:36.832
+<v Tony Wasserman:>And what specific dissertation or what specific
+
+235
+00:09:36.893 --> 00:09:37.454
+<v Tony Wasserman:>problem was
+
+236
+00:09:37.500 --> 00:09:40.347
+<v Bryan Berhenshausen:>your dissertation trying to figure out?
+
+237
+00:09:40.467 --> 00:09:41.810
+<v Bryan Berhenshausen:>What were you tackling?
+
+238
+00:09:41.971 --> 00:09:43.335
+<v Bryan Berhenshausen:>The title of the dissertation
+
+239
+00:09:43.400 --> 00:09:45.928
+<v Tony Wasserman:>was Achievement of Skill and Generality in
+
+240
+00:09:45.968 --> 00:09:49.165
+<v Tony Wasserman:>an Artificial Intelligence Program, which is a
+
+241
+00:09:49.225 --> 00:09:50.812
+<v Tony Wasserman:>problem that exists to this day.
+
+242
+00:09:54.763 --> 00:09:57.468
+<v Bryan Berhenshausen:>What do they call Alexa add-ons, right?
+
+243
+00:09:57.489 --> 00:09:58.371
+<v Bryan Berhenshausen:>They call them skills.
+
+244
+00:09:58.672 --> 00:10:00.661
+<v Bryan Berhenshausen:>You download skills for your Alexa, right?
+
+245
+00:10:02.225 --> 00:10:04.268
+<v Bryan Berhenshausen:>We don't have any listening devices in
+
+246
+00:10:04.309 --> 00:10:04.911
+<v Bryan Berhenshausen:>my house.
+
+247
+00:10:06.434 --> 00:10:06.875
+<v Bryan Berhenshausen:>I don't either.
+
+248
+00:10:07.844 --> 00:10:08.507
+<v Tony Wasserman:>Except for this.
+
+249
+00:10:15.261 --> 00:10:18.129
+<v Tony Wasserman:>One of the things that strikes me
+
+250
+00:10:18.169 --> 00:10:21.483
+<v Tony Wasserman:>as particularly interesting about the OpenAI and
+
+251
+00:10:21.523 --> 00:10:24.709
+<v Tony Wasserman:>the GPT-4 and BARD technologies is that
+
+252
+00:10:24.749 --> 00:10:28.656
+<v Tony Wasserman:>they do cover, they have one skill
+
+253
+00:10:28.820 --> 00:10:30.446
+<v Tony Wasserman:>that they're really, really good at, which
+
+254
+00:10:30.466 --> 00:10:36.488
+<v Tony Wasserman:>is information retrieval and compression and restatement.
+
+255
+00:10:37.850 --> 00:10:39.973
+<v Tony Wasserman:>But it works across a wide variety
+
+256
+00:10:40.014 --> 00:10:40.656
+<v Tony Wasserman:>of domains.
+
+257
+00:10:42.723 --> 00:10:44.766
+<v Tony Wasserman:>Because the other day, for example, I
+
+258
+00:10:44.866 --> 00:10:48.773
+<v Tony Wasserman:>asked BARD to help me plan a
+
+259
+00:10:48.833 --> 00:10:51.119
+<v Tony Wasserman:>couple of days of sightseeing on an
+
+260
+00:10:51.200 --> 00:10:51.962
+<v Tony Wasserman:>upcoming trip.
+
+261
+00:10:52.444 --> 00:10:53.667
+<v Tony Wasserman:>And it gave me a very nice
+
+262
+00:10:54.168 --> 00:10:55.270
+<v Tony Wasserman:>list of suggestions.
+
+263
+00:10:55.291 --> 00:10:57.541
+<v Tony Wasserman:>At one o'clock in the afternoon, do
+
+264
+00:10:57.581 --> 00:10:57.862
+<v Tony Wasserman:>this.
+
+265
+00:10:57.882 --> 00:11:00.207
+<v Tony Wasserman:>At three o'clock in the afternoon, do
+
+266
+00:11:00.268 --> 00:11:00.548
+<v Tony Wasserman:>that.
+
+267
+00:11:00.909 --> 00:11:03.359
+<v Tony Wasserman:>Go have tapas at this place at
+
+268
+00:11:03.440 --> 00:11:03.981
+<v Tony Wasserman:>this time.
+
+269
+00:11:04.623 --> 00:11:06.646
+<v Tony Wasserman:>It was pretty impressive.
+
+270
+00:11:07.810 --> 00:11:10.435
+<v Tony Wasserman:>What was your dissertation specifically?
+
+271
+00:11:11.021 --> 00:11:14.168
+<v Bryan Berhenshausen:>What did your program do with regard
+
+272
+00:11:14.188 --> 00:11:14.669
+<v Bryan Berhenshausen:>to AI?
+
+273
+00:11:15.671 --> 00:11:17.354
+<v Bryan Berhenshausen:>It was the world's best bridge bidding
+
+274
+00:11:17.414 --> 00:11:17.755
+<v Bryan Berhenshausen:>program.
+
+275
+00:11:17.760 --> 00:11:20.184
+<v Tony Wasserman:>Okay.
+
+276
+00:11:22.047 --> 00:11:25.973
+<v Tony Wasserman:>Because at the time, there was, of
+
+277
+00:11:26.013 --> 00:11:27.936
+<v Tony Wasserman:>course, checkers, which was very early and
+
+278
+00:11:27.936 --> 00:11:33.950
+<v Tony Wasserman:>not not such a huge problem to
+
+279
+00:11:33.991 --> 00:11:35.213
+<v Tony Wasserman:>build a skillful program.
+
+280
+00:11:35.694 --> 00:11:36.776
+<v Tony Wasserman:>But people were starting to work on
+
+281
+00:11:36.880 --> 00:11:38.424
+<v Tony Wasserman:>chess, of course, at that time.
+
+282
+00:11:38.584 --> 00:11:42.154
+<v Tony Wasserman:>And chess is a combinatorially difficult problem.
+
+283
+00:11:43.683 --> 00:11:45.006
+<v Tony Wasserman:>And it turns out that bridge the
+
+284
+00:11:45.046 --> 00:11:47.452
+<v Tony Wasserman:>same way, the number of hands that
+
+285
+00:11:47.492 --> 00:11:49.461
+<v Tony Wasserman:>can be dealt and the division of
+
+286
+00:11:49.541 --> 00:11:54.027
+<v Tony Wasserman:>them among multiple players, turns out that
+
+287
+00:11:55.650 --> 00:11:56.090
+<v Tony Wasserman:>it's hard.
+
+288
+00:11:56.672 --> 00:12:00.802
+<v Tony Wasserman:>And the technology that I used, there
+
+289
+00:12:00.822 --> 00:12:03.367
+<v Tony Wasserman:>were two or three technologies, but what
+
+290
+00:12:03.408 --> 00:12:04.590
+<v Tony Wasserman:>I used was rule-based.
+
+291
+00:12:05.853 --> 00:12:07.000
+<v Tony Wasserman:>So that you had to, there there
+
+292
+00:12:08.743 --> 00:12:11.247
+<v Tony Wasserman:>are ways, standard ways to evaluate the
+
+293
+00:12:11.308 --> 00:12:15.035
+<v Tony Wasserman:>cards in your hand and to interpret
+
+294
+00:12:15.116 --> 00:12:18.345
+<v Tony Wasserman:>the bids that your partner makes to
+
+295
+00:12:18.445 --> 00:12:22.952
+<v Tony Wasserman:>help you come up with a final
+
+296
+00:12:23.052 --> 00:12:25.656
+<v Tony Wasserman:>bid or maybe seat to the opposition,
+
+297
+00:12:25.700 --> 00:12:29.487
+<v Tony Wasserman:>the contract that's to be made.
+
+298
+00:12:29.507 --> 00:12:32.794
+<v Tony Wasserman:>Now, later on, after I had left
+
+299
+00:12:32.854 --> 00:12:37.547
+<v Tony Wasserman:>the university, I did, in fact, work
+
+300
+00:12:37.587 --> 00:12:39.130
+<v Tony Wasserman:>with one other person and we built
+
+301
+00:12:39.271 --> 00:12:41.535
+<v Tony Wasserman:>the play of the hand part and
+
+302
+00:12:41.575 --> 00:12:43.162
+<v Tony Wasserman:>it played quite well.
+
+303
+00:12:44.043 --> 00:12:47.409
+<v Tony Wasserman:>And the fascinating thing about it is
+
+304
+00:12:47.569 --> 00:12:51.255
+<v Tony Wasserman:>that we found somebody who wanted to
+
+305
+00:12:51.315 --> 00:12:54.924
+<v Tony Wasserman:>manufacture a box, right?
+
+306
+00:12:55.104 --> 00:13:00.091
+<v Tony Wasserman:>So there's an item called the Goran
+
+307
+00:13:00.131 --> 00:13:00.992
+<v Tony Wasserman:>Bridge Master.
+
+308
+00:13:02.715 --> 00:13:04.361
+<v Tony Wasserman:>And you can find them, they're very
+
+309
+00:13:04.481 --> 00:13:07.428
+<v Tony Wasserman:>scarce, but on bidding sites, you can
+
+310
+00:13:07.489 --> 00:13:07.949
+<v Tony Wasserman:>find them.
+
+311
+00:13:08.712 --> 00:13:10.055
+<v Tony Wasserman:>And I have one that's kind of
+
+312
+00:13:10.180 --> 00:13:11.241
+<v Tony Wasserman:>unopened, untouched.
+
+313
+00:13:11.842 --> 00:13:13.966
+<v Tony Wasserman:>But the asking price was $350, which
+
+314
+00:13:13.986 --> 00:13:15.048
+<v Tony Wasserman:>is, you know, it limited the appeal.
+
+315
+00:13:21.381 --> 00:13:22.723
+<v Bryan Berhenshausen:>Oh, that was 1970s dollars, $350, 1970s
+
+316
+00:13:22.764 --> 00:13:23.887
+<v Bryan Berhenshausen:>dollars, not the cost of the one
+
+317
+00:13:23.907 --> 00:13:28.021
+<v Bryan Berhenshausen:>from the internet that you bought.
+
+318
+00:13:28.843 --> 00:13:29.123
+<v Bryan Berhenshausen:>Right.
+
+319
+00:13:29.946 --> 00:13:30.646
+<v Bryan Berhenshausen:>Ah, gotcha.
+
+320
+00:13:30.708 --> 00:13:32.992
+<v Bryan Berhenshausen:>Yeah, that limits your audience a little
+
+321
+00:13:33.013 --> 00:13:33.154
+<v Bryan Berhenshausen:>bit.
+
+322
+00:13:33.214 --> 00:13:33.334
+<v Bryan Berhenshausen:>Yep.
+
+323
+00:13:33.560 --> 00:13:35.424
+<v Tony Wasserman:>Yeah, a little bit prohibitive.
+
+324
+00:13:35.665 --> 00:13:38.992
+<v Tony Wasserman:>And so, and of course, they didn't
+
+325
+00:13:39.012 --> 00:13:40.481
+<v Tony Wasserman:>spend as much money as they might
+
+326
+00:13:40.521 --> 00:13:41.402
+<v Tony Wasserman:>have on marketing.
+
+327
+00:13:41.524 --> 00:13:42.205
+<v Tony Wasserman:>So who knows?
+
+328
+00:13:42.507 --> 00:13:44.031
+<v Tony Wasserman:>There was no social media to get
+
+329
+00:13:44.092 --> 00:13:44.613
+<v Tony Wasserman:>the word out.
+
+330
+00:13:48.145 --> 00:13:50.349
+<v Tony Wasserman:>So we might have had a different
+
+331
+00:13:50.449 --> 00:13:53.574
+<v Tony Wasserman:>outcome in a modern era with a
+
+332
+00:13:53.614 --> 00:13:56.843
+<v Tony Wasserman:>different price point and a different marketing
+
+333
+00:13:56.884 --> 00:13:58.727
+<v Tony Wasserman:>message, but that's something we'll never know.
+
+334
+00:13:59.048 --> 00:13:59.829
+<v Tony Wasserman:>Yeah, right.
+
+335
+00:14:00.571 --> 00:14:02.795
+<v Tony Wasserman:>So when then did
+
+336
+00:14:02.820 --> 00:14:06.125
+<v Bryan Berhenshausen:>you first encounter the idea of open
+
+337
+00:14:06.165 --> 00:14:07.266
+<v Bryan Berhenshausen:>source software?
+
+338
+00:14:08.068 --> 00:14:12.314
+<v Bryan Berhenshausen:>So I think it came about in
+
+339
+00:14:12.355 --> 00:14:12.816
+<v Bryan Berhenshausen:>two ways.
+
+340
+00:14:13.580 --> 00:14:16.344
+<v Tony Wasserman:>The first was that I was aware
+
+341
+00:14:16.684 --> 00:14:22.272
+<v Tony Wasserman:>of the things like IBM Share and
+
+342
+00:14:22.332 --> 00:14:26.781
+<v Tony Wasserman:>Guide, which were, you know, these annual
+
+343
+00:14:26.841 --> 00:14:31.049
+<v Tony Wasserman:>meetings where the company would talk about
+
+344
+00:14:31.129 --> 00:14:35.381
+<v Tony Wasserman:>its future plans, and people brought software
+
+345
+00:14:35.421 --> 00:14:35.801
+<v Tony Wasserman:>to share.
+
+346
+00:14:37.245 --> 00:14:39.590
+<v Tony Wasserman:>And the mentality at the time was
+
+347
+00:14:39.630 --> 00:14:40.452
+<v Tony Wasserman:>very, very different.
+
+348
+00:14:40.492 --> 00:14:43.342
+<v Tony Wasserman:>That is, it's the hardware that's expensive,
+
+349
+00:14:44.345 --> 00:14:45.828
+<v Tony Wasserman:>and the software isn't worth anything.
+
+350
+00:14:46.229 --> 00:14:50.101
+<v Tony Wasserman:>You know, here's my routine to perform
+
+351
+00:14:50.121 --> 00:14:50.983
+<v Tony Wasserman:>this calculation.
+
+352
+00:14:51.023 --> 00:14:54.190
+<v Tony Wasserman:>Here's this one to compute some trajectory,
+
+353
+00:14:54.210 --> 00:14:57.221
+<v Tony Wasserman:>you know, share and share alike.
+
+354
+00:14:58.683 --> 00:15:03.612
+<v Tony Wasserman:>And so that was something I knew
+
+355
+00:15:03.692 --> 00:15:03.992
+<v Tony Wasserman:>about.
+
+356
+00:15:04.012 --> 00:15:05.996
+<v Tony Wasserman:>I didn't have any particular use for
+
+357
+00:15:06.036 --> 00:15:07.781
+<v Tony Wasserman:>it at the time.
+
+358
+00:15:08.222 --> 00:15:15.692
+<v Tony Wasserman:>But then when UNIX came in the
+
+359
+00:15:15.732 --> 00:15:18.696
+<v Tony Wasserman:>1970s, I was on the faculty at
+
+360
+00:15:18.976 --> 00:15:21.182
+<v Tony Wasserman:>UC San Francisco, and then I was
+
+361
+00:15:21.222 --> 00:15:24.448
+<v Tony Wasserman:>also a lecturer at Berkeley, where I
+
+362
+00:15:24.528 --> 00:15:28.876
+<v Tony Wasserman:>taught data structures and operating systems and
+
+363
+00:15:30.242 --> 00:15:30.903
+<v Tony Wasserman:>things like that.
+
+364
+00:15:32.365 --> 00:15:35.090
+<v Tony Wasserman:>And Berkeley at the time got one
+
+365
+00:15:35.110 --> 00:15:37.593
+<v Tony Wasserman:>of the earliest PDP 1170, well, I
+
+366
+00:15:37.614 --> 00:15:41.882
+<v Tony Wasserman:>think it was a 45 originally, that
+
+367
+00:15:43.426 --> 00:15:45.048
+<v Tony Wasserman:>ran at least part of the day
+
+368
+00:15:45.108 --> 00:15:45.809
+<v Tony Wasserman:>it ran UNIX.
+
+369
+00:15:46.711 --> 00:15:51.021
+<v Tony Wasserman:>And then very quickly, they had machines
+
+370
+00:15:51.081 --> 00:15:52.584
+<v Tony Wasserman:>that ran UNIX all the time.
+
+371
+00:15:53.185 --> 00:15:57.273
+<v Tony Wasserman:>And Berkeley received a grant from the
+
+372
+00:15:57.374 --> 00:16:00.022
+<v Tony Wasserman:>United States Department of of Defense that
+
+373
+00:16:01.685 --> 00:16:05.250
+<v Tony Wasserman:>involved enhancing AT&T UNIX.
+
+374
+00:16:06.352 --> 00:16:08.814
+<v Tony Wasserman:>So Berkeley got the source code to
+
+375
+00:16:08.855 --> 00:16:09.396
+<v Tony Wasserman:>AT&T UNIX.
+
+376
+00:16:11.303 --> 00:16:14.149
+<v Tony Wasserman:>And they made a bunch of changes,
+
+377
+00:16:14.269 --> 00:16:16.354
+<v Tony Wasserman:>virtual memory being the one that is
+
+378
+00:16:16.614 --> 00:16:17.901
+<v Tony Wasserman:>perhaps the most significant.
+
+379
+00:16:18.724 --> 00:16:19.906
+<v Tony Wasserman:>They made this all run on a
+
+380
+00:16:19.967 --> 00:16:27.347
+<v Tony Wasserman:>digital equipment corporation, VAX 11780, and distributed
+
+381
+00:16:27.367 --> 00:16:27.447
+<v Tony Wasserman:>it.
+
+382
+00:16:28.328 --> 00:16:32.135
+<v Tony Wasserman:>And the license from AT&T was a
+
+383
+00:16:32.195 --> 00:16:33.055
+<v Tony Wasserman:>commercial license.
+
+384
+00:16:34.603 --> 00:16:38.551
+<v Tony Wasserman:>But in the, in the academic setting,
+
+385
+00:16:38.972 --> 00:16:41.982
+<v Tony Wasserman:>with government money being spent, then then
+
+386
+00:16:42.423 --> 00:16:43.425
+<v Tony Wasserman:>the license was different.
+
+387
+00:16:44.367 --> 00:16:49.056
+<v Tony Wasserman:>And so they created the BSD license.
+
+388
+00:16:50.142 --> 00:16:52.127
+<v Tony Wasserman:>Nobody used the term open source software
+
+389
+00:16:52.187 --> 00:16:53.189
+<v Tony Wasserman:>at that point.
+
+390
+00:16:53.650 --> 00:16:55.695
+<v Tony Wasserman:>It was the BSD license.
+
+391
+00:16:57.302 --> 00:17:03.250
+<v Tony Wasserman:>And so anybody could obtain the software,
+
+392
+00:17:04.732 --> 00:17:05.834
+<v Tony Wasserman:>or you could go spend $43,000 with
+
+393
+00:17:05.854 --> 00:17:08.820
+<v Tony Wasserman:>AT&T to get the commercial one.
+
+394
+00:17:10.144 --> 00:17:12.448
+<v Tony Wasserman:>And, you know, there's a history here
+
+395
+00:17:12.529 --> 00:17:16.120
+<v Tony Wasserman:>of different hardware vendors, either supporting the
+
+396
+00:17:16.221 --> 00:17:19.368
+<v Tony Wasserman:>AT&T version of the UNIX or the
+
+397
+00:17:19.488 --> 00:17:22.655
+<v Tony Wasserman:>modified Berkeley version of UNIX.
+
+398
+00:17:22.734 --> 00:17:26.509
+<v Tony Wasserman:>But, but the, the Berkeley version certainly
+
+399
+00:17:26.569 --> 00:17:28.574
+<v Tony Wasserman:>won out in academia because the price
+
+400
+00:17:28.614 --> 00:17:28.995
+<v Tony Wasserman:>was right.
+
+401
+00:17:29.881 --> 00:17:31.825
+<v Tony Wasserman:>And so we got to a point
+
+402
+00:17:31.865 --> 00:17:37.096
+<v Tony Wasserman:>where almost every computer science department had
+
+403
+00:17:37.096 --> 00:17:40.227
+<v Tony Wasserman:>a a VAX and ran UNIX and
+
+404
+00:17:40.347 --> 00:17:42.973
+<v Tony Wasserman:>students learned a lot of their computing
+
+405
+00:17:43.414 --> 00:17:43.875
+<v Tony Wasserman:>on UNIX.
+
+406
+00:17:44.981 --> 00:17:47.446
+<v Tony Wasserman:>Things like the VI editor were developed
+
+407
+00:17:48.128 --> 00:17:51.174
+<v Tony Wasserman:>by Bill Joy at, at Berkeley.
+
+408
+00:17:51.254 --> 00:17:54.726
+<v Tony Wasserman:>And, you know, he had a different
+
+409
+00:17:54.806 --> 00:17:57.472
+<v Tony Wasserman:>version of UNIX of, I'm sorry, VI
+
+410
+00:17:58.073 --> 00:17:58.654
+<v Tony Wasserman:>every day.
+
+411
+00:17:58.674 --> 00:18:02.626
+<v Tony Wasserman:>So you could, yes, it was really
+
+412
+00:18:02.666 --> 00:18:07.875
+<v Tony Wasserman:>a model for the kind of rinse,
+
+413
+00:18:07.915 --> 00:18:08.815
+<v Tony Wasserman:>lather and repeat.
+
+414
+00:18:11.883 --> 00:18:13.866
+<v Tony Wasserman:>So it was a, it was a
+
+415
+00:18:14.066 --> 00:18:18.654
+<v Tony Wasserman:>very agile approach to building the software
+
+416
+00:18:18.934 --> 00:18:21.702
+<v Tony Wasserman:>before anybody used the term agile to
+
+417
+00:18:22.363 --> 00:18:23.564
+<v Tony Wasserman:>describe the process.
+
+418
+00:18:24.447 --> 00:18:29.375
+<v Tony Wasserman:>So, so that's, you know, that's the
+
+419
+00:18:29.435 --> 00:18:30.055
+<v Tony Wasserman:>origin of VI.
+
+420
+00:18:31.241 --> 00:18:36.968
+<v Tony Wasserman:>And so that, what that led to,
+
+421
+00:18:36.988 --> 00:18:40.273
+<v Tony Wasserman:>I was working on a project in,
+
+422
+00:18:40.293 --> 00:18:44.142
+<v Tony Wasserman:>at UC San Francisco, project was called
+
+423
+00:18:44.242 --> 00:18:45.564
+<v Tony Wasserman:>user software engineering.
+
+424
+00:18:46.367 --> 00:18:49.254
+<v Tony Wasserman:>And the term was coined because software
+
+425
+00:18:49.274 --> 00:18:50.742
+<v Tony Wasserman:>engineering was the big thing, right?
+
+426
+00:18:50.782 --> 00:18:54.891
+<v Tony Wasserman:>Top down design and this kind of
+
+427
+00:18:55.092 --> 00:18:55.332
+<v Tony Wasserman:>thing.
+
+428
+00:18:55.693 --> 00:18:56.659
+<v Tony Wasserman:>And I said, well, you know, if
+
+429
+00:18:56.700 --> 00:19:00.168
+<v Tony Wasserman:>you're building interactive systems, people don't really
+
+430
+00:19:00.370 --> 00:19:02.741
+<v Tony Wasserman:>care about how your system is architected.
+
+431
+00:19:02.761 --> 00:19:06.347
+<v Tony Wasserman:>So, so we were doing what I
+
+432
+00:19:06.427 --> 00:19:09.172
+<v Tony Wasserman:>call the outside in engineering.
+
+433
+00:19:09.853 --> 00:19:13.863
+<v Tony Wasserman:>So getting, getting user interface right.
+
+434
+00:19:14.565 --> 00:19:17.490
+<v Tony Wasserman:>And if you think about this the
+
+435
+00:19:17.570 --> 00:19:19.934
+<v Tony Wasserman:>user interface in that era, as I
+
+436
+00:19:19.975 --> 00:19:22.103
+<v Tony Wasserman:>said before, was extremely primitive.
+
+437
+00:19:23.085 --> 00:19:25.430
+<v Tony Wasserman:>We had moved on from TTY terminals
+
+438
+00:19:25.430 --> 00:19:31.806
+<v Tony Wasserman:>to 24 by 80 visual displays that
+
+439
+00:19:32.167 --> 00:19:33.710
+<v Tony Wasserman:>looked like a TV set with a
+
+440
+00:19:33.750 --> 00:19:34.271
+<v Tony Wasserman:>keyboard.
+
+441
+00:19:35.673 --> 00:19:39.423
+<v Tony Wasserman:>They were monochrome, you know, black on
+
+442
+00:19:39.463 --> 00:19:41.025
+<v Tony Wasserman:>white was really sophisticated.
+
+443
+00:19:41.126 --> 00:19:42.830
+<v Tony Wasserman:>Green on black was more common.
+
+444
+00:19:44.833 --> 00:19:49.087
+<v Tony Wasserman:>And there were, there were thousands of
+
+445
+00:19:49.148 --> 00:19:51.454
+<v Tony Wasserman:>different manufacturers of these terminals.
+
+446
+00:19:52.382 --> 00:19:53.925
+<v Tony Wasserman:>And so one of the things that
+
+447
+00:19:53.965 --> 00:19:55.949
+<v Tony Wasserman:>they had to do in Unix was
+
+448
+00:19:56.050 --> 00:20:01.824
+<v Tony Wasserman:>to create a library that was dependent
+
+449
+00:20:02.166 --> 00:20:04.551
+<v Tony Wasserman:>on the characteristics of each terminal.
+
+450
+00:20:04.831 --> 00:20:07.400
+<v Tony Wasserman:>This was a library called Curses, which
+
+451
+00:20:07.521 --> 00:20:10.507
+<v Tony Wasserman:>is a funny, funny name for it.
+
+452
+00:20:11.188 --> 00:20:13.433
+<v Tony Wasserman:>Anyway, to come back to the UCSF
+
+453
+00:20:13.453 --> 00:20:15.983
+<v Tony Wasserman:>situation, we were doing UCSF, we're doing
+
+454
+00:20:16.083 --> 00:20:17.105
+<v Tony Wasserman:>user software engineering.
+
+455
+00:20:17.846 --> 00:20:21.033
+<v Tony Wasserman:>And so we were building tools to
+
+456
+00:20:21.093 --> 00:20:23.442
+<v Tony Wasserman:>support this method, because to me, you
+
+457
+00:20:23.463 --> 00:20:26.268
+<v Tony Wasserman:>can have a method for building software,
+
+458
+00:20:26.910 --> 00:20:29.715
+<v Tony Wasserman:>but tools exist to support a method.
+
+459
+00:20:30.441 --> 00:20:32.848
+<v Tony Wasserman:>So since most of the applications we
+
+460
+00:20:32.888 --> 00:20:34.753
+<v Tony Wasserman:>were concerned with at the time were
+
+461
+00:20:34.813 --> 00:20:39.148
+<v Tony Wasserman:>conversational access to databases, we built a
+
+462
+00:20:39.188 --> 00:20:40.130
+<v Tony Wasserman:>database system.
+
+463
+00:20:40.892 --> 00:20:42.134
+<v Tony Wasserman:>And this was at a very early
+
+464
+00:20:42.194 --> 00:20:46.346
+<v Tony Wasserman:>stage, building a relational database system.
+
+465
+00:20:46.366 --> 00:20:50.734
+<v Tony Wasserman:>You know, the research papers were written
+
+466
+00:20:50.734 --> 00:20:51.280
+<v Tony Wasserman:>in 1970.
+
+467
+00:20:52.520 --> 00:20:56.310
+<v Tony Wasserman:>And the first relational database systems showed
+
+468
+00:20:56.390 --> 00:20:57.192
+<v Tony Wasserman:>up at the end of the 1970s.
+
+469
+00:20:58.160 --> 00:21:03.751
+<v Tony Wasserman:>System R, IBM Research, and Ingress at
+
+470
+00:21:03.771 --> 00:21:05.474
+<v Tony Wasserman:>Berkeley, and a couple of others.
+
+471
+00:21:05.915 --> 00:21:10.146
+<v Tony Wasserman:>So we built a tool for user
+
+472
+00:21:10.186 --> 00:21:11.287
+<v Tony Wasserman:>interface prototyping.
+
+473
+00:21:12.910 --> 00:21:16.976
+<v Tony Wasserman:>And we built a database management system,
+
+474
+00:21:17.781 --> 00:21:20.107
+<v Tony Wasserman:>and we made them available.
+
+475
+00:21:21.169 --> 00:21:22.613
+<v Tony Wasserman:>And we made them available under a
+
+476
+00:21:22.673 --> 00:21:23.615
+<v Tony Wasserman:>BSD license.
+
+477
+00:21:24.822 --> 00:21:29.471
+<v Tony Wasserman:>So we licensed the people who licensed
+
+478
+00:21:29.491 --> 00:21:32.076
+<v Tony Wasserman:>the software from the University of California,
+
+479
+00:21:32.140 --> 00:21:33.825
+<v Tony Wasserman:>San Francisco, or from the regents of
+
+480
+00:21:33.845 --> 00:21:36.332
+<v Tony Wasserman:>the University of California, they could have
+
+481
+00:21:36.373 --> 00:21:37.681
+<v Tony Wasserman:>it and use it.
+
+482
+00:21:38.723 --> 00:21:41.168
+<v Tony Wasserman:>And we got a reasonably good reaction
+
+483
+00:21:41.228 --> 00:21:45.902
+<v Tony Wasserman:>to it, which led us forward, because
+
+484
+00:21:45.962 --> 00:21:47.147
+<v Tony Wasserman:>people came and said, well, who's going
+
+485
+00:21:47.167 --> 00:21:48.452
+<v Tony Wasserman:>to support all of this stuff?
+
+486
+00:21:49.121 --> 00:21:51.927
+<v Tony Wasserman:>Yes, the universities were fine, they would
+
+487
+00:21:51.947 --> 00:21:52.388
+<v Tony Wasserman:>play with it.
+
+488
+00:21:52.869 --> 00:21:56.881
+<v Tony Wasserman:>But once somebody in companies wanted it,
+
+489
+00:21:57.002 --> 00:22:03.273
+<v Tony Wasserman:>then, you know, the IT manager said,
+
+490
+00:22:03.413 --> 00:22:04.836
+<v Tony Wasserman:>well, you know, who's going to support,
+
+491
+00:22:04.920 --> 00:22:06.524
+<v Tony Wasserman:>we can't use this unless there's support
+
+492
+00:22:06.585 --> 00:22:06.866
+<v Tony Wasserman:>for it.
+
+493
+00:22:07.749 --> 00:22:09.314
+<v Tony Wasserman:>And back to us and say, well,
+
+494
+00:22:09.320 --> 00:22:10.181
+<v Tony Wasserman:>who's going to support it?
+
+495
+00:22:11.103 --> 00:22:12.606
+<v Tony Wasserman:>And we said, okay, we'll do it.
+
+496
+00:22:14.390 --> 00:22:17.235
+<v Tony Wasserman:>And so that led to our starting
+
+497
+00:22:17.255 --> 00:22:17.760
+<v Tony Wasserman:>a company.
+
+498
+00:22:19.623 --> 00:22:23.228
+<v Tony Wasserman:>And the products that we had, the
+
+499
+00:22:23.249 --> 00:22:26.193
+<v Tony Wasserman:>things that we built at UCSF were
+
+500
+00:22:27.035 --> 00:22:29.644
+<v Tony Wasserman:>foundations for the computer aided software engineering
+
+501
+00:22:29.684 --> 00:22:30.627
+<v Tony Wasserman:>tools that we built.
+
+502
+00:22:31.068 --> 00:22:32.994
+<v Tony Wasserman:>They ran on some workstations and all
+
+503
+00:22:33.014 --> 00:22:35.405
+<v Tony Wasserman:>of the other engineering workstations of that
+
+504
+00:22:35.565 --> 00:22:35.866
+<v Tony Wasserman:>era.
+
+505
+00:22:36.788 --> 00:22:39.254
+<v Tony Wasserman:>And most of the software we built
+
+506
+00:22:39.334 --> 00:22:41.343
+<v Tony Wasserman:>in the company was proprietary.
+
+507
+00:22:42.205 --> 00:22:44.250
+<v Tony Wasserman:>But those pieces that we had licensed
+
+508
+00:22:44.430 --> 00:22:48.944
+<v Tony Wasserman:>from the University of California, we put
+
+509
+00:22:48.984 --> 00:22:51.689
+<v Tony Wasserman:>a clause in our license agreement that
+
+510
+00:22:52.711 --> 00:22:54.995
+<v Tony Wasserman:>talked about this particular part of the
+
+511
+00:22:55.035 --> 00:22:57.382
+<v Tony Wasserman:>software that was part of what we
+
+512
+00:22:57.423 --> 00:22:58.144
+<v Tony Wasserman:>were distributing.
+
+513
+00:22:58.605 --> 00:23:02.372
+<v Tony Wasserman:>So we were distributing open source software
+
+514
+00:23:02.372 --> 00:23:02.918
+<v Tony Wasserman:>in 1980.
+
+515
+00:23:04.200 --> 00:23:05.747
+<v Tony Wasserman:>Yeah, before that even existed.
+
+516
+00:23:05.828 --> 00:23:06.511
+<v Tony Wasserman:>Right, right.
+
+517
+00:23:06.511 --> 00:23:07.026
+<v Bryan Berhenshausen:>Exactly.
+
+518
+00:23:07.161 --> 00:23:07.161
+<v Bryan Berhenshausen:>Exactly.
+
+519
+00:23:07.863 --> 00:23:11.231
+<v Bryan Berhenshausen:>And, and, you know, Berkeley Unix was
+
+520
+00:23:11.271 --> 00:23:12.875
+<v Bryan Berhenshausen:>being distributed the same way.
+
+521
+00:23:14.743 --> 00:23:18.149
+<v Tony Wasserman:>So there was this community around it.
+
+522
+00:23:18.750 --> 00:23:22.055
+<v Tony Wasserman:>And Ingress at Berkeley was also distributed
+
+523
+00:23:23.522 --> 00:23:25.406
+<v Tony Wasserman:>under a BSD license.
+
+524
+00:23:26.148 --> 00:23:29.534
+<v Tony Wasserman:>And Mike Stonebraker, who was the lead
+
+525
+00:23:29.594 --> 00:23:32.706
+<v Tony Wasserman:>on that project, also started a company
+
+526
+00:23:33.448 --> 00:23:35.474
+<v Tony Wasserman:>called Relational Technology initially.
+
+527
+00:23:35.480 --> 00:23:38.025
+<v Tony Wasserman:>And it was just down the road
+
+528
+00:23:38.065 --> 00:23:39.348
+<v Tony Wasserman:>from campus in Berkeley.
+
+529
+00:23:40.891 --> 00:23:44.342
+<v Tony Wasserman:>But they were quite successful with Relational
+
+530
+00:23:44.363 --> 00:23:49.072
+<v Tony Wasserman:>Technology, which became Ingress, which eventually got
+
+531
+00:23:49.553 --> 00:23:51.583
+<v Tony Wasserman:>acquired by somebody, I don't know.
+
+532
+00:23:51.925 --> 00:23:52.767
+<v Tony Wasserman:>And what was the name of your
+
+533
+00:23:52.849 --> 00:23:53.351
+<v Tony Wasserman:>company again?
+
+534
+00:23:54.302 --> 00:23:56.648
+<v Tony Wasserman:>Interactive Development Environments, IDE.
+
+535
+00:23:57.250 --> 00:23:58.834
+<v Tony Wasserman:>And the product was called Software Through
+
+536
+00:23:58.874 --> 00:23:59.275
+<v Tony Wasserman:>Pictures.
+
+537
+00:24:00.366 --> 00:24:00.749
+<v Tony Wasserman:>Ah, okay.
+
+538
+00:24:01.341 --> 00:24:02.965
+<v Tony Wasserman:>So we were one of the first
+
+539
+00:24:03.306 --> 00:24:07.095
+<v Tony Wasserman:>products to include open source software.
+
+540
+00:24:09.265 --> 00:24:10.408
+<v Tony Wasserman:>I think we were second.
+
+541
+00:24:10.889 --> 00:24:12.754
+<v Tony Wasserman:>I think Sun Microsystems was first.
+
+542
+00:24:13.261 --> 00:24:13.503
+<v Tony Wasserman:>Okay.
+
+543
+00:24:14.201 --> 00:24:17.488
+<v Tony Wasserman:>Sun basically took Berkeley Unix, they hired
+
+544
+00:24:17.528 --> 00:24:20.895
+<v Tony Wasserman:>Bill Joy and other people from Berkeley.
+
+545
+00:24:22.241 --> 00:24:26.286
+<v Tony Wasserman:>And they created Sun OS, which was
+
+546
+00:24:26.327 --> 00:24:27.629
+<v Tony Wasserman:>a closed operating system.
+
+547
+00:24:29.292 --> 00:24:33.200
+<v Tony Wasserman:>So, you know, just as our product
+
+548
+00:24:33.240 --> 00:24:35.244
+<v Tony Wasserman:>was closed at that point, so was
+
+549
+00:24:35.284 --> 00:24:35.564
+<v Tony Wasserman:>theirs.
+
+550
+00:24:36.786 --> 00:24:38.749
+<v Tony Wasserman:>And so they were 1982.
+
+551
+00:24:38.749 --> 00:24:40.900
+<v Tony Wasserman:>And we didn't start IDE until 1983.
+
+552
+00:24:43.460 --> 00:24:48.407
+<v Tony Wasserman:>And we didn't release anything to paying
+
+553
+00:24:48.568 --> 00:24:49.088
+<v Tony Wasserman:>users until 1984.
+
+554
+00:24:49.088 --> 00:24:55.601
+<v Tony Wasserman:>At the very end of 1984, it
+
+555
+00:24:56.163 --> 00:24:57.886
+<v Tony Wasserman:>actually turned out we did our launch
+
+556
+00:24:57.966 --> 00:25:00.332
+<v Tony Wasserman:>at a Sun user group meeting on
+
+557
+00:25:00.392 --> 00:25:01.599
+<v Tony Wasserman:>election day in 1984.
+
+558
+00:25:02.921 --> 00:25:03.743
+<v Bryan Berhenshausen:>Yeah, yeah.
+
+559
+00:25:03.943 --> 00:25:04.845
+<v Bryan Berhenshausen:>Wow.
+
+560
+00:25:05.285 --> 00:25:09.312
+<v Bryan Berhenshausen:>So I'm trying to determine how I
+
+561
+00:25:09.332 --> 00:25:10.774
+<v Bryan Berhenshausen:>want to ask this follow up question.
+
+562
+00:25:10.815 --> 00:25:12.201
+<v Bryan Berhenshausen:>So I guess it's twofold.
+
+563
+00:25:12.502 --> 00:25:14.466
+<v Bryan Berhenshausen:>One, did you ever, did you always
+
+564
+00:25:14.526 --> 00:25:18.293
+<v Bryan Berhenshausen:>intend to work in the private sector
+
+565
+00:25:18.335 --> 00:25:19.983
+<v Bryan Berhenshausen:>like that, let alone start a company?
+
+566
+00:25:20.465 --> 00:25:22.791
+<v Bryan Berhenshausen:>And second, did you ever think that
+
+567
+00:25:22.831 --> 00:25:25.465
+<v Bryan Berhenshausen:>you would start a company selling software?
+
+568
+00:25:25.505 --> 00:25:26.928
+<v Bryan Berhenshausen:>You know, by your own admission, when
+
+569
+00:25:26.949 --> 00:25:28.800
+<v Bryan Berhenshausen:>you got started in the field, the
+
+570
+00:25:28.840 --> 00:25:30.485
+<v Bryan Berhenshausen:>software was the trivial part.
+
+571
+00:25:30.605 --> 00:25:32.170
+<v Bryan Berhenshausen:>It was the hardware that was expensive.
+
+572
+00:25:32.230 --> 00:25:34.322
+<v Bryan Berhenshausen:>Now, here you are, what a decade
+
+573
+00:25:34.362 --> 00:25:37.029
+<v Bryan Berhenshausen:>later, you're building a business on the
+
+574
+00:25:37.069 --> 00:25:38.412
+<v Bryan Berhenshausen:>buying and selling of software.
+
+575
+00:25:39.314 --> 00:25:42.627
+<v Bryan Berhenshausen:>So did you intend to do you
+
+576
+00:25:42.667 --> 00:25:42.827
+<v Bryan Berhenshausen:>ever?
+
+577
+00:25:43.168 --> 00:25:44.872
+<v Bryan Berhenshausen:>Did you foresee that path for yourself?
+
+578
+00:25:45.293 --> 00:25:46.254
+<v Bryan Berhenshausen:>Was that desirable?
+
+579
+00:25:46.315 --> 00:25:46.981
+<v Bryan Berhenshausen:>Or did did it just kind of
+
+580
+00:25:47.022 --> 00:25:47.684
+<v Bryan Berhenshausen:>play out that way?
+
+581
+00:25:48.165 --> 00:25:50.472
+<v Bryan Berhenshausen:>Yeah, I think that it's accurate to
+
+582
+00:25:50.532 --> 00:25:51.194
+<v Bryan Berhenshausen:>say that it played
+
+583
+00:25:51.260 --> 00:25:51.761
+<v Tony Wasserman:>out that way.
+
+584
+00:25:52.102 --> 00:25:54.187
+<v Tony Wasserman:>But I wanted to come back to
+
+585
+00:25:54.208 --> 00:25:56.053
+<v Tony Wasserman:>something you said a moment ago, software
+
+586
+00:25:56.093 --> 00:25:58.144
+<v Tony Wasserman:>is not software was not trivial.
+
+587
+00:25:58.585 --> 00:25:59.908
+<v Tony Wasserman:>I mean, all the software that was
+
+588
+00:25:59.968 --> 00:26:00.990
+<v Tony Wasserman:>being built in the 1960s broke.
+
+589
+00:26:01.050 --> 00:26:03.620
+<v Tony Wasserman:>That's why.
+
+590
+00:26:03.641 --> 00:26:08.630
+<v Tony Wasserman:>That's why NATO sponsored the conferences that
+
+591
+00:26:08.690 --> 00:26:11.195
+<v Tony Wasserman:>led to software engineering as a discipline,
+
+592
+00:26:11.660 --> 00:26:12.321
+<v Tony Wasserman:>right?
+
+593
+00:26:12.561 --> 00:26:16.509
+<v Tony Wasserman:>There was a NATO conference in Garmisch,
+
+594
+00:26:16.549 --> 00:26:17.650
+<v Tony Wasserman:>Germany at the end of 1968, and
+
+595
+00:26:17.671 --> 00:26:22.504
+<v Tony Wasserman:>a follow up in Rome at late
+
+596
+00:26:22.504 --> 00:26:23.050
+<v Tony Wasserman:>in 1969.
+
+597
+00:26:23.566 --> 00:26:25.150
+<v Tony Wasserman:>And there are these two volumes that
+
+598
+00:26:25.190 --> 00:26:25.851
+<v Tony Wasserman:>came out of it.
+
+599
+00:26:26.693 --> 00:26:29.102
+<v Tony Wasserman:>And many of the famous early people
+
+600
+00:26:29.143 --> 00:26:32.191
+<v Tony Wasserman:>in the software engineering community participated in
+
+601
+00:26:32.251 --> 00:26:35.383
+<v Tony Wasserman:>this, which in effect, defined software engineering,
+
+602
+00:26:35.805 --> 00:26:39.033
+<v Tony Wasserman:>and recognized that building software was anything
+
+603
+00:26:39.173 --> 00:26:39.855
+<v Tony Wasserman:>but trivial.
+
+604
+00:26:40.903 --> 00:26:42.146
+<v Tony Wasserman:>Maybe I should Yeah, that's I miss
+
+605
+00:26:42.347 --> 00:26:43.450
+<v Tony Wasserman:>I misspeak when I say that maybe
+
+606
+00:26:43.470 --> 00:26:44.091
+<v Tony Wasserman:>I should say sort of
+
+607
+00:26:44.640 --> 00:26:46.204
+<v Bryan Berhenshausen:>economically trivial, right?
+
+608
+00:26:46.224 --> 00:26:48.590
+<v Bryan Berhenshausen:>Or by your going by what you
+
+609
+00:26:48.610 --> 00:26:50.655
+<v Bryan Berhenshausen:>were talking about how to earlier like
+
+610
+00:26:50.720 --> 00:26:51.984
+<v Bryan Berhenshausen:>that it was everybody thought the money
+
+611
+00:26:52.024 --> 00:26:52.806
+<v Bryan Berhenshausen:>was in the hardware.
+
+612
+00:26:53.348 --> 00:26:55.053
+<v Bryan Berhenshausen:>The software was just the stuff that
+
+613
+00:26:55.460 --> 00:26:57.646
+<v Bryan Berhenshausen:>you passed around freely to it was
+
+614
+00:26:58.288 --> 00:26:59.953
+<v Bryan Berhenshausen:>not as valuable hardware was right.
+
+615
+00:26:59.993 --> 00:27:00.134
+<v Bryan Berhenshausen:>So.
+
+616
+00:27:01.943 --> 00:27:03.526
+<v Bryan Berhenshausen:>So it wasn't business on it.
+
+617
+00:27:04.288 --> 00:27:06.433
+<v Bryan Berhenshausen:>Yeah, but it wasn't until software was
+
+618
+00:27:06.533 --> 00:27:07.876
+<v Bryan Berhenshausen:>perceived to have value,
+
+619
+00:27:08.621 --> 00:27:10.424
+<v Tony Wasserman:>that it made sense to have a
+
+620
+00:27:10.484 --> 00:27:10.905
+<v Tony Wasserman:>business.
+
+621
+00:27:10.965 --> 00:27:16.214
+<v Tony Wasserman:>So the, the earliest commercial software was
+
+622
+00:27:16.374 --> 00:27:21.364
+<v Tony Wasserman:>a sorting program in the mid 1960s.
+
+623
+00:27:21.625 --> 00:27:24.450
+<v Tony Wasserman:>And that was that came about because
+
+624
+00:27:24.450 --> 00:27:25.732
+<v Tony Wasserman:>in 1964, IBM announced the IBM, the
+
+625
+00:27:25.732 --> 00:27:26.438
+<v Tony Wasserman:>system 360.
+
+626
+00:27:31.584 --> 00:27:33.908
+<v Tony Wasserman:>So in in the before that they
+
+627
+00:27:33.968 --> 00:27:38.395
+<v Tony Wasserman:>had commercial machines that were decimal oriented,
+
+628
+00:27:39.020 --> 00:27:42.389
+<v Tony Wasserman:>and scientific machines that were binary oriented
+
+629
+00:27:42.810 --> 00:27:44.594
+<v Tony Wasserman:>to completely different lines of machines.
+
+630
+00:27:45.402 --> 00:27:47.788
+<v Tony Wasserman:>And so system 360 says, Well, you
+
+631
+00:27:47.828 --> 00:27:49.152
+<v Tony Wasserman:>know, we're going to do it all.
+
+632
+00:27:49.513 --> 00:27:50.600
+<v Tony Wasserman:>And oh, by the way, we're going
+
+633
+00:27:50.641 --> 00:27:53.186
+<v Tony Wasserman:>to build a family of machines from
+
+634
+00:27:53.647 --> 00:27:56.774
+<v Tony Wasserman:>small to large, that they had less
+
+635
+00:27:57.240 --> 00:27:59.684
+<v Tony Wasserman:>power than than your mobile phone, but
+
+636
+00:28:02.108 --> 00:28:05.514
+<v Tony Wasserman:>but but they did go small to
+
+637
+00:28:05.554 --> 00:28:05.835
+<v Tony Wasserman:>large.
+
+638
+00:28:05.855 --> 00:28:07.301
+<v Tony Wasserman:>And so somebody said, Well, you know,
+
+639
+00:28:07.882 --> 00:28:10.027
+<v Tony Wasserman:>all these commercial businesses need a sorting
+
+640
+00:28:10.068 --> 00:28:10.529
+<v Tony Wasserman:>program.
+
+641
+00:28:11.692 --> 00:28:13.240
+<v Tony Wasserman:>And it's going to run on all
+
+642
+00:28:13.300 --> 00:28:14.107
+<v Tony Wasserman:>these IBM 360.
+
+643
+00:28:16.507 --> 00:28:17.809
+<v Tony Wasserman:>And so that was the start of
+
+644
+00:28:17.849 --> 00:28:19.533
+<v Tony Wasserman:>the commercial software business in the mid
+
+645
+00:28:19.553 --> 00:28:19.573
+<v Tony Wasserman:>1960s.
+
+646
+00:28:21.100 --> 00:28:23.947
+<v Tony Wasserman:>And, and then there were some data
+
+647
+00:28:23.988 --> 00:28:26.294
+<v Tony Wasserman:>management programs that that came about not
+
+648
+00:28:26.314 --> 00:28:27.241
+<v Tony Wasserman:>too long thereafter.
+
+649
+00:28:28.383 --> 00:28:32.111
+<v Tony Wasserman:>Things like total, which nobody's ever heard
+
+650
+00:28:32.151 --> 00:28:34.095
+<v Tony Wasserman:>of at this at this time, but
+
+651
+00:28:34.135 --> 00:28:35.321
+<v Tony Wasserman:>it was a big thing in its
+
+652
+00:28:35.381 --> 00:28:35.722
+<v Tony Wasserman:>time.
+
+653
+00:28:37.625 --> 00:28:40.450
+<v Tony Wasserman:>And so so the software industry began
+
+654
+00:28:40.490 --> 00:28:42.013
+<v Tony Wasserman:>to develop in the 1970s.
+
+655
+00:28:42.073 --> 00:28:48.485
+<v Tony Wasserman:>And that, you know, that opened up
+
+656
+00:28:48.546 --> 00:28:49.307
+<v Tony Wasserman:>a possibility.
+
+657
+00:28:49.588 --> 00:28:54.595
+<v Tony Wasserman:>But I think that my switching from
+
+658
+00:28:54.755 --> 00:28:59.769
+<v Tony Wasserman:>academia to to industry was was driven
+
+659
+00:28:59.809 --> 00:29:00.651
+<v Tony Wasserman:>by several things.
+
+660
+00:29:01.193 --> 00:29:02.775
+<v Tony Wasserman:>One is sort of being in the
+
+661
+00:29:02.816 --> 00:29:04.283
+<v Tony Wasserman:>right place at the right time.
+
+662
+00:29:04.283 --> 00:29:04.333
+<v Tony Wasserman:>place at the right time.
+
+663
+00:29:04.333 --> 00:29:07.187
+<v Tony Wasserman:>I mean, the the the energy, the
+
+664
+00:29:07.267 --> 00:29:13.858
+<v Tony Wasserman:>buzz around Unix, certainly was influential.
+
+665
+00:29:13.958 --> 00:29:18.107
+<v Tony Wasserman:>And then my early exposure to Sun
+
+666
+00:29:18.849 --> 00:29:23.596
+<v Tony Wasserman:>Microsystems, because the among the first machines
+
+667
+00:29:23.656 --> 00:29:25.222
+<v Tony Wasserman:>that were available were available were given
+
+668
+00:29:25.262 --> 00:29:25.843
+<v Tony Wasserman:>to Berkeley.
+
+669
+00:29:27.826 --> 00:29:30.450
+<v Tony Wasserman:>And so my students and I had
+
+670
+00:29:30.470 --> 00:29:34.436
+<v Tony Wasserman:>an opportunity very early on to build
+
+671
+00:29:34.496 --> 00:29:38.025
+<v Tony Wasserman:>this graphical software that took advantage of
+
+672
+00:29:38.126 --> 00:29:43.034
+<v Tony Wasserman:>the large bitmap bitmap display, which was
+
+673
+00:29:43.075 --> 00:29:44.762
+<v Tony Wasserman:>kind of cool at the time, right?
+
+674
+00:29:46.746 --> 00:29:49.532
+<v Tony Wasserman:>The computer aided design programs had preceded
+
+675
+00:29:50.534 --> 00:29:52.061
+<v Tony Wasserman:>computer aided software engineering engineering by a
+
+676
+00:29:52.101 --> 00:29:52.683
+<v Tony Wasserman:>couple of years.
+
+677
+00:29:53.264 --> 00:29:56.371
+<v Tony Wasserman:>But, you know, you sort of you
+
+678
+00:29:56.592 --> 00:29:57.834
+<v Tony Wasserman:>put one and one together and say,
+
+679
+00:29:57.880 --> 00:30:00.085
+<v Tony Wasserman:>hey, we have this unique technology, we
+
+680
+00:30:00.125 --> 00:30:01.789
+<v Tony Wasserman:>have people who want us to support
+
+681
+00:30:01.829 --> 00:30:01.889
+<v Tony Wasserman:>it.
+
+682
+00:30:03.133 --> 00:30:05.223
+<v Tony Wasserman:>We have these ideas about tools for
+
+683
+00:30:05.263 --> 00:30:06.406
+<v Tony Wasserman:>doing software design.
+
+684
+00:30:06.426 --> 00:30:08.713
+<v Tony Wasserman:>And, you know, there are a lot
+
+685
+00:30:08.733 --> 00:30:10.985
+<v Tony Wasserman:>of other people starting companies these days,
+
+686
+00:30:11.065 --> 00:30:12.689
+<v Tony Wasserman:>and we're at least as smart as
+
+687
+00:30:12.750 --> 00:30:13.191
+<v Tony Wasserman:>they are.
+
+688
+00:30:13.512 --> 00:30:14.074
+<v Tony Wasserman:>So we thought.
+
+689
+00:30:16.503 --> 00:30:17.184
+<v Tony Wasserman:>So off we went.
+
+690
+00:30:18.727 --> 00:30:21.711
+<v Tony Wasserman:>And the company, we got financial funding,
+
+691
+00:30:21.731 --> 00:30:24.555
+<v Tony Wasserman:>we were actually IDE was one of
+
+692
+00:30:24.596 --> 00:30:26.343
+<v Tony Wasserman:>the first hundred dot coms.
+
+693
+00:30:27.205 --> 00:30:28.889
+<v Tony Wasserman:>So, you know, you think today of
+
+694
+00:30:28.929 --> 00:30:31.001
+<v Tony Wasserman:>the millions and millions and millions, we
+
+695
+00:30:31.041 --> 00:30:31.815
+<v Tony Wasserman:>were number 78.
+
+696
+00:30:34.768 --> 00:30:35.652
+<v Bryan Berhenshausen:>How do you know that number?
+
+697
+00:30:36.462 --> 00:30:38.469
+<v Tony Wasserman:>Because there's a website called first hundred
+
+698
+00:30:38.509 --> 00:30:39.152
+<v Tony Wasserman:>dot coms.
+
+699
+00:30:39.881 --> 00:30:40.904
+<v Bryan Berhenshausen:>And how do they do that?
+
+700
+00:30:40.924 --> 00:30:42.709
+<v Bryan Berhenshausen:>Like they rank them or they note
+
+701
+00:30:42.749 --> 00:30:44.494
+<v Bryan Berhenshausen:>them based on when you like incorporated
+
+702
+00:30:44.540 --> 00:30:47.588
+<v Bryan Berhenshausen:>like your incorporation date or the or
+
+703
+00:30:47.668 --> 00:30:49.713
+<v Bryan Berhenshausen:>registered you registered the domain name or
+
+704
+00:30:49.753 --> 00:30:49.994
+<v Bryan Berhenshausen:>what's the.
+
+705
+00:30:50.440 --> 00:30:52.486
+<v Tony Wasserman:>Yes, it was the domain registration that
+
+706
+00:30:52.506 --> 00:30:52.966
+<v Tony Wasserman:>triggered it.
+
+707
+00:30:53.007 --> 00:30:56.442
+<v Tony Wasserman:>So so a company like Symbolics, which
+
+708
+00:30:56.563 --> 00:31:00.392
+<v Tony Wasserman:>is a LISP machine, an AI oriented
+
+709
+00:31:00.432 --> 00:31:00.732
+<v Tony Wasserman:>machine.
+
+710
+00:31:00.792 --> 00:31:01.895
+<v Tony Wasserman:>I think they were number one.
+
+711
+00:31:02.923 --> 00:31:05.992
+<v Tony Wasserman:>And, you know, who's heard of Symbolics
+
+712
+00:31:06.072 --> 00:31:06.573
+<v Tony Wasserman:>these days?
+
+713
+00:31:07.104 --> 00:31:07.647
+<v Tony Wasserman:>Right.
+
+714
+00:31:08.441 --> 00:31:11.588
+<v Tony Wasserman:>So so it's a question of being
+
+715
+00:31:11.608 --> 00:31:12.831
+<v Tony Wasserman:>in the right place in the right
+
+716
+00:31:12.871 --> 00:31:15.014
+<v Tony Wasserman:>time and putting one and one together.
+
+717
+00:31:15.040 --> 00:31:17.366
+<v Tony Wasserman:>I would say it was fairly opportunistic
+
+718
+00:31:17.647 --> 00:31:19.412
+<v Tony Wasserman:>because I gave up a tenured faculty
+
+719
+00:31:19.432 --> 00:31:19.813
+<v Tony Wasserman:>position.
+
+720
+00:31:20.360 --> 00:31:21.927
+<v Bryan Berhenshausen:>Yeah, that's not easy to leave leave
+
+721
+00:31:21.967 --> 00:31:22.671
+<v Bryan Berhenshausen:>behind for sure.
+
+722
+00:31:23.621 --> 00:31:26.686
+<v Tony Wasserman:>Well, you know, we the world was
+
+723
+00:31:26.726 --> 00:31:27.127
+<v Tony Wasserman:>changing.
+
+724
+00:31:28.088 --> 00:31:31.514
+<v Tony Wasserman:>And so we were able to build
+
+725
+00:31:31.574 --> 00:31:34.924
+<v Tony Wasserman:>a company that had a really leading
+
+726
+00:31:35.004 --> 00:31:38.953
+<v Tony Wasserman:>edge technology and it ran on leading
+
+727
+00:31:39.034 --> 00:31:39.675
+<v Tony Wasserman:>edge hardware.
+
+728
+00:31:40.864 --> 00:31:42.449
+<v Tony Wasserman:>We had a very good partnership with
+
+729
+00:31:42.489 --> 00:31:45.322
+<v Tony Wasserman:>Sun Microsystems because we were one of
+
+730
+00:31:45.362 --> 00:31:47.727
+<v Tony Wasserman:>their first third party software vendors.
+
+731
+00:31:48.729 --> 00:31:53.663
+<v Tony Wasserman:>And what the salespeople discovered was that.
+
+732
+00:31:55.127 --> 00:31:56.832
+<v Tony Wasserman:>When people bought our software, they would
+
+733
+00:31:56.852 --> 00:32:00.405
+<v Tony Wasserman:>also buy hardware because they would buy
+
+734
+00:32:01.167 --> 00:32:03.753
+<v Tony Wasserman:>our computer aided software engineering tools and
+
+735
+00:32:04.354 --> 00:32:06.062
+<v Tony Wasserman:>put it on a Sun workstation and,
+
+736
+00:32:06.543 --> 00:32:08.748
+<v Tony Wasserman:>you know, equip an engineer that way.
+
+737
+00:32:09.589 --> 00:32:12.215
+<v Tony Wasserman:>And so the Sun salespeople got the
+
+738
+00:32:12.275 --> 00:32:13.041
+<v Tony Wasserman:>idea right away.
+
+739
+00:32:13.121 --> 00:32:15.186
+<v Tony Wasserman:>Gee, we should work with Tony and
+
+740
+00:32:15.206 --> 00:32:17.632
+<v Tony Wasserman:>with IDE because that's a good way
+
+741
+00:32:17.693 --> 00:32:19.041
+<v Tony Wasserman:>for us to sell hardware.
+
+742
+00:32:19.782 --> 00:32:20.122
+<v Tony Wasserman:>Yeah.
+
+743
+00:32:20.143 --> 00:32:22.888
+<v Tony Wasserman:>So we had access to Sun offices
+
+744
+00:32:23.589 --> 00:32:24.070
+<v Tony Wasserman:>everywhere.
+
+745
+00:32:25.152 --> 00:32:27.560
+<v Tony Wasserman:>And there's some very funny stories about
+
+746
+00:32:29.003 --> 00:32:31.828
+<v Tony Wasserman:>demonstrating our product in China in nineteen
+
+747
+00:32:31.868 --> 00:32:35.595
+<v Tony Wasserman:>eighty six and in on the Isle
+
+748
+00:32:35.635 --> 00:32:41.408
+<v Tony Wasserman:>of Capri in Italy or off the
+
+749
+00:32:41.449 --> 00:32:44.475
+<v Tony Wasserman:>coast in the same time frame.
+
+750
+00:32:46.344 --> 00:32:48.448
+<v Tony Wasserman:>Getting a machine into these places.
+
+751
+00:32:48.510 --> 00:32:49.572
+<v Tony Wasserman:>Yeah, that's right.
+
+752
+00:32:49.652 --> 00:32:50.293
+<v Tony Wasserman:>Especially in the
+
+753
+00:32:50.680 --> 00:32:51.402
+<v Bryan Berhenshausen:>China and the 80s.
+
+754
+00:32:51.422 --> 00:32:54.170
+<v Bryan Berhenshausen:>How are you going to commandeer it
+
+755
+00:32:54.211 --> 00:32:54.873
+<v Bryan Berhenshausen:>for a demo?
+
+756
+00:32:56.023 --> 00:32:56.365
+<v Tony Wasserman:>Yes.
+
+757
+00:32:56.445 --> 00:32:56.785
+<v Tony Wasserman:>Yeah.
+
+758
+00:32:56.926 --> 00:32:58.732
+<v Tony Wasserman:>And physically move it, I would assume.
+
+759
+00:32:58.792 --> 00:32:58.973
+<v Tony Wasserman:>Right.
+
+760
+00:32:59.033 --> 00:32:59.836
+<v Tony Wasserman:>Like the you know,
+
+761
+00:32:59.884 --> 00:33:01.611
+<v Bryan Berhenshausen:>because the stuff was pretty fragile.
+
+762
+00:33:01.652 --> 00:33:01.813
+<v Bryan Berhenshausen:>Right.
+
+763
+00:33:01.913 --> 00:33:02.113
+<v Bryan Berhenshausen:>I mean.
+
+764
+00:33:02.114 --> 00:33:02.124
+<v Bryan Berhenshausen:>Yeah.
+
+765
+00:33:02.124 --> 00:33:02.134
+<v Bryan Berhenshausen:>Yeah.
+
+766
+00:33:02.134 --> 00:33:02.171
+<v Bryan Berhenshausen:>I mean, Right.
+
+767
+00:33:02.171 --> 00:33:02.191
+<v Bryan Berhenshausen:>I mean.
+
+768
+00:33:02.191 --> 00:33:02.201
+<v Bryan Berhenshausen:>Yeah.
+
+769
+00:33:02.201 --> 00:33:02.211
+<v Bryan Berhenshausen:>Yeah.
+
+770
+00:33:02.211 --> 00:33:04.486
+<v Bryan Berhenshausen:>I mean, it was a big display.
+
+771
+00:33:04.486 --> 00:33:04.893
+<v Bryan Berhenshausen:>Right.
+
+772
+00:33:04.893 --> 00:33:06.550
+<v Bryan Berhenshausen:>17 inch display.
+
+773
+00:33:10.001 --> 00:33:14.617
+<v Tony Wasserman:>And yeah, it was a Motorola 68000
+
+774
+00:33:15.831 --> 00:33:18.817
+<v Tony Wasserman:>processor in there until Sun replaced it
+
+775
+00:33:18.857 --> 00:33:19.358
+<v Tony Wasserman:>with their own.
+
+776
+00:33:19.358 --> 00:33:19.422
+<v Tony Wasserman:>So, it with their own.
+
+777
+00:33:19.422 --> 00:33:24.172
+<v Tony Wasserman:>So, yeah, getting it around was non-trivial.
+
+778
+00:33:24.192 --> 00:33:26.878
+<v Tony Wasserman:>So, you know, that was fun.
+
+779
+00:33:26.918 --> 00:33:27.927
+<v Tony Wasserman:>You get to see the world and
+
+780
+00:33:27.947 --> 00:33:28.668
+<v Tony Wasserman:>do software.
+
+781
+00:33:29.231 --> 00:33:30.595
+<v Tony Wasserman:>And you had this little bit of
+
+782
+00:33:30.675 --> 00:33:31.879
+<v Tony Wasserman:>open source software in it.
+
+783
+00:33:31.879 --> 00:33:32.887
+<v Tony Wasserman:>Yeah.
+
+784
+00:33:32.887 --> 00:33:32.937
+<v Tony Wasserman:>open source software in it.
+
+785
+00:33:32.937 --> 00:33:32.947
+<v Tony Wasserman:>Yeah.
+
+786
+00:33:33.088 --> 00:33:35.053
+<v Tony Wasserman:>And so you were doing open source
+
+787
+00:33:35.074 --> 00:33:36.999
+<v Tony Wasserman:>software before there was open source software,
+
+788
+00:33:36.999 --> 00:33:37.985
+<v Bryan Berhenshausen:>as open source software, as we established.
+
+789
+00:33:38.026 --> 00:33:40.733
+<v Bryan Berhenshausen:>When did you first hear people start
+
+790
+00:33:40.753 --> 00:33:43.546
+<v Bryan Berhenshausen:>to talk about open source, use the
+
+791
+00:33:43.566 --> 00:33:44.870
+<v Bryan Berhenshausen:>phrase open source software?
+
+792
+00:33:45.472 --> 00:33:47.177
+<v Bryan Berhenshausen:>Well, what you heard first was free
+
+793
+00:33:47.197 --> 00:33:47.697
+<v Bryan Berhenshausen:>software.
+
+794
+00:33:47.698 --> 00:33:47.768
+<v Bryan Berhenshausen:>Because you had RMS, Richard Stallman at
+
+795
+00:33:47.768 --> 00:33:47.818
+<v Bryan Berhenshausen:>MIT, first was free software.
+
+796
+00:33:47.818 --> 00:33:47.888
+<v Bryan Berhenshausen:>Because you had RMS, Richard Stallman at
+
+797
+00:33:47.888 --> 00:33:49.645
+<v Bryan Berhenshausen:>MIT, who thought that all software should
+
+798
+00:33:49.786 --> 00:33:50.226
+<v Bryan Berhenshausen:>be free.
+
+799
+00:33:56.560 --> 00:33:57.461
+<v Tony Wasserman:>And he may still think that.
+
+800
+00:33:57.501 --> 00:33:58.302
+<v Tony Wasserman:>And so you have, you know, the
+
+801
+00:33:58.322 --> 00:34:00.844
+<v Tony Wasserman:>GNU project with its C compiler and
+
+802
+00:34:00.925 --> 00:34:11.442
+<v Tony Wasserman:>some of the tools.
+
+803
+00:34:11.661 --> 00:34:12.904
+<v Tony Wasserman:>And you had Richard, who was very
+
+804
+00:34:12.925 --> 00:34:14.909
+<v Tony Wasserman:>adamant about the problem that he was
+
+805
+00:34:18.639 --> 00:34:20.784
+<v Tony Wasserman:>encountering with a Canon laser printer, because
+
+806
+00:34:20.804 --> 00:34:22.330
+<v Tony Wasserman:>he had no access to the source
+
+807
+00:34:22.350 --> 00:34:22.429
+<v Tony Wasserman:>code.
+
+808
+00:34:24.260 --> 00:34:24.661
+<v Tony Wasserman:>This is.
+
+809
+00:34:24.761 --> 00:34:26.304
+<v Tony Wasserman:>And so this led to the Free
+
+810
+00:34:26.344 --> 00:34:29.291
+<v Tony Wasserman:>Software Foundation in the mid 1980s.
+
+811
+00:34:31.300 --> 00:34:32.982
+<v Tony Wasserman:>And so this notion of free software
+
+812
+00:34:33.043 --> 00:34:33.543
+<v Tony Wasserman:>was out there.
+
+813
+00:34:34.344 --> 00:34:36.609
+<v Tony Wasserman:>And while it was absolutely okay with
+
+814
+00:34:36.629 --> 00:34:44.185
+<v Tony Wasserman:>them, that people made money from software,
+
+815
+00:34:44.245 --> 00:34:45.948
+<v Tony Wasserman:>the it wasn't really the whole notion
+
+816
+00:34:46.529 --> 00:34:53.306
+<v Tony Wasserman:>wasn't pitched at companies and suggesting that
+
+817
+00:34:53.346 --> 00:34:53.826
+<v Tony Wasserman:>they use open source.
+
+818
+00:34:53.847 --> 00:34:56.860
+<v Tony Wasserman:>So it wasn't really until after the
+
+819
+00:34:56.880 --> 00:34:58.122
+<v Tony Wasserman:>open source initiative got created, and the
+
+820
+00:34:58.142 --> 00:34:59.804
+<v Tony Wasserman:>Apache agreement was made with IBM for
+
+821
+00:35:09.080 --> 00:35:11.643
+<v Tony Wasserman:>Apache to be part of their Java
+
+822
+00:35:11.823 --> 00:35:14.227
+<v Tony Wasserman:>Enterprise Edition product, that the term open
+
+823
+00:35:14.447 --> 00:35:24.066
+<v Tony Wasserman:>source began to to get circulated and
+
+824
+00:35:24.086 --> 00:35:24.366
+<v Tony Wasserman:>used.
+
+825
+00:35:24.427 --> 00:35:25.109
+<v Tony Wasserman:>So I would say it was right
+
+826
+00:35:25.129 --> 00:35:27.326
+<v Tony Wasserman:>about the turn of the millennium when,
+
+827
+00:35:27.326 --> 00:35:27.396
+<v Tony Wasserman:>when I became more of the millennium
+
+828
+00:35:27.396 --> 00:35:27.661
+<v Tony Wasserman:>when, when I became more aware of
+
+829
+00:35:27.721 --> 00:35:27.821
+<v Tony Wasserman:>it.
+
+830
+00:35:28.082 --> 00:35:29.003
+<v Tony Wasserman:>And then by then I had, you
+
+831
+00:35:29.404 --> 00:35:39.944
+<v Tony Wasserman:>know, IDE had been merged with some
+
+832
+00:35:39.964 --> 00:35:43.450
+<v Tony Wasserman:>other companies, because our investors thought that
+
+833
+00:35:43.550 --> 00:35:47.181
+<v Tony Wasserman:>was the thing to do.
+
+834
+00:35:47.241 --> 00:35:49.064
+<v Tony Wasserman:>And so I left and I joined
+
+835
+00:35:49.124 --> 00:35:50.846
+<v Tony Wasserman:>a startup, which wasn't going to be
+
+836
+00:35:50.867 --> 00:35:51.849
+<v Tony Wasserman:>successful.
+
+837
+00:35:58.785 --> 00:36:03.594
+<v Tony Wasserman:>But I learned Java Enterprise Edition at
+
+838
+00:36:03.634 --> 00:36:04.214
+<v Tony Wasserman:>that point.
+
+839
+00:36:04.956 --> 00:36:06.479
+<v Tony Wasserman:>And that got me to my next
+
+840
+00:36:06.499 --> 00:36:06.620
+<v Tony Wasserman:>job, which was with a great small
+
+841
+00:36:06.620 --> 00:36:07.026
+<v Tony Wasserman:>company And that got me to my
+
+842
+00:36:07.026 --> 00:36:07.096
+<v Tony Wasserman:>next job, which was with a great
+
+843
+00:36:07.096 --> 00:36:08.108
+<v Tony Wasserman:>small company called Bluestone Software.
+
+844
+00:36:08.489 --> 00:36:11.562
+<v Tony Wasserman:>They were based, they were based in
+
+845
+00:36:11.602 --> 00:36:12.784
+<v Tony Wasserman:>South Jersey.
+
+846
+00:36:12.844 --> 00:36:13.225
+<v Tony Wasserman:>Oh, my gosh.
+
+847
+00:36:13.245 --> 00:36:17.071
+<v Tony Wasserman:>So you don't associate New Jersey with
+
+848
+00:36:17.092 --> 00:36:18.294
+<v Tony Wasserman:>software.
+
+849
+00:36:18.314 --> 00:36:22.125
+<v Tony Wasserman:>No, not, not, it's not, it's not
+
+850
+00:36:22.907 --> 00:36:25.352
+<v Tony Wasserman:>the Silicon Valley of the East, for
+
+851
+00:36:25.392 --> 00:36:25.673
+<v Tony Wasserman:>sure.
+
+852
+00:36:26.434 --> 00:36:28.058
+<v Tony Wasserman:>But they were the best Java software
+
+853
+00:36:28.078 --> 00:36:34.893
+<v Tony Wasserman:>for miles in any direction, including creeping
+
+854
+00:36:34.953 --> 00:36:37.197
+<v Tony Wasserman:>into Pennsylvania, which wasn't all that far
+
+855
+00:36:37.257 --> 00:36:37.477
+<v Tony Wasserman:>away.
+
+856
+00:36:37.497 --> 00:36:38.449
+<v Tony Wasserman:>And so so I ran their West
+
+857
+00:36:38.449 --> 00:36:39.746
+<v Tony Wasserman:>Coast Development Lab, far away.
+
+858
+00:36:39.746 --> 00:36:39.816
+<v Tony Wasserman:>And so so I ran their West
+
+859
+00:36:39.816 --> 00:36:41.390
+<v Tony Wasserman:>Coast Development Lab, and we built tools
+
+860
+00:36:41.490 --> 00:36:50.415
+<v Tony Wasserman:>that were actually to run on mobile
+
+861
+00:36:50.436 --> 00:36:51.939
+<v Tony Wasserman:>devices to talk to a Java Enterprise
+
+862
+00:36:51.959 --> 00:36:52.080
+<v Tony Wasserman:>server.
+
+863
+00:36:52.080 --> 00:36:52.150
+<v Tony Wasserman:>And we gave away, and we gave
+
+864
+00:36:52.150 --> 00:36:52.180
+<v Tony Wasserman:>away the code.
+
+865
+00:36:52.180 --> 00:36:52.250
+<v Tony Wasserman:>devices to talk to a Java Enterprise
+
+866
+00:36:52.250 --> 00:36:52.260
+<v Tony Wasserman:>server.
+
+867
+00:36:52.260 --> 00:36:52.330
+<v Tony Wasserman:>And we gave away, and we gave
+
+868
+00:36:52.330 --> 00:36:52.360
+<v Tony Wasserman:>away the code.
+
+869
+00:36:54.620 --> 00:36:56.886
+<v Tony Wasserman:>Okay, under the terms of a license,
+
+870
+00:36:56.906 --> 00:36:57.207
+<v Tony Wasserman:>I'm assuming.
+
+871
+00:36:57.227 --> 00:36:57.267
+<v Tony Wasserman:>No.
+
+872
+00:36:59.920 --> 00:37:00.000
+<v Bryan Berhenshausen:>Okay.
+
+873
+00:37:00.501 --> 00:37:01.083
+<v Bryan Berhenshausen:>So, because by that time,
+
+874
+00:37:05.360 --> 00:37:07.984
+<v Tony Wasserman:>Bluestone had sold itself to Hewlett Packard.
+
+875
+00:37:08.004 --> 00:37:10.187
+<v Tony Wasserman:>And so when we wanted to give
+
+876
+00:37:10.207 --> 00:37:18.223
+<v Tony Wasserman:>away the software, they said, Oh, yeah,
+
+877
+00:37:18.243 --> 00:37:19.365
+<v Tony Wasserman:>yeah, you can give it away.
+
+878
+00:37:19.385 --> 00:37:19.846
+<v Tony Wasserman:>You can.
+
+879
+00:37:19.886 --> 00:37:20.888
+<v Tony Wasserman:>But they had no clue of that
+
+880
+00:37:20.908 --> 00:37:31.209
+<v Tony Wasserman:>open source at that point, which is
+
+881
+00:37:31.269 --> 00:37:34.114
+<v Tony Wasserman:>funny, because Hewlett Packard was one of
+
+882
+00:37:34.154 --> 00:37:37.585
+<v Tony Wasserman:>the true leaders in open source and
+
+883
+00:37:37.625 --> 00:37:40.511
+<v Tony Wasserman:>in adoption of open source, their group
+
+884
+00:37:40.552 --> 00:37:41.734
+<v Tony Wasserman:>in Colorado Springs.
+
+885
+00:37:43.243 --> 00:37:46.269
+<v Tony Wasserman:>Some very well known people in the
+
+886
+00:37:46.369 --> 00:37:48.694
+<v Tony Wasserman:>open source community were there, Stormy Peters,
+
+887
+00:37:50.562 --> 00:37:53.348
+<v Tony Wasserman:>who you probably know from her stint
+
+888
+00:37:53.509 --> 00:37:56.214
+<v Tony Wasserman:>at Microsoft and at GitHub.
+
+889
+00:37:57.883 --> 00:37:59.886
+<v Tony Wasserman:>Phil Robb, who runs open source for
+
+890
+00:38:00.006 --> 00:38:02.009
+<v Tony Wasserman:>Ericsson here in the United States.
+
+891
+00:38:03.653 --> 00:38:06.081
+<v Tony Wasserman:>And several other people, I mean, there
+
+892
+00:38:06.101 --> 00:38:08.627
+<v Tony Wasserman:>was a really, they were really avant
+
+893
+00:38:08.687 --> 00:38:11.053
+<v Tony Wasserman:>garde, if you will, when it comes
+
+894
+00:38:11.394 --> 00:38:16.323
+<v Tony Wasserman:>to They built the whole Fossology lab.
+
+895
+00:38:17.245 --> 00:38:19.087
+<v Tony Wasserman:>But this other little corner of Hewlett
+
+896
+00:38:19.128 --> 00:38:23.094
+<v Tony Wasserman:>Packard didn't do open source.
+
+897
+00:38:23.134 --> 00:38:25.261
+<v Tony Wasserman:>So we gave away the source code,
+
+898
+00:38:25.322 --> 00:38:27.306
+<v Tony Wasserman:>but it didn't have an open source
+
+899
+00:38:27.366 --> 00:38:27.767
+<v Tony Wasserman:>license.
+
+900
+00:38:28.208 --> 00:38:31.155
+<v Tony Wasserman:>So in theory, we retained the copyright
+
+901
+00:38:31.240 --> 00:38:33.466
+<v Tony Wasserman:>to it.
+
+902
+00:38:34.148 --> 00:38:36.212
+<v Tony Wasserman:>Actually, in practice, we retained the copyright
+
+903
+00:38:36.233 --> 00:38:36.494
+<v Tony Wasserman:>to it.
+
+904
+00:38:37.081 --> 00:38:38.343
+<v Bryan Berhenshausen:>Yeah.
+
+905
+00:38:38.844 --> 00:38:41.790
+<v Bryan Berhenshausen:>So you mentioned a couple names of
+
+906
+00:38:41.830 --> 00:38:43.153
+<v Bryan Berhenshausen:>folks, you know, from those days.
+
+907
+00:38:43.654 --> 00:38:47.387
+<v Bryan Berhenshausen:>What do you remember about your early
+
+908
+00:38:47.427 --> 00:38:49.772
+<v Bryan Berhenshausen:>encounters, I guess, with people in the
+
+909
+00:38:49.852 --> 00:38:53.107
+<v Bryan Berhenshausen:>open source ecosystem early on when it
+
+910
+00:38:53.147 --> 00:38:53.910
+<v Bryan Berhenshausen:>was in its genesis?
+
+911
+00:38:55.382 --> 00:38:58.529
+<v Tony Wasserman:>Well, part of that, of course, is
+
+912
+00:38:58.590 --> 00:39:00.415
+<v Tony Wasserman:>based on what we mean by genesis.
+
+913
+00:39:00.983 --> 00:39:01.848
+<v Tony Wasserman:>Yeah, right.
+
+914
+00:39:02.160 --> 00:39:03.424
+<v Tony Wasserman:>You know, I mean, there are people
+
+915
+00:39:03.464 --> 00:39:05.891
+<v Tony Wasserman:>who were there at the very beginning,
+
+916
+00:39:06.031 --> 00:39:11.326
+<v Tony Wasserman:>Bruce Perens, for example, and Brian Bellendorf,
+
+917
+00:39:12.788 --> 00:39:14.450
+<v Tony Wasserman:>who was at CollabNet.
+
+918
+00:39:15.812 --> 00:39:19.317
+<v Tony Wasserman:>And I didn't meet them till later.
+
+919
+00:39:21.183 --> 00:39:24.029
+<v Tony Wasserman:>And because I hadn't really sunk into
+
+920
+00:39:24.069 --> 00:39:24.971
+<v Tony Wasserman:>that community yet.
+
+921
+00:39:25.612 --> 00:39:32.027
+<v Tony Wasserman:>But what happened was, in 2004, I
+
+922
+00:39:32.087 --> 00:39:36.995
+<v Tony Wasserman:>was running product development for another startup
+
+923
+00:39:37.015 --> 00:39:38.442
+<v Tony Wasserman:>that was not going to be successful.
+
+924
+00:39:39.063 --> 00:39:42.252
+<v Tony Wasserman:>But you know, 90% of them failed.
+
+925
+00:39:42.333 --> 00:39:43.035
+<v Tony Wasserman:>So okay.
+
+926
+00:39:43.035 --> 00:39:44.107
+<v Tony Wasserman:>Yeah, Yeah, yeah, sure, sure.
+
+927
+00:39:44.441 --> 00:39:45.869
+<v Tony Wasserman:>It wasn't my startup.
+
+928
+00:39:45.920 --> 00:39:46.986
+<v Tony Wasserman:>Yeah, yeah.
+
+929
+00:39:48.501 --> 00:39:49.702
+<v Tony Wasserman:>Yeah.
+
+930
+00:39:50.383 --> 00:39:53.346
+<v Tony Wasserman:>And it was two guys who had,
+
+931
+00:39:53.507 --> 00:39:56.770
+<v Tony Wasserman:>I think, a promising idea.
+
+932
+00:39:56.790 --> 00:40:03.020
+<v Tony Wasserman:>And they built the company, they built
+
+933
+00:40:03.040 --> 00:40:05.305
+<v Tony Wasserman:>the product, and the company stuck around
+
+934
+00:40:05.365 --> 00:40:06.126
+<v Tony Wasserman:>for a little while.
+
+935
+00:40:07.209 --> 00:40:09.233
+<v Tony Wasserman:>But I didn't.
+
+936
+00:40:09.233 --> 00:40:12.966
+<v Tony Wasserman:>In 2004, it turns out I went
+
+937
+00:40:12.986 --> 00:40:15.293
+<v Tony Wasserman:>to the International Conference on Software Engineering
+
+938
+00:40:16.762 --> 00:40:18.685
+<v Tony Wasserman:>in Edinburgh.
+
+939
+00:40:20.788 --> 00:40:23.191
+<v Tony Wasserman:>And one of the people that I
+
+940
+00:40:23.312 --> 00:40:26.416
+<v Tony Wasserman:>ran into there, I've been going to
+
+941
+00:40:26.456 --> 00:40:29.006
+<v Tony Wasserman:>these international conferences on software engineering since
+
+942
+00:40:29.046 --> 00:40:32.154
+<v Tony Wasserman:>the very first one in the mid
+
+943
+00:40:32.174 --> 00:40:32.194
+<v Tony Wasserman:>70s.
+
+944
+00:40:34.404 --> 00:40:35.486
+<v Tony Wasserman:>So one of the people I met
+
+945
+00:40:35.506 --> 00:40:37.711
+<v Tony Wasserman:>there was Martin Griss, who I had
+
+946
+00:40:37.751 --> 00:40:38.653
+<v Tony Wasserman:>known for many years.
+
+947
+00:40:39.314 --> 00:40:41.043
+<v Tony Wasserman:>He ran the research lab at Hewlett
+
+948
+00:40:41.083 --> 00:40:42.226
+<v Tony Wasserman:>Packard for a long time.
+
+949
+00:40:43.148 --> 00:40:48.764
+<v Tony Wasserman:>And then he had just joined the
+
+950
+00:40:49.064 --> 00:40:52.150
+<v Tony Wasserman:>brand new Carnegie Mellon campus that's in
+
+951
+00:40:52.190 --> 00:40:55.276
+<v Tony Wasserman:>Silicon Valley, which for people who know
+
+952
+00:40:55.316 --> 00:40:58.625
+<v Tony Wasserman:>the geography, is on the NASA Ames
+
+953
+00:40:58.665 --> 00:41:00.187
+<v Tony Wasserman:>Research Park in Mountain View.
+
+954
+00:41:01.410 --> 00:41:05.220
+<v Tony Wasserman:>So Martin says to me, hey, you
+
+955
+00:41:05.260 --> 00:41:08.227
+<v Tony Wasserman:>know, we're doing, we're getting this academic
+
+956
+00:41:08.288 --> 00:41:11.562
+<v Tony Wasserman:>program in software engineering started out here.
+
+957
+00:41:11.582 --> 00:41:13.267
+<v Tony Wasserman:>Why don't you come around and take
+
+958
+00:41:13.307 --> 00:41:13.648
+<v Tony Wasserman:>a look.
+
+959
+00:41:15.072 --> 00:41:15.994
+<v Tony Wasserman:>One thing led to another.
+
+960
+00:41:17.242 --> 00:41:21.028
+<v Tony Wasserman:>And in 2005, I joined the faculty
+
+961
+00:41:21.609 --> 00:41:21.909
+<v Tony Wasserman:>there.
+
+962
+00:41:22.510 --> 00:41:25.896
+<v Tony Wasserman:>And one of the things that came
+
+963
+00:41:25.976 --> 00:41:28.344
+<v Tony Wasserman:>out of that was that I wanted
+
+964
+00:41:28.424 --> 00:41:31.511
+<v Tony Wasserman:>to be able to establish a research
+
+965
+00:41:31.531 --> 00:41:33.779
+<v Tony Wasserman:>program in addition to the course that
+
+966
+00:41:33.840 --> 00:41:34.261
+<v Tony Wasserman:>I taught.
+
+967
+00:41:35.022 --> 00:41:38.147
+<v Tony Wasserman:>And so for a research topic, I
+
+968
+00:41:38.568 --> 00:41:39.489
+<v Tony Wasserman:>picked open source.
+
+969
+00:41:40.250 --> 00:41:40.491
+<v Tony Wasserman:>Okay.
+
+970
+00:41:40.531 --> 00:41:47.567
+<v Tony Wasserman:>And not building open source code so
+
+971
+00:41:47.607 --> 00:41:51.234
+<v Tony Wasserman:>much as evaluation and adoption and use
+
+972
+00:41:51.274 --> 00:41:52.035
+<v Tony Wasserman:>of open source.
+
+973
+00:41:52.500 --> 00:41:52.800
+<v Tony Wasserman:>I see.
+
+974
+00:41:53.141 --> 00:41:53.442
+<v Tony Wasserman:>Okay.
+
+975
+00:41:54.464 --> 00:41:58.231
+<v Tony Wasserman:>And so, you know, I went off
+
+976
+00:41:58.251 --> 00:42:00.475
+<v Tony Wasserman:>and started talking to people at the
+
+977
+00:42:00.535 --> 00:42:00.915
+<v Tony Wasserman:>time.
+
+978
+00:42:02.362 --> 00:42:07.071
+<v Tony Wasserman:>Microsoft was, of course, totally dominant in
+
+979
+00:42:07.311 --> 00:42:09.996
+<v Tony Wasserman:>the software industry, both in terms of
+
+980
+00:42:11.262 --> 00:42:14.147
+<v Tony Wasserman:>the Windows operating system and also with
+
+981
+00:42:14.628 --> 00:42:15.971
+<v Tony Wasserman:>Microsoft Office Suite.
+
+982
+00:42:16.812 --> 00:42:20.022
+<v Tony Wasserman:>So you really didn't do much computing
+
+983
+00:42:21.305 --> 00:42:23.589
+<v Tony Wasserman:>on the desktop without Microsoft.
+
+984
+00:42:25.333 --> 00:42:26.655
+<v Tony Wasserman:>So one of the first places I
+
+985
+00:42:27.982 --> 00:42:30.969
+<v Tony Wasserman:>looked was at Microsoft to see what
+
+986
+00:42:30.989 --> 00:42:31.590
+<v Tony Wasserman:>they were doing.
+
+987
+00:42:32.392 --> 00:42:34.100
+<v Tony Wasserman:>At the time, Steve Ballmer, who was
+
+988
+00:42:34.140 --> 00:42:39.328
+<v Tony Wasserman:>their CEO at the time, was saying
+
+989
+00:42:39.389 --> 00:42:42.975
+<v Tony Wasserman:>things like the open source is a
+
+990
+00:42:43.035 --> 00:42:43.516
+<v Tony Wasserman:>cancer.
+
+991
+00:42:45.343 --> 00:42:47.446
+<v Tony Wasserman:>Open source is a communist plot.
+
+992
+00:42:48.128 --> 00:42:50.051
+<v Tony Wasserman:>You know, here are all these people
+
+993
+00:42:50.131 --> 00:42:55.063
+<v Tony Wasserman:>in t-shirts hanging out in, you know,
+
+994
+00:42:55.164 --> 00:42:57.748
+<v Tony Wasserman:>in rooms writing code and sharing it
+
+995
+00:42:57.808 --> 00:43:00.011
+<v Tony Wasserman:>and giving it away when it has
+
+996
+00:43:00.032 --> 00:43:00.233
+<v Tony Wasserman:>value.
+
+997
+00:43:05.703 --> 00:43:07.226
+<v Tony Wasserman:>But it turns out that they had
+
+998
+00:43:07.246 --> 00:43:12.455
+<v Tony Wasserman:>a guy who was responsible for monitoring
+
+999
+00:43:12.495 --> 00:43:13.921
+<v Tony Wasserman:>what was going on in open source.
+
+1000
+00:43:14.983 --> 00:43:15.705
+<v Tony Wasserman:>And I met him.
+
+1001
+00:43:17.348 --> 00:43:19.111
+<v Tony Wasserman:>And then he didn't last all that
+
+1002
+00:43:19.172 --> 00:43:19.472
+<v Tony Wasserman:>long.
+
+1003
+00:43:19.893 --> 00:43:21.500
+<v Tony Wasserman:>And then the next person in that
+
+1004
+00:43:21.941 --> 00:43:25.147
+<v Tony Wasserman:>link was Sam Ramji, who has been,
+
+1005
+00:43:25.167 --> 00:43:27.671
+<v Tony Wasserman:>I think, a key part of the
+
+1006
+00:43:28.092 --> 00:43:30.360
+<v Tony Wasserman:>open source community for a long time.
+
+1007
+00:43:31.763 --> 00:43:33.847
+<v Tony Wasserman:>And he's still active.
+
+1008
+00:43:35.130 --> 00:43:36.794
+<v Tony Wasserman:>Anyway, so in addition to that, we
+
+1009
+00:43:36.814 --> 00:43:39.643
+<v Tony Wasserman:>were beginning to see a number of
+
+1010
+00:43:40.946 --> 00:43:42.348
+<v Tony Wasserman:>open source projects pop up.
+
+1011
+00:43:43.590 --> 00:43:46.455
+<v Tony Wasserman:>One of the best known is MySQL,
+
+1012
+00:43:48.503 --> 00:43:49.745
+<v Tony Wasserman:>which started in the mid 90s, 1994.
+
+1013
+00:43:49.745 --> 00:43:51.147
+<v Tony Wasserman:>And we also saw the huge growth
+
+1014
+00:43:51.208 --> 00:43:58.116
+<v Tony Wasserman:>of Linux, which started from 1991.
+
+1015
+00:43:58.684 --> 00:44:02.591
+<v Tony Wasserman:>And Red Hat, your former employer, you
+
+1016
+00:44:02.611 --> 00:44:06.299
+<v Tony Wasserman:>know, started doing Linux in 1994 or
+
+1017
+00:44:06.360 --> 00:44:06.620
+<v Tony Wasserman:>so.
+
+1018
+00:44:08.623 --> 00:44:11.888
+<v Tony Wasserman:>And so there was this momentum started
+
+1019
+00:44:11.929 --> 00:44:12.529
+<v Tony Wasserman:>to build up.
+
+1020
+00:44:13.611 --> 00:44:17.441
+<v Tony Wasserman:>But so these were, you know, things
+
+1021
+00:44:17.481 --> 00:44:19.766
+<v Tony Wasserman:>that were, I think, very influential in
+
+1022
+00:44:19.827 --> 00:44:22.433
+<v Tony Wasserman:>driving the Unix community, or the Linux
+
+1023
+00:44:22.473 --> 00:44:24.261
+<v Tony Wasserman:>community and the open source community.
+
+1024
+00:44:25.766 --> 00:44:27.649
+<v Tony Wasserman:>We began to see conferences.
+
+1025
+00:44:29.373 --> 00:44:31.181
+<v Tony Wasserman:>It was the open source business conference,
+
+1026
+00:44:32.143 --> 00:44:35.531
+<v Tony Wasserman:>which was focused on commercial adoption.
+
+1027
+00:44:36.012 --> 00:44:37.615
+<v Tony Wasserman:>There was the open source think tank,
+
+1028
+00:44:37.700 --> 00:44:41.487
+<v Tony Wasserman:>which was this much smaller meeting, chaired
+
+1029
+00:44:41.547 --> 00:44:45.455
+<v Tony Wasserman:>by Andrew Aitken, who eventually ended up
+
+1030
+00:44:45.615 --> 00:44:48.104
+<v Tony Wasserman:>running the open source business for Wipro,
+
+1031
+00:44:50.067 --> 00:44:51.529
+<v Tony Wasserman:>the Indian services company.
+
+1032
+00:44:53.253 --> 00:44:55.300
+<v Tony Wasserman:>And so, you know, these names keep
+
+1033
+00:44:56.282 --> 00:45:01.149
+<v Tony Wasserman:>reappearing, popping up, yeah, as people move
+
+1034
+00:45:01.189 --> 00:45:01.670
+<v Tony Wasserman:>around.
+
+1035
+00:45:03.773 --> 00:45:05.676
+<v Tony Wasserman:>And so you had, you also had
+
+1036
+00:45:05.716 --> 00:45:07.203
+<v Tony Wasserman:>the wiki movement, there were a number
+
+1037
+00:45:07.223 --> 00:45:10.372
+<v Tony Wasserman:>of different wikis that came about, of
+
+1038
+00:45:10.412 --> 00:45:11.861
+<v Tony Wasserman:>which the best known, of course, is
+
+1039
+00:45:11.921 --> 00:45:13.864
+<v Tony Wasserman:>MediaWiki because of Wikipedia.
+
+1040
+00:45:16.209 --> 00:45:19.114
+<v Tony Wasserman:>So, so there's a challenge that I
+
+1041
+00:45:19.194 --> 00:45:22.625
+<v Tony Wasserman:>formulated at that time, which is how
+
+1042
+00:45:22.705 --> 00:45:27.234
+<v Tony Wasserman:>much can you do with only open
+
+1043
+00:45:27.274 --> 00:45:27.995
+<v Tony Wasserman:>source software?
+
+1044
+00:45:29.222 --> 00:45:33.610
+<v Bryan Berhenshausen:>Okay, so, so OpenOffice was there, right?
+
+1045
+00:45:34.070 --> 00:45:36.976
+<v Bryan Berhenshausen:>It wasn't as compatible with Microsoft Office,
+
+1046
+00:45:37.340 --> 00:45:38.382
+<v Tony Wasserman:>then as it is now.
+
+1047
+00:45:38.402 --> 00:45:42.510
+<v Tony Wasserman:>Of course, LibreOffice also was a fork
+
+1048
+00:45:42.571 --> 00:45:43.031
+<v Tony Wasserman:>from that.
+
+1049
+00:45:43.893 --> 00:45:46.121
+<v Tony Wasserman:>There were early content management systems.
+
+1050
+00:45:49.968 --> 00:45:50.549
+<v Tony Wasserman:>Joomla!
+
+1051
+00:45:50.629 --> 00:45:51.450
+<v Tony Wasserman:>and Drupal.
+
+1052
+00:45:51.570 --> 00:45:52.993
+<v Tony Wasserman:>Drupal, of course, is still around.
+
+1053
+00:45:53.393 --> 00:45:55.941
+<v Tony Wasserman:>Drupal has a huge community, has been
+
+1054
+00:45:55.961 --> 00:45:56.823
+<v Tony Wasserman:>a huge success.
+
+1055
+00:45:57.365 --> 00:46:01.193
+<v Tony Wasserman:>You know, it was actually Dries Voithoudt's
+
+1056
+00:46:01.293 --> 00:46:02.375
+<v Tony Wasserman:>PhD dissertation.
+
+1057
+00:46:03.083 --> 00:46:03.745
+<v Bryan Berhenshausen:>Yes, that's right.
+
+1058
+00:46:03.786 --> 00:46:04.207
+<v Bryan Berhenshausen:>That's right.
+
+1059
+00:46:04.247 --> 00:46:04.770
+<v Bryan Berhenshausen:>Yeah, yeah.
+
+1060
+00:46:04.910 --> 00:46:05.272
+<v Bryan Berhenshausen:>Okay.
+
+1061
+00:46:05.520 --> 00:46:10.448
+<v Tony Wasserman:>So, so, but what we, so those
+
+1062
+00:46:10.549 --> 00:46:12.733
+<v Tony Wasserman:>are kind of the grassroots of a
+
+1063
+00:46:12.753 --> 00:46:15.082
+<v Tony Wasserman:>lot of open source, and people were
+
+1064
+00:46:15.122 --> 00:46:19.052
+<v Tony Wasserman:>putting open source on a shared repository,
+
+1065
+00:46:19.253 --> 00:46:19.854
+<v Tony Wasserman:>SourceForge.
+
+1066
+00:46:21.482 --> 00:46:24.648
+<v Bryan Berhenshausen:>So SourceForge was the GitHub of its
+
+1067
+00:46:24.748 --> 00:46:25.088
+<v Bryan Berhenshausen:>day.
+
+1068
+00:46:27.172 --> 00:46:29.895
+<v Bryan Berhenshausen:>And again, SourceForge still exists, but
+
+1069
+00:46:30.741 --> 00:46:35.210
+<v Tony Wasserman:>obviously has been dwarfed by the adoption
+
+1070
+00:46:35.972 --> 00:46:37.776
+<v Tony Wasserman:>and widespread use of GitHub.
+
+1071
+00:46:39.604 --> 00:46:42.851
+<v Tony Wasserman:>So, you know, not everything dies, it
+
+1072
+00:46:42.871 --> 00:46:44.535
+<v Tony Wasserman:>just kind of hangs around for a
+
+1073
+00:46:44.615 --> 00:46:44.754
+<v Tony Wasserman:>while.
+
+1074
+00:46:44.800 --> 00:46:46.323
+<v Tony Wasserman:>Yeah, right, right.
+
+1075
+00:46:46.784 --> 00:46:49.690
+<v Tony Wasserman:>Well, then, when did you, when did
+
+1076
+00:46:49.730 --> 00:46:52.015
+<v Tony Wasserman:>you know that you wanted to play
+
+1077
+00:46:52.055 --> 00:46:52.295
+<v Tony Wasserman:>a more
+
+1078
+00:46:52.340 --> 00:46:56.429
+<v Bryan Berhenshausen:>pivotal role in influencing the, in stewarding
+
+1079
+00:46:56.549 --> 00:46:57.031
+<v Bryan Berhenshausen:>open source?
+
+1080
+00:46:57.071 --> 00:46:58.955
+<v Bryan Berhenshausen:>You were, you joined the OSI at
+
+1081
+00:46:59.000 --> 00:46:59.681
+<v Bryan Berhenshausen:>some point, right?
+
+1082
+00:47:00.403 --> 00:47:01.385
+<v Bryan Berhenshausen:>So that was a little later.
+
+1083
+00:47:01.405 --> 00:47:05.694
+<v Bryan Berhenshausen:>Because OSI didn't have affiliate members,
+
+1084
+00:47:05.820 --> 00:47:08.446
+<v Tony Wasserman:>and they didn't have individual members for
+
+1085
+00:47:08.466 --> 00:47:09.028
+<v Tony Wasserman:>a long time.
+
+1086
+00:47:09.469 --> 00:47:13.182
+<v Tony Wasserman:>But in 2005, my first year at
+
+1087
+00:47:13.282 --> 00:47:16.929
+<v Tony Wasserman:>Carnegie Mellon, I organized a conference on
+
+1088
+00:47:17.049 --> 00:47:20.175
+<v Tony Wasserman:>open source software in the Bay Area,
+
+1089
+00:47:20.700 --> 00:47:23.325
+<v Tony Wasserman:>and we got 100 or so people,
+
+1090
+00:47:23.465 --> 00:47:25.908
+<v Tony Wasserman:>and I managed to get some, you
+
+1091
+00:47:26.631 --> 00:47:29.961
+<v Tony Wasserman:>know, luminaries in, in open source, Denise
+
+1092
+00:47:30.001 --> 00:47:31.625
+<v Tony Wasserman:>Cooper was one of our speakers, for
+
+1093
+00:47:31.666 --> 00:47:34.192
+<v Tony Wasserman:>example, and she's certainly very well known
+
+1094
+00:47:34.360 --> 00:47:38.226
+<v Tony Wasserman:>for her long term contributions in open
+
+1095
+00:47:38.266 --> 00:47:38.547
+<v Tony Wasserman:>source.
+
+1096
+00:47:40.971 --> 00:47:43.195
+<v Tony Wasserman:>And so, you know, that was the
+
+1097
+00:47:43.215 --> 00:47:45.903
+<v Tony Wasserman:>thing that told me that this was
+
+1098
+00:47:46.804 --> 00:47:50.731
+<v Tony Wasserman:>what's happening now, that this movement toward
+
+1099
+00:47:50.771 --> 00:47:54.121
+<v Tony Wasserman:>open source was happening, it was happening
+
+1100
+00:47:54.201 --> 00:47:54.642
+<v Tony Wasserman:>slowly.
+
+1101
+00:47:55.564 --> 00:47:58.529
+<v Tony Wasserman:>Because at that time, and maybe for
+
+1102
+00:47:58.550 --> 00:48:01.174
+<v Tony Wasserman:>the next four or five years after
+
+1103
+00:48:01.215 --> 00:48:04.848
+<v Tony Wasserman:>that, there were camps, that there were
+
+1104
+00:48:04.888 --> 00:48:07.634
+<v Tony Wasserman:>people who believed in open source, and
+
+1105
+00:48:07.654 --> 00:48:08.901
+<v Tony Wasserman:>they didn't want to send any money
+
+1106
+00:48:08.982 --> 00:48:13.010
+<v Tony Wasserman:>to Redmond, Washington, or to Redwood Shores,
+
+1107
+00:48:13.051 --> 00:48:16.261
+<v Tony Wasserman:>California, or other places that were homes
+
+1108
+00:48:16.362 --> 00:48:19.068
+<v Tony Wasserman:>to major proprietary software businesses.
+
+1109
+00:48:20.090 --> 00:48:22.134
+<v Tony Wasserman:>And then, of course, you had the
+
+1110
+00:48:22.360 --> 00:48:24.805
+<v Tony Wasserman:>other side, which are the large companies
+
+1111
+00:48:25.286 --> 00:48:28.493
+<v Tony Wasserman:>that said, you know, they believed what
+
+1112
+00:48:28.513 --> 00:48:31.724
+<v Tony Wasserman:>Microsoft said, or they got everything that
+
+1113
+00:48:31.764 --> 00:48:36.252
+<v Tony Wasserman:>they needed from proprietary software, and had
+
+1114
+00:48:36.313 --> 00:48:37.701
+<v Tony Wasserman:>no use for open source.
+
+1115
+00:48:39.004 --> 00:48:40.567
+<v Tony Wasserman:>And the executives in some of those
+
+1116
+00:48:40.628 --> 00:48:43.394
+<v Tony Wasserman:>companies would say, we don't use open
+
+1117
+00:48:43.454 --> 00:48:43.775
+<v Tony Wasserman:>source.
+
+1118
+00:48:45.104 --> 00:48:47.109
+<v Tony Wasserman:>And my answer to them was, you
+
+1119
+00:48:47.150 --> 00:48:47.770
+<v Tony Wasserman:>want to bet?
+
+1120
+00:48:48.373 --> 00:48:48.955
+<v Tony Wasserman:>Yeah.
+
+1121
+00:48:51.944 --> 00:48:52.264
+<v Tony Wasserman:>Yep.
+
+1122
+00:48:53.226 --> 00:48:55.631
+<v Tony Wasserman:>And you know, at that time, you
+
+1123
+00:48:55.711 --> 00:48:58.115
+<v Tony Wasserman:>had the emergence of companies like Black
+
+1124
+00:48:58.155 --> 00:49:02.687
+<v Tony Wasserman:>Duck, which were out there analyzing source
+
+1125
+00:49:02.748 --> 00:49:06.033
+<v Tony Wasserman:>code and looking for open source software
+
+1126
+00:49:06.875 --> 00:49:10.067
+<v Tony Wasserman:>in those larger systems.
+
+1127
+00:49:10.648 --> 00:49:12.513
+<v Tony Wasserman:>And surprise, surprise, there was a lot
+
+1128
+00:49:12.533 --> 00:49:13.134
+<v Tony Wasserman:>of it out there.
+
+1129
+00:49:14.944 --> 00:49:17.309
+<v Tony Wasserman:>And, of course, Black Duck has evolved
+
+1130
+00:49:17.410 --> 00:49:18.933
+<v Tony Wasserman:>and been acquired, and they're now part
+
+1131
+00:49:18.973 --> 00:49:19.694
+<v Tony Wasserman:>of Synopsys.
+
+1132
+00:49:20.721 --> 00:49:27.388
+<v Tony Wasserman:>I don't know if I knew that.
+
+1133
+00:49:28.790 --> 00:49:29.291
+<v Tony Wasserman:>Okay.
+
+1134
+00:49:29.311 --> 00:49:31.253
+<v Tony Wasserman:>So there was this division.
+
+1135
+00:49:31.994 --> 00:49:36.183
+<v Tony Wasserman:>And it wasn't until considerably later, maybe
+
+1136
+00:49:36.263 --> 00:49:42.292
+<v Tony Wasserman:>after the 2008 Great Recession, that some
+
+1137
+00:49:42.333 --> 00:49:44.819
+<v Tony Wasserman:>of these companies said, you know, we
+
+1138
+00:49:44.860 --> 00:49:46.525
+<v Tony Wasserman:>have all this work to do, and
+
+1139
+00:49:46.585 --> 00:49:48.129
+<v Tony Wasserman:>our budgets have all been cut.
+
+1140
+00:49:48.730 --> 00:49:50.054
+<v Tony Wasserman:>Let's go take a look at this
+
+1141
+00:49:50.140 --> 00:49:53.826
+<v Tony Wasserman:>open source stuff, which is free.
+
+1142
+00:49:54.667 --> 00:49:56.611
+<v Tony Wasserman:>And so that's what they did.
+
+1143
+00:49:57.633 --> 00:49:59.496
+<v Tony Wasserman:>And so we saw, we began to
+
+1144
+00:49:59.556 --> 00:50:03.267
+<v Tony Wasserman:>see gradual adoption of open source in
+
+1145
+00:50:03.347 --> 00:50:03.808
+<v Tony Wasserman:>companies.
+
+1146
+00:50:03.868 --> 00:50:07.315
+<v Tony Wasserman:>And this is that place where what
+
+1147
+00:50:07.375 --> 00:50:09.403
+<v Tony Wasserman:>I was doing, evaluation and adoption of
+
+1148
+00:50:09.483 --> 00:50:14.154
+<v Tony Wasserman:>open source, really became a central activity,
+
+1149
+00:50:14.234 --> 00:50:14.535
+<v Tony Wasserman:>all these.
+
+1150
+00:50:16.423 --> 00:50:17.545
+<v Tony Wasserman:>It took a long time.
+
+1151
+00:50:17.626 --> 00:50:20.691
+<v Tony Wasserman:>And in fact, it's still in process.
+
+1152
+00:50:21.293 --> 00:50:23.500
+<v Tony Wasserman:>But to get the analysts, the industry
+
+1153
+00:50:23.581 --> 00:50:26.165
+<v Tony Wasserman:>analysts, like the partners of the world,
+
+1154
+00:50:27.068 --> 00:50:31.001
+<v Tony Wasserman:>to when they do their evaluation, their
+
+1155
+00:50:31.041 --> 00:50:32.066
+<v Tony Wasserman:>four quadrants.
+
+1156
+00:50:32.467 --> 00:50:33.271
+<v Tony Wasserman:>The other quadrant, yeah.
+
+1157
+00:50:34.022 --> 00:50:36.268
+<v Tony Wasserman:>So how do you get open source
+
+1158
+00:50:36.328 --> 00:50:38.874
+<v Tony Wasserman:>software products into the upper quadrant?
+
+1159
+00:50:41.546 --> 00:50:42.869
+<v Bryan Berhenshausen:>Because otherwise, they'd be in the lower
+
+1160
+00:50:42.929 --> 00:50:43.451
+<v Bryan Berhenshausen:>left, right?
+
+1161
+00:50:43.491 --> 00:50:44.573
+<v Bryan Berhenshausen:>They don't have the structural
+
+1162
+00:50:44.660 --> 00:50:46.325
+<v Tony Wasserman:>organization of the company, they don't have
+
+1163
+00:50:46.466 --> 00:50:48.633
+<v Tony Wasserman:>the revenue, they don't have the roadmap,
+
+1164
+00:50:48.633 --> 00:50:49.842
+<v Tony Wasserman:>they they don't have the support.
+
+1165
+00:50:51.786 --> 00:50:53.629
+<v Tony Wasserman:>And so what turns out, as we
+
+1166
+00:50:53.971 --> 00:50:56.962
+<v Tony Wasserman:>can say, looking backward, is that some
+
+1167
+00:50:57.002 --> 00:50:59.547
+<v Tony Wasserman:>of the most successful open source companies
+
+1168
+00:51:00.550 --> 00:51:04.502
+<v Tony Wasserman:>became that way by creating companies that
+
+1169
+00:51:04.663 --> 00:51:05.784
+<v Tony Wasserman:>used that software.
+
+1170
+00:51:06.666 --> 00:51:11.314
+<v Tony Wasserman:>So Drupal, for example, the founders of
+
+1171
+00:51:11.354 --> 00:51:13.221
+<v Tony Wasserman:>Drupal set up a company called Acquia.
+
+1172
+00:51:14.663 --> 00:51:18.130
+<v Tony Wasserman:>And Acquia provides a very good level
+
+1173
+00:51:18.150 --> 00:51:24.864
+<v Tony Wasserman:>of hosting and commercial support for Drupal.
+
+1174
+00:51:25.365 --> 00:51:27.289
+<v Tony Wasserman:>You have the same thing with Cassandra
+
+1175
+00:51:27.750 --> 00:51:30.455
+<v Tony Wasserman:>and Hadoop, where there are companies that
+
+1176
+00:51:30.880 --> 00:51:31.863
+<v Tony Wasserman:>provide that support.
+
+1177
+00:51:32.385 --> 00:51:33.488
+<v Tony Wasserman:>But now to come back to your
+
+1178
+00:51:33.529 --> 00:51:37.744
+<v Tony Wasserman:>question about open source and the OSI.
+
+1179
+00:51:38.986 --> 00:51:42.170
+<v Tony Wasserman:>So the OSI, of course, was founded
+
+1180
+00:51:42.170 --> 00:51:42.471
+<v Tony Wasserman:>in 1998.
+
+1181
+00:51:42.471 --> 00:51:45.756
+<v Tony Wasserman:>And they had a board of directors.
+
+1182
+00:51:46.460 --> 00:51:49.165
+<v Tony Wasserman:>And the board of directors, of course,
+
+1183
+00:51:49.205 --> 00:51:53.933
+<v Tony Wasserman:>was started by Bruce Perens and by
+
+1184
+00:51:53.973 --> 00:51:54.594
+<v Tony Wasserman:>Eric Raymond.
+
+1185
+00:51:56.381 --> 00:52:01.092
+<v Tony Wasserman:>And what's his name from Red Hat?
+
+1186
+00:52:02.434 --> 00:52:02.956
+<v Tony Wasserman:>Michael Tiemann.
+
+1187
+00:52:03.561 --> 00:52:04.522
+<v Tony Wasserman:>Yes, thank you.
+
+1188
+00:52:05.484 --> 00:52:09.611
+<v Tony Wasserman:>So Michael Tiemann, and then other people
+
+1189
+00:52:09.751 --> 00:52:11.233
+<v Tony Wasserman:>were appointed.
+
+1190
+00:52:11.754 --> 00:52:14.842
+<v Tony Wasserman:>And it was kind of a closed
+
+1191
+00:52:14.862 --> 00:52:15.923
+<v Tony Wasserman:>system.
+
+1192
+00:52:15.943 --> 00:52:18.427
+<v Tony Wasserman:>And in 2010, when they appointed new
+
+1193
+00:52:19.608 --> 00:52:30.646
+<v Tony Wasserman:>members, invited to join and accepted.
+
+1194
+00:52:31.668 --> 00:52:34.973
+<v Tony Wasserman:>And Simon Phipps also came out at
+
+1195
+00:52:35.013 --> 00:52:36.634
+<v Tony Wasserman:>the same time as I did.
+
+1196
+00:52:37.096 --> 00:52:39.323
+<v Tony Wasserman:>And Simon had been at Sun Microsystems.
+
+1197
+00:52:42.869 --> 00:52:46.835
+<v Tony Wasserman:>But he has, these days, a very
+
+1198
+00:52:46.875 --> 00:52:52.468
+<v Tony Wasserman:>successful open source consulting practice and does
+
+1199
+00:52:52.489 --> 00:52:55.875
+<v Tony Wasserman:>some work for European governments and for
+
+1200
+00:52:55.895 --> 00:52:56.780
+<v Tony Wasserman:>the UK government.
+
+1201
+00:52:58.403 --> 00:53:01.488
+<v Tony Wasserman:>So a couple of things during our
+
+1202
+00:53:02.349 --> 00:53:02.850
+<v Tony Wasserman:>tenure.
+
+1203
+00:53:03.611 --> 00:53:06.396
+<v Tony Wasserman:>So I was on the board for
+
+1204
+00:53:06.416 --> 00:53:08.844
+<v Tony Wasserman:>two terms, you know, I was termed
+
+1205
+00:53:08.964 --> 00:53:09.305
+<v Tony Wasserman:>out, right?
+
+1206
+00:53:09.325 --> 00:53:10.407
+<v Tony Wasserman:>That was the legal maximum.
+
+1207
+00:53:12.352 --> 00:53:13.634
+<v Tony Wasserman:>But a few things happened.
+
+1208
+00:53:13.755 --> 00:53:17.406
+<v Tony Wasserman:>First of all, Simon really drove the
+
+1209
+00:53:17.547 --> 00:53:20.494
+<v Tony Wasserman:>idea of an affiliate program, so that
+
+1210
+00:53:20.634 --> 00:53:22.080
+<v Tony Wasserman:>many of the other groups that were
+
+1211
+00:53:22.122 --> 00:53:24.968
+<v Tony Wasserman:>doing open source software, and many of
+
+1212
+00:53:25.028 --> 00:53:30.505
+<v Tony Wasserman:>the foundations doing open source software became
+
+1213
+00:53:30.545 --> 00:53:32.028
+<v Tony Wasserman:>affiliates of the OSI.
+
+1214
+00:53:32.128 --> 00:53:35.254
+<v Tony Wasserman:>So that, and that had the, you
+
+1215
+00:53:35.835 --> 00:53:38.444
+<v Tony Wasserman:>know, that led to improved communication, and
+
+1216
+00:53:38.484 --> 00:53:43.273
+<v Tony Wasserman:>it led to people being able to
+
+1217
+00:53:43.573 --> 00:53:45.557
+<v Tony Wasserman:>represent open source more as a group
+
+1218
+00:53:45.617 --> 00:53:48.945
+<v Tony Wasserman:>than as each individual foundation.
+
+1219
+00:53:49.005 --> 00:53:56.276
+<v Tony Wasserman:>So getting and eventually, the affiliates, some
+
+1220
+00:53:56.296 --> 00:53:57.682
+<v Tony Wasserman:>of them contributed money and money and
+
+1221
+00:53:58.925 --> 00:54:00.408
+<v Tony Wasserman:>so one of the other good things
+
+1222
+00:54:00.429 --> 00:54:01.772
+<v Tony Wasserman:>that happened is that we were able
+
+1223
+00:54:01.813 --> 00:54:05.143
+<v Tony Wasserman:>to hire in the OSI, a general
+
+1224
+00:54:05.183 --> 00:54:05.604
+<v Tony Wasserman:>manager.
+
+1225
+00:54:08.468 --> 00:54:13.855
+<v Tony Wasserman:>And that was useful, because now you
+
+1226
+00:54:13.875 --> 00:54:17.585
+<v Tony Wasserman:>had somebody whose job it was, primary
+
+1227
+00:54:17.645 --> 00:54:21.411
+<v Tony Wasserman:>job was to represent the OSI.
+
+1228
+00:54:22.013 --> 00:54:25.022
+<v Tony Wasserman:>Whereas the rest of us were, you
+
+1229
+00:54:25.062 --> 00:54:27.105
+<v Tony Wasserman:>know, earning a living doing other things.
+
+1230
+00:54:29.489 --> 00:54:32.895
+<v Tony Wasserman:>And another thing that happened during that
+
+1231
+00:54:33.015 --> 00:54:36.627
+<v Tony Wasserman:>era was the creation of individual memberships.
+
+1232
+00:54:37.910 --> 00:54:38.250
+<v Tony Wasserman:>Okay.
+
+1233
+00:54:38.793 --> 00:54:39.535
+<v Tony Wasserman:>In the OSI.
+
+1234
+00:54:39.600 --> 00:54:41.906
+<v Tony Wasserman:>Oh, right, where an organization could.
+
+1235
+00:54:42.548 --> 00:54:42.747
+<v Tony Wasserman:>Right.
+
+1236
+00:54:42.869 --> 00:54:44.714
+<v Tony Wasserman:>As you know, the Free Software Foundation
+
+1237
+00:54:44.774 --> 00:54:48.687
+<v Tony Wasserman:>has individual members and the Linux Foundation
+
+1238
+00:54:48.707 --> 00:54:53.556
+<v Tony Wasserman:>has individual members, and other groups as
+
+1239
+00:54:53.616 --> 00:54:53.756
+<v Tony Wasserman:>well.
+
+1240
+00:54:55.181 --> 00:54:57.672
+<v Tony Wasserman:>The OSI did not until about 2014,
+
+1241
+00:54:58.265 --> 00:55:03.772
+<v Tony Wasserman:>maybe, not that long ago.
+
+1242
+00:55:04.553 --> 00:55:07.396
+<v Tony Wasserman:>And there was not much of a
+
+1243
+00:55:07.476 --> 00:55:08.501
+<v Tony Wasserman:>marketing program.
+
+1244
+00:55:09.744 --> 00:55:11.808
+<v Tony Wasserman:>So they, you know, you'd have a
+
+1245
+00:55:11.990 --> 00:55:16.605
+<v Tony Wasserman:>conference like the O'Reilly conference, where the
+
+1246
+00:55:16.645 --> 00:55:18.769
+<v Tony Wasserman:>OSI would have a booth and, and
+
+1247
+00:55:19.290 --> 00:55:22.234
+<v Tony Wasserman:>we tell people, you know, please, please
+
+1248
+00:55:22.295 --> 00:55:22.596
+<v Tony Wasserman:>join.
+
+1249
+00:55:24.606 --> 00:55:25.830
+<v Tony Wasserman:>We didn't have all that much to
+
+1250
+00:55:25.930 --> 00:55:26.953
+<v Tony Wasserman:>give them in return.
+
+1251
+00:55:30.404 --> 00:55:33.050
+<v Tony Wasserman:>The OSI didn't run its own conferences,
+
+1252
+00:55:33.471 --> 00:55:35.395
+<v Tony Wasserman:>they didn't teach its own courses.
+
+1253
+00:55:36.541 --> 00:55:39.848
+<v Tony Wasserman:>And so the OSI's main mission then
+
+1254
+00:55:40.029 --> 00:55:42.415
+<v Tony Wasserman:>and now has been over license approval.
+
+1255
+00:55:43.221 --> 00:55:44.243
+<v Bryan Berhenshausen:>Right, right.
+
+1256
+00:55:44.643 --> 00:55:44.844
+<v Bryan Berhenshausen:>Yeah.
+
+1257
+00:55:45.184 --> 00:55:49.372
+<v Bryan Berhenshausen:>And so, and I think that's something
+
+1258
+00:55:49.472 --> 00:55:51.596
+<v Bryan Berhenshausen:>that not only has the OSI done,
+
+1259
+00:55:51.980 --> 00:55:54.826
+<v Tony Wasserman:>done well, but that the, the open
+
+1260
+00:55:54.867 --> 00:55:57.272
+<v Tony Wasserman:>source community as a whole, looks to
+
+1261
+00:55:57.312 --> 00:56:00.783
+<v Tony Wasserman:>the OSI for its leadership and voice
+
+1262
+00:56:00.804 --> 00:56:02.607
+<v Tony Wasserman:>on that.
+
+1263
+00:56:03.248 --> 00:56:03.769
+<v Tony Wasserman:>Absolutely.
+
+1264
+00:56:04.430 --> 00:56:07.055
+<v Tony Wasserman:>So if I understand the timeline,
+
+1265
+00:56:07.560 --> 00:56:10.027
+<v Bryan Berhenshausen:>correctly, you know, when you started, you
+
+1266
+00:56:10.068 --> 00:56:12.681
+<v Bryan Berhenshausen:>know, building that program around studying open
+
+1267
+00:56:12.721 --> 00:56:16.649
+<v Bryan Berhenshausen:>source adoption, that was prior to what
+
+1268
+00:56:16.689 --> 00:56:18.633
+<v Bryan Berhenshausen:>you kind of signaled as sort of
+
+1269
+00:56:18.714 --> 00:56:22.488
+<v Bryan Berhenshausen:>the more popular mainstream interest in open
+
+1270
+00:56:22.508 --> 00:56:24.292
+<v Bryan Berhenshausen:>source, like, it was prior to the
+
+1271
+00:56:24.333 --> 00:56:26.102
+<v Bryan Berhenshausen:>Great Recession, which you benchmark as kind
+
+1272
+00:56:26.143 --> 00:56:29.330
+<v Bryan Berhenshausen:>of a, that just tells me it's
+
+1273
+00:56:29.350 --> 00:56:30.894
+<v Bryan Berhenshausen:>sort of, you were on, you were
+
+1274
+00:56:30.954 --> 00:56:32.884
+<v Bryan Berhenshausen:>onto something, right, that you had an
+
+1275
+00:56:32.945 --> 00:56:33.206
+<v Bryan Berhenshausen:>inkling.
+
+1276
+00:56:33.226 --> 00:56:35.131
+<v Bryan Berhenshausen:>And I'm wondering what, what was it
+
+1277
+00:56:35.191 --> 00:56:37.162
+<v Bryan Berhenshausen:>about open source and about the idea
+
+1278
+00:56:37.202 --> 00:56:37.944
+<v Bryan Berhenshausen:>of open source?
+
+1279
+00:56:39.487 --> 00:56:40.590
+<v Bryan Berhenshausen:>What did you see at the time
+
+1280
+00:56:40.730 --> 00:56:44.002
+<v Bryan Berhenshausen:>that sparked your passion and curiosity to
+
+1281
+00:56:44.985 --> 00:56:46.989
+<v Bryan Berhenshausen:>pursue, build that program and pursue that?
+
+1282
+00:56:47.009 --> 00:56:49.435
+<v Bryan Berhenshausen:>It, you know, it just, it tells
+
+1283
+00:56:49.475 --> 00:56:51.144
+<v Bryan Berhenshausen:>me you had, you had insight into
+
+1284
+00:56:51.185 --> 00:56:51.867
+<v Bryan Berhenshausen:>something, right?
+
+1285
+00:56:52.107 --> 00:56:53.171
+<v Bryan Berhenshausen:>So there are a couple of things.
+
+1286
+00:56:53.532 --> 00:56:54.013
+<v Bryan Berhenshausen:>First of all,
+
+1287
+00:56:54.060 --> 00:56:58.147
+<v Tony Wasserman:>in 2005, there was an effort started
+
+1288
+00:56:58.207 --> 00:56:59.770
+<v Tony Wasserman:>called the Business Readiness Rating.
+
+1289
+00:57:00.712 --> 00:57:05.003
+<v Tony Wasserman:>And, and it was started by SpikeSource,
+
+1290
+00:57:05.524 --> 00:57:07.027
+<v Tony Wasserman:>which was a startup.
+
+1291
+00:57:07.848 --> 00:57:10.712
+<v Tony Wasserman:>And the CEO of SpikeSource was Kim
+
+1292
+00:57:10.733 --> 00:57:13.562
+<v Tony Wasserman:>Polese, who was the first product manager
+
+1293
+00:57:13.582 --> 00:57:14.964
+<v Tony Wasserman:>for Java at Sun.
+
+1294
+00:57:16.669 --> 00:57:18.754
+<v Tony Wasserman:>They, all these pieces eventually come back
+
+1295
+00:57:18.814 --> 00:57:19.214
+<v Tony Wasserman:>together.
+
+1296
+00:57:19.215 --> 00:57:20.589
+<v Tony Wasserman:>Yeah, Yeah, right, right, right, right, right.
+
+1297
+00:57:21.221 --> 00:57:26.290
+<v Tony Wasserman:>And, and then the, there was funding
+
+1298
+00:57:26.350 --> 00:57:29.515
+<v Tony Wasserman:>from Intel, a guy named Pete Kronowit,
+
+1299
+00:57:30.661 --> 00:57:33.446
+<v Tony Wasserman:>who has since left computing to be
+
+1300
+00:57:33.626 --> 00:57:34.427
+<v Tony Wasserman:>a musician.
+
+1301
+00:57:35.950 --> 00:57:43.324
+<v Tony Wasserman:>And, and O'Reilly, Nat forget his last
+
+1302
+00:57:43.364 --> 00:57:43.564
+<v Tony Wasserman:>name.
+
+1303
+00:57:44.927 --> 00:57:49.555
+<v Tony Wasserman:>Anyway, Nat was the representative from O'Reilly,
+
+1304
+00:57:49.575 --> 00:57:50.700
+<v Tony Wasserman:>so that, and then me.
+
+1305
+00:57:51.501 --> 00:57:56.830
+<v Tony Wasserman:>So the, the four groups created this
+
+1306
+00:57:56.891 --> 00:57:58.093
+<v Tony Wasserman:>Business Readiness Rating.
+
+1307
+00:57:58.414 --> 00:57:59.839
+<v Tony Wasserman:>And as you can imagine, this is
+
+1308
+00:57:59.900 --> 00:58:02.325
+<v Tony Wasserman:>right up my alley of evaluation and
+
+1309
+00:58:02.386 --> 00:58:02.947
+<v Tony Wasserman:>adoption.
+
+1310
+00:58:05.652 --> 00:58:07.214
+<v Tony Wasserman:>What makes a piece of open source
+
+1311
+00:58:07.240 --> 00:58:09.826
+<v Tony Wasserman:>software ready to be used in a
+
+1312
+00:58:09.906 --> 00:58:14.662
+<v Tony Wasserman:>business environment, whether that's commercial distribution of
+
+1313
+00:58:14.702 --> 00:58:17.409
+<v Tony Wasserman:>the software, or inclusion of that software
+
+1314
+00:58:17.730 --> 00:58:19.520
+<v Tony Wasserman:>in a product that they ship, or
+
+1315
+00:58:19.560 --> 00:58:21.003
+<v Tony Wasserman:>whether it's internal use.
+
+1316
+00:58:22.766 --> 00:58:24.930
+<v Tony Wasserman:>So what we did was we came
+
+1317
+00:58:25.090 --> 00:58:27.735
+<v Tony Wasserman:>out with a set of evaluation criteria.
+
+1318
+00:58:28.300 --> 00:58:29.883
+<v Tony Wasserman:>Initially, there were a dozen of them.
+
+1319
+00:58:31.205 --> 00:58:35.333
+<v Tony Wasserman:>And that was a way that you
+
+1320
+00:58:35.413 --> 00:58:36.915
+<v Tony Wasserman:>could look at a piece of open
+
+1321
+00:58:36.960 --> 00:58:38.463
+<v Tony Wasserman:>source software and score it on these
+
+1322
+00:58:38.503 --> 00:58:44.274
+<v Tony Wasserman:>criteria, documentation, the quality of the code,
+
+1323
+00:58:44.355 --> 00:58:46.404
+<v Tony Wasserman:>the existence of some kind of a
+
+1324
+00:58:46.504 --> 00:58:48.107
+<v Tony Wasserman:>process for reviewing bugs.
+
+1325
+00:58:49.431 --> 00:58:50.694
+<v Tony Wasserman:>All these kinds of things could be
+
+1326
+00:58:50.774 --> 00:58:52.462
+<v Tony Wasserman:>scored on a zero to five scale,
+
+1327
+00:58:52.503 --> 00:58:53.384
+<v Tony Wasserman:>and you could add up all the
+
+1328
+00:58:53.424 --> 00:58:54.467
+<v Tony Wasserman:>numbers and weight them.
+
+1329
+00:58:57.813 --> 00:59:00.243
+<v Tony Wasserman:>But it turned out, when you think
+
+1330
+00:59:00.283 --> 00:59:02.749
+<v Tony Wasserman:>about it, that you didn't have to
+
+1331
+00:59:02.810 --> 00:59:03.872
+<v Tony Wasserman:>do a lot of work to know
+
+1332
+00:59:03.912 --> 00:59:07.565
+<v Tony Wasserman:>which ones were really ready for commercial
+
+1333
+00:59:07.685 --> 00:59:10.590
+<v Tony Wasserman:>use, because the ones that were the
+
+1334
+00:59:11.693 --> 00:59:13.356
+<v Tony Wasserman:>most ready were the ones that already
+
+1335
+00:59:13.460 --> 00:59:16.946
+<v Tony Wasserman:>provided the same kind of customer support
+
+1336
+00:59:16.986 --> 00:59:22.015
+<v Tony Wasserman:>and updates and roadmaps that companies and
+
+1337
+00:59:22.055 --> 00:59:25.105
+<v Tony Wasserman:>businesses expected from commercial software.
+
+1338
+00:59:25.767 --> 00:59:27.350
+<v Tony Wasserman:>So if you made your open source
+
+1339
+00:59:27.370 --> 00:59:30.482
+<v Tony Wasserman:>software business look like a commercial software
+
+1340
+00:59:30.502 --> 00:59:34.711
+<v Tony Wasserman:>business, only here's the code too, you
+
+1341
+00:59:34.751 --> 00:59:37.340
+<v Tony Wasserman:>had a much higher business readiness rating
+
+1342
+00:59:37.380 --> 00:59:41.447
+<v Tony Wasserman:>score than if it was two graduate
+
+1343
+00:59:41.507 --> 00:59:45.615
+<v Tony Wasserman:>students who were releasing new versions of
+
+1344
+00:59:45.655 --> 00:59:47.724
+<v Tony Wasserman:>the software whenever it pleased them.
+
+1345
+00:59:48.005 --> 00:59:49.650
+<v Tony Wasserman:>Coming in little mailers and shipping them
+
+1346
+00:59:49.730 --> 00:59:50.453
+<v Tony Wasserman:>out of their apartment or
+
+1347
+00:59:50.500 --> 00:59:51.461
+<v Bryan Berhenshausen:>something, yeah.
+
+1348
+00:59:52.483 --> 00:59:52.984
+<v Bryan Berhenshausen:>Exactly.
+
+1349
+00:59:53.425 --> 00:59:57.992
+<v Bryan Berhenshausen:>So the business readiness rating was a
+
+1350
+00:59:58.032 --> 01:00:00.616
+<v Bryan Berhenshausen:>good idea, but we didn't
+
+1351
+01:00:00.620 --> 01:00:04.788
+<v Tony Wasserman:>build automated tools to let you say,
+
+1352
+01:00:04.848 --> 01:00:08.355
+<v Tony Wasserman:>here's this piece of software, go evaluate
+
+1353
+01:00:08.375 --> 01:00:11.145
+<v Tony Wasserman:>it for, you can only evaluate part
+
+1354
+01:00:11.185 --> 01:00:13.410
+<v Tony Wasserman:>of it because other things, you had
+
+1355
+01:00:13.430 --> 01:00:16.055
+<v Tony Wasserman:>to go, for example, look on Amazon
+
+1356
+01:00:16.120 --> 01:00:17.482
+<v Tony Wasserman:>and say, well, how many books are
+
+1357
+01:00:17.523 --> 01:00:20.710
+<v Tony Wasserman:>written about this particular piece of software?
+
+1358
+01:00:21.813 --> 01:00:25.264
+<v Tony Wasserman:>Oh, so what happened, first of all,
+
+1359
+01:00:25.304 --> 01:00:28.069
+<v Tony Wasserman:>is that the guy who was the
+
+1360
+01:00:28.129 --> 01:00:32.416
+<v Tony Wasserman:>main spike source contributor is Murugan Pal,
+
+1361
+01:00:33.281 --> 01:00:35.666
+<v Tony Wasserman:>and he got sick and he's no
+
+1362
+01:00:35.686 --> 01:00:36.287
+<v Tony Wasserman:>longer with us.
+
+1363
+01:00:36.427 --> 01:00:39.792
+<v Tony Wasserman:>He died maybe a decade ago.
+
+1364
+01:00:39.813 --> 01:00:45.547
+<v Tony Wasserman:>And Nat from O'Reilly went home to
+
+1365
+01:00:45.607 --> 01:00:50.856
+<v Tony Wasserman:>New Zealand, and Pete Cronenweth from Intel
+
+1366
+01:00:51.097 --> 01:00:52.902
+<v Tony Wasserman:>had other things he wanted to do.
+
+1367
+01:00:53.323 --> 01:00:58.951
+<v Tony Wasserman:>So it kind of disintegrated, and it
+
+1368
+01:00:59.131 --> 01:01:04.218
+<v Tony Wasserman:>actually stayed moribund, if you will, for
+
+1369
+01:01:04.278 --> 01:01:04.539
+<v Tony Wasserman:>a number of years.
+
+1370
+01:01:04.539 --> 01:01:04.609
+<v Tony Wasserman:>And then maybe if you will, for
+
+1371
+01:01:04.609 --> 01:01:04.649
+<v Tony Wasserman:>a number of years.
+
+1372
+01:01:04.649 --> 01:01:04.924
+<v Tony Wasserman:>And then maybe around 2012 or 13,
+
+1373
+01:01:04.924 --> 01:01:06.625
+<v Tony Wasserman:>I said, well, this is a good
+
+1374
+01:01:06.645 --> 01:01:15.080
+<v Tony Wasserman:>idea, so let's bring it back to
+
+1375
+01:01:15.140 --> 01:01:16.883
+<v Tony Wasserman:>life and let's fix some of the
+
+1376
+01:01:16.943 --> 01:01:20.330
+<v Tony Wasserman:>things that we need to do.
+
+1377
+01:01:21.933 --> 01:01:23.154
+<v Tony Wasserman:>So first of all, we gave the
+
+1378
+01:01:23.195 --> 01:01:24.881
+<v Tony Wasserman:>new project a name, and the name
+
+1379
+01:01:24.902 --> 01:01:26.104
+<v Tony Wasserman:>is OSS Pal.
+
+1380
+01:01:26.706 --> 01:01:30.093
+<v Tony Wasserman:>And Pal is obviously a double entendre,
+
+1381
+01:01:30.534 --> 01:01:33.144
+<v Tony Wasserman:>one as an acknowledgement to Murugan Pal
+
+1382
+01:01:33.525 --> 01:01:35.930
+<v Tony Wasserman:>and the other, that it's your pal.
+
+1383
+01:01:36.191 --> 01:01:37.234
+<v Tony Wasserman:>Yeah, yep, yep.
+
+1384
+01:01:37.594 --> 01:01:38.741
+<v Tony Wasserman:>It's your open source software.
+
+1385
+01:01:38.762 --> 01:01:39.582
+<v Tony Wasserman:>So I love the name.
+
+1386
+01:01:40.104 --> 01:01:43.792
+<v Tony Wasserman:>And the other thing we did in
+
+1387
+01:01:43.832 --> 01:01:46.903
+<v Tony Wasserman:>the OSS Pal project, it was up
+
+1388
+01:01:46.983 --> 01:01:50.650
+<v Tony Wasserman:>for many years on on OSSPal.org, but
+
+1389
+01:01:50.890 --> 01:01:53.856
+<v Tony Wasserman:>no longer is maintained, it's not there.
+
+1390
+01:01:56.685 --> 01:02:01.254
+<v Tony Wasserman:>So instead, if you go out and
+
+1391
+01:02:01.294 --> 01:02:03.237
+<v Tony Wasserman:>do a search for, let's say, content
+
+1392
+01:02:03.277 --> 01:02:06.879
+<v Tony Wasserman:>management systems, or even management systems, or
+
+1393
+01:02:06.879 --> 01:02:09.495
+<v Tony Wasserman:>even open source content management systems, you're
+
+1394
+01:02:09.515 --> 01:02:10.999
+<v Tony Wasserman:>going to get some huge number of
+
+1395
+01:02:11.079 --> 01:02:11.319
+<v Tony Wasserman:>hits.
+
+1396
+01:02:11.319 --> 01:02:13.108
+<v Tony Wasserman:>So if I'm some huge number of
+
+1397
+01:02:13.108 --> 01:02:13.118
+<v Tony Wasserman:>hits.
+
+1398
+01:02:13.118 --> 01:02:14.471
+<v Tony Wasserman:>So if I'm in, if I'm some
+
+1399
+01:02:14.551 --> 01:02:16.415
+<v Tony Wasserman:>engineer in some company, and I say,
+
+1400
+01:02:16.756 --> 01:02:18.098
+<v Tony Wasserman:>well, I want to go try one
+
+1401
+01:02:18.119 --> 01:02:18.325
+<v Tony Wasserman:>of these open one of these open
+
+1402
+01:02:18.946 --> 01:02:22.375
+<v Tony Wasserman:>source content management systems, and you go
+
+1403
+01:02:22.395 --> 01:02:23.819
+<v Tony Wasserman:>to your favorite search engine, and you
+
+1404
+01:02:23.839 --> 01:02:23.980
+<v Tony Wasserman:>type you go to your favorite search
+
+1405
+01:02:23.980 --> 01:02:24.117
+<v Tony Wasserman:>engine, and you type you go to
+
+1406
+01:02:24.117 --> 01:02:24.187
+<v Tony Wasserman:>your favorite search engine, and you type
+
+1407
+01:02:24.187 --> 01:02:24.257
+<v Tony Wasserman:>you go to your favorite search engine,
+
+1408
+01:02:24.257 --> 01:02:25.149
+<v Tony Wasserman:>and you type in open source content
+
+1409
+01:02:25.190 --> 01:02:28.489
+<v Tony Wasserman:>management systems, you know, this wave.
+
+1410
+01:02:28.970 --> 01:02:29.091
+<v Tony Wasserman:>Yep.
+
+1411
+01:02:29.091 --> 01:02:34.165
+<v Tony Wasserman:>Like 1400 of them.
+
+1412
+01:02:34.185 --> 01:02:36.569
+<v Tony Wasserman:>I can only imagine.
+
+1413
+01:02:36.669 --> 01:02:36.888
+<v Tony Wasserman:>Yep.
+
+1414
+01:02:37.551 --> 01:02:37.811
+<v Tony Wasserman:>Yeah.
+
+1415
+01:02:38.031 --> 01:02:40.174
+<v Tony Wasserman:>And so we said, yeah, that's never
+
+1416
+01:02:40.195 --> 01:02:40.616
+<v Tony Wasserman:>going to work.
+
+1417
+01:02:41.301 --> 01:02:43.447
+<v Tony Wasserman:>So what we decided to do with
+
+1418
+01:02:43.527 --> 01:02:45.672
+<v Tony Wasserman:>OSSPal, and I think it's it's really
+
+1419
+01:02:45.713 --> 01:02:46.515
+<v Tony Wasserman:>a sound idea.
+
+1420
+01:02:47.242 --> 01:02:49.048
+<v Tony Wasserman:>And if I had the resources, we
+
+1421
+01:02:49.169 --> 01:02:50.313
+<v Tony Wasserman:>bring it all back to life.
+
+1422
+01:02:51.000 --> 01:02:55.750
+<v Tony Wasserman:>As we curated, we said, look, you
+
+1423
+01:02:55.790 --> 01:02:57.894
+<v Tony Wasserman:>know, what we know from our previous
+
+1424
+01:02:57.954 --> 01:03:00.102
+<v Tony Wasserman:>experiences, there's certain things that you need
+
+1425
+01:03:00.123 --> 01:03:02.950
+<v Tony Wasserman:>to have in a project for it
+
+1426
+01:03:03.010 --> 01:03:04.975
+<v Tony Wasserman:>to be suitable for business use.
+
+1427
+01:03:05.661 --> 01:03:07.384
+<v Tony Wasserman:>So we could go in there and
+
+1428
+01:03:07.425 --> 01:03:09.488
+<v Tony Wasserman:>look at Drupal, for example, and say,
+
+1429
+01:03:09.509 --> 01:03:12.359
+<v Tony Wasserman:>ah, okay, well, there's a company that
+
+1430
+01:03:12.380 --> 01:03:15.267
+<v Tony Wasserman:>supports it, there's an ecosystem around it,
+
+1431
+01:03:15.307 --> 01:03:16.529
+<v Tony Wasserman:>there's a big community.
+
+1432
+01:03:17.993 --> 01:03:19.821
+<v Tony Wasserman:>It's been around for a while, there's
+
+1433
+01:03:19.841 --> 01:03:22.327
+<v Tony Wasserman:>a roadmap, there are new releases, all
+
+1434
+01:03:22.367 --> 01:03:26.035
+<v Tony Wasserman:>these things that make it attractive to
+
+1435
+01:03:26.581 --> 01:03:29.707
+<v Tony Wasserman:>people who would be evaluating software.
+
+1436
+01:03:30.288 --> 01:03:33.754
+<v Tony Wasserman:>So, you know, that makes the bar.
+
+1437
+01:03:33.794 --> 01:03:35.801
+<v Tony Wasserman:>So what we would do was to
+
+1438
+01:03:36.002 --> 01:03:40.111
+<v Tony Wasserman:>find candidates that people would want to
+
+1439
+01:03:40.151 --> 01:03:40.491
+<v Tony Wasserman:>look at.
+
+1440
+01:03:40.852 --> 01:03:42.556
+<v Tony Wasserman:>So rather than our saying to you,
+
+1441
+01:03:42.560 --> 01:03:45.749
+<v Tony Wasserman:>use this content management system, we use
+
+1442
+01:03:45.789 --> 01:03:48.743
+<v Tony Wasserman:>this database management system, we would say,
+
+1443
+01:03:48.763 --> 01:03:52.212
+<v Tony Wasserman:>here are three or five candidates that
+
+1444
+01:03:52.232 --> 01:03:53.555
+<v Tony Wasserman:>we think you should look at.
+
+1445
+01:03:56.003 --> 01:03:58.288
+<v Tony Wasserman:>And then they could put weights for
+
+1446
+01:03:58.308 --> 01:04:00.191
+<v Tony Wasserman:>the different criteria.
+
+1447
+01:04:00.532 --> 01:04:02.694
+<v Tony Wasserman:>Some of those criteria were based on
+
+1448
+01:04:02.715 --> 01:04:05.786
+<v Tony Wasserman:>the domain in which the software works.
+
+1449
+01:04:05.906 --> 01:04:09.094
+<v Tony Wasserman:>So you ask different things in evaluating
+
+1450
+01:04:09.134 --> 01:04:11.186
+<v Tony Wasserman:>a database management system than you do
+
+1451
+01:04:11.246 --> 01:04:13.153
+<v Tony Wasserman:>in evaluating a content management system.
+
+1452
+01:04:13.160 --> 01:04:16.187
+<v Tony Wasserman:>Does this take you back at all
+
+1453
+01:04:16.247 --> 01:04:18.754
+<v Tony Wasserman:>to that dissertation project about, you know?
+
+1454
+01:04:19.281 --> 01:04:19.925
+<v Tony Wasserman:>Not really, no.
+
+1455
+01:04:21.723 --> 01:04:25.589
+<v Tony Wasserman:>No, but here are these criteria that
+
+1456
+01:04:25.630 --> 01:04:26.432
+<v Tony Wasserman:>you're going to use.
+
+1457
+01:04:26.752 --> 01:04:28.215
+<v Tony Wasserman:>And so we would pick several of
+
+1458
+01:04:28.255 --> 01:04:28.355
+<v Tony Wasserman:>them.
+
+1459
+01:04:28.900 --> 01:04:33.346
+<v Tony Wasserman:>And we worked with IDC, the analyst
+
+1460
+01:04:33.407 --> 01:04:33.787
+<v Tony Wasserman:>company.
+
+1461
+01:04:35.290 --> 01:04:39.076
+<v Tony Wasserman:>And IDC, it turns out, every year
+
+1462
+01:04:39.156 --> 01:04:41.102
+<v Tony Wasserman:>publishes a software taxonomy.
+
+1463
+01:04:41.944 --> 01:04:44.890
+<v Tony Wasserman:>And their software taxonomy breaks all of
+
+1464
+01:04:44.971 --> 01:04:46.754
+<v Tony Wasserman:>software into categories.
+
+1465
+01:04:47.235 --> 01:04:50.605
+<v Tony Wasserman:>And there are about 80 categories that
+
+1466
+01:04:50.645 --> 01:04:51.687
+<v Tony Wasserman:>they identify.
+
+1467
+01:04:54.873 --> 01:04:56.395
+<v Tony Wasserman:>Was it a perfect fit for open
+
+1468
+01:04:56.496 --> 01:04:56.856
+<v Tony Wasserman:>source?
+
+1469
+01:04:58.383 --> 01:05:00.808
+<v Tony Wasserman:>Not entirely, because a lot of the
+
+1470
+01:05:00.889 --> 01:05:02.933
+<v Tony Wasserman:>open source projects that were most widely
+
+1471
+01:05:03.115 --> 01:05:08.308
+<v Tony Wasserman:>used were developer tools and infrastructure, much
+
+1472
+01:05:08.430 --> 01:05:10.353
+<v Tony Wasserman:>less the application side.
+
+1473
+01:05:10.874 --> 01:05:12.761
+<v Tony Wasserman:>But it was a good starting point.
+
+1474
+01:05:12.822 --> 01:05:17.592
+<v Tony Wasserman:>And we tried adding some additional application
+
+1475
+01:05:17.632 --> 01:05:19.941
+<v Tony Wasserman:>domains so we could divide up development
+
+1476
+01:05:19.982 --> 01:05:20.883
+<v Tony Wasserman:>tools, for example.
+
+1477
+01:05:22.046 --> 01:05:23.468
+<v Tony Wasserman:>So we went ahead with that.
+
+1478
+01:05:23.769 --> 01:05:27.440
+<v Tony Wasserman:>And the idea was, okay, we're going
+
+1479
+01:05:27.460 --> 01:05:28.422
+<v Tony Wasserman:>to do the curation.
+
+1480
+01:05:28.502 --> 01:05:32.670
+<v Tony Wasserman:>Now what we want is we get
+
+1481
+01:05:32.691 --> 01:05:35.356
+<v Tony Wasserman:>these evaluations partly on the basis of
+
+1482
+01:05:35.420 --> 01:05:40.851
+<v Tony Wasserman:>the domain, and partly in general, right?
+
+1483
+01:05:40.911 --> 01:05:42.515
+<v Tony Wasserman:>How much documentation is there?
+
+1484
+01:05:42.615 --> 01:05:45.948
+<v Tony Wasserman:>Is there the kind of generic things
+
+1485
+01:05:45.989 --> 01:05:47.312
+<v Tony Wasserman:>that you might ask about any piece
+
+1486
+01:05:47.352 --> 01:05:47.914
+<v Tony Wasserman:>of software?
+
+1487
+01:05:49.462 --> 01:05:53.748
+<v Tony Wasserman:>So the idea then was that people
+
+1488
+01:05:53.788 --> 01:05:55.650
+<v Tony Wasserman:>would write reviews.
+
+1489
+01:05:55.670 --> 01:06:00.621
+<v Tony Wasserman:>Okay, so I've used Mozilla Firefox, okay?
+
+1490
+01:06:00.701 --> 01:06:03.346
+<v Tony Wasserman:>And here's how I would evaluate it.
+
+1491
+01:06:03.648 --> 01:06:04.911
+<v Tony Wasserman:>The same way you would evaluate a
+
+1492
+01:06:04.951 --> 01:06:06.941
+<v Tony Wasserman:>movie or a restaurant or much of
+
+1493
+01:06:07.001 --> 01:06:08.907
+<v Tony Wasserman:>anything else, give it, you know, a
+
+1494
+01:06:08.968 --> 01:06:10.725
+<v Tony Wasserman:>bunch of check marks or scores, 05
+
+1495
+01:06:10.725 --> 01:06:14.685
+<v Tony Wasserman:>in these different categories, and then free
+
+1496
+01:06:14.726 --> 01:06:15.107
+<v Tony Wasserman:>text.
+
+1497
+01:06:16.610 --> 01:06:20.154
+<v Tony Wasserman:>And, you know, we had the same
+
+1498
+01:06:20.215 --> 01:06:23.723
+<v Tony Wasserman:>issue that all online surveys have, which
+
+1499
+01:06:23.844 --> 01:06:26.288
+<v Tony Wasserman:>is that, how do you know that
+
+1500
+01:06:27.690 --> 01:06:31.716
+<v Tony Wasserman:>the person who's writing the review is
+
+1501
+01:06:33.103 --> 01:06:34.225
+<v Tony Wasserman:>being accurate about it?
+
+1502
+01:06:34.246 --> 01:06:36.591
+<v Tony Wasserman:>Yeah, yeah, yeah.
+
+1503
+01:06:36.611 --> 01:06:37.734
+<v Tony Wasserman:>There's not much you can do about
+
+1504
+01:06:37.754 --> 01:06:39.746
+<v Tony Wasserman:>that, other than asking people to register
+
+1505
+01:06:39.866 --> 01:06:42.073
+<v Tony Wasserman:>and get their email address and verify
+
+1506
+01:06:42.133 --> 01:06:42.173
+<v Tony Wasserman:>it.
+
+1507
+01:06:44.564 --> 01:06:46.428
+<v Tony Wasserman:>But we really didn't have the resources
+
+1508
+01:06:46.648 --> 01:06:50.296
+<v Tony Wasserman:>to do the kind of awareness generation,
+
+1509
+01:06:51.001 --> 01:06:55.228
+<v Tony Wasserman:>not to say marketing, that it would
+
+1510
+01:06:55.268 --> 01:06:57.291
+<v Tony Wasserman:>take to bring a lot of people
+
+1511
+01:06:57.411 --> 01:06:59.815
+<v Tony Wasserman:>in to write these reviews.
+
+1512
+01:07:00.256 --> 01:07:02.665
+<v Tony Wasserman:>So we concluded that it was a
+
+1513
+01:07:02.725 --> 01:07:04.951
+<v Tony Wasserman:>great idea, and that if we were
+
+1514
+01:07:04.991 --> 01:07:06.755
+<v Tony Wasserman:>doing it as a commercial venture and
+
+1515
+01:07:06.820 --> 01:07:10.446
+<v Tony Wasserman:>could raise venture capital to build it,
+
+1516
+01:07:12.469 --> 01:07:13.872
+<v Tony Wasserman:>it would be valuable.
+
+1517
+01:07:15.114 --> 01:07:18.283
+<v Tony Wasserman:>What's happened in the meantime is, of
+
+1518
+01:07:18.343 --> 01:07:23.172
+<v Tony Wasserman:>course, the STARS mechanism that exists on
+
+1519
+01:07:23.212 --> 01:07:23.652
+<v Tony Wasserman:>GitHub.
+
+1520
+01:07:23.672 --> 01:07:26.322
+<v Tony Wasserman:>There's always been, or at least there's
+
+1521
+01:07:26.342 --> 01:07:28.648
+<v Tony Wasserman:>been for a long time, OpenHub, which
+
+1522
+01:07:28.749 --> 01:07:30.779
+<v Tony Wasserman:>lets you look at the source code,
+
+1523
+01:07:30.820 --> 01:07:32.743
+<v Tony Wasserman:>and the contributions, and the dates, and
+
+1524
+01:07:33.185 --> 01:07:37.494
+<v Tony Wasserman:>the, let's say, the aliveness of a
+
+1525
+01:07:37.534 --> 01:07:38.621
+<v Tony Wasserman:>particular project.
+
+1526
+01:07:39.643 --> 01:07:41.186
+<v Tony Wasserman:>So there's some other things that are
+
+1527
+01:07:41.266 --> 01:07:45.394
+<v Tony Wasserman:>out there that play a valuable role
+
+1528
+01:07:45.894 --> 01:07:48.865
+<v Tony Wasserman:>in terms of helping people evaluate open
+
+1529
+01:07:48.885 --> 01:07:49.647
+<v Tony Wasserman:>source software.
+
+1530
+01:07:50.028 --> 01:07:51.873
+<v Tony Wasserman:>And, of course, more and more with
+
+1531
+01:07:51.933 --> 01:07:59.130
+<v Tony Wasserman:>commercial open source, you have salespeople.
+
+1532
+01:07:59.771 --> 01:08:02.134
+<v Tony Wasserman:>And you have conferences like the Open
+
+1533
+01:08:02.155 --> 01:08:04.544
+<v Tony Wasserman:>Source Summit that the Linux Foundation puts
+
+1534
+01:08:04.724 --> 01:08:06.629
+<v Tony Wasserman:>on several times a year around the
+
+1535
+01:08:06.669 --> 01:08:09.080
+<v Tony Wasserman:>world, and those have exhibit booths.
+
+1536
+01:08:09.781 --> 01:08:12.226
+<v Tony Wasserman:>And so that's an opportunity for these
+
+1537
+01:08:12.266 --> 01:08:18.416
+<v Tony Wasserman:>commercial businesses to tell the world about
+
+1538
+01:08:18.460 --> 01:08:19.081
+<v Tony Wasserman:>their products.
+
+1539
+01:08:20.944 --> 01:08:23.149
+<v Tony Wasserman:>Well, the final question I wanted to
+
+1540
+01:08:23.609 --> 01:08:25.614
+<v Tony Wasserman:>ask you was about what you see
+
+1541
+01:08:25.634 --> 01:08:25.675
+<v Tony Wasserman:>as
+
+1542
+01:08:27.962 --> 01:08:31.450
+<v Bryan Berhenshausen:>the biggest challenges for open source as
+
+1543
+01:08:31.470 --> 01:08:33.934
+<v Bryan Berhenshausen:>an idea, or for open source as
+
+1544
+01:08:33.975 --> 01:08:35.983
+<v Bryan Berhenshausen:>a movement, or even as a set
+
+1545
+01:08:36.023 --> 01:08:38.509
+<v Bryan Berhenshausen:>of practices in the future.
+
+1546
+01:08:38.850 --> 01:08:39.973
+<v Bryan Berhenshausen:>Now and in the future, what you
+
+1547
+01:08:40.013 --> 01:08:42.705
+<v Bryan Berhenshausen:>see is the largest potential impediments to
+
+1548
+01:08:42.745 --> 01:08:44.490
+<v Bryan Berhenshausen:>its proliferation or growth.
+
+1549
+01:08:44.529 --> 01:08:46.101
+<v Bryan Berhenshausen:>And I wonder if that's, is that
+
+1550
+01:08:46.523 --> 01:08:48.229
+<v Bryan Berhenshausen:>one of them, curation, you see as
+
+1551
+01:08:48.408 --> 01:08:49.453
+<v Bryan Berhenshausen:>a challenge or an issue?
+
+1552
+01:08:50.082 --> 01:08:51.425
+<v Tony Wasserman:>Well, there are a lot of issues,
+
+1553
+01:08:51.484 --> 01:08:51.926
+<v Tony Wasserman:>of course.
+
+1554
+01:08:52.267 --> 01:08:54.974
+<v Tony Wasserman:>And, you know, answering this would depend
+
+1555
+01:08:55.033 --> 01:08:56.161
+<v Tony Wasserman:>on how much time we have.
+
+1556
+01:08:58.865 --> 01:09:01.589
+<v Tony Wasserman:>But the first part of it is
+
+1557
+01:09:01.769 --> 01:09:04.774
+<v Tony Wasserman:>that proprietary software isn't going away.
+
+1558
+01:09:04.794 --> 01:09:08.243
+<v Tony Wasserman:>Okay, that, you know, there are these
+
+1559
+01:09:08.384 --> 01:09:10.269
+<v Tony Wasserman:>pipe dreams that some people have had
+
+1560
+01:09:10.328 --> 01:09:12.540
+<v Tony Wasserman:>about, you know, the world going to
+
+1561
+01:09:12.640 --> 01:09:13.281
+<v Tony Wasserman:>open source.
+
+1562
+01:09:13.702 --> 01:09:16.287
+<v Tony Wasserman:>And, you know, I simply don't see
+
+1563
+01:09:18.171 --> 01:09:22.024
+<v Tony Wasserman:>Oracle giving away their source code, or
+
+1564
+01:09:22.104 --> 01:09:24.849
+<v Tony Wasserman:>other companies with such a major investment.
+
+1565
+01:09:25.111 --> 01:09:26.474
+<v Tony Wasserman:>Now, Microsoft did a bit of that
+
+1566
+01:09:26.533 --> 01:09:29.844
+<v Tony Wasserman:>when they did Visual Studio Code, above
+
+1567
+01:09:29.904 --> 01:09:32.388
+<v Tony Wasserman:>what was in Visual Studio Pro, I
+
+1568
+01:09:33.871 --> 01:09:36.576
+<v Tony Wasserman:>think, and made that freely available.
+
+1569
+01:09:36.616 --> 01:09:38.163
+<v Tony Wasserman:>And there's some other examples of it.
+
+1570
+01:09:38.743 --> 01:09:42.213
+<v Tony Wasserman:>But I think open source and proprietary
+
+1571
+01:09:42.353 --> 01:09:43.741
+<v Tony Wasserman:>software are going to to coexist.
+
+1572
+01:09:44.341 --> 01:09:46.205
+<v Tony Wasserman:>And I think that over time, as
+
+1573
+01:09:46.265 --> 01:09:51.314
+<v Tony Wasserman:>more people come into the industry, they're
+
+1574
+01:09:51.354 --> 01:09:54.985
+<v Tony Wasserman:>going to do their evaluations based on
+
+1575
+01:09:55.085 --> 01:10:00.133
+<v Tony Wasserman:>functionality of the product, rather than, oh,
+
+1576
+01:10:01.736 --> 01:10:03.563
+<v Tony Wasserman:>it's open, or it's closed, or here's
+
+1577
+01:10:03.603 --> 01:10:04.566
+<v Tony Wasserman:>how much it costs.
+
+1578
+01:10:04.586 --> 01:10:07.532
+<v Tony Wasserman:>I mean, that those become factors in
+
+1579
+01:10:07.834 --> 01:10:08.781
+<v Tony Wasserman:>doing evaluation.
+
+1580
+01:10:09.602 --> 01:10:13.870
+<v Tony Wasserman:>Another thing is that open source has
+
+1581
+01:10:13.971 --> 01:10:16.515
+<v Tony Wasserman:>not been very strong, for example, in
+
+1582
+01:10:16.555 --> 01:10:16.876
+<v Tony Wasserman:>mobile.
+
+1583
+01:10:18.122 --> 01:10:19.725
+<v Tony Wasserman:>So when you start to look at
+
+1584
+01:10:19.765 --> 01:10:22.210
+<v Tony Wasserman:>all the applications that have been developed
+
+1585
+01:10:22.290 --> 01:10:27.023
+<v Tony Wasserman:>for mobile devices, you you know, you
+
+1586
+01:10:27.083 --> 01:10:31.570
+<v Tony Wasserman:>put the F Droid library, which is
+
+1587
+01:10:31.651 --> 01:10:34.715
+<v Tony Wasserman:>the Android mobile app, you put that
+
+1588
+01:10:34.776 --> 01:10:36.362
+<v Tony Wasserman:>up against Google's Play Store.
+
+1589
+01:10:36.722 --> 01:10:37.544
+<v Tony Wasserman:>And it's a joke.
+
+1590
+01:10:38.065 --> 01:10:38.505
+<v Tony Wasserman:>Yeah, right.
+
+1591
+01:10:38.586 --> 01:10:38.806
+<v Tony Wasserman:>Yeah.
+
+1592
+01:10:39.026 --> 01:10:45.402
+<v Tony Wasserman:>And, and Apple, in their store, you
+
+1593
+01:10:45.883 --> 01:10:48.250
+<v Tony Wasserman:>know, makes it very difficult to get
+
+1594
+01:10:48.350 --> 01:10:49.674
+<v Tony Wasserman:>open source software in there.
+
+1595
+01:10:50.782 --> 01:10:52.847
+<v Tony Wasserman:>So there's not, there's not much of
+
+1596
+01:10:52.927 --> 01:10:53.288
+<v Tony Wasserman:>it there.
+
+1597
+01:10:53.769 --> 01:10:58.224
+<v Tony Wasserman:>So there are some definite challenges to
+
+1598
+01:10:58.264 --> 01:10:58.525
+<v Tony Wasserman:>that.
+
+1599
+01:10:58.806 --> 01:11:00.932
+<v Tony Wasserman:>And, you know, there's still this educational
+
+1600
+01:11:00.992 --> 01:11:03.523
+<v Tony Wasserman:>process of how do you make money
+
+1601
+01:11:03.584 --> 01:11:04.365
+<v Tony Wasserman:>at open source.
+
+1602
+01:11:06.069 --> 01:11:08.354
+<v Tony Wasserman:>And now I teach open source software,
+
+1603
+01:11:08.494 --> 01:11:10.223
+<v Tony Wasserman:>I've taught it, you know, 17 times
+
+1604
+01:11:10.263 --> 01:11:11.907
+<v Tony Wasserman:>or something at Carnegie Mellon.
+
+1605
+01:11:11.969 --> 01:11:13.373
+<v Tony Wasserman:>And it's evolved over the years, of
+
+1606
+01:11:13.453 --> 01:11:17.007
+<v Tony Wasserman:>course, has brought guests in to share
+
+1607
+01:11:17.068 --> 01:11:18.792
+<v Tony Wasserman:>their experience and knowledge.
+
+1608
+01:11:18.812 --> 01:11:25.007
+<v Tony Wasserman:>But you know, there's still people who
+
+1609
+01:11:25.147 --> 01:11:28.354
+<v Tony Wasserman:>don't believe, yeah, why would you write
+
+1610
+01:11:28.394 --> 01:11:29.155
+<v Tony Wasserman:>software for free?
+
+1611
+01:11:29.861 --> 01:11:30.022
+<v Tony Wasserman:>Yeah.
+
+1612
+01:11:30.142 --> 01:11:31.967
+<v Tony Wasserman:>And, and my answer to them is,
+
+1613
+01:11:31.987 --> 01:11:34.052
+<v Tony Wasserman:>well, why would you go volunteer your
+
+1614
+01:11:34.092 --> 01:11:35.801
+<v Tony Wasserman:>time at the hospital to help six
+
+1615
+01:11:35.861 --> 01:11:36.743
+<v Tony Wasserman:>people, sick people?
+
+1616
+01:11:36.823 --> 01:11:39.629
+<v Tony Wasserman:>Why would you go to a place
+
+1617
+01:11:39.689 --> 01:11:43.360
+<v Tony Wasserman:>where there's been a natural disaster and
+
+1618
+01:11:43.440 --> 01:11:44.624
+<v Tony Wasserman:>do your best to help out?
+
+1619
+01:11:45.386 --> 01:11:47.130
+<v Tony Wasserman:>These are, you know, things that people
+
+1620
+01:11:47.190 --> 01:11:49.962
+<v Tony Wasserman:>do, because it gives them personal fulfillment.
+
+1621
+01:11:51.406 --> 01:11:54.592
+<v Tony Wasserman:>So, so I think that there are
+
+1622
+01:11:54.652 --> 01:11:57.526
+<v Tony Wasserman:>good answers to the question of why
+
+1623
+01:11:57.546 --> 01:11:58.731
+<v Tony Wasserman:>do people do this for free?
+
+1624
+01:12:00.945 --> 01:12:02.589
+<v Bryan Berhenshausen:>Is that is that is the future
+
+1625
+01:12:02.609 --> 01:12:05.095
+<v Bryan Berhenshausen:>of open source beholden to people's altruism?
+
+1626
+01:12:05.781 --> 01:12:08.028
+<v Bryan Berhenshausen:>Like, is, is the limit of open
+
+1627
+01:12:08.068 --> 01:12:09.673
+<v Bryan Berhenshausen:>source, the limit of people's altruism, do
+
+1628
+01:12:09.693 --> 01:12:09.914
+<v Bryan Berhenshausen:>you think?
+
+1629
+01:12:11.242 --> 01:12:11.823
+<v Tony Wasserman:>I don't know.
+
+1630
+01:12:11.843 --> 01:12:15.831
+<v Tony Wasserman:>You know, it's, it's, you know, if
+
+1631
+01:12:15.912 --> 01:12:17.353
+<v Tony Wasserman:>I were able to predict the future
+
+1632
+01:12:17.395 --> 01:12:19.764
+<v Tony Wasserman:>that well, then I would be, I
+
+1633
+01:12:19.804 --> 01:12:20.867
+<v Tony Wasserman:>would be very wealthy.
+
+1634
+01:12:21.408 --> 01:12:22.932
+<v Tony Wasserman:>And I would be, I would be
+
+1635
+01:12:22.972 --> 01:12:24.902
+<v Tony Wasserman:>like rich, Richard Branson on my own
+
+1636
+01:12:25.064 --> 01:12:25.346
+<v Tony Wasserman:>island.
+
+1637
+01:12:25.820 --> 01:12:27.766
+<v Tony Wasserman:>We probably wouldn't have been working for
+
+1638
+01:12:27.786 --> 01:12:29.572
+<v Tony Wasserman:>so many failed startups, I guess, if
+
+1639
+01:12:29.612 --> 01:12:29.853
+<v Tony Wasserman:>you could.
+
+1640
+01:12:29.853 --> 01:12:32.645
+<v Bryan Berhenshausen:>You You know, startups fail.
+
+1641
+01:12:32.765 --> 01:12:37.534
+<v Bryan Berhenshausen:>I, you know, I taught startup creation
+
+1642
+01:12:37.594 --> 01:12:38.316
+<v Bryan Berhenshausen:>kinds of things
+
+1643
+01:12:39.002 --> 01:12:39.964
+<v Tony Wasserman:>at Carnegie Mellon.
+
+1644
+01:12:40.025 --> 01:12:41.850
+<v Tony Wasserman:>And every now and then one of
+
+1645
+01:12:41.890 --> 01:12:45.625
+<v Tony Wasserman:>the companies goes beyond the campus and
+
+1646
+01:12:45.705 --> 01:12:46.807
+<v Tony Wasserman:>starts their own business.
+
+1647
+01:12:47.208 --> 01:12:49.253
+<v Tony Wasserman:>But it's, there are a lot of
+
+1648
+01:12:49.293 --> 01:12:50.355
+<v Tony Wasserman:>barriers to success.
+
+1649
+01:12:52.183 --> 01:12:53.486
+<v Tony Wasserman:>And it's not until you're out there
+
+1650
+01:12:53.546 --> 01:12:53.967
+<v Tony Wasserman:>doing it.
+
+1651
+01:12:55.069 --> 01:12:58.175
+<v Tony Wasserman:>I work these days with Berkeley's accelerator
+
+1652
+01:12:58.380 --> 01:12:59.141
+<v Tony Wasserman:>called Skydeck.
+
+1653
+01:12:59.822 --> 01:13:02.166
+<v Tony Wasserman:>And they, they had like 1000 applicants
+
+1654
+01:13:02.167 --> 01:13:03.389
+<v Tony Wasserman:>for 18 places, or, you know, some
+
+1655
+01:13:06.960 --> 01:13:10.868
+<v Tony Wasserman:>key, wildly selective thing.
+
+1656
+01:13:11.309 --> 01:13:12.912
+<v Tony Wasserman:>And then, and then we meet these
+
+1657
+01:13:12.992 --> 01:13:13.573
+<v Tony Wasserman:>companies.
+
+1658
+01:13:13.693 --> 01:13:15.581
+<v Tony Wasserman:>And, you know, a few of them
+
+1659
+01:13:16.784 --> 01:13:18.206
+<v Tony Wasserman:>make it, right?
+
+1660
+01:13:18.727 --> 01:13:21.453
+<v Tony Wasserman:>Because everything falls into place at the
+
+1661
+01:13:21.493 --> 01:13:22.074
+<v Tony Wasserman:>right time.
+
+1662
+01:13:22.495 --> 01:13:24.423
+<v Tony Wasserman:>But most of them, most of them
+
+1663
+01:13:24.463 --> 01:13:24.844
+<v Tony Wasserman:>struggle.
+
+1664
+01:13:24.884 --> 01:13:26.187
+<v Tony Wasserman:>And that's true of startups.
+
+1665
+01:13:27.109 --> 01:13:29.875
+<v Tony Wasserman:>And it's been true as long as
+
+1666
+01:13:29.935 --> 01:13:30.987
+<v Tony Wasserman:>the field has existed.
+
+1667
+01:13:31.642 --> 01:13:32.406
+<v Bryan Berhenshausen:>Mm hmm.
+
+1668
+01:13:32.828 --> 01:13:33.028
+<v Bryan Berhenshausen:>Yeah.
+
+1669
+01:13:33.571 --> 01:13:33.731
+<v Bryan Berhenshausen:>Yeah.
+
+1670
+01:13:35.443 --> 01:13:38.189
+<v Bryan Berhenshausen:>Well, this has been a wonderful way
+
+1671
+01:13:38.209 --> 01:13:39.411
+<v Bryan Berhenshausen:>to spend an afternoon.
+
+1672
+01:13:39.472 --> 01:13:41.295
+<v Bryan Berhenshausen:>And I really appreciate your time.
+
+1673
+01:13:41.460 --> 01:13:42.763
+<v Bryan Berhenshausen:>Thanks for sharing your thoughts.
+
+1674
+01:13:43.185 --> 01:13:44.327
+<v Bryan Berhenshausen:>Thanks for sharing your memories.
+
+1675
+01:13:45.190 --> 01:13:47.041
+<v Bryan Berhenshausen:>And, and, you know, this, this, as
+
+1676
+01:13:47.081 --> 01:13:48.766
+<v Bryan Berhenshausen:>we construct this great kind of oral
+
+1677
+01:13:48.806 --> 01:13:50.310
+<v Bryan Berhenshausen:>history of open source.
+
+1678
+01:13:50.691 --> 01:13:51.954
+<v Bryan Berhenshausen:>It's just been wonderful.
+
+1679
+01:13:52.020 --> 01:13:52.926
+<v Bryan Berhenshausen:>And I'm very grateful.
+
+1680
+01:13:53.962 --> 01:13:55.406
+<v Tony Wasserman:>Oh, it's been it's been my pleasure.
+
+1681
+01:13:55.526 --> 01:13:57.711
+<v Tony Wasserman:>And it forced me to recollect some
+
+1682
+01:13:57.731 --> 01:13:59.622
+<v Tony Wasserman:>of these things and to dig some
+
+1683
+01:13:59.662 --> 01:14:01.569
+<v Tony Wasserman:>of these names out of the far
+
+1684
+01:14:01.629 --> 01:14:02.773
+<v Tony Wasserman:>reaches of my memory.
+
+1685
+01:14:04.464 --> 01:14:06.929
+<v Tony Wasserman:>It's definitely good to have it down
+
+1686
+01:14:06.949 --> 01:14:07.210
+<v Tony Wasserman:>there.
+
+1687
+01:14:07.310 --> 01:14:11.264
+<v Tony Wasserman:>And I'll want to see the the
+
+1688
+01:14:11.285 --> 01:14:13.290
+<v Tony Wasserman:>final version of it and, and perhaps
+
+1689
+01:14:14.011 --> 01:14:15.235
+<v Tony Wasserman:>post on my LinkedIn.
+
+1690
+01:14:16.346 --> 01:14:16.687
+<v Tony Wasserman:>Great.
+
+1691
+01:14:17.501 --> 01:14:19.324
+<v Tony Wasserman:>Where, where this is all gone.
+
+1692
+01:14:19.344 --> 01:14:21.448
+<v Tony Wasserman:>So, so that's great.
+

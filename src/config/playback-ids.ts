@@ -8,5 +8,6 @@ export const PLAYBACK_IDS = {
   'bart-decrem': '31cm889ntl2r00w9514HD1w6v02m98aSOThhZ7EyRbGzo',
   'tristan-nitot': 'mKO7HRQtQBUHQ01NgKyn8fBJxFr01oNoEVmVmhrpiIh004',
   'lawrence-rosen': 'isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A',
-  'jon-maddog-hall': 'WCU59waRNnBy6vhLXILyEcoQlUj9XeVmWTiBnRcW0118'
+  'jon-maddog-hall': 'WCU59waRNnBy6vhLXILyEcoQlUj9XeVmWTiBnRcW0118',
+  'tony-wasserman': 'vkQEuN11l3Pg00mUv02rqjKyOq5PEZ3ztl7piIR2eYLSY'
 }; 
