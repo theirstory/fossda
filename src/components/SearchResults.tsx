@@ -6,6 +6,23 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 
+function highlightText(text: string, query: string): React.ReactNode {
+  if (!query) return text;
+  
+  const parts = text.split(new RegExp(`(${query})`, 'gi'));
+  return (
+    <>
+      {parts.map((part, i) => 
+        part.toLowerCase() === query.toLowerCase() ? (
+          <span key={i} className="bg-yellow-200">{part}</span>
+        ) : (
+          part
+        )
+      )}
+    </>
+  );
+}
+
 interface SearchResult {
   text: string;
   timestamp: number;
@@ -163,7 +180,7 @@ export function SearchResults({ query }: SearchResultsProps) {
                     {result.interviewTitle}
                   </h3>
                   <p className="text-sm text-gray-500 mt-1">
-                    {result.chapterTitle}
+                    {highlightText(result.chapterTitle, query)}
                   </p>
                   <Badge variant="outline" className="mt-2">
                     {(result.confidence * 100).toFixed(2)}%
@@ -171,7 +188,7 @@ export function SearchResults({ query }: SearchResultsProps) {
                 </div>
               </div>
               <p className="text-sm text-gray-600 line-clamp-4">
-                {result.text}
+                {highlightText(result.text, query)}
               </p>
             </div>
           </div>
@@ -213,10 +230,10 @@ export function SearchResults({ query }: SearchResultsProps) {
                   {result.interviewTitle}
                 </TableCell>
                 <TableCell>
-                  <p className="text-sm text-muted-foreground">{result.chapterTitle}</p>
+                  <p className="text-sm text-muted-foreground">{highlightText(result.chapterTitle, query)}</p>
                 </TableCell>
                 <TableCell>
-                  <p className="line-clamp-4 text-sm">{result.text}</p>
+                  <p className="line-clamp-4 text-sm">{highlightText(result.text, query)}</p>
                 </TableCell>
                 <TableCell className="text-right">
                   <Badge variant="outline">
