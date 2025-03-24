@@ -50,48 +50,65 @@ export default function InteractiveTranscript({
   useEffect(() => {
     if (!mounted || !transcriptRef.current || !startTime) return;
 
-    const timeMs = parseFloat(startTime) * 1000;
-    const spans = Array.from(transcriptRef.current.querySelectorAll<HTMLElement>('span[data-m]'));
-    
-    // Find the span closest to the timestamp
-    let targetSpan: HTMLElement | null = null;
-    for (const span of spans) {
-      const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
-      if (spanTime <= timeMs) {
-        targetSpan = span;
-      } else {
-        break;
+    const scrollToTimestamp = () => {
+      const timeMs = parseFloat(startTime) * 1000;
+      const spans = Array.from(transcriptRef.current?.querySelectorAll<HTMLElement>('span[data-m]') || []);
+      
+      // Find the span closest to the timestamp
+      let targetSpan: HTMLElement | null = null;
+      let minDiff = Infinity;
+      
+      for (const span of spans) {
+        const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+        const timeDiff = Math.abs(spanTime - timeMs);
+        if (timeDiff < minDiff) {
+          minDiff = timeDiff;
+          targetSpan = span;
+        }
       }
-    }
 
-    if (targetSpan && transcriptContainerRef.current) {
-      // Remove any existing highlights
-      spans.forEach(span => span.classList.remove('bg-yellow-100'));
-      
-      // Calculate offset for mobile header and tabs
-      const isMobile = window.innerWidth < 1024; // lg breakpoint
-      const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
-      
-      // Get container dimensions
-      const containerRect = transcriptContainerRef.current.getBoundingClientRect();
-      const spanRect = targetSpan.getBoundingClientRect();
-      
-      // Calculate scroll position - use different positions for mobile and desktop
-      const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
-      const currentOffset = spanRect.top - containerRect.top;
-      const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
-      
-      // Scroll with the calculated offset
-      transcriptContainerRef.current.scrollTo({
-        top: transcriptContainerRef.current.scrollTop + scrollAdjustment,
-        behavior: 'smooth'
-      });
-      
-      // Set scroll complete after a short delay
-      setTimeout(() => {
-        setHasScrolledToStart(true);
-      }, 100);
-    }
+      if (targetSpan && transcriptContainerRef.current) {
+        // Remove any existing highlights
+        spans.forEach(span => span.classList.remove('bg-yellow-100'));
+        
+        // Add highlight to target span
+        targetSpan.classList.add('bg-yellow-100');
+        
+        // Calculate offset for mobile header and tabs
+        const isMobile = window.innerWidth < 1024; // lg breakpoint
+        const mobileOffset = isMobile ? 48 : 0; // Height of the tabs
+        
+        // Get container dimensions
+        const containerRect = transcriptContainerRef.current.getBoundingClientRect();
+        const spanRect = targetSpan.getBoundingClientRect();
+        
+        // Calculate scroll position - use different positions for mobile and desktop
+        const targetPosition = containerRect.height * (isMobile ? 0.15 : 0.35);
+        const currentOffset = spanRect.top - containerRect.top;
+        const scrollAdjustment = currentOffset - targetPosition - mobileOffset;
+        
+        // Scroll with the calculated offset
+        transcriptContainerRef.current.scrollTo({
+          top: transcriptContainerRef.current.scrollTop + scrollAdjustment,
+          behavior: 'smooth'
+        });
+        
+        // Set scroll complete after a short delay
+        setTimeout(() => {
+          setHasScrolledToStart(true);
+        }, 100);
+      }
+    };
+
+    // Try to scroll immediately
+    scrollToTimestamp();
+
+    // Also try after a short delay to ensure the transcript is fully rendered
+    const timeoutId = setTimeout(scrollToTimestamp, 500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, [mounted, startTime]);
 
   useEffect(() => {
@@ -182,6 +199,29 @@ export default function InteractiveTranscript({
                 false,
                 false
               );
+              
+              // After HyperaudioLite is initialized, trigger initial scroll if needed
+              if (startTime) {
+                const timeMs = parseFloat(startTime) * 1000;
+                const spans = Array.from(transcriptElement.querySelectorAll<HTMLElement>('span[data-m]'));
+                let targetSpan: HTMLElement | null = null;
+                let minDiff = Infinity;
+                
+                for (const span of spans) {
+                  const spanTime = parseInt(span.getAttribute('data-m') || '0', 10);
+                  const timeDiff = Math.abs(spanTime - timeMs);
+                  if (timeDiff < minDiff) {
+                    minDiff = timeDiff;
+                    targetSpan = span;
+                  }
+                }
+
+                if (targetSpan && transcriptContainerRef.current) {
+                  targetSpan.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  spans.forEach(span => span.classList.remove('bg-yellow-100'));
+                  targetSpan.classList.add('bg-yellow-100');
+                }
+              }
             }
             observer.disconnect();
           }
@@ -197,7 +237,7 @@ export default function InteractiveTranscript({
       transcriptElement.removeEventListener('click', handleInteraction);
       transcriptElement.removeEventListener('touchend', handleInteraction);
     };
-  }, [scriptLoaded, mounted, handleSpanClick]);
+  }, [scriptLoaded, mounted, handleSpanClick, startTime]);
 
   // Update the timeupdate listener to use videoRef
   useEffect(() => {

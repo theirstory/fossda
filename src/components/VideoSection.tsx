@@ -154,12 +154,33 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
         const timeInSeconds = parseFloat(startTime);
         if (!isNaN(timeInSeconds)) {
           videoRef.current.currentTime = timeInSeconds;
+          // Dispatch custom event for chapter and transcript updates
+          const event = new CustomEvent('videoSeeked', { 
+            detail: { time: timeInSeconds } 
+          });
+          window.dispatchEvent(event);
+          
+          // Also trigger a timeupdate event for the transcript
+          const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+          if (videoElement) {
+            const timeUpdateEvent = new Event('timeupdate');
+            videoElement.dispatchEvent(timeUpdateEvent);
+          }
         }
       }
     };
 
-    // Try to set timestamp immediately in case player is already ready
+    // Try to set timestamp immediately
     handleInitialTimestamp();
+
+    // Also set up a listener for when the video element is ready
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.addEventListener('loadedmetadata', handleInitialTimestamp);
+      return () => {
+        videoElement.removeEventListener('loadedmetadata', handleInitialTimestamp);
+      };
+    }
   }, [startTime]);
 
   const handlePlayStateChange = (playing: boolean) => {
@@ -268,6 +289,18 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
                 const timeInSeconds = parseFloat(startTime);
                 if (!isNaN(timeInSeconds)) {
                   videoRef.current.currentTime = timeInSeconds;
+                  // Dispatch custom event for chapter and transcript updates
+                  const event = new CustomEvent('videoSeeked', { 
+                    detail: { time: timeInSeconds } 
+                  });
+                  window.dispatchEvent(event);
+                  
+                  // Also trigger a timeupdate event for the transcript
+                  const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+                  if (videoElement) {
+                    const timeUpdateEvent = new Event('timeupdate');
+                    videoElement.dispatchEvent(timeUpdateEvent);
+                  }
                 }
               }
             }}

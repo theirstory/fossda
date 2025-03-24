@@ -11,12 +11,6 @@ interface VideoChaptersProps {
   className?: string;
 }
 
-// Extend MuxPlayerElement type to include event methods
-interface ExtendedMuxPlayer extends MuxPlayerElement {
-  on?: (event: string, handler: () => void) => void;
-  off?: (event: string, handler: () => void) => void;
-}
-
 export default function VideoChapters({
   chapters,
   videoRef,
@@ -92,82 +86,108 @@ export default function VideoChapters({
     }
   }, [chapters]);
 
-  // Update active chapter based on current time
-  const updateActiveChapter = useCallback((currentTime: number) => {
-    const newActiveChapter = findActiveChapter(currentTime);
-    
-    if (newActiveChapter && (!activeChapter || newActiveChapter.time.start !== activeChapter.time.start)) {
-      console.log('Setting active chapter:', {
-        title: newActiveChapter.title,
-        start: newActiveChapter.time.start,
-        currentTime,
-        wasActive: activeChapter?.title
-      });
-      
-      setActiveChapter(newActiveChapter);
-      scrollToChapter(newActiveChapter);
-    }
-  }, [findActiveChapter, activeChapter, scrollToChapter]);
-
   // Set initial active chapter
   useEffect(() => {
     if (!chapters || chapters.length === 0) return;
     
-    console.log('Setting initial active chapter');
-    const initialChapter = chapters[0];
-    setActiveChapter(initialChapter);
-    scrollToChapter(initialChapter);
-  }, [chapters, scrollToChapter]);
+    const handleInitialChapter = () => {
+      if (videoRef.current) {
+        const currentTime = videoRef.current.currentTime;
+        if (typeof currentTime === 'number') {
+          const initialChapter = findActiveChapter(currentTime);
+          if (initialChapter) {
+            setActiveChapter(initialChapter);
+            scrollToChapter(initialChapter);
+          }
+        } else {
+          // If no current time, default to first chapter
+          const initialChapter = chapters[0];
+          setActiveChapter(initialChapter);
+          scrollToChapter(initialChapter);
+        }
+      }
+    };
+
+    // Handle initial chapter when video is loaded
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (videoElement) {
+      videoElement.addEventListener('loadedmetadata', handleInitialChapter);
+      // Also try immediately in case video is already loaded
+      handleInitialChapter();
+      
+      return () => {
+        videoElement.removeEventListener('loadedmetadata', handleInitialChapter);
+      };
+    }
+  }, [chapters, videoRef, findActiveChapter, scrollToChapter]);
 
   // Effect for time updates
   useEffect(() => {
-    console.log('Setting up time updates. Chapters:', chapters?.length);
     if (!videoRef?.current || !chapters || chapters.length === 0) return;
 
-    const muxPlayer = videoRef.current as ExtendedMuxPlayer;
+    const muxPlayer = videoRef.current;
+    let rafId: number;
 
-    // Handle time updates
     const handleTimeUpdate = () => {
-      const currentTime = muxPlayer.currentTime;
-      updateActiveChapter(currentTime);
-    };
-
-    // Handle seeking
-    const handleSeeking = () => {
-      const currentTime = muxPlayer.currentTime;
-      console.log('Seek event:', currentTime);
-      updateActiveChapter(currentTime);
-    };
-
-    // Try to use Mux Player's event system
-    if (muxPlayer.on) {
-      console.log('Using Mux Player event system');
-      muxPlayer.on('timeupdate', handleTimeUpdate);
-      muxPlayer.on('seeking', handleSeeking);
-      muxPlayer.on('seeked', handleSeeking);
-    }
-    
-    // Set initial chapter based on current time
-    if (typeof muxPlayer.currentTime === 'number') {
-      updateActiveChapter(muxPlayer.currentTime);
-    }
-    
-    // Set up polling as a backup
-    const pollInterval = setInterval(() => {
-      if (typeof muxPlayer.currentTime === 'number') {
-        updateActiveChapter(muxPlayer.currentTime);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
       }
-    }, 1000); // Poll every second
+
+      rafId = requestAnimationFrame(() => {
+        const currentTime = muxPlayer.currentTime;
+        if (typeof currentTime === 'number') {
+          const newActiveChapter = findActiveChapter(currentTime);
+          if (newActiveChapter && (!activeChapter || newActiveChapter.time.start !== activeChapter.time.start)) {
+            setActiveChapter(newActiveChapter);
+            scrollToChapter(newActiveChapter);
+          }
+        }
+      });
+    };
+
+    const handleVideoSeeked = (e: CustomEvent) => {
+      if (e.detail && typeof e.detail.time === 'number') {
+        const newActiveChapter = findActiveChapter(e.detail.time);
+        if (newActiveChapter) {
+          setActiveChapter(newActiveChapter);
+          scrollToChapter(newActiveChapter);
+        }
+      }
+    };
+
+    // Set up event listeners
+    window.addEventListener('videoSeeked', handleVideoSeeked as EventListener);
+    
+    // Get the underlying video element
+    const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+    if (videoElement) {
+      // Set up event listeners for the video element
+      videoElement.addEventListener('timeupdate', handleTimeUpdate);
+      videoElement.addEventListener('seeking', handleTimeUpdate);
+      videoElement.addEventListener('seeked', handleTimeUpdate);
+
+      // Initial check for current time
+      if (typeof muxPlayer.currentTime === 'number') {
+        const initialChapter = findActiveChapter(muxPlayer.currentTime);
+        if (initialChapter) {
+          setActiveChapter(initialChapter);
+          scrollToChapter(initialChapter);
+        }
+      }
+    }
     
     return () => {
-      if (muxPlayer.off) {
-        muxPlayer.off('timeupdate', handleTimeUpdate);
-        muxPlayer.off('seeking', handleSeeking);
-        muxPlayer.off('seeked', handleSeeking);
+      window.removeEventListener('videoSeeked', handleVideoSeeked as EventListener);
+      if (videoElement) {
+        videoElement.removeEventListener('timeupdate', handleTimeUpdate);
+        videoElement.removeEventListener('seeking', handleTimeUpdate);
+        videoElement.removeEventListener('seeked', handleTimeUpdate);
       }
-      clearInterval(pollInterval);
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+      }
     };
-  }, [chapters, videoRef, updateActiveChapter]);
+  }, [chapters, videoRef, activeChapter, findActiveChapter, scrollToChapter]);
 
   const handleChapterClick = (chapter: ChapterMetadata, e: React.MouseEvent | React.TouchEvent) => {
     e.preventDefault();
