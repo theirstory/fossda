@@ -605,6 +605,115 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "joshua-gay-fossda-first-exposure-to-programming-ti-82-calculators-and-fractals",
+    "title": "First Exposure to Programming: TI-82 Calculators and Fractals",
+    "startTime": 412.914,
+    "endTime": 603.914,
+    "duration": 191,
+    "chapter": {
+      "id": "early-interests-poetry-and-programming",
+      "title": "Early Interests: Poetry and Programming"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "Joshua Gay: In the first moment, I kind of got intrigued by computer science. There's TI-82 calculators, what we used or what I had for school. And a friend of mine who was also one of the first people I knew to run Linux back in the 90s, he introduced me to the world of programming on a calculator in high school.",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "joshua-gay-fossda-a-shift-from-intended-english-major-to-computer-science",
+    "title": "A Shift: From Intended English Major to Computer Science",
+    "startTime": 822.965,
+    "endTime": 866.965,
+    "duration": 44,
+    "chapter": {
+      "id": "finding-a-career-path",
+      "title": "Finding a Career Path"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "I remember he saw the graphic arts award that I had won. And he suggested, but we recently just started a computer science program and we have almost nobody applying. So if you apply direct to major for computer science, your odds will be much higher.",
+    "themes": [
+      "education",
+      "evolution"
+    ]
+  },
+  {
+    "id": "joshua-gay-fossda-discovery-of-free-and-open-source-software",
+    "title": "Discovery of Free and Open Source Software",
+    "startTime": 1312.966,
+    "endTime": 1421.966,
+    "duration": 109,
+    "chapter": {
+      "id": "first-industry-experience",
+      "title": "First Industry Experience"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "It was around that time. I think I had heard people talk about things like Red Hat Linux and free software. But it wasn't until I really started to look into it for the job I was working at Super Wings...",
+    "themes": [
+      "mission-values",
+      "exposure"
+    ]
+  },
+  {
+    "id": "joshua-gay-fossda-making-an-impact-on-education-through-open-source",
+    "title": "Making an Impact on Education Through Open Source",
+    "startTime": 4354.186,
+    "endTime": 4700.186,
+    "duration": 346,
+    "chapter": {
+      "id": "joining-ck12-foundation-and-scaling-open-education",
+      "title": "Joining CK12 Foundation and Scaling Open Education"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "I ended up getting connected with Neeru Khosla. She had just started a project called the CK12 Foundation, a new company organization... her and her husband had been in Silicon Valley for quite a while then.",
+    "themes": [
+      "education",
+      "projects",
+      "evolution"
+    ]
+  },
+  {
+    "id": "joshua-gay-fossda-challenges-and-community-building-in-open-source",
+    "title": "Challenges and Community Building in Open Source",
+    "startTime": 3315.993,
+    "endTime": 3352.993,
+    "duration": 37,
+    "chapter": {
+      "id": "grad-school-and-the-commons-development-foundation",
+      "title": "Grad School and the Commons Development Foundation"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "I decided to create something called MagnaWiki, a way to do annotations and revisioning of legislative texts... I was regularly calling legislative aides and things and getting their input and they were excited...",
+    "themes": [
+      "challenges",
+      "community",
+      "projects"
+    ]
+  },
+  {
+    "id": "joshua-gay-fossda-the-evolution-and-legitimization-of-open-source",
+    "title": "The Evolution and Legitimization of Open Source",
+    "startTime": 6091.265,
+    "endTime": 6365.265,
+    "duration": 274,
+    "chapter": {
+      "id": "transition-to-ieee-and-standards-work",
+      "title": "Transition to IEEE and Standards Work"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "The biggest change is in the first 10, maybe almost 15 years that I was a part of it, I couldn't really go more than a week or two without having a conversation about questioning the legitimacy of it... To now, where I don't necessarily think people are on the whole more informed of what free and open source software is. But the legitimacy of it, that it's here, that it's established, is so strong...",
+    "themes": [
+      "evolution"
+    ]
+  },
+  {
     "id": "augustin-early-engineering",
     "title": "Problem-Solving Mindset on the Farm",
     "startTime": 124,

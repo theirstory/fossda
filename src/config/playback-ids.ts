@@ -10,4 +10,6 @@ export const PLAYBACK_IDS = {
   'lawrence-rosen': 'isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A',
   'jon-maddog-hall': 'WCU59waRNnBy6vhLXILyEcoQlUj9XeVmWTiBnRcW0118',
   'tony-wasserman': 'vkQEuN11l3Pg00mUv02rqjKyOq5PEZ3ztl7piIR2eYLSY'
+,
+  'joshua-gay-fossda': 'soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E',
 }; 

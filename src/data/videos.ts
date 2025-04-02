@@ -12,7 +12,8 @@ export type VideoId =
   | "bart-decrem"
   | "lawrence-rosen"
   | "jon-maddog-hall"
-  | "tony-wasserman";
+  | "tony-wasserman"
+  | "joshua-gay-fossda";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData: Record<VideoId, VideoData> = {
@@ -23,6 +24,14 @@ export const videoData: Record<VideoId, VideoData> = {
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "joshua-gay-fossda": {
+    id: "joshua-gay-fossda",
+    title: "Joshua Gay",
+    duration: "1:55:37",
+    thumbnail: "https://image.mux.com/soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E/animated.gif?width=320&start=5&end=10",
+    summary: "Interview with Joshua Gay FOSSDA Interview discussing his journey and contributions to open source software.",
+    sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
   },
   "tony-wasserman": {
     id: "tony-wasserman",

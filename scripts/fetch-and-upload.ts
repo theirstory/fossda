@@ -300,6 +300,34 @@ async function createGistAndGetRawUrl(content: string, filename: string, descrip
   return rawUrl;
 }
 
+// Add function to update VideoId type
+async function updateVideoIdType(interviewId: string) {
+  const videosPath = path.join(process.cwd(), 'src', 'data', 'videos.ts');
+  const content = await fs.readFile(videosPath, 'utf-8');
+  
+  // Check if the ID is already in the VideoId type
+  if (content.includes(`"${interviewId}"`)) {
+    console.log(`VideoId "${interviewId}" already exists in type definition`);
+    return;
+  }
+
+  // Find the VideoId type definition
+  const typeMatch = content.match(/export type VideoId =([^;]+);/);
+  if (!typeMatch) {
+    throw new Error('Could not find VideoId type definition');
+  }
+
+  // Add the new ID to the type
+  const updatedContent = content.replace(
+    /export type VideoId =([^;]+);/,
+    `export type VideoId =$1  | "${interviewId}";`
+  );
+
+  // Write the updated content back to the file
+  await fs.writeFile(videosPath, updatedContent);
+  console.log(`Added "${interviewId}" to VideoId type`);
+}
+
 async function fetchAndUpload(storyId: string) {
   try {
     // Read auth token
@@ -344,6 +372,9 @@ async function fetchAndUpload(storyId: string) {
       .replace(/^-|-$/g, '')
       // Ensure we have at least one character
       .replace(/^$/, 'untitled') as VideoId;
+
+    // Update VideoId type with the new interview ID
+    await updateVideoIdType(interviewId);
 
     // 2. Fetch transcript and video URL
     console.log('\nFetching transcript...');

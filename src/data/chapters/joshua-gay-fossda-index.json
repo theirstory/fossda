@@ -1,0 +1,254 @@
+{
+  "metadata": [
+    {
+      "title": "Early Life and Education",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Joshua Gay shares about his childhood in Hingham, Massachusetts, his large family, his early curiosity, entrepreneurial spirit, and unconventional path through school, including early jobs and unique learning style.",
+      "keywords": "childhood, education, family, work ethic, entrepreneurship"
+    },
+    {
+      "title": "Early Interests: Poetry and Programming",
+      "timecode": "00:06:11",
+      "time": {
+        "start": 371,
+        "end": null
+      },
+      "synopsis": "Joshua discusses his teenage passion for poetry and how a friend's interest in Linux and calculator programming introduced him to computing. He also talks about early HTML and graphic design projects in high school.",
+      "keywords": "poetry, programming, TI-82, HTML, graphic design, curiosity"
+    },
+    {
+      "title": "Finding a Career Path",
+      "timecode": "00:11:30",
+      "time": {
+        "start": 690,
+        "end": null
+      },
+      "synopsis": "Joshua initially aspired to be a millionaire and studied investing. After struggling academically, he strategically entered college as a computer science major to improve his acceptance chances, eventually discovering a passion and aptitude for programming.",
+      "keywords": "career goals, computer science, college, motivation, academic challenges"
+    },
+    {
+      "title": "First Industry Experience",
+      "timecode": "00:18:26",
+      "time": {
+        "start": 1106,
+        "end": null
+      },
+      "synopsis": "Joshua describes working at a startup called Super Wings, engaging in R&D, and dealing with proprietary software challenges. The experience deepened his interest in free software and sparked early philosophical reflections.",
+      "keywords": "startup, R&D, programming, Java, proprietary software"
+    },
+    {
+      "title": "Embracing Free Software and Collaborating with Stallman",
+      "timecode": "00:24:07",
+      "time": {
+        "start": 1447,
+        "end": null
+      },
+      "synopsis": "After Super Wings collapsed, Joshua fully committed to free software. He corresponded with Richard Stallman, leading to the creation of the book \"Free Software, Free Society,\" gaining deep exposure to the GNU philosophy and community.",
+      "keywords": "free software, Richard Stallman, GNU, publishing, philosophy"
+    },
+    {
+      "title": "Philosophy of Free Software and New Applications",
+      "timecode": "00:29:47",
+      "time": {
+        "start": 1787,
+        "end": null
+      },
+      "synopsis": "Joshua reflects on learning the free software philosophy, its practical applications, and its broader societal implications. He discusses connecting with Lawrence Lessig and applying free software principles beyond code.",
+      "keywords": "philosophy, GNU, Lawrence Lessig, Creative Commons, learning"
+    },
+    {
+      "title": "The Free Textbook Project",
+      "timecode": "00:37:53",
+      "time": {
+        "start": 2273,
+        "end": null
+      },
+      "synopsis": "Joshua shares the origins and goals of his Free Textbook Project, aimed at creating modular, open-licensed educational materials. Though the project didn’t launch fully, it led to his involvement with similar efforts.",
+      "keywords": "education, open textbooks, modular content, vision, learning tools"
+    },
+    {
+      "title": "Textbook Revolution",
+      "timecode": "00:41:20",
+      "time": {
+        "start": 2480,
+        "end": null
+      },
+      "synopsis": "Building on his interest in open education, Joshua takes over the Textbook Revolution blog, compiling and promoting free textbooks and educational resources, creating an influential online hub for open learning.",
+      "keywords": "textbooks, open education, OER, advocacy, self-learning"
+    },
+    {
+      "title": "Post-College Path and Publishing Work",
+      "timecode": "00:43:48",
+      "time": {
+        "start": 2628,
+        "end": null
+      },
+      "synopsis": "After college, Joshua moves to NYC, pursues jobs in publishing and software, and attempts to pitch open textbook ideas. He joins small publishing and software firms, continuing his advocacy for open source.",
+      "keywords": "publishing, career, free education, New York, early jobs"
+    },
+    {
+      "title": "Early Programming Jobs and Challenges",
+      "timecode": "00:49:11",
+      "time": {
+        "start": 2951,
+        "end": null
+      },
+      "synopsis": "Joshua recounts technical work at Harris Corporation, where he introduced Python scripts to improve old systems, and how those experiences inspired further pursuit of computer science research and open source.",
+      "keywords": "Harris Corporation, systems programming, legacy code, Python, innovation"
+    },
+    {
+      "title": "Grad School and the Commons Development Foundation",
+      "timecode": "00:53:04",
+      "time": {
+        "start": 3184,
+        "end": null
+      },
+      "synopsis": "Joshua and his wife attend the University of Oklahoma. He starts the Commons Development Foundation, explores civic tech tools, and begins laying the groundwork for LibrePlanet and other open collaboration efforts.",
+      "keywords": "graduate school, civic tech, nonprofit, LibrePlanet, open collaboration"
+    },
+    {
+      "title": "Launching LibrePlanet and Joining FSF",
+      "timecode": "00:58:22",
+      "time": {
+        "start": 3502,
+        "end": null
+      },
+      "synopsis": "Joshua proposes and launches LibrePlanet while also organizing hackathons and working on free textbook proposals. He joins the Free Software Foundation (FSF) as a campaigns manager.",
+      "keywords": "LibrePlanet, FSF, activism, free software community, organizing"
+    },
+    {
+      "title": "Working at the Free Software Foundation",
+      "timecode": "01:00:46",
+      "time": {
+        "start": 3646,
+        "end": null
+      },
+      "synopsis": "Joshua describes FSF’s internal structure, its shift from CD sales to membership models, and how unionization helped define work boundaries, particularly regarding interactions with Richard Stallman.",
+      "keywords": "FSF, organizational change, union, workplace culture, structure"
+    },
+    {
+      "title": "Campaigning and Consumer Awareness",
+      "timecode": "01:05:37",
+      "time": {
+        "start": 3937,
+        "end": null
+      },
+      "synopsis": "Joshua talks about his role in building FSF’s campaigns team, raising awareness about software freedom, and how digital rights conversations evolved to be more mainstream and relatable.",
+      "keywords": "campaigns, consumer rights, digital freedom, FSF mission, advocacy"
+    },
+    {
+      "title": "Respect Your Freedom and Supporting Developers",
+      "timecode": "01:07:57",
+      "time": {
+        "start": 4077,
+        "end": null
+      },
+      "synopsis": "Joshua details launching FSF’s hardware certification program, supporting developers, and the broader goal of fostering ethical hardware businesses that align with free software principles.",
+      "keywords": "hardware, certification, Respect Your Freedom, entrepreneurship, FSF impact"
+    },
+    {
+      "title": "Joining CK12 Foundation and Scaling Open Education",
+      "timecode": "01:12:12",
+      "time": {
+        "start": 4332,
+        "end": null
+      },
+      "synopsis": "Joshua joins CK12 Foundation to build a platform for open, customizable K-12 textbooks. He bridges technical and editorial teams and supports the adoption of free educational resources in schools.",
+      "keywords": "CK12, open education, modular content, platform development, textbooks"
+    },
+    {
+      "title": "Mozilla, Open Badges, and Peer-to-Peer Learning",
+      "timecode": "01:18:26",
+      "time": {
+        "start": 4706,
+        "end": null
+      },
+      "synopsis": "After CK12, Joshua works with Mozilla and Peer2Peer University on Open Badges, metadata standards, and open learning pathways. He helps connect informal learning to formal recognition.",
+      "keywords": "Mozilla, Open Badges, informal learning, metadata, education innovation"
+    },
+    {
+      "title": "Licensing and Compliance at FSF",
+      "timecode": "01:20:47",
+      "time": {
+        "start": 4847,
+        "end": null
+      },
+      "synopsis": "Returning to FSF, Joshua manages licensing and compliance, helping individuals and organizations navigate GPL and advocating for license compatibility, influencing standards and policy.",
+      "keywords": "GPL, licensing, compliance, FSF, policy, legal support"
+    },
+    {
+      "title": "Bridging Standards and Free Software",
+      "timecode": "01:27:24",
+      "time": {
+        "start": 5244,
+        "end": null
+      },
+      "synopsis": "Joshua works on licensing compatibility with Creative Commons, microformats in HTML5, and other initiatives that connect software freedom to global infrastructure and digital policy.",
+      "keywords": "standards, interoperability, Creative Commons, licensing, policy"
+    },
+    {
+      "title": "Transition to IEEE and Standards Work",
+      "timecode": "01:29:48",
+      "time": {
+        "start": 5388,
+        "end": null
+      },
+      "synopsis": "Joshua leaves FSF to join the IEEE Standards Association, where he brings free software principles into standards development. His unique background positions him to support both open source and global standardization.",
+      "keywords": "IEEE, standards, open source integration, licensing, career transition"
+    },
+    {
+      "title": "IEEE’s Mission and Culture",
+      "timecode": "01:35:41",
+      "time": {
+        "start": 5741,
+        "end": null
+      },
+      "synopsis": "Joshua explains IEEE’s mission to promote technology for humanity, its history, and its passionate global volunteer community. He reflects on how IEEE aligns with his values and long-term goals.",
+      "keywords": "IEEE, engineering, volunteerism, global collaboration, mission-driven"
+    },
+    {
+      "title": "How the Community Has Changed",
+      "timecode": "01:41:29",
+      "time": {
+        "start": 6089,
+        "end": null
+      },
+      "synopsis": "Joshua reflects on the legitimacy and acceptance of free and open source software, noting a major shift from skepticism to widespread understanding and integration into society and business.",
+      "keywords": "community evolution, acceptance, open source, legitimacy, public awareness"
+    },
+    {
+      "title": "Open Source 2.0 and Broader Adoption",
+      "timecode": "01:46:32",
+      "time": {
+        "start": 6392,
+        "end": null
+      },
+      "synopsis": "He discusses the broader adoption of open source principles in academic and institutional contexts, and how the community now tackles large-scale societal challenges like climate change.",
+      "keywords": "open source 2.0, academia, climate tech, evolution, interdisciplinary"
+    },
+    {
+      "title": "A Message to Future Generations",
+      "timecode": "01:51:37",
+      "time": {
+        "start": 6697,
+        "end": null
+      },
+      "synopsis": "Joshua shares heartfelt reflections for future generations, emphasizing the importance of community, collaboration, and staying grounded in humanity while solving technical problems.",
+      "keywords": "legacy, humanity, collaboration, purpose, future message"
+    },
+    {
+      "title": "Final Reflections and Gratitude",
+      "timecode": "01:54:59",
+      "time": {
+        "start": 6899,
+        "end": null
+      },
+      "synopsis": "Joshua expresses gratitude for the opportunity to share his story, reflects on the community’s importance in his career, and appreciates the Free and Open Source Stories project.",
+      "keywords": "gratitude, storytelling, community support, reflection, inspiration"
+    }
+  ]
+}
