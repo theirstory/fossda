@@ -68,7 +68,16 @@ async function updateConfigs(interviewId: string) {
     if (!lastImport) {
       throw new Error('Could not find imports in chapters.ts');
     }
-    const newImport = `import ${interviewId}Chapters from './chapters/${interviewId}-index.json';\n`;
+
+    // Convert interview ID to camelCase for the variable name
+    const camelCaseId = interviewId
+      .split('-')
+      .map((part, index) => 
+        index === 0 ? part : part.charAt(0).toUpperCase() + part.slice(1)
+      )
+      .join('');
+    
+    const newImport = `import ${camelCaseId}Chapters from './chapters/${interviewId}-index.json';\n`;
     chaptersContent = chaptersContent.replace(lastImport, lastImport + newImport);
 
     // Add chapter data
@@ -84,7 +93,7 @@ async function updateConfigs(interviewId: string) {
     title: "${mapping.title}",
     created_at: "${today}",
     updated_at: "${today}",
-    metadata: processChapterMetadata(${interviewId}Chapters.metadata)
+    metadata: processChapterMetadata(${camelCaseId}Chapters.metadata)
   },`;
 
     // Ensure there's no double comma and the object is properly formatted
@@ -112,15 +121,19 @@ async function updateConfigs(interviewId: string) {
 
     // Add new video data
     const existingVideos = videoDataMatch[1];
+    const thumbnailPath = interviewId === 'karen-sandler' 
+      ? "/thumbnails/karen-sandler.png"
+      : `https://image.mux.com/${mapping.playbackId}/animated.gif?width=320&start=5&end=10`;
+
     const newVideo = `
   "${interviewId}": {
     id: "${interviewId}",
     title: "${mapping.title}",
     duration: "${Math.floor(mapping.duration / 60)}:${String(mapping.duration % 60).padStart(2, '0')}",
-    thumbnail: "https://image.mux.com/${mapping.playbackId}/animated.gif?width=320&start=5&end=10",
+    thumbnail: "${thumbnailPath}",
     summary: "Interview with ${mapping.title} discussing their journey and contributions to open source software.",
     sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
-  },`;
+  }`;
 
     // Ensure there's no double comma and the object is properly formatted
     const updatedVideos = existingVideos.trim().endsWith(',')

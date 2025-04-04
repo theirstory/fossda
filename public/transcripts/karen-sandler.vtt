@@ -1,0 +1,6322 @@
+WEBVTT
+
+1
+00:00:00.200 --> 00:00:02.679
+<v Elisabetta Mori:>It's the 8th of May, 2024.
+
+2
+00:00:03.120 --> 00:00:06.240
+<v Elisabetta Mori:>And I am Elisabetta Mori, an historian
+
+3
+00:00:06.280 --> 00:00:09.639
+<v Elisabetta Mori:>of computing currently based in Italy, and
+
+4
+00:00:09.640 --> 00:00:11.840
+<v Elisabetta Mori:>an oral history interview with Fosdem.
+
+5
+00:00:13.280 --> 00:00:17.040
+<v Elisabetta Mori:>Today I'll be talking to Karen M
+
+6
+00:00:17.080 --> 00:00:17.840
+<v Elisabetta Mori:>Sandler.
+
+7
+00:00:18.960 --> 00:00:21.960
+<v Elisabetta Mori:>She's an attorney and the executive director
+
+8
+00:00:21.960 --> 00:00:24.240
+<v Elisabetta Mori:>of Software Freedom Conservancy.
+
+9
+00:00:25.720 --> 00:00:27.680
+<v Elisabetta Mori:>She is known as a cyber lawyer
+
+10
+00:00:27.680 --> 00:00:31.160
+<v Elisabetta Mori:>for her advocacy for free software, particularly
+
+11
+00:00:31.160 --> 00:00:33.360
+<v Elisabetta Mori:>in relation to the software on medical
+
+12
+00:00:33.360 --> 00:00:34.120
+<v Elisabetta Mori:>device.
+
+13
+00:00:35.840 --> 00:00:37.640
+<v Elisabetta Mori:>She was the executive director of the
+
+14
+00:00:37.640 --> 00:00:40.480
+<v Elisabetta Mori:>GNOME Foundation and the general counsel of
+
+15
+00:00:40.480 --> 00:00:42.280
+<v Elisabetta Mori:>the Software Freedom Law Center.
+
+16
+00:00:42.920 --> 00:00:44.800
+<v Elisabetta Mori:>She's also a lecturer in law at
+
+17
+00:00:44.800 --> 00:00:46.080
+<v Elisabetta Mori:>Columbia University.
+
+18
+00:00:48.280 --> 00:00:52.320
+<v Elisabetta Mori:>In 2023, she received an honorary doctorate
+
+19
+00:00:52.320 --> 00:00:54.520
+<v Elisabetta Mori:>from Chi Leuven, Belgium.
+
+20
+00:00:55.240 --> 00:00:58.760
+<v Elisabetta Mori:>And we are recording under story io.
+
+21
+00:00:59.040 --> 00:01:02.280
+<v Elisabetta Mori:>I am in Livorno, Tuscany, Italy and
+
+22
+00:01:02.920 --> 00:01:04.680
+<v Elisabetta Mori:>Karen is in the US.
+
+23
+00:01:04.959 --> 00:01:05.279
+<v Elisabetta Mori:>Okay.
+
+24
+00:01:05.280 --> 00:01:07.400
+<v Elisabetta Mori:>Can you can we start with, you
+
+25
+00:01:07.400 --> 00:01:11.520
+<v Elisabetta Mori:>know, you describing your childhood, your family,
+
+26
+00:01:12.120 --> 00:01:15.000
+<v Elisabetta Mori:>your first encounter with computers?
+
+27
+00:01:16.200 --> 00:01:16.600
+<v Karen Sandler:>Sure.
+
+28
+00:01:16.640 --> 00:01:19.120
+<v Karen Sandler:>I grew up in the suburbs in
+
+29
+00:01:19.120 --> 00:01:20.240
+<v Karen Sandler:>the United States.
+
+30
+00:01:20.520 --> 00:01:24.479
+<v Karen Sandler:>Um, my parents had grown up very
+
+31
+00:01:24.480 --> 00:01:24.920
+<v Karen Sandler:>poor.
+
+32
+00:01:25.160 --> 00:01:28.280
+<v Karen Sandler:>Um, they were the children of, uh,
+
+33
+00:01:28.760 --> 00:01:31.240
+<v Karen Sandler:>parents who had fled persecution in Eastern
+
+34
+00:01:31.240 --> 00:01:31.679
+<v Karen Sandler:>Europe.
+
+35
+00:01:31.680 --> 00:01:32.760
+<v Karen Sandler:>And so they had fled to the
+
+36
+00:01:32.760 --> 00:01:35.080
+<v Karen Sandler:>United States, um, with nothing.
+
+37
+00:01:35.360 --> 00:01:39.640
+<v Karen Sandler:>Um, and, uh, they, uh, they really
+
+38
+00:01:40.160 --> 00:01:42.080
+<v Karen Sandler:>built this life for themselves.
+
+39
+00:01:42.080 --> 00:01:44.160
+<v Karen Sandler:>And so they felt this big responsibility
+
+40
+00:01:44.440 --> 00:01:45.280
+<v Karen Sandler:>growing up.
+
+41
+00:01:45.400 --> 00:01:47.119
+<v Karen Sandler:>Um, and they had a real emphasis
+
+42
+00:01:47.120 --> 00:01:50.280
+<v Karen Sandler:>on education and, um, making use of
+
+43
+00:01:50.280 --> 00:01:52.280
+<v Karen Sandler:>all of the opportunities that were available
+
+44
+00:01:52.280 --> 00:01:52.880
+<v Karen Sandler:>to us.
+
+45
+00:01:53.080 --> 00:01:56.119
+<v Karen Sandler:>My father was an engineer and my
+
+46
+00:01:56.120 --> 00:01:57.869
+<v Karen Sandler:>mother was a school teacher.
+
+47
+00:01:58.110 --> 00:02:00.910
+<v Karen Sandler:>And so together, that made this real
+
+48
+00:02:00.910 --> 00:02:04.350
+<v Karen Sandler:>atmosphere with a love of learning and,
+
+49
+00:02:04.470 --> 00:02:07.550
+<v Karen Sandler:>um, really just it was a childhood
+
+50
+00:02:07.550 --> 00:02:09.109
+<v Karen Sandler:>where, uh, my mother, who was very
+
+51
+00:02:09.110 --> 00:02:11.829
+<v Karen Sandler:>interested in archaeology, would take me to
+
+52
+00:02:12.030 --> 00:02:14.750
+<v Karen Sandler:>museums constantly and to lectures, and my
+
+53
+00:02:14.750 --> 00:02:17.270
+<v Karen Sandler:>father would take me to the planetarium
+
+54
+00:02:17.270 --> 00:02:19.630
+<v Karen Sandler:>for lectures on astrophysics.
+
+55
+00:02:19.630 --> 00:02:21.870
+<v Karen Sandler:>And, um, he was, uh, more of
+
+56
+00:02:21.870 --> 00:02:23.549
+<v Karen Sandler:>like an engineering scientist.
+
+57
+00:02:23.550 --> 00:02:25.830
+<v Karen Sandler:>And so, uh, he was quite technical,
+
+58
+00:02:25.830 --> 00:02:26.790
+<v Karen Sandler:>and he was one of the first
+
+59
+00:02:26.790 --> 00:02:30.590
+<v Karen Sandler:>people using, uh, computer code in order
+
+60
+00:02:30.590 --> 00:02:33.070
+<v Karen Sandler:>to, like, using computers to replace the,
+
+61
+00:02:33.190 --> 00:02:36.510
+<v Karen Sandler:>um, the manual, um, crunching of numbers.
+
+62
+00:02:36.550 --> 00:02:38.390
+<v Karen Sandler:>And so his big contribution to his
+
+63
+00:02:38.390 --> 00:02:40.429
+<v Karen Sandler:>field, he was an expert in vibrations,
+
+64
+00:02:40.430 --> 00:02:43.470
+<v Karen Sandler:>was to write a computer program that
+
+65
+00:02:43.750 --> 00:02:45.710
+<v Karen Sandler:>analyzed vibrations in different mediums.
+
+66
+00:02:45.750 --> 00:02:47.190
+<v Karen Sandler:>And so when I was a little
+
+67
+00:02:47.190 --> 00:02:50.549
+<v Karen Sandler:>girl, he was constantly working on this
+
+68
+00:02:50.550 --> 00:02:53.869
+<v Karen Sandler:>program and on this, um, this analysis.
+
+69
+00:02:54.070 --> 00:02:55.830
+<v Karen Sandler:>And it was really fascinating to grow
+
+70
+00:02:55.830 --> 00:02:58.429
+<v Karen Sandler:>up with him around the house because
+
+71
+00:02:58.470 --> 00:03:00.190
+<v Karen Sandler:>things like, um, you know, when I
+
+72
+00:03:00.190 --> 00:03:02.350
+<v Karen Sandler:>was a little girl, I think he
+
+73
+00:03:02.390 --> 00:03:04.430
+<v Karen Sandler:>had already it was the very end
+
+74
+00:03:04.430 --> 00:03:06.590
+<v Karen Sandler:>of computer punch cards being a thing.
+
+75
+00:03:06.590 --> 00:03:08.109
+<v Karen Sandler:>And so they had all of these
+
+76
+00:03:08.110 --> 00:03:09.950
+<v Karen Sandler:>computer punch cards that they didn't know
+
+77
+00:03:09.950 --> 00:03:11.470
+<v Karen Sandler:>what to do with in his office.
+
+78
+00:03:11.470 --> 00:03:12.630
+<v Karen Sandler:>So he brought them home and they
+
+79
+00:03:12.630 --> 00:03:14.390
+<v Karen Sandler:>were constantly all over the house.
+
+80
+00:03:14.430 --> 00:03:15.630
+<v Karen Sandler:>We used them to take notes when
+
+81
+00:03:15.630 --> 00:03:17.270
+<v Karen Sandler:>people called on the phone or to
+
+82
+00:03:17.310 --> 00:03:18.989
+<v Karen Sandler:>like, leave little messages for each other.
+
+83
+00:03:19.030 --> 00:03:21.030
+<v Karen Sandler:>And so I it's funny because, like,
+
+84
+00:03:21.070 --> 00:03:22.830
+<v Karen Sandler:>this was like an ever present part
+
+85
+00:03:22.830 --> 00:03:24.109
+<v Karen Sandler:>of my childhood.
+
+86
+00:03:24.310 --> 00:03:26.430
+<v Karen Sandler:>And I remember one of my earliest
+
+87
+00:03:26.430 --> 00:03:29.429
+<v Karen Sandler:>memories is going to his office with
+
+88
+00:03:29.430 --> 00:03:30.590
+<v Karen Sandler:>him as a, as a, as a
+
+89
+00:03:30.590 --> 00:03:32.829
+<v Karen Sandler:>little girl and watching the punch cards
+
+90
+00:03:33.230 --> 00:03:35.830
+<v Karen Sandler:>fly through the machine and seeing how
+
+91
+00:03:36.030 --> 00:03:37.950
+<v Karen Sandler:>I used to imagine the way that
+
+92
+00:03:37.950 --> 00:03:40.030
+<v Karen Sandler:>the punches looked were it looked like
+
+93
+00:03:40.070 --> 00:03:42.070
+<v Karen Sandler:>animals to me, and I would imagine
+
+94
+00:03:42.070 --> 00:03:43.230
+<v Karen Sandler:>the different animals moving.
+
+95
+00:03:43.230 --> 00:03:46.270
+<v Karen Sandler:>And I remember, um, I must have
+
+96
+00:03:46.270 --> 00:03:48.109
+<v Karen Sandler:>been like, you know, 2 or 3.
+
+97
+00:03:48.150 --> 00:03:50.310
+<v Karen Sandler:>And then, um, when I got even
+
+98
+00:03:50.310 --> 00:03:52.750
+<v Karen Sandler:>a little older, um, you know, when
+
+99
+00:03:52.750 --> 00:03:54.870
+<v Karen Sandler:>I was four, we would play these
+
+100
+00:03:54.870 --> 00:03:58.790
+<v Karen Sandler:>really like just old style video games
+
+101
+00:03:58.790 --> 00:03:59.550
+<v Karen Sandler:>in his office.
+
+102
+00:03:59.550 --> 00:04:00.750
+<v Karen Sandler:>And then of course, because he did
+
+103
+00:04:00.750 --> 00:04:02.990
+<v Karen Sandler:>this, he had computers in our house.
+
+104
+00:04:02.990 --> 00:04:05.070
+<v Karen Sandler:>So I was very lucky that I
+
+105
+00:04:05.070 --> 00:04:07.710
+<v Karen Sandler:>had access to computers and learning how
+
+106
+00:04:07.710 --> 00:04:10.350
+<v Karen Sandler:>to use them and, um, and playing
+
+107
+00:04:10.350 --> 00:04:10.829
+<v Karen Sandler:>games.
+
+108
+00:04:10.870 --> 00:04:12.030
+<v Karen Sandler:>And I mean, I think I wrote
+
+109
+00:04:12.030 --> 00:04:15.149
+<v Karen Sandler:>my first really, really, really, really silly
+
+110
+00:04:15.310 --> 00:04:18.190
+<v Karen Sandler:>program when I was probably six years
+
+111
+00:04:18.190 --> 00:04:19.550
+<v Karen Sandler:>old, you know, or 5 or 6
+
+112
+00:04:19.550 --> 00:04:20.229
+<v Karen Sandler:>years old.
+
+113
+00:04:20.510 --> 00:04:23.070
+<v Karen Sandler:>Um, I, uh, I think maybe when
+
+114
+00:04:23.070 --> 00:04:26.150
+<v Karen Sandler:>I was seven, I was learning, uh,
+
+115
+00:04:26.190 --> 00:04:28.590
+<v Karen Sandler:>we learned the, the times tables at
+
+116
+00:04:28.590 --> 00:04:29.909
+<v Karen Sandler:>school, and it was a totally a
+
+117
+00:04:29.910 --> 00:04:30.710
+<v Karen Sandler:>different time.
+
+118
+00:04:30.750 --> 00:04:32.950
+<v Karen Sandler:>The teachers would say, oh, you know,
+
+119
+00:04:33.030 --> 00:04:34.909
+<v Karen Sandler:>we're going to do a quiz every
+
+120
+00:04:34.950 --> 00:04:36.789
+<v Karen Sandler:>day from this is Friday.
+
+121
+00:04:36.790 --> 00:04:38.670
+<v Karen Sandler:>On Monday, we're going to start doing
+
+122
+00:04:38.670 --> 00:04:39.390
+<v Karen Sandler:>a quiz every day.
+
+123
+00:04:39.390 --> 00:04:42.790
+<v Karen Sandler:>And as soon as you kids learn
+
+124
+00:04:42.830 --> 00:04:45.150
+<v Karen Sandler:>like get 100% on this quiz, we'll
+
+125
+00:04:45.150 --> 00:04:46.590
+<v Karen Sandler:>move your chair to the opposite side
+
+126
+00:04:46.590 --> 00:04:47.350
+<v Karen Sandler:>of the room.
+
+127
+00:04:47.510 --> 00:04:49.550
+<v Karen Sandler:>And I said, oh, that has to
+
+128
+00:04:49.550 --> 00:04:50.030
+<v Karen Sandler:>be me.
+
+129
+00:04:50.030 --> 00:04:51.270
+<v Karen Sandler:>I have to move to the other
+
+130
+00:04:51.270 --> 00:04:52.150
+<v Karen Sandler:>side of the room.
+
+131
+00:04:52.150 --> 00:04:53.310
+<v Karen Sandler:>And so I went home and I
+
+132
+00:04:53.310 --> 00:04:55.590
+<v Karen Sandler:>wrote this little game to test myself
+
+133
+00:04:55.630 --> 00:04:58.190
+<v Karen Sandler:>on playing, you know, my times tables.
+
+134
+00:04:58.230 --> 00:04:59.750
+<v Karen Sandler:>And I played it all weekend.
+
+135
+00:04:59.750 --> 00:05:01.230
+<v Karen Sandler:>I made a little Ascii rocket go
+
+136
+00:05:01.230 --> 00:05:02.230
+<v Karen Sandler:>up the screen when I got it
+
+137
+00:05:02.230 --> 00:05:02.990
+<v Karen Sandler:>right, and I loved it.
+
+138
+00:05:02.990 --> 00:05:04.790
+<v Karen Sandler:>So it was really the first functional
+
+139
+00:05:04.910 --> 00:05:06.349
+<v Karen Sandler:>piece of code I ever wrote.
+
+140
+00:05:06.590 --> 00:05:08.470
+<v Karen Sandler:>And then on Monday, I went to
+
+141
+00:05:08.510 --> 00:05:09.830
+<v Karen Sandler:>school and I felt so bad.
+
+142
+00:05:09.870 --> 00:05:11.870
+<v Karen Sandler:>Like in retrospect, I remember the reactions
+
+143
+00:05:11.870 --> 00:05:13.470
+<v Karen Sandler:>of the other kids because they just
+
+144
+00:05:13.470 --> 00:05:14.789
+<v Karen Sandler:>said, oh, you know, this is starting
+
+145
+00:05:14.790 --> 00:05:15.390
+<v Karen Sandler:>on Monday.
+
+146
+00:05:15.390 --> 00:05:16.909
+<v Karen Sandler:>And they didn't think about it, but
+
+147
+00:05:16.910 --> 00:05:18.789
+<v Karen Sandler:>I got 100% on that because I
+
+148
+00:05:18.830 --> 00:05:22.390
+<v Karen Sandler:>had practiced played that game all weekend.
+
+149
+00:05:22.390 --> 00:05:24.469
+<v Karen Sandler:>And so I moved to the other
+
+150
+00:05:24.470 --> 00:05:25.470
+<v Karen Sandler:>side and it took it took a
+
+151
+00:05:25.470 --> 00:05:26.590
+<v Karen Sandler:>couple of days for them to learn
+
+152
+00:05:26.590 --> 00:05:27.309
+<v Karen Sandler:>their times tables.
+
+153
+00:05:27.310 --> 00:05:28.469
+<v Karen Sandler:>So the other kids came over to
+
+154
+00:05:28.470 --> 00:05:29.229
+<v Karen Sandler:>the other side of the room.
+
+155
+00:05:29.230 --> 00:05:31.030
+<v Karen Sandler:>But I remember it fondly because, you
+
+156
+00:05:31.030 --> 00:05:33.229
+<v Karen Sandler:>know, code coding was like, uh, it
+
+157
+00:05:33.230 --> 00:05:34.750
+<v Karen Sandler:>was something that was fun, but it
+
+158
+00:05:34.750 --> 00:05:35.910
+<v Karen Sandler:>was also something.
+
+159
+00:05:35.950 --> 00:05:37.469
+<v Karen Sandler:>It was a way that I could
+
+160
+00:05:37.470 --> 00:05:38.990
+<v Karen Sandler:>do things that I wouldn't otherwise be
+
+161
+00:05:39.030 --> 00:05:39.910
+<v Karen Sandler:>able to do.
+
+162
+00:05:40.110 --> 00:05:42.030
+<v Karen Sandler:>And so that that was basically my.
+
+163
+00:05:42.070 --> 00:05:43.990
+<v Karen Sandler:>And so I grew up really, I
+
+164
+00:05:43.990 --> 00:05:44.950
+<v Karen Sandler:>think really fortunately.
+
+165
+00:05:44.950 --> 00:05:47.070
+<v Karen Sandler:>And then my like I we were
+
+166
+00:05:47.070 --> 00:05:48.910
+<v Karen Sandler:>we were talking before this, Elizabeth you
+
+167
+00:05:48.910 --> 00:05:49.910
+<v Karen Sandler:>asked me like what was the first
+
+168
+00:05:49.910 --> 00:05:52.340
+<v Karen Sandler:>computer that I remember, um, interacting.
+
+169
+00:05:52.340 --> 00:05:53.620
+<v Karen Sandler:>And aside from the, I guess, the
+
+170
+00:05:53.780 --> 00:05:55.700
+<v Karen Sandler:>the the punch card situation, the one
+
+171
+00:05:55.700 --> 00:05:57.100
+<v Karen Sandler:>that I remember the most from when
+
+172
+00:05:57.100 --> 00:05:58.580
+<v Karen Sandler:>I was little at home was we
+
+173
+00:05:58.580 --> 00:06:01.420
+<v Karen Sandler:>had this portable computer and it was
+
+174
+00:06:01.420 --> 00:06:04.820
+<v Karen Sandler:>like this huge box with a teeny
+
+175
+00:06:05.100 --> 00:06:08.980
+<v Karen Sandler:>tiny, like greenish screen and black screen,
+
+176
+00:06:09.100 --> 00:06:10.420
+<v Karen Sandler:>and it had a big handle on
+
+177
+00:06:10.420 --> 00:06:10.660
+<v Karen Sandler:>it.
+
+178
+00:06:10.660 --> 00:06:12.460
+<v Karen Sandler:>So you could, like, carry it like
+
+179
+00:06:12.460 --> 00:06:13.700
+<v Karen Sandler:>a huge suitcase.
+
+180
+00:06:14.020 --> 00:06:15.700
+<v Karen Sandler:>Um, and so we used to, I,
+
+181
+00:06:15.820 --> 00:06:16.900
+<v Karen Sandler:>you know, that we used to, we
+
+182
+00:06:16.900 --> 00:06:18.620
+<v Karen Sandler:>used to and the keyboard would like,
+
+183
+00:06:18.620 --> 00:06:20.180
+<v Karen Sandler:>you could put the keyboard and attach
+
+184
+00:06:20.180 --> 00:06:21.900
+<v Karen Sandler:>it to the, um, to the computer.
+
+185
+00:06:21.900 --> 00:06:23.060
+<v Karen Sandler:>So that was pretty cool.
+
+186
+00:06:23.860 --> 00:06:24.820
+<v Elisabetta Mori:>That was pretty cool.
+
+187
+00:06:24.860 --> 00:06:25.380
+<v Elisabetta Mori:>Really?
+
+188
+00:06:25.420 --> 00:06:25.740
+<v Elisabetta Mori:>Yeah.
+
+189
+00:06:25.780 --> 00:06:27.580
+<v Elisabetta Mori:>The portable, you know, they were portable.
+
+190
+00:06:27.700 --> 00:06:28.900
+<v Elisabetta Mori:>You could at least you could move
+
+191
+00:06:28.900 --> 00:06:31.140
+<v Elisabetta Mori:>them because it's until at some point
+
+192
+00:06:31.380 --> 00:06:34.900
+<v Elisabetta Mori:>you couldn't move computer from the big
+
+193
+00:06:34.900 --> 00:06:35.940
+<v Elisabetta Mori:>rooms they were in.
+
+194
+00:06:35.940 --> 00:06:38.419
+<v Elisabetta Mori:>So that was a big, a big,
+
+195
+00:06:38.460 --> 00:06:39.620
+<v Elisabetta Mori:>uh, advancement.
+
+196
+00:06:39.740 --> 00:06:44.460
+<v Elisabetta Mori:>So, um, what, uh, what about education?
+
+197
+00:06:44.460 --> 00:06:45.659
+<v Elisabetta Mori:>What about school?
+
+198
+00:06:45.980 --> 00:06:48.660
+<v Elisabetta Mori:>Which which schools and universities did you
+
+199
+00:06:48.660 --> 00:06:49.220
+<v Elisabetta Mori:>attend?
+
+200
+00:06:49.220 --> 00:06:49.380
+<v Elisabetta Mori:>child?
+
+201
+00:06:49.740 --> 00:06:50.700
+<v Karen Sandler:>Well, when I was a kid, I
+
+202
+00:06:50.700 --> 00:06:52.659
+<v Karen Sandler:>just went to the the local public
+
+203
+00:06:52.660 --> 00:06:56.140
+<v Karen Sandler:>schools for elementary school and, uh, middle
+
+204
+00:06:56.140 --> 00:06:57.460
+<v Karen Sandler:>school, although we called it junior high
+
+205
+00:06:57.500 --> 00:07:00.740
+<v Karen Sandler:>then and, uh, high school and, um,
+
+206
+00:07:00.740 --> 00:07:03.260
+<v Karen Sandler:>and then I went to a school
+
+207
+00:07:03.260 --> 00:07:06.700
+<v Karen Sandler:>called Cooper Union for um, for undergraduate,
+
+208
+00:07:06.900 --> 00:07:10.059
+<v Karen Sandler:>uh, which is super special because it's
+
+209
+00:07:10.100 --> 00:07:12.580
+<v Karen Sandler:>an in the United States, colleges are
+
+210
+00:07:12.580 --> 00:07:13.820
+<v Karen Sandler:>very, very expensive.
+
+211
+00:07:14.180 --> 00:07:16.219
+<v Karen Sandler:>And, um, it was one of the
+
+212
+00:07:16.260 --> 00:07:18.140
+<v Karen Sandler:>it was the only school that was
+
+213
+00:07:18.140 --> 00:07:20.300
+<v Karen Sandler:>completely, um, tuition free.
+
+214
+00:07:20.500 --> 00:07:22.940
+<v Karen Sandler:>And so, um, and so I went
+
+215
+00:07:22.940 --> 00:07:24.300
+<v Karen Sandler:>there and it was amazing.
+
+216
+00:07:24.300 --> 00:07:25.900
+<v Karen Sandler:>It was, you know, founded by, like
+
+217
+00:07:25.940 --> 00:07:28.500
+<v Karen Sandler:>on the principle that, um, that tuition
+
+218
+00:07:28.500 --> 00:07:30.140
+<v Karen Sandler:>should be as free as the air
+
+219
+00:07:30.140 --> 00:07:30.900
+<v Karen Sandler:>in the water.
+
+220
+00:07:31.220 --> 00:07:33.340
+<v Karen Sandler:>And, um, and it's interesting because Cooper
+
+221
+00:07:33.340 --> 00:07:36.820
+<v Karen Sandler:>Union was, um, at one point invited
+
+222
+00:07:36.820 --> 00:07:38.820
+<v Karen Sandler:>to become a part of Columbia University,
+
+223
+00:07:39.060 --> 00:07:43.340
+<v Karen Sandler:>but because Cooper Union accepted women and
+
+224
+00:07:43.340 --> 00:07:46.700
+<v Karen Sandler:>refused to stop accepting women, they couldn't.
+
+225
+00:07:46.740 --> 00:07:47.300
+<v Karen Sandler:>They wouldn't be.
+
+226
+00:07:47.340 --> 00:07:49.539
+<v Karen Sandler:>They they decided not to join Columbia
+
+227
+00:07:49.580 --> 00:07:51.539
+<v Karen Sandler:>University, which is fascinating the way that
+
+228
+00:07:51.540 --> 00:07:52.900
+<v Karen Sandler:>the whole history thing went.
+
+229
+00:07:52.900 --> 00:07:54.860
+<v Karen Sandler:>So that so that that happened then.
+
+230
+00:07:54.860 --> 00:07:55.100
+<v Karen Sandler:>So yeah.
+
+231
+00:07:55.100 --> 00:07:56.219
+<v Karen Sandler:>So I went to Cooper Union, which
+
+232
+00:07:56.220 --> 00:07:58.860
+<v Karen Sandler:>is where, um, you know, previously there
+
+233
+00:07:58.860 --> 00:08:02.060
+<v Karen Sandler:>was no formal computer related education in
+
+234
+00:08:02.060 --> 00:08:04.620
+<v Karen Sandler:>my, um, elementary school or my high
+
+235
+00:08:04.620 --> 00:08:07.979
+<v Karen Sandler:>school, no computer programming classes, nothing.
+
+236
+00:08:08.140 --> 00:08:09.900
+<v Karen Sandler:>Um, and I basically had been doing
+
+237
+00:08:09.900 --> 00:08:12.659
+<v Karen Sandler:>a ton of, like, basic programming at
+
+238
+00:08:12.660 --> 00:08:14.940
+<v Karen Sandler:>home, um, and just doing whatever I
+
+239
+00:08:14.940 --> 00:08:15.300
+<v Karen Sandler:>wanted.
+
+240
+00:08:15.300 --> 00:08:16.980
+<v Karen Sandler:>And then when I went to college,
+
+241
+00:08:16.980 --> 00:08:18.060
+<v Karen Sandler:>it was very rigorous.
+
+242
+00:08:18.060 --> 00:08:21.020
+<v Karen Sandler:>And because I'm old, um, the, uh,
+
+243
+00:08:21.140 --> 00:08:22.300
+<v Karen Sandler:>the first class I had to take
+
+244
+00:08:22.300 --> 00:08:24.740
+<v Karen Sandler:>in college was, uh, C and Fortran
+
+245
+00:08:24.780 --> 00:08:26.419
+<v Karen Sandler:>and Fortran because I went to engineering
+
+246
+00:08:26.420 --> 00:08:28.980
+<v Karen Sandler:>school, um, back when again in the
+
+247
+00:08:28.980 --> 00:08:29.659
+<v Karen Sandler:>olden days.
+
+248
+00:08:29.660 --> 00:08:31.100
+<v Karen Sandler:>And so it was very it was
+
+249
+00:08:31.100 --> 00:08:31.780
+<v Karen Sandler:>it was really fun.
+
+250
+00:08:31.780 --> 00:08:33.060
+<v Karen Sandler:>And that was like my first, um,
+
+251
+00:08:33.100 --> 00:08:33.780
+<v Karen Sandler:>introduction.
+
+252
+00:08:33.780 --> 00:08:35.699
+<v Karen Sandler:>And when I got to the school,
+
+253
+00:08:36.740 --> 00:08:38.299
+<v Karen Sandler:>the very first thing on the very
+
+254
+00:08:38.299 --> 00:08:40.220
+<v Karen Sandler:>first day of my very first class
+
+255
+00:08:40.220 --> 00:08:42.620
+<v Karen Sandler:>was to like, get an account in
+
+256
+00:08:42.620 --> 00:08:44.660
+<v Karen Sandler:>the computer center, because of course, then
+
+257
+00:08:44.700 --> 00:08:46.940
+<v Karen Sandler:>nobody had I, I had a really
+
+258
+00:08:46.980 --> 00:08:50.940
+<v Karen Sandler:>like, ridiculous, like notebook computer, as they
+
+259
+00:08:50.940 --> 00:08:52.740
+<v Karen Sandler:>called them at the time, which, uh,
+
+260
+00:08:52.780 --> 00:08:54.340
+<v Karen Sandler:>which I felt very lucky to have
+
+261
+00:08:54.340 --> 00:08:55.380
+<v Karen Sandler:>because nobody really had it, but it
+
+262
+00:08:55.380 --> 00:08:57.260
+<v Karen Sandler:>was a castoff from my, my dad,
+
+263
+00:08:57.300 --> 00:08:59.660
+<v Karen Sandler:>and it had like, uh, a teeny
+
+264
+00:08:59.700 --> 00:09:02.859
+<v Karen Sandler:>tiny amount of ram, like, ridiculously tiny.
+
+265
+00:09:02.860 --> 00:09:04.180
+<v Karen Sandler:>But you could you could use it
+
+266
+00:09:04.180 --> 00:09:06.420
+<v Karen Sandler:>to, to, uh, to, you know, just
+
+267
+00:09:06.460 --> 00:09:08.900
+<v Karen Sandler:>to, to do, um, you know, text
+
+268
+00:09:08.940 --> 00:09:09.819
+<v Karen Sandler:>based things.
+
+269
+00:09:09.860 --> 00:09:11.140
+<v Karen Sandler:>And so I, I loved it and
+
+270
+00:09:11.140 --> 00:09:12.860
+<v Karen Sandler:>I had that at home, but, um,
+
+271
+00:09:12.980 --> 00:09:14.420
+<v Karen Sandler:>but nobody else had a computer, so
+
+272
+00:09:14.420 --> 00:09:15.700
+<v Karen Sandler:>you had to have, like, an account
+
+273
+00:09:15.700 --> 00:09:17.500
+<v Karen Sandler:>so you could use your, um, you
+
+274
+00:09:17.500 --> 00:09:19.180
+<v Karen Sandler:>can, you can, um, you you had
+
+275
+00:09:19.180 --> 00:09:21.220
+<v Karen Sandler:>your, your workstation and you could log
+
+276
+00:09:21.220 --> 00:09:21.420
+<v Karen Sandler:>in.
+
+277
+00:09:21.420 --> 00:09:22.620
+<v Karen Sandler:>So I went in to get my,
+
+278
+00:09:22.700 --> 00:09:24.940
+<v Karen Sandler:>uh, my account with another, um, woman
+
+279
+00:09:24.940 --> 00:09:26.540
+<v Karen Sandler:>who was in the class, uh, in
+
+280
+00:09:26.580 --> 00:09:27.580
+<v Karen Sandler:>the incoming class with me.
+
+281
+00:09:27.580 --> 00:09:28.860
+<v Karen Sandler:>And we went to the computer center.
+
+282
+00:09:28.860 --> 00:09:31.140
+<v Karen Sandler:>And at the computer center, there were,
+
+283
+00:09:31.300 --> 00:09:34.460
+<v Karen Sandler:>um, there were no women in the
+
+284
+00:09:34.460 --> 00:09:35.500
+<v Karen Sandler:>computer center.
+
+285
+00:09:35.500 --> 00:09:38.939
+<v Karen Sandler:>And it was super weird because, uh,
+
+286
+00:09:39.220 --> 00:09:42.500
+<v Karen Sandler:>uh, there was actually a guy who
+
+287
+00:09:42.500 --> 00:09:47.170
+<v Karen Sandler:>had Ascii Keep porn on his workstation.
+
+288
+00:09:48.410 --> 00:09:49.690
+<v Karen Sandler:>And the friend that I was with,
+
+289
+00:09:49.730 --> 00:09:50.690
+<v Karen Sandler:>who was my new friend because it
+
+290
+00:09:50.690 --> 00:09:51.890
+<v Karen Sandler:>was the first day of college and
+
+291
+00:09:51.890 --> 00:09:53.410
+<v Karen Sandler:>we didn't know each other very well,
+
+292
+00:09:53.450 --> 00:09:54.930
+<v Karen Sandler:>said, I'm going to come back later.
+
+293
+00:09:54.930 --> 00:09:57.209
+<v Karen Sandler:>And she left, and I don't know
+
+294
+00:09:57.210 --> 00:09:58.570
+<v Karen Sandler:>what got into me because I'm very,
+
+295
+00:09:58.570 --> 00:10:00.410
+<v Karen Sandler:>very shy as a human being like.
+
+296
+00:10:00.450 --> 00:10:02.810
+<v Karen Sandler:>And I have some like I'm very
+
+297
+00:10:02.810 --> 00:10:06.489
+<v Karen Sandler:>reluctant to to I'm very conflict averse.
+
+298
+00:10:06.690 --> 00:10:08.730
+<v Karen Sandler:>Um, but for some reason I was
+
+299
+00:10:08.730 --> 00:10:10.370
+<v Karen Sandler:>full of boldness for my first day
+
+300
+00:10:10.370 --> 00:10:11.250
+<v Karen Sandler:>of university.
+
+301
+00:10:11.290 --> 00:10:12.610
+<v Karen Sandler:>And so I went into the computer
+
+302
+00:10:12.610 --> 00:10:14.850
+<v Karen Sandler:>center and I told the, um, Bob
+
+303
+00:10:14.850 --> 00:10:16.210
+<v Karen Sandler:>Hopkins, who ran the computer center.
+
+304
+00:10:16.250 --> 00:10:17.810
+<v Karen Sandler:>I said to him, you know, it's
+
+305
+00:10:17.810 --> 00:10:19.050
+<v Karen Sandler:>really gross out there.
+
+306
+00:10:19.090 --> 00:10:20.050
+<v Karen Sandler:>I don't know what you think is
+
+307
+00:10:20.050 --> 00:10:21.890
+<v Karen Sandler:>going on out there, but you probably
+
+308
+00:10:21.890 --> 00:10:23.010
+<v Karen Sandler:>want to do something about it.
+
+309
+00:10:23.010 --> 00:10:24.410
+<v Karen Sandler:>And he said, you're hired.
+
+310
+00:10:25.490 --> 00:10:26.329
+<v Karen Sandler:>I said, what?
+
+311
+00:10:26.930 --> 00:10:30.290
+<v Karen Sandler:>And he said, you know, like, you're
+
+312
+00:10:30.290 --> 00:10:31.130
+<v Karen Sandler:>right, you're right.
+
+313
+00:10:31.170 --> 00:10:32.490
+<v Karen Sandler:>You know, I want you to learn.
+
+314
+00:10:32.490 --> 00:10:33.610
+<v Karen Sandler:>And then he called in one of
+
+315
+00:10:33.610 --> 00:10:34.930
+<v Karen Sandler:>the the guys who worked in the
+
+316
+00:10:34.930 --> 00:10:36.569
+<v Karen Sandler:>computer center, and he said, I want
+
+317
+00:10:36.570 --> 00:10:37.970
+<v Karen Sandler:>you to, like, just teach her everything.
+
+318
+00:10:37.970 --> 00:10:38.170
+<v Karen Sandler:>You know.
+
+319
+00:10:38.170 --> 00:10:39.210
+<v Karen Sandler:>I want her to have root as
+
+320
+00:10:39.210 --> 00:10:39.970
+<v Karen Sandler:>soon as possible.
+
+321
+00:10:40.210 --> 00:10:42.370
+<v Karen Sandler:>And, um, and so I, I worked
+
+322
+00:10:42.370 --> 00:10:43.890
+<v Karen Sandler:>in the computer center from the very
+
+323
+00:10:43.890 --> 00:10:47.210
+<v Karen Sandler:>beginning of my college, um, experience, and
+
+324
+00:10:47.210 --> 00:10:48.650
+<v Karen Sandler:>that was truly amazing.
+
+325
+00:10:48.650 --> 00:10:51.330
+<v Karen Sandler:>We installed Linux Labs and, um, and
+
+326
+00:10:51.330 --> 00:10:52.450
+<v Karen Sandler:>it was really, you know, I mean,
+
+327
+00:10:52.490 --> 00:10:53.290
+<v Karen Sandler:>this is the 90s.
+
+328
+00:10:53.290 --> 00:10:54.850
+<v Karen Sandler:>So it was like really early stuff
+
+329
+00:10:54.850 --> 00:10:56.610
+<v Karen Sandler:>and, um, and a ton of fun.
+
+330
+00:10:56.650 --> 00:10:58.930
+<v Karen Sandler:>And Cooper Union, I got that whole
+
+331
+00:10:58.970 --> 00:10:59.930
+<v Karen Sandler:>free education.
+
+332
+00:10:59.970 --> 00:11:01.330
+<v Karen Sandler:>I cannot speak more highly.
+
+333
+00:11:01.330 --> 00:11:03.530
+<v Karen Sandler:>I think that that was so transformative
+
+334
+00:11:03.530 --> 00:11:04.330
+<v Karen Sandler:>for my career.
+
+335
+00:11:04.330 --> 00:11:06.650
+<v Karen Sandler:>And the fact that it was ideologically
+
+336
+00:11:06.690 --> 00:11:08.610
+<v Karen Sandler:>founded really stuck with me.
+
+337
+00:11:08.610 --> 00:11:10.850
+<v Karen Sandler:>I was not a principled person coming
+
+338
+00:11:10.850 --> 00:11:11.730
+<v Karen Sandler:>into college.
+
+339
+00:11:11.730 --> 00:11:13.850
+<v Karen Sandler:>I didn't really think much about societal
+
+340
+00:11:13.890 --> 00:11:16.650
+<v Karen Sandler:>society's problems, but the two have been
+
+341
+00:11:16.650 --> 00:11:18.810
+<v Karen Sandler:>such a direct beneficiary of that.
+
+342
+00:11:18.850 --> 00:11:20.050
+<v Karen Sandler:>And actually, my father had gone to
+
+343
+00:11:20.090 --> 00:11:21.010
+<v Karen Sandler:>Cooper Union, too.
+
+344
+00:11:21.130 --> 00:11:23.250
+<v Karen Sandler:>Um, and they they certainly could never
+
+345
+00:11:23.250 --> 00:11:25.170
+<v Karen Sandler:>have afforded an education otherwise.
+
+346
+00:11:25.290 --> 00:11:26.290
+<v Karen Sandler:>Um, if he hadn't had.
+
+347
+00:11:26.330 --> 00:11:29.089
+<v Karen Sandler:>So the fact that that, um, that
+
+348
+00:11:29.090 --> 00:11:30.650
+<v Karen Sandler:>that happened and that had such an
+
+349
+00:11:30.650 --> 00:11:32.770
+<v Karen Sandler:>impact on my family has really stuck
+
+350
+00:11:32.770 --> 00:11:33.050
+<v Karen Sandler:>with me.
+
+351
+00:11:33.050 --> 00:11:34.650
+<v Karen Sandler:>And I think that part of why
+
+352
+00:11:34.650 --> 00:11:36.930
+<v Karen Sandler:>I'm so focused on public good now
+
+353
+00:11:36.930 --> 00:11:38.490
+<v Karen Sandler:>is in part because of how grateful
+
+354
+00:11:38.490 --> 00:11:41.250
+<v Karen Sandler:>I am for these structures that helped
+
+355
+00:11:41.370 --> 00:11:42.810
+<v Karen Sandler:>me and my family succeed.
+
+356
+00:11:44.210 --> 00:11:46.290
+<v Elisabetta Mori:>So what did you do after graduation?
+
+357
+00:11:47.250 --> 00:11:49.810
+<v Karen Sandler:>So after Cooper, I went straight to
+
+358
+00:11:49.850 --> 00:11:51.690
+<v Karen Sandler:>law school at Columbia Law School.
+
+359
+00:11:52.370 --> 00:11:54.770
+<v Karen Sandler:>Um, and I can't really give you
+
+360
+00:11:54.770 --> 00:11:56.930
+<v Karen Sandler:>a good reason why I did that.
+
+361
+00:11:56.930 --> 00:11:58.370
+<v Karen Sandler:>I really thought I was going to
+
+362
+00:11:58.570 --> 00:12:00.210
+<v Karen Sandler:>do physics grad school.
+
+363
+00:12:00.370 --> 00:12:03.650
+<v Karen Sandler:>But, uh, my, uh, my family was,
+
+364
+00:12:03.770 --> 00:12:06.090
+<v Karen Sandler:>was sort of, uh, pushing me towards
+
+365
+00:12:06.130 --> 00:12:06.689
+<v Karen Sandler:>the law.
+
+366
+00:12:06.890 --> 00:12:08.890
+<v Karen Sandler:>Um, just really to find a profession
+
+367
+00:12:08.890 --> 00:12:11.290
+<v Karen Sandler:>that was more secure financially, which I
+
+368
+00:12:11.330 --> 00:12:12.290
+<v Karen Sandler:>totally respect.
+
+369
+00:12:12.330 --> 00:12:14.530
+<v Karen Sandler:>And, um, I thought law could be
+
+370
+00:12:14.530 --> 00:12:17.130
+<v Karen Sandler:>interdisciplinary, and, um, it would be fun.
+
+371
+00:12:17.130 --> 00:12:18.770
+<v Karen Sandler:>So, um, I got into Columbia Law
+
+372
+00:12:18.770 --> 00:12:20.170
+<v Karen Sandler:>School and I went there, which was
+
+373
+00:12:20.170 --> 00:12:20.890
+<v Karen Sandler:>really great.
+
+374
+00:12:20.890 --> 00:12:22.890
+<v Karen Sandler:>I took a whole variety of classes.
+
+375
+00:12:23.130 --> 00:12:25.170
+<v Karen Sandler:>Um, and, uh, and then when I
+
+376
+00:12:25.210 --> 00:12:29.370
+<v Karen Sandler:>graduated, I kind of fell into a
+
+377
+00:12:29.370 --> 00:12:30.490
+<v Karen Sandler:>corporate law job.
+
+378
+00:12:30.490 --> 00:12:32.810
+<v Karen Sandler:>So they have, like, on campus interviewing,
+
+379
+00:12:33.090 --> 00:12:35.210
+<v Karen Sandler:>um, and all the law firms come
+
+380
+00:12:35.210 --> 00:12:36.410
+<v Karen Sandler:>and they try to recruit.
+
+381
+00:12:36.410 --> 00:12:37.970
+<v Karen Sandler:>And at the time, the market was
+
+382
+00:12:37.970 --> 00:12:38.930
+<v Karen Sandler:>really booming.
+
+383
+00:12:39.250 --> 00:12:40.800
+<v Karen Sandler:>Um, and so there were a lot
+
+384
+00:12:40.840 --> 00:12:43.560
+<v Karen Sandler:>of, um, of lucrative corporate opportunities.
+
+385
+00:12:43.560 --> 00:12:44.760
+<v Karen Sandler:>And as I said, I wasn't very
+
+386
+00:12:44.760 --> 00:12:46.120
+<v Karen Sandler:>civic minded at the time.
+
+387
+00:12:46.360 --> 00:12:47.880
+<v Karen Sandler:>Um, and I hadn't really thought too
+
+388
+00:12:47.880 --> 00:12:51.240
+<v Karen Sandler:>much about, um, about doing any kind
+
+389
+00:12:51.240 --> 00:12:52.400
+<v Karen Sandler:>of public good work.
+
+390
+00:12:52.640 --> 00:12:54.080
+<v Karen Sandler:>Um, so I did all this on
+
+391
+00:12:54.080 --> 00:12:57.040
+<v Karen Sandler:>campus interviewing, and one of the law
+
+392
+00:12:57.040 --> 00:12:59.000
+<v Karen Sandler:>firms said, if you come work for
+
+393
+00:12:59.000 --> 00:13:01.360
+<v Karen Sandler:>us because it's a summer internship and
+
+394
+00:13:01.360 --> 00:13:02.480
+<v Karen Sandler:>then you get hired for the job
+
+395
+00:13:02.480 --> 00:13:03.200
+<v Karen Sandler:>afterwards.
+
+396
+00:13:03.200 --> 00:13:04.360
+<v Karen Sandler:>So if the summer internship is the
+
+397
+00:13:04.360 --> 00:13:04.839
+<v Karen Sandler:>big thing.
+
+398
+00:13:04.920 --> 00:13:05.920
+<v Karen Sandler:>And so they said, if you come
+
+399
+00:13:05.960 --> 00:13:07.840
+<v Karen Sandler:>work for us for your summer interview,
+
+400
+00:13:07.880 --> 00:13:09.160
+<v Karen Sandler:>we'll let you spend half of the
+
+401
+00:13:09.200 --> 00:13:10.200
+<v Karen Sandler:>summer in Hong Kong.
+
+402
+00:13:10.680 --> 00:13:12.320
+<v Karen Sandler:>And I was like, you'll work in
+
+403
+00:13:12.320 --> 00:13:13.000
+<v Karen Sandler:>our Hong Kong office.
+
+404
+00:13:13.040 --> 00:13:15.560
+<v Karen Sandler:>And I was like, yeah, like, I
+
+405
+00:13:15.560 --> 00:13:16.760
+<v Karen Sandler:>want to go to Hong Kong.
+
+406
+00:13:17.040 --> 00:13:17.480
+<v Karen Sandler:>So.
+
+407
+00:13:17.600 --> 00:13:19.080
+<v Karen Sandler:>So that's how I chose to become
+
+408
+00:13:19.080 --> 00:13:20.319
+<v Karen Sandler:>a securities lawyer.
+
+409
+00:13:21.280 --> 00:13:23.160
+<v Karen Sandler:>I took that summer internship and I
+
+410
+00:13:23.160 --> 00:13:24.600
+<v Karen Sandler:>had such a good time doing it.
+
+411
+00:13:24.640 --> 00:13:27.080
+<v Karen Sandler:>Um, when I was in Hong Kong,
+
+412
+00:13:27.280 --> 00:13:29.200
+<v Karen Sandler:>in the office, the law firm announced
+
+413
+00:13:29.200 --> 00:13:30.880
+<v Karen Sandler:>that they were merging with an English
+
+414
+00:13:30.880 --> 00:13:32.880
+<v Karen Sandler:>law firm called Clifford Chance, and they
+
+415
+00:13:32.880 --> 00:13:35.880
+<v Karen Sandler:>were merging with a US law firm.
+
+416
+00:13:36.120 --> 00:13:37.319
+<v Karen Sandler:>And the people in the Hong Kong
+
+417
+00:13:37.360 --> 00:13:39.160
+<v Karen Sandler:>office said, You don't really want to
+
+418
+00:13:39.200 --> 00:13:40.400
+<v Karen Sandler:>work for those like we don't know
+
+419
+00:13:40.400 --> 00:13:42.040
+<v Karen Sandler:>anything about that other law firm.
+
+420
+00:13:42.080 --> 00:13:45.000
+<v Karen Sandler:>They're, you know, they're doing their own
+
+421
+00:13:45.000 --> 00:13:45.200
+<v Karen Sandler:>thing.
+
+422
+00:13:45.200 --> 00:13:46.480
+<v Karen Sandler:>You want to stay with us.
+
+423
+00:13:46.640 --> 00:13:48.280
+<v Karen Sandler:>So we're going to recommend that you
+
+424
+00:13:48.280 --> 00:13:49.920
+<v Karen Sandler:>start working in London.
+
+425
+00:13:49.920 --> 00:13:51.920
+<v Karen Sandler:>And I was like, ooh, London sounds
+
+426
+00:13:51.920 --> 00:13:52.479
+<v Karen Sandler:>nice.
+
+427
+00:13:52.760 --> 00:13:54.240
+<v Karen Sandler:>So, uh, yeah.
+
+428
+00:13:54.240 --> 00:13:55.680
+<v Karen Sandler:>So I wound up starting my career
+
+429
+00:13:55.680 --> 00:13:57.680
+<v Karen Sandler:>in the London office of Clifford Chance
+
+430
+00:13:57.960 --> 00:14:01.280
+<v Karen Sandler:>as a cross-border securities lawyer doing transactional
+
+431
+00:14:01.280 --> 00:14:01.760
+<v Karen Sandler:>work.
+
+432
+00:14:01.800 --> 00:14:03.520
+<v Karen Sandler:>And, um, and that was great because
+
+433
+00:14:03.520 --> 00:14:04.680
+<v Karen Sandler:>I was able to bring my technical
+
+434
+00:14:04.680 --> 00:14:07.880
+<v Karen Sandler:>background to help evaluate these all of
+
+435
+00:14:07.880 --> 00:14:09.920
+<v Karen Sandler:>these technological companies that were very large.
+
+436
+00:14:09.960 --> 00:14:12.640
+<v Karen Sandler:>And, um, I really enjoyed it.
+
+437
+00:14:12.640 --> 00:14:14.000
+<v Karen Sandler:>I moved back to the New York
+
+438
+00:14:14.000 --> 00:14:16.320
+<v Karen Sandler:>office, um, and the partner I worked
+
+439
+00:14:16.320 --> 00:14:19.400
+<v Karen Sandler:>for, uh, shifted over to another law
+
+440
+00:14:19.400 --> 00:14:20.880
+<v Karen Sandler:>firm called Gibson Dunn, which was really
+
+441
+00:14:20.880 --> 00:14:21.480
+<v Karen Sandler:>fantastic.
+
+442
+00:14:21.480 --> 00:14:22.560
+<v Karen Sandler:>And so I switched over with him,
+
+443
+00:14:22.560 --> 00:14:23.720
+<v Karen Sandler:>and most of my clients were in
+
+444
+00:14:23.720 --> 00:14:25.480
+<v Karen Sandler:>Brazil, and I really enjoyed that for
+
+445
+00:14:25.480 --> 00:14:25.960
+<v Karen Sandler:>a while.
+
+446
+00:14:25.960 --> 00:14:27.200
+<v Karen Sandler:>And then I was sort of like,
+
+447
+00:14:27.200 --> 00:14:28.840
+<v Karen Sandler:>ah, I don't really know.
+
+448
+00:14:29.480 --> 00:14:31.120
+<v Karen Sandler:>Um, like, this isn't really for me
+
+449
+00:14:31.120 --> 00:14:32.199
+<v Karen Sandler:>for the long term.
+
+450
+00:14:32.360 --> 00:14:34.400
+<v Karen Sandler:>Um, and I was starting to reevaluate
+
+451
+00:14:34.400 --> 00:14:36.520
+<v Karen Sandler:>my, um, my situation.
+
+452
+00:14:36.520 --> 00:14:39.600
+<v Karen Sandler:>And so, um, and so I was
+
+453
+00:14:39.600 --> 00:14:40.600
+<v Karen Sandler:>one of the first people at the
+
+454
+00:14:40.600 --> 00:14:42.040
+<v Karen Sandler:>law firm to quit with nothing lined
+
+455
+00:14:42.040 --> 00:14:42.240
+<v Karen Sandler:>up.
+
+456
+00:14:42.240 --> 00:14:44.240
+<v Karen Sandler:>It's like super common now, um, I
+
+457
+00:14:44.240 --> 00:14:45.440
+<v Karen Sandler:>think this is one of those being
+
+458
+00:14:45.440 --> 00:14:48.160
+<v Karen Sandler:>an xennial kind of situations was that
+
+459
+00:14:48.160 --> 00:14:49.880
+<v Karen Sandler:>people didn't really do that before us,
+
+460
+00:14:49.880 --> 00:14:53.400
+<v Karen Sandler:>but, um, so I did that and
+
+461
+00:14:53.400 --> 00:14:57.040
+<v Karen Sandler:>it was sort of, uh, um, it
+
+462
+00:14:57.040 --> 00:14:59.120
+<v Karen Sandler:>was it caused a lot of like,
+
+463
+00:14:59.160 --> 00:15:00.920
+<v Karen Sandler:>waves because people were talking about, oh,
+
+464
+00:15:00.920 --> 00:15:01.760
+<v Karen Sandler:>did you hear that?
+
+465
+00:15:01.760 --> 00:15:04.160
+<v Karen Sandler:>Karen quit with nothing lined up just
+
+466
+00:15:04.160 --> 00:15:05.520
+<v Karen Sandler:>because she was, you know, the partner
+
+467
+00:15:05.520 --> 00:15:07.680
+<v Karen Sandler:>I worked for was starting to use
+
+468
+00:15:07.680 --> 00:15:09.360
+<v Karen Sandler:>his political capital to help me make
+
+469
+00:15:09.360 --> 00:15:11.080
+<v Karen Sandler:>partner, and I just didn't want him
+
+470
+00:15:11.080 --> 00:15:11.839
+<v Karen Sandler:>to have to do that because I
+
+471
+00:15:11.840 --> 00:15:13.160
+<v Karen Sandler:>knew I didn't want to make partner.
+
+472
+00:15:13.160 --> 00:15:13.640
+<v Karen Sandler:>So I.
+
+473
+00:15:13.640 --> 00:15:16.640
+<v Karen Sandler:>I gave a very long period of
+
+474
+00:15:16.640 --> 00:15:16.880
+<v Karen Sandler:>notice.
+
+475
+00:15:16.880 --> 00:15:17.920
+<v Karen Sandler:>I let him choose.
+
+476
+00:15:17.920 --> 00:15:19.360
+<v Karen Sandler:>So I worked for six more months,
+
+477
+00:15:19.360 --> 00:15:20.360
+<v Karen Sandler:>and then I was going to take
+
+478
+00:15:20.400 --> 00:15:21.880
+<v Karen Sandler:>a, I was going to take another
+
+479
+00:15:21.880 --> 00:15:24.000
+<v Karen Sandler:>six months off before I started looking
+
+480
+00:15:24.000 --> 00:15:24.440
+<v Karen Sandler:>for a job.
+
+481
+00:15:24.440 --> 00:15:26.040
+<v Karen Sandler:>But then I heard that the Software
+
+482
+00:15:26.040 --> 00:15:27.319
+<v Karen Sandler:>Freedom Law Center was hiring.
+
+483
+00:15:27.320 --> 00:15:29.880
+<v Karen Sandler:>The founder, Eben Moglen, had, uh, been
+
+484
+00:15:29.920 --> 00:15:32.600
+<v Karen Sandler:>my professor in law school, and so
+
+485
+00:15:32.880 --> 00:15:34.560
+<v Karen Sandler:>he asked me if I wanted to,
+
+486
+00:15:35.280 --> 00:15:36.720
+<v Karen Sandler:>apply there because he he knew I
+
+487
+00:15:36.720 --> 00:15:38.640
+<v Karen Sandler:>was technical and we had, um, you
+
+488
+00:15:38.640 --> 00:15:40.640
+<v Karen Sandler:>know, I'd been in his class and
+
+489
+00:15:40.640 --> 00:15:41.800
+<v Karen Sandler:>so that's how I wound up at
+
+490
+00:15:41.800 --> 00:15:43.840
+<v Karen Sandler:>the Software Freedom Law Center even before
+
+491
+00:15:43.840 --> 00:15:44.760
+<v Karen Sandler:>I wanted to start looking.
+
+492
+00:15:44.760 --> 00:15:46.400
+<v Karen Sandler:>So I got very, very, very lucky.
+
+493
+00:15:46.760 --> 00:15:48.160
+<v Karen Sandler:>And I was someone who really thought
+
+494
+00:15:48.160 --> 00:15:48.480
+<v Karen Sandler:>that.
+
+495
+00:15:48.480 --> 00:15:49.760
+<v Karen Sandler:>I really thought that open source was
+
+496
+00:15:49.760 --> 00:15:49.960
+<v Karen Sandler:>cool.
+
+497
+00:15:50.000 --> 00:15:51.240
+<v Karen Sandler:>As I said, in college, I installed
+
+498
+00:15:51.240 --> 00:15:52.200
+<v Karen Sandler:>those Linux labs.
+
+499
+00:15:52.480 --> 00:15:54.600
+<v Karen Sandler:>I really thought that it was a
+
+500
+00:15:54.640 --> 00:15:58.160
+<v Karen Sandler:>neat thing, but I did not think
+
+501
+00:15:58.280 --> 00:16:00.360
+<v Karen Sandler:>that I, I didn't really think too
+
+502
+00:16:00.360 --> 00:16:02.680
+<v Karen Sandler:>much about the societal implications of it
+
+503
+00:16:02.680 --> 00:16:04.880
+<v Karen Sandler:>or, or what it might mean for
+
+504
+00:16:04.880 --> 00:16:07.200
+<v Karen Sandler:>me, but I still felt so lucky
+
+505
+00:16:07.200 --> 00:16:08.520
+<v Karen Sandler:>to have landed in such a cool
+
+506
+00:16:08.520 --> 00:16:09.040
+<v Karen Sandler:>job.
+
+507
+00:16:10.400 --> 00:16:15.640
+<v Elisabetta Mori:>So, um, this was 2005, 2006?
+
+508
+00:16:17.360 --> 00:16:19.199
+<v Karen Sandler:>Yeah, I think it was 2005.
+
+509
+00:16:19.560 --> 00:16:20.599
+<v Elisabetta Mori:>2005.
+
+510
+00:16:20.600 --> 00:16:22.680
+<v Elisabetta Mori:>And you work for the Software Freedom
+
+511
+00:16:22.680 --> 00:16:26.760
+<v Elisabetta Mori:>Law Center from 2005 to 2011?
+
+512
+00:16:27.360 --> 00:16:28.920
+<v Karen Sandler:>Well, it's such a neat job because
+
+513
+00:16:28.920 --> 00:16:31.400
+<v Karen Sandler:>I met so many amazing developers and
+
+514
+00:16:31.400 --> 00:16:33.670
+<v Karen Sandler:>I heard from them, You know why
+
+515
+00:16:33.670 --> 00:16:34.350
+<v Karen Sandler:>they contributed?
+
+516
+00:16:34.350 --> 00:16:35.870
+<v Karen Sandler:>Why they were so passionate about free
+
+517
+00:16:35.870 --> 00:16:37.150
+<v Karen Sandler:>and open source software.
+
+518
+00:16:37.190 --> 00:16:38.670
+<v Karen Sandler:>You know, whether it was the folks
+
+519
+00:16:38.670 --> 00:16:41.750
+<v Karen Sandler:>that were, um, you know, really the
+
+520
+00:16:41.750 --> 00:16:43.750
+<v Karen Sandler:>the copyleft advocates, the folks working at
+
+521
+00:16:43.750 --> 00:16:46.390
+<v Karen Sandler:>the Free Software Foundation or people who
+
+522
+00:16:46.390 --> 00:16:49.590
+<v Karen Sandler:>were passionate about the collaboration component, like
+
+523
+00:16:49.590 --> 00:16:50.910
+<v Karen Sandler:>the folks that were my clients at
+
+524
+00:16:50.910 --> 00:16:52.830
+<v Karen Sandler:>the Apache Software Foundation.
+
+525
+00:16:52.830 --> 00:16:55.670
+<v Karen Sandler:>And then, um, most interestingly, perhaps, was
+
+526
+00:16:55.670 --> 00:16:57.430
+<v Karen Sandler:>my where my clients like the ones,
+
+527
+00:16:57.470 --> 00:17:02.590
+<v Karen Sandler:>um, at X.Org, um, who were really
+
+528
+00:17:02.590 --> 00:17:04.829
+<v Karen Sandler:>when I met them, were very adamant
+
+529
+00:17:04.829 --> 00:17:09.909
+<v Karen Sandler:>about, um, being non-copyleft that permissive licensing
+
+530
+00:17:10.349 --> 00:17:12.430
+<v Karen Sandler:>was an ideological choice.
+
+531
+00:17:12.430 --> 00:17:14.710
+<v Karen Sandler:>In other words, not trying to have,
+
+532
+00:17:14.790 --> 00:17:16.109
+<v Karen Sandler:>um, you know, making sure you don't
+
+533
+00:17:16.109 --> 00:17:18.790
+<v Karen Sandler:>have that reciprocal component to the licensing.
+
+534
+00:17:18.990 --> 00:17:20.790
+<v Karen Sandler:>Um, who over the course of this,
+
+535
+00:17:20.829 --> 00:17:23.350
+<v Karen Sandler:>of my career that there's one developer
+
+536
+00:17:23.349 --> 00:17:25.670
+<v Karen Sandler:>in particular, Keith Packard, who came completely
+
+537
+00:17:25.670 --> 00:17:27.069
+<v Karen Sandler:>around and now is a very strong
+
+538
+00:17:27.069 --> 00:17:29.270
+<v Karen Sandler:>copyleft advocate because he was burned so
+
+539
+00:17:29.270 --> 00:17:32.030
+<v Karen Sandler:>many times, um, from having his code
+
+540
+00:17:32.070 --> 00:17:34.030
+<v Karen Sandler:>be, uh, be proprietary.
+
+541
+00:17:34.510 --> 00:17:35.670
+<v Karen Sandler:>So it's really, really fascinating.
+
+542
+00:17:35.670 --> 00:17:38.150
+<v Karen Sandler:>But hearing from those developers directly about
+
+543
+00:17:38.150 --> 00:17:40.990
+<v Karen Sandler:>their legal problems, helping them, incorporating their
+
+544
+00:17:40.990 --> 00:17:43.350
+<v Karen Sandler:>organizations, becoming like a really big part
+
+545
+00:17:43.350 --> 00:17:45.390
+<v Karen Sandler:>of their organization, um, and what they
+
+546
+00:17:45.390 --> 00:17:47.510
+<v Karen Sandler:>were doing meant that I got to
+
+547
+00:17:47.550 --> 00:17:48.710
+<v Karen Sandler:>I got to learn why they were
+
+548
+00:17:48.710 --> 00:17:49.270
+<v Karen Sandler:>doing it.
+
+549
+00:17:49.270 --> 00:17:51.590
+<v Karen Sandler:>And um, and the philosophy and it
+
+550
+00:17:51.590 --> 00:17:54.110
+<v Karen Sandler:>really started to sink in.
+
+551
+00:17:54.110 --> 00:17:55.510
+<v Karen Sandler:>And then while I was at the
+
+552
+00:17:55.510 --> 00:17:58.150
+<v Karen Sandler:>Software Freedom Law Center, I found out
+
+553
+00:17:58.150 --> 00:18:00.229
+<v Karen Sandler:>that I had a heart condition that
+
+554
+00:18:00.230 --> 00:18:01.270
+<v Karen Sandler:>I was born with.
+
+555
+00:18:01.430 --> 00:18:04.750
+<v Karen Sandler:>Um, it's called hypertrophic cardiomyopathy.
+
+556
+00:18:04.950 --> 00:18:07.270
+<v Karen Sandler:>It means that I have a big
+
+557
+00:18:08.110 --> 00:18:10.590
+<v Karen Sandler:>and really thick heart, but it's like,
+
+558
+00:18:10.670 --> 00:18:12.430
+<v Karen Sandler:>uh, mine is particularly thick.
+
+559
+00:18:12.710 --> 00:18:14.750
+<v Karen Sandler:>It's, uh, it's like about three times
+
+560
+00:18:14.750 --> 00:18:16.110
+<v Karen Sandler:>the size of parts of it are
+
+561
+00:18:16.110 --> 00:18:17.189
+<v Karen Sandler:>about three times the size of a
+
+562
+00:18:17.190 --> 00:18:17.950
+<v Karen Sandler:>normal person's heart.
+
+563
+00:18:17.950 --> 00:18:18.990
+<v Karen Sandler:>And it was totally fine.
+
+564
+00:18:18.990 --> 00:18:20.470
+<v Karen Sandler:>I didn't have any symptoms.
+
+565
+00:18:20.470 --> 00:18:21.910
+<v Karen Sandler:>I happened to find out about it
+
+566
+00:18:21.950 --> 00:18:24.270
+<v Karen Sandler:>somewhat accidentally because I was getting migraine
+
+567
+00:18:24.270 --> 00:18:24.950
+<v Karen Sandler:>headaches.
+
+568
+00:18:25.870 --> 00:18:27.270
+<v Karen Sandler:>Neurologists, they heard I had a murmur.
+
+569
+00:18:27.310 --> 00:18:28.390
+<v Karen Sandler:>Anyway, so I found out about my
+
+570
+00:18:28.390 --> 00:18:31.790
+<v Karen Sandler:>heart condition In and um, and the,
+
+571
+00:18:31.790 --> 00:18:33.070
+<v Karen Sandler:>the main thing about it was that
+
+572
+00:18:33.070 --> 00:18:35.550
+<v Karen Sandler:>I needed to get an implanted pacemaker
+
+573
+00:18:35.550 --> 00:18:38.550
+<v Karen Sandler:>defibrillator just for the defibrillator part so
+
+574
+00:18:38.550 --> 00:18:40.110
+<v Karen Sandler:>that, um, because I was at a
+
+575
+00:18:40.110 --> 00:18:41.710
+<v Karen Sandler:>very high risk of sudden death.
+
+576
+00:18:41.990 --> 00:18:46.110
+<v Karen Sandler:>And so, um, like, being technical and
+
+577
+00:18:46.110 --> 00:18:48.830
+<v Karen Sandler:>being diagnosed with this condition and knowing
+
+578
+00:18:48.870 --> 00:18:50.270
+<v Karen Sandler:>that I need to, to get a
+
+579
+00:18:50.270 --> 00:18:53.030
+<v Karen Sandler:>device, it made me research the device.
+
+580
+00:18:53.030 --> 00:18:54.310
+<v Karen Sandler:>And I really wanted to learn about
+
+581
+00:18:54.310 --> 00:18:55.670
+<v Karen Sandler:>the software on the device.
+
+582
+00:18:55.670 --> 00:18:57.870
+<v Karen Sandler:>And I hit a complete dead end
+
+583
+00:18:57.910 --> 00:19:01.150
+<v Karen Sandler:>in my research where, um, the companies
+
+584
+00:19:01.150 --> 00:19:04.150
+<v Karen Sandler:>had were not able to share any
+
+585
+00:19:04.150 --> 00:19:05.550
+<v Karen Sandler:>of the information with me to help
+
+586
+00:19:05.550 --> 00:19:07.630
+<v Karen Sandler:>me understand how my own defibrillator would
+
+587
+00:19:07.630 --> 00:19:07.910
+<v Karen Sandler:>work.
+
+588
+00:19:07.910 --> 00:19:09.710
+<v Karen Sandler:>And it was funny because talking to
+
+589
+00:19:09.750 --> 00:19:12.870
+<v Karen Sandler:>the doctors, um, you know, just I
+
+590
+00:19:12.910 --> 00:19:14.189
+<v Karen Sandler:>just asked them, you know, what do
+
+591
+00:19:14.190 --> 00:19:14.389
+<v Karen Sandler:>you know?
+
+592
+00:19:14.430 --> 00:19:15.430
+<v Karen Sandler:>What can you tell me about the
+
+593
+00:19:15.430 --> 00:19:16.510
+<v Karen Sandler:>software in this device?
+
+594
+00:19:16.510 --> 00:19:19.070
+<v Karen Sandler:>And my the first electrophysiologist I had,
+
+595
+00:19:19.110 --> 00:19:20.590
+<v Karen Sandler:>his response was software.
+
+596
+00:19:20.910 --> 00:19:22.110
+<v Karen Sandler:>Like, what are you talking about?
+
+597
+00:19:22.150 --> 00:19:23.990
+<v Karen Sandler:>And I explained, this device is run
+
+598
+00:19:23.990 --> 00:19:25.470
+<v Karen Sandler:>by like there's software on the device.
+
+599
+00:19:25.470 --> 00:19:26.990
+<v Karen Sandler:>It's critical to how it operates.
+
+600
+00:19:27.030 --> 00:19:28.949
+<v Karen Sandler:>And he had he had no idea.
+
+601
+00:19:28.990 --> 00:19:30.270
+<v Karen Sandler:>He was like, no, it just works.
+
+602
+00:19:30.630 --> 00:19:32.870
+<v Karen Sandler:>He's like, no, there's there's details here
+
+603
+00:19:32.870 --> 00:19:34.350
+<v Karen Sandler:>you probably should worry about.
+
+604
+00:19:34.350 --> 00:19:36.669
+<v Karen Sandler:>And then, um, he called the, you
+
+605
+00:19:36.670 --> 00:19:39.629
+<v Karen Sandler:>know, the device representative, the technician, the
+
+606
+00:19:39.630 --> 00:19:41.389
+<v Karen Sandler:>tech representative who was there at the
+
+607
+00:19:41.390 --> 00:19:41.670
+<v Karen Sandler:>moment.
+
+608
+00:19:41.670 --> 00:19:43.389
+<v Karen Sandler:>I got lucky in the office and
+
+609
+00:19:43.390 --> 00:19:46.230
+<v Karen Sandler:>that representative said software.
+
+610
+00:19:46.550 --> 00:19:48.870
+<v Karen Sandler:>So it was this funny, like, you
+
+611
+00:19:48.870 --> 00:19:50.990
+<v Karen Sandler:>know, it was a long time ago
+
+612
+00:19:51.230 --> 00:19:54.790
+<v Karen Sandler:>and, um, I think people hadn't really
+
+613
+00:19:54.790 --> 00:19:56.710
+<v Karen Sandler:>thought very much about software.
+
+614
+00:19:56.750 --> 00:19:59.030
+<v Karen Sandler:>And so I was, I think the
+
+615
+00:19:59.030 --> 00:20:02.430
+<v Karen Sandler:>introduction to these issues, uh, the electrophysiologist
+
+616
+00:20:02.430 --> 00:20:03.790
+<v Karen Sandler:>that I was working with, got so
+
+617
+00:20:03.790 --> 00:20:05.510
+<v Karen Sandler:>upset when I started to explain the
+
+618
+00:20:05.510 --> 00:20:07.590
+<v Karen Sandler:>things that could go wrong with software
+
+619
+00:20:07.830 --> 00:20:09.510
+<v Karen Sandler:>that, um, and why I was so
+
+620
+00:20:09.510 --> 00:20:10.110
+<v Karen Sandler:>nervous about it.
+
+621
+00:20:10.110 --> 00:20:11.110
+<v Karen Sandler:>This is on a follow up phone
+
+622
+00:20:11.110 --> 00:20:13.470
+<v Karen Sandler:>call, and I explained why I really
+
+623
+00:20:13.470 --> 00:20:14.910
+<v Karen Sandler:>wanted this information.
+
+624
+00:20:14.950 --> 00:20:17.550
+<v Karen Sandler:>And, um, he got so upset that
+
+625
+00:20:17.550 --> 00:20:20.630
+<v Karen Sandler:>he hung up on me because he
+
+626
+00:20:20.830 --> 00:20:24.830
+<v Karen Sandler:>implanted, you know, sometimes multiple defibrillators on
+
+627
+00:20:24.830 --> 00:20:25.790
+<v Karen Sandler:>a single day.
+
+628
+00:20:25.910 --> 00:20:27.980
+<v Karen Sandler:>And I think the idea of anyone
+
+629
+00:20:28.020 --> 00:20:30.020
+<v Karen Sandler:>asking questions about its safety and efficacy
+
+630
+00:20:30.220 --> 00:20:32.939
+<v Karen Sandler:>implied that somehow he wasn't doing a
+
+631
+00:20:32.940 --> 00:20:33.620
+<v Karen Sandler:>good job.
+
+632
+00:20:33.940 --> 00:20:35.740
+<v Karen Sandler:>But, you know, it was a really
+
+633
+00:20:35.740 --> 00:20:36.979
+<v Karen Sandler:>interesting education for me.
+
+634
+00:20:37.020 --> 00:20:38.620
+<v Karen Sandler:>It was a very bleak moment and
+
+635
+00:20:38.620 --> 00:20:39.580
+<v Karen Sandler:>very upsetting.
+
+636
+00:20:39.780 --> 00:20:43.180
+<v Karen Sandler:>But, um, but I realized that the
+
+637
+00:20:43.180 --> 00:20:45.379
+<v Karen Sandler:>way we think about software as human
+
+638
+00:20:45.380 --> 00:20:50.180
+<v Karen Sandler:>beings and as professionals is, is, is
+
+639
+00:20:50.180 --> 00:20:51.540
+<v Karen Sandler:>really different than the way that the
+
+640
+00:20:51.540 --> 00:20:53.900
+<v Karen Sandler:>technology actually works and what we can
+
+641
+00:20:53.900 --> 00:20:54.340
+<v Karen Sandler:>rely on.
+
+642
+00:20:54.380 --> 00:20:57.340
+<v Karen Sandler:>So I really thought that, um, I
+
+643
+00:20:57.340 --> 00:21:00.620
+<v Karen Sandler:>became really passionate and really convinced that
+
+644
+00:21:00.620 --> 00:21:02.020
+<v Karen Sandler:>we need to be able to audit
+
+645
+00:21:02.020 --> 00:21:02.540
+<v Karen Sandler:>the software.
+
+646
+00:21:02.540 --> 00:21:04.300
+<v Karen Sandler:>We rely on the idea that there
+
+647
+00:21:04.300 --> 00:21:07.780
+<v Karen Sandler:>would be software in my body, implanted
+
+648
+00:21:07.780 --> 00:21:10.300
+<v Karen Sandler:>in my body, and screwed into my
+
+649
+00:21:10.300 --> 00:21:12.699
+<v Karen Sandler:>heart was and that I wouldn't be
+
+650
+00:21:12.700 --> 00:21:16.940
+<v Karen Sandler:>able to see it was just completely
+
+651
+00:21:16.940 --> 00:21:19.419
+<v Karen Sandler:>baffling, just completely baffling.
+
+652
+00:21:19.500 --> 00:21:21.899
+<v Karen Sandler:>And so it caused me to really
+
+653
+00:21:21.940 --> 00:21:24.260
+<v Karen Sandler:>advocate for the transparency of these devices.
+
+654
+00:21:24.260 --> 00:21:25.260
+<v Karen Sandler:>I wrote a paper.
+
+655
+00:21:25.540 --> 00:21:28.540
+<v Karen Sandler:>Um, you know, I started doing, uh,
+
+656
+00:21:28.540 --> 00:21:29.179
+<v Karen Sandler:>other work.
+
+657
+00:21:29.180 --> 00:21:32.300
+<v Karen Sandler:>I filed Freedom of Information Act requests
+
+658
+00:21:32.300 --> 00:21:34.380
+<v Karen Sandler:>with the medical device manufacturers to see
+
+659
+00:21:34.380 --> 00:21:34.900
+<v Karen Sandler:>what I could find.
+
+660
+00:21:34.940 --> 00:21:36.980
+<v Karen Sandler:>I mostly hit brick walls, but the
+
+661
+00:21:36.980 --> 00:21:39.620
+<v Karen Sandler:>advocacy component was really important.
+
+662
+00:21:39.940 --> 00:21:40.860
+<v Karen Sandler:>And, um.
+
+663
+00:21:41.260 --> 00:21:43.620
+<v Karen Sandler:>And as I lived with my defibrillator,
+
+664
+00:21:44.180 --> 00:21:46.940
+<v Karen Sandler:>I, um, I had other circumstances that
+
+665
+00:21:46.940 --> 00:21:48.340
+<v Karen Sandler:>made me realize that it wasn't just
+
+666
+00:21:48.340 --> 00:21:49.540
+<v Karen Sandler:>about transparency, so.
+
+667
+00:21:50.740 --> 00:21:51.699
+<v Karen Sandler:>So I did all this work at
+
+668
+00:21:51.700 --> 00:21:52.700
+<v Karen Sandler:>the Software Freedom Law Center.
+
+669
+00:21:52.700 --> 00:21:53.700
+<v Karen Sandler:>I know you're trying to get some
+
+670
+00:21:53.700 --> 00:21:56.380
+<v Karen Sandler:>narrative of my my timeline here.
+
+671
+00:21:56.380 --> 00:21:57.620
+<v Karen Sandler:>So so I kept working at the
+
+672
+00:21:57.620 --> 00:21:58.660
+<v Karen Sandler:>Software Freedom Law Center.
+
+673
+00:21:58.660 --> 00:22:00.340
+<v Karen Sandler:>I became general counsel there.
+
+674
+00:22:00.460 --> 00:22:03.420
+<v Karen Sandler:>Um, and, um, I still provided legal
+
+675
+00:22:03.420 --> 00:22:05.700
+<v Karen Sandler:>advice to the clients of the Software
+
+676
+00:22:05.700 --> 00:22:07.939
+<v Karen Sandler:>Freedom Law Center, which were really amazing
+
+677
+00:22:07.940 --> 00:22:09.780
+<v Karen Sandler:>organizations in and of themselves.
+
+678
+00:22:09.980 --> 00:22:12.380
+<v Karen Sandler:>And, um, and over time, um, one
+
+679
+00:22:12.380 --> 00:22:14.500
+<v Karen Sandler:>of those clients recruited me to be
+
+680
+00:22:14.500 --> 00:22:15.780
+<v Karen Sandler:>their executive director.
+
+681
+00:22:15.780 --> 00:22:17.180
+<v Karen Sandler:>So I went over to the GNOME
+
+682
+00:22:17.220 --> 00:22:20.980
+<v Karen Sandler:>Foundation, and GNOME is, um, is desktop
+
+683
+00:22:20.980 --> 00:22:21.380
+<v Karen Sandler:>software.
+
+684
+00:22:21.380 --> 00:22:23.980
+<v Karen Sandler:>So if you're running a Linux machine.
+
+685
+00:22:23.980 --> 00:22:26.340
+<v Karen Sandler:>The most common desktop is GNOME, and
+
+686
+00:22:26.340 --> 00:22:28.740
+<v Karen Sandler:>so they had just launched GNOME three,
+
+687
+00:22:28.740 --> 00:22:29.340
+<v Karen Sandler:>which was this.
+
+688
+00:22:29.340 --> 00:22:31.420
+<v Karen Sandler:>Really it's the it's the format of
+
+689
+00:22:31.900 --> 00:22:34.500
+<v Karen Sandler:>GNOME now and it's just really shiny
+
+690
+00:22:34.500 --> 00:22:35.580
+<v Karen Sandler:>and beautiful.
+
+691
+00:22:35.580 --> 00:22:37.780
+<v Karen Sandler:>And they needed someone to come in
+
+692
+00:22:37.780 --> 00:22:40.260
+<v Karen Sandler:>and and help push the foundation forward.
+
+693
+00:22:40.300 --> 00:22:41.699
+<v Karen Sandler:>And so they recruited me.
+
+694
+00:22:41.700 --> 00:22:43.260
+<v Karen Sandler:>And so I went over there and
+
+695
+00:22:43.340 --> 00:22:45.899
+<v Karen Sandler:>um, and while I was working at
+
+696
+00:22:45.900 --> 00:22:48.220
+<v Karen Sandler:>the Gnome Foundation, I had, um, I
+
+697
+00:22:48.340 --> 00:22:50.100
+<v Karen Sandler:>was pregnant and I was set to
+
+698
+00:22:50.140 --> 00:22:53.060
+<v Karen Sandler:>have, um, to have a baby.
+
+699
+00:22:53.060 --> 00:22:56.300
+<v Karen Sandler:>And while I was pregnant, my heart
+
+700
+00:22:56.300 --> 00:22:59.060
+<v Karen Sandler:>palpitated, which happens to about like a
+
+701
+00:22:59.060 --> 00:23:01.340
+<v Karen Sandler:>third of all pregnant people, there's like,
+
+702
+00:23:01.340 --> 00:23:02.580
+<v Karen Sandler:>you know, a third of all pregnancies.
+
+703
+00:23:02.620 --> 00:23:05.260
+<v Karen Sandler:>You or maybe something like that.
+
+704
+00:23:05.300 --> 00:23:06.460
+<v Karen Sandler:>It's super, super common.
+
+705
+00:23:06.700 --> 00:23:08.500
+<v Karen Sandler:>Um, your heart, like, beats a little
+
+706
+00:23:08.500 --> 00:23:10.100
+<v Karen Sandler:>bit faster, has palpitations.
+
+707
+00:23:10.420 --> 00:23:12.820
+<v Karen Sandler:>Um, when I give this talk in
+
+708
+00:23:12.820 --> 00:23:14.380
+<v Karen Sandler:>a whole room, all the women are
+
+709
+00:23:14.380 --> 00:23:16.020
+<v Karen Sandler:>usually, like, nodding their heads.
+
+710
+00:23:16.060 --> 00:23:17.500
+<v Karen Sandler:>Um, and it would be fine if
+
+711
+00:23:17.540 --> 00:23:18.699
+<v Karen Sandler:>you were pregnant and went to the
+
+712
+00:23:18.700 --> 00:23:19.340
+<v Karen Sandler:>doctor and said.
+
+713
+00:23:19.340 --> 00:23:20.420
+<v Karen Sandler:>I've had my heart beating.
+
+714
+00:23:20.420 --> 00:23:20.660
+<v Karen Sandler:>Funny.
+
+715
+00:23:20.660 --> 00:23:22.810
+<v Karen Sandler:>They'll say, oh, you're pregnant, it's palpitations.
+
+716
+00:23:22.810 --> 00:23:24.410
+<v Karen Sandler:>Let us know if you pass out
+
+717
+00:23:24.410 --> 00:23:25.889
+<v Karen Sandler:>or if you feel lightheaded.
+
+718
+00:23:25.930 --> 00:23:26.330
+<v Karen Sandler:>Right.
+
+719
+00:23:26.410 --> 00:23:27.530
+<v Karen Sandler:>And none of those things happen to
+
+720
+00:23:27.570 --> 00:23:29.889
+<v Karen Sandler:>me except that I had a defibrillator.
+
+721
+00:23:30.290 --> 00:23:32.170
+<v Karen Sandler:>And my defibrillator thought my heart was
+
+722
+00:23:32.170 --> 00:23:33.490
+<v Karen Sandler:>in a dangerous rhythm.
+
+723
+00:23:33.970 --> 00:23:36.050
+<v Karen Sandler:>And even though I didn't need it
+
+724
+00:23:36.050 --> 00:23:39.170
+<v Karen Sandler:>to, it shocked me unnecessarily.
+
+725
+00:23:39.170 --> 00:23:40.170
+<v Karen Sandler:>Repeatedly.
+
+726
+00:23:40.930 --> 00:23:42.170
+<v Karen Sandler:>And the only way I could get
+
+727
+00:23:42.170 --> 00:23:43.970
+<v Karen Sandler:>it to stop shocking me was to
+
+728
+00:23:44.010 --> 00:23:46.490
+<v Karen Sandler:>take medication that slowed my heart rate
+
+729
+00:23:46.490 --> 00:23:48.410
+<v Karen Sandler:>down so much that it was hard
+
+730
+00:23:48.410 --> 00:23:50.290
+<v Karen Sandler:>to climb up a flight of stairs.
+
+731
+00:23:51.130 --> 00:23:54.250
+<v Karen Sandler:>And being pregnant was a temporary condition.
+
+732
+00:23:54.890 --> 00:23:56.450
+<v Karen Sandler:>I've done it twice.
+
+733
+00:23:56.450 --> 00:23:57.530
+<v Karen Sandler:>The babies are fine.
+
+734
+00:23:58.090 --> 00:23:59.530
+<v Karen Sandler:>Like it all worked out great.
+
+735
+00:24:00.130 --> 00:24:02.530
+<v Karen Sandler:>But I it was really, really eye
+
+736
+00:24:02.530 --> 00:24:04.850
+<v Karen Sandler:>opening because it really stood for the
+
+737
+00:24:04.850 --> 00:24:06.970
+<v Karen Sandler:>proposition that our technology may not be
+
+738
+00:24:06.970 --> 00:24:07.890
+<v Karen Sandler:>made for us.
+
+739
+00:24:09.050 --> 00:24:14.490
+<v Karen Sandler:>Device manufacturers desperately don't want pregnant patients
+
+740
+00:24:14.490 --> 00:24:15.290
+<v Karen Sandler:>getting shocked.
+
+741
+00:24:15.330 --> 00:24:16.370
+<v Karen Sandler:>What a nightmare that is.
+
+742
+00:24:16.370 --> 00:24:17.889
+<v Karen Sandler:>Definitely not what they want.
+
+743
+00:24:19.410 --> 00:24:22.290
+<v Karen Sandler:>But only 15% of defibrillators go to
+
+744
+00:24:22.330 --> 00:24:24.130
+<v Karen Sandler:>people under the age of 65.
+
+745
+00:24:24.410 --> 00:24:25.770
+<v Karen Sandler:>So the number of people who are
+
+746
+00:24:25.770 --> 00:24:28.570
+<v Karen Sandler:>pregnant with defibrillators are teeny, teeny, teeny
+
+747
+00:24:28.570 --> 00:24:29.129
+<v Karen Sandler:>tiny.
+
+748
+00:24:29.690 --> 00:24:31.649
+<v Karen Sandler:>So yeah.
+
+749
+00:24:31.650 --> 00:24:33.330
+<v Karen Sandler:>So that's you know, it just stands
+
+750
+00:24:33.330 --> 00:24:35.610
+<v Karen Sandler:>for the proposition of like our technology
+
+751
+00:24:35.610 --> 00:24:36.690
+<v Karen Sandler:>may not be made for us.
+
+752
+00:24:36.690 --> 00:24:38.130
+<v Karen Sandler:>And what will we do when it
+
+753
+00:24:38.130 --> 00:24:38.770
+<v Karen Sandler:>fails?
+
+754
+00:24:38.930 --> 00:24:40.490
+<v Karen Sandler:>So, um.
+
+755
+00:24:41.090 --> 00:24:42.410
+<v Karen Sandler:>Yeah, that's, uh.
+
+756
+00:24:44.090 --> 00:24:44.490
+<v Elisabetta Mori:>Yes.
+
+757
+00:24:44.530 --> 00:24:45.969
+<v Karen Sandler:>Your story puts us on mute for
+
+758
+00:24:45.970 --> 00:24:46.410
+<v Karen Sandler:>one second.
+
+759
+00:24:46.410 --> 00:24:47.050
+<v Karen Sandler:>I'm sorry.
+
+760
+00:24:48.370 --> 00:24:50.410
+<v Elisabetta Mori:>So your story made me, uh, you
+
+761
+00:24:50.410 --> 00:24:52.530
+<v Elisabetta Mori:>know, at the beginning, we discussed also,
+
+762
+00:24:52.570 --> 00:24:55.649
+<v Elisabetta Mori:>this made me think of, um, Marimo,
+
+763
+00:24:55.690 --> 00:24:58.250
+<v Elisabetta Mori:>who, you know, and wrote also a
+
+764
+00:24:58.250 --> 00:25:01.690
+<v Elisabetta Mori:>nice article with about her pacemaker and
+
+765
+00:25:01.690 --> 00:25:04.889
+<v Elisabetta Mori:>how her, as a someone who is
+
+766
+00:25:04.890 --> 00:25:08.050
+<v Elisabetta Mori:>an expert in cybersecurity, realized how, you
+
+767
+00:25:08.050 --> 00:25:11.610
+<v Elisabetta Mori:>know, uh, vulnerable she was by having
+
+768
+00:25:11.850 --> 00:25:14.610
+<v Elisabetta Mori:>some medical implants.
+
+769
+00:25:15.090 --> 00:25:19.530
+<v Elisabetta Mori:>Um, so This is make me making
+
+770
+00:25:19.530 --> 00:25:21.690
+<v Elisabetta Mori:>me think also a lot about.
+
+771
+00:25:22.290 --> 00:25:24.810
+<v Elisabetta Mori:>So this was something that happened to
+
+772
+00:25:24.810 --> 00:25:27.850
+<v Elisabetta Mori:>you in 2006.
+
+773
+00:25:28.290 --> 00:25:31.890
+<v Elisabetta Mori:>Now almost 20 years have passed.
+
+774
+00:25:32.250 --> 00:25:37.730
+<v Elisabetta Mori:>How do you see, uh, everything around
+
+775
+00:25:37.770 --> 00:25:41.250
+<v Elisabetta Mori:>around implanted medical devices.
+
+776
+00:25:41.250 --> 00:25:41.970
+<v Elisabetta Mori:>About.
+
+777
+00:25:42.690 --> 00:25:44.330
+<v Elisabetta Mori:>Around what?
+
+778
+00:25:44.490 --> 00:25:47.610
+<v Elisabetta Mori:>You, as you call yourself cyborg.
+
+779
+00:25:50.010 --> 00:25:52.210
+<v Elisabetta Mori:>So what's the current state?
+
+780
+00:25:52.210 --> 00:25:55.370
+<v Karen Sandler:>So it's so the defibrillator.
+
+781
+00:25:55.370 --> 00:25:56.689
+<v Karen Sandler:>I got that 20 years ago, but
+
+782
+00:25:56.690 --> 00:25:58.010
+<v Karen Sandler:>the pregnancy happened later.
+
+783
+00:25:58.010 --> 00:25:59.129
+<v Karen Sandler:>So it's been this like.
+
+784
+00:25:59.170 --> 00:26:00.929
+<v Karen Sandler:>And so it's a really fascinating to
+
+785
+00:26:00.930 --> 00:26:02.449
+<v Karen Sandler:>me is that I previously thought it
+
+786
+00:26:02.450 --> 00:26:05.410
+<v Karen Sandler:>was only about transparency and auditability.
+
+787
+00:26:05.890 --> 00:26:08.010
+<v Karen Sandler:>Then I realized that it was all
+
+788
+00:26:08.010 --> 00:26:10.250
+<v Karen Sandler:>about, um, control.
+
+789
+00:26:10.570 --> 00:26:12.490
+<v Karen Sandler:>And you know, who has control over
+
+790
+00:26:12.490 --> 00:26:14.209
+<v Karen Sandler:>the software that is that we, that
+
+791
+00:26:14.210 --> 00:26:16.330
+<v Karen Sandler:>we fundamentally rely on, right.
+
+792
+00:26:16.370 --> 00:26:19.090
+<v Karen Sandler:>And then, um, and then most recently
+
+793
+00:26:19.090 --> 00:26:21.129
+<v Karen Sandler:>last year, as is typical with my
+
+794
+00:26:21.130 --> 00:26:22.370
+<v Karen Sandler:>heart condition, I wound up getting an
+
+795
+00:26:22.370 --> 00:26:23.290
+<v Karen Sandler:>irregular heartbeat.
+
+796
+00:26:23.490 --> 00:26:25.410
+<v Karen Sandler:>Um, it happened to my dad from
+
+797
+00:26:25.410 --> 00:26:26.210
+<v Karen Sandler:>when he was 32.
+
+798
+00:26:26.250 --> 00:26:27.290
+<v Karen Sandler:>I was a little older.
+
+799
+00:26:27.450 --> 00:26:29.170
+<v Karen Sandler:>Um, but it's quite common.
+
+800
+00:26:29.170 --> 00:26:30.490
+<v Karen Sandler:>And all of a sudden, I needed
+
+801
+00:26:30.490 --> 00:26:33.490
+<v Karen Sandler:>to know when I got an irregular
+
+802
+00:26:33.490 --> 00:26:34.970
+<v Karen Sandler:>rhythm and if it was safe to
+
+803
+00:26:35.010 --> 00:26:37.250
+<v Karen Sandler:>travel because I had an important trip.
+
+804
+00:26:37.250 --> 00:26:38.850
+<v Karen Sandler:>I was getting an honorary doctorate from
+
+805
+00:26:38.850 --> 00:26:41.610
+<v Karen Sandler:>Calvin, and I really didn't want to
+
+806
+00:26:41.610 --> 00:26:42.570
+<v Karen Sandler:>miss that, because that's kind of a
+
+807
+00:26:42.570 --> 00:26:43.770
+<v Karen Sandler:>once in a lifetime thing.
+
+808
+00:26:44.050 --> 00:26:45.810
+<v Karen Sandler:>But I got this irregular rhythm and
+
+809
+00:26:45.810 --> 00:26:47.770
+<v Karen Sandler:>had to travel two days later.
+
+810
+00:26:48.210 --> 00:26:50.129
+<v Karen Sandler:>And do you know that because the
+
+811
+00:26:50.130 --> 00:26:53.610
+<v Karen Sandler:>device manufacturers representative was out of town
+
+812
+00:26:53.610 --> 00:26:55.970
+<v Karen Sandler:>visiting family in India and they did
+
+813
+00:26:55.970 --> 00:27:00.050
+<v Karen Sandler:>not have an alternate person, I could
+
+814
+00:27:00.050 --> 00:27:02.090
+<v Karen Sandler:>not get my defibrillator interrogated.
+
+815
+00:27:02.130 --> 00:27:04.450
+<v Karen Sandler:>And all of this major metropolitan city
+
+816
+00:27:04.450 --> 00:27:07.970
+<v Karen Sandler:>that I live in, wild stuff.
+
+817
+00:27:07.970 --> 00:27:09.850
+<v Karen Sandler:>And I have this defibrillator, um, in
+
+818
+00:27:09.850 --> 00:27:12.370
+<v Karen Sandler:>particular, because while it's, um, it's a
+
+819
+00:27:12.370 --> 00:27:13.850
+<v Karen Sandler:>large defibrillator in.
+
+820
+00:27:14.010 --> 00:27:16.120
+<v Karen Sandler:>Sorry, it's a large manufacturer in Europe.
+
+821
+00:27:16.120 --> 00:27:17.879
+<v Karen Sandler:>It's, um, it has a much smaller
+
+822
+00:27:17.880 --> 00:27:19.159
+<v Karen Sandler:>imprint in the United States, but I
+
+823
+00:27:19.160 --> 00:27:21.680
+<v Karen Sandler:>use them because, um, these devices are
+
+824
+00:27:21.680 --> 00:27:22.960
+<v Karen Sandler:>totally interference.
+
+825
+00:27:23.160 --> 00:27:25.480
+<v Karen Sandler:>They can be, um, you know, they
+
+826
+00:27:25.480 --> 00:27:28.400
+<v Karen Sandler:>they researchers have shown that they can
+
+827
+00:27:28.400 --> 00:27:29.919
+<v Karen Sandler:>be, um, you can run their batteries
+
+828
+00:27:29.920 --> 00:27:30.080
+<v Karen Sandler:>down.
+
+829
+00:27:30.080 --> 00:27:31.800
+<v Karen Sandler:>You can have them shock unnecessarily because
+
+830
+00:27:31.800 --> 00:27:33.920
+<v Karen Sandler:>they're all broadcasting remotely.
+
+831
+00:27:33.960 --> 00:27:36.080
+<v Karen Sandler:>And, um, and the encryption on these
+
+832
+00:27:36.080 --> 00:27:37.840
+<v Karen Sandler:>devices has historically been terrible.
+
+833
+00:27:37.840 --> 00:27:40.160
+<v Karen Sandler:>There have been improvements lately, but, uh,
+
+834
+00:27:40.160 --> 00:27:42.200
+<v Karen Sandler:>but really just awful stuff.
+
+835
+00:27:42.200 --> 00:27:44.400
+<v Karen Sandler:>And so I found this one manufacturer
+
+836
+00:27:44.400 --> 00:27:47.679
+<v Karen Sandler:>where you could disable the, the broadcasting
+
+837
+00:27:47.680 --> 00:27:49.840
+<v Karen Sandler:>and software and the, the others all
+
+838
+00:27:49.840 --> 00:27:51.920
+<v Karen Sandler:>just stay broadcasting consistently.
+
+839
+00:27:51.920 --> 00:27:54.000
+<v Karen Sandler:>So at least with my defibrillator, you
+
+840
+00:27:54.000 --> 00:27:55.399
+<v Karen Sandler:>have to they call it like a
+
+841
+00:27:55.400 --> 00:27:56.080
+<v Karen Sandler:>programmer.
+
+842
+00:27:56.120 --> 00:27:57.440
+<v Karen Sandler:>You have to at least be right
+
+843
+00:27:57.440 --> 00:27:59.400
+<v Karen Sandler:>on top of me in order to
+
+844
+00:27:59.640 --> 00:28:01.120
+<v Karen Sandler:>read it, and I'll be able to
+
+845
+00:28:01.120 --> 00:28:02.399
+<v Karen Sandler:>see it, whereas with all of the
+
+846
+00:28:02.400 --> 00:28:03.600
+<v Karen Sandler:>other ones, or if or if this
+
+847
+00:28:03.600 --> 00:28:05.600
+<v Karen Sandler:>one, if you enable the, um, the
+
+848
+00:28:05.640 --> 00:28:07.520
+<v Karen Sandler:>radio telemetry, you could be all the
+
+849
+00:28:07.520 --> 00:28:08.240
+<v Karen Sandler:>way across the street.
+
+850
+00:28:08.240 --> 00:28:09.040
+<v Karen Sandler:>And as I said, I live in
+
+851
+00:28:09.040 --> 00:28:09.560
+<v Karen Sandler:>a major city.
+
+852
+00:28:09.560 --> 00:28:12.040
+<v Karen Sandler:>So like it's so densely packed, the
+
+853
+00:28:12.040 --> 00:28:14.000
+<v Karen Sandler:>person could be anywhere and interfere with
+
+854
+00:28:14.000 --> 00:28:14.520
+<v Karen Sandler:>these devices.
+
+855
+00:28:14.520 --> 00:28:16.200
+<v Karen Sandler:>So I need this manufacturer.
+
+856
+00:28:16.400 --> 00:28:18.560
+<v Karen Sandler:>Um, and we may get to the
+
+857
+00:28:18.560 --> 00:28:20.520
+<v Karen Sandler:>fact that I run a diversity initiative,
+
+858
+00:28:20.680 --> 00:28:22.520
+<v Karen Sandler:>um, for folks subject to systemic bias,
+
+859
+00:28:22.520 --> 00:28:23.920
+<v Karen Sandler:>but because of some of my work,
+
+860
+00:28:23.960 --> 00:28:25.600
+<v Karen Sandler:>it makes some people very angry.
+
+861
+00:28:25.600 --> 00:28:27.240
+<v Karen Sandler:>And I think just being a very
+
+862
+00:28:27.240 --> 00:28:30.360
+<v Karen Sandler:>prominently like just a prominent woman in
+
+863
+00:28:30.360 --> 00:28:34.120
+<v Karen Sandler:>technology, it means that, um, I have
+
+864
+00:28:34.120 --> 00:28:37.199
+<v Karen Sandler:>a lot of unpleasant experiences, which includes,
+
+865
+00:28:37.440 --> 00:28:41.080
+<v Karen Sandler:>uh, people, uh, who want to enter,
+
+866
+00:28:41.120 --> 00:28:42.680
+<v Karen Sandler:>like who I've got.
+
+867
+00:28:42.720 --> 00:28:44.320
+<v Karen Sandler:>I'll just say I've gotten rape and
+
+868
+00:28:44.320 --> 00:28:44.920
+<v Karen Sandler:>death threats.
+
+869
+00:28:44.960 --> 00:28:47.920
+<v Karen Sandler:>And so it's not theoretical to be
+
+870
+00:28:47.920 --> 00:28:51.120
+<v Karen Sandler:>worried about somebody interfering with my defibrillator.
+
+871
+00:28:51.120 --> 00:28:52.120
+<v Karen Sandler:>So I really needed to get the
+
+872
+00:28:52.120 --> 00:28:52.520
+<v Karen Sandler:>device.
+
+873
+00:28:52.520 --> 00:28:55.320
+<v Karen Sandler:>However, it meant that I'm beholden to
+
+874
+00:28:55.320 --> 00:28:56.280
+<v Karen Sandler:>this one company.
+
+875
+00:28:56.400 --> 00:28:58.479
+<v Karen Sandler:>None of these devices are interoperable.
+
+876
+00:28:58.720 --> 00:29:02.560
+<v Karen Sandler:>You can't use the interrogator from one
+
+877
+00:29:02.560 --> 00:29:05.160
+<v Karen Sandler:>device to read the information off of
+
+878
+00:29:05.160 --> 00:29:05.840
+<v Karen Sandler:>another.
+
+879
+00:29:05.840 --> 00:29:07.439
+<v Karen Sandler:>And so I was completely unable to
+
+880
+00:29:07.440 --> 00:29:09.600
+<v Karen Sandler:>get the information off of my defibrillator
+
+881
+00:29:09.720 --> 00:29:10.720
+<v Karen Sandler:>in my own city.
+
+882
+00:29:10.720 --> 00:29:12.199
+<v Karen Sandler:>And, um, and then I was in
+
+883
+00:29:12.200 --> 00:29:14.760
+<v Karen Sandler:>Belgium for the, um, for the honorary
+
+884
+00:29:14.760 --> 00:29:16.240
+<v Karen Sandler:>doctorate, and I was able to go
+
+885
+00:29:16.240 --> 00:29:18.640
+<v Karen Sandler:>to a Brussels hospital, and they were
+
+886
+00:29:18.640 --> 00:29:20.239
+<v Karen Sandler:>able to interrogate my device and get
+
+887
+00:29:20.240 --> 00:29:21.199
+<v Karen Sandler:>the information off.
+
+888
+00:29:21.200 --> 00:29:24.280
+<v Karen Sandler:>But it was just this horrifying moment
+
+889
+00:29:24.320 --> 00:29:27.640
+<v Karen Sandler:>of being so helpless because not only
+
+890
+00:29:28.320 --> 00:29:29.520
+<v Karen Sandler:>could I not see the code in
+
+891
+00:29:29.520 --> 00:29:32.080
+<v Karen Sandler:>my own body, not only could I
+
+892
+00:29:32.160 --> 00:29:33.719
+<v Karen Sandler:>have no control over it when it
+
+893
+00:29:33.720 --> 00:29:37.040
+<v Karen Sandler:>was, uh, when it was inappropriately shocking
+
+894
+00:29:37.040 --> 00:29:39.040
+<v Karen Sandler:>me and I needed to take unnecessary
+
+895
+00:29:39.040 --> 00:29:40.720
+<v Karen Sandler:>medication to stop that.
+
+896
+00:29:40.720 --> 00:29:42.800
+<v Karen Sandler:>But also, I couldn't get the very
+
+897
+00:29:42.800 --> 00:29:44.639
+<v Karen Sandler:>information that I needed to make really
+
+898
+00:29:44.640 --> 00:29:47.120
+<v Karen Sandler:>important choices about whether it was safe
+
+899
+00:29:47.120 --> 00:29:49.000
+<v Karen Sandler:>for me to travel or how it
+
+900
+00:29:49.000 --> 00:29:50.240
+<v Karen Sandler:>was safe for me to live my
+
+901
+00:29:50.240 --> 00:29:50.720
+<v Karen Sandler:>life.
+
+902
+00:29:51.000 --> 00:29:53.320
+<v Karen Sandler:>So, you know, having this, it's been
+
+903
+00:29:53.320 --> 00:29:55.370
+<v Karen Sandler:>like every I'd say like 5 to
+
+904
+00:29:55.370 --> 00:29:56.160
+<v Karen Sandler:>7 years.
+
+905
+00:29:56.200 --> 00:29:58.160
+<v Karen Sandler:>There's like some other major lesson in
+
+906
+00:29:58.160 --> 00:30:00.320
+<v Karen Sandler:>technology that I'm learning from living with
+
+907
+00:30:00.360 --> 00:30:01.360
+<v Karen Sandler:>this defibrillator.
+
+908
+00:30:01.360 --> 00:30:02.879
+<v Karen Sandler:>And now I have a second.
+
+909
+00:30:02.920 --> 00:30:04.760
+<v Karen Sandler:>So this is my second defibrillator.
+
+910
+00:30:04.760 --> 00:30:06.280
+<v Karen Sandler:>The first one lasts to ten years.
+
+911
+00:30:06.360 --> 00:30:09.120
+<v Karen Sandler:>My current defibrillator, they predict to live
+
+912
+00:30:09.160 --> 00:30:11.960
+<v Karen Sandler:>17 years to exist for 17 years.
+
+913
+00:30:12.000 --> 00:30:13.160
+<v Karen Sandler:>And when you think about the life
+
+914
+00:30:13.160 --> 00:30:16.040
+<v Karen Sandler:>of our technology, 17 years is such
+
+915
+00:30:16.080 --> 00:30:17.040
+<v Karen Sandler:>a long time.
+
+916
+00:30:17.320 --> 00:30:18.360
+<v Karen Sandler:>We don't even know what the world
+
+917
+00:30:18.360 --> 00:30:21.040
+<v Karen Sandler:>will be like in 17 years, let
+
+918
+00:30:21.040 --> 00:30:22.600
+<v Karen Sandler:>alone, I mean, much of our technology
+
+919
+00:30:22.600 --> 00:30:24.320
+<v Karen Sandler:>becomes obsolete in just a couple of
+
+920
+00:30:24.320 --> 00:30:24.879
+<v Karen Sandler:>years.
+
+921
+00:30:25.200 --> 00:30:27.080
+<v Karen Sandler:>So the idea that we're making these
+
+922
+00:30:27.080 --> 00:30:28.199
+<v Karen Sandler:>choices that we're going to have to
+
+923
+00:30:28.200 --> 00:30:29.640
+<v Karen Sandler:>live with societally for a long time
+
+924
+00:30:29.640 --> 00:30:30.440
+<v Karen Sandler:>is really important.
+
+925
+00:30:30.440 --> 00:30:32.800
+<v Karen Sandler:>And at the same time, I realized
+
+926
+00:30:32.920 --> 00:30:36.760
+<v Karen Sandler:>that this technology that is sewn into
+
+927
+00:30:36.800 --> 00:30:39.280
+<v Karen Sandler:>my body is a metaphor for all
+
+928
+00:30:39.320 --> 00:30:40.639
+<v Karen Sandler:>of the other software we rely on.
+
+929
+00:30:40.640 --> 00:30:42.560
+<v Karen Sandler:>It's not really about medical devices so
+
+930
+00:30:42.560 --> 00:30:44.400
+<v Karen Sandler:>much as it's about everything that is
+
+931
+00:30:44.400 --> 00:30:46.440
+<v Karen Sandler:>critical in our society, whether it's our
+
+932
+00:30:46.440 --> 00:30:48.960
+<v Karen Sandler:>stock markets, our, um, you know, our
+
+933
+00:30:48.960 --> 00:30:51.760
+<v Karen Sandler:>basic infrastructure, uh, the, the stuff we
+
+934
+00:30:51.760 --> 00:30:54.240
+<v Karen Sandler:>rely on to educate, um, our kids
+
+935
+00:30:54.480 --> 00:30:58.240
+<v Karen Sandler:>like our, our, our, you know, technology
+
+936
+00:30:58.240 --> 00:31:00.280
+<v Karen Sandler:>that we use for our banking and
+
+937
+00:31:00.280 --> 00:31:02.920
+<v Karen Sandler:>for, uh, and for our basic communications,
+
+938
+00:31:02.960 --> 00:31:05.360
+<v Karen Sandler:>like, and we're combining everything with everything
+
+939
+00:31:05.360 --> 00:31:07.439
+<v Karen Sandler:>else, and we're only as safe as
+
+940
+00:31:07.440 --> 00:31:08.400
+<v Karen Sandler:>our weakest link.
+
+941
+00:31:08.550 --> 00:31:11.429
+<v Karen Sandler:>So I'd say that all of the
+
+942
+00:31:11.430 --> 00:31:13.990
+<v Karen Sandler:>things that I talked about, it's now
+
+943
+00:31:14.190 --> 00:31:17.229
+<v Karen Sandler:>almost 20 years ago, I thought a
+
+944
+00:31:17.230 --> 00:31:18.790
+<v Karen Sandler:>lot of what I said felt really,
+
+945
+00:31:19.150 --> 00:31:21.030
+<v Karen Sandler:>you know, theoretical and space agey.
+
+946
+00:31:21.350 --> 00:31:23.910
+<v Karen Sandler:>Um, and it felt like it was
+
+947
+00:31:23.910 --> 00:31:26.790
+<v Karen Sandler:>very unlikely for that to, I don't
+
+948
+00:31:26.830 --> 00:31:28.790
+<v Karen Sandler:>know, it just felt so theoretical.
+
+949
+00:31:29.110 --> 00:31:31.910
+<v Karen Sandler:>Every passing year becomes the reality of
+
+950
+00:31:31.910 --> 00:31:34.469
+<v Karen Sandler:>what we live in, and every year
+
+951
+00:31:34.470 --> 00:31:36.430
+<v Karen Sandler:>it becomes more and more critical that
+
+952
+00:31:36.430 --> 00:31:39.070
+<v Karen Sandler:>we take control over our society, of
+
+953
+00:31:39.070 --> 00:31:40.350
+<v Karen Sandler:>our software as a society.
+
+954
+00:31:40.350 --> 00:31:42.790
+<v Karen Sandler:>And unfortunately, what's happened is that over
+
+955
+00:31:42.790 --> 00:31:45.429
+<v Karen Sandler:>time, while we have more open source,
+
+956
+00:31:46.030 --> 00:31:47.950
+<v Karen Sandler:>the more open source and everything, there's
+
+957
+00:31:48.670 --> 00:31:50.790
+<v Karen Sandler:>Foss, you know, there's the Linux kernel
+
+958
+00:31:50.790 --> 00:31:51.350
+<v Karen Sandler:>is in everything.
+
+959
+00:31:51.350 --> 00:31:52.870
+<v Karen Sandler:>It's in refrigerators and toasters.
+
+960
+00:31:52.910 --> 00:31:54.430
+<v Karen Sandler:>And, you know, we use it.
+
+961
+00:31:54.430 --> 00:31:56.629
+<v Karen Sandler:>You can no one would ever imagine
+
+962
+00:31:56.630 --> 00:31:59.070
+<v Karen Sandler:>launching a business without using free and
+
+963
+00:31:59.070 --> 00:32:01.750
+<v Karen Sandler:>open source software that economists just valued
+
+964
+00:32:01.750 --> 00:32:03.949
+<v Karen Sandler:>it at a ridiculously huge at at
+
+965
+00:32:03.990 --> 00:32:05.950
+<v Karen Sandler:>a, at a value that is more
+
+966
+00:32:06.110 --> 00:32:08.389
+<v Karen Sandler:>than, um, than the value of Microsoft
+
+967
+00:32:08.390 --> 00:32:09.110
+<v Karen Sandler:>for example.
+
+968
+00:32:09.230 --> 00:32:10.230
+<v Karen Sandler:>So by a lot.
+
+969
+00:32:10.270 --> 00:32:12.510
+<v Karen Sandler:>And so like it's so critical.
+
+970
+00:32:12.510 --> 00:32:14.830
+<v Karen Sandler:>But the freedom we have the choice
+
+971
+00:32:14.830 --> 00:32:17.790
+<v Karen Sandler:>the you know, the control over our
+
+972
+00:32:17.790 --> 00:32:20.550
+<v Karen Sandler:>technology is so much less than what
+
+973
+00:32:20.550 --> 00:32:21.790
+<v Karen Sandler:>we've ever had before.
+
+974
+00:32:21.790 --> 00:32:25.189
+<v Karen Sandler:>It is near impossible to get along,
+
+975
+00:32:25.230 --> 00:32:26.830
+<v Karen Sandler:>like to replace the software on any
+
+976
+00:32:26.830 --> 00:32:28.030
+<v Karen Sandler:>device that you own.
+
+977
+00:32:28.110 --> 00:32:30.350
+<v Karen Sandler:>It's impossible to repair the software on
+
+978
+00:32:30.390 --> 00:32:31.630
+<v Karen Sandler:>devices that you own.
+
+979
+00:32:31.790 --> 00:32:33.989
+<v Karen Sandler:>And our ability as a society to
+
+980
+00:32:34.030 --> 00:32:37.310
+<v Karen Sandler:>move from one product to another is
+
+981
+00:32:37.830 --> 00:32:38.990
+<v Karen Sandler:>almost negligible.
+
+982
+00:32:39.030 --> 00:32:41.510
+<v Karen Sandler:>It's, um, astounding to me at this
+
+983
+00:32:41.510 --> 00:32:42.270
+<v Karen Sandler:>very moment.
+
+984
+00:32:42.430 --> 00:32:44.830
+<v Karen Sandler:>Um, just recently in the United States,
+
+985
+00:32:44.830 --> 00:32:48.350
+<v Karen Sandler:>the United States passed a nonpartisan, bipartisan
+
+986
+00:32:48.390 --> 00:32:50.710
+<v Karen Sandler:>bill to, uh, to require the sale
+
+987
+00:32:50.750 --> 00:32:52.870
+<v Karen Sandler:>of, of of TikTok in the United
+
+988
+00:32:52.870 --> 00:32:55.870
+<v Karen Sandler:>States to a US entity which solves
+
+989
+00:32:55.910 --> 00:32:57.909
+<v Karen Sandler:>none of the problems that, you know,
+
+990
+00:32:57.950 --> 00:32:59.629
+<v Karen Sandler:>like, it doesn't actually create any ethical
+
+991
+00:32:59.630 --> 00:33:00.150
+<v Karen Sandler:>technology.
+
+992
+00:33:00.150 --> 00:33:01.750
+<v Karen Sandler:>So people are waking up to this
+
+993
+00:33:01.750 --> 00:33:03.590
+<v Karen Sandler:>idea that there's a problem with our
+
+994
+00:33:03.590 --> 00:33:05.510
+<v Karen Sandler:>technology and that we need to be,
+
+995
+00:33:06.030 --> 00:33:06.870
+<v Karen Sandler:>you know, we need to be doing
+
+996
+00:33:06.870 --> 00:33:07.550
+<v Karen Sandler:>things differently.
+
+997
+00:33:07.550 --> 00:33:09.910
+<v Karen Sandler:>But they they don't know how yet.
+
+998
+00:33:09.910 --> 00:33:12.590
+<v Karen Sandler:>And what we need is software freedom.
+
+999
+00:33:12.590 --> 00:33:14.790
+<v Karen Sandler:>What we need is decentralization.
+
+1000
+00:33:14.790 --> 00:33:16.550
+<v Karen Sandler:>What we need is encryption.
+
+1001
+00:33:16.550 --> 00:33:18.750
+<v Karen Sandler:>But these problems are hard and they
+
+1002
+00:33:18.750 --> 00:33:22.909
+<v Karen Sandler:>require activity on a mass level.
+
+1003
+00:33:22.910 --> 00:33:24.350
+<v Karen Sandler:>We need to have a lot of
+
+1004
+00:33:25.230 --> 00:33:27.910
+<v Karen Sandler:>group like group collective action.
+
+1005
+00:33:27.910 --> 00:33:30.310
+<v Karen Sandler:>And that is that that takes that
+
+1006
+00:33:30.310 --> 00:33:31.990
+<v Karen Sandler:>takes work and that takes money, and
+
+1007
+00:33:31.990 --> 00:33:33.909
+<v Karen Sandler:>it takes the inconvenience of the business
+
+1008
+00:33:33.910 --> 00:33:36.550
+<v Karen Sandler:>models of companies in the tech sector,
+
+1009
+00:33:36.750 --> 00:33:37.670
+<v Karen Sandler:>all of which are.
+
+1010
+00:33:37.710 --> 00:33:38.870
+<v Karen Sandler:>So I would say, like if you're
+
+1011
+00:33:38.870 --> 00:33:40.590
+<v Karen Sandler:>asking me how I feel about it
+
+1012
+00:33:40.590 --> 00:33:42.990
+<v Karen Sandler:>now, with respect to looking back, I'd
+
+1013
+00:33:43.030 --> 00:33:45.550
+<v Karen Sandler:>say I am more right than I
+
+1014
+00:33:45.550 --> 00:33:46.590
+<v Karen Sandler:>ever wanted to be.
+
+1015
+00:33:46.830 --> 00:33:49.550
+<v Karen Sandler:>And, um, which really saddens me.
+
+1016
+00:33:49.910 --> 00:33:52.350
+<v Karen Sandler:>And, um, and the state of our
+
+1017
+00:33:52.350 --> 00:33:54.469
+<v Karen Sandler:>technology is so much worse than I
+
+1018
+00:33:54.470 --> 00:33:56.270
+<v Karen Sandler:>expected it would be now.
+
+1019
+00:33:56.790 --> 00:33:58.550
+<v Karen Sandler:>But at the same time, I have
+
+1020
+00:33:58.550 --> 00:34:00.230
+<v Karen Sandler:>so much more hope than I've ever
+
+1021
+00:34:00.230 --> 00:34:02.429
+<v Karen Sandler:>had before, because I think that people
+
+1022
+00:34:02.430 --> 00:34:04.540
+<v Karen Sandler:>are starting to get the fact that
+
+1023
+00:34:04.540 --> 00:34:07.300
+<v Karen Sandler:>something's wrong and they're understand the fact
+
+1024
+00:34:07.300 --> 00:34:09.420
+<v Karen Sandler:>that our technology is so important that
+
+1025
+00:34:09.420 --> 00:34:12.540
+<v Karen Sandler:>we can't just sit by and let
+
+1026
+00:34:12.580 --> 00:34:18.020
+<v Karen Sandler:>companies subjugate our own digital rights to
+
+1027
+00:34:18.260 --> 00:34:20.140
+<v Karen Sandler:>their quarterly profits.
+
+1028
+00:34:21.900 --> 00:34:22.620
+<v Elisabetta Mori:>Thank you.
+
+1029
+00:34:23.179 --> 00:34:25.659
+<v Elisabetta Mori:>So, um, let's go back to the
+
+1030
+00:34:25.659 --> 00:34:27.660
+<v Elisabetta Mori:>time you were working for the Gnome
+
+1031
+00:34:27.659 --> 00:34:28.620
+<v Elisabetta Mori:>Foundation.
+
+1032
+00:34:28.940 --> 00:34:34.860
+<v Elisabetta Mori:>Um, in 2012, you got married, but
+
+1033
+00:34:34.900 --> 00:34:38.020
+<v Elisabetta Mori:>at the same time, another important activity
+
+1034
+00:34:38.060 --> 00:34:40.820
+<v Elisabetta Mori:>there was, like, you also worked, uh,
+
+1035
+00:34:40.820 --> 00:34:43.460
+<v Elisabetta Mori:>at gnome, uh, in the outreach program
+
+1036
+00:34:43.460 --> 00:34:44.339
+<v Elisabetta Mori:>for women.
+
+1037
+00:34:44.940 --> 00:34:47.580
+<v Elisabetta Mori:>So, uh, can you talk about those
+
+1038
+00:34:47.620 --> 00:34:51.219
+<v Elisabetta Mori:>years and, um, what brought you to
+
+1039
+00:34:51.260 --> 00:34:54.259
+<v Elisabetta Mori:>work for the Software Freedom Conservancy a
+
+1040
+00:34:54.260 --> 00:34:55.260
+<v Elisabetta Mori:>few years later?
+
+1041
+00:34:55.300 --> 00:34:57.860
+<v Karen Sandler:>So the GNOME actually started outreach program
+
+1042
+00:34:57.860 --> 00:34:58.940
+<v Karen Sandler:>for women when I was at the
+
+1043
+00:34:58.940 --> 00:35:01.020
+<v Karen Sandler:>Software Freedom Law Center, and they asked
+
+1044
+00:35:01.220 --> 00:35:03.299
+<v Karen Sandler:>Sflc for legal help in setting it
+
+1045
+00:35:03.300 --> 00:35:03.500
+<v Karen Sandler:>up.
+
+1046
+00:35:03.500 --> 00:35:06.100
+<v Karen Sandler:>So I've been involved with, uh, and
+
+1047
+00:35:06.100 --> 00:35:07.700
+<v Karen Sandler:>other lawyers were more of the primary
+
+1048
+00:35:07.700 --> 00:35:08.299
+<v Karen Sandler:>contacts on that.
+
+1049
+00:35:08.300 --> 00:35:10.500
+<v Karen Sandler:>But I've been involved in, um, in
+
+1050
+00:35:10.540 --> 00:35:12.420
+<v Karen Sandler:>this program since its inception, which is
+
+1051
+00:35:12.420 --> 00:35:13.299
+<v Karen Sandler:>pretty exciting.
+
+1052
+00:35:13.380 --> 00:35:15.140
+<v Karen Sandler:>Um, and it started in 2010.
+
+1053
+00:35:15.340 --> 00:35:18.580
+<v Karen Sandler:>Um, and it started because I was
+
+1054
+00:35:18.580 --> 00:35:20.580
+<v Karen Sandler:>participating in a program called Google Summer
+
+1055
+00:35:20.620 --> 00:35:21.260
+<v Karen Sandler:>of code.
+
+1056
+00:35:21.420 --> 00:35:23.420
+<v Karen Sandler:>And Google Summer of code is an
+
+1057
+00:35:23.420 --> 00:35:25.500
+<v Karen Sandler:>internship program that Google runs for open
+
+1058
+00:35:25.500 --> 00:35:29.259
+<v Karen Sandler:>source projects where, um where students are
+
+1059
+00:35:29.260 --> 00:35:30.460
+<v Karen Sandler:>allowed to get these, they get these
+
+1060
+00:35:30.460 --> 00:35:32.420
+<v Karen Sandler:>paid internships where they work remotely for
+
+1061
+00:35:32.420 --> 00:35:33.180
+<v Karen Sandler:>a few months.
+
+1062
+00:35:33.380 --> 00:35:37.460
+<v Karen Sandler:>And at GNOME, they had 181 applicants,
+
+1063
+00:35:37.620 --> 00:35:38.859
+<v Karen Sandler:>and none of them appeared to be
+
+1064
+00:35:38.860 --> 00:35:39.460
+<v Karen Sandler:>women.
+
+1065
+00:35:40.020 --> 00:35:44.500
+<v Karen Sandler:>And so my good friend Marina was
+
+1066
+00:35:44.500 --> 00:35:46.740
+<v Karen Sandler:>tapped to, um, to kind of look
+
+1067
+00:35:46.780 --> 00:35:47.899
+<v Karen Sandler:>and figure out whether there was.
+
+1068
+00:35:47.940 --> 00:35:49.580
+<v Karen Sandler:>Well, actually, there was another program in
+
+1069
+00:35:49.620 --> 00:35:52.540
+<v Karen Sandler:>2006 that was started then, but then
+
+1070
+00:35:52.540 --> 00:35:53.259
+<v Karen Sandler:>nothing happened with it.
+
+1071
+00:35:53.260 --> 00:35:56.180
+<v Karen Sandler:>And then in 22,009, Marina was tapped
+
+1072
+00:35:56.180 --> 00:35:57.620
+<v Karen Sandler:>to sort of like she was very
+
+1073
+00:35:57.620 --> 00:35:58.580
+<v Karen Sandler:>involved with the Gnome Foundation.
+
+1074
+00:35:58.580 --> 00:36:00.020
+<v Karen Sandler:>She was a gnome shell developer, and
+
+1075
+00:36:00.020 --> 00:36:03.620
+<v Karen Sandler:>she was tapped to to create something
+
+1076
+00:36:03.660 --> 00:36:04.379
+<v Karen Sandler:>to help with this.
+
+1077
+00:36:04.380 --> 00:36:06.419
+<v Karen Sandler:>And so she came up, she re
+
+1078
+00:36:06.660 --> 00:36:08.700
+<v Karen Sandler:>revamped that whole program and launched an
+
+1079
+00:36:08.700 --> 00:36:10.900
+<v Karen Sandler:>outreach program for women, um, which started
+
+1080
+00:36:10.900 --> 00:36:14.900
+<v Karen Sandler:>with six interns, um, in 2010, um,
+
+1081
+00:36:15.180 --> 00:36:17.820
+<v Karen Sandler:>working um on various aspects of GNOME
+
+1082
+00:36:18.020 --> 00:36:20.580
+<v Karen Sandler:>and I came over as executive director
+
+1083
+00:36:20.580 --> 00:36:23.780
+<v Karen Sandler:>and it was just, you know, whatever
+
+1084
+00:36:23.780 --> 00:36:25.620
+<v Karen Sandler:>the professional equivalent of love at first
+
+1085
+00:36:25.620 --> 00:36:26.380
+<v Karen Sandler:>sight was.
+
+1086
+00:36:26.940 --> 00:36:29.259
+<v Karen Sandler:>And Marina, um, we jumped into it
+
+1087
+00:36:29.260 --> 00:36:31.620
+<v Karen Sandler:>together and we immediately started building the
+
+1088
+00:36:31.620 --> 00:36:32.780
+<v Karen Sandler:>program together.
+
+1089
+00:36:32.780 --> 00:36:35.620
+<v Karen Sandler:>We expanded it to other communities, um,
+
+1090
+00:36:36.140 --> 00:36:38.140
+<v Karen Sandler:>and, uh, and, uh, and slowly grew
+
+1091
+00:36:38.180 --> 00:36:38.339
+<v Karen Sandler:>it.
+
+1092
+00:36:38.340 --> 00:36:40.380
+<v Karen Sandler:>And, um, I had been a, um,
+
+1093
+00:36:40.700 --> 00:36:44.580
+<v Karen Sandler:>a co-founder of the Software Freedom Conservancy
+
+1094
+00:36:44.780 --> 00:36:46.100
+<v Karen Sandler:>from when I was at the Software
+
+1095
+00:36:46.100 --> 00:36:47.140
+<v Karen Sandler:>Freedom Law Center.
+
+1096
+00:36:47.340 --> 00:36:48.379
+<v Karen Sandler:>Um, I was the one who filed
+
+1097
+00:36:48.380 --> 00:36:52.180
+<v Karen Sandler:>the incorporation papers and, um, uh, and
+
+1098
+00:36:52.180 --> 00:36:53.940
+<v Karen Sandler:>it was an initiative of the Software
+
+1099
+00:36:53.940 --> 00:36:56.460
+<v Karen Sandler:>Freedom Law Center to launch Software Freedom
+
+1100
+00:36:56.460 --> 00:36:57.460
+<v Karen Sandler:>Conservancy.
+
+1101
+00:36:57.460 --> 00:36:59.100
+<v Karen Sandler:>And so I had been a volunteer
+
+1102
+00:36:59.140 --> 00:37:00.860
+<v Karen Sandler:>throughout the time I was at GNOME
+
+1103
+00:37:01.380 --> 00:37:04.540
+<v Karen Sandler:>and Software Freedom Conservancy, which is a
+
+1104
+00:37:04.780 --> 00:37:05.819
+<v Karen Sandler:>fiscal sponsor.
+
+1105
+00:37:05.860 --> 00:37:08.299
+<v Karen Sandler:>It's the umbrella organization, and it's the
+
+1106
+00:37:08.300 --> 00:37:09.859
+<v Karen Sandler:>home of many free and open source
+
+1107
+00:37:09.860 --> 00:37:10.940
+<v Karen Sandler:>software projects.
+
+1108
+00:37:11.260 --> 00:37:13.420
+<v Karen Sandler:>Uh, it also, uh, we do three
+
+1109
+00:37:13.420 --> 00:37:14.980
+<v Karen Sandler:>different branches, which I guess I'll explain
+
+1110
+00:37:14.980 --> 00:37:16.420
+<v Karen Sandler:>in a, in a little bit, but,
+
+1111
+00:37:16.460 --> 00:37:19.580
+<v Karen Sandler:>um, but Software Freedom Conservancy was actually
+
+1112
+00:37:19.580 --> 00:37:22.060
+<v Karen Sandler:>the first, uh, organization that wound up
+
+1113
+00:37:22.060 --> 00:37:24.980
+<v Karen Sandler:>participating with its twisted project in outreach
+
+1114
+00:37:24.980 --> 00:37:26.820
+<v Karen Sandler:>program for women early, and we realized
+
+1115
+00:37:26.820 --> 00:37:27.779
+<v Karen Sandler:>we could expand it.
+
+1116
+00:37:27.820 --> 00:37:29.259
+<v Karen Sandler:>We expanded to Linux kernel.
+
+1117
+00:37:29.540 --> 00:37:32.339
+<v Karen Sandler:>Um, and soon the program was a
+
+1118
+00:37:32.380 --> 00:37:35.299
+<v Karen Sandler:>larger program, um, where we expanded its
+
+1119
+00:37:35.300 --> 00:37:36.140
+<v Karen Sandler:>criteria.
+
+1120
+00:37:36.540 --> 00:37:39.460
+<v Karen Sandler:>Um, we ultimately renamed it as Outreachy.
+
+1121
+00:37:39.700 --> 00:37:45.180
+<v Karen Sandler:>And, um, now we um, uh, now,
+
+1122
+00:37:45.500 --> 00:37:47.819
+<v Karen Sandler:>uh, we, we provide internships not just
+
+1123
+00:37:47.820 --> 00:37:50.380
+<v Karen Sandler:>to women, uh, and actually not all
+
+1124
+00:37:50.380 --> 00:37:52.419
+<v Karen Sandler:>women now, because the program is only
+
+1125
+00:37:52.420 --> 00:37:54.060
+<v Karen Sandler:>open to people who are subject to
+
+1126
+00:37:54.100 --> 00:37:56.129
+<v Karen Sandler:>systemic bias and are impacted by The
+
+1127
+00:37:56.130 --> 00:37:57.090
+<v Karen Sandler:>representation.
+
+1128
+00:37:57.090 --> 00:37:59.009
+<v Karen Sandler:>So we seek essays from people and
+
+1129
+00:37:59.010 --> 00:38:00.850
+<v Karen Sandler:>they tell us, like, we don't presume
+
+1130
+00:38:00.850 --> 00:38:03.290
+<v Karen Sandler:>to understand all of the discrimination and
+
+1131
+00:38:03.290 --> 00:38:04.850
+<v Karen Sandler:>systemic bias that's out there in the
+
+1132
+00:38:04.850 --> 00:38:05.330
+<v Karen Sandler:>world.
+
+1133
+00:38:05.330 --> 00:38:07.330
+<v Karen Sandler:>So we have our applicants tell us,
+
+1134
+00:38:07.370 --> 00:38:09.009
+<v Karen Sandler:>and the essay is not graded based
+
+1135
+00:38:09.010 --> 00:38:10.689
+<v Karen Sandler:>on how beautifully it's written, or even
+
+1136
+00:38:10.690 --> 00:38:13.089
+<v Karen Sandler:>if the person uses correct grammar and
+
+1137
+00:38:13.090 --> 00:38:13.730
+<v Karen Sandler:>spelling.
+
+1138
+00:38:14.010 --> 00:38:15.490
+<v Karen Sandler:>For us, it's just we want to
+
+1139
+00:38:15.490 --> 00:38:18.210
+<v Karen Sandler:>hear about people's experiences with their own,
+
+1140
+00:38:18.450 --> 00:38:21.250
+<v Karen Sandler:>um, how they're impacted by systemic bias
+
+1141
+00:38:21.290 --> 00:38:23.210
+<v Karen Sandler:>and impacted by discrimination.
+
+1142
+00:38:23.210 --> 00:38:24.650
+<v Karen Sandler:>And now we've run the program all
+
+1143
+00:38:24.690 --> 00:38:25.610
+<v Karen Sandler:>of this time.
+
+1144
+00:38:26.050 --> 00:38:29.689
+<v Karen Sandler:>And, uh, um, it's it's been an
+
+1145
+00:38:29.690 --> 00:38:30.450
+<v Karen Sandler:>amazing journey.
+
+1146
+00:38:30.490 --> 00:38:33.569
+<v Karen Sandler:>And Noam launched outreach program for women,
+
+1147
+00:38:33.810 --> 00:38:36.290
+<v Karen Sandler:>but as it was rebranded into Outreachy,
+
+1148
+00:38:36.610 --> 00:38:39.370
+<v Karen Sandler:>um, and as it, uh, as it
+
+1149
+00:38:39.370 --> 00:38:41.330
+<v Karen Sandler:>grew, it moved over to Software Freedom
+
+1150
+00:38:41.330 --> 00:38:41.770
+<v Karen Sandler:>Conservancy.
+
+1151
+00:38:41.770 --> 00:38:43.450
+<v Karen Sandler:>And it was funny because I had
+
+1152
+00:38:43.450 --> 00:38:45.850
+<v Karen Sandler:>already left GNOME as executive director and
+
+1153
+00:38:45.850 --> 00:38:47.529
+<v Karen Sandler:>came over to Software Freedom Conservancy as
+
+1154
+00:38:47.530 --> 00:38:49.970
+<v Karen Sandler:>executive director, kind of swapping my volunteer
+
+1155
+00:38:50.010 --> 00:38:52.089
+<v Karen Sandler:>role for my professional role and vice
+
+1156
+00:38:52.090 --> 00:38:52.730
+<v Karen Sandler:>versa.
+
+1157
+00:38:52.730 --> 00:38:54.250
+<v Karen Sandler:>So I became a volunteer for GNOME,
+
+1158
+00:38:54.250 --> 00:38:56.210
+<v Karen Sandler:>and I joined its board of directors
+
+1159
+00:38:56.210 --> 00:38:57.810
+<v Karen Sandler:>as a volunteer, and my executive director
+
+1160
+00:38:57.810 --> 00:39:00.730
+<v Karen Sandler:>role was with Software Freedom Conservancy, um,
+
+1161
+00:39:00.770 --> 00:39:01.930
+<v Karen Sandler:>which was which was super fun.
+
+1162
+00:39:01.930 --> 00:39:03.450
+<v Karen Sandler:>And then, uh, and then on the
+
+1163
+00:39:03.450 --> 00:39:06.090
+<v Karen Sandler:>same path at the same time, Outreachy
+
+1164
+00:39:06.090 --> 00:39:08.610
+<v Karen Sandler:>moved from GNOME to Software Freedom Conservancy.
+
+1165
+00:39:08.610 --> 00:39:09.850
+<v Karen Sandler:>And it was fun because I basically
+
+1166
+00:39:09.850 --> 00:39:10.810
+<v Karen Sandler:>said, well, I can't be part of
+
+1167
+00:39:10.810 --> 00:39:12.810
+<v Karen Sandler:>that decision because I'm completely conflicted.
+
+1168
+00:39:12.850 --> 00:39:13.930
+<v Karen Sandler:>I'm on the board of directors of
+
+1169
+00:39:13.970 --> 00:39:15.570
+<v Karen Sandler:>GNOME, but I'm executive director of Software
+
+1170
+00:39:15.570 --> 00:39:16.490
+<v Karen Sandler:>Freedom Conservancy.
+
+1171
+00:39:16.490 --> 00:39:19.770
+<v Karen Sandler:>And so Marina handled that evaluation herself.
+
+1172
+00:39:19.930 --> 00:39:22.130
+<v Karen Sandler:>And we I lined up lawyers directly
+
+1173
+00:39:22.130 --> 00:39:24.290
+<v Karen Sandler:>to advise, to advise Outreachy and to
+
+1174
+00:39:24.330 --> 00:39:26.570
+<v Karen Sandler:>advise Software Freedom Conservancy.
+
+1175
+00:39:26.770 --> 00:39:28.650
+<v Karen Sandler:>Um, and so we had um, it
+
+1176
+00:39:28.650 --> 00:39:29.850
+<v Karen Sandler:>was it was a really interesting little
+
+1177
+00:39:29.850 --> 00:39:29.970
+<v Karen Sandler:>thing.
+
+1178
+00:39:29.970 --> 00:39:31.810
+<v Karen Sandler:>And then in 2014, I think it
+
+1179
+00:39:31.810 --> 00:39:34.690
+<v Karen Sandler:>was, uh, outreachy moved over to Software
+
+1180
+00:39:34.690 --> 00:39:36.290
+<v Karen Sandler:>Freedom Conservancy, where it is now.
+
+1181
+00:39:36.450 --> 00:39:38.810
+<v Karen Sandler:>And so Software Freedom Conservancy is my
+
+1182
+00:39:38.810 --> 00:39:40.090
+<v Karen Sandler:>absolute dream job.
+
+1183
+00:39:40.090 --> 00:39:42.650
+<v Karen Sandler:>I call myself the luckiest cyborg lawyer
+
+1184
+00:39:42.650 --> 00:39:43.370
+<v Karen Sandler:>in the world.
+
+1185
+00:39:43.650 --> 00:39:45.970
+<v Karen Sandler:>Um, because the main three things that
+
+1186
+00:39:45.970 --> 00:39:48.450
+<v Karen Sandler:>our organization does is we, um, as
+
+1187
+00:39:48.450 --> 00:39:50.050
+<v Karen Sandler:>I said, we're a fiscal sponsor, so
+
+1188
+00:39:50.250 --> 00:39:52.770
+<v Karen Sandler:>we recognize that no one can leave
+
+1189
+00:39:52.810 --> 00:39:55.890
+<v Karen Sandler:>using proprietary software if there's nothing to
+
+1190
+00:39:55.930 --> 00:39:56.610
+<v Karen Sandler:>switch to.
+
+1191
+00:39:57.050 --> 00:39:59.210
+<v Karen Sandler:>So we help support the creation of
+
+1192
+00:39:59.250 --> 00:40:00.770
+<v Karen Sandler:>free and open source software.
+
+1193
+00:40:01.530 --> 00:40:04.129
+<v Karen Sandler:>Then we have a second what we
+
+1194
+00:40:04.170 --> 00:40:05.049
+<v Karen Sandler:>our logo is a tree.
+
+1195
+00:40:05.050 --> 00:40:06.490
+<v Karen Sandler:>So we talk about our branches.
+
+1196
+00:40:06.890 --> 00:40:09.089
+<v Karen Sandler:>So our second branch is Outreachy where
+
+1197
+00:40:09.090 --> 00:40:10.610
+<v Karen Sandler:>we provide these opportunities.
+
+1198
+00:40:10.810 --> 00:40:13.129
+<v Karen Sandler:>Um, because our software will never be
+
+1199
+00:40:13.130 --> 00:40:15.250
+<v Karen Sandler:>made for everyone if it's not made
+
+1200
+00:40:15.250 --> 00:40:16.330
+<v Karen Sandler:>by everyone.
+
+1201
+00:40:16.890 --> 00:40:18.089
+<v Karen Sandler:>And a good example of that is
+
+1202
+00:40:18.090 --> 00:40:19.890
+<v Karen Sandler:>the way my defibrillator shocked me, because
+
+1203
+00:40:19.890 --> 00:40:22.129
+<v Karen Sandler:>I was not part of the anticipated
+
+1204
+00:40:22.130 --> 00:40:22.810
+<v Karen Sandler:>use case.
+
+1205
+00:40:22.890 --> 00:40:23.170
+<v Karen Sandler:>Right?
+
+1206
+00:40:23.210 --> 00:40:24.890
+<v Karen Sandler:>There are all these great little videos
+
+1207
+00:40:25.170 --> 00:40:27.170
+<v Karen Sandler:>that were flying around Twitter.
+
+1208
+00:40:27.210 --> 00:40:28.690
+<v Karen Sandler:>Once upon a time where they were
+
+1209
+00:40:28.690 --> 00:40:31.370
+<v Karen Sandler:>like soap dispensers and, um, you see
+
+1210
+00:40:31.410 --> 00:40:33.330
+<v Karen Sandler:>a person with a light colored hand,
+
+1211
+00:40:33.370 --> 00:40:35.210
+<v Karen Sandler:>a light skinned hand put their hand
+
+1212
+00:40:35.210 --> 00:40:37.290
+<v Karen Sandler:>under the soap dispenser and soap comes
+
+1213
+00:40:37.290 --> 00:40:38.770
+<v Karen Sandler:>out as you would expect it to.
+
+1214
+00:40:38.810 --> 00:40:40.290
+<v Karen Sandler:>And then someone with dark skin puts
+
+1215
+00:40:40.290 --> 00:40:42.890
+<v Karen Sandler:>their hand under the very same soap
+
+1216
+00:40:42.890 --> 00:40:44.930
+<v Karen Sandler:>dispenser, and nothing happens until they put
+
+1217
+00:40:44.930 --> 00:40:46.930
+<v Karen Sandler:>a white paper towel on top of
+
+1218
+00:40:46.970 --> 00:40:48.530
+<v Karen Sandler:>their hand and the soap comes out.
+
+1219
+00:40:48.570 --> 00:40:50.210
+<v Karen Sandler:>And it really, it's just very clear
+
+1220
+00:40:50.210 --> 00:40:51.770
+<v Karen Sandler:>that there was no one on the
+
+1221
+00:40:51.930 --> 00:40:54.009
+<v Karen Sandler:>team that made and tested that soap
+
+1222
+00:40:54.010 --> 00:40:56.450
+<v Karen Sandler:>dispenser who had dark skin.
+
+1223
+00:40:57.050 --> 00:41:00.129
+<v Karen Sandler:>So until you make your technology diversely,
+
+1224
+00:41:00.130 --> 00:41:01.930
+<v Karen Sandler:>you probably won't make.
+
+1225
+00:41:02.170 --> 00:41:04.089
+<v Karen Sandler:>You won't be able to anticipate all
+
+1226
+00:41:04.130 --> 00:41:05.370
+<v Karen Sandler:>of the use cases that are happening,
+
+1227
+00:41:05.370 --> 00:41:06.210
+<v Karen Sandler:>even still.
+
+1228
+00:41:06.330 --> 00:41:09.290
+<v Karen Sandler:>Technology needs to be changeable.
+
+1229
+00:41:09.330 --> 00:41:11.129
+<v Karen Sandler:>It needs to evolve over time, but
+
+1230
+00:41:11.130 --> 00:41:12.450
+<v Karen Sandler:>you won't stand a chance if you're
+
+1231
+00:41:12.450 --> 00:41:13.689
+<v Karen Sandler:>just making it with a small group
+
+1232
+00:41:13.690 --> 00:41:14.049
+<v Karen Sandler:>of people.
+
+1233
+00:41:14.090 --> 00:41:15.130
+<v Karen Sandler:>So that's our second branch.
+
+1234
+00:41:15.130 --> 00:41:17.170
+<v Karen Sandler:>And then our third branch is standing
+
+1235
+00:41:17.170 --> 00:41:19.650
+<v Karen Sandler:>up for, um, for copyleft, which as
+
+1236
+00:41:19.650 --> 00:41:21.330
+<v Karen Sandler:>I explained earlier, it's sort of the,
+
+1237
+00:41:21.330 --> 00:41:23.370
+<v Karen Sandler:>um, this fun licensing regime where instead
+
+1238
+00:41:23.370 --> 00:41:25.890
+<v Karen Sandler:>of using copyright to keep software a
+
+1239
+00:41:25.890 --> 00:41:28.930
+<v Karen Sandler:>monopolized small, you know, monopolized way to
+
+1240
+00:41:28.970 --> 00:41:30.810
+<v Karen Sandler:>extract royalties from people.
+
+1241
+00:41:30.810 --> 00:41:32.930
+<v Karen Sandler:>Instead, you use that copyright, but to
+
+1242
+00:41:32.930 --> 00:41:34.089
+<v Karen Sandler:>require sharing.
+
+1243
+00:41:34.250 --> 00:41:36.009
+<v Karen Sandler:>And so it's, uh, detractors used to
+
+1244
+00:41:36.010 --> 00:41:38.250
+<v Karen Sandler:>call it viral, but, uh, but it's,
+
+1245
+00:41:38.290 --> 00:41:40.890
+<v Karen Sandler:>uh, uh, you know, a forever free
+
+1246
+00:41:41.570 --> 00:41:44.009
+<v Karen Sandler:>model, and, um, and it it it
+
+1247
+00:41:44.050 --> 00:41:46.049
+<v Karen Sandler:>what's neat about copyleft is it is
+
+1248
+00:41:46.090 --> 00:41:47.930
+<v Karen Sandler:>actually a software right to repair.
+
+1249
+00:41:48.170 --> 00:41:51.319
+<v Karen Sandler:>So it basically gives millions of people
+
+1250
+00:41:51.360 --> 00:41:53.800
+<v Karen Sandler:>rights to fix their devices.
+
+1251
+00:41:54.080 --> 00:41:55.279
+<v Karen Sandler:>It gives you the right to ask
+
+1252
+00:41:55.280 --> 00:41:57.160
+<v Karen Sandler:>for, um, for the source code.
+
+1253
+00:41:57.200 --> 00:41:58.839
+<v Karen Sandler:>And especially if you look at one
+
+1254
+00:41:58.840 --> 00:42:01.360
+<v Karen Sandler:>of the most popular copyleft licenses, GPL,
+
+1255
+00:42:01.600 --> 00:42:02.960
+<v Karen Sandler:>the GPL v2.
+
+1256
+00:42:03.560 --> 00:42:05.720
+<v Karen Sandler:>In that license, it says that they
+
+1257
+00:42:05.720 --> 00:42:07.920
+<v Karen Sandler:>must provide not just the complete and
+
+1258
+00:42:07.920 --> 00:42:10.640
+<v Karen Sandler:>corresponding source code, but including complete and
+
+1259
+00:42:10.640 --> 00:42:13.400
+<v Karen Sandler:>corresponding source code, including the scripts to
+
+1260
+00:42:13.640 --> 00:42:16.320
+<v Karen Sandler:>control compilation and installation.
+
+1261
+00:42:16.440 --> 00:42:18.600
+<v Karen Sandler:>So you must be able to replace
+
+1262
+00:42:18.600 --> 00:42:19.200
+<v Karen Sandler:>your software.
+
+1263
+00:42:19.200 --> 00:42:20.760
+<v Karen Sandler:>You must be able to repair it.
+
+1264
+00:42:20.800 --> 00:42:22.160
+<v Karen Sandler:>And that's really that's our third.
+
+1265
+00:42:22.200 --> 00:42:22.840
+<v Karen Sandler:>Our third chapter.
+
+1266
+00:42:22.840 --> 00:42:24.839
+<v Karen Sandler:>We do things like, um, we filed
+
+1267
+00:42:24.840 --> 00:42:27.600
+<v Karen Sandler:>a lawsuit against the television manufacturer Vizio,
+
+1268
+00:42:27.640 --> 00:42:29.640
+<v Karen Sandler:>which is a very large TV manufacturer
+
+1269
+00:42:29.640 --> 00:42:30.720
+<v Karen Sandler:>in the United States.
+
+1270
+00:42:30.720 --> 00:42:32.479
+<v Karen Sandler:>Because they were not following the rules,
+
+1271
+00:42:32.480 --> 00:42:34.160
+<v Karen Sandler:>they weren't making their complete and corresponding
+
+1272
+00:42:34.160 --> 00:42:35.520
+<v Karen Sandler:>source code available.
+
+1273
+00:42:35.640 --> 00:42:38.720
+<v Karen Sandler:>And so, um, when they didn't respond
+
+1274
+00:42:38.720 --> 00:42:40.839
+<v Karen Sandler:>to us asking them very nicely, we
+
+1275
+00:42:40.880 --> 00:42:43.440
+<v Karen Sandler:>filed a lawsuit as a consumer, as
+
+1276
+00:42:43.440 --> 00:42:45.799
+<v Karen Sandler:>a purchaser of devices, because they are
+
+1277
+00:42:45.800 --> 00:42:47.560
+<v Karen Sandler:>the ones who know that the device
+
+1278
+00:42:47.560 --> 00:42:49.399
+<v Karen Sandler:>is not in compliance and also have
+
+1279
+00:42:49.400 --> 00:42:50.319
+<v Karen Sandler:>an acute need for it.
+
+1280
+00:42:50.320 --> 00:42:52.000
+<v Karen Sandler:>These TVs surveil us.
+
+1281
+00:42:52.040 --> 00:42:53.560
+<v Karen Sandler:>They collect a lot of information about
+
+1282
+00:42:53.560 --> 00:42:55.200
+<v Karen Sandler:>us, and they also could be useful
+
+1283
+00:42:55.200 --> 00:42:56.319
+<v Karen Sandler:>to do other things than what the
+
+1284
+00:42:56.320 --> 00:42:58.400
+<v Karen Sandler:>device manufacturers think we should be using
+
+1285
+00:42:58.400 --> 00:42:58.880
+<v Karen Sandler:>them for.
+
+1286
+00:42:59.040 --> 00:43:00.920
+<v Karen Sandler:>And because of these licenses, we have
+
+1287
+00:43:00.920 --> 00:43:02.240
+<v Karen Sandler:>a right to that software.
+
+1288
+00:43:02.360 --> 00:43:03.880
+<v Karen Sandler:>So we're trying to connect the dots
+
+1289
+00:43:03.920 --> 00:43:08.200
+<v Karen Sandler:>on on copyleft and how critical that
+
+1290
+00:43:08.200 --> 00:43:09.919
+<v Karen Sandler:>is to the things that that folks
+
+1291
+00:43:09.920 --> 00:43:10.040
+<v Karen Sandler:>do.
+
+1292
+00:43:10.080 --> 00:43:12.200
+<v Karen Sandler:>And so I'm really feel super lucky
+
+1293
+00:43:12.200 --> 00:43:14.480
+<v Karen Sandler:>to work at Software Freedom Conservancy.
+
+1294
+00:43:16.840 --> 00:43:17.399
+<v Elisabetta Mori:>Thank you.
+
+1295
+00:43:17.840 --> 00:43:21.440
+<v Elisabetta Mori:>Um, you also got several, uh, awards.
+
+1296
+00:43:21.800 --> 00:43:25.960
+<v Elisabetta Mori:>Um, in 2011, the O'Reilly Open Source
+
+1297
+00:43:25.960 --> 00:43:30.320
+<v Elisabetta Mori:>Award, in 2017, the Free Software Award
+
+1298
+00:43:30.320 --> 00:43:34.040
+<v Elisabetta Mori:>for your work promoting software freedom, and
+
+1299
+00:43:34.080 --> 00:43:39.160
+<v Elisabetta Mori:>in 2023 the honorary doctor in Belgium
+
+1300
+00:43:39.200 --> 00:43:42.799
+<v Elisabetta Mori:>at Katholieke Universiteit Leuven.
+
+1301
+00:43:43.360 --> 00:43:48.320
+<v Elisabetta Mori:>And you were, uh, you You mentioned
+
+1302
+00:43:48.320 --> 00:43:52.400
+<v Elisabetta Mori:>it earlier, but, um, can you tell,
+
+1303
+00:43:52.760 --> 00:43:56.880
+<v Elisabetta Mori:>uh, can you tell us, uh, first,
+
+1304
+00:43:56.920 --> 00:43:58.240
+<v Elisabetta Mori:>did you expect it?
+
+1305
+00:43:59.720 --> 00:44:00.120
+<v Karen Sandler:>No.
+
+1306
+00:44:00.120 --> 00:44:01.560
+<v Karen Sandler:>It was a huge surprise.
+
+1307
+00:44:01.640 --> 00:44:04.440
+<v Karen Sandler:>Um, and it's probably the most meaningful,
+
+1308
+00:44:04.480 --> 00:44:05.839
+<v Karen Sandler:>like those other awards.
+
+1309
+00:44:06.560 --> 00:44:07.400
+<v Karen Sandler:>Very nice.
+
+1310
+00:44:07.480 --> 00:44:10.160
+<v Karen Sandler:>Um, you know, as an adult, you
+
+1311
+00:44:10.160 --> 00:44:12.040
+<v Karen Sandler:>don't really have the opportunity for people
+
+1312
+00:44:12.040 --> 00:44:14.680
+<v Karen Sandler:>to say good job to, like, get
+
+1313
+00:44:14.720 --> 00:44:16.200
+<v Karen Sandler:>recognition for what you do.
+
+1314
+00:44:16.440 --> 00:44:18.200
+<v Karen Sandler:>So they were very meaningful to me.
+
+1315
+00:44:18.360 --> 00:44:21.439
+<v Karen Sandler:>But, um, but for the, um, for
+
+1316
+00:44:21.440 --> 00:44:23.560
+<v Karen Sandler:>the Kai Levin honorary doctorate, it was
+
+1317
+00:44:23.560 --> 00:44:24.560
+<v Karen Sandler:>a total surprise.
+
+1318
+00:44:24.560 --> 00:44:26.279
+<v Karen Sandler:>And the best thing about it is
+
+1319
+00:44:26.280 --> 00:44:28.920
+<v Karen Sandler:>that it was the students who decided
+
+1320
+00:44:28.920 --> 00:44:29.920
+<v Karen Sandler:>I should get it.
+
+1321
+00:44:29.920 --> 00:44:32.520
+<v Karen Sandler:>So they do five per year, four
+
+1322
+00:44:32.520 --> 00:44:34.839
+<v Karen Sandler:>are nominated by faculty, and they're usually,
+
+1323
+00:44:35.080 --> 00:44:37.800
+<v Karen Sandler:>um, folks that are working on things
+
+1324
+00:44:37.800 --> 00:44:41.120
+<v Karen Sandler:>that the academics at Kai Levin are
+
+1325
+00:44:41.120 --> 00:44:43.440
+<v Karen Sandler:>building on from their work, for example.
+
+1326
+00:44:43.600 --> 00:44:46.430
+<v Karen Sandler:>Um, and then the fifth one is
+
+1327
+00:44:46.470 --> 00:44:48.069
+<v Karen Sandler:>the students nominated, and it's a 60
+
+1328
+00:44:48.070 --> 00:44:50.030
+<v Karen Sandler:>000 student university.
+
+1329
+00:44:50.030 --> 00:44:51.910
+<v Karen Sandler:>So presumably some of the students want
+
+1330
+00:44:51.910 --> 00:44:52.870
+<v Karen Sandler:>to give it to, you know, like
+
+1331
+00:44:52.910 --> 00:44:53.670
+<v Karen Sandler:>Taylor Swift.
+
+1332
+00:44:53.990 --> 00:44:56.110
+<v Karen Sandler:>So like or somebody like that.
+
+1333
+00:44:56.190 --> 00:44:58.190
+<v Karen Sandler:>So what was really neat about it
+
+1334
+00:44:58.190 --> 00:45:00.189
+<v Karen Sandler:>was that, um, it reflected the fact
+
+1335
+00:45:00.190 --> 00:45:01.870
+<v Karen Sandler:>that there were students at the school
+
+1336
+00:45:02.070 --> 00:45:04.509
+<v Karen Sandler:>who understood the value of free and
+
+1337
+00:45:04.510 --> 00:45:07.110
+<v Karen Sandler:>open source software and understood how important
+
+1338
+00:45:07.110 --> 00:45:09.550
+<v Karen Sandler:>the concept of software freedom is, then
+
+1339
+00:45:09.550 --> 00:45:11.270
+<v Karen Sandler:>that they had encountered my work and
+
+1340
+00:45:11.270 --> 00:45:13.510
+<v Karen Sandler:>that they found it interesting and inspiring
+
+1341
+00:45:13.670 --> 00:45:15.470
+<v Karen Sandler:>and that they wanted to collaborate with
+
+1342
+00:45:15.470 --> 00:45:18.310
+<v Karen Sandler:>the movement was really, really huge.
+
+1343
+00:45:18.390 --> 00:45:20.350
+<v Karen Sandler:>And then the fact that the students
+
+1344
+00:45:20.350 --> 00:45:22.070
+<v Karen Sandler:>that didn't know about it, which presumably
+
+1345
+00:45:22.070 --> 00:45:24.230
+<v Karen Sandler:>was most of them, that they could
+
+1346
+00:45:24.230 --> 00:45:26.870
+<v Karen Sandler:>understand why the work was important and
+
+1347
+00:45:26.870 --> 00:45:28.069
+<v Karen Sandler:>that it was important and that they
+
+1348
+00:45:28.070 --> 00:45:29.790
+<v Karen Sandler:>cared about it, I think was the
+
+1349
+00:45:29.790 --> 00:45:31.470
+<v Karen Sandler:>most incredible thing.
+
+1350
+00:45:31.590 --> 00:45:34.390
+<v Karen Sandler:>Um, I've done a lot of, you
+
+1351
+00:45:34.390 --> 00:45:36.430
+<v Karen Sandler:>know, interviews over the years.
+
+1352
+00:45:36.470 --> 00:45:38.990
+<v Karen Sandler:>There have been, um, articles and documentaries
+
+1353
+00:45:38.990 --> 00:45:40.950
+<v Karen Sandler:>in most of those works.
+
+1354
+00:45:40.950 --> 00:45:42.549
+<v Karen Sandler:>There's something wrong.
+
+1355
+00:45:43.070 --> 00:45:44.670
+<v Karen Sandler:>There's some fact that's wrong.
+
+1356
+00:45:44.870 --> 00:45:48.110
+<v Karen Sandler:>Some like some thing that they didn't
+
+1357
+00:45:48.110 --> 00:45:49.910
+<v Karen Sandler:>quite get right about what the work
+
+1358
+00:45:49.910 --> 00:45:51.430
+<v Karen Sandler:>stood for, or even just some basic
+
+1359
+00:45:51.430 --> 00:45:52.069
+<v Karen Sandler:>fact.
+
+1360
+00:45:52.070 --> 00:45:53.950
+<v Karen Sandler:>But in the movie that they made
+
+1361
+00:45:53.950 --> 00:45:55.750
+<v Karen Sandler:>and in the the explanations that they
+
+1362
+00:45:55.750 --> 00:45:57.310
+<v Karen Sandler:>gave about why they wanted to give
+
+1363
+00:45:57.310 --> 00:46:00.270
+<v Karen Sandler:>me the award, they got everything 100%
+
+1364
+00:46:00.270 --> 00:46:00.630
+<v Karen Sandler:>right.
+
+1365
+00:46:00.630 --> 00:46:02.470
+<v Karen Sandler:>And I was so struck by that
+
+1366
+00:46:02.470 --> 00:46:04.110
+<v Karen Sandler:>because they really took the time.
+
+1367
+00:46:04.510 --> 00:46:06.390
+<v Karen Sandler:>And what it stands for, for me,
+
+1368
+00:46:06.390 --> 00:46:08.270
+<v Karen Sandler:>is the fact that something has fundamentally
+
+1369
+00:46:08.270 --> 00:46:10.509
+<v Karen Sandler:>changed, that young people care about the
+
+1370
+00:46:10.510 --> 00:46:12.310
+<v Karen Sandler:>state of their software, they care about
+
+1371
+00:46:12.310 --> 00:46:13.390
+<v Karen Sandler:>who's making it.
+
+1372
+00:46:13.390 --> 00:46:15.189
+<v Karen Sandler:>They care about what it will mean
+
+1373
+00:46:15.190 --> 00:46:16.750
+<v Karen Sandler:>for their lives down the road.
+
+1374
+00:46:16.750 --> 00:46:20.069
+<v Karen Sandler:>And it, you know, and and also
+
+1375
+00:46:20.110 --> 00:46:21.670
+<v Karen Sandler:>what they think is valuable that they
+
+1376
+00:46:21.670 --> 00:46:22.430
+<v Karen Sandler:>want to spend their time.
+
+1377
+00:46:22.470 --> 00:46:23.910
+<v Karen Sandler:>And when I give a lecture around
+
+1378
+00:46:23.950 --> 00:46:27.710
+<v Karen Sandler:>the, um, the doctorate, um, there was
+
+1379
+00:46:27.950 --> 00:46:30.149
+<v Karen Sandler:>great participation from folks in the law
+
+1380
+00:46:30.150 --> 00:46:33.070
+<v Karen Sandler:>school, in the engineering school, in computer
+
+1381
+00:46:33.070 --> 00:46:33.830
+<v Karen Sandler:>science.
+
+1382
+00:46:33.950 --> 00:46:35.710
+<v Karen Sandler:>So it was just it was it
+
+1383
+00:46:35.710 --> 00:46:37.549
+<v Karen Sandler:>was really, I'd say, one of the
+
+1384
+00:46:37.550 --> 00:46:40.149
+<v Karen Sandler:>most meaningful things because it made me
+
+1385
+00:46:40.150 --> 00:46:42.670
+<v Karen Sandler:>feel like I'm not just on a
+
+1386
+00:46:42.710 --> 00:46:43.430
+<v Karen Sandler:>hamster wheel.
+
+1387
+00:46:43.470 --> 00:46:46.069
+<v Karen Sandler:>Like I'm not just shouting into a
+
+1388
+00:46:46.070 --> 00:46:46.670
+<v Karen Sandler:>void.
+
+1389
+00:46:46.910 --> 00:46:48.629
+<v Karen Sandler:>Um, trying to get things to change.
+
+1390
+00:46:48.630 --> 00:46:49.470
+<v Karen Sandler:>That will never change.
+
+1391
+00:46:49.470 --> 00:46:51.310
+<v Karen Sandler:>But in fact stands for the fact
+
+1392
+00:46:51.310 --> 00:46:54.230
+<v Karen Sandler:>that they will change because smart young
+
+1393
+00:46:54.230 --> 00:46:55.550
+<v Karen Sandler:>people care about it.
+
+1394
+00:46:55.870 --> 00:46:58.069
+<v Karen Sandler:>Smart older people also care about it.
+
+1395
+00:46:58.070 --> 00:47:00.229
+<v Karen Sandler:>And they're retiring like we're about to
+
+1396
+00:47:00.270 --> 00:47:02.390
+<v Karen Sandler:>like we're about to have this explosion
+
+1397
+00:47:02.390 --> 00:47:03.430
+<v Karen Sandler:>of productivity.
+
+1398
+00:47:03.430 --> 00:47:05.830
+<v Karen Sandler:>And it's I just can't I just
+
+1399
+00:47:05.830 --> 00:47:06.270
+<v Karen Sandler:>can't wait.
+
+1400
+00:47:06.270 --> 00:47:08.550
+<v Karen Sandler:>It's such an exciting time in software
+
+1401
+00:47:08.550 --> 00:47:10.310
+<v Karen Sandler:>freedom and in technology in general, because
+
+1402
+00:47:10.310 --> 00:47:12.870
+<v Karen Sandler:>while we've created this massive dystopia, we're
+
+1403
+00:47:12.870 --> 00:47:14.390
+<v Karen Sandler:>finally in the change the part where
+
+1404
+00:47:14.390 --> 00:47:15.350
+<v Karen Sandler:>things can change.
+
+1405
+00:47:16.670 --> 00:47:20.109
+<v Elisabetta Mori:>Um, so if you look about at
+
+1406
+00:47:20.150 --> 00:47:25.470
+<v Elisabetta Mori:>the future, um, what are the things
+
+1407
+00:47:25.470 --> 00:47:27.950
+<v Elisabetta Mori:>that you can see that are going
+
+1408
+00:47:27.950 --> 00:47:29.029
+<v Elisabetta Mori:>in the right direction?
+
+1409
+00:47:29.030 --> 00:47:31.750
+<v Elisabetta Mori:>And what are the things that we
+
+1410
+00:47:31.750 --> 00:47:33.990
+<v Elisabetta Mori:>really need to be careful about?
+
+1411
+00:47:35.750 --> 00:47:37.470
+<v Karen Sandler:>Yeah, I mean, I'd say like.
+
+1412
+00:47:39.550 --> 00:47:40.750
+<v Karen Sandler:>It's funny because one of the things
+
+1413
+00:47:40.750 --> 00:47:41.990
+<v Karen Sandler:>I'm most proud of, of my career
+
+1414
+00:47:41.990 --> 00:47:43.509
+<v Karen Sandler:>is the fact that we had more
+
+1415
+00:47:43.510 --> 00:47:45.109
+<v Karen Sandler:>than a thousand students come through the
+
+1416
+00:47:45.110 --> 00:47:46.110
+<v Karen Sandler:>outreach program.
+
+1417
+00:47:46.350 --> 00:47:49.270
+<v Karen Sandler:>Um, like all these opportunities for folks
+
+1418
+00:47:49.270 --> 00:47:51.190
+<v Karen Sandler:>that are subject to systemic bias who
+
+1419
+00:47:51.190 --> 00:47:53.030
+<v Karen Sandler:>wouldn't ordinarily be included.
+
+1420
+00:47:53.230 --> 00:47:55.230
+<v Karen Sandler:>And I think that the like software
+
+1421
+00:47:55.230 --> 00:47:57.390
+<v Karen Sandler:>freedom stands for the proposition that we
+
+1422
+00:47:57.390 --> 00:48:00.470
+<v Karen Sandler:>can democratize our technology, but in effect,
+
+1423
+00:48:00.470 --> 00:48:03.430
+<v Karen Sandler:>we haven't really done that very much.
+
+1424
+00:48:03.750 --> 00:48:07.030
+<v Karen Sandler:>Um, you know, most of our technology
+
+1425
+00:48:07.030 --> 00:48:09.430
+<v Karen Sandler:>creation is very homogeneous, and it's done
+
+1426
+00:48:09.430 --> 00:48:11.830
+<v Karen Sandler:>by a very centralized small group of
+
+1427
+00:48:11.830 --> 00:48:12.549
+<v Karen Sandler:>companies.
+
+1428
+00:48:12.910 --> 00:48:15.910
+<v Karen Sandler:>So looking forward, what what I want
+
+1429
+00:48:15.950 --> 00:48:17.310
+<v Karen Sandler:>to what I, what I'm hoping to
+
+1430
+00:48:17.310 --> 00:48:22.510
+<v Karen Sandler:>see is this explosion of contributions from
+
+1431
+00:48:22.510 --> 00:48:24.750
+<v Karen Sandler:>folks who have had enough, you know,
+
+1432
+00:48:24.790 --> 00:48:26.790
+<v Karen Sandler:>who are willing to like it's really
+
+1433
+00:48:26.790 --> 00:48:27.950
+<v Karen Sandler:>hard to change what you do.
+
+1434
+00:48:27.950 --> 00:48:29.910
+<v Karen Sandler:>It's really hard if you're used to
+
+1435
+00:48:30.670 --> 00:48:34.109
+<v Karen Sandler:>certain, you know, if you're used to
+
+1436
+00:48:34.150 --> 00:48:37.950
+<v Karen Sandler:>having certain apps or features on your
+
+1437
+00:48:37.950 --> 00:48:39.500
+<v Karen Sandler:>phone or on your computer.
+
+1438
+00:48:39.500 --> 00:48:41.620
+<v Karen Sandler:>It's really hard to go back, but
+
+1439
+00:48:42.580 --> 00:48:44.900
+<v Karen Sandler:>people are willing to, you know, um,
+
+1440
+00:48:44.900 --> 00:48:46.580
+<v Karen Sandler:>one of my kids is now 11
+
+1441
+00:48:46.940 --> 00:48:49.819
+<v Karen Sandler:>and like quite a few kids now
+
+1442
+00:48:49.820 --> 00:48:51.459
+<v Karen Sandler:>have flip phones and are happy for
+
+1443
+00:48:51.460 --> 00:48:51.620
+<v Karen Sandler:>it.
+
+1444
+00:48:51.620 --> 00:48:54.740
+<v Karen Sandler:>They've read the articles saying that social
+
+1445
+00:48:54.740 --> 00:48:59.460
+<v Karen Sandler:>media causes, uh, depression in teenagers.
+
+1446
+00:48:59.460 --> 00:49:01.900
+<v Karen Sandler:>They've read the fact that screens and
+
+1447
+00:49:01.900 --> 00:49:03.660
+<v Karen Sandler:>the use of smartphones interfere with their
+
+1448
+00:49:03.660 --> 00:49:04.620
+<v Karen Sandler:>brain development.
+
+1449
+00:49:04.620 --> 00:49:06.540
+<v Karen Sandler:>And they don't they don't.
+
+1450
+00:49:06.580 --> 00:49:07.259
+<v Karen Sandler:>They don't want it.
+
+1451
+00:49:07.260 --> 00:49:08.859
+<v Karen Sandler:>That's what foreign grown ups do.
+
+1452
+00:49:08.900 --> 00:49:09.980
+<v Karen Sandler:>And they don't want it anymore.
+
+1453
+00:49:10.020 --> 00:49:10.300
+<v Karen Sandler:>Right.
+
+1454
+00:49:10.340 --> 00:49:12.660
+<v Karen Sandler:>So looking forward, I think that, um,
+
+1455
+00:49:12.820 --> 00:49:14.460
+<v Karen Sandler:>you know, the sharing of information where
+
+1456
+00:49:14.460 --> 00:49:16.740
+<v Karen Sandler:>we're able to critically look at where
+
+1457
+00:49:16.740 --> 00:49:18.819
+<v Karen Sandler:>we're we are a data like a
+
+1458
+00:49:18.820 --> 00:49:20.940
+<v Karen Sandler:>data driven society where we look for,
+
+1459
+00:49:20.980 --> 00:49:24.380
+<v Karen Sandler:>you know, uh, concrete aggregation of information
+
+1460
+00:49:24.380 --> 00:49:26.660
+<v Karen Sandler:>about the impact of technology and where,
+
+1461
+00:49:26.980 --> 00:49:28.980
+<v Karen Sandler:>um, we're seeing what doesn't work.
+
+1462
+00:49:29.220 --> 00:49:30.420
+<v Karen Sandler:>We are seeing an increase in a
+
+1463
+00:49:30.420 --> 00:49:31.779
+<v Karen Sandler:>willingness to regulate.
+
+1464
+00:49:31.900 --> 00:49:34.580
+<v Karen Sandler:>I was astounded that GDPR was able
+
+1465
+00:49:34.580 --> 00:49:35.500
+<v Karen Sandler:>to happen in Europe.
+
+1466
+00:49:35.500 --> 00:49:37.100
+<v Karen Sandler:>And so happy and grateful.
+
+1467
+00:49:37.540 --> 00:49:38.580
+<v Karen Sandler:>And I think we're going to be
+
+1468
+00:49:38.620 --> 00:49:39.779
+<v Karen Sandler:>able to I think we're going to
+
+1469
+00:49:39.780 --> 00:49:42.220
+<v Karen Sandler:>see more regulation.
+
+1470
+00:49:42.220 --> 00:49:44.460
+<v Karen Sandler:>But the downside is that there's a
+
+1471
+00:49:44.460 --> 00:49:46.580
+<v Karen Sandler:>contraction of funding across the board.
+
+1472
+00:49:46.700 --> 00:49:50.100
+<v Karen Sandler:>There's less money coming into software freedom.
+
+1473
+00:49:50.100 --> 00:49:52.859
+<v Karen Sandler:>And there was a co-option of the
+
+1474
+00:49:52.860 --> 00:49:55.460
+<v Karen Sandler:>software freedom movement by companies that were
+
+1475
+00:49:55.500 --> 00:49:57.300
+<v Karen Sandler:>wanting to extract the value of open
+
+1476
+00:49:57.300 --> 00:49:57.860
+<v Karen Sandler:>source.
+
+1477
+00:49:58.540 --> 00:49:59.940
+<v Karen Sandler:>And so we're going to have to
+
+1478
+00:49:59.940 --> 00:50:00.940
+<v Karen Sandler:>get over this, and we're going to
+
+1479
+00:50:00.940 --> 00:50:02.500
+<v Karen Sandler:>get over this through a really catastrophic
+
+1480
+00:50:02.500 --> 00:50:03.420
+<v Karen Sandler:>I mean, it really looks like we're
+
+1481
+00:50:03.420 --> 00:50:05.299
+<v Karen Sandler:>in this catastrophic time where funding is
+
+1482
+00:50:05.300 --> 00:50:06.060
+<v Karen Sandler:>contracting.
+
+1483
+00:50:06.340 --> 00:50:08.100
+<v Karen Sandler:>Companies did massive layoffs.
+
+1484
+00:50:08.220 --> 00:50:10.740
+<v Karen Sandler:>They're very focused on their profit centers.
+
+1485
+00:50:11.140 --> 00:50:12.460
+<v Karen Sandler:>And so I think things are going
+
+1486
+00:50:12.500 --> 00:50:14.020
+<v Karen Sandler:>to get worse before they get better.
+
+1487
+00:50:14.420 --> 00:50:16.900
+<v Karen Sandler:>But I think through all that pain,
+
+1488
+00:50:16.980 --> 00:50:18.180
+<v Karen Sandler:>I think we'll emerge on the other
+
+1489
+00:50:18.180 --> 00:50:20.740
+<v Karen Sandler:>side with a willingness to have more,
+
+1490
+00:50:21.260 --> 00:50:23.899
+<v Karen Sandler:>um, you know, the societal collaborations that
+
+1491
+00:50:23.900 --> 00:50:25.140
+<v Karen Sandler:>we need for our software.
+
+1492
+00:50:25.140 --> 00:50:27.100
+<v Karen Sandler:>And I think this, you know, well,
+
+1493
+00:50:27.100 --> 00:50:28.420
+<v Karen Sandler:>it'll be very interesting to see what
+
+1494
+00:50:28.420 --> 00:50:30.020
+<v Karen Sandler:>happens with generative AI.
+
+1495
+00:50:30.540 --> 00:50:32.819
+<v Karen Sandler:>Um, you know, and when when that
+
+1496
+00:50:32.820 --> 00:50:35.540
+<v Karen Sandler:>bubble likely bursts, that'll be a really
+
+1497
+00:50:35.700 --> 00:50:38.660
+<v Karen Sandler:>interesting, um, you know, situation to see.
+
+1498
+00:50:38.660 --> 00:50:42.819
+<v Karen Sandler:>So, you know, there's it'll it'll be
+
+1499
+00:50:42.860 --> 00:50:43.779
+<v Karen Sandler:>it'll be fascinating.
+
+1500
+00:50:43.780 --> 00:50:45.779
+<v Karen Sandler:>And I hope that, um, you know,
+
+1501
+00:50:45.820 --> 00:50:46.859
+<v Karen Sandler:>I'm sort of in the middle of
+
+1502
+00:50:46.860 --> 00:50:48.299
+<v Karen Sandler:>my career and I'm hoping that I
+
+1503
+00:50:48.300 --> 00:50:49.859
+<v Karen Sandler:>can be a part of I can
+
+1504
+00:50:49.900 --> 00:50:51.180
+<v Karen Sandler:>I can hold out long enough to
+
+1505
+00:50:51.180 --> 00:50:52.740
+<v Karen Sandler:>be a part of the real, of
+
+1506
+00:50:52.740 --> 00:50:54.500
+<v Karen Sandler:>the real change where things actually get
+
+1507
+00:50:54.500 --> 00:50:55.180
+<v Karen Sandler:>a lot better.
+
+1508
+00:50:57.300 --> 00:50:58.980
+<v Elisabetta Mori:>Uh, is there anything you would like
+
+1509
+00:50:58.980 --> 00:51:00.940
+<v Elisabetta Mori:>to add that we haven't covered today?
+
+1510
+00:51:03.260 --> 00:51:06.140
+<v Karen Sandler:>I would say that if you are
+
+1511
+00:51:06.180 --> 00:51:08.180
+<v Karen Sandler:>able, you should donate to these causes
+
+1512
+00:51:08.180 --> 00:51:09.340
+<v Karen Sandler:>that you care about.
+
+1513
+00:51:09.340 --> 00:51:11.620
+<v Karen Sandler:>Where software freedom Conservancy.
+
+1514
+00:51:11.620 --> 00:51:13.259
+<v Karen Sandler:>So SF Conservancy org.
+
+1515
+00:51:13.460 --> 00:51:14.740
+<v Karen Sandler:>Please, please, please sign up as a
+
+1516
+00:51:14.740 --> 00:51:15.220
+<v Karen Sandler:>sustainer.
+
+1517
+00:51:15.220 --> 00:51:17.540
+<v Karen Sandler:>But the situation is getting dire across
+
+1518
+00:51:17.540 --> 00:51:19.460
+<v Karen Sandler:>all of the nonprofits in our space.
+
+1519
+00:51:19.900 --> 00:51:22.580
+<v Karen Sandler:>Our technology has never been more fragile,
+
+1520
+00:51:22.580 --> 00:51:24.859
+<v Karen Sandler:>and we need both the advocacy and
+
+1521
+00:51:24.860 --> 00:51:26.380
+<v Karen Sandler:>the technology creation.
+
+1522
+00:51:26.620 --> 00:51:28.060
+<v Karen Sandler:>So if you feel you could do
+
+1523
+00:51:28.060 --> 00:51:30.060
+<v Karen Sandler:>that, you should also speaking up.
+
+1524
+00:51:30.100 --> 00:51:33.460
+<v Karen Sandler:>Um, it's becoming much harder to stand
+
+1525
+00:51:33.460 --> 00:51:36.740
+<v Karen Sandler:>up to discrimination and systemic bias.
+
+1526
+00:51:37.300 --> 00:51:39.060
+<v Karen Sandler:>Lots of companies, for example, have cut
+
+1527
+00:51:39.060 --> 00:51:41.540
+<v Karen Sandler:>their, um, their funding for because they
+
+1528
+00:51:41.540 --> 00:51:43.379
+<v Karen Sandler:>don't want to support anybody's woke agenda,
+
+1529
+00:51:43.380 --> 00:51:45.460
+<v Karen Sandler:>which I completely understand.
+
+1530
+00:51:45.620 --> 00:51:47.939
+<v Karen Sandler:>But it does mean that these opportunities
+
+1531
+00:51:47.940 --> 00:51:50.140
+<v Karen Sandler:>there are fewer and far between for
+
+1532
+00:51:50.140 --> 00:51:51.379
+<v Karen Sandler:>people to get involved.
+
+1533
+00:51:51.540 --> 00:51:54.819
+<v Karen Sandler:>So getting engaged, you know, I think
+
+1534
+00:51:54.860 --> 00:51:55.820
+<v Karen Sandler:>is is really important.
+
+1535
+00:51:55.820 --> 00:51:56.660
+<v Karen Sandler:>And I know this is meant to
+
+1536
+00:51:56.660 --> 00:51:57.700
+<v Karen Sandler:>be archival.
+
+1537
+00:51:57.700 --> 00:51:58.980
+<v Karen Sandler:>So it's like living I'm talking in
+
+1538
+00:51:58.980 --> 00:52:00.259
+<v Karen Sandler:>this moment of time.
+
+1539
+00:52:00.260 --> 00:52:01.779
+<v Karen Sandler:>And I'm hoping that in the long
+
+1540
+00:52:01.780 --> 00:52:04.100
+<v Karen Sandler:>run, you people of the future will
+
+1541
+00:52:04.100 --> 00:52:06.740
+<v Karen Sandler:>say, ha ha, what an interesting time
+
+1542
+00:52:06.740 --> 00:52:09.340
+<v Karen Sandler:>it was in the 2020s, and now
+
+1543
+00:52:09.700 --> 00:52:11.460
+<v Karen Sandler:>we've solved so many of these problems,
+
+1544
+00:52:11.460 --> 00:52:14.100
+<v Karen Sandler:>and I, I hope we have, uh,
+
+1545
+00:52:14.100 --> 00:52:16.180
+<v Karen Sandler:>but I guess the, the main thing
+
+1546
+00:52:16.180 --> 00:52:19.300
+<v Karen Sandler:>about, about our particular time is that
+
+1547
+00:52:19.620 --> 00:52:21.660
+<v Karen Sandler:>we all need to get it's so
+
+1548
+00:52:21.660 --> 00:52:24.060
+<v Karen Sandler:>dire that every single individual needs to
+
+1549
+00:52:24.060 --> 00:52:25.420
+<v Karen Sandler:>get involved, and it needs to happen
+
+1550
+00:52:25.420 --> 00:52:25.740
+<v Karen Sandler:>now.
+
+1551
+00:52:28.860 --> 00:52:31.140
+<v Elisabetta Mori:>So we are almost done.
+
+1552
+00:52:31.460 --> 00:52:33.810
+<v Elisabetta Mori:>Uh, but I hope we have other
+
+1553
+00:52:33.810 --> 00:52:35.450
+<v Elisabetta Mori:>chances to chat again.
+
+1554
+00:52:35.970 --> 00:52:37.170
+<v Elisabetta Mori:>Maybe on Thursday.
+
+1555
+00:52:37.410 --> 00:52:40.170
+<v Elisabetta Mori:>Uh, one last question.
+
+1556
+00:52:40.370 --> 00:52:43.010
+<v Elisabetta Mori:>So at your website, punk rock.
+
+1557
+00:52:44.050 --> 00:52:47.129
+<v Elisabetta Mori:>Com it says you're available as a
+
+1558
+00:52:47.850 --> 00:52:48.009
+<v Elisabetta Mori:>DJ.
+
+1559
+00:52:48.050 --> 00:52:49.290
+<v Elisabetta Mori:>Are you still available?
+
+1560
+00:52:50.650 --> 00:52:51.330
+<v Karen Sandler:>Oh, boy.
+
+1561
+00:52:51.810 --> 00:52:53.370
+<v Karen Sandler:>I you know, I was actually just
+
+1562
+00:52:53.410 --> 00:52:55.970
+<v Karen Sandler:>asked to DJ this past, uh, I
+
+1563
+00:52:55.970 --> 00:52:57.250
+<v Karen Sandler:>was asked to DJ for an event
+
+1564
+00:52:57.250 --> 00:52:57.850
+<v Karen Sandler:>in August.
+
+1565
+00:52:57.850 --> 00:53:02.970
+<v Karen Sandler:>I maybe, maybe I it's very fun.
+
+1566
+00:53:03.250 --> 00:53:05.490
+<v Karen Sandler:>So I, I haven't done it in
+
+1567
+00:53:05.490 --> 00:53:06.569
+<v Karen Sandler:>a little while, so I'm kind of
+
+1568
+00:53:06.610 --> 00:53:07.170
+<v Karen Sandler:>rusty.
+
+1569
+00:53:08.770 --> 00:53:09.690
+<v Elisabetta Mori:>Okay, okay.
+
+1570
+00:53:10.610 --> 00:53:13.650
+<v Elisabetta Mori:>So, um, I hope we'll have another
+
+1571
+00:53:13.650 --> 00:53:15.650
+<v Elisabetta Mori:>chance to chat again soon.
+
+1572
+00:53:16.330 --> 00:53:20.490
+<v Elisabetta Mori:>And thank you for now, and it's
+
+1573
+00:53:20.490 --> 00:53:22.410
+<v Elisabetta Mori:>been a real pleasure talking to you
+
+1574
+00:53:22.410 --> 00:53:22.930
+<v Elisabetta Mori:>today.
+
+1575
+00:53:24.290 --> 00:53:25.930
+<v Elisabetta Mori:>Thank you very much for what you're
+
+1576
+00:53:25.930 --> 00:53:26.370
+<v Elisabetta Mori:>doing.
+
+1577
+00:53:27.050 --> 00:53:27.370
+<v Karen Sandler:>Thank you.
+
+1578
+00:53:27.410 --> 00:53:28.009
+<v Karen Sandler:>Elizabeth.
+
+1579
+00:53:28.050 --> 00:53:29.250
+<v Karen Sandler:>I'm so happy to be here.
+
+1580
+00:53:30.010 --> 00:53:30.650
+<v Elisabetta Mori:>Thank you.
+

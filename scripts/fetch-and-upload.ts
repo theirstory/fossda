@@ -317,15 +317,57 @@ async function updateVideoIdType(interviewId: string) {
     throw new Error('Could not find VideoId type definition');
   }
 
-  // Add the new ID to the type
-  const updatedContent = content.replace(
-    /export type VideoId =([^;]+);/,
-    `export type VideoId =$1  | "${interviewId}";`
-  );
+  // Get the current type definition and clean it up
+  const currentType = typeMatch[1].trim();
+  
+  // Add the new ID to the type, ensuring proper formatting
+  const updatedType = currentType.endsWith('|')
+    ? `${currentType} "${interviewId}"`
+    : `${currentType} | "${interviewId}"`;
 
   // Write the updated content back to the file
+  const updatedContent = content.replace(
+    /export type VideoId =([^;]+);/,
+    `export type VideoId = ${updatedType};`
+  );
+
   await fs.writeFile(videosPath, updatedContent);
   console.log(`Added "${interviewId}" to VideoId type`);
+}
+
+// Add this function after updateVideoIdType
+async function updateIdMapping(interviewId: string) {
+  const pagePath = path.join(process.cwd(), 'src', 'app', 'video', '[id]', 'page.tsx');
+  const content = await fs.readFile(pagePath, 'utf-8');
+  
+  // Check if the ID is already in the idMapping
+  if (content.includes(`"${interviewId}": "${interviewId}"`)) {
+    console.log(`ID mapping for "${interviewId}" already exists`);
+    return;
+  }
+
+  // Find the idMapping object
+  const mappingMatch = content.match(/const idMapping: Record<VideoId, string> = {([^}]+)}/);
+  if (!mappingMatch) {
+    throw new Error('Could not find idMapping object');
+  }
+
+  // Get the current mappings and clean them up
+  const currentMappings = mappingMatch[1].trim();
+  
+  // Add the new mapping, ensuring proper formatting
+  const newMapping = currentMappings.endsWith(',')
+    ? `${currentMappings}\n    "${interviewId}": "${interviewId}"`
+    : `${currentMappings},\n    "${interviewId}": "${interviewId}"`;
+
+  // Write the updated content back to the file
+  const updatedContent = content.replace(
+    /const idMapping: Record<VideoId, string> = {([^}]+)}/,
+    `const idMapping: Record<VideoId, string> = {${newMapping}}`
+  );
+
+  await fs.writeFile(pagePath, updatedContent);
+  console.log(`Added "${interviewId}" to idMapping`);
 }
 
 async function fetchAndUpload(storyId: string) {
@@ -373,8 +415,11 @@ async function fetchAndUpload(storyId: string) {
       // Ensure we have at least one character
       .replace(/^$/, 'untitled') as VideoId;
 
-    // Update VideoId type with the new interview ID
+    // Update VideoId type
     await updateVideoIdType(interviewId);
+    
+    // Update idMapping
+    await updateIdMapping(interviewId);
 
     // 2. Fetch transcript and video URL
     console.log('\nFetching transcript...');
@@ -566,8 +611,8 @@ async function fetchAndUpload(storyId: string) {
     console.log('Thumbnail URL:', `https://image.mux.com/${playbackId}/thumbnail.jpg`);
 
   } catch (error) {
-    console.error('Error:', error);
-    process.exit(1);
+    console.error('Error in fetchAndUpload:', error);
+    throw error;
   }
 }
 

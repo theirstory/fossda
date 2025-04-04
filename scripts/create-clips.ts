@@ -178,6 +178,43 @@ function createValidVariableName(id: string): InterviewId {
   );
 }
 
+// Add this function before createClipsFromStory
+function findBestChapterMatch(
+  startTime: number,
+  endTime: number,
+  chapters: { metadata: ChapterMetadata[] }
+): ChapterMetadata | undefined {
+  // First try to find a chapter that fully contains the clip
+  let bestMatch = chapters.metadata.find((chapter, index) => {
+    const nextChapter = chapters.metadata[index + 1];
+    const chapterStart = chapter.time.start;
+    const chapterEnd = nextChapter ? nextChapter.time.start : Infinity;
+    return startTime >= chapterStart && endTime <= chapterEnd;
+  });
+
+  // If no perfect match, find the chapter with the most overlap
+  if (!bestMatch) {
+    let maxOverlap = 0;
+    chapters.metadata.forEach((chapter, index) => {
+      const nextChapter = chapters.metadata[index + 1];
+      const chapterStart = chapter.time.start;
+      const chapterEnd = nextChapter ? nextChapter.time.start : Infinity;
+      
+      // Calculate overlap duration
+      const overlapStart = Math.max(startTime, chapterStart);
+      const overlapEnd = Math.min(endTime, chapterEnd);
+      const overlap = Math.max(0, overlapEnd - overlapStart);
+      
+      if (overlap > maxOverlap) {
+        maxOverlap = overlap;
+        bestMatch = chapter;
+      }
+    });
+  }
+
+  return bestMatch;
+}
+
 async function createClipsFromStory(interviewId: string) {
   try {
     // Convert interviewId to safe variable name
@@ -232,13 +269,32 @@ async function createClipsFromStory(interviewId: string) {
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '');
 
-      // Find the chapter that contains this clip's start time
-      const chapterMetadata = chapters.metadata.find((chapter, index) => {
+      // Find the best matching chapter for this clip
+      const bestChapter = findBestChapterMatch(suggestion.startTime, suggestion.endTime, chapters);
+      
+      if (!bestChapter) {
+        console.warn(`Warning: Could not find a matching chapter for clip "${suggestion.title}" (${suggestion.startTime}-${suggestion.endTime})`);
+      }
+
+      // Find the original chapter based on start time for comparison
+      const originalChapter = chapters.metadata.find((chapter, index) => {
         const nextChapter = chapters.metadata[index + 1];
         const start = chapter.time.start;
         const end = nextChapter ? nextChapter.time.start : Infinity;
         return suggestion.startTime >= start && suggestion.startTime < end;
       });
+
+      // Log warning if there's a mismatch
+      if (bestChapter && originalChapter && bestChapter !== originalChapter) {
+        console.warn(
+          `Warning: Clip "${suggestion.title}" spans multiple chapters:\n` +
+          `  Original chapter: "${originalChapter.title}" (${originalChapter.time.start})\n` +
+          `  Best matching chapter: "${bestChapter.title}" (${bestChapter.time.start})\n` +
+          `  Clip time range: ${suggestion.startTime}-${suggestion.endTime}`
+        );
+      }
+
+      const chapterMetadata = bestChapter || originalChapter;
 
       return {
         id: `${safeId}-${cleanId}`,

@@ -1,0 +1,114 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Early Childhood",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Karen Sandler introduces herself and reflects on her upbringing in a family that valued education and learning. Her early exposure to computers came from her father, an engineer, and she recalls using punch cards, writing her first code as a child, and her fascination with computers from a very young age.",
+      "keywords": "childhood, family background, early computing, education, punch cards, programming"
+    },
+    {
+      "title": "Educational Journey and Cooper Union Experience",
+      "timecode": "00:06:23",
+      "time": {
+        "start": 383,
+        "end": null
+      },
+      "synopsis": "Karen describes her path through public schooling and her transformative undergraduate experience at Cooper Union, a tuition-free school. She discusses how the school’s mission shaped her values, her early experiences with sexism in tech spaces, and how she gained technical experience by working in the computer center.",
+      "keywords": "Cooper Union, computer science, gender bias, Linux, education, values"
+    },
+    {
+      "title": "Law School and Corporate Legal Career",
+      "timecode": "00:11:47",
+      "time": {
+        "start": 707,
+        "end": null
+      },
+      "synopsis": "Karen talks about her decision to attend Columbia Law School, influenced by family pressure. She details her time in corporate law in London and New York, her eventual disillusionment with corporate work, and how that led her to transition to public interest work.",
+      "keywords": "law school, corporate law, Columbia, career shift, London, public interest"
+    },
+    {
+      "title": "Joining the Software Freedom Law Center",
+      "timecode": "00:16:10",
+      "time": {
+        "start": 970,
+        "end": null
+      },
+      "synopsis": "Karen joins the Software Freedom Law Center, reconnecting with her law professor Eben Moglen. She shares stories about working with open source developers and her deepening philosophical commitment to software freedom.",
+      "keywords": "Software Freedom Law Center, open source, legal advocacy, copyleft, career"
+    },
+    {
+      "title": "Medical Device Advocacy and Personal Experience as a Cyborg",
+      "timecode": "00:20:00",
+      "time": {
+        "start": 1200,
+        "end": null
+      },
+      "synopsis": "Karen recounts her discovery of a heart condition and receiving a pacemaker-defibrillator. Her inability to access the device’s software inspired her advocacy for transparency, auditability, and control in medical device software.",
+      "keywords": "medical devices, software transparency, advocacy, pacemaker, personal story"
+    },
+    {
+      "title": "Evolving Concerns: Control and Access to Critical Software",
+      "timecode": "00:25:52",
+      "time": {
+        "start": 1552,
+        "end": null
+      },
+      "synopsis": "Karen discusses subsequent experiences with her defibrillator, including complications during pregnancy and the inability to access her device's data. She reflects on broader implications for software in all critical systems and how her experiences exemplify societal risks.",
+      "keywords": "cybersecurity, control, access, software infrastructure, privacy, personal data"
+    },
+    {
+      "title": "Outreachy and Transition to Software Freedom Conservancy",
+      "timecode": "00:34:55",
+      "time": {
+        "start": 2095,
+        "end": null
+      },
+      "synopsis": "Karen details her involvement in launching and expanding Outreachy, a program aimed at supporting marginalized people in tech. She explains how Outreachy moved to Software Freedom Conservancy, where she eventually became executive director.",
+      "keywords": "Outreachy, diversity, inclusion, GNOME, career transition, nonprofit leadership"
+    },
+    {
+      "title": "Recognition and Honorary Doctorate",
+      "timecode": "00:43:16",
+      "time": {
+        "start": 2596,
+        "end": null
+      },
+      "synopsis": "Karen reflects on receiving several prestigious awards, especially the honorary doctorate from KU Leuven. She emphasizes the significance of student recognition and how it affirms the importance of software freedom to the next generation.",
+      "keywords": "awards, recognition, honorary doctorate, student activism, open source values"
+    },
+    {
+      "title": "Future of Technology and Hopes for Change",
+      "timecode": "00:47:35",
+      "time": {
+        "start": 2855,
+        "end": null
+      },
+      "synopsis": "Karen shares her thoughts on current trends in tech, including positive shifts in awareness around software freedom, regulation, and youth-led change. She also warns about funding cuts and corporate co-optation of open source.",
+      "keywords": "future of tech, regulation, systemic change, open source funding, optimism"
+    },
+    {
+      "title": "Final Reflections and Call to Action",
+      "timecode": "00:51:03",
+      "time": {
+        "start": 3063,
+        "end": null
+      },
+      "synopsis": "Karen urges people to donate, speak up, and engage in advocacy for software freedom and systemic equity. She hopes future generations will have solved many of today’s issues and calls for immediate collective action.",
+      "keywords": "activism, digital rights, systemic bias, donation, civic engagement, call to action"
+    },
+    {
+      "title": "On Being a DJ and Closing Remarks",
+      "timecode": "00:52:28",
+      "time": {
+        "start": 3148,
+        "end": null
+      },
+      "synopsis": "In a lighthearted conclusion, Karen is asked about her DJing hobby. She shares that she may still DJ occasionally and reflects on the fun of that experience. The interview closes with mutual thanks.",
+      "keywords": "personal interests, DJing, hobbies, closing"
+    }
+  ]
+}

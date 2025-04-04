@@ -12,4 +12,6 @@ export const PLAYBACK_IDS = {
   'tony-wasserman': 'vkQEuN11l3Pg00mUv02rqjKyOq5PEZ3ztl7piIR2eYLSY'
 ,
   'joshua-gay-fossda': 'soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E',
+
+  'karen-sandler': 'xx7jiFmdEIpnFkxLOOyESIwd59o9dN4GkqqWHqlTBQw',
 }; 

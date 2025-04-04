@@ -44,7 +44,8 @@ export default async function VideoPage({ params }: Props) {
     "lawrence-rosen": "lawrence-rosen",
     "jon-maddog-hall": "jon-maddog-hall",
     "tony-wasserman": "tony-wasserman",
-    "joshua-gay-fossda": "joshua-gay-fossda"
+    "joshua-gay-fossda": "joshua-gay-fossda",
+    "karen-sandler": "karen-sandler"
   };
 
   const transcriptFilename = idMapping[videoId] || videoId;

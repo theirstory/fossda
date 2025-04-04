@@ -659,25 +659,6 @@ export const clips: Clip[] = [
     ]
   },
   {
-    "id": "joshua-gay-fossda-making-an-impact-on-education-through-open-source",
-    "title": "Making an Impact on Education Through Open Source",
-    "startTime": 4354.186,
-    "endTime": 4700.186,
-    "duration": 346,
-    "chapter": {
-      "id": "joining-ck12-foundation-and-scaling-open-education",
-      "title": "Joining CK12 Foundation and Scaling Open Education"
-    },
-    "interviewId": "joshua-gay-fossda",
-    "interviewTitle": "Joshua Gay",
-    "transcript": "I ended up getting connected with Neeru Khosla. She had just started a project called the CK12 Foundation, a new company organization... her and her husband had been in Silicon Valley for quite a while then.",
-    "themes": [
-      "education",
-      "projects",
-      "evolution"
-    ]
-  },
-  {
     "id": "joshua-gay-fossda-challenges-and-community-building-in-open-source",
     "title": "Challenges and Community Building in Open Source",
     "startTime": 3315.993,
@@ -697,6 +678,25 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "joshua-gay-fossda-making-an-impact-on-education-through-open-source",
+    "title": "Making an Impact on Education Through Open Source",
+    "startTime": 4354.186,
+    "endTime": 4700.186,
+    "duration": 346,
+    "chapter": {
+      "id": "joining-ck12-foundation-and-scaling-open-education",
+      "title": "Joining CK12 Foundation and Scaling Open Education"
+    },
+    "interviewId": "joshua-gay-fossda",
+    "interviewTitle": "Joshua Gay",
+    "transcript": "I ended up getting connected with Neeru Khosla. She had just started a project called the CK12 Foundation, a new company organization... her and her husband had been in Silicon Valley for quite a while then.",
+    "themes": [
+      "education",
+      "projects",
+      "evolution"
+    ]
+  },
+  {
     "id": "joshua-gay-fossda-the-evolution-and-legitimization-of-open-source",
     "title": "The Evolution and Legitimization of Open Source",
     "startTime": 6091.265,
@@ -711,6 +711,79 @@ export const clips: Clip[] = [
     "transcript": "The biggest change is in the first 10, maybe almost 15 years that I was a part of it, I couldn't really go more than a week or two without having a conversation about questioning the legitimacy of it... To now, where I don't necessarily think people are on the whole more informed of what free and open source software is. But the legitimacy of it, that it's here, that it's established, is so strong...",
     "themes": [
       "evolution"
+    ]
+  },
+  {
+    "id": "karen-sandler-early-influences-from-parent-s-engineering-and-teaching-careers",
+    "title": "Early Influences from Parent's Engineering and Teaching Careers",
+    "startTime": 76.64,
+    "endTime": 308.64,
+    "duration": 232,
+    "chapter": {
+      "id": "introduction-and-early-childhood",
+      "title": "Introduction and Early Childhood"
+    },
+    "interviewId": "karen-sandler",
+    "interviewTitle": "Karen Sandler",
+    "transcript": "Karen Sandler: Sure. I grew up in the suburbs in the United States. Um, my parents had grown up very poor... And so, uh, he was quite technical, and he was one of the first people using, uh, computer code in order to, like, using computers to replace the, um, the manual, um, crunching of numbers...",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "karen-sandler-first-experience-writing-code",
+    "title": "First Experience Writing Code",
+    "startTime": 251.31,
+    "endTime": 471.31,
+    "duration": 220,
+    "chapter": {
+      "id": "introduction-and-early-childhood",
+      "title": "Introduction and Early Childhood"
+    },
+    "interviewId": "karen-sandler",
+    "interviewTitle": "Karen Sandler",
+    "transcript": "Karen Sandler: ...I think I wrote my first really, really, really, really silly program when I was probably six years old, you know, or 5 or 6 years old...",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "karen-sandler-working-with-software-freedom-conservancy",
+    "title": "Working with Software Freedom Conservancy",
+    "startTime": 2376.69,
+    "endTime": 2592.69,
+    "duration": 216,
+    "chapter": {
+      "id": "outreachy-and-transition-to-software-freedom-conservancy",
+      "title": "Outreachy and Transition to Software Freedom Conservancy"
+    },
+    "interviewId": "karen-sandler",
+    "interviewTitle": "Karen Sandler",
+    "transcript": "Karen Sandler: Software Freedom Conservancy is my absolute dream job...",
+    "themes": [
+      "projects",
+      "community",
+      "mission-values"
+    ]
+  },
+  {
+    "id": "karen-sandler-call-for-engagement-and-support-in-software-freedom",
+    "title": "Call for Engagement and Support in Software Freedom",
+    "startTime": 3063.26,
+    "endTime": 3202.26,
+    "duration": 139,
+    "chapter": {
+      "id": "final-reflections-and-call-to-action",
+      "title": "Final Reflections and Call to Action"
+    },
+    "interviewId": "karen-sandler",
+    "interviewTitle": "Karen Sandler",
+    "transcript": "Karen Sandler: I would say that if you are able, you should donate to these causes that you care about...",
+    "themes": [
+      "community",
+      "challenges"
     ]
   },
   {

@@ -1,4 +1,5 @@
-import type { VideoData } from "@/types/transcript";
+// Remove the unused import
+// import type { VideoData } from "@/types/transcript";
 
 // Define a type for all valid video IDs
 export type VideoId = 
@@ -13,10 +14,11 @@ export type VideoId =
   | "lawrence-rosen"
   | "jon-maddog-hall"
   | "tony-wasserman"
-  | "joshua-gay-fossda";
+  | "joshua-gay-fossda"
+  | "karen-sandler";
 
 // Type the videoData object with Record<VideoId, VideoData>
-export const videoData: Record<VideoId, VideoData> = {
+export const videoData = {
   "introduction-to-fossda": {
     id: "introduction-to-fossda",
     title: "Introduction to FOSSDA",
@@ -24,6 +26,14 @@ export const videoData: Record<VideoId, VideoData> = {
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "karen-sandler": {
+    id: "karen-sandler",
+    title: "Karen Sandler",
+    duration: "53:32",
+    thumbnail: "/thumbnails/karen-sandler.png",
+    summary: "Interview with Karen Sandler discussing her journey from corporate law to becoming a leading advocate for software freedom, her work with the Software Freedom Law Center and Software Freedom Conservancy, and her personal mission to promote transparency in medical device software.",
+    sentence: "From corporate law to software freedom advocacy - championing transparency in critical systems."
   },
   "joshua-gay-fossda": {
     id: "joshua-gay-fossda",
