@@ -461,8 +461,8 @@ export default function AskForm() {
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Ask the Archive</h1>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Ask questions about open source and receive answers with direct quotes from our interviews.
-          Our AI will help you explore insights from industry pioneers.
+          Ask questions about open source and receive answers with direct quotes from the interviews.
+          Click on any quote or citation to go to the quote within its interview.
         </p>
       </div>
 
