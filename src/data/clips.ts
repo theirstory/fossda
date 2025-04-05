@@ -787,6 +787,98 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "kirk-mckusick-early-exposure-to-computers-and-technology",
+    "title": "Early Exposure to Computers and Technology",
+    "startTime": 1116.821,
+    "endTime": 1198.96,
+    "duration": 82.13900000000012,
+    "chapter": {
+      "id": "introduction-and-background",
+      "title": "Introduction and Background"
+    },
+    "interviewId": "kirk-mckusick",
+    "interviewTitle": "Kirk McKusick",
+    "transcript": "Kirk McKusick: Well, math and science classes were clearly my strong suit in school and the ones that I enjoyed the most. And I had just a little bit of stuff with computers because there was nothing in my high school at that time that involved computers. But I had an opportunity to do some other stuff at the University of Delaware where I'd gotten a little bit of introduction to computers.",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "kirk-mckusick-contributions-to-bsd-and-the-evolution-of-open-source",
+    "title": "Contributions to BSD and the Evolution of Open Source",
+    "startTime": 1576.486,
+    "endTime": 1777.508000000001,
+    "duration": 201.02200000000084,
+    "chapter": {
+      "id": "bsd-license-vs-gpl",
+      "title": "BSD License vs. GPL"
+    },
+    "interviewId": "kirk-mckusick",
+    "interviewTitle": "Kirk McKusick",
+    "transcript": "Elisabetta Mori: So you moved to Berkeley... And then, you know, you had first – you were sharing your room with Bill Joy when you were, like, a graduate student. And how did you get involved in the Berkeley Software Distribution Project?",
+    "themes": [
+      "projects",
+      "evolution",
+      "community"
+    ]
+  },
+  {
+    "id": "kirk-mckusick-developing-the-fast-file-system",
+    "title": "Developing the Fast File System",
+    "startTime": 2845.02,
+    "endTime": 3007.559999999999,
+    "duration": 162.53999999999905,
+    "chapter": {
+      "id": "career-advice-and-reflections",
+      "title": "Career Advice and Reflections"
+    },
+    "interviewId": "kirk-mckusick",
+    "interviewTitle": "Kirk McKusick",
+    "transcript": "Elisabetta Mori: So what do you think were your major contributions to the project? Kirk McKusick: So I'm going to start slightly before that transition happened. And that was, well, sort of the first big contribution I made was the Pascal compiler. And although Pascal, although important at that time, faded away fairly quickly. The other major contribution I made was the fast file system...",
+    "themes": [
+      "projects",
+      "evolution"
+    ]
+  },
+  {
+    "id": "kirk-mckusick-the-inception-of-sendmail-by-eric-allman",
+    "title": "The Inception of Sendmail by Eric Allman",
+    "startTime": 8066.984,
+    "endTime": 8181.508999999998,
+    "duration": 114.52499999999782,
+    "chapter": {
+      "id": "career-advice-and-reflections",
+      "title": "Career Advice and Reflections"
+    },
+    "interviewId": "kirk-mckusick",
+    "interviewTitle": "Kirk McKusick",
+    "transcript": "Kirk McKusick: So to the story, um, so Eric wrote this thing, it was originally called deliver mail. Uh, and by being essentially able to forward mail back and forth between the internet and the local Berkeley network, he no longer had people, no longer needed to have accounts on that machine...",
+    "themes": [
+      "projects",
+      "community",
+      "evolution"
+    ]
+  },
+  {
+    "id": "kirk-mckusick-philosophy-on-open-source-and-licensing",
+    "title": "On Living the Life You Want",
+    "startTime": 8848.105,
+    "endTime": 8978.269,
+    "duration": 130.164,
+    "chapter": {
+      "id": "career-advice-and-reflections",
+      "title": "Career Advice and Reflections"
+    },
+    "interviewId": "kirk-mckusick",
+    "interviewTitle": "Kirk McKusick",
+    "transcript": "Elisabetta Mori:Is there anything you would do differently if you had your time again?",
+    "themes": [
+      "evolution",
+      "mission-values"
+    ]
+  },
+  {
     "id": "augustin-early-engineering",
     "title": "Problem-Solving Mindset on the Farm",
     "startTime": 124,

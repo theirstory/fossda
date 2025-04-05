@@ -14,4 +14,6 @@ export const PLAYBACK_IDS = {
   'joshua-gay-fossda': 'soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E',
 
   'karen-sandler': 'xx7jiFmdEIpnFkxLOOyESIwd59o9dN4GkqqWHqlTBQw',
+
+  'kirk-mckusick': 'av8oAccqlbrkwFLZdJvwFqGcTumZgTwDwzQXCPSX2Hs',
 }; 

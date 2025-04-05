@@ -2,8 +2,7 @@
 // import type { VideoData } from "@/types/transcript";
 
 // Define a type for all valid video IDs
-export type VideoId = 
-  | "introduction-to-fossda"
+export type VideoId = | "introduction-to-fossda"
   | "tristan-nitot"
   | "deb-goodkin"
   | "heather-meeker"
@@ -15,7 +14,7 @@ export type VideoId =
   | "jon-maddog-hall"
   | "tony-wasserman"
   | "joshua-gay-fossda"
-  | "karen-sandler";
+  | "karen-sandler" | "kirk-mckusick";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData = {
@@ -26,6 +25,14 @@ export const videoData = {
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "kirk-mckusick": {
+    id: "kirk-mckusick",
+    title: "Kirk McKusick",
+    duration: "2:30:29",
+    thumbnail: "/thumbnails/kirk-mckusick.png",
+    summary: "In this interview, Marshall Kirk McKusick recounts his influential career developing the Berkeley Software Distribution (BSD) and FreeBSD operating systems, highlighting his fast file system work and his role in making BSD open source. McKusick discusses his personal life, including his relationship with husband Eric Allman (creator of Sendmail) and their approach to raising children. The conversation weaves together the evolution of Unix-based systems and McKusick's experiences navigating technological and social changes from the 1970s to present.",
+    sentence: "From Code to Community: How Marshall Kirk McKusick Shaped BSD Unix and Navigated Life's Transitions"
   },
   "karen-sandler": {
     id: "karen-sandler",

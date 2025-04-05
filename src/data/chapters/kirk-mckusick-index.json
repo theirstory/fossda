@@ -1,0 +1,234 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Background",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Elisabetta Mori introduces Marshall Kirk McKusick, a computer scientist known for his extensive work on BSD Unix and FreeBSD. McKusick shares details about his early life in Wilmington, Delaware, where his father worked for DuPont and his mother was a pediatrician who was part of the first class of women admitted to Harvard Medical School.",
+      "keywords": "BSD, FreeBSD, FOSSDA, introduction, Wilmington, Delaware, DuPont, Harvard Medical School, pediatrician"
+    },
+    {
+      "title": "Education and Growing Up",
+      "timecode": "00:05:14",
+      "time": {
+        "start": 314,
+        "end": null
+      },
+      "synopsis": "McKusick discusses his education at Wilmington Friends School (a Quaker school), his participation in anti-Vietnam War protests, and his early realization of his attraction to men. He describes how the school environment was supportive despite this being before the gay rights movement.",
+      "keywords": "Wilmington Friends School, Quakers, anti-war protests, Vietnam War, Joe Biden, sexuality, education"
+    },
+    {
+      "title": "Siblings and Family",
+      "timecode": "00:10:16",
+      "time": {
+        "start": 616,
+        "end": null
+      },
+      "synopsis": "McKusick describes his siblings: a brother who became an English professor and eventually a dean at the University of Missouri, and a sister who combined biology and computer science expertise to work on the Human Genome Project and later in drug development startups.",
+      "keywords": "siblings, brother, sister, University of Missouri, Human Genome Project, biology, computer science, academia"
+    },
+    {
+      "title": "College Education and Early Career",
+      "timecode": "00:18:18",
+      "time": {
+        "start": 1098,
+        "end": null
+      },
+      "synopsis": "McKusick explains his choice to study electrical engineering at Cornell since they didn't offer a computer science undergraduate degree. He discusses his transition to UC Berkeley for graduate studies, where he received a master's in computer science, an MBA, and a PhD.",
+      "keywords": "Cornell, electrical engineering, Berkeley, computer science, graduate studies, education"
+    },
+    {
+      "title": "Berkeley and Meeting Bill Joy",
+      "timecode": "00:20:52",
+      "time": {
+        "start": 1252,
+        "end": null
+      },
+      "synopsis": "McKusick recounts his decision to attend Berkeley for graduate school and sharing an office with Bill Joy. He describes Joy as exceptionally fast at coding, creating programs like the VI editor and C-shell, though the code was often difficult to modify.",
+      "keywords": "Berkeley, Bill Joy, graduate school, VI editor, C-shell, programming"
+    },
+    {
+      "title": "Berkeley Software Distribution Project",
+      "timecode": "00:26:46",
+      "time": {
+        "start": 1606,
+        "end": null
+      },
+      "synopsis": "McKusick explains how Bill Joy created the Berkeley Software Distribution (BSD), initially just consisting of utilities Joy had written. McKusick discusses his own contributions, including a Graphical Profiler (GPROF), and how BSD evolved to include more utilities and eventually support for VAX machines.",
+      "keywords": "BSD, Berkeley Software Distribution, Bill Joy, GPROF, VAX, Unix, operating systems"
+    },
+    {
+      "title": "The Fast File System Project",
+      "timecode": "00:33:15",
+      "time": {
+        "start": 1995,
+        "end": null
+      },
+      "synopsis": "McKusick describes how he began working on the file system when he needed summer funding, and what started as a small project turned into an 18-month endeavor. This fast file system became one of his most significant contributions and was used by companies like Netflix until recently.",
+      "keywords": "fast file system, Netflix, summer project, file system design"
+    },
+    {
+      "title": "Business Education and Administrative Skills",
+      "timecode": "00:39:26",
+      "time": {
+        "start": 2366,
+        "end": null
+      },
+      "synopsis": "McKusick explains how he earned a Master's in Business Administration by helping the dean of the business school with computing issues. He describes how this education, particularly in entrepreneurship, proved valuable in his later dealings with startup companies.",
+      "keywords": "MBA, business education, entrepreneurship, academic politics, startup companies"
+    },
+    {
+      "title": "Transition to Leading BSD",
+      "timecode": "00:46:57",
+      "time": {
+        "start": 2817,
+        "end": null
+      },
+      "synopsis": "McKusick discusses finishing his PhD in 1984 and taking over the Berkeley Software Distribution project in 1985 as a research computer scientist. He outlines his major contributions including the Pascal compiler and the fast file system, which is still in use today.",
+      "keywords": "PhD, Berkeley Software Distribution, research, fast file system, Pascal compiler"
+    },
+    {
+      "title": "Bill Joy and Sun Microsystems",
+      "timecode": "00:50:42",
+      "time": {
+        "start": 3042,
+        "end": null
+      },
+      "synopsis": "McKusick recounts his interactions with Bill Joy as Joy was founding Sun Microsystems. McKusick declined to join as an early employee but did consulting work for Sun, receiving stock that later became valuable when Sun became successful.",
+      "keywords": "Sun Microsystems, Bill Joy, startup, consulting, stock options"
+    },
+    {
+      "title": "Collaborative Development Model",
+      "timecode": "00:54:40",
+      "time": {
+        "start": 3280,
+        "end": null
+      },
+      "synopsis": "McKusick describes how BSD development relied on contributions from multiple sites, with hundreds of people contributing code. He explains the code review process and how the team would examine all changes between distributions line by line.",
+      "keywords": "collaboration, source code control, contributions, code review, open development"
+    },
+    {
+      "title": "Making BSD Open Source",
+      "timecode": "00:57:00",
+      "time": {
+        "start": 3420,
+        "end": null
+      },
+      "synopsis": "McKusick details the complex legal battle with AT&T that ultimately led to the creation of open-source BSD. He explains how they first released TCP/IP networking code, then systematically replaced AT&T code in the kernel, finally leading to a fully open-source system.",
+      "keywords": "open source, AT&T, TCP/IP, Networking Release, copyright, legal battle"
+    },
+    {
+      "title": "Legal Depositions and Settlement",
+      "timecode": "01:12:41",
+      "time": {
+        "start": 4361,
+        "end": null
+      },
+      "synopsis": "McKusick describes his experience giving depositions during the AT&T lawsuit, the discovery that AT&T had removed BSD copyright notices from code they had incorporated, and how this led to a settlement that ultimately benefited the BSD project.",
+      "keywords": "depositions, legal testimony, AT&T lawsuit, copyright infringement, settlement"
+    },
+    {
+      "title": "FreeBSD Project Origins",
+      "timecode": "01:18:32",
+      "time": {
+        "start": 4712,
+        "end": null
+      },
+      "synopsis": "McKusick explains how after the AT&T settlement, the BSD code split into different projects: NetBSD (focusing on multiple architectures), FreeBSD (focusing on the Intel architecture and user-friendliness), and later OpenBSD (focusing on security).",
+      "keywords": "FreeBSD, NetBSD, OpenBSD, Linux, Linus Torvalds, project splits"
+    },
+    {
+      "title": "Major Technical Contributions",
+      "timecode": "01:25:00",
+      "time": {
+        "start": 5100,
+        "end": null
+      },
+      "synopsis": "McKusick details his significant technical contributions to BSD and FreeBSD, including the fast file system, VM system improvements, support for multiple file systems, NFS integration, and soft updates to improve disk throughput.",
+      "keywords": "fast file system, VM system, NFS, soft updates, technical contributions"
+    },
+    {
+      "title": "Social Structure in FreeBSD",
+      "timecode": "01:35:14",
+      "time": {
+        "start": 5714,
+        "end": null
+      },
+      "synopsis": "McKusick describes how he helped establish FreeBSD's governance structure with an elected core group, creating a sustainable leadership model that allows for leadership transitions unlike projects that depend on a single leader.",
+      "keywords": "FreeBSD, governance, core group, leadership, sustainable development, open source"
+    },
+    {
+      "title": "The BSD Daemon Mascot",
+      "timecode": "01:39:33",
+      "time": {
+        "start": 5973,
+        "end": null
+      },
+      "synopsis": "McKusick recounts how the BSD daemon mascot was created by Disney animator John Lasseter (later of Pixar) during a sabbatical at Lucasfilm. McKusick paid Lasseter for the work and retained copyright to control its use.",
+      "keywords": "BSD daemon, mascot, John Lasseter, Disney, Pixar, Lucasfilm, copyright"
+    },
+    {
+      "title": "Personal Life and Relationship",
+      "timecode": "01:52:35",
+      "time": {
+        "start": 6755,
+        "end": null
+      },
+      "synopsis": "McKusick discusses meeting his partner, Eric Allman, in 1979 and their progression from dating to domestic partnership to marriage. He describes their various anniversary dates and how they navigated changing laws regarding same-sex relationships.",
+      "keywords": "Eric Allman, relationships, domestic partnership, marriage, same-sex marriage, Proposition 8"
+    },
+    {
+      "title": "Working at Hughes Aircraft and Security Clearance",
+      "timecode": "02:02:14",
+      "time": {
+        "start": 7334,
+        "end": null
+      },
+      "synopsis": "McKusick describes working at Hughes Aircraft and the process of obtaining a security clearance as a gay person during the Carter administration, which required him to publicly declare his homosexuality in a newspaper ad to prove he couldn't be blackmailed.",
+      "keywords": "Hughes Aircraft, security clearance, Carter administration, homosexuality, discrimination, Reagan, classified information"
+    },
+    {
+      "title": "Raising Children",
+      "timecode": "02:08:03",
+      "time": {
+        "start": 7683,
+        "end": null
+      },
+      "synopsis": "McKusick explains how he and his husband found a way to be involved in raising children by having friends' children stay with them during summers, taking them on international trips, and forming relationships that continued into adulthood.",
+      "keywords": "parenting, adoption, summer trips, mentoring, child development"
+    },
+    {
+      "title": "Eric Allman and Sendmail",
+      "timecode": "02:11:22",
+      "time": {
+        "start": 7882,
+        "end": null
+      },
+      "synopsis": "McKusick describes his husband Eric Allman's creation of Sendmail, a crucial email routing program that handled multiple network types through a complex configuration system and eventually became the foundation for a successful company.",
+      "keywords": "Eric Allman, Sendmail, email, ARPANET, Berknet, Eric Schmidt, Google, SendmailInc"
+    },
+    {
+      "title": "BSD License vs. GPL",
+      "timecode": "02:18:21",
+      "time": {
+        "start": 8301,
+        "end": null
+      },
+      "synopsis": "McKusick compares the BSD license (which he calls \"copy center\") with the GPL license (which he calls \"copyleft\"), explaining how companies using BSD-licensed code often contribute back over time despite not being required to do so.",
+      "keywords": "BSD license, GPL, open source, licensing, copyright, copyleft, copy center, contributions"
+    },
+    {
+      "title": "Career Advice and Reflections",
+      "timecode": "02:25:34",
+      "time": {
+        "start": 8734,
+        "end": null
+      },
+      "synopsis": "McKusick reflects on his career and offers advice about pursuing interests, making time for travel and experiences while still physically able, and not delaying important life experiences until retirement. He mentions his diagnosis with primary lateral sclerosis which affects his mobility.",
+      "keywords": "career advice, work-life balance, travel, primary lateral sclerosis, retirement planning"
+    }
+  ]
+}

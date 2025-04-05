@@ -98,6 +98,8 @@ Return your response as a JSON object with a "clips" array containing 5-10 clip 
   ]
 }
 
+IMPORTANT: For each clip, you MUST use the EXACT transcript text from the interview. Do not summarize or paraphrase the content. The transcript field should contain the actual spoken words from the interview, including both the interviewer and interviewee's exact dialogue.
+
 Make sure the time codes and the transcript excerpts are accurate in the clip metadata.  
   
 The timecode data is within the transcript HTML file under the data-m attribute. In our clip metadata, transform the number so that the last three digits of what you get from the data-m attribute come after a decimal point. So, e.g., data-m="1842754" would be converted to "startTime": 1842.754. The endTime of a clip should correspond to the transformed data-m value of the next word after the last word in the transcript for the clip.
@@ -243,21 +245,46 @@ async function createClipsFromStory(interviewId: string) {
     // Extract words with timestamps
     const words: Word[] = [];
     const spans = document.querySelectorAll('span[data-m]');
+    let currentSpeaker = '';
+    let currentText = '';
+    
     spans.forEach(span => {
-      const text = span.textContent?.trim();
-      if (text) {
-        words.push({
-          text,
-          timestamp: convertTimestamp(span.getAttribute('data-m') || '0')
-        });
+      if (span.classList.contains('speaker')) {
+        // If we have accumulated text, add it as a word
+        if (currentText) {
+          words.push({
+            text: currentText.trim(),
+            timestamp: convertTimestamp(span.getAttribute('data-m') || '0')
+          });
+          currentText = '';
+        }
+        currentSpeaker = span.textContent?.trim() || '';
+      } else {
+        const text = span.textContent?.trim();
+        if (text) {
+          if (currentText) {
+            currentText += ' ' + text;
+          } else {
+            currentText = currentSpeaker + text;
+            currentSpeaker = '';
+          }
+        }
       }
     });
+
+    // Add any remaining text
+    if (currentText) {
+      words.push({
+        text: currentText.trim(),
+        timestamp: convertTimestamp(spans[spans.length - 1].getAttribute('data-m') || '0')
+      });
+    }
 
     // Extract plain text transcript for GPT analysis
     const plainTranscript = words
       .map(word => word.text)
       .filter(text => text.trim().length > 0)
-      .join(' ');
+      .join('\n');
     
     // Get clip suggestions from GPT
     console.log('Analyzing transcript with GPT...');

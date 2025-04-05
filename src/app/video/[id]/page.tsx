@@ -32,8 +32,7 @@ export default async function VideoPage({ params }: Props) {
   }
 
   // Map video IDs to transcript filenames
-  const idMapping: Record<VideoId, string> = {
-    "introduction-to-fossda": "introduction-to-fossda",
+  const idMapping: Record<VideoId, string> = {"introduction-to-fossda": "introduction-to-fossda",
     "tristan-nitot": "tristan-nitot",
     "deb-goodkin": "deb-goodkin",
     "heather-meeker": "heather-meeker",
@@ -45,8 +44,8 @@ export default async function VideoPage({ params }: Props) {
     "jon-maddog-hall": "jon-maddog-hall",
     "tony-wasserman": "tony-wasserman",
     "joshua-gay-fossda": "joshua-gay-fossda",
-    "karen-sandler": "karen-sandler"
-  };
+    "karen-sandler": "karen-sandler",
+    "kirk-mckusick": "kirk-mckusick"};
 
   const transcriptFilename = idMapping[videoId] || videoId;
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${transcriptFilename}.html`);

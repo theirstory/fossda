@@ -12,6 +12,7 @@ import jonChapters from './chapters/jon-maddog-hall-index.json';
 import tonyWassermanChapters from './chapters/tony-wasserman-index.json';
 import joshuaGayFossdaChapters from './chapters/joshua-gay-fossda-index.json';
 import karenSandlerChapters from './chapters/karen-sandler-index.json';
+import kirkMckusickChapters from './chapters/kirk-mckusick-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -115,5 +116,12 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2025-04-04",
     updated_at: "2025-04-04",
     metadata: processChapterMetadata(karenSandlerChapters.metadata)
+  },
+
+  "kirk-mckusick": {
+    title: "Kirk McKusick",
+    created_at: "2025-04-05",
+    updated_at: "2025-04-05",
+    metadata: processChapterMetadata(kirkMckusickChapters.metadata)
   },
 }; 
