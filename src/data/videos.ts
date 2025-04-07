@@ -14,7 +14,7 @@ export type VideoId = | "introduction-to-fossda"
   | "jon-maddog-hall"
   | "tony-wasserman"
   | "joshua-gay-fossda"
-  | "karen-sandler" | "kirk-mckusick";
+  | "karen-sandler" | "kirk-mckusick" | "eric-allman-interview-with-fossda";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData = {
@@ -25,6 +25,14 @@ export const videoData = {
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "eric-allman-interview-with-fossda": {
+    id: "eric-allman-interview-with-fossda",
+    title: "Eric Allman",
+    duration: "1:39:47",
+    thumbnail: "/thumbnails/eric-allman.png",
+    summary: "Eric Allman reflects on his life and career as a pioneering software engineer, from growing up in Berkeley to developing foundational technologies like Sendmail and Syslog. He discusses his formative experiences at UC Berkeley, his contributions to open source software, and his personal journey of coming out in the 1970s. Allman also shares insights into his later work, retirement, and continued community involvement, emphasizing purpose and passion over profit.",
+    sentence: "From Berkeley roots to building the backbone of internet email: Tracing a life of code, courage, and community"
   },
   "kirk-mckusick": {
     id: "kirk-mckusick",
@@ -47,7 +55,7 @@ export const videoData = {
     title: "Joshua Gay",
     duration: "1:55:37",
     thumbnail: "https://image.mux.com/soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E/animated.gif?width=320&start=5&end=10",
-    summary: "Joshua Gay shares his journey from a curious, entrepreneurial youth to a key contributor in the free and open source software movement. From editing Richard Stallman’s essays to co-founding projects like LibrePlanet and the CK-12 Foundation, he has focused on making technology and education more accessible. Now at IEEE, he works to bridge open source and global standards, guided by a deep belief in community and human-centered innovation.",
+    summary: "Joshua Gay shares his journey from a curious, entrepreneurial youth to a key contributor in the free and open source software movement. From editing Richard Stallman's essays to co-founding projects like LibrePlanet and the CK-12 Foundation, he has focused on making technology and education more accessible. Now at IEEE, he works to bridge open source and global standards, guided by a deep belief in community and human-centered innovation.",
     sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
   },
   "tony-wasserman": {

@@ -13,6 +13,7 @@ import tonyWassermanChapters from './chapters/tony-wasserman-index.json';
 import joshuaGayFossdaChapters from './chapters/joshua-gay-fossda-index.json';
 import karenSandlerChapters from './chapters/karen-sandler-index.json';
 import kirkMckusickChapters from './chapters/kirk-mckusick-index.json';
+import ericAllmanInterviewWithFossdaChapters from './chapters/eric-allman-interview-with-fossda-index.json';
 
 // Define the raw metadata type from JSON
 interface RawChapterMetadata {
@@ -123,5 +124,12 @@ export const chapterData: Record<string, ChapterData> = {
     created_at: "2025-04-05",
     updated_at: "2025-04-05",
     metadata: processChapterMetadata(kirkMckusickChapters.metadata)
+  },
+
+  "eric-allman-interview-with-fossda": {
+    title: "Eric Allman Interview with FOSSDA",
+    created_at: "2025-04-07",
+    updated_at: "2025-04-07",
+    metadata: processChapterMetadata(ericAllmanInterviewWithFossdaChapters.metadata)
   },
 }; 

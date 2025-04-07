@@ -1,0 +1,314 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Early Life",
+      "timecode": "00:00:05",
+      "time": {
+        "start": 5,
+        "end": null
+      },
+      "synopsis": "Elisabetta Mori introduces the interview with Eric Allman. Eric shares details about his birthplace (Oakland, 1955), early childhood in El Cerrito and Berkeley, and his strong identification with Berkeley.",
+      "keywords": "interview, introduction, childhood, Berkeley, Oakland, 1950s"
+    },
+    {
+      "title": "Family Background",
+      "timecode": "00:01:45",
+      "time": {
+        "start": 105,
+        "end": null
+      },
+      "synopsis": "Eric describes his parents' careers—his mother in education and his father in advertising and art criticism—and briefly touches on their divorce. He also talks about his sister Kat's contrasting personality and her later career at Google.",
+      "keywords": "parents, education, divorce, sibling, advertising, Google"
+    },
+    {
+      "title": "Family Life and Summers in Sebastopol",
+      "timecode": "00:04:51",
+      "time": {
+        "start": 291,
+        "end": null
+      },
+      "synopsis": "Eric reflects on his family life, particularly after his parents’ divorce, and shares fond memories of summers spent at his grandparents' rural home in Sebastopol.",
+      "keywords": "family life, Sebastopol, childhood, rural, grandparents"
+    },
+    {
+      "title": "School Years and Early Interests",
+      "timecode": "00:06:15",
+      "time": {
+        "start": 375,
+        "end": null
+      },
+      "synopsis": "Eric talks about his education through high school, emphasizing his strength in math and science and his unexpected love of theater tech, particularly sound design.",
+      "keywords": "school, high school, math, science, theater, sound effects"
+    },
+    {
+      "title": "University at UC Berkeley",
+      "timecode": "00:08:04",
+      "time": {
+        "start": 484,
+        "end": null
+      },
+      "synopsis": "Eric discusses why he chose UC Berkeley, his academic experiences there, and the impact of realizing his sexuality while still in the closet during high school.",
+      "keywords": "UC Berkeley, college life, computer science, coming out, 1970s"
+    },
+    {
+      "title": "Ingress Project and Unix Exposure",
+      "timecode": "00:12:05",
+      "time": {
+        "start": 725,
+        "end": null
+      },
+      "synopsis": "Eric recounts his involvement with the Ingress database project at Berkeley, gaining early exposure to Unix and working in a dynamic research environment that shaped his future.",
+      "keywords": "Ingress, Unix, relational databases, undergraduate research, Berkeley"
+    },
+    {
+      "title": "DeliverMail: A Practical Hack",
+      "timecode": "00:16:38",
+      "time": {
+        "start": 998,
+        "end": null
+      },
+      "synopsis": "Eric describes how he created DeliverMail to solve the email bottleneck on Berkeley’s machines, a solution born out of user complaints and technical curiosity.",
+      "keywords": "DeliverMail, email, ARPANET, Birknet, early networking"
+    },
+    {
+      "title": "Working with Eric Schmidt",
+      "timecode": "00:20:12",
+      "time": {
+        "start": 1212,
+        "end": null
+      },
+      "synopsis": "Eric briefly reflects on working with Eric Schmidt, noting his early ambition and dual background in business and CS, predicting his future executive role.",
+      "keywords": "Eric Schmidt, Google, ambition, Birknet, early career"
+    },
+    {
+      "title": "Origins of Sendmail",
+      "timecode": "00:21:02",
+      "time": {
+        "start": 1262,
+        "end": null
+      },
+      "synopsis": "Eric tells the story of how he developed Sendmail at Berkeley under Bill Joy’s guidance, as part of the larger effort to build internet infrastructure with DARPA funding.",
+      "keywords": "Sendmail, email systems, Unix, Bill Joy, CSRG, DARPA"
+    },
+    {
+      "title": "Syslog: Quietly Revolutionary",
+      "timecode": "00:26:17",
+      "time": {
+        "start": 1577,
+        "end": null
+      },
+      "synopsis": "Eric discusses the origin and significance of Syslog, a standardized logging utility he created that remains foundational in computing today.",
+      "keywords": "Syslog, system logging, internet standards, Unix, daemon"
+    },
+    {
+      "title": "ME Macros and Typesetting",
+      "timecode": "00:28:28",
+      "time": {
+        "start": 1708,
+        "end": null
+      },
+      "synopsis": "Eric describes creating the ME macros for Unix’s text formatting tools and how they helped countless students format theses, including defeating the feared “Dragon Lady.”",
+      "keywords": "ME macros, nroff, troff, typesetting, Unix, thesis formatting"
+    },
+    {
+      "title": "Writing Trek and Meeting Steve Bourne",
+      "timecode": "00:31:30",
+      "time": {
+        "start": 1890,
+        "end": null
+      },
+      "synopsis": "Eric shares how he rewrote a Star Trek game for Unix, which led to unexpected collaboration with Steve Bourne after Ken Thompson distributed Eric’s files.",
+      "keywords": "Trek, Unix games, Steve Bourne, Ken Thompson, collaboration"
+    },
+    {
+      "title": "Summer at IIASA in Austria",
+      "timecode": "00:34:55",
+      "time": {
+        "start": 2095,
+        "end": null
+      },
+      "synopsis": "Eric talks about his 1981 summer at IIASA in Austria, building a graphics system in a palace, interacting with Soviet scientists, and reflecting on cultural understanding.",
+      "keywords": "IIASA, Austria, international collaboration, Cold War, graphics"
+    },
+    {
+      "title": "Working at Britton Lee",
+      "timecode": "00:41:05",
+      "time": {
+        "start": 2465,
+        "end": null
+      },
+      "synopsis": "Eric recounts his time at Britton Lee, a relational database company, his first management role, and developing the graphical ADIT system before realizing the company undervalued software.",
+      "keywords": "Britton Lee, Ingress, management, ADIT, databases, GUI"
+    },
+    {
+      "title": "Neural Nets and ICSI",
+      "timecode": "00:47:08",
+      "time": {
+        "start": 2828,
+        "end": null
+      },
+      "synopsis": "Eric discusses his brief tenure at ICSI working on early neural networks and custom hardware, noting how the role was too low-level for his liking but still educational.",
+      "keywords": "ICSI, neural networks, deep learning, assembly language, hardware"
+    },
+    {
+      "title": "Mammoth Project at Berkeley",
+      "timecode": "00:50:57",
+      "time": {
+        "start": 3057,
+        "end": null
+      },
+      "synopsis": "Returning to Berkeley, Eric led the Mammoth project, which standardized computing infrastructure across the CS department, improving collaboration and research productivity.",
+      "keywords": "Mammoth Project, infrastructure, CM5, Unix, CS department"
+    },
+    {
+      "title": "InReference: A Misstep",
+      "timecode": "00:56:16",
+      "time": {
+        "start": 3376,
+        "end": null
+      },
+      "synopsis": "Eric reflects on his disappointing experience at InReference, a poorly managed company with shifting goals and an unsustainable commute from Berkeley to Sunnyvale.",
+      "keywords": "InReference, CTO, job misstep, startups, commuting"
+    },
+    {
+      "title": "Founding Sendmail Inc.",
+      "timecode": "00:57:50",
+      "time": {
+        "start": 3470,
+        "end": null
+      },
+      "synopsis": "After leaving InReference, Eric reconnected with Greg Olson and together they co-founded Sendmail Inc. in 1998, with a mission to commercialize and simplify Sendmail.",
+      "keywords": "Sendmail Inc., startup, Greg Olson, business plan, open source"
+    },
+    {
+      "title": "Running and Growing Sendmail Inc.",
+      "timecode": "01:02:25",
+      "time": {
+        "start": 3745,
+        "end": null
+      },
+      "synopsis": "Eric shares experiences as CTO of Sendmail Inc., balancing tech and marketing, developing milter and DKIM, and ultimately scaling back after a cancer diagnosis.",
+      "keywords": "Sendmail Inc., CTO, milter, DKIM, travel, cancer, open source"
+    },
+    {
+      "title": "Final Job and Return to Research",
+      "timecode": "01:07:15",
+      "time": {
+        "start": 4035,
+        "end": null
+      },
+      "synopsis": "Eric discusses working with the Swarm Lab at Berkeley after trying to retire, regaining his programming confidence, and returning to meaningful research work.",
+      "keywords": "Swarm Lab, retirement, programming, research, Berkeley"
+    },
+    {
+      "title": "Internet Hall of Fame",
+      "timecode": "01:12:53",
+      "time": {
+        "start": 4373,
+        "end": null
+      },
+      "synopsis": "Eric recounts his unexpected induction into the Internet Hall of Fame in 2014, attending the ceremony in Hong Kong, and meeting old colleagues.",
+      "keywords": "Internet Hall of Fame, recognition, Hong Kong, networking"
+    },
+    {
+      "title": "Long-Term Involvement with Usenix",
+      "timecode": "01:14:14",
+      "time": {
+        "start": 4454,
+        "end": null
+      },
+      "synopsis": "Eric reflects on his decades-long involvement with Usenix, from conference attendee to board member and current role on the audit committee.",
+      "keywords": "Usenix, conferences, board member, community, audit committee"
+    },
+    {
+      "title": "Publications and Impact",
+      "timecode": "01:15:50",
+      "time": {
+        "start": 4550,
+        "end": null
+      },
+      "synopsis": "Eric discusses his various publications, including the Sendmail book and his most cited article on technical debt, reflecting on their unexpected impact.",
+      "keywords": "publications, Sendmail book, technical debt, ACM Queue, writing"
+    },
+    {
+      "title": "Post-Retirement Activities",
+      "timecode": "01:18:01",
+      "time": {
+        "start": 4681,
+        "end": null
+      },
+      "synopsis": "After retiring, Eric pursues tech hobbies like a wine inventory system in Python, serves on nonprofit boards, and co-founds a preservation fund for historic buildings.",
+      "keywords": "retirement, Python, wine, nonprofit, Berkeley Historic Building Fund"
+    },
+    {
+      "title": "Coming Out in 1976",
+      "timecode": "01:21:08",
+      "time": {
+        "start": 4868,
+        "end": null
+      },
+      "synopsis": "Eric shares how coming out of the closet in 1976 dramatically improved his life and relationships, both personally and professionally.",
+      "keywords": "coming out, LGBTQ, self-acceptance, 1970s, identity"
+    },
+    {
+      "title": "Defiance in the Face of Hate",
+      "timecode": "01:24:02",
+      "time": {
+        "start": 5042,
+        "end": null
+      },
+      "synopsis": "Eric recalls being targeted by a Christian fundamentalist group and the satisfaction of seeing Sendmail survive while their effort failed.",
+      "keywords": "Sendmail, homophobia, open source, 1990s, resilience"
+    },
+    {
+      "title": "His Partner, Kirk McKusick",
+      "timecode": "01:25:43",
+      "time": {
+        "start": 5143,
+        "end": null
+      },
+      "synopsis": "Eric talks about his husband, Kirk McKusick, a Unix file system pioneer, and how they maintain a healthy personal/professional boundary in their relationship.",
+      "keywords": "Kirk McKusick, relationship, UFS, Unix, personal life"
+    },
+    {
+      "title": "Motivation Behind Open Source Support",
+      "timecode": "01:31:02",
+      "time": {
+        "start": 5462,
+        "end": null
+      },
+      "synopsis": "Eric candidly explains that his main motivation for supporting open source is the joy of seeing people use his work and finding satisfaction in usefulness over profit.",
+      "keywords": "open source, motivation, community, satisfaction, philosophy"
+    },
+    {
+      "title": "What He's Most Proud Of",
+      "timecode": "01:32:52",
+      "time": {
+        "start": 5572,
+        "end": null
+      },
+      "synopsis": "Eric highlights his coming out, Sendmail, Syslog, and the Mammoth project as major life accomplishments, emphasizing their positive impact over personal accolades.",
+      "keywords": "pride, impact, Sendmail, Syslog, Mammoth, coming out"
+    },
+    {
+      "title": "Career Advice for the Next Generation",
+      "timecode": "01:34:36",
+      "time": {
+        "start": 5676,
+        "end": null
+      },
+      "synopsis": "Eric encourages following one's passion over chasing money, citing examples like Jim Gray and warning against trendy career fads like jumping into AI just for money.",
+      "keywords": "career advice, passion, AI, deep learning, Jim Gray, long-term thinking"
+    },
+    {
+      "title": "Closing Remarks",
+      "timecode": "01:39:00",
+      "time": {
+        "start": 5940,
+        "end": null
+      },
+      "synopsis": "The interview wraps up with warm thanks from Elisabetta and Eric expressing that reminiscing was a pleasure, leaving room for a possible future conversation.",
+      "keywords": "interview end, reflection, gratitude, future interview"
+    }
+  ]
+}

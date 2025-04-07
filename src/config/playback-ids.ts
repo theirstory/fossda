@@ -16,4 +16,6 @@ export const PLAYBACK_IDS = {
   'karen-sandler': 'xx7jiFmdEIpnFkxLOOyESIwd59o9dN4GkqqWHqlTBQw',
 
   'kirk-mckusick': 'av8oAccqlbrkwFLZdJvwFqGcTumZgTwDwzQXCPSX2Hs',
+
+  'eric-allman-interview-with-fossda': 'v8tTJx36zN8boqso9Yf01Wj7kyjCAhFmP6XgTynsx3UA',
 }; 
