@@ -47,7 +47,7 @@ export const videoData = {
     title: "Joshua Gay",
     duration: "1:55:37",
     thumbnail: "https://image.mux.com/soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E/animated.gif?width=320&start=5&end=10",
-    summary: "Interview with Joshua Gay FOSSDA Interview discussing his journey and contributions to open source software.",
+    summary: "Joshua Gay shares his journey from a curious, entrepreneurial youth to a key contributor in the free and open source software movement. From editing Richard Stallman’s essays to co-founding projects like LibrePlanet and the CK-12 Foundation, he has focused on making technology and education more accessible. Now at IEEE, he works to bridge open source and global standards, guided by a deep belief in community and human-centered innovation.",
     sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
   },
   "tony-wasserman": {
@@ -63,7 +63,7 @@ export const videoData = {
     title: "Jon \"Maddog\" Hall",
     duration: "2:00:13",
     thumbnail: "/thumbnails/jon-maddog-hall.png",
-    summary: "Interview with Jon \"Maddog\" Hall Interview FOSSDA discussing their journey and contributions to open source software.",
+    summary: "John \"Maddog\" Hall, a pioneer in free and open source software, shares his journey from early computing at Drexel University to championing Linux and global open tech advocacy. He played a key role in bringing Linux to the DEC Alpha platform, co-founding Linux International, and supporting open hardware initiatives like Caninos Loucos and Project Cauãn. Maddog also reflects on his teaching career, personal life, and lifelong mission to promote digital freedom, equity, and community-driven innovation.",
     sentence: "From early Unix days to Linux advocacy - exploring the evolution of open source through decades of experience."
   },
   "lawrence-rosen": {
