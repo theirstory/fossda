@@ -21,7 +21,7 @@ export const videoData = {
   "introduction-to-fossda": {
     id: "introduction-to-fossda",
     title: "Introduction to FOSSDA",
-    duration: "1:14:21",
+    duration: "5:07",
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
