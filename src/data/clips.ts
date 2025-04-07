@@ -330,6 +330,97 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "eric-allman-interview-with-fossda-early-exposure-to-computing",
+    "title": "Early Exposure to Computing",
+    "startTime": 583.08,
+    "endTime": 630.08,
+    "duration": 47,
+    "chapter": {
+      "id": "school-years-and-early-interests",
+      "title": "School Years and Early Interests"
+    },
+    "interviewId": "eric-allman-interview-with-fossda",
+    "interviewTitle": "Eric Allman",
+    "transcript": "Eric Allman: So back in high school, actually in junior high school, there was a teacher, I guess a math teacher at a different school when I was in who decided it would be cool to do an after-school program teaching kids how to program, Fortran to be precise. And I got involved with that and learned Fortran.",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "eric-allman-interview-with-fossda-the-inception-of-sendmail",
+    "title": "The Creation of DeliverMail",
+    "startTime": 1126.82,
+    "endTime": 2218.14,
+    "duration": 1091.32,
+    "chapter": {
+      "id": "delivermail-a-practical-hack",
+      "title": "DeliverMail: A Practical Hack"
+    },
+    "interviewId": "eric-allman-interview-with-fossda",
+    "interviewTitle": "Eric Allman",
+    "transcript": "Eric Allman:...it turns out we already had a- another very slow, also terminal-based network called Birknet, which was a project done by a guy named Eric Schmidt... I said, Birknet is software, ARPANET is software, and I know how to write software. I'll bet I can find some way to glue these things together... And that was a quick hack called DeliverMail. And I won't say it worked well, but it did work and so I basically wrote Deliver Mail to get people to stop bothering me.",
+    "themes": [
+      "projects",
+      "challenges"
+    ]
+  },
+  {
+    "id": "eric-allman-interview-with-fossda-advocacy-and-contribution-to-open-source",
+    "title": "Sendmail Inc. and Open Source Philosophy",
+    "startTime": 3671.98,
+    "endTime": 3786.98,
+    "duration": 115,
+    "chapter": {
+      "id": "running-and-growing-sendmail-inc",
+      "title": "Running and Growing Sendmail Inc."
+    },
+    "interviewId": "eric-allman-interview-with-fossda",
+    "interviewTitle": "Eric Allman",
+    "transcript": "Eric Allman:...We made the front page of the New York Times when we announced the company... Sendmail had a reputation for being difficult to configure so our first thing was we'll make it easy to configure and using a graphic user interface... I really love it when people use the stuff I've written. And the easiest way to do that is to give it away.",
+    "themes": [
+      "projects",
+      "mission-values",
+      "community"
+    ]
+  },
+  {
+    "id": "eric-allman-interview-with-fossda-engagement-with-technology-communities",
+    "title": "USENIX Presidency and Community Impact",
+    "startTime": 4460.86,
+    "endTime": 4571.86,
+    "duration": 111,
+    "chapter": {
+      "id": "long-term-involvement-with-usenix",
+      "title": "Long-Term Involvement with Usenix"
+    },
+    "interviewId": "eric-allman-interview-with-fossda",
+    "interviewTitle": "Eric Allman",
+    "transcript": "Eric Allman: So, so I started just attending USENIX. The first USENIX I went to was in San Francisco... And it was an amazingly wonderful conference. It's like you know I'm with my people here This is great and so I started going to more conferences and eventually I ended up on the board of directors... And I am this President for two years and I'm gratified that many people have told me that I was actually a good President.",
+    "themes": [
+      "community",
+      "evolution"
+    ]
+  },
+  {
+    "id": "eric-allman-interview-with-fossda-overcoming-personal-and-professional-challenges",
+    "title": "Points of Pride",
+    "startTime": 5576.28,
+    "endTime": 5856.28,
+    "duration": 280,
+    "chapter": {
+      "id": "what-he-is-most-proud-of",
+      "title": "What He's Most Proud Of"
+    },
+    "interviewId": "eric-allman-interview-with-fossda",
+    "interviewTitle": "Eric Allman",
+    "transcript": "Eric Allman:...coming out of the closet because it made my life a lot better and frankly the lives of other people around me a lot better... I lost some friends. You know, when I came out of the closet, I didn't just like open the door, I used dynamite to blow it open... And it gave me a path to being an easier to get along with person.",
+    "themes": [
+      "challenges",
+      "mission-values"
+    ]
+  },
+  {
     "id": "meeker-early-programming",
     "title": "Early Career as a Programmer",
     "startTime": 114.52,
