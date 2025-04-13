@@ -46,7 +46,8 @@ export default async function VideoPage({ params }: Props) {
     "joshua-gay-fossda": "joshua-gay-fossda",
     "karen-sandler": "karen-sandler",
     "kirk-mckusick": "kirk-mckusick",
-    "eric-allman-interview-with-fossda": "eric-allman-interview-with-fossda"};
+    "eric-allman-interview-with-fossda": "eric-allman-interview-with-fossda",
+    "cat-allman": "cat-allman"};
 
   const transcriptFilename = idMapping[videoId] || videoId;
   const transcriptPath = path.join(process.cwd(), 'public', 'transcripts', `${transcriptFilename}.html`);

@@ -194,11 +194,11 @@ export function groupStoriesByInterview(stories: Story[]): GroupedStories[] {
       // Get duration from videoData
       const duration = videoData[story.interviewId].duration;
       // Special case for introduction video thumbnail
-      const thumbnailName = story.interviewId === "introduction-to-fossda" ? "fossda-intro" : story.interviewId;
+      const thumbnailName = story.interviewId === "introduction-to-fossda" ? "introduction-to-fossda" : story.interviewId;
       acc.push({
         interviewId: story.interviewId,
         interviewTitle: interviewData.title,
-        thumbnail: `/thumbnails/${thumbnailName}.png`,
+        thumbnail: `/thumbnails/${thumbnailName}${story.interviewId === "introduction-to-fossda" ? ".png" : ".png"}`,
         duration: duration,
         stories: [story]
       });

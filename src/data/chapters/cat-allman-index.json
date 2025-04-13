@@ -1,0 +1,184 @@
+{
+  "metadata": [
+    {
+      "title": "Introduction and Childhood Influences",
+      "timecode": "00:00:00",
+      "time": {
+        "start": 0,
+        "end": null
+      },
+      "synopsis": "Elisabetta Mori introduces the interview and Cat Allman begins by discussing her childhood in Oakland, California, growing up with her brother Eric Allman, and her early exposure to computers through his work. She also talks about studying American Studies at UC Santa Cruz and her first job experiences with technology in advertising.",
+      "keywords": "childhood, Oakland, Eric Allman, early computing, American Studies, UC Santa Cruz"
+    },
+    {
+      "title": "Early Career and Entry into Free Software",
+      "timecode": "00:02:47",
+      "time": {
+        "start": 167,
+        "end": null
+      },
+      "synopsis": "Cat describes her first involvement with free and open source software at Mount Zainu, coordinating conference participation and engaging with the ideals of software freedom. She highlights the collaborative culture at the time and the beginnings of commercial support for Berkeley Unix.",
+      "keywords": "Mount Zainu, DECUS, Berkeley Unix, software freedom, collaboration, early FOSS"
+    },
+    {
+      "title": "Transition to Graphic Design and IT",
+      "timecode": "00:04:23",
+      "time": {
+        "start": 263,
+        "end": null
+      },
+      "synopsis": "After Mount Zainu, Cat worked in the graphic design industry, introducing computing into the design workflow and eventually becoming an IT manager. She reflects on the emergence of personal computers and the shift from paper-based design to digital.",
+      "keywords": "graphic design, IT management, personal computers, Macintosh, early IT integration, career transition"
+    },
+    {
+      "title": "Foundations of FOSS Engagement",
+      "timecode": "00:05:50",
+      "time": {
+        "start": 350,
+        "end": null
+      },
+      "synopsis": "Cat reflects on how her experiences with computers, engineering culture, and community building led her into FOSS. She discusses her early exposure to BSD and her eventual role in helping to launch Sendmail Inc., a hybrid open-source company.",
+      "keywords": "Sendmail, FOSS community, BSD, hybrid business models, ISP conferences"
+    },
+    {
+      "title": "Dot-Com Era and Open Source Awareness",
+      "timecode": "00:09:03",
+      "time": {
+        "start": 543,
+        "end": null
+      },
+      "synopsis": "Cat recalls attending an early open source conference at Stanford and the dot-com boom’s intersection with open source. She discusses Sendmail Inc.'s media attention and the rising importance of FOSS in enabling the Internet and the World Wide Web.",
+      "keywords": "dot-com bubble, Stanford, open source awareness, Sendmail Inc., Internet history"
+    },
+    {
+      "title": "Passion, Community, and the Power of FOSS",
+      "timecode": "00:10:57",
+      "time": {
+        "start": 657,
+        "end": null
+      },
+      "synopsis": "Cat emphasizes the passion within the FOSS community and how that passion has kept her engaged. She reflects on the collective problem-solving spirit of open source and touches on sustainability concerns in the infrastructure.",
+      "keywords": "community, passion, collaboration, infrastructure, sustainability, open source culture"
+    },
+    {
+      "title": "From Sendmail to USENIX and Google",
+      "timecode": "00:13:45",
+      "time": {
+        "start": 825,
+        "end": null
+      },
+      "synopsis": "Cat discusses her transition from Sendmail to USENIX and eventually to Google, detailing the hiring process and her connection to the open source team. She highlights her work on outreach, events, and her path into Google’s OSPO.",
+      "keywords": "USENIX, Google, OSPO, open source hiring, professional transition"
+    },
+    {
+      "title": "Google Summer of Code and Global Outreach",
+      "timecode": "00:17:37",
+      "time": {
+        "start": 1057,
+        "end": null
+      },
+      "synopsis": "Cat elaborates on her work with Google Summer of Code and Google Code-In, describing their origins, impact, and her global travels promoting FOSS. She reflects on the personal fulfillment and network she built through these programs.",
+      "keywords": "Google Summer of Code, Google Code-In, global outreach, mentorship, FOSS growth"
+    },
+    {
+      "title": "Open Source as Global Connector",
+      "timecode": "00:22:16",
+      "time": {
+        "start": 1336,
+        "end": null
+      },
+      "synopsis": "Cat discusses the global impact of open source, particularly in under-resourced areas. She highlights the educational and economic benefits, her pride in alternative contributions, and the inclusive community building through SciFoo.",
+      "keywords": "global impact, education, economic opportunity, SciFoo, alternative contributions"
+    },
+    {
+      "title": "SciFoo and Open Science",
+      "timecode": "00:27:07",
+      "time": {
+        "start": 1627,
+        "end": null
+      },
+      "synopsis": "Cat explains her work organizing Science Foo Camp and how open science and open source intersect. She emphasizes the importance of community and how digital science initiatives help researchers use FOSS in their work.",
+      "keywords": "SciFoo, open science, community building, interdisciplinary, Carpentries"
+    },
+    {
+      "title": "Sponsorship, Challenges, and Sustainability",
+      "timecode": "00:29:49",
+      "time": {
+        "start": 1789,
+        "end": null
+      },
+      "synopsis": "Cat talks about her role funding FOSS projects while at Google and the challenges of sustaining FOSS today. She raises concerns about the erosion of volunteerism, commercial pressure, and the shifting landscape of FLOSS governance.",
+      "keywords": "funding, sponsorship, sustainability, volunteerism, corporate influence, FOSS governance"
+    },
+    {
+      "title": "Concerns About the Future of FOSS",
+      "timecode": "00:36:19",
+      "time": {
+        "start": 2179,
+        "end": null
+      },
+      "synopsis": "Cat expresses concern over the potential decline of FLOSS due to increasing commercialization and declining volunteer motivation. She critiques corporate behaviors and fears a shift toward digital serfdom in under-resourced regions.",
+      "keywords": "future of FOSS, commercialization, volunteer burnout, digital inequality, licensing"
+    },
+    {
+      "title": "Life After Google",
+      "timecode": "00:39:00",
+      "time": {
+        "start": 2340,
+        "end": null
+      },
+      "synopsis": "After her departure from Google, Cat continues her work on SciFoo and remains active on several advisory boards. She discusses her roles at the FreeBSD Foundation, IEEE, and her contract work with Digital Science.",
+      "keywords": "post-Google, advisory boards, FreeBSD, IEEE, SciFoo continuity"
+    },
+    {
+      "title": "Reflections and Career Satisfaction",
+      "timecode": "00:45:20",
+      "time": {
+        "start": 2720,
+        "end": null
+      },
+      "synopsis": "Cat reflects on her life and career with gratitude, saying she wouldn’t change anything. She emphasizes the joy of being part of a passionate, intelligent community and contributing to something meaningful.",
+      "keywords": "career reflection, community, satisfaction, personal journey, FLOSS pride"
+    },
+    {
+      "title": "Projects of Pride and Impact",
+      "timecode": "00:46:45",
+      "time": {
+        "start": 2805,
+        "end": null
+      },
+      "synopsis": "Cat highlights her involvement with Google Summer of Code and WikiEdu as proud achievements, especially projects increasing representation of women in science and expanding access to STEM knowledge.",
+      "keywords": "Google Summer of Code, WikiEdu, women in science, STEM education, impact"
+    },
+    {
+      "title": "Diversity in Tech: Progress and Setbacks",
+      "timecode": "00:49:12",
+      "time": {
+        "start": 2952,
+        "end": null
+      },
+      "synopsis": "Cat discusses the decline in women in computing since the 1980s and the cultural challenges faced. She reflects on her experiences and advocates for continued improvement and inclusion across global contexts.",
+      "keywords": "diversity, gender equity, global participation, cultural bias, inclusion in tech"
+    },
+    {
+      "title": "Advice for the Next Generation",
+      "timecode": "00:55:00",
+      "time": {
+        "start": 3300,
+        "end": null
+      },
+      "synopsis": "Cat offers advice to aspiring contributors—be brave, stay humble, and persist through imposter syndrome. She shares personal anecdotes about workplace discrimination and progress over time.",
+      "keywords": "career advice, imposter syndrome, resilience, gender bias, progress"
+    },
+    {
+      "title": "Following Your Passions Through Unconventional Paths",
+      "timecode": "00:57:09",
+      "time": {
+        "start": 3429,
+        "end": null
+      },
+      "synopsis": "Cat ends with an anecdote about hyperbolic crochet and its intersection with science, math, and craft. She encourages people to follow their interests and find joy in their contributions, however untraditional.",
+      "keywords": "hyperbolic crochet, math and art, unconventional paths, creativity, passion"
+    }
+  ]
+}

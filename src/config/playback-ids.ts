@@ -18,4 +18,6 @@ export const PLAYBACK_IDS = {
   'kirk-mckusick': 'av8oAccqlbrkwFLZdJvwFqGcTumZgTwDwzQXCPSX2Hs',
 
   'eric-allman-interview-with-fossda': 'v8tTJx36zN8boqso9Yf01Wj7kyjCAhFmP6XgTynsx3UA',
+
+  'cat-allman': 'R8qcFYFlZ645Ux8e39Dt00NLIzVSN2wK9SIZppSAZkjw',
 }; 

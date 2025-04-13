@@ -183,6 +183,97 @@ export const clips: Clip[] = [
     ]
   },
   {
+    "id": "cat-allman-early-exposure-to-technology-through-family",
+    "title": "Early Exposure to Technology Through Family",
+    "startTime": 48.84,
+    "endTime": 161.25,
+    "duration": 112.41,
+    "chapter": {
+      "id": "introduction-and-childhood-influences",
+      "title": "Introduction and Childhood Influences"
+    },
+    "interviewId": "cat-allman",
+    "interviewTitle": "Cat Allman",
+    "transcript": "Elisabetta Mori: Can you talk about your childhood? Cat Allman: Sure. I was born in Oakland, in Oakland, California, in 1958, and raised in the East Bay Hills, looking out across San Francisco Bay to the Golden Gate Bridge in San Francisco with my older brother Eric Allman, creator, original creator of Send Mail, the mail transfer agent. Went to public schools, ending up at University of California, Santa Cruz, where I studied American Studies, so not engineering, not computer science. Growing up with an older brother who was a science child prodigy put me on another path for a while, though because of his interests we grew up with like boxes of punch cards, which it turns out if you make a cone out of them and staple them and spray paint them gold, you can make a Christmas wreath out of them...",
+    "themes": [
+      "exposure",
+      "education"
+    ]
+  },
+  {
+    "id": "cat-allman-first-engagement-with-free-and-open-source-software",
+    "title": "First Engagement with Free and Open Source Software",
+    "startTime": 167.22,
+    "endTime": 311.448,
+    "duration": 144.228,
+    "chapter": {
+      "id": "early-career-and-entry-into-free-software",
+      "title": "Early Career and Entry into Free Software"
+    },
+    "interviewId": "cat-allman",
+    "interviewTitle": "Cat Allman",
+    "transcript": "Cat Allman: Fast forward a little bit and my first job with free and open source software was at Mount Zainu. Mount Zainu is Unix trademark backwards. Our logo was a little mountain range. I was a contractor, not an employee, but so I was working on coordinating the company's involvement with DECUS, which was the DEC User Group Conference. And found myself really kind of engaged with the political idea of software that had been created at a publicly funded institution as being free and available to the rest of us to use. Really the academic method of, you know, you come up with an idea and other people build on it and civilization rolls along...",
+    "themes": [
+      "projects",
+      "mission-values"
+    ]
+  },
+  {
+    "id": "cat-allman-launching-sendmail-inc-and-the-dot-com-bubble",
+    "title": "Launching Sendmail Inc. and the Dot-Com Bubble",
+    "startTime": 474,
+    "endTime": 662.369,
+    "duration": 188.369,
+    "chapter": {
+      "id": "foundations-of-foss-engagement",
+      "title": "Foundations of FOSS Engagement"
+    },
+    "interviewId": "cat-allman",
+    "interviewTitle": "Cat Allman",
+    "transcript": "Cat Allman: So my brother around that time, that would be 1997, had a former colleague who they were talking together about doing something with Sendmail in terms of starting a business around it. My brother wouldn't hire me because nepotism, he's a very principled guy, so I started harassing his business partner to give me a job as they were putting this idea of a company together. And he finally gave up and hired me. So I was employee number five at Sendmail Inc...",
+    "themes": [
+      "projects",
+      "community"
+    ]
+  },
+  {
+    "id": "cat-allman-journey-to-google-and-advocating-for-open-source",
+    "title": "Journey to Google and Advocating for Open Source",
+    "startTime": 1057.9,
+    "endTime": 1293.493,
+    "duration": 235.593,
+    "chapter": {
+      "id": "google-summer-of-code-and-global-outreach",
+      "title": "Google Summer of Code and Global Outreach"
+    },
+    "interviewId": "cat-allman",
+    "interviewTitle": "Cat Allman",
+    "transcript": "Cat Allman: So they eventually broke down and hired me. And yeah, it was very exciting to try working at a big company. I have to say my first day was spent in a windowless room in a group for an orientation with all these extraordinarily perky videos. And I went home in tears because I thought oh my god I've made a terrible mistake. But unlike most people at least at the time who applied to Google I went into it knowing who I was going to work for and what I was going to work on. I didn't go to work at Google, I went to work on free and open source software at Google...",
+    "themes": [
+      "education",
+      "projects",
+      "community"
+    ]
+  },
+  {
+    "id": "cat-allman-concerns-and-challenges-for-the-future-of-open-source",
+    "title": "Concerns and Challenges for the Future of Open Source",
+    "startTime": 1941.36,
+    "endTime": 2202.089,
+    "duration": 260.729,
+    "chapter": {
+      "id": "sponsorship-challenges-and-sustainability",
+      "title": "Sponsorship, Challenges, and Sustainability"
+    },
+    "interviewId": "cat-allman",
+    "interviewTitle": "Cat Allman",
+    "transcript": "Cat Allman: Challenges going forward to the FLOSS ecosystem. Something that I'm really concerned about, And I'm conflicted about it is, FLOSS is one of those 20 plus year overnight successes. It's been around a long time, but it's only now that people, businesses are appreciating how essential it is. At the same time, they still want the code for free. I mean, lots of businesses like Google are understanding the importance of working with projects so that they are sustainable, they have the economic and other resources that they need to continue. But what I worry about is the psychological aspects...",
+    "themes": [
+      "challenges",
+      "evolution"
+    ]
+  },
+  {
     "id": "goodkin-early-tech-exposure",
     "title": "Building Models as a Child",
     "startTime": 226.368,

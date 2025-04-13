@@ -1,0 +1,4802 @@
+WEBVTT
+
+1
+00:00:04.200 --> 00:00:06.860
+<v Elisabetta Mori:>Welcome to FOSSDA, the Free and Open
+
+2
+00:00:06.860 --> 00:00:09.180
+<v Elisabetta Mori:>Source Stories Digital Archive Foundation.
+
+3
+00:00:10.080 --> 00:00:13.520
+<v Elisabetta Mori:>It's the 25th of July, 2023, and
+
+4
+00:00:13.520 --> 00:00:15.480
+<v Elisabetta Mori:>I am Elisabetta Mori, an historian of
+
+5
+00:00:15.480 --> 00:00:18.420
+<v Elisabetta Mori:>Computing currently based in Italy, and an
+
+6
+00:00:18.420 --> 00:00:20.320
+<v Elisabetta Mori:>oral history interview with FOSSDA.
+
+7
+00:00:21.040 --> 00:00:22.801
+<v Elisabetta Mori:>Today I'll be talking to Cat Allman.
+
+8
+00:00:22.801 --> 00:00:25.440
+<v Elisabetta Mori:>Cat has been involved in open source
+
+9
+00:00:25.440 --> 00:00:28.200
+<v Elisabetta Mori:>software since the 1980s and worked with
+
+10
+00:00:28.200 --> 00:00:30.060
+<v Elisabetta Mori:>the global free and open source software
+
+11
+00:00:30.060 --> 00:00:31.220
+<v Elisabetta Mori:>community at Google.
+
+12
+00:00:31.980 --> 00:00:34.900
+<v Elisabetta Mori:>We are recording on theirstory.io and I
+
+13
+00:00:34.900 --> 00:00:37.940
+<v Elisabetta Mori:>am in Rio, Elba Island, Italy, and
+
+14
+00:00:37.940 --> 00:00:40.340
+<v Elisabetta Mori:>Cat is in San Francisco, US.
+
+15
+00:00:41.680 --> 00:00:42.400
+<v Elisabetta Mori:>Welcome, Cat.
+
+16
+00:00:45.040 --> 00:00:47.300
+<v Elisabetta Mori:>Thank you for being here today.
+
+17
+00:00:48.840 --> 00:00:50.520
+<v Elisabetta Mori:>Can you talk about your childhood?
+
+18
+00:00:51.820 --> 00:00:52.320
+<v Cat Allman:>Sure.
+
+19
+00:00:52.960 --> 00:00:55.440
+<v Cat Allman:>I was born in Oakland, in Oakland,
+
+20
+00:00:55.440 --> 00:01:00.440
+<v Cat Allman:>California, in 1958, and raised in the
+
+21
+00:01:00.440 --> 00:01:03.060
+<v Cat Allman:>East Bay Hills, looking out across San
+
+22
+00:01:03.060 --> 00:01:04.840
+<v Cat Allman:>Francisco Bay to the Golden Gate Bridge
+
+23
+00:01:04.840 --> 00:01:07.620
+<v Cat Allman:>in San Francisco with my older brother
+
+24
+00:01:07.640 --> 00:01:11.399
+<v Cat Allman:>Eric Allman, creator, original creator of Send
+
+25
+00:01:11.400 --> 00:01:13.260
+<v Cat Allman:>Mail, the mail transfer agent.
+
+26
+00:01:14.180 --> 00:01:17.060
+<v Cat Allman:>Went to public schools, ending up at
+
+27
+00:01:17.380 --> 00:01:20.440
+<v Cat Allman:>University of California, Santa Cruz, where I
+
+28
+00:01:20.440 --> 00:01:24.060
+<v Cat Allman:>studied American Studies, so not engineering, not
+
+29
+00:01:24.060 --> 00:01:25.100
+<v Cat Allman:>computer science.
+
+30
+00:01:26.740 --> 00:01:28.380
+<v Cat Allman:>Growing up with an older brother who
+
+31
+00:01:28.380 --> 00:01:33.460
+<v Cat Allman:>was a science child prodigy put me
+
+32
+00:01:33.460 --> 00:01:36.600
+<v Cat Allman:>on another path for a while, though
+
+33
+00:01:38.100 --> 00:01:40.440
+<v Cat Allman:>because of his interests we grew up
+
+34
+00:01:40.440 --> 00:01:44.020
+<v Cat Allman:>with like boxes of punch cards, which
+
+35
+00:01:44.020 --> 00:01:46.040
+<v Cat Allman:>it turns out if you make a
+
+36
+00:01:46.040 --> 00:01:47.640
+<v Cat Allman:>cone out of them and staple them
+
+37
+00:01:47.640 --> 00:01:49.280
+<v Cat Allman:>and spray paint them gold, you can
+
+38
+00:01:49.280 --> 00:01:51.140
+<v Cat Allman:>make a Christmas wreath out of them,
+
+39
+00:01:51.140 --> 00:01:54.360
+<v Cat Allman:>which we did do because super nerdy,
+
+40
+00:01:54.360 --> 00:01:55.420
+<v Cat Allman:>what can I say?
+
+41
+00:01:57.180 --> 00:01:59.740
+<v Cat Allman:>Fast forward to out of school looking
+
+42
+00:01:59.740 --> 00:02:04.220
+<v Cat Allman:>for a job and that was the
+
+43
+00:02:04.220 --> 00:02:08.820
+<v Cat Allman:>early 1980s and computers were just coming
+
+44
+00:02:08.820 --> 00:02:12.740
+<v Cat Allman:>online as business tools.
+
+45
+00:02:14.700 --> 00:02:18.140
+<v Cat Allman:>It was right before personal computers, so
+
+46
+00:02:18.340 --> 00:02:21.059
+<v Cat Allman:>many computers were the rage and I
+
+47
+00:02:21.060 --> 00:02:24.180
+<v Cat Allman:>was working for a advertising media planning
+
+48
+00:02:24.280 --> 00:02:27.300
+<v Cat Allman:>firm that not only specialized in technology
+
+49
+00:02:27.440 --> 00:02:29.020
+<v Cat Allman:>clients, but was one of the first
+
+50
+00:02:29.020 --> 00:02:33.980
+<v Cat Allman:>to have a computerized, essentially, work tracking
+
+51
+00:02:34.000 --> 00:02:34.500
+<v Cat Allman:>system.
+
+52
+00:02:35.460 --> 00:02:38.040
+<v Cat Allman:>So whether I wanted to or not,
+
+53
+00:02:38.040 --> 00:02:39.720
+<v Cat Allman:>there I was working with computers.
+
+54
+00:02:40.160 --> 00:02:41.799
+<v Cat Allman:>In the meantime, I was close as
+
+55
+00:02:41.800 --> 00:02:43.540
+<v Cat Allman:>I always have been with my brother
+
+56
+00:02:43.620 --> 00:02:44.940
+<v Cat Allman:>and his group of friends.
+
+57
+00:02:47.220 --> 00:02:49.200
+<v Cat Allman:>Fast forward a little bit and my
+
+58
+00:02:49.200 --> 00:02:52.040
+<v Cat Allman:>first job with free and open source
+
+59
+00:02:52.040 --> 00:02:54.440
+<v Cat Allman:>software was at Mount Zainu.
+
+60
+00:02:54.840 --> 00:02:59.940
+<v Cat Allman:>Mount Zainu is Unix trademark backwards.
+
+61
+00:03:00.720 --> 00:03:02.680
+<v Cat Allman:>Our logo was a little mountain range.
+
+62
+00:03:02.680 --> 00:03:04.660
+<v Cat Allman:>I was a contractor, not an employee,
+
+63
+00:03:05.380 --> 00:03:08.700
+<v Cat Allman:>but so I was working on coordinating
+
+64
+00:03:08.920 --> 00:03:11.760
+<v Cat Allman:>the company's involvement with DECUS, which was
+
+65
+00:03:11.760 --> 00:03:13.680
+<v Cat Allman:>the DEC User Group Conference.
+
+66
+00:03:17.020 --> 00:03:21.500
+<v Cat Allman:>And found myself really kind of engaged
+
+67
+00:03:22.740 --> 00:03:26.720
+<v Cat Allman:>with the political idea of software that
+
+68
+00:03:26.720 --> 00:03:28.859
+<v Cat Allman:>had been created at a publicly funded
+
+69
+00:03:28.860 --> 00:03:33.760
+<v Cat Allman:>institution as being free and available to
+
+70
+00:03:34.240 --> 00:03:35.700
+<v Cat Allman:>the rest of us to use.
+
+71
+00:03:35.860 --> 00:03:38.860
+<v Cat Allman:>Really the academic method of, you know,
+
+72
+00:03:38.860 --> 00:03:40.120
+<v Cat Allman:>you come up with an idea and
+
+73
+00:03:40.120 --> 00:03:42.540
+<v Cat Allman:>other people build on it and civilization
+
+74
+00:03:42.880 --> 00:03:43.700
+<v Cat Allman:>rolls along.
+
+75
+00:03:45.060 --> 00:03:46.960
+<v Cat Allman:>There's a lot more history behind that,
+
+76
+00:03:46.960 --> 00:03:52.320
+<v Cat Allman:>including a protracted intellectual property lawsuit between
+
+77
+00:03:52.340 --> 00:03:56.000
+<v Cat Allman:>AT&T and the University of California, because
+
+78
+00:03:56.000 --> 00:03:58.600
+<v Cat Allman:>Mount Zainu was selling the first commercially
+
+79
+00:03:58.820 --> 00:04:01.620
+<v Cat Allman:>supported release of what is now known
+
+80
+00:04:01.620 --> 00:04:02.740
+<v Cat Allman:>as Berkeley Unix.
+
+81
+00:04:03.480 --> 00:04:06.600
+<v Cat Allman:>But the other thing that happened, that
+
+82
+00:04:06.600 --> 00:04:07.520
+<v Cat Allman:>was a collective.
+
+83
+00:04:08.140 --> 00:04:09.960
+<v Cat Allman:>So every Wednesday, we gathered in the
+
+84
+00:04:09.960 --> 00:04:12.980
+<v Cat Allman:>conference room and argued every decision to
+
+85
+00:04:12.980 --> 00:04:13.640
+<v Cat Allman:>a halt.
+
+86
+00:04:13.940 --> 00:04:15.200
+<v Cat Allman:>And there was the one guy who
+
+87
+00:04:15.200 --> 00:04:17.440
+<v Cat Allman:>gave up last, so he usually got
+
+88
+00:04:17.440 --> 00:04:17.880
+<v Cat Allman:>his way.
+
+89
+00:04:17.880 --> 00:04:19.680
+<v Cat Allman:>And then we had burritos, because it
+
+90
+00:04:19.680 --> 00:04:20.360
+<v Cat Allman:>was California.
+
+91
+00:04:23.080 --> 00:04:24.800
+<v Cat Allman:>But I was a contractor, so then
+
+92
+00:04:24.800 --> 00:04:26.780
+<v Cat Allman:>I was out of work again and
+
+93
+00:04:27.340 --> 00:04:29.580
+<v Cat Allman:>ended up working at Axion Design.
+
+94
+00:04:30.300 --> 00:04:31.859
+<v Cat Allman:>At the time it was called DeVito
+
+95
+00:04:31.860 --> 00:04:33.479
+<v Cat Allman:>and Associates and it was one of
+
+96
+00:04:33.480 --> 00:04:39.560
+<v Cat Allman:>the most prominent package design and branding
+
+97
+00:04:39.660 --> 00:04:41.180
+<v Cat Allman:>firms in the United States.
+
+98
+00:04:41.820 --> 00:04:43.220
+<v Cat Allman:>And it was all done on paper.
+
+99
+00:04:43.220 --> 00:04:46.040
+<v Cat Allman:>I was running a darkroom and literally
+
+100
+00:04:46.260 --> 00:04:48.840
+<v Cat Allman:>mixing bottles of ink to make custom
+
+101
+00:04:50.020 --> 00:04:53.460
+<v Cat Allman:>materials for the artists to make mock-ups
+
+102
+00:04:53.480 --> 00:04:54.660
+<v Cat Allman:>of package designs.
+
+103
+00:04:55.760 --> 00:04:59.020
+<v Cat Allman:>But right about that time, computers started
+
+104
+00:04:59.160 --> 00:05:01.560
+<v Cat Allman:>coming along in the design industry.
+
+105
+00:05:02.040 --> 00:05:05.080
+<v Cat Allman:>And I already had experience using a
+
+106
+00:05:05.080 --> 00:05:07.620
+<v Cat Allman:>computer which no one except the COO
+
+107
+00:05:07.940 --> 00:05:12.040
+<v Cat Allman:>had and so we started expanding the
+
+108
+00:05:12.040 --> 00:05:15.040
+<v Cat Allman:>offerings, the internal offerings to include computers
+
+109
+00:05:15.720 --> 00:05:18.679
+<v Cat Allman:>not free and open source software but
+
+110
+00:05:18.680 --> 00:05:19.180
+<v Cat Allman:>software.
+
+111
+00:05:21.100 --> 00:05:23.120
+<v Cat Allman:>That rolled along, ended up being an
+
+112
+00:05:23.120 --> 00:05:24.880
+<v Cat Allman:>IT manager back in the days when
+
+113
+00:05:24.880 --> 00:05:27.880
+<v Cat Allman:>you could actually make a profit by
+
+114
+00:05:28.340 --> 00:05:29.840
+<v Cat Allman:>selling computer services.
+
+115
+00:05:30.060 --> 00:05:31.559
+<v Cat Allman:>Now it would be like having pay
+
+116
+00:05:31.560 --> 00:05:34.040
+<v Cat Allman:>toilets, but at the time you could
+
+117
+00:05:34.040 --> 00:05:35.980
+<v Cat Allman:>charge by, I think we charged on
+
+118
+00:05:35.980 --> 00:05:39.080
+<v Cat Allman:>five minute increments for the designers using
+
+119
+00:05:39.080 --> 00:05:41.180
+<v Cat Allman:>the computers that I bought and managed
+
+120
+00:05:41.680 --> 00:05:43.460
+<v Cat Allman:>to do graphic design work.
+
+121
+00:05:44.100 --> 00:05:49.012
+<v Elisabetta Mori:>Do you remember computers were at the
+
+122
+00:05:49.012 --> 00:05:49.028
+<v Elisabetta Mori:>time?
+
+123
+00:05:50.980 --> 00:05:55.780
+<v Cat Allman:>Originally we just had one Microsoft AT,
+
+124
+00:05:56.140 --> 00:05:57.240
+<v Cat Allman:>PC AT.
+
+125
+00:05:57.740 --> 00:06:00.560
+<v Cat Allman:>It was actually pre-Windows, So it was
+
+126
+00:06:00.560 --> 00:06:02.860
+<v Cat Allman:>command line, but just barely.
+
+127
+00:06:03.660 --> 00:06:06.099
+<v Cat Allman:>And then the Macintosh came along and
+
+128
+00:06:06.100 --> 00:06:08.400
+<v Cat Allman:>we started right about the time you
+
+129
+00:06:08.480 --> 00:06:11.980
+<v Cat Allman:>started having color available on the Macintosh.
+
+130
+00:06:12.800 --> 00:06:14.660
+<v Cat Allman:>A friend had lent me the original
+
+131
+00:06:14.680 --> 00:06:15.180
+<v Cat Allman:>Macintosh.
+
+132
+00:06:16.020 --> 00:06:18.080
+<v Cat Allman:>So early on, I was able to
+
+133
+00:06:18.080 --> 00:06:20.940
+<v Cat Allman:>connect to a deck of backs at
+
+134
+00:06:20.940 --> 00:06:23.320
+<v Cat Allman:>the University of California to send email
+
+135
+00:06:23.320 --> 00:06:24.940
+<v Cat Allman:>back and forth with my friends.
+
+136
+00:06:27.180 --> 00:06:28.520
+<v Cat Allman:>Kind of open source.
+
+137
+00:06:29.020 --> 00:06:31.780
+<v Cat Allman:>I should mention all this predates the
+
+138
+00:06:31.780 --> 00:06:34.080
+<v Cat Allman:>development of the term free software as
+
+139
+00:06:34.080 --> 00:06:38.000
+<v Cat Allman:>popularized by Richard Stallman, or open source.
+
+140
+00:06:38.000 --> 00:06:39.940
+<v Cat Allman:>The term open source came later in
+
+141
+00:06:39.940 --> 00:06:40.860
+<v Cat Allman:>the late 1990s.
+
+142
+00:06:42.260 --> 00:06:46.160
+<v Cat Allman:>So, looping that all together, how did
+
+143
+00:06:46.160 --> 00:06:47.920
+<v Cat Allman:>I get started actually in free and
+
+144
+00:06:47.920 --> 00:06:48.980
+<v Cat Allman:>open source software?
+
+145
+00:06:49.300 --> 00:06:53.000
+<v Cat Allman:>I was sick of my job, but
+
+146
+00:06:53.000 --> 00:06:54.000
+<v Cat Allman:>I liked engineers.
+
+147
+00:06:54.380 --> 00:06:58.200
+<v Cat Allman:>I really admired not just the way
+
+148
+00:06:58.200 --> 00:07:01.800
+<v Cat Allman:>my brother and his friends organized the
+
+149
+00:07:01.800 --> 00:07:05.920
+<v Cat Allman:>world, but the people I met through
+
+150
+00:07:05.920 --> 00:07:08.600
+<v Cat Allman:>the software industry in the graphic design
+
+151
+00:07:08.600 --> 00:07:14.800
+<v Cat Allman:>field actually tried to put together a
+
+152
+00:07:14.800 --> 00:07:17.020
+<v Cat Allman:>community in the San Francisco Bay Area
+
+153
+00:07:17.020 --> 00:07:20.200
+<v Cat Allman:>for people doing IT management for advertising
+
+154
+00:07:20.320 --> 00:07:21.360
+<v Cat Allman:>and graphic design.
+
+155
+00:07:21.500 --> 00:07:22.940
+<v Cat Allman:>It didn't really go anywhere but it
+
+156
+00:07:22.940 --> 00:07:24.400
+<v Cat Allman:>was interesting to try.
+
+157
+00:07:27.160 --> 00:07:30.040
+<v Cat Allman:>So about this time the idea of
+
+158
+00:07:30.240 --> 00:07:33.740
+<v Cat Allman:>businesses based on free and open source
+
+159
+00:07:33.740 --> 00:07:36.040
+<v Cat Allman:>software started percolating around.
+
+160
+00:07:36.040 --> 00:07:39.480
+<v Cat Allman:>I mean, there'd been, what were they
+
+161
+00:07:39.480 --> 00:07:39.980
+<v Cat Allman:>called?
+
+162
+00:07:40.760 --> 00:07:43.220
+<v Cat Allman:>There had been an earlier company doing
+
+163
+00:07:44.680 --> 00:07:46.960
+<v Cat Allman:>BSD, CD ROMs, etc.
+
+164
+00:07:48.940 --> 00:07:50.680
+<v Cat Allman:>I'm embarrassed I can't remember their name,
+
+165
+00:07:50.680 --> 00:07:52.060
+<v Cat Allman:>but anyway, they were there.
+
+166
+00:07:54.000 --> 00:07:57.780
+<v Cat Allman:>So my brother around that time, that
+
+167
+00:07:57.780 --> 00:08:02.280
+<v Cat Allman:>would be 1997, had a former colleague
+
+168
+00:08:03.080 --> 00:08:06.060
+<v Cat Allman:>who they were talking together about doing
+
+169
+00:08:06.060 --> 00:08:08.239
+<v Cat Allman:>something with Sendmail in terms of starting
+
+170
+00:08:08.240 --> 00:08:09.640
+<v Cat Allman:>a business around it.
+
+171
+00:08:10.240 --> 00:08:12.220
+<v Cat Allman:>My brother wouldn't hire me because nepotism,
+
+172
+00:08:12.340 --> 00:08:15.060
+<v Cat Allman:>he's a very principled guy, so I
+
+173
+00:08:15.060 --> 00:08:19.700
+<v Cat Allman:>started harassing his business partner to give
+
+174
+00:08:19.700 --> 00:08:21.140
+<v Cat Allman:>me a job as they were putting
+
+175
+00:08:21.140 --> 00:08:22.760
+<v Cat Allman:>this idea of a company together.
+
+176
+00:08:23.000 --> 00:08:25.120
+<v Cat Allman:>And he finally gave up and hired
+
+177
+00:08:25.120 --> 00:08:25.620
+<v Cat Allman:>me.
+
+178
+00:08:25.840 --> 00:08:27.800
+<v Cat Allman:>So I was employee number five at
+
+179
+00:08:27.800 --> 00:08:28.880
+<v Cat Allman:>Sendmail Inc.
+
+180
+00:08:28.900 --> 00:08:30.480
+<v Cat Allman:>And was there when we launched the
+
+181
+00:08:30.480 --> 00:08:33.580
+<v Cat Allman:>company, which I look back on it,
+
+182
+00:08:33.580 --> 00:08:35.079
+<v Cat Allman:>and it was kind of embarrassing, some
+
+183
+00:08:35.080 --> 00:08:37.000
+<v Cat Allman:>of the choices I had made, but
+
+184
+00:08:38.760 --> 00:08:40.620
+<v Cat Allman:>it was a really heady time.
+
+185
+00:08:41.539 --> 00:08:43.000
+<v Cat Allman:>At that point, we were going to
+
+186
+00:08:43.000 --> 00:08:47.180
+<v Cat Allman:>ISP-focused conferences, as that was really a
+
+187
+00:08:47.180 --> 00:08:49.440
+<v Cat Allman:>stronghold for the use of free and
+
+188
+00:08:49.440 --> 00:08:53.080
+<v Cat Allman:>open source software, was the ISP business,
+
+189
+00:08:53.400 --> 00:08:56.580
+<v Cat Allman:>back when people could start a local
+
+190
+00:08:56.580 --> 00:08:58.780
+<v Cat Allman:>ISP and actually end up making money.
+
+191
+00:08:58.820 --> 00:09:00.199
+<v Cat Allman:>It didn't last long, but it was
+
+192
+00:09:00.200 --> 00:09:01.980
+<v Cat Allman:>kind of glorious while it lasted.
+
+193
+00:09:03.760 --> 00:09:06.300
+<v Cat Allman:>And then about that same time, 1998,
+
+194
+00:09:08.140 --> 00:09:10.980
+<v Cat Allman:>I think, yes, I have the t-shirt.
+
+195
+00:09:11.500 --> 00:09:15.720
+<v Cat Allman:>O'Reilly and Company, the media people, the
+
+196
+00:09:15.720 --> 00:09:19.540
+<v Cat Allman:>animal books, did a, as I recall
+
+197
+00:09:19.640 --> 00:09:22.900
+<v Cat Allman:>it, it was an evening event at
+
+198
+00:09:22.900 --> 00:09:26.680
+<v Cat Allman:>a conference room at Stanford University about
+
+199
+00:09:26.680 --> 00:09:28.240
+<v Cat Allman:>free and open source software.
+
+200
+00:09:28.620 --> 00:09:30.020
+<v Cat Allman:>I should have brought the t-shirt to
+
+201
+00:09:30.020 --> 00:09:30.560
+<v Cat Allman:>the interview.
+
+202
+00:09:32.740 --> 00:09:34.260
+<v Cat Allman:>And we were there for that.
+
+203
+00:09:34.280 --> 00:09:37.800
+<v Cat Allman:>And suddenly the world was in a
+
+204
+00:09:37.800 --> 00:09:40.580
+<v Cat Allman:>dot-com bubble, and not just a dot-com
+
+205
+00:09:40.640 --> 00:09:44.060
+<v Cat Allman:>bubble, but a hybrid business model, open
+
+206
+00:09:44.060 --> 00:09:46.040
+<v Cat Allman:>source software bubble.
+
+207
+00:09:46.860 --> 00:09:48.939
+<v Cat Allman:>We actually got landed on the front
+
+208
+00:09:48.940 --> 00:09:50.540
+<v Cat Allman:>page of the New York Times when
+
+209
+00:09:50.540 --> 00:09:53.440
+<v Cat Allman:>we launched the company, which was pretty
+
+210
+00:09:53.440 --> 00:09:56.180
+<v Cat Allman:>heady for the five of us, but
+
+211
+00:09:56.180 --> 00:09:59.540
+<v Cat Allman:>the technology reporter at the time understood
+
+212
+00:09:59.540 --> 00:10:03.140
+<v Cat Allman:>the importance of what Sendmail has done
+
+213
+00:10:03.340 --> 00:10:06.760
+<v Cat Allman:>to actually create the Internet.
+
+214
+00:10:07.300 --> 00:10:09.740
+<v Cat Allman:>And also by that time, Tim Berners-Lee
+
+215
+00:10:09.880 --> 00:10:12.680
+<v Cat Allman:>had invented the World Wide Web.
+
+216
+00:10:14.340 --> 00:10:16.800
+<v Cat Allman:>It's funny looking back on, I remember
+
+217
+00:10:16.800 --> 00:10:19.920
+<v Cat Allman:>bringing my original Macintosh to my office
+
+218
+00:10:19.920 --> 00:10:22.540
+<v Cat Allman:>and showing my boss email and he
+
+219
+00:10:22.540 --> 00:10:24.439
+<v Cat Allman:>was like, why would anybody want to
+
+220
+00:10:24.440 --> 00:10:25.180
+<v Cat Allman:>use this?
+
+221
+00:10:25.920 --> 00:10:27.780
+<v Cat Allman:>And then some years later we brought
+
+222
+00:10:27.780 --> 00:10:29.760
+<v Cat Allman:>a color Macintosh in and showed him
+
+223
+00:10:29.760 --> 00:10:31.160
+<v Cat Allman:>the World Wide Web and he was
+
+224
+00:10:31.160 --> 00:10:34.260
+<v Cat Allman:>like, why would anyone care?
+
+225
+00:10:34.640 --> 00:10:38.760
+<v Cat Allman:>Well, needless to say, 30, 40 years,
+
+226
+00:10:39.520 --> 00:10:41.020
+<v Cat Allman:>things are a little different.
+
+227
+00:10:42.440 --> 00:10:44.340
+<v Cat Allman:>And I think, you know, for the
+
+228
+00:10:44.340 --> 00:10:48.320
+<v Cat Allman:>regular user, they don't necessarily understand or
+
+229
+00:10:48.320 --> 00:10:52.380
+<v Cat Allman:>need to understand how important floss has
+
+230
+00:10:52.380 --> 00:10:54.980
+<v Cat Allman:>been to the development of the Internet
+
+231
+00:10:55.640 --> 00:10:57.220
+<v Cat Allman:>and the World Wide Web.
+
+232
+00:10:57.860 --> 00:10:59.920
+<v Cat Allman:>But as I said to a fellow
+
+233
+00:10:59.920 --> 00:11:04.300
+<v Cat Allman:>panelist actually at Maker Faire Rome, a
+
+234
+00:11:04.300 --> 00:11:06.940
+<v Cat Allman:>banking guy who was saying, "oh, we
+
+235
+00:11:06.940 --> 00:11:09.220
+<v Cat Allman:>don't use any open source software in
+
+236
+00:11:09.220 --> 00:11:12.100
+<v Cat Allman:>my Italian bank." And I'm like, "do
+
+237
+00:11:12.100 --> 00:11:15.795
+<v Cat Allman:>you send email to clients bank online?"
+
+238
+00:11:16.740 --> 00:11:19.140
+<v Cat Allman:>He's like, "well, yeah." I'm like, "you
+
+239
+00:11:19.480 --> 00:11:21.959
+<v Cat Allman:>look, you're using free and open source
+
+240
+00:11:21.960 --> 00:11:23.800
+<v Cat Allman:>software." And the look of horror on
+
+241
+00:11:23.800 --> 00:11:26.580
+<v Cat Allman:>the poor man's face was really fun.
+
+242
+00:11:28.400 --> 00:11:32.600
+<v Cat Allman:>But anyway, so that was interesting being
+
+243
+00:11:32.600 --> 00:11:33.960
+<v Cat Allman:>in the dot-com bubble.
+
+244
+00:11:35.140 --> 00:11:37.160
+<v Cat Allman:>Heady times, stupid parties.
+
+245
+00:11:37.940 --> 00:11:40.240
+<v Cat Allman:>But what was really important for the
+
+246
+00:11:40.240 --> 00:11:44.040
+<v Cat Allman:>development of my engagement was, I mean,
+
+247
+00:11:44.040 --> 00:11:46.560
+<v Cat Allman:>I started out as the marketing manager,
+
+248
+00:11:46.560 --> 00:11:48.280
+<v Cat Allman:>but as we grew, I did not
+
+249
+00:11:48.280 --> 00:11:51.660
+<v Cat Allman:>maintain that title, but I was the
+
+250
+00:11:51.660 --> 00:11:54.360
+<v Cat Allman:>one that got all the email coming
+
+251
+00:11:54.360 --> 00:11:57.720
+<v Cat Allman:>into info at and sorted it out
+
+252
+00:11:57.720 --> 00:11:59.699
+<v Cat Allman:>and answered a lot of questions and
+
+253
+00:11:59.700 --> 00:12:01.900
+<v Cat Allman:>redirected people where they needed to go.
+
+254
+00:12:02.060 --> 00:12:03.840
+<v Cat Allman:>Now that was mail coming into the
+
+255
+00:12:03.840 --> 00:12:06.660
+<v Cat Allman:>company as a hybrid business model, we
+
+256
+00:12:06.660 --> 00:12:10.120
+<v Cat Allman:>had Sendmail the projects and mail.org and
+
+257
+00:12:10.120 --> 00:12:11.980
+<v Cat Allman:>Sendmail.com the company.
+
+258
+00:12:12.260 --> 00:12:14.200
+<v Cat Allman:>So I was dealing with the company
+
+259
+00:12:14.380 --> 00:12:18.948
+<v Cat Allman:>email and it was it was interesting
+
+260
+00:12:18.949 --> 00:12:19.163
+<v Cat Allman:>times.
+
+261
+00:12:23.260 --> 00:12:26.840
+<v Cat Allman:>People are very passionate about software that
+
+262
+00:12:26.840 --> 00:12:28.780
+<v Cat Allman:>they work on.
+
+263
+00:12:29.200 --> 00:12:31.920
+<v Cat Allman:>And Frankly, that passion is a big
+
+264
+00:12:31.920 --> 00:12:34.180
+<v Cat Allman:>part of why I've stayed involved with
+
+265
+00:12:34.180 --> 00:12:36.000
+<v Cat Allman:>free and open source software over the
+
+266
+00:12:36.000 --> 00:12:36.500
+<v Cat Allman:>decades.
+
+267
+00:12:37.920 --> 00:12:39.199
+<v Cat Allman:>I never want to be in one
+
+268
+00:12:39.200 --> 00:12:42.480
+<v Cat Allman:>of those jobs where people don't care.
+
+269
+00:12:45.400 --> 00:12:47.380
+<v Cat Allman:>And so far, at least, people involved
+
+270
+00:12:47.380 --> 00:12:49.900
+<v Cat Allman:>with free and open source really care.
+
+271
+00:12:50.280 --> 00:12:52.699
+<v Cat Allman:>And that means, I mean, life is
+
+272
+00:12:52.700 --> 00:12:54.860
+<v Cat Allman:>short and you don't have time at
+
+273
+00:12:54.860 --> 00:12:55.320
+<v Cat Allman:>work.
+
+274
+00:12:55.320 --> 00:12:56.480
+<v Cat Allman:>So you might as well spend it
+
+275
+00:12:56.480 --> 00:12:57.180
+<v Cat Allman:>with people.
+
+276
+00:12:58.460 --> 00:13:00.060
+<v Cat Allman:>Even if you don't always agree with
+
+277
+00:13:00.060 --> 00:13:03.960
+<v Cat Allman:>them, you respect their commitment to their
+
+278
+00:13:03.960 --> 00:13:04.460
+<v Cat Allman:>ideas.
+
+279
+00:13:04.960 --> 00:13:06.920
+<v Cat Allman:>So here I am.
+
+280
+00:13:06.920 --> 00:13:09.660
+<v Cat Allman:>Plus, I like solving problems and free
+
+281
+00:13:09.660 --> 00:13:12.680
+<v Cat Allman:>software, open source software, it's all about
+
+282
+00:13:12.680 --> 00:13:15.420
+<v Cat Allman:>solving problems and working collectively to make
+
+283
+00:13:15.420 --> 00:13:17.660
+<v Cat Allman:>things better for all of us.
+
+284
+00:13:17.900 --> 00:13:19.540
+<v Cat Allman:>Sometimes not so much together.
+
+285
+00:13:19.540 --> 00:13:22.940
+<v Cat Allman:>There's the XKCD comic of the enormous
+
+286
+00:13:23.160 --> 00:13:25.120
+<v Cat Allman:>infrastructure that holds up the world and
+
+287
+00:13:25.120 --> 00:13:26.960
+<v Cat Allman:>there's one little block at the bottom
+
+288
+00:13:26.960 --> 00:13:28.480
+<v Cat Allman:>maintained by one guy.
+
+289
+00:13:29.640 --> 00:13:33.160
+<v Cat Allman:>But that's another interesting thing is the
+
+290
+00:13:33.160 --> 00:13:35.920
+<v Cat Allman:>sustainability of free and open source software
+
+291
+00:13:36.340 --> 00:13:40.120
+<v Cat Allman:>as it is increasingly relied upon by
+
+292
+00:13:40.120 --> 00:13:43.420
+<v Cat Allman:>the world, really the global infrastructure of
+
+293
+00:13:43.420 --> 00:13:43.920
+<v Cat Allman:>information.
+
+294
+00:13:45.820 --> 00:13:48.560
+<v Cat Allman:>So fast forward, I worked at Send
+
+295
+00:13:48.560 --> 00:13:50.320
+<v Cat Allman:>Mail for about four years and I
+
+296
+00:13:50.320 --> 00:13:52.940
+<v Cat Allman:>took some time off and the USENIX
+
+297
+00:13:53.040 --> 00:13:55.840
+<v Cat Allman:>Association is something that I had known
+
+298
+00:13:55.840 --> 00:13:56.520
+<v Cat Allman:>for a long time.
+
+299
+00:13:56.520 --> 00:13:58.260
+<v Cat Allman:>When I was an IT manager I
+
+300
+00:13:58.260 --> 00:14:01.220
+<v Cat Allman:>went to their conferences focused on IT
+
+301
+00:14:01.220 --> 00:14:05.600
+<v Cat Allman:>services and I knew the executive director
+
+302
+00:14:05.600 --> 00:14:06.380
+<v Cat Allman:>and people involved.
+
+303
+00:14:06.380 --> 00:14:08.120
+<v Cat Allman:>My brother and my brother-in-law had been
+
+304
+00:14:08.120 --> 00:14:08.620
+<v Cat Allman:>involved.
+
+305
+00:14:09.120 --> 00:14:11.180
+<v Cat Allman:>So when the executive director called me
+
+306
+00:14:11.180 --> 00:14:12.600
+<v Cat Allman:>and asked me to come in and
+
+307
+00:14:12.600 --> 00:14:14.980
+<v Cat Allman:>do what amounted to fundraising, marketing and
+
+308
+00:14:14.980 --> 00:14:18.240
+<v Cat Allman:>fundraising for them, I was ready for
+
+309
+00:14:18.240 --> 00:14:19.100
+<v Cat Allman:>another job.
+
+310
+00:14:19.760 --> 00:14:22.460
+<v Cat Allman:>So I worked there for years.
+
+311
+00:14:23.140 --> 00:14:26.320
+<v Cat Allman:>But one of our sponsors, I was
+
+312
+00:14:26.320 --> 00:14:27.620
+<v Cat Allman:>about to call them a client because
+
+313
+00:14:27.620 --> 00:14:29.780
+<v Cat Allman:>they were kind of a client, was
+
+314
+00:14:29.780 --> 00:14:31.180
+<v Cat Allman:>Google, early Google.
+
+315
+00:14:31.180 --> 00:14:32.599
+<v Cat Allman:>And my brother had told me about
+
+316
+00:14:32.600 --> 00:14:37.180
+<v Cat Allman:>this cool new search engine in 1999
+
+317
+00:14:37.360 --> 00:14:40.579
+<v Cat Allman:>I think and then I remember really
+
+318
+00:14:40.580 --> 00:14:44.020
+<v Cat Allman:>wanting a Gmail email address even though
+
+319
+00:14:44.040 --> 00:14:45.699
+<v Cat Allman:>a friend was running my own domain
+
+320
+00:14:45.700 --> 00:14:46.420
+<v Cat Allman:>for me.
+
+321
+00:14:48.280 --> 00:14:53.700
+<v Cat Allman:>So Google recruiting had booths and advertisements
+
+322
+00:14:54.400 --> 00:14:58.340
+<v Cat Allman:>on the Unix platform, Usenix platform.
+
+323
+00:14:58.780 --> 00:15:00.700
+<v Cat Allman:>I'll be careful to pronounce that right.
+
+324
+00:15:02.220 --> 00:15:03.860
+<v Cat Allman:>So I knew some people there.
+
+325
+00:15:04.120 --> 00:15:07.400
+<v Cat Allman:>And then someone I knew from the
+
+326
+00:15:07.400 --> 00:15:09.280
+<v Cat Allman:>dot com bubble when he was at
+
+327
+00:15:09.280 --> 00:15:13.740
+<v Cat Allman:>VA Linux was now the head of
+
+328
+00:15:13.740 --> 00:15:14.820
+<v Cat Allman:>Google's OSPO.
+
+329
+00:15:15.860 --> 00:15:18.460
+<v Cat Allman:>People argue whether Google had the first
+
+330
+00:15:18.460 --> 00:15:21.140
+<v Cat Allman:>OSPO or whether Sun Microsystems did.
+
+331
+00:15:23.800 --> 00:15:25.280
+<v Cat Allman:>I don't know that it really matters,
+
+332
+00:15:25.280 --> 00:15:27.600
+<v Cat Allman:>but if you want to have a
+
+333
+00:15:27.600 --> 00:15:29.540
+<v Cat Allman:>heated conversation in a bar late at
+
+334
+00:15:29.540 --> 00:15:32.060
+<v Cat Allman:>night, at certain circumstances, you can bring
+
+335
+00:15:32.060 --> 00:15:32.800
+<v Cat Allman:>that up.
+
+336
+00:15:35.820 --> 00:15:39.439
+<v Cat Allman:>So, actually the first job I applied
+
+337
+00:15:39.440 --> 00:15:41.280
+<v Cat Allman:>to at Google they wouldn't even talk
+
+338
+00:15:41.280 --> 00:15:44.640
+<v Cat Allman:>to me which was disappointing, but c'est
+
+339
+00:15:44.640 --> 00:15:45.060
+<v Cat Allman:>la vie.
+
+340
+00:15:45.060 --> 00:15:47.320
+<v Cat Allman:>But then I saw Chris DeBona at
+
+341
+00:15:48.060 --> 00:15:54.080
+<v Cat Allman:>an open source conference and one of
+
+342
+00:15:54.080 --> 00:15:56.500
+<v Cat Allman:>the people working at Google had made
+
+343
+00:15:56.500 --> 00:16:00.100
+<v Cat Allman:>a unfortunate error in something they were
+
+344
+00:16:00.100 --> 00:16:01.780
+<v Cat Allman:>doing and I had been able to
+
+345
+00:16:01.780 --> 00:16:03.480
+<v Cat Allman:>correct it for them before it got
+
+346
+00:16:03.480 --> 00:16:03.980
+<v Cat Allman:>bad.
+
+347
+00:16:04.540 --> 00:16:07.760
+<v Cat Allman:>So I was aware that there might
+
+348
+00:16:07.760 --> 00:16:11.180
+<v Cat Allman:>be a need there for help with
+
+349
+00:16:11.180 --> 00:16:12.720
+<v Cat Allman:>working with the free and open source
+
+350
+00:16:12.720 --> 00:16:13.640
+<v Cat Allman:>software community.
+
+351
+00:16:14.440 --> 00:16:15.720
+<v Cat Allman:>So I saw Chris and I'm like,
+
+352
+00:16:15.720 --> 00:16:17.240
+<v Cat Allman:>"hey, Chris, need any help?" And he
+
+353
+00:16:17.240 --> 00:16:20.860
+<v Cat Allman:>said, "Yeah, why don't you apply?" So
+
+354
+00:16:20.860 --> 00:16:25.080
+<v Cat Allman:>you asked me about interviews, it took
+
+355
+00:16:25.440 --> 00:16:26.260
+<v Cat Allman:>four months.
+
+356
+00:16:28.860 --> 00:16:31.080
+<v Cat Allman:>And three rounds of interviews, I think
+
+357
+00:16:31.080 --> 00:16:32.720
+<v Cat Allman:>I interviewed with eight people.
+
+358
+00:16:34.220 --> 00:16:37.080
+<v Cat Allman:>And my recruiter was funny after I
+
+359
+00:16:37.080 --> 00:16:37.640
+<v Cat Allman:>was hired.
+
+360
+00:16:37.640 --> 00:16:40.240
+<v Cat Allman:>She said, "you know, Google staffing didn't
+
+361
+00:16:40.240 --> 00:16:41.520
+<v Cat Allman:>even want to give you a phone
+
+362
+00:16:41.520 --> 00:16:43.880
+<v Cat Allman:>screen." I'm like, okay.
+
+363
+00:16:44.540 --> 00:16:47.600
+<v Cat Allman:>But the free and open source software
+
+364
+00:16:47.600 --> 00:16:52.400
+<v Cat Allman:>community takes care of its own, if
+
+365
+00:16:52.400 --> 00:16:53.040
+<v Cat Allman:>you will.
+
+366
+00:16:53.240 --> 00:16:55.320
+<v Cat Allman:>Not only Chris went and said, "no,
+
+367
+00:16:55.320 --> 00:16:58.339
+<v Cat Allman:>really, you have to hire her", but
+
+368
+00:16:58.340 --> 00:17:01.260
+<v Cat Allman:>a gentleman named Rob Pike, who had
+
+369
+00:17:01.260 --> 00:17:03.620
+<v Cat Allman:>been involved with the Unix operating system
+
+370
+00:17:03.740 --> 00:17:06.720
+<v Cat Allman:>since the 1980s, and more recently was
+
+371
+00:17:06.720 --> 00:17:10.460
+<v Cat Allman:>the original creator of the Go system.
+
+372
+00:17:12.619 --> 00:17:14.379
+<v Cat Allman:>When you apply to Google, at least
+
+373
+00:17:14.380 --> 00:17:15.800
+<v Cat Allman:>it used to be, they would send
+
+374
+00:17:15.800 --> 00:17:17.880
+<v Cat Allman:>an email around internally saying, do you
+
+375
+00:17:17.880 --> 00:17:18.839
+<v Cat Allman:>know this person?
+
+376
+00:17:18.839 --> 00:17:20.020
+<v Cat Allman:>Because you have to put a list
+
+377
+00:17:20.020 --> 00:17:21.720
+<v Cat Allman:>of people you know working at Google
+
+378
+00:17:21.720 --> 00:17:22.619
+<v Cat Allman:>on your application.
+
+379
+00:17:23.760 --> 00:17:25.640
+<v Cat Allman:>So Rob said something really nice for
+
+380
+00:17:25.640 --> 00:17:26.140
+<v Cat Allman:>me.
+
+381
+00:17:26.140 --> 00:17:27.720
+<v Cat Allman:>And since Rob had been at Bell
+
+382
+00:17:27.720 --> 00:17:30.360
+<v Cat Allman:>Labs and was generally very well respected,
+
+383
+00:17:31.220 --> 00:17:32.440
+<v Cat Allman:>I told him I'd make him some
+
+384
+00:17:32.440 --> 00:17:34.360
+<v Cat Allman:>brownies and he's like, no, it's my
+
+385
+00:17:34.360 --> 00:17:34.860
+<v Cat Allman:>job.
+
+386
+00:17:35.540 --> 00:17:36.980
+<v Cat Allman:>Rob's kind of like that.
+
+387
+00:17:37.900 --> 00:17:40.640
+<v Cat Allman:>So they eventually broke down and hired
+
+388
+00:17:40.640 --> 00:17:41.140
+<v Cat Allman:>me.
+
+389
+00:17:42.660 --> 00:17:49.460
+<v Cat Allman:>And yeah, it was very exciting to
+
+390
+00:17:49.460 --> 00:17:51.260
+<v Cat Allman:>try working at a big company.
+
+391
+00:17:51.820 --> 00:17:53.200
+<v Cat Allman:>I have to say my first day
+
+392
+00:17:53.200 --> 00:17:55.160
+<v Cat Allman:>was spent in a windowless room in
+
+393
+00:17:55.160 --> 00:17:58.040
+<v Cat Allman:>a group for an orientation with all
+
+394
+00:17:58.040 --> 00:18:00.780
+<v Cat Allman:>these extraordinarily perky videos.
+
+395
+00:18:01.580 --> 00:18:03.040
+<v Cat Allman:>And I went home in tears because
+
+396
+00:18:03.040 --> 00:18:04.440
+<v Cat Allman:>I thought oh my god I've made
+
+397
+00:18:04.440 --> 00:18:05.740
+<v Cat Allman:>a terrible mistake.
+
+398
+00:18:05.740 --> 00:18:09.719
+<v Cat Allman:>But unlike most people at least at
+
+399
+00:18:09.720 --> 00:18:13.100
+<v Cat Allman:>the time who applied to Google I
+
+400
+00:18:13.100 --> 00:18:14.900
+<v Cat Allman:>went into it knowing who I was
+
+401
+00:18:14.900 --> 00:18:16.020
+<v Cat Allman:>going to work for and what I
+
+402
+00:18:16.020 --> 00:18:17.140
+<v Cat Allman:>was going to work on.
+
+403
+00:18:17.160 --> 00:18:19.140
+<v Cat Allman:>I didn't go to work at Google,
+
+404
+00:18:19.340 --> 00:18:21.100
+<v Cat Allman:>I went to work on free and
+
+405
+00:18:21.100 --> 00:18:22.860
+<v Cat Allman:>open source software at Google.
+
+406
+00:18:22.900 --> 00:18:24.220
+<v Cat Allman:>So that's what I did.
+
+407
+00:18:27.540 --> 00:18:29.620
+<v Cat Allman:>It's part of the outreach team.
+
+408
+00:18:29.800 --> 00:18:33.240
+<v Cat Allman:>So we did things like, Google Summer
+
+409
+00:18:33.240 --> 00:18:34.900
+<v Cat Allman:>of Code came from there, as well
+
+410
+00:18:34.900 --> 00:18:37.800
+<v Cat Allman:>as Google Code-In, which was a program
+
+411
+00:18:37.800 --> 00:18:41.379
+<v Cat Allman:>like Google Summer of Code, but for
+
+412
+00:18:41.380 --> 00:18:46.020
+<v Cat Allman:>teenagers, which was actually even more inspiring,
+
+413
+00:18:46.120 --> 00:18:47.940
+<v Cat Allman:>I think, than Google Summer of Code.
+
+414
+00:18:47.980 --> 00:18:49.600
+<v Cat Allman:>I should mention in case it's not
+
+415
+00:18:49.600 --> 00:18:52.280
+<v Cat Allman:>clear, Google Summer of Code is a
+
+416
+00:18:52.280 --> 00:18:54.380
+<v Cat Allman:>program that Google has been running since
+
+417
+00:18:54.380 --> 00:18:59.900
+<v Cat Allman:>2005, where they work, open source projects
+
+418
+00:18:59.900 --> 00:19:04.320
+<v Cat Allman:>can apply to be mentoring organizations for
+
+419
+00:19:04.600 --> 00:19:09.980
+<v Cat Allman:>a period of months, where they will
+
+420
+00:19:10.120 --> 00:19:13.040
+<v Cat Allman:>accept, used to be students, now it
+
+421
+00:19:13.040 --> 00:19:15.480
+<v Cat Allman:>can be anybody, to work on their
+
+422
+00:19:15.480 --> 00:19:21.760
+<v Cat Allman:>projects, Google supplies a stipend for the
+
+423
+00:19:21.760 --> 00:19:23.800
+<v Cat Allman:>contributor, they're called now, they used to
+
+424
+00:19:23.800 --> 00:19:25.580
+<v Cat Allman:>be called students, now they're called contributors,
+
+425
+00:19:27.280 --> 00:19:30.940
+<v Cat Allman:>to work with that project directly on
+
+426
+00:19:32.220 --> 00:19:37.180
+<v Cat Allman:>pre-agreed upon projects to benefit that project.
+
+427
+00:19:37.920 --> 00:19:41.740
+<v Cat Allman:>Ultimately, as I know the origin story,
+
+428
+00:19:42.040 --> 00:19:43.980
+<v Cat Allman:>Google Summer of Code came about because
+
+429
+00:19:43.980 --> 00:19:47.140
+<v Cat Allman:>Larry Page came up behind Chris DeBona,
+
+430
+00:19:47.180 --> 00:19:49.260
+<v Cat Allman:>Larry Page being one of Google's founders,
+
+431
+00:19:49.540 --> 00:19:54.340
+<v Cat Allman:>came up behind Chris DeBona, the head
+
+432
+00:19:54.340 --> 00:19:56.159
+<v Cat Allman:>of the open source programs office, and
+
+433
+00:19:56.160 --> 00:19:58.780
+<v Cat Allman:>said, it seems like people, students are
+
+434
+00:19:58.780 --> 00:20:01.320
+<v Cat Allman:>losing their skills over the summer working
+
+435
+00:20:01.320 --> 00:20:04.200
+<v Cat Allman:>non-computer related jobs fixed that.
+
+436
+00:20:04.940 --> 00:20:07.080
+<v Cat Allman:>And Chris being Chris saw it as
+
+437
+00:20:07.080 --> 00:20:09.740
+<v Cat Allman:>an opportunity to get more people contributing
+
+438
+00:20:10.240 --> 00:20:12.000
+<v Cat Allman:>to free and open source software.
+
+439
+00:20:12.440 --> 00:20:13.500
+<v Cat Allman:>So that's what he did.
+
+440
+00:20:13.500 --> 00:20:17.360
+<v Cat Allman:>He designed a program that addressed Larry's
+
+441
+00:20:17.380 --> 00:20:21.500
+<v Cat Allman:>concerns while pulling more people into the
+
+442
+00:20:21.500 --> 00:20:25.120
+<v Cat Allman:>free and open source software movement and
+
+443
+00:20:25.120 --> 00:20:28.220
+<v Cat Allman:>getting projects that were interested in mentoring
+
+444
+00:20:28.220 --> 00:20:31.480
+<v Cat Allman:>new contributors some help getting those people
+
+445
+00:20:31.480 --> 00:20:31.980
+<v Cat Allman:>engaged.
+
+446
+00:20:33.080 --> 00:20:34.500
+<v Cat Allman:>It's still going on.
+
+447
+00:20:36.400 --> 00:20:37.480
+<v Cat Allman:>I'm trying to think.
+
+448
+00:20:37.480 --> 00:20:39.720
+<v Cat Allman:>Last time I ran the numbers, which
+
+449
+00:20:39.720 --> 00:20:42.620
+<v Cat Allman:>was a few years ago, we had
+
+450
+00:20:42.620 --> 00:20:46.800
+<v Cat Allman:>worked with over 650 projects from around
+
+451
+00:20:46.800 --> 00:20:50.320
+<v Cat Allman:>the world and many thousands not only
+
+452
+00:20:50.320 --> 00:20:52.400
+<v Cat Allman:>of students but mentors.
+
+453
+00:20:54.140 --> 00:20:55.520
+<v Cat Allman:>I have to say it's one of
+
+454
+00:20:55.520 --> 00:20:59.220
+<v Cat Allman:>the things I'm really proud of having
+
+455
+00:20:59.220 --> 00:21:03.620
+<v Cat Allman:>been able to support in any way.
+
+456
+00:21:06.260 --> 00:21:08.500
+<v Cat Allman:>It's, you meet all kinds of people
+
+457
+00:21:09.180 --> 00:21:11.820
+<v Cat Allman:>working in our funny little ecosystem and
+
+458
+00:21:12.720 --> 00:21:15.180
+<v Cat Allman:>working on GSoC gave me the opportunity
+
+459
+00:21:15.220 --> 00:21:16.440
+<v Cat Allman:>to meet a heck of a lot
+
+460
+00:21:16.440 --> 00:21:21.220
+<v Cat Allman:>of them, which I really cherish that.
+
+461
+00:21:21.740 --> 00:21:23.720
+<v Cat Allman:>I was always kind of envious that
+
+462
+00:21:23.720 --> 00:21:25.680
+<v Cat Allman:>my brother and his friends working in
+
+463
+00:21:25.680 --> 00:21:28.260
+<v Cat Allman:>computer science got to travel and knew
+
+464
+00:21:28.260 --> 00:21:29.820
+<v Cat Allman:>people all over the world and had
+
+465
+00:21:29.820 --> 00:21:33.260
+<v Cat Allman:>this pretty vast network of friends and
+
+466
+00:21:33.260 --> 00:21:33.760
+<v Cat Allman:>colleagues.
+
+467
+00:21:34.540 --> 00:21:36.540
+<v Cat Allman:>And by working on Summer of Code
+
+468
+00:21:36.540 --> 00:21:38.800
+<v Cat Allman:>in particular, I got to have that
+
+469
+00:21:38.800 --> 00:21:39.300
+<v Cat Allman:>too.
+
+470
+00:21:39.320 --> 00:21:41.680
+<v Cat Allman:>And I got to travel, woo, which
+
+471
+00:21:41.680 --> 00:21:43.440
+<v Cat Allman:>I really wanted to do.
+
+472
+00:21:45.600 --> 00:21:47.300
+<v Cat Allman:>We did a certain amount of outreach
+
+473
+00:21:50.240 --> 00:21:53.460
+<v Cat Allman:>to encourage more participation, particularly in underrepresented
+
+474
+00:21:53.920 --> 00:21:56.900
+<v Cat Allman:>areas, so I've had the opportunity to
+
+475
+00:21:57.740 --> 00:22:01.720
+<v Cat Allman:>speak at engineering schools in Singapore and
+
+476
+00:22:01.720 --> 00:22:10.100
+<v Cat Allman:>Cambodia, Vietnam, Germany, India, let's see, Taiwan,
+
+477
+00:22:10.840 --> 00:22:11.820
+<v Cat Allman:>a bunch of places.
+
+478
+00:22:12.500 --> 00:22:15.360
+<v Cat Allman:>It's still haven't gotten to South America,
+
+479
+00:22:15.400 --> 00:22:16.738
+<v Cat Allman:>that's very disappointing.
+
+480
+00:22:16.860 --> 00:22:18.340
+<v Cat Allman:>But I did get to Australia and
+
+481
+00:22:18.340 --> 00:22:20.140
+<v Cat Allman:>New Zealand quite a bit, which was
+
+482
+00:22:20.140 --> 00:22:20.640
+<v Cat Allman:>wonderful.
+
+483
+00:22:26.980 --> 00:22:28.340
+<v Cat Allman:>That I mean, aside from the fact
+
+484
+00:22:28.340 --> 00:22:30.560
+<v Cat Allman:>that open source drives the global economy
+
+485
+00:22:31.380 --> 00:22:34.780
+<v Cat Allman:>by providing the underlying infrastructure for computer
+
+486
+00:22:34.780 --> 00:22:35.280
+<v Cat Allman:>services.
+
+487
+00:22:37.900 --> 00:22:41.440
+<v Cat Allman:>The global network of people engaged in
+
+488
+00:22:41.740 --> 00:22:44.860
+<v Cat Allman:>this is incredibly important to me, and
+
+489
+00:22:44.860 --> 00:22:46.520
+<v Cat Allman:>not just because I'm talking to somebody
+
+490
+00:22:46.520 --> 00:22:56.460
+<v Cat Allman:>who's in Italy right now, but there's
+
+491
+00:22:56.460 --> 00:22:59.020
+<v Cat Allman:>a lot of divisiveness in the world
+
+492
+00:22:59.020 --> 00:22:59.540
+<v Cat Allman:>right now.
+
+493
+00:22:59.540 --> 00:23:02.600
+<v Cat Allman:>And I'm not saying everything in free
+
+494
+00:23:02.600 --> 00:23:05.320
+<v Cat Allman:>and open source software is all kittens
+
+495
+00:23:05.320 --> 00:23:07.540
+<v Cat Allman:>and rainbows because there are some fairly
+
+496
+00:23:07.540 --> 00:23:09.520
+<v Cat Allman:>extreme personalities involved.
+
+497
+00:23:12.540 --> 00:23:16.020
+<v Cat Allman:>But overall, what I hear from people,
+
+498
+00:23:16.020 --> 00:23:20.160
+<v Cat Allman:>past participants in GSoC, is that participating
+
+499
+00:23:20.440 --> 00:23:26.740
+<v Cat Allman:>in open source has expanded their knowledge
+
+500
+00:23:26.740 --> 00:23:29.220
+<v Cat Allman:>of the world, be it coming from
+
+501
+00:23:29.220 --> 00:23:31.800
+<v Cat Allman:>a secondary engineering school in Sri Lanka
+
+502
+00:23:31.800 --> 00:23:33.740
+<v Cat Allman:>and ending up in a PhD program
+
+503
+00:23:33.740 --> 00:23:36.560
+<v Cat Allman:>in the United States or simply having
+
+504
+00:23:36.560 --> 00:23:39.280
+<v Cat Allman:>the opportunity to work with people who
+
+505
+00:23:39.280 --> 00:23:41.500
+<v Cat Allman:>are clear around the world from them.
+
+506
+00:23:43.160 --> 00:23:46.100
+<v Cat Allman:>And it can't be discounted that as
+
+507
+00:23:46.100 --> 00:23:47.860
+<v Cat Allman:>the awareness for free and open source
+
+508
+00:23:47.860 --> 00:23:52.160
+<v Cat Allman:>software in industry has grown, it is
+
+509
+00:23:53.520 --> 00:23:57.940
+<v Cat Allman:>participating in floss is increasingly a requirement
+
+510
+00:23:58.480 --> 00:23:59.620
+<v Cat Allman:>to get a job.
+
+511
+00:24:00.540 --> 00:24:05.280
+<v Cat Allman:>So there's the economic opportunity, which is
+
+512
+00:24:05.280 --> 00:24:07.020
+<v Cat Allman:>something I used to talk about at
+
+513
+00:24:07.020 --> 00:24:10.340
+<v Cat Allman:>engineering schools in places like Phnom Penh.
+
+514
+00:24:10.760 --> 00:24:12.440
+<v Cat Allman:>The engineering school I spoke at there
+
+515
+00:24:12.440 --> 00:24:14.760
+<v Cat Allman:>didn't have glass in the windows, but
+
+516
+00:24:14.760 --> 00:24:20.780
+<v Cat Allman:>they did have computers and wonderfully optimistic
+
+517
+00:24:21.000 --> 00:24:23.980
+<v Cat Allman:>and hungry population of students who wanted
+
+518
+00:24:23.980 --> 00:24:25.320
+<v Cat Allman:>to make their lives better and the
+
+519
+00:24:25.320 --> 00:24:27.280
+<v Cat Allman:>lives of their families better and open
+
+520
+00:24:27.280 --> 00:24:28.740
+<v Cat Allman:>source gave them a way to do
+
+521
+00:24:28.740 --> 00:24:29.240
+<v Cat Allman:>that.
+
+522
+00:24:30.180 --> 00:24:33.000
+<v Cat Allman:>So I feel very privileged to have
+
+523
+00:24:33.000 --> 00:24:34.600
+<v Cat Allman:>been a part of it in any
+
+524
+00:24:34.600 --> 00:24:35.100
+<v Cat Allman:>way.
+
+525
+00:24:36.680 --> 00:24:38.380
+<v Cat Allman:>And since I mentioned any way, I
+
+526
+00:24:38.380 --> 00:24:41.400
+<v Cat Allman:>should bring up alternative forms of contribution.
+
+527
+00:24:44.160 --> 00:24:46.080
+<v Cat Allman:>I was reluctant to do this interview
+
+528
+00:24:46.080 --> 00:24:48.240
+<v Cat Allman:>because in a lot of ways I
+
+529
+00:24:48.240 --> 00:24:50.180
+<v Cat Allman:>still feel like I'm not a real
+
+530
+00:24:50.280 --> 00:24:52.470
+<v Cat Allman:>floss contributor because I don't code.
+
+531
+00:24:52.470 --> 00:24:54.900
+<v Cat Allman:>I mean, I noodled around with PostScript
+
+532
+00:24:55.040 --> 00:24:56.780
+<v Cat Allman:>back in the day, but I'm not
+
+533
+00:24:56.840 --> 00:25:00.140
+<v Cat Allman:>a coder, nor do I have formal
+
+534
+00:25:00.140 --> 00:25:01.200
+<v Cat Allman:>engineering training.
+
+535
+00:25:01.940 --> 00:25:04.260
+<v Cat Allman:>So I've always felt like an imposter.
+
+536
+00:25:06.900 --> 00:25:09.600
+<v Cat Allman:>At the same time, something that has
+
+537
+00:25:09.600 --> 00:25:11.360
+<v Cat Allman:>been wonderful to see over the last
+
+538
+00:25:11.360 --> 00:25:17.600
+<v Cat Allman:>30-ish years is, 30, 25, 25 years,
+
+539
+00:25:18.100 --> 00:25:21.320
+<v Cat Allman:>is the growing appreciation for non-code contributions.
+
+540
+00:25:26.200 --> 00:25:28.080
+<v Cat Allman:>People coming to appreciate that they're not
+
+541
+00:25:28.080 --> 00:25:30.800
+<v Cat Allman:>just nice to have, like, oh, somebody
+
+542
+00:25:30.800 --> 00:25:34.660
+<v Cat Allman:>got us coffee, but critical to have,
+
+543
+00:25:35.200 --> 00:25:38.100
+<v Cat Allman:>be it raising money so that people
+
+544
+00:25:38.100 --> 00:25:42.840
+<v Cat Allman:>have the equipment and bandwidth they need.
+
+545
+00:25:45.660 --> 00:25:47.820
+<v Cat Allman:>Thank God people are figuring out documentation.
+
+546
+00:25:50.740 --> 00:25:52.760
+<v Cat Allman:>But also the community building, which is
+
+547
+00:25:52.760 --> 00:25:57.100
+<v Cat Allman:>really where I find myself really focused.
+
+548
+00:25:57.660 --> 00:25:59.680
+<v Cat Allman:>The past several years I've been focused
+
+549
+00:25:59.720 --> 00:26:02.620
+<v Cat Allman:>on a conference that I'm deeply proud
+
+550
+00:26:02.620 --> 00:26:06.200
+<v Cat Allman:>to be a contributor to as a
+
+551
+00:26:06.200 --> 00:26:11.520
+<v Cat Allman:>co-organizer called Science Foo Camp with O'Reilly
+
+552
+00:26:11.600 --> 00:26:12.100
+<v Cat Allman:>Media.
+
+553
+00:26:12.140 --> 00:26:14.160
+<v Cat Allman:>The Foo stands for Friends of O'Reilly.
+
+554
+00:26:15.240 --> 00:26:19.520
+<v Cat Allman:>Nature, the scientific publishing company, and Digital
+
+555
+00:26:19.540 --> 00:26:21.960
+<v Cat Allman:>Science, which is a company in the
+
+556
+00:26:21.960 --> 00:26:24.800
+<v Cat Allman:>same media group as Nature that builds
+
+557
+00:26:25.740 --> 00:26:28.720
+<v Cat Allman:>digital tools to aid scientific research.
+
+558
+00:26:30.040 --> 00:26:32.860
+<v Cat Allman:>It's an interdisciplinary conference where we invite
+
+559
+00:26:32.860 --> 00:26:34.540
+<v Cat Allman:>people from up and down the career
+
+560
+00:26:34.540 --> 00:26:37.680
+<v Cat Allman:>stack and all across the spectrum of
+
+561
+00:26:37.680 --> 00:26:40.020
+<v Cat Allman:>the sciences to come together for an
+
+562
+00:26:40.020 --> 00:26:40.520
+<v Cat Allman:>unconference.
+
+563
+00:26:41.680 --> 00:26:45.040
+<v Cat Allman:>An unconference being essentially the hallway track,
+
+564
+00:26:45.060 --> 00:26:48.160
+<v Cat Allman:>all those fascinating, weird conversations you have
+
+565
+00:26:48.160 --> 00:26:49.780
+<v Cat Allman:>in the hallways and over meals at
+
+566
+00:26:49.780 --> 00:26:50.280
+<v Cat Allman:>conferences.
+
+567
+00:26:51.900 --> 00:26:54.800
+<v Cat Allman:>An unconference gives you the opportunity to
+
+568
+00:26:55.200 --> 00:26:58.820
+<v Cat Allman:>focus the entire event on those kinds
+
+569
+00:26:58.820 --> 00:27:01.360
+<v Cat Allman:>of conversations, what people are thinking about
+
+570
+00:27:01.360 --> 00:27:04.300
+<v Cat Allman:>now, what they're maybe planning to do
+
+571
+00:27:04.300 --> 00:27:05.960
+<v Cat Allman:>and want feedback on.
+
+572
+00:27:07.280 --> 00:27:09.040
+<v Cat Allman:>So I've been working on this conference,
+
+573
+00:27:10.240 --> 00:27:13.180
+<v Cat Allman:>SciFu as we call it, since 2007
+
+574
+00:27:13.500 --> 00:27:14.940
+<v Cat Allman:>when I started at Google.
+
+575
+00:27:16.100 --> 00:27:18.040
+<v Cat Allman:>Because back then my manager at the
+
+576
+00:27:18.040 --> 00:27:21.960
+<v Cat Allman:>time, not Chris, didn't, she wanted to
+
+577
+00:27:21.960 --> 00:27:25.080
+<v Cat Allman:>focus more specifically on software.
+
+578
+00:27:26.720 --> 00:27:29.680
+<v Cat Allman:>And the concept of open science, open
+
+579
+00:27:29.700 --> 00:27:32.280
+<v Cat Allman:>data, open hardware to a lesser extent
+
+580
+00:27:32.500 --> 00:27:33.660
+<v Cat Allman:>was really new.
+
+581
+00:27:37.300 --> 00:27:39.560
+<v Cat Allman:>And so I stepped in to get
+
+582
+00:27:39.560 --> 00:27:41.400
+<v Cat Allman:>to be Google's lead on it, which
+
+583
+00:27:41.400 --> 00:27:44.020
+<v Cat Allman:>I really enjoy, and I am continuing
+
+584
+00:27:44.140 --> 00:27:46.220
+<v Cat Allman:>to do that to this day, including
+
+585
+00:27:46.680 --> 00:27:49.460
+<v Cat Allman:>creating an alumni community for past participants
+
+586
+00:27:49.600 --> 00:27:50.420
+<v Cat Allman:>in the conference.
+
+587
+00:27:51.180 --> 00:27:56.920
+<v Cat Allman:>So it ranges far afield from strictly
+
+588
+00:27:58.360 --> 00:28:00.740
+<v Cat Allman:>open source, open science, etc.
+
+589
+00:28:00.740 --> 00:28:04.600
+<v Cat Allman:>But increasingly, you can't do science without
+
+590
+00:28:04.600 --> 00:28:05.100
+<v Cat Allman:>computers.
+
+591
+00:28:05.220 --> 00:28:08.300
+<v Cat Allman:>I mean, you still, there's the natural
+
+592
+00:28:08.300 --> 00:28:10.440
+<v Cat Allman:>world and reagents and lab equipment, et
+
+593
+00:28:10.440 --> 00:28:14.080
+<v Cat Allman:>cetera, and computers are ubiquitous.
+
+594
+00:28:15.240 --> 00:28:19.080
+<v Cat Allman:>And increasingly people are appreciating, especially in
+
+595
+00:28:19.080 --> 00:28:21.920
+<v Cat Allman:>the US, as budgets for academic research
+
+596
+00:28:22.020 --> 00:28:26.100
+<v Cat Allman:>are increasingly not keeping pace with inflation.
+
+597
+00:28:27.540 --> 00:28:29.620
+<v Cat Allman:>The opportunity to use free and open
+
+598
+00:28:29.620 --> 00:28:32.780
+<v Cat Allman:>source software in place of commercial programs
+
+599
+00:28:33.420 --> 00:28:34.800
+<v Cat Allman:>is increasingly important.
+
+600
+00:28:35.600 --> 00:28:38.460
+<v Cat Allman:>And, for example, the Carpentries, which you
+
+601
+00:28:38.460 --> 00:28:41.140
+<v Cat Allman:>may have heard of, was a participant
+
+602
+00:28:41.140 --> 00:28:43.780
+<v Cat Allman:>in the ESOC a number of times.
+
+603
+00:28:44.240 --> 00:28:48.939
+<v Cat Allman:>One of my favorite projects because it
+
+604
+00:28:48.940 --> 00:28:52.860
+<v Cat Allman:>is a program that pulls together volunteer-driven
+
+605
+00:28:53.700 --> 00:28:58.940
+<v Cat Allman:>workshops at universities and research institutions, not
+
+606
+00:28:58.940 --> 00:29:00.420
+<v Cat Allman:>just in the US but around the
+
+607
+00:29:00.420 --> 00:29:04.540
+<v Cat Allman:>world, to teach researchers the basics of
+
+608
+00:29:04.540 --> 00:29:07.000
+<v Cat Allman:>using free and open source software to
+
+609
+00:29:07.000 --> 00:29:08.180
+<v Cat Allman:>accomplish their research.
+
+610
+00:29:09.060 --> 00:29:11.880
+<v Cat Allman:>So it's kind of a, I don't
+
+611
+00:29:11.880 --> 00:29:13.379
+<v Cat Allman:>want to call it a gateway drug
+
+612
+00:29:13.380 --> 00:29:15.660
+<v Cat Allman:>because that sounds nefarious, but It does,
+
+613
+00:29:15.720 --> 00:29:18.940
+<v Cat Allman:>again, pull more people into the ecosystem
+
+614
+00:29:19.860 --> 00:29:23.400
+<v Cat Allman:>and benefits science, which I think benefits
+
+615
+00:29:23.400 --> 00:29:24.120
+<v Cat Allman:>us all.
+
+616
+00:29:25.380 --> 00:29:27.440
+<v Cat Allman:>And I've been talking nonstop and not
+
+617
+00:29:27.440 --> 00:29:28.860
+<v Cat Allman:>giving you a chance to ask any
+
+618
+00:29:28.860 --> 00:29:29.360
+<v Cat Allman:>questions.
+
+619
+00:29:29.380 --> 00:29:30.620
+<v Cat Allman:>So hit me.
+
+620
+00:29:33.055 --> 00:29:34.289
+<v Elisabetta Mori:>That's fine.
+
+621
+00:29:34.522 --> 00:29:39.424
+<v Elisabetta Mori:>So what do you think are the
+
+622
+00:29:39.658 --> 00:29:44.260
+<v Elisabetta Mori:>challenges and opportunities that you built, the
+
+623
+00:29:44.260 --> 00:29:46.660
+<v Elisabetta Mori:>impact you had on building these communities?
+
+624
+00:29:49.040 --> 00:29:51.414
+<v Cat Allman:>Ah, well, while I was helping with-
+
+625
+00:29:52.760 --> 00:29:57.520
+<v Cat Allman:>speaking about Google, I actually had a
+
+626
+00:29:57.520 --> 00:30:00.020
+<v Cat Allman:>job job in addition to managing the
+
+627
+00:30:00.020 --> 00:30:02.760
+<v Cat Allman:>team at one point, teams at the
+
+628
+00:30:02.760 --> 00:30:03.160
+<v Cat Allman:>same time.
+
+629
+00:30:03.160 --> 00:30:09.280
+<v Cat Allman:>But anyway, my job "job" was choosing
+
+630
+00:30:09.280 --> 00:30:11.960
+<v Cat Allman:>projects to provide sponsorship money to and
+
+631
+00:30:11.960 --> 00:30:14.940
+<v Cat Allman:>getting that money out to them, largely
+
+632
+00:30:15.260 --> 00:30:20.340
+<v Cat Allman:>for events, but also direct sponsorships of
+
+633
+00:30:20.340 --> 00:30:22.060
+<v Cat Allman:>open source projects and organizations.
+
+634
+00:30:25.080 --> 00:30:27.180
+<v Cat Allman:>Which I gotta say, as jobs go,
+
+635
+00:30:27.180 --> 00:30:28.540
+<v Cat Allman:>having been on the other side of
+
+636
+00:30:28.540 --> 00:30:30.860
+<v Cat Allman:>the desk, asking for money for a
+
+637
+00:30:30.860 --> 00:30:34.700
+<v Cat Allman:>nonprofit, getting to give money to nonprofits
+
+638
+00:30:34.920 --> 00:30:38.540
+<v Cat Allman:>is rather enjoyable, especially by comparison.
+
+639
+00:30:41.520 --> 00:30:45.820
+<v Cat Allman:>It's really satisfying to know that you
+
+640
+00:30:45.820 --> 00:30:49.700
+<v Cat Allman:>can, I shouldn't say this, but I'm
+
+641
+00:30:49.700 --> 00:30:51.899
+<v Cat Allman:>going to use Google's money to support
+
+642
+00:30:51.900 --> 00:30:53.220
+<v Cat Allman:>something I believe in?
+
+643
+00:30:54.520 --> 00:30:56.980
+<v Cat Allman:>Also, because a lot of sponsorships coming
+
+644
+00:30:56.980 --> 00:31:02.840
+<v Cat Allman:>from commercial organizations to FLOSS projects are
+
+645
+00:31:02.920 --> 00:31:07.840
+<v Cat Allman:>earmarked specifically there to sponsor conferences where
+
+646
+00:31:07.840 --> 00:31:13.980
+<v Cat Allman:>people get marketing exposure, or if it's
+
+647
+00:31:13.980 --> 00:31:18.040
+<v Cat Allman:>not event-related or program-related, it tends to
+
+648
+00:31:18.040 --> 00:31:21.700
+<v Cat Allman:>be tied to a specific development effort.
+
+649
+00:31:22.640 --> 00:31:24.640
+<v Cat Allman:>When I was doing it, I always
+
+650
+00:31:24.640 --> 00:31:26.380
+<v Cat Allman:>tried as much as possible to make
+
+651
+00:31:26.380 --> 00:31:31.560
+<v Cat Allman:>it an unsecured sponsorship, so that the
+
+652
+00:31:31.560 --> 00:31:35.580
+<v Cat Allman:>projects could use it for unglamorous things
+
+653
+00:31:35.760 --> 00:31:40.000
+<v Cat Allman:>like bandwidths and paying people to do
+
+654
+00:31:40.000 --> 00:31:42.440
+<v Cat Allman:>the kind of work that companies don't
+
+655
+00:31:42.440 --> 00:31:45.220
+<v Cat Allman:>want to pay for and that volunteers
+
+656
+00:31:45.240 --> 00:31:47.440
+<v Cat Allman:>aren't interested in doing, doing the grunge
+
+657
+00:31:47.440 --> 00:31:47.940
+<v Cat Allman:>work.
+
+658
+00:31:48.480 --> 00:31:51.820
+<v Cat Allman:>All the overhead stuff that people don't
+
+659
+00:31:51.820 --> 00:31:54.080
+<v Cat Allman:>realize exists because, hey, it's free software,
+
+660
+00:31:54.080 --> 00:31:55.220
+<v Cat Allman:>it's all free, right?
+
+661
+00:31:56.200 --> 00:31:57.480
+<v Cat Allman:>Not so much really.
+
+662
+00:31:57.840 --> 00:31:58.919
+<v Cat Allman:>Back in the day, you had to
+
+663
+00:31:58.920 --> 00:32:00.360
+<v Cat Allman:>pay your ISP bill.
+
+664
+00:32:00.960 --> 00:32:04.840
+<v Cat Allman:>Now, you may have cloud services bills,
+
+665
+00:32:04.840 --> 00:32:07.500
+<v Cat Allman:>you may need new hardware, you may
+
+666
+00:32:07.500 --> 00:32:09.580
+<v Cat Allman:>want to bring your developers together from
+
+667
+00:32:09.580 --> 00:32:13.080
+<v Cat Allman:>time to time physically to brainstorm your
+
+668
+00:32:13.080 --> 00:32:14.720
+<v Cat Allman:>roadmap for the next year.
+
+669
+00:32:15.420 --> 00:32:18.020
+<v Cat Allman:>So lots of things to think about,
+
+670
+00:32:18.260 --> 00:32:18.760
+<v Cat Allman:>actually.
+
+671
+00:32:21.360 --> 00:32:24.600
+<v Cat Allman:>Challenges going forward to the FLOSS ecosystem.
+
+672
+00:32:25.800 --> 00:32:31.980
+<v Cat Allman:>Something that I'm really concerned about, And
+
+673
+00:32:31.980 --> 00:32:38.040
+<v Cat Allman:>I'm conflicted about it is, FLOSS is
+
+674
+00:32:38.040 --> 00:32:40.420
+<v Cat Allman:>one of those 20 plus year overnight
+
+675
+00:32:40.480 --> 00:32:40.980
+<v Cat Allman:>successes.
+
+676
+00:32:41.640 --> 00:32:43.280
+<v Cat Allman:>It's been around a long time, but
+
+677
+00:32:43.280 --> 00:32:46.360
+<v Cat Allman:>it's only now that people, businesses are
+
+678
+00:32:46.360 --> 00:32:49.940
+<v Cat Allman:>appreciating how essential it is.
+
+679
+00:32:51.440 --> 00:32:54.620
+<v Cat Allman:>At the same time, they still want
+
+680
+00:32:54.620 --> 00:32:55.760
+<v Cat Allman:>the code for free.
+
+681
+00:32:56.480 --> 00:32:58.940
+<v Cat Allman:>I mean, lots of businesses like Google
+
+682
+00:32:58.940 --> 00:33:03.280
+<v Cat Allman:>are understanding the importance of working with
+
+683
+00:33:03.280 --> 00:33:06.440
+<v Cat Allman:>projects so that they are sustainable, they
+
+684
+00:33:06.440 --> 00:33:10.160
+<v Cat Allman:>have the economic and other resources that
+
+685
+00:33:10.160 --> 00:33:11.660
+<v Cat Allman:>they need to continue.
+
+686
+00:33:12.980 --> 00:33:16.160
+<v Cat Allman:>But what I worry about is the
+
+687
+00:33:17.080 --> 00:33:18.380
+<v Cat Allman:>psychological aspects.
+
+688
+00:33:19.740 --> 00:33:21.840
+<v Cat Allman:>Back when free and open source software
+
+689
+00:33:21.840 --> 00:33:24.360
+<v Cat Allman:>was done by people who cared passionately
+
+690
+00:33:24.520 --> 00:33:25.220
+<v Cat Allman:>about it.
+
+691
+00:33:25.220 --> 00:33:27.440
+<v Cat Allman:>I mean, back in the day, people
+
+692
+00:33:27.440 --> 00:33:29.620
+<v Cat Allman:>didn't go into computer science because, oh,
+
+693
+00:33:29.620 --> 00:33:31.040
+<v Cat Allman:>I'm going to get rich.
+
+694
+00:33:31.500 --> 00:33:33.480
+<v Cat Allman:>They would go to law school or
+
+695
+00:33:33.480 --> 00:33:34.620
+<v Cat Allman:>something like that.
+
+696
+00:33:34.840 --> 00:33:36.360
+<v Cat Allman:>They would get a business degree.
+
+697
+00:33:36.820 --> 00:33:42.120
+<v Cat Allman:>But now, computer science is seen as
+
+698
+00:33:42.120 --> 00:33:44.260
+<v Cat Allman:>a safe way to make a good
+
+699
+00:33:44.260 --> 00:33:44.760
+<v Cat Allman:>living.
+
+700
+00:33:45.480 --> 00:33:54.340
+<v Cat Allman:>Nothing wrong with that, but FLOSS has
+
+701
+00:33:54.340 --> 00:33:58.440
+<v Cat Allman:>been a volunteer ecosystem, and when you
+
+702
+00:33:58.520 --> 00:34:01.720
+<v Cat Allman:>make it a requirement to get a
+
+703
+00:34:01.720 --> 00:34:06.420
+<v Cat Allman:>job, then it becomes a transactional ecosystem
+
+704
+00:34:06.680 --> 00:34:08.340
+<v Cat Allman:>in a way that it wasn't before.
+
+705
+00:34:09.020 --> 00:34:11.200
+<v Cat Allman:>And what I'm hearing from younger students
+
+706
+00:34:11.199 --> 00:34:14.400
+<v Cat Allman:>in particular, and some older ones too,
+
+707
+00:34:15.480 --> 00:34:18.060
+<v Cat Allman:>is that they want to get paid.
+
+708
+00:34:18.340 --> 00:34:20.560
+<v Cat Allman:>Yes, it's free software, but they don't
+
+709
+00:34:20.560 --> 00:34:22.540
+<v Cat Allman:>want to do the development work unless
+
+710
+00:34:22.540 --> 00:34:23.940
+<v Cat Allman:>they are getting paid.
+
+711
+00:34:24.960 --> 00:34:27.380
+<v Cat Allman:>Corporations are making large sums of money
+
+712
+00:34:27.719 --> 00:34:30.280
+<v Cat Allman:>on the backs of people who have
+
+713
+00:34:30.280 --> 00:34:31.420
+<v Cat Allman:>done it for love.
+
+714
+00:34:31.520 --> 00:34:34.620
+<v Cat Allman:>And at this point, they want to
+
+715
+00:34:34.620 --> 00:34:35.320
+<v Cat Allman:>get paid.
+
+716
+00:34:35.500 --> 00:34:37.120
+<v Cat Allman:>And who can blame them?
+
+717
+00:34:38.480 --> 00:34:40.760
+<v Cat Allman:>It's almost like free and open source
+
+718
+00:34:40.760 --> 00:34:45.279
+<v Cat Allman:>software development is that extra job that
+
+719
+00:34:45.280 --> 00:34:46.580
+<v Cat Allman:>theoretically women have.
+
+720
+00:34:46.580 --> 00:34:47.659
+<v Cat Allman:>You know they work all day and
+
+721
+00:34:47.659 --> 00:34:48.839
+<v Cat Allman:>then they come home and they've got
+
+722
+00:34:48.840 --> 00:34:51.279
+<v Cat Allman:>their second job in the home.
+
+723
+00:34:51.280 --> 00:34:53.760
+<v Cat Allman:>Well, now people have their day job
+
+724
+00:34:53.760 --> 00:34:55.080
+<v Cat Allman:>and then they come home and they
+
+725
+00:34:55.080 --> 00:34:56.060
+<v Cat Allman:>code at night.
+
+726
+00:34:57.340 --> 00:35:04.400
+<v Cat Allman:>And I really see that volunteer flywheel
+
+727
+00:35:04.700 --> 00:35:11.180
+<v Cat Allman:>breaking down, so much so that I'm
+
+728
+00:35:11.180 --> 00:35:15.799
+<v Cat Allman:>really worried about it, actually, that if
+
+729
+00:35:15.800 --> 00:35:21.620
+<v Cat Allman:>people stop volunteering, that the licensing structure
+
+730
+00:35:21.620 --> 00:35:22.520
+<v Cat Allman:>won't hold.
+
+731
+00:35:24.520 --> 00:35:26.820
+<v Cat Allman:>Also as you have companies who start
+
+732
+00:35:26.820 --> 00:35:29.280
+<v Cat Allman:>out as free and open source software
+
+733
+00:35:29.440 --> 00:35:33.480
+<v Cat Allman:>hybrid businesses relicensing their software in such
+
+734
+00:35:33.480 --> 00:35:35.340
+<v Cat Allman:>a way that it is no longer
+
+735
+00:35:36.260 --> 00:35:39.900
+<v Cat Allman:>compliant with the Open Source Initiative definitions
+
+736
+00:35:40.520 --> 00:35:41.880
+<v Cat Allman:>of the various licenses.
+
+737
+00:35:45.900 --> 00:35:47.660
+<v Cat Allman:>And I mean, I don't know how
+
+738
+00:35:47.660 --> 00:35:48.740
+<v Cat Allman:>to do that.
+
+739
+00:35:55.240 --> 00:35:57.760
+<v Cat Allman:>Goodwill is not an engine.
+
+740
+00:36:00.060 --> 00:36:03.839
+<v Cat Allman:>If you have to apply heat in
+
+741
+00:36:03.840 --> 00:36:08.440
+<v Cat Allman:>the form of money, I don't know.
+
+742
+00:36:08.440 --> 00:36:09.620
+<v Cat Allman:>I don't know that the center is
+
+743
+00:36:09.620 --> 00:36:11.000
+<v Cat Allman:>going to hold and that the system
+
+744
+00:36:11.000 --> 00:36:12.280
+<v Cat Allman:>is going to hold up.
+
+745
+00:36:12.280 --> 00:36:14.320
+<v Cat Allman:>I worry that in about five years
+
+746
+00:36:14.340 --> 00:36:17.020
+<v Cat Allman:>it's all going to have broken down,
+
+747
+00:36:18.700 --> 00:36:19.600
+<v Cat Allman:>which would be a shame.
+
+748
+00:36:19.600 --> 00:36:22.020
+<v Cat Allman:>I mean, on the one hand, everything
+
+749
+00:36:22.020 --> 00:36:26.980
+<v Cat Allman:>has a life cycle and the wheel
+
+750
+00:36:26.980 --> 00:36:29.180
+<v Cat Allman:>turns and that's just what happens, but
+
+751
+00:36:30.180 --> 00:36:33.280
+<v Cat Allman:>I would really hate to see the
+
+752
+00:36:33.280 --> 00:36:36.614
+<v Cat Allman:>force of innovation in community that FLOSS
+
+753
+00:36:37.220 --> 00:36:39.360
+<v Cat Allman:>has been for me and my network
+
+754
+00:36:39.360 --> 00:36:42.620
+<v Cat Allman:>of friends die.
+
+755
+00:36:45.180 --> 00:36:46.680
+<v Cat Allman:>I don't know how we fix this.
+
+756
+00:36:46.680 --> 00:36:49.339
+<v Cat Allman:>I don't know how we, what I
+
+757
+00:36:49.340 --> 00:36:51.140
+<v Cat Allman:>don't want to have happen is that
+
+758
+00:36:51.140 --> 00:36:57.020
+<v Cat Allman:>people in under-resourced countries continue to participate
+
+759
+00:36:57.180 --> 00:36:59.040
+<v Cat Allman:>in free and open source software as
+
+760
+00:36:59.040 --> 00:37:04.540
+<v Cat Allman:>a way to make some money and
+
+761
+00:37:04.540 --> 00:37:07.360
+<v Cat Allman:>potentially move to a higher resourced area,
+
+762
+00:37:08.920 --> 00:37:12.080
+<v Cat Allman:>but that becomes a kind of digital
+
+763
+00:37:12.240 --> 00:37:15.220
+<v Cat Allman:>serfdom, and I really don't want to
+
+764
+00:37:15.220 --> 00:37:16.260
+<v Cat Allman:>see that happen.
+
+765
+00:37:17.320 --> 00:37:18.839
+<v Cat Allman:>More than it already is with data
+
+766
+00:37:18.840 --> 00:37:20.580
+<v Cat Allman:>sets for large learning models, but that's
+
+767
+00:37:20.580 --> 00:37:21.360
+<v Cat Allman:>another thing.
+
+768
+00:37:23.180 --> 00:37:26.040
+<v Cat Allman:>So that's my concern and I don't
+
+769
+00:37:26.040 --> 00:37:27.340
+<v Cat Allman:>know what's going to happen.
+
+770
+00:37:28.780 --> 00:37:30.140
+<v Cat Allman:>It's been interesting to watch.
+
+771
+00:37:30.140 --> 00:37:33.160
+<v Cat Allman:>It seems increasingly like there is a
+
+772
+00:37:33.160 --> 00:37:36.500
+<v Cat Allman:>movement in the United States to discontinue
+
+773
+00:37:37.500 --> 00:37:41.180
+<v Cat Allman:>open source programs offices and take the
+
+774
+00:37:42.380 --> 00:37:46.319
+<v Cat Allman:>compliance, license compliance and other aspects that
+
+775
+00:37:46.320 --> 00:37:49.860
+<v Cat Allman:>are generally managed by OSPOs and spread
+
+776
+00:37:49.860 --> 00:37:51.720
+<v Cat Allman:>them out so that the compliance goes
+
+777
+00:37:51.720 --> 00:37:59.640
+<v Cat Allman:>to legal and the sponsorship for sustainability
+
+778
+00:37:59.640 --> 00:38:00.799
+<v Cat Allman:>goes to marketing and again I would
+
+779
+00:38:00.800 --> 00:38:03.920
+<v Cat Allman:>hate to see that happen because having,
+
+780
+00:38:04.820 --> 00:38:07.440
+<v Cat Allman:>we'll say, pushed back against various marketing
+
+781
+00:38:07.440 --> 00:38:13.140
+<v Cat Allman:>teams over several decades, I think that
+
+782
+00:38:13.140 --> 00:38:17.800
+<v Cat Allman:>has the potential to exacerbate the shift
+
+783
+00:38:17.800 --> 00:38:23.000
+<v Cat Allman:>from volunteerism and really altruism and in,
+
+784
+00:38:23.000 --> 00:38:24.660
+<v Cat Allman:>well, I'll call it altruism, call it
+
+785
+00:38:24.660 --> 00:38:27.859
+<v Cat Allman:>enlightened self-interest of participating in free and
+
+786
+00:38:27.860 --> 00:38:31.620
+<v Cat Allman:>open source to a strictly commercial relationship.
+
+787
+00:38:33.580 --> 00:38:35.280
+<v Cat Allman:>But I hope I'm just being pessimistic.
+
+788
+00:38:35.580 --> 00:38:36.320
+<v Cat Allman:>We'll see.
+
+789
+00:38:46.360 --> 00:38:46.920
+<v Cat Allman:>Oh, dear.
+
+790
+00:38:46.920 --> 00:38:48.120
+<v Cat Allman:>I hope we're not frozen.
+
+791
+00:38:49.080 --> 00:38:50.880
+<v Elisabetta Mori:>Okay, sorry, I'm going to rephrase.
+
+792
+00:38:51.660 --> 00:38:55.320
+<v Elisabetta Mori:>So, what activities have you pursued since
+
+793
+00:38:55.320 --> 00:38:56.880
+<v Elisabetta Mori:>you left Google?
+
+794
+00:39:00.460 --> 00:39:03.740
+<v Cat Allman:>Ah, well, I honestly thought when I
+
+795
+00:39:03.740 --> 00:39:05.839
+<v Cat Allman:>got laid off from Google that the
+
+796
+00:39:05.840 --> 00:39:08.040
+<v Cat Allman:>boards I was on would ask me
+
+797
+00:39:08.040 --> 00:39:09.480
+<v Cat Allman:>to step down so they could get
+
+798
+00:39:09.480 --> 00:39:10.700
+<v Cat Allman:>another Google person.
+
+799
+00:39:11.280 --> 00:39:13.339
+<v Cat Allman:>But I'm happy to say that in
+
+800
+00:39:13.340 --> 00:39:15.439
+<v Cat Allman:>both cases, they were like, actually all
+
+801
+00:39:15.440 --> 00:39:18.279
+<v Cat Allman:>three cases, they were like, "no, no,
+
+802
+00:39:18.280 --> 00:39:20.460
+<v Cat Allman:>we want you, not the company." So
+
+803
+00:39:21.760 --> 00:39:22.620
+<v Cat Allman:>that's good.
+
+804
+00:39:22.660 --> 00:39:24.819
+<v Cat Allman:>In fact, the IEEE one wanted me
+
+805
+00:39:24.820 --> 00:39:27.600
+<v Cat Allman:>to be vice chair.
+
+806
+00:39:28.580 --> 00:39:30.560
+<v Cat Allman:>So I'm doing that.
+
+807
+00:39:32.580 --> 00:39:34.400
+<v Elisabetta Mori:>Can you name these boards?
+
+808
+00:39:34.920 --> 00:39:35.420
+<v Cat Allman:>Sure.
+
+809
+00:39:37.360 --> 00:39:42.280
+<v Cat Allman:>Committee for the, God it's so long,
+
+810
+00:39:42.720 --> 00:39:47.720
+<v Cat Allman:>the digital testbed out of universities in
+
+811
+00:39:47.720 --> 00:39:49.900
+<v Cat Allman:>Oregon and British Columbia.
+
+812
+00:39:51.040 --> 00:39:53.680
+<v Cat Allman:>And apologies to John Fink, who's rolling
+
+813
+00:39:53.680 --> 00:39:55.180
+<v Cat Allman:>his eyes at me right now, one
+
+814
+00:39:55.180 --> 00:39:55.680
+<v Cat Allman:>moment.
+
+815
+00:39:57.040 --> 00:40:00.140
+<v Elisabetta Mori:>Okay, Digital Testbed Center Advisory Board.
+
+816
+00:40:03.280 --> 00:40:06.600
+<v Cat Allman:>Let me get this important, and maybe
+
+817
+00:40:06.600 --> 00:40:08.240
+<v Cat Allman:>you can edit it for me.
+
+818
+00:40:10.680 --> 00:40:11.660
+<v Elisabetta Mori:>I lost you.
+
+819
+00:41:18.540 --> 00:41:24.840
+<v Cat Allman:>Portland State University Digital Cities Test FreeBSD
+
+820
+00:41:25.080 --> 00:41:30.980
+<v Cat Allman:>Foundation Board and the committee for IEEE
+
+821
+00:41:31.220 --> 00:41:38.399
+<v Cat Allman:>Standards Association Open Source Committee, OSCON, are
+
+822
+00:41:38.400 --> 00:41:40.400
+<v Cat Allman:>the official boards I'm on.
+
+823
+00:41:42.380 --> 00:41:44.540
+<v Cat Allman:>I'm also, my main thing I've been
+
+824
+00:41:44.540 --> 00:41:49.759
+<v Cat Allman:>working on is, I've been contracting with
+
+825
+00:41:49.760 --> 00:41:52.299
+<v Cat Allman:>digital science out of the UK to
+
+826
+00:41:52.300 --> 00:41:54.939
+<v Cat Allman:>help land that while working closely not
+
+827
+00:41:54.940 --> 00:41:57.340
+<v Cat Allman:>only with O'Reilly and nature but also
+
+828
+00:41:57.340 --> 00:41:59.759
+<v Cat Allman:>Google because when they laid me off
+
+829
+00:41:59.760 --> 00:42:01.680
+<v Cat Allman:>they didn't cancel the program, they just
+
+830
+00:42:01.680 --> 00:42:03.520
+<v Cat Allman:>laid off the only person working on
+
+831
+00:42:03.520 --> 00:42:04.020
+<v Cat Allman:>it.
+
+832
+00:42:04.440 --> 00:42:07.320
+<v Cat Allman:>And I knew the person that they
+
+833
+00:42:08.360 --> 00:42:11.000
+<v Cat Allman:>drafted to pick up my work, and
+
+834
+00:42:11.000 --> 00:42:12.540
+<v Cat Allman:>I wasn't just going to leave her
+
+835
+00:42:12.540 --> 00:42:13.760
+<v Cat Allman:>twisting in the wind.
+
+836
+00:42:15.480 --> 00:42:20.200
+<v Cat Allman:>An event came down the weekend before
+
+837
+00:42:20.200 --> 00:42:23.040
+<v Cat Allman:>last, mid-July, excuse me.
+
+838
+00:42:25.560 --> 00:42:27.780
+<v Cat Allman:>And we are already deep in conversation
+
+839
+00:42:29.060 --> 00:42:29.880
+<v Cat Allman:>about 2024.
+
+840
+00:42:33.580 --> 00:42:37.580
+<v Cat Allman:>People have given me grief for when
+
+841
+00:42:37.580 --> 00:42:40.080
+<v Cat Allman:>I'm not getting paid, at least not
+
+842
+00:42:40.080 --> 00:42:41.340
+<v Cat Allman:>as much as I was.
+
+843
+00:42:41.580 --> 00:42:43.600
+<v Cat Allman:>But the truth is, I really love
+
+844
+00:42:43.680 --> 00:42:44.560
+<v Cat Allman:>what I do.
+
+845
+00:42:46.160 --> 00:42:47.520
+<v Cat Allman:>And I'm not going to stop.
+
+846
+00:42:50.280 --> 00:42:51.520
+<v Cat Allman:>The great thing is it's not a
+
+847
+00:42:51.520 --> 00:42:54.060
+<v Cat Allman:>Google program so Google legal can't make
+
+848
+00:42:54.060 --> 00:42:54.760
+<v Cat Allman:>me stop.
+
+849
+00:42:56.260 --> 00:42:57.560
+<v Cat Allman:>Plus it looks like I'm going to
+
+850
+00:42:57.560 --> 00:43:00.259
+<v Cat Allman:>be working for digital science as an
+
+851
+00:43:00.260 --> 00:43:03.660
+<v Cat Allman:>employee to continue not only the conference
+
+852
+00:43:03.700 --> 00:43:05.680
+<v Cat Allman:>itself, looks like we're gonna be doing
+
+853
+00:43:05.680 --> 00:43:07.839
+<v Cat Allman:>it at Cambridge University next summer, which
+
+854
+00:43:07.840 --> 00:43:09.640
+<v Cat Allman:>I'm super excited about.
+
+855
+00:43:10.520 --> 00:43:14.040
+<v Cat Allman:>I mean, Cambridge, but also the alumni
+
+856
+00:43:14.080 --> 00:43:14.580
+<v Cat Allman:>community.
+
+857
+00:43:15.040 --> 00:43:19.540
+<v Cat Allman:>It's not large, but with a thousand
+
+858
+00:43:20.240 --> 00:43:24.640
+<v Cat Allman:>opinionated people, it's sometimes a handful.
+
+859
+00:43:27.560 --> 00:43:29.760
+<v Cat Allman:>But obviously during COVID, we talked about
+
+860
+00:43:30.460 --> 00:43:32.860
+<v Cat Allman:>COVID and vaccine science.
+
+861
+00:43:34.540 --> 00:43:36.299
+<v Cat Allman:>Right now we're talking about AI because
+
+862
+00:43:36.300 --> 00:43:39.100
+<v Cat Allman:>the world is talking about AI, but
+
+863
+00:43:39.100 --> 00:43:40.880
+<v Cat Allman:>lots of other things going on.
+
+864
+00:43:41.760 --> 00:43:46.880
+<v Cat Allman:>And it's pretty heady when somebody talks
+
+865
+00:43:46.880 --> 00:43:48.839
+<v Cat Allman:>about public health to have someone like
+
+866
+00:43:48.840 --> 00:43:50.859
+<v Cat Allman:>Larry Brilliant, who was on the team
+
+867
+00:43:50.860 --> 00:43:53.500
+<v Cat Allman:>that ended smallpox, chime in.
+
+868
+00:43:54.560 --> 00:43:58.040
+<v Cat Allman:>Or Vint Cerf, arguably the father of
+
+869
+00:43:58.040 --> 00:44:00.700
+<v Cat Allman:>the internet, will pop in and always
+
+870
+00:44:00.700 --> 00:44:06.340
+<v Cat Allman:>ask, I love, his messages are always
+
+871
+00:44:06.340 --> 00:44:07.260
+<v Cat Allman:>very brief.
+
+872
+00:44:07.540 --> 00:44:09.100
+<v Cat Allman:>There's that old saying, it's, I would
+
+873
+00:44:09.100 --> 00:44:10.339
+<v Cat Allman:>have written a short, I didn't have
+
+874
+00:44:10.340 --> 00:44:12.140
+<v Cat Allman:>time to write a short message, so
+
+875
+00:44:12.140 --> 00:44:13.480
+<v Cat Allman:>I wrote a long one.
+
+876
+00:44:13.580 --> 00:44:16.480
+<v Cat Allman:>Vint writes short messages because he's just
+
+877
+00:44:16.480 --> 00:44:18.879
+<v Cat Allman:>that smart, which is really fun to
+
+878
+00:44:18.880 --> 00:44:19.380
+<v Cat Allman:>watch.
+
+879
+00:44:21.240 --> 00:44:23.100
+<v Cat Allman:>So yeah, that's what I'm doing.
+
+880
+00:44:24.860 --> 00:44:28.560
+<v Cat Allman:>FreeBSD project, we're working with Core.
+
+881
+00:44:31.060 --> 00:44:32.940
+<v Cat Allman:>The project is run, there's the foundation,
+
+882
+00:44:35.340 --> 00:44:38.860
+<v Cat Allman:>the nonprofit that provides essentially support services,
+
+883
+00:44:39.780 --> 00:44:40.240
+<v Cat Allman:>etc.
+
+884
+00:44:40.240 --> 00:44:44.560
+<v Cat Allman:>For the project, which is managed by
+
+885
+00:44:45.360 --> 00:44:47.220
+<v Cat Allman:>kind of an elected group of people
+
+886
+00:44:47.220 --> 00:44:49.200
+<v Cat Allman:>called core, and they're the technical people
+
+887
+00:44:49.200 --> 00:44:51.060
+<v Cat Allman:>that are doing the technical work.
+
+888
+00:44:51.980 --> 00:44:54.020
+<v Cat Allman:>And collectively, we're trying to work more
+
+889
+00:44:54.020 --> 00:44:56.540
+<v Cat Allman:>closely together so that we can coordinate
+
+890
+00:44:56.680 --> 00:44:59.560
+<v Cat Allman:>our efforts to make everything better.
+
+891
+00:45:00.060 --> 00:45:02.080
+<v Cat Allman:>Not that things are bad, but just
+
+892
+00:45:02.080 --> 00:45:02.980
+<v Cat Allman:>making it better.
+
+893
+00:45:07.280 --> 00:45:10.740
+<v Elisabetta Mori:>So if you look at your career,
+
+894
+00:45:11.580 --> 00:45:13.760
+<v Elisabetta Mori:>is there anything you would do differently
+
+895
+00:45:14.080 --> 00:45:15.700
+<v Elisabetta Mori:>if you had your time again?
+
+896
+00:45:15.700 --> 00:45:16.246
+<v Elisabetta Mori:>And why?
+
+897
+00:45:20.540 --> 00:45:22.440
+<v Cat Allman:>If I could start over in junior
+
+898
+00:45:22.440 --> 00:45:27.660
+<v Cat Allman:>high school now, I would have been
+
+899
+00:45:27.660 --> 00:45:29.779
+<v Cat Allman:>less of a visible nerd, more of
+
+900
+00:45:29.780 --> 00:45:33.580
+<v Cat Allman:>a stealth nerd, and probably gone into
+
+901
+00:45:34.280 --> 00:45:36.580
+<v Cat Allman:>the biological sciences in some respects.
+
+902
+00:45:37.740 --> 00:45:39.879
+<v Cat Allman:>But the truth is, I don't want
+
+903
+00:45:39.880 --> 00:45:42.040
+<v Cat Allman:>to do over because I love my
+
+904
+00:45:42.040 --> 00:45:42.540
+<v Cat Allman:>life.
+
+905
+00:45:44.380 --> 00:45:45.400
+<v Cat Allman:>People are wonderful.
+
+906
+00:45:45.560 --> 00:45:46.760
+<v Cat Allman:>I mean, not everybody.
+
+907
+00:45:46.920 --> 00:45:48.400
+<v Cat Allman:>I mean, I live in America.
+
+908
+00:45:48.680 --> 00:45:53.500
+<v Cat Allman:>People suck sometimes, but the community that
+
+909
+00:45:53.500 --> 00:45:55.840
+<v Cat Allman:>I have found in free and open
+
+910
+00:45:55.840 --> 00:46:01.680
+<v Cat Allman:>source software, it's a wonderful thing with
+
+911
+00:46:01.680 --> 00:46:03.540
+<v Cat Allman:>a really interesting group of people.
+
+912
+00:46:04.060 --> 00:46:05.419
+<v Cat Allman:>And I can be as nerdy as
+
+913
+00:46:05.420 --> 00:46:06.819
+<v Cat Allman:>I want to be, which makes me
+
+914
+00:46:06.820 --> 00:46:07.660
+<v Cat Allman:>very happy.
+
+915
+00:46:08.420 --> 00:46:11.160
+<v Cat Allman:>And I can feel like in whatever
+
+916
+00:46:11.160 --> 00:46:13.299
+<v Cat Allman:>small way I'm contributing to making the
+
+917
+00:46:13.300 --> 00:46:16.880
+<v Cat Allman:>world better, which matters to me.
+
+918
+00:46:18.160 --> 00:46:19.700
+<v Cat Allman:>I hope it matters to a lot
+
+919
+00:46:19.700 --> 00:46:20.360
+<v Cat Allman:>of people.
+
+920
+00:46:21.840 --> 00:46:24.140
+<v Cat Allman:>I think it matters to more than
+
+921
+00:46:24.140 --> 00:46:26.740
+<v Cat Allman:>the average percent of people in the
+
+922
+00:46:26.740 --> 00:46:29.839
+<v Cat Allman:>FLOSS world, which once again, here I
+
+923
+00:46:29.840 --> 00:46:30.340
+<v Cat Allman:>am.
+
+924
+00:46:30.340 --> 00:46:30.586
+<v Cat Allman:>So.
+
+925
+00:46:33.700 --> 00:46:36.040
+<v Elisabetta Mori:>So is there a project you're particularly
+
+926
+00:46:36.360 --> 00:46:39.200
+<v Elisabetta Mori:>proud of or what is your proudest
+
+927
+00:46:39.200 --> 00:46:39.700
+<v Elisabetta Mori:>achievement?
+
+928
+00:46:45.660 --> 00:46:47.820
+<v Cat Allman:>At the risk of sounding hopelessly vain,
+
+929
+00:46:49.060 --> 00:46:50.939
+<v Cat Allman:>it's hard to pick because there are
+
+930
+00:46:50.940 --> 00:46:51.440
+<v Cat Allman:>several.
+
+931
+00:47:01.340 --> 00:47:03.440
+<v Cat Allman:>Being involved with Google Summer of Code
+
+932
+00:47:03.440 --> 00:47:04.460
+<v Cat Allman:>was such a blessing.
+
+933
+00:47:05.500 --> 00:47:08.040
+<v Cat Allman:>I wasn't as involved with Google Code
+
+934
+00:47:08.040 --> 00:47:12.100
+<v Cat Allman:>in the high school program, but it
+
+935
+00:47:12.100 --> 00:47:17.120
+<v Cat Allman:>was really inspiring and reassuring to meet
+
+936
+00:47:17.420 --> 00:47:19.240
+<v Cat Allman:>kids, I can call them kids because
+
+937
+00:47:19.240 --> 00:47:22.160
+<v Cat Allman:>they're under 18, from all over the
+
+938
+00:47:22.160 --> 00:47:26.120
+<v Cat Allman:>world that were just that smart and
+
+939
+00:47:26.120 --> 00:47:28.100
+<v Cat Allman:>that passionate about what they were doing.
+
+940
+00:47:31.980 --> 00:47:36.300
+<v Cat Allman:>In terms of funding, at one point
+
+941
+00:47:36.300 --> 00:47:38.360
+<v Cat Allman:>we had spun up a team inside
+
+942
+00:47:38.360 --> 00:47:42.280
+<v Cat Allman:>Google called Making in Science, specifically addressing
+
+943
+00:47:43.380 --> 00:47:45.800
+<v Cat Allman:>DOI, Making in Science, or more specifically
+
+944
+00:47:45.920 --> 00:47:46.760
+<v Cat Allman:>STEM education.
+
+945
+00:47:49.140 --> 00:47:51.200
+<v Cat Allman:>At one point I had money left
+
+946
+00:47:51.200 --> 00:47:53.940
+<v Cat Allman:>over in a budget there, so there's
+
+947
+00:47:53.940 --> 00:47:57.480
+<v Cat Allman:>the WikiEDU project, which is a spin-out
+
+948
+00:47:57.660 --> 00:48:02.080
+<v Cat Allman:>of the Wikimedia Foundation, where they have
+
+949
+00:48:02.080 --> 00:48:07.320
+<v Cat Allman:>a program working with professors to have
+
+950
+00:48:07.880 --> 00:48:13.480
+<v Cat Allman:>students learn how to, to Wikipedia, improving
+
+951
+00:48:13.580 --> 00:48:18.780
+<v Cat Allman:>their science skills and also so that
+
+952
+00:48:19.200 --> 00:48:20.759
+<v Cat Allman:>writing term papers that end up in
+
+953
+00:48:20.760 --> 00:48:24.140
+<v Cat Allman:>their parents' basement, they write Wikipedia articles
+
+954
+00:48:24.380 --> 00:48:26.580
+<v Cat Allman:>increasing the amount of knowledge available to
+
+955
+00:48:26.580 --> 00:48:27.260
+<v Cat Allman:>us all.
+
+956
+00:48:27.740 --> 00:48:30.439
+<v Cat Allman:>In one month, they did a year
+
+957
+00:48:30.440 --> 00:48:33.220
+<v Cat Allman:>of science with a specific focus on
+
+958
+00:48:33.220 --> 00:48:36.220
+<v Cat Allman:>increasing content in Wikipedia about women in
+
+959
+00:48:36.220 --> 00:48:40.140
+<v Cat Allman:>science, in one month alone, that content
+
+960
+00:48:40.440 --> 00:48:43.140
+<v Cat Allman:>increased by, I forget if it was
+
+961
+00:48:43.140 --> 00:48:44.160
+<v Cat Allman:>7 or 14%.
+
+962
+00:48:45.720 --> 00:48:48.340
+<v Cat Allman:>And when you think about the impact
+
+963
+00:48:48.480 --> 00:48:51.580
+<v Cat Allman:>of just that much more knowledge about
+
+964
+00:48:51.580 --> 00:48:54.720
+<v Cat Allman:>the importance of women in science, I
+
+965
+00:48:54.720 --> 00:48:57.340
+<v Cat Allman:>am really proud about having been able
+
+966
+00:48:57.340 --> 00:49:00.760
+<v Cat Allman:>to provide financial support for that effort.
+
+967
+00:49:02.560 --> 00:49:05.600
+<v Elisabetta Mori:>So talking about diversity in the computer
+
+968
+00:49:05.600 --> 00:49:09.840
+<v Elisabetta Mori:>science industry, what are your thoughts for
+
+969
+00:49:09.840 --> 00:49:10.620
+<v Elisabetta Mori:>the future?
+
+970
+00:49:12.480 --> 00:49:18.960
+<v Cat Allman:>Well, Back in the 80s when I
+
+971
+00:49:18.960 --> 00:49:22.660
+<v Cat Allman:>got involved with this, yes, there were
+
+972
+00:49:22.660 --> 00:49:24.240
+<v Cat Allman:>still more men than women, but there
+
+973
+00:49:24.240 --> 00:49:26.600
+<v Cat Allman:>were a lot of women in the
+
+974
+00:49:26.600 --> 00:49:27.680
+<v Cat Allman:>academic setting.
+
+975
+00:49:27.720 --> 00:49:29.840
+<v Cat Allman:>I knew a number of female professors
+
+976
+00:49:30.160 --> 00:49:31.980
+<v Cat Allman:>and contributors.
+
+977
+00:49:33.400 --> 00:49:37.319
+<v Cat Allman:>So I didn't really see it as
+
+978
+00:49:37.320 --> 00:49:39.940
+<v Cat Allman:>an issue, but then as computer science
+
+979
+00:49:39.940 --> 00:49:45.860
+<v Cat Allman:>became more business focused and more people
+
+980
+00:49:45.920 --> 00:49:49.920
+<v Cat Allman:>studied for the career opportunities rather than
+
+981
+00:49:49.920 --> 00:49:53.500
+<v Cat Allman:>passion, that number decreased.
+
+982
+00:49:54.760 --> 00:49:56.100
+<v Cat Allman:>And it took me a while to
+
+983
+00:49:56.100 --> 00:49:58.779
+<v Cat Allman:>notice, really, because I would go to
+
+984
+00:49:58.780 --> 00:50:02.220
+<v Cat Allman:>conferences in the 90s, and people would
+
+985
+00:50:02.220 --> 00:50:03.560
+<v Cat Allman:>say, "oh, women are in open source.
+
+986
+00:50:03.560 --> 00:50:05.460
+<v Cat Allman:>I'm like, what are you talking about?
+
+987
+00:50:05.580 --> 00:50:06.900
+<v Cat Allman:>This person and that person.
+
+988
+00:50:07.080 --> 00:50:09.620
+<v Cat Allman:>Then I realized those ladies are retiring
+
+989
+00:50:11.180 --> 00:50:13.740
+<v Cat Allman:>and they're not necessarily being replaced by
+
+990
+00:50:13.740 --> 00:50:14.660
+<v Cat Allman:>female professors.
+
+991
+00:50:15.240 --> 00:50:19.280
+<v Cat Allman:>So there was an issue and yes,
+
+992
+00:50:19.280 --> 00:50:20.720
+<v Cat Allman:>at one point I was at a
+
+993
+00:50:20.720 --> 00:50:23.060
+<v Cat Allman:>conference about C++.
+
+994
+00:50:25.200 --> 00:50:26.480
+<v Cat Allman:>And I looked around the room and
+
+995
+00:50:26.480 --> 00:50:27.980
+<v Cat Allman:>I realized out of 50 people, I
+
+996
+00:50:27.980 --> 00:50:29.160
+<v Cat Allman:>was the only woman.
+
+997
+00:50:30.040 --> 00:50:31.359
+<v Cat Allman:>And then a guy said something about
+
+998
+00:50:31.360 --> 00:50:32.500
+<v Cat Allman:>making him a sandwich.
+
+999
+00:50:34.020 --> 00:50:38.200
+<v Cat Allman:>I was like, "oh, okay, that's what
+
+1000
+00:50:38.200 --> 00:50:39.400
+<v Cat Allman:>they were talking about.
+
+1001
+00:50:39.880 --> 00:50:43.259
+<v Cat Allman:>Got it." And I tell friends of
+
+1002
+00:50:43.260 --> 00:50:44.799
+<v Cat Allman:>mine in other industries, some of the
+
+1003
+00:50:44.800 --> 00:50:46.120
+<v Cat Allman:>stories of what it was like in
+
+1004
+00:50:46.120 --> 00:50:48.140
+<v Cat Allman:>the 80s and what it was like.
+
+1005
+00:50:49.820 --> 00:50:53.100
+<v Cat Allman:>Because there was definitely a boys club
+
+1006
+00:50:53.560 --> 00:50:57.600
+<v Cat Allman:>and not just a lack of respect,
+
+1007
+00:50:57.700 --> 00:51:01.620
+<v Cat Allman:>but disrespect towards people in non-coding world.
+
+1008
+00:51:02.740 --> 00:51:05.080
+<v Cat Allman:>And the assumption that if you were
+
+1009
+00:51:05.080 --> 00:51:08.480
+<v Cat Allman:>female, you were not able to code
+
+1010
+00:51:08.480 --> 00:51:10.340
+<v Cat Allman:>and therefore not good at coding.
+
+1011
+00:51:13.480 --> 00:51:14.960
+<v Cat Allman:>And I hadn't realized how much I
+
+1012
+00:51:14.960 --> 00:51:17.880
+<v Cat Allman:>had internalized that, but yeah.
+
+1013
+00:51:18.900 --> 00:51:23.400
+<v Cat Allman:>I'm delighted to say it isn't applied
+
+1014
+00:51:23.740 --> 00:51:25.220
+<v Cat Allman:>equally globally.
+
+1015
+00:51:25.760 --> 00:51:27.540
+<v Cat Allman:>For example, I went to give a
+
+1016
+00:51:27.540 --> 00:51:30.720
+<v Cat Allman:>talk about Summer of Code at a
+
+1017
+00:51:30.720 --> 00:51:33.300
+<v Cat Allman:>university in Oman in the Middle East.
+
+1018
+00:51:34.120 --> 00:51:36.300
+<v Cat Allman:>Before I agreed to go, I looked
+
+1019
+00:51:36.300 --> 00:51:38.040
+<v Cat Allman:>and the enrollment in the computer science
+
+1020
+00:51:38.040 --> 00:51:41.260
+<v Cat Allman:>department at that university skewed female.
+
+1021
+00:51:41.740 --> 00:51:43.260
+<v Cat Allman:>There were more women in the computer
+
+1022
+00:51:43.260 --> 00:51:45.060
+<v Cat Allman:>science department than there were men.
+
+1023
+00:51:46.060 --> 00:51:48.420
+<v Cat Allman:>So even though I went to this
+
+1024
+00:51:49.600 --> 00:51:52.060
+<v Cat Allman:>university where the women were all fully
+
+1025
+00:51:52.060 --> 00:51:53.799
+<v Cat Allman:>covered up except for their hands and
+
+1026
+00:51:53.800 --> 00:51:58.980
+<v Cat Allman:>their faces, not only were the majority
+
+1027
+00:51:58.980 --> 00:52:01.120
+<v Cat Allman:>of the students female, but the students
+
+1028
+00:52:01.120 --> 00:52:04.400
+<v Cat Allman:>who were most engaged and passionate about
+
+1029
+00:52:04.600 --> 00:52:07.540
+<v Cat Allman:>free and open source software specifically were
+
+1030
+00:52:07.540 --> 00:52:08.240
+<v Cat Allman:>all women.
+
+1031
+00:52:09.140 --> 00:52:11.520
+<v Cat Allman:>And my understanding is that that is,
+
+1032
+00:52:12.260 --> 00:52:17.259
+<v Cat Allman:>it's in places where, well I'm not
+
+1033
+00:52:17.260 --> 00:52:21.140
+<v Cat Allman:>going to say that, but long story
+
+1034
+00:52:21.140 --> 00:52:22.700
+<v Cat Allman:>short, sorry for rambling.
+
+1035
+00:52:24.140 --> 00:52:25.520
+<v Cat Allman:>I think the potential is there for
+
+1036
+00:52:25.520 --> 00:52:26.420
+<v Cat Allman:>it to be better.
+
+1037
+00:52:27.180 --> 00:52:30.480
+<v Cat Allman:>I think as with American politics, we
+
+1038
+00:52:30.480 --> 00:52:35.100
+<v Cat Allman:>are seeing a backlash as people see
+
+1039
+00:52:37.660 --> 00:52:39.940
+<v Cat Allman:>women coming in and not just women
+
+1040
+00:52:39.940 --> 00:52:44.439
+<v Cat Allman:>but underrepresented groups coming in see that
+
+1041
+00:52:44.440 --> 00:52:46.319
+<v Cat Allman:>as a loss of privilege rather than
+
+1042
+00:52:46.320 --> 00:52:50.100
+<v Cat Allman:>as an expansion of opportunity for everyone.
+
+1043
+00:52:52.360 --> 00:52:57.593
+<v Cat Allman:>But maybe the increasing ubiquity of FLOSS
+
+1044
+00:52:58.420 --> 00:53:01.160
+<v Cat Allman:>will address some of this, because the
+
+1045
+00:53:01.160 --> 00:53:04.280
+<v Cat Allman:>upside of market forces is it's harder
+
+1046
+00:53:04.280 --> 00:53:06.380
+<v Cat Allman:>to be a jerk if there's money
+
+1047
+00:53:06.380 --> 00:53:07.220
+<v Cat Allman:>on the table.
+
+1048
+00:53:07.720 --> 00:53:12.300
+<v Cat Allman:>So except if, well, maybe that's true.
+
+1049
+00:53:12.440 --> 00:53:14.160
+<v Cat Allman:>Actually, I'm second guessing myself.
+
+1050
+00:53:15.040 --> 00:53:18.040
+<v Cat Allman:>I would like that it's going to
+
+1051
+00:53:18.040 --> 00:53:18.740
+<v Cat Allman:>get better.
+
+1052
+00:53:19.780 --> 00:53:21.240
+<v Cat Allman:>One thing I have noticed in the
+
+1053
+00:53:21.240 --> 00:53:23.360
+<v Cat Allman:>past is some of our students, particularly
+
+1054
+00:53:23.360 --> 00:53:25.680
+<v Cat Allman:>the high school students, they tell me
+
+1055
+00:53:25.680 --> 00:53:27.860
+<v Cat Allman:>about how the educational system in their
+
+1056
+00:53:27.860 --> 00:53:32.800
+<v Cat Allman:>country is modeled in such a way
+
+1057
+00:53:32.800 --> 00:53:39.720
+<v Cat Allman:>that, what's the word, individual initiative is
+
+1058
+00:53:39.720 --> 00:53:42.540
+<v Cat Allman:>discouraged rather than encouraged.
+
+1059
+00:53:44.340 --> 00:53:46.740
+<v Cat Allman:>I would argue that one reason why
+
+1060
+00:53:46.740 --> 00:53:51.319
+<v Cat Allman:>FLOSS has been as centered as it
+
+1061
+00:53:51.320 --> 00:53:54.020
+<v Cat Allman:>has been in the US and Western
+
+1062
+00:53:54.020 --> 00:53:58.620
+<v Cat Allman:>Europe is because the education system provides
+
+1063
+00:53:59.320 --> 00:54:03.380
+<v Cat Allman:>more opportunity for students to pursue things
+
+1064
+00:54:03.380 --> 00:54:06.560
+<v Cat Allman:>they're interested in rather than in following
+
+1065
+00:54:06.560 --> 00:54:11.919
+<v Cat Allman:>a strict, largely focused on memorization of
+
+1066
+00:54:11.920 --> 00:54:12.940
+<v Cat Allman:>existing content.
+
+1067
+00:54:16.540 --> 00:54:18.640
+<v Cat Allman:>That's just my feeling, I have no
+
+1068
+00:54:18.640 --> 00:54:20.220
+<v Cat Allman:>facts to back this up, so don't
+
+1069
+00:54:20.220 --> 00:54:24.560
+<v Cat Allman:>quote me, but yeah, I don't know
+
+1070
+00:54:24.560 --> 00:54:25.940
+<v Cat Allman:>what's going to happen there.
+
+1071
+00:54:27.880 --> 00:54:28.860
+<v Cat Allman:>It'll be interesting.
+
+1072
+00:54:29.020 --> 00:54:30.360
+<v Cat Allman:>It'll be interesting to see what happens
+
+1073
+00:54:30.360 --> 00:54:33.080
+<v Cat Allman:>with China, though the downside of trying
+
+1074
+00:54:33.080 --> 00:54:34.339
+<v Cat Allman:>to look to China to see a
+
+1075
+00:54:34.340 --> 00:54:39.300
+<v Cat Allman:>rise of open-source software is the difficulties
+
+1076
+00:54:39.480 --> 00:54:42.860
+<v Cat Allman:>with licenses and license compliance, but that's
+
+1077
+00:54:43.340 --> 00:54:44.540
+<v Cat Allman:>a story for lawyers.
+
+1078
+00:54:49.780 --> 00:54:51.860
+<v Elisabetta Mori:>What advice would you give to someone
+
+1079
+00:54:52.360 --> 00:54:55.820
+<v Elisabetta Mori:>that might want to pursue your career?
+
+1080
+00:55:00.120 --> 00:55:04.300
+<v Cat Allman:>Be brave, be humble, but don't doubt
+
+1081
+00:55:04.300 --> 00:55:04.800
+<v Cat Allman:>yourself.
+
+1082
+00:55:06.600 --> 00:55:09.439
+<v Cat Allman:>If imposter syndrome were fatal, I would
+
+1083
+00:55:09.440 --> 00:55:10.460
+<v Cat Allman:>be dead.
+
+1084
+00:55:14.120 --> 00:55:15.160
+<v Cat Allman:>So trust yourself.
+
+1085
+00:55:15.420 --> 00:55:19.140
+<v Cat Allman:>Trust yourself and enjoy yourself and pick
+
+1086
+00:55:19.140 --> 00:55:19.820
+<v Cat Allman:>your battles.
+
+1087
+00:55:21.140 --> 00:55:22.839
+<v Cat Allman:>If you get angry about every little
+
+1088
+00:55:22.840 --> 00:55:25.660
+<v Cat Allman:>thing, you're gonna be angry a lot
+
+1089
+00:55:25.960 --> 00:55:27.540
+<v Cat Allman:>and that's a waste of time and
+
+1090
+00:55:27.540 --> 00:55:28.040
+<v Cat Allman:>energy.
+
+1091
+00:55:28.580 --> 00:55:30.540
+<v Cat Allman:>On the other hand, don't let people...
+
+1092
+00:55:30.540 --> 00:55:35.120
+<v Cat Allman:>regulate accounts.
+
+1093
+00:55:38.100 --> 00:55:40.120
+<v Cat Allman:>Yeah, I have to say the world
+
+1094
+00:55:40.120 --> 00:55:41.520
+<v Cat Allman:>has gotten better.
+
+1095
+00:55:42.500 --> 00:55:45.560
+<v Cat Allman:>And it's hard to recognize that when
+
+1096
+00:55:45.560 --> 00:55:46.920
+<v Cat Allman:>it's happening to you.
+
+1097
+00:55:47.500 --> 00:55:50.720
+<v Cat Allman:>But I like to tell people, some
+
+1098
+00:55:50.720 --> 00:55:52.399
+<v Cat Allman:>of my colleagues, that for example, when
+
+1099
+00:55:52.400 --> 00:55:54.959
+<v Cat Allman:>I started working out of college, help
+
+1100
+00:55:54.960 --> 00:55:57.240
+<v Cat Allman:>wanted ads were segregated by gender.
+
+1101
+00:55:57.240 --> 00:55:59.240
+<v Cat Allman:>You couldn't even apply to certain jobs
+
+1102
+00:55:59.240 --> 00:56:00.240
+<v Cat Allman:>if you were female.
+
+1103
+00:56:03.860 --> 00:56:06.680
+<v Cat Allman:>I was in a session at a
+
+1104
+00:56:06.680 --> 00:56:11.440
+<v Cat Allman:>conference about diversity and equity and going
+
+1105
+00:56:11.440 --> 00:56:13.240
+<v Cat Allman:>around the room and people sharing their
+
+1106
+00:56:13.240 --> 00:56:15.480
+<v Cat Allman:>concerns and one person was very upset
+
+1107
+00:56:15.480 --> 00:56:18.840
+<v Cat Allman:>about people using the word guys as
+
+1108
+00:56:19.940 --> 00:56:21.360
+<v Cat Allman:>an inclusive pronoun.
+
+1109
+00:56:21.680 --> 00:56:23.460
+<v Cat Allman:>Hey guys, we're going to go to...
+
+1110
+00:56:23.460 --> 00:56:25.700
+<v Cat Allman:>they felt very excluded by this.
+
+1111
+00:56:26.120 --> 00:56:27.379
+<v Cat Allman:>And then it was my turn and
+
+1112
+00:56:27.380 --> 00:56:28.779
+<v Cat Allman:>I talked about the time I was
+
+1113
+00:56:28.780 --> 00:56:30.420
+<v Cat Allman:>in a staff meeting at the design
+
+1114
+00:56:30.420 --> 00:56:33.560
+<v Cat Allman:>firm and the senior most designer announced
+
+1115
+00:56:33.560 --> 00:56:36.500
+<v Cat Allman:>her pregnancy and the CEO of the
+
+1116
+00:56:36.500 --> 00:56:37.839
+<v Cat Allman:>company looked at her and said, "well
+
+1117
+00:56:37.840 --> 00:56:39.220
+<v Cat Allman:>you are going to get an abortion
+
+1118
+00:56:39.280 --> 00:56:43.760
+<v Cat Allman:>aren't you?" Things are better now.
+
+1119
+00:56:45.620 --> 00:56:46.660
+<v Cat Allman:>Things are.
+
+1120
+00:56:47.980 --> 00:56:50.260
+<v Cat Allman:>It's hard to see and they're not
+
+1121
+00:56:50.340 --> 00:56:52.960
+<v Cat Allman:>necessarily great, but they are better.
+
+1122
+00:56:54.720 --> 00:56:56.520
+<v Cat Allman:>And so don't lose hope, even though
+
+1123
+00:56:56.520 --> 00:56:57.720
+<v Cat Allman:>there are times when you want to
+
+1124
+00:56:57.720 --> 00:56:58.980
+<v Cat Allman:>wring people's necks.
+
+1125
+00:57:02.100 --> 00:57:04.040
+<v Elisabetta Mori:>Is there anything you would like to
+
+1126
+00:57:04.040 --> 00:57:06.620
+<v Elisabetta Mori:>add that we haven't covered today?
+
+1127
+00:57:09.060 --> 00:57:11.680
+<v Cat Allman:>Well I pontificated at length.
+
+1128
+00:57:18.480 --> 00:57:21.290
+<v Cat Allman:>So just to follow your passions.
+
+1129
+00:57:21.290 --> 00:57:27.040
+<v Cat Allman:>At Maker Faires past, Google had a
+
+1130
+00:57:27.040 --> 00:57:31.440
+<v Cat Allman:>booth where we displayed people's personal projects
+
+1131
+00:57:31.580 --> 00:57:34.939
+<v Cat Allman:>as well as prototypes for things like
+
+1132
+00:57:34.940 --> 00:57:36.860
+<v Cat Allman:>early Google Glass, etc.
+
+1133
+00:57:37.740 --> 00:57:41.980
+<v Cat Allman:>And I would bring hyperbolic crochet, which
+
+1134
+00:57:41.980 --> 00:57:43.379
+<v Cat Allman:>you might say, what the heck is
+
+1135
+00:57:43.380 --> 00:57:44.480
+<v Cat Allman:>hyperbolic crochet?
+
+1136
+00:57:44.760 --> 00:57:50.400
+<v Cat Allman:>Well, it is crochet that models fractal
+
+1137
+00:57:50.400 --> 00:57:52.280
+<v Cat Allman:>equations in yarn.
+
+1138
+00:57:53.440 --> 00:57:56.040
+<v Cat Allman:>It was originally hit upon by a
+
+1139
+00:57:56.040 --> 00:57:58.920
+<v Cat Allman:>math professor I think at the University
+
+1140
+00:57:58.940 --> 00:58:03.839
+<v Cat Allman:>of Chicago when she realized that her
+
+1141
+00:58:03.840 --> 00:58:07.200
+<v Cat Allman:>students couldn't visualize the results of fractal
+
+1142
+00:58:07.200 --> 00:58:09.680
+<v Cat Allman:>equations, and that then she figured out
+
+1143
+00:58:09.680 --> 00:58:11.760
+<v Cat Allman:>that crochet would be the perfect way
+
+1144
+00:58:11.840 --> 00:58:15.060
+<v Cat Allman:>to build physical models of these rates
+
+1145
+00:58:15.060 --> 00:58:15.880
+<v Cat Allman:>of growth.
+
+1146
+00:58:17.380 --> 00:58:19.700
+<v Cat Allman:>And from this, then two sisters, the
+
+1147
+00:58:19.700 --> 00:58:23.180
+<v Cat Allman:>Wertheim Sisters, started the Institute for Figuring,
+
+1148
+00:58:23.760 --> 00:58:29.380
+<v Cat Allman:>talking about the intersection between handcrafts and
+
+1149
+00:58:29.380 --> 00:58:29.880
+<v Cat Allman:>mathematics.
+
+1150
+00:58:31.120 --> 00:58:33.220
+<v Cat Allman:>So it's both a woman's studies project
+
+1151
+00:58:33.540 --> 00:58:36.420
+<v Cat Allman:>and a science project and a citizen
+
+1152
+00:58:36.420 --> 00:58:37.440
+<v Cat Allman:>science project.
+
+1153
+00:58:37.860 --> 00:58:39.939
+<v Cat Allman:>It's all over the world, including the
+
+1154
+00:58:39.940 --> 00:58:43.820
+<v Cat Allman:>Smithsonian Museum of Natural History in Washington,
+
+1155
+00:58:43.860 --> 00:58:44.360
+<v Cat Allman:>D.C.
+
+1156
+00:58:45.340 --> 00:58:50.340
+<v Cat Allman:>There are assembled reefs, because coral reef,
+
+1157
+00:58:50.340 --> 00:58:52.500
+<v Cat Allman:>as in the ocean, as well as
+
+1158
+00:58:52.500 --> 00:58:57.180
+<v Cat Allman:>various kinds of plants, waterways, much of
+
+1159
+00:58:57.180 --> 00:59:02.580
+<v Cat Allman:>life, grow in fractals, these repeating patterns
+
+1160
+00:59:02.880 --> 00:59:03.620
+<v Cat Allman:>of growth.
+
+1161
+00:59:05.500 --> 00:59:08.980
+<v Cat Allman:>So, I crochet them out of nice
+
+1162
+00:59:08.980 --> 00:59:10.839
+<v Cat Allman:>soft squishy yarn and send them in
+
+1163
+00:59:10.840 --> 00:59:13.120
+<v Cat Allman:>and they're assembled into these art projects.
+
+1164
+00:59:13.520 --> 00:59:15.060
+<v Cat Allman:>The most recent one I believe was
+
+1165
+00:59:15.060 --> 00:59:15.880
+<v Cat Allman:>in Hamburg.
+
+1166
+00:59:16.640 --> 00:59:17.580
+<v Cat Allman:>Beautiful stuff.
+
+1167
+00:59:18.820 --> 00:59:21.879
+<v Cat Allman:>So I bring this up because at
+
+1168
+00:59:21.880 --> 00:59:24.340
+<v Cat Allman:>the Maker Faire there's soldering, and there's
+
+1169
+00:59:24.340 --> 00:59:27.140
+<v Cat Allman:>robots, and there's stuff that's on fire.
+
+1170
+00:59:28.580 --> 00:59:32.800
+<v Cat Allman:>And I had a probably three times
+
+1171
+00:59:32.800 --> 00:59:35.759
+<v Cat Allman:>size model of the human cerebellum in
+
+1172
+00:59:35.760 --> 00:59:36.260
+<v Cat Allman:>crochet.
+
+1173
+00:59:37.200 --> 00:59:39.400
+<v Cat Allman:>So there was this big fuzzy squishy
+
+1174
+00:59:39.440 --> 00:59:42.560
+<v Cat Allman:>object and not all women or little
+
+1175
+00:59:42.560 --> 00:59:44.799
+<v Cat Allman:>girls but sometimes other people would come
+
+1176
+00:59:44.800 --> 00:59:46.319
+<v Cat Allman:>through with their eyes glazed because they
+
+1177
+00:59:46.320 --> 00:59:48.600
+<v Cat Allman:>were tired of electronics and they would
+
+1178
+00:59:48.600 --> 00:59:51.120
+<v Cat Allman:>see yarn and they would get very
+
+1179
+00:59:51.120 --> 00:59:51.620
+<v Cat Allman:>excited.
+
+1180
+00:59:52.500 --> 00:59:54.940
+<v Cat Allman:>You could explain how it's like plants
+
+1181
+00:59:54.940 --> 00:59:58.779
+<v Cat Allman:>grow, it's the way galaxies grow, you
+
+1182
+00:59:58.780 --> 01:00:01.820
+<v Cat Allman:>can make it yourself, it's really easy
+
+1183
+01:00:02.520 --> 01:00:04.779
+<v Cat Allman:>and it's really impressive looking and it's
+
+1184
+01:00:04.780 --> 01:00:05.740
+<v Cat Allman:>soft and squishy.
+
+1185
+01:00:06.760 --> 01:00:08.580
+<v Cat Allman:>So it's not coding.
+
+1186
+01:00:10.440 --> 01:00:13.259
+<v Cat Allman:>It's the simplest kind of math, but
+
+1187
+01:00:13.260 --> 01:00:15.720
+<v Cat Allman:>it's something that I really enjoy, and
+
+1188
+01:00:15.720 --> 01:00:17.440
+<v Cat Allman:>through it I was able to convince
+
+1189
+01:00:17.440 --> 01:00:19.060
+<v Cat Allman:>at least a handful of people that
+
+1190
+01:00:19.060 --> 01:00:21.100
+<v Cat Allman:>math isn't all scary.
+
+1191
+01:00:22.280 --> 01:00:25.340
+<v Cat Allman:>So do what you enjoy because life
+
+1192
+01:00:25.340 --> 01:00:27.240
+<v Cat Allman:>is short and you might as well
+
+1193
+01:00:28.000 --> 01:00:28.760
+<v Cat Allman:>have fun.
+
+1194
+01:00:34.460 --> 01:00:35.080
+<v Elisabetta Mori:>Thank you Cat.
+
+1195
+01:00:35.900 --> 01:00:37.799
+<v Elisabetta Mori:>It's been a real pleasure talking to
+
+1196
+01:00:37.800 --> 01:00:38.500
+<v Elisabetta Mori:>you today.
+
+1197
+01:00:39.780 --> 01:00:40.500
+<v Elisabetta Mori:>Thank you.
+
+1198
+01:00:41.740 --> 01:00:42.420
+<v Cat Allman:>Thank you.
+
+1199
+01:00:43.580 --> 01:00:45.650
+<v Cat Allman:>I appreciate the opportunity to pontificate.
+
+1200
+01:00:47.620 --> 01:00:48.480
+<v Elisabetta Mori:>Thank you.
+

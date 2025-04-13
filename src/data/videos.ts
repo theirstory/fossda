@@ -14,7 +14,7 @@ export type VideoId = | "introduction-to-fossda"
   | "jon-maddog-hall"
   | "tony-wasserman"
   | "joshua-gay-fossda"
-  | "karen-sandler" | "kirk-mckusick" | "eric-allman-interview-with-fossda";
+  | "karen-sandler" | "kirk-mckusick" | "eric-allman-interview-with-fossda" | "cat-allman";
 
 // Type the videoData object with Record<VideoId, VideoData>
 export const videoData = {
@@ -25,6 +25,14 @@ export const videoData = {
     thumbnail: "/thumbnails/introduction-to-fossda.jpg",
     summary: "An introduction to the Free and Open Source Software Digital Archive project.",
     sentence: "An introduction to the Free and Open Source Software Digital Archive project."
+  },
+  "cat-allman": {
+    id: "cat-allman",
+    title: "Cat Allman",
+    duration: "1:00:50",
+    thumbnail: "/thumbnails/cat-allman.png",
+    summary: "Cat Allman explores her journey through the open source software world from the 1980s to today, beginning with early exposure to computing through her brother, Eric Allman. She reflects on her diverse career, including key roles at Sendmail Inc. and Google, and her involvement in community-driven initiatives like Google Summer of Code. Allman highlights the value of collaboration, the need for sustainable support in open source, and the importance of fostering diversity in tech.",
+    sentence: "Building Open Source Communities, Sustaining Innovation, and Driving Collaborative Change"
   },
   "eric-allman-interview-with-fossda": {
     id: "eric-allman-interview-with-fossda",
@@ -56,7 +64,7 @@ export const videoData = {
     duration: "1:55:37",
     thumbnail: "https://image.mux.com/soSe2omfCv72n5h9BFOV5hgCXOIMVBPWIPN9MNeJC8E/animated.gif?width=320&start=5&end=10",
     summary: "Joshua Gay shares his journey from a curious, entrepreneurial youth to a key contributor in the free and open source software movement. From editing Richard Stallman's essays to co-founding projects like LibrePlanet and the CK-12 Foundation, he has focused on making technology and education more accessible. Now at IEEE, he works to bridge open source and global standards, guided by a deep belief in community and human-centered innovation.",
-    sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
+    sentence: "Empowering Learners, Advancing Free Software, and Building a More Humane Digital Future"
   },
   "tony-wasserman": {
     id: "tony-wasserman",
@@ -79,8 +87,8 @@ export const videoData = {
     title: "Lawrence (Larry) Rosen",
     duration: "1:18:47",
     thumbnail: "https://image.mux.com/isR00Hr0068dfnHs2lyhmd001U778XfjCWp9QEWo3GAE7A/animated.gif?width=320&start=5&end=10",
-    summary: "Interview with Lawrence (Larry) Rosen discussing their journey and contributions to open source software.",
-    sentence: "From discovering computing as a teenager to playing a pivotal role in the rise of Mozilla and Firefox"
+    summary: "Larry Rosen explores his pivotal role in computer science and the evolution of open source licensing. Rosen recounts his educational background, early work in programming languages, and the founding of the Open Source Initiative, contrasting its philosophy with that of the Free Software Foundation. He reflects on the future of open source, its influence on scientific research, and the enduring value of human relationships in shaping innovation.",
+    sentence: "Larry Rosen on building open source, bridging law and tech, and making space for future generations"
   },
   "tristan-nitot": {
     id: "tristan-nitot",
