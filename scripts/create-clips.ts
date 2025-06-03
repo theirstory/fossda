@@ -252,10 +252,10 @@ async function createClipsFromStory(interviewId: string) {
       if (span.classList.contains('speaker')) {
         // If we have accumulated text, add it as a word
         if (currentText) {
-          words.push({
+        words.push({
             text: currentText.trim(),
-            timestamp: convertTimestamp(span.getAttribute('data-m') || '0')
-          });
+          timestamp: convertTimestamp(span.getAttribute('data-m') || '0')
+        });
           currentText = '';
         }
         currentSpeaker = span.textContent?.trim() || '';

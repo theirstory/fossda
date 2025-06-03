@@ -93,33 +93,81 @@ export default function VideoChapters({
     const handleInitialChapter = () => {
       if (videoRef.current) {
         const currentTime = videoRef.current.currentTime;
-        if (typeof currentTime === 'number') {
+        console.log('Handling initial chapter with currentTime:', currentTime);
+        
+        if (typeof currentTime === 'number' && currentTime > 0) {
           const initialChapter = findActiveChapter(currentTime);
+          console.log('Initial chapter found based on currentTime:', initialChapter?.title);
           if (initialChapter) {
             setActiveChapter(initialChapter);
             scrollToChapter(initialChapter);
+            return;
           }
-        } else {
-          // If no current time, default to first chapter
-          const initialChapter = chapters[0];
-          setActiveChapter(initialChapter);
-          scrollToChapter(initialChapter);
         }
+        
+        // Check URL for start time if video currentTime is not reliable
+        const urlParams = new URLSearchParams(window.location.search);
+        const startTime = urlParams.get('start') || urlParams.get('t');
+        if (startTime) {
+          const timeInSeconds = parseFloat(startTime);
+          if (!isNaN(timeInSeconds)) {
+            console.log('Using URL start time for initial chapter:', timeInSeconds);
+            const initialChapter = findActiveChapter(timeInSeconds);
+            console.log('Initial chapter found based on URL:', initialChapter?.title);
+            if (initialChapter) {
+              setActiveChapter(initialChapter);
+              scrollToChapter(initialChapter);
+              return;
+            }
+          }
+        }
+        
+        // Fallback to first chapter
+        console.log('Falling back to first chapter');
+        const initialChapter = chapters[0];
+        setActiveChapter(initialChapter);
+        scrollToChapter(initialChapter);
       }
     };
+
+    // Try to handle initial chapter immediately
+    handleInitialChapter();
 
     // Handle initial chapter when video is loaded
     const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
     if (videoElement) {
       videoElement.addEventListener('loadedmetadata', handleInitialChapter);
-      // Also try immediately in case video is already loaded
-      handleInitialChapter();
+      videoElement.addEventListener('canplay', handleInitialChapter);
       
       return () => {
         videoElement.removeEventListener('loadedmetadata', handleInitialChapter);
+        videoElement.removeEventListener('canplay', handleInitialChapter);
       };
     }
   }, [chapters, videoRef, findActiveChapter, scrollToChapter]);
+
+  // Listen for initial videoSeeked event from VideoSection
+  useEffect(() => {
+    if (!chapters || chapters.length === 0) return;
+    
+    const handleInitialVideoSeeked = (e: CustomEvent) => {
+      if (e.detail && typeof e.detail.time === 'number') {
+        console.log('Initial videoSeeked event received with time:', e.detail.time);
+        const newActiveChapter = findActiveChapter(e.detail.time);
+        if (newActiveChapter) {
+          console.log('Setting active chapter from initial videoSeeked:', newActiveChapter.title);
+          setActiveChapter(newActiveChapter);
+          scrollToChapter(newActiveChapter);
+        }
+      }
+    };
+
+    window.addEventListener('videoSeeked', handleInitialVideoSeeked as EventListener);
+    
+    return () => {
+      window.removeEventListener('videoSeeked', handleInitialVideoSeeked as EventListener);
+    };
+  }, [chapters, findActiveChapter, scrollToChapter]);
 
   // Effect for time updates
   useEffect(() => {

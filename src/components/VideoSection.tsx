@@ -150,22 +150,28 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
   // Handle initial timestamp
   useEffect(() => {
     const handleInitialTimestamp = () => {
-      if (videoRef.current && startTime) {
-        const timeInSeconds = parseFloat(startTime);
-        if (!isNaN(timeInSeconds)) {
-          videoRef.current.currentTime = timeInSeconds;
-          // Dispatch custom event for chapter and transcript updates
-          const event = new CustomEvent('videoSeeked', { 
-            detail: { time: timeInSeconds } 
-          });
-          window.dispatchEvent(event);
-          
-          // Also trigger a timeupdate event for the transcript
-          const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-          if (videoElement) {
-            const timeUpdateEvent = new Event('timeupdate');
-            videoElement.dispatchEvent(timeUpdateEvent);
+      if (videoRef.current) {
+        let timeToSeek = 0; // Default to beginning
+        
+        if (startTime) {
+          const timeInSeconds = parseFloat(startTime);
+          if (!isNaN(timeInSeconds)) {
+            timeToSeek = timeInSeconds;
+            videoRef.current.currentTime = timeInSeconds;
           }
+        }
+        
+        // Always dispatch the videoSeeked event to notify components about the initial time
+        const event = new CustomEvent('videoSeeked', { 
+          detail: { time: timeToSeek } 
+        });
+        window.dispatchEvent(event);
+        
+        // Also trigger a timeupdate event for the transcript
+        const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+        if (videoElement) {
+          const timeUpdateEvent = new Event('timeupdate');
+          videoElement.dispatchEvent(timeUpdateEvent);
         }
       }
     };
@@ -285,22 +291,28 @@ export default function VideoSection({ videoId, transcriptHtml, playbackId, curr
             chapters={videoChapters.metadata}
             thumbnail={currentVideo.thumbnail}
             onLoadedMetadata={() => {
-              if (videoRef.current && startTime) {
-                const timeInSeconds = parseFloat(startTime);
-                if (!isNaN(timeInSeconds)) {
-                  videoRef.current.currentTime = timeInSeconds;
-                  // Dispatch custom event for chapter and transcript updates
-                  const event = new CustomEvent('videoSeeked', { 
-                    detail: { time: timeInSeconds } 
-                  });
-                  window.dispatchEvent(event);
-                  
-                  // Also trigger a timeupdate event for the transcript
-                  const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
-                  if (videoElement) {
-                    const timeUpdateEvent = new Event('timeupdate');
-                    videoElement.dispatchEvent(timeUpdateEvent);
+              if (videoRef.current) {
+                let timeToSeek = 0; // Default to beginning
+                
+                if (startTime) {
+                  const timeInSeconds = parseFloat(startTime);
+                  if (!isNaN(timeInSeconds)) {
+                    timeToSeek = timeInSeconds;
+                    videoRef.current.currentTime = timeInSeconds;
                   }
+                }
+                
+                // Always dispatch the videoSeeked event to notify components about the initial time
+                const event = new CustomEvent('videoSeeked', { 
+                  detail: { time: timeToSeek } 
+                });
+                window.dispatchEvent(event);
+                
+                // Also trigger a timeupdate event for the transcript
+                const videoElement = document.getElementById('hyperplayer') as HTMLVideoElement;
+                if (videoElement) {
+                  const timeUpdateEvent = new Event('timeupdate');
+                  videoElement.dispatchEvent(timeUpdateEvent);
                 }
               }
             }}
