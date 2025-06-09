@@ -1,27 +1,18 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Clock, Play } from 'lucide-react';
+import { Clip } from '@/types';
 
 // Placeholder interfaces for missing types
-interface Clip {
-  id: string;
-  title: string;
-  summary: string;
-  startTime: number;
-  endTime: number;
-  themeId: string;
-  thumbnail: string;
-}
-
 interface Theme {
   id: string;
   name: string;
 }
 
 interface TimelineViewProps {
-  clips: Clip[];
+  clips: (Clip & { themeId: string; thumbnail: string })[];
   themes: Theme[];
-  onClipSelect: (clip: Clip) => void;
+  onClipSelect: (clip: Clip & { themeId: string; thumbnail: string }) => void;
 }
 
 const TimelineView: React.FC<TimelineViewProps> = ({
@@ -89,7 +80,7 @@ const TimelineView: React.FC<TimelineViewProps> = ({
                       </div>
                       
                       <p className="text-xs text-foreground leading-relaxed">
-                        {clip.summary}
+                        {clip.transcript.length > 150 ? clip.transcript.substring(0, 150) + '...' : clip.transcript}
                       </p>
                       
                       <div className="mt-3 text-xs text-primary">

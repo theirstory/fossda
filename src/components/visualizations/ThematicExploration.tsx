@@ -1,11 +1,12 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Clip } from '@/types';
 
-// Placeholder interfaces for missing types
+// Theme interface matching the one used in visualizations page
 interface Theme {
   id: string;
   name: string;
-  clips: unknown[];
+  clips: Clip[];
   relatedThemes: string[];
 }
 

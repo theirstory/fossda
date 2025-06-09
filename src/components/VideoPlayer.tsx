@@ -77,14 +77,67 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
 
     // Add chapters when the player mounts
     useEffect(() => {
-      if (mounted && playerRef.current && 'addChapters' in playerRef.current) {
-        const muxChapters: MuxChapter[] = chapters.map(chapter => ({
-          startTime: chapter.time.start,
-          value: chapter.title
-        }));
-        
-        const player = playerRef.current as MuxPlayerElement & { addChapters: (chapters: MuxChapter[]) => void };
-        player.addChapters(muxChapters);
+      if (mounted && playerRef.current && chapters.length > 0) {
+        console.log('VideoPlayer: Attempting to add chapters', { 
+          chaptersCount: chapters.length, 
+          readyState: playerRef.current.readyState,
+          chapters: chapters.slice(0, 3) // Log first 3 chapters for debugging
+        });
+
+        const addChaptersToPlayer = () => {
+          if (playerRef.current && 'addChapters' in playerRef.current) {
+            const muxChapters: MuxChapter[] = chapters.map(chapter => ({
+              startTime: chapter.time.start,
+              value: chapter.title
+            }));
+            
+            console.log('Adding chapters to player:', muxChapters.slice(0, 3));
+            
+            const player = playerRef.current as MuxPlayerElement & { addChapters: (chapters: MuxChapter[]) => void };
+            try {
+              player.addChapters(muxChapters);
+              console.log('Chapters added successfully');
+            } catch (error) {
+              console.error('Error adding chapters:', error);
+            }
+          } else {
+            console.warn('Player does not support addChapters method');
+          }
+        };
+
+        // Multiple strategies to ensure chapters are added at the right time
+        const tryAddChapters = () => {
+          if (playerRef.current) {
+            // Strategy 1: If readyState is sufficient, add immediately
+            if (playerRef.current.readyState >= 1) {
+              console.log('Adding chapters immediately (readyState >= 1)');
+              addChaptersToPlayer();
+              return;
+            }
+
+            // Strategy 2: Wait for loadedmetadata
+            console.log('Waiting for loadedmetadata event');
+            playerRef.current.addEventListener('loadedmetadata', () => {
+              console.log('loadedmetadata event fired, adding chapters');
+              addChaptersToPlayer();
+            }, { once: true });
+
+            // Strategy 3: Also try on durationchange as a fallback
+            playerRef.current.addEventListener('durationchange', () => {
+              console.log('durationchange event fired, adding chapters as fallback');
+              addChaptersToPlayer();
+            }, { once: true });
+          }
+        };
+
+        // Small delay to ensure player is fully initialized
+        setTimeout(tryAddChapters, 100);
+      } else {
+        console.log('VideoPlayer: Not adding chapters', { 
+          mounted, 
+          hasPlayer: !!playerRef.current, 
+          chaptersCount: chapters.length 
+        });
       }
     }, [mounted, chapters]);
 
