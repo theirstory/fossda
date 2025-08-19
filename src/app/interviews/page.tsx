@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 
 export default function InterviewsPage() {
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('list');
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [searchQuery, setSearchQuery] = useState("");
   const [isMobile, setIsMobile] = useState(false);
 
@@ -114,7 +114,7 @@ export default function InterviewsPage() {
               <span className="inline">List</span>
             </Button>
             <Button
-              variant={viewMode === 'list' ? 'ghost' : 'default'}
+              variant={viewMode === 'grid' ? 'default' : 'ghost'}
               size="sm"
               onClick={() => setViewMode('grid')}
               className="gap-2"

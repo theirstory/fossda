@@ -198,7 +198,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
     }
 
     return (
-      <div className="relative bg-black rounded-lg overflow-hidden">
+      <div className="relative bg-black rounded-lg overflow-hidden aspect-video">
         <MuxPlayer
           id="hyperplayer"
           ref={playerRef}
@@ -216,6 +216,7 @@ const VideoPlayer = forwardRef<MuxPlayerElement, VideoPlayerProps>(
           defaultShowChapters
           poster={thumbnail}
           preload="none"
+          className="w-full h-full"
         />
       </div>
     );
