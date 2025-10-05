@@ -50,6 +50,7 @@ export default function MainNavigation() {
     { href: "/interviews", label: "Interviews" },
     { href: "/clips", label: "Browse Clips" },
     { href: "/chapters", label: "Chapters" },
+    { href: "/map", label: "Map" },
     { href: "/ask", label: "Ask AI" },
   ];
 
