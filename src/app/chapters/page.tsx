@@ -2,11 +2,12 @@
 
 import { videoData } from "@/data/videos";
 import { chapterData } from "@/data/chapters";
+import { clips } from "@/data/clips";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Search, ChevronRight, ChevronLeft, Check, ChevronDown, X } from "lucide-react";
+import { Clock, Search, ChevronRight, ChevronLeft, Check, ChevronDown, X, ListVideo, Film } from "lucide-react";
 import { useState, useRef, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -16,10 +17,16 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs";
 import KeywordFilter from "@/components/KeywordFilter";
 import React from "react";
 import { ChapterMetadata, TranscriptIndex } from "@/types/transcript";
 import { VideoId } from "@/data/videos";
+import { Clip } from "@/types";
 
 interface KeywordGroup {
   id: string;
@@ -51,6 +58,14 @@ interface GroupedChapter {
   chapters: Chapter[];
 }
 
+interface GroupedClip {
+  id: string;
+  title: string;
+  thumbnail: string;
+  duration: string;
+  clips: Clip[];
+}
+
 function highlightText(text: string, query: string): React.ReactNode {
   if (!query) return text;
   
@@ -69,6 +84,7 @@ function highlightText(text: string, query: string): React.ReactNode {
 }
 
 export default function ChaptersPage() {
+  const [viewMode, setViewMode] = React.useState<'chapters' | 'clips'>('chapters');
   const [searchQuery, setSearchQuery] = React.useState('');
   const [selectedInterviews, setSelectedInterviews] = React.useState<string[]>([]);
   const [selectedKeywords, setSelectedKeywords] = React.useState<string[]>([]);
@@ -120,6 +136,31 @@ export default function ChaptersPage() {
         chapterIndex: index
       })),
     }));
+
+  // Group clips by interview - maintain same order as chapters
+  const groupedClips: GroupedClip[] = useMemo(() => {
+    const clipsByInterview: Record<string, Clip[]> = {};
+    
+    clips.forEach((clip) => {
+      if (!clipsByInterview[clip.interviewId]) {
+        clipsByInterview[clip.interviewId] = [];
+      }
+      clipsByInterview[clip.interviewId].push(clip);
+    });
+
+    // Use the same order as groupedChapters to ensure consistency
+    const chapterOrder = groupedChapters.map(g => g.id);
+    
+    return chapterOrder
+      .filter(videoId => clipsByInterview[videoId] && (videoData as Record<string, VideoData>)[videoId])
+      .map(videoId => ({
+        id: videoId,
+        title: (videoData as Record<string, VideoData>)[videoId].title,
+        thumbnail: (videoData as Record<string, VideoData>)[videoId].thumbnail,
+        duration: (videoData as Record<string, VideoData>)[videoId].duration,
+        clips: clipsByInterview[videoId],
+      }));
+  }, [groupedChapters]);
 
   // Filter chapters based on search, selected interviews, and keyword groups
   const filteredChapters = useMemo(() => {
@@ -177,6 +218,62 @@ export default function ChaptersPage() {
       .filter(group => group.chapters.length > 0);
   }, [groupedChapters, selectedInterviews, searchQuery, keywordGroups]);
 
+  // Filter clips based on search, selected interviews, and keyword groups
+  const filteredClips = useMemo(() => {
+    return groupedClips
+      .filter(group => selectedInterviews.length === 0 || selectedInterviews.includes(group.id))
+      .map(group => ({
+        ...group,
+        clips: group.clips.filter((clip: Clip) => {
+          // Search filter
+          const matchesSearch = searchQuery === '' || 
+            clip.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            clip.transcript.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            clip.themes?.some((theme: string) => theme.toLowerCase().includes(searchQuery.toLowerCase()));
+
+          if (!matchesSearch) return false;
+
+          // Keyword group filter - clips have themes instead of tags
+          if (keywordGroups.length === 0) return true;
+
+          return keywordGroups.reduce((matches, group, index) => {
+            const clipThemes = new Set(clip.themes?.map(t => t.toLowerCase()));
+            const groupKeywords = group.keywords.map(k => k.toLowerCase());
+
+            // First evaluate the keywords within the group using the group's operator
+            const groupMatches = (() => {
+              switch (group.operator) {
+                case 'AND':
+                  return groupKeywords.every(keyword => clipThemes.has(keyword));
+                case 'OR':
+                  return groupKeywords.some(keyword => clipThemes.has(keyword));
+                case 'NOT':
+                  return !groupKeywords.some(keyword => clipThemes.has(keyword));
+                default:
+                  return true;
+              }
+            })();
+
+            // For the first group, just return its result
+            if (index === 0) return groupMatches;
+
+            // For subsequent groups, combine with previous results using the groupOperator
+            switch (group.groupOperator) {
+              case 'AND':
+                return matches && groupMatches;
+              case 'OR':
+                return matches || groupMatches;
+              case 'NOT':
+                return matches && !groupMatches;
+              default:
+                return matches;
+            }
+          }, true);
+        })
+      }))
+      .filter(group => group.clips.length > 0);
+  }, [groupedClips, selectedInterviews, searchQuery, keywordGroups]);
+
   // Check scroll position
   useEffect(() => {
     const checkScroll = () => {
@@ -200,7 +297,7 @@ export default function ChaptersPage() {
       }
       window.removeEventListener('resize', checkScroll);
     };
-  }, [filteredChapters]);
+  }, [filteredChapters, filteredClips, viewMode]);
 
   const scroll = (direction: 'left' | 'right') => {
     const container = scrollContainerRef.current;
@@ -248,7 +345,7 @@ export default function ChaptersPage() {
               <div className="relative w-full max-w-md">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
                 <Input 
-                  placeholder="Search chapters by title or content..." 
+                  placeholder={viewMode === 'chapters' ? "Search chapters by title or content..." : "Search clips by title or transcript..."} 
                   className="pl-9 h-9"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -267,7 +364,7 @@ export default function ChaptersPage() {
               </div>
 
               {/* Filter Buttons */}
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-shrink-0">
                 {/* Keyword Filter */}
                 <Popover>
                   <PopoverTrigger asChild>
@@ -314,7 +411,7 @@ export default function ChaptersPage() {
                           variant="outline"
                           size="sm"
                           className="flex-1 h-8"
-                          onClick={() => setSelectedInterviews(groupedChapters.map(g => g.id))}
+                          onClick={() => setSelectedInterviews(viewMode === 'chapters' ? groupedChapters.map(g => g.id) : groupedClips.map(g => g.id))}
                         >
                           Select all
                         </Button>
@@ -330,7 +427,7 @@ export default function ChaptersPage() {
                       <div className="text-sm text-muted-foreground pb-1">
                         Select multiple interviews:
                       </div>
-                      {groupedChapters.map((interview) => (
+                      {(viewMode === 'chapters' ? groupedChapters : groupedClips).map((interview) => (
                         <div
                           key={interview.id}
                           role="button"
@@ -365,14 +462,28 @@ export default function ChaptersPage() {
                   </PopoverContent>
                 </Popover>
               </div>
+
+              {/* View Mode Toggle */}
+              <Tabs value={viewMode} onValueChange={(value) => setViewMode(value as 'chapters' | 'clips')} className="w-auto flex-shrink-0">
+                <TabsList className="grid w-full grid-cols-2">
+                  <TabsTrigger value="chapters" className="flex items-center gap-2">
+                    <ListVideo className="h-4 w-4" />
+                    Chapters
+                  </TabsTrigger>
+                  <TabsTrigger value="clips" className="flex items-center gap-2">
+                    <Film className="h-4 w-4" />
+                    Clips
+                  </TabsTrigger>
+                </TabsList>
+              </Tabs>
             </div>
 
             {/* Selected Filters Summary */}
             <div className="flex flex-wrap gap-2">
               {/* Selected Interviews */}
-              {selectedInterviews.length > 0 && selectedInterviews.length < groupedChapters.length && (
+              {selectedInterviews.length > 0 && selectedInterviews.length < (viewMode === 'chapters' ? groupedChapters : groupedClips).length && (
                 <div className="flex flex-wrap gap-2">
-                  {groupedChapters
+                  {(viewMode === 'chapters' ? groupedChapters : groupedClips)
                     .filter(interview => selectedInterviews.includes(interview.id))
                     .map((interview) => (
                       <Badge 
@@ -462,7 +573,7 @@ export default function ChaptersPage() {
               ref={scrollContainerRef}
               className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none relative"
             >
-              {filteredChapters.map((group) => (
+              {viewMode === 'chapters' ? filteredChapters.map((group) => (
                 <div key={group.id} className="space-y-6 flex-none w-[500px]">
                   {/* Interview Header */}
                   <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
@@ -602,6 +713,116 @@ export default function ChaptersPage() {
                         </Card>
                       </Link>
                     ))}
+                  </div>
+                </div>
+              )) : filteredClips.map((group) => (
+                <div key={group.id} className="space-y-6 flex-none w-[500px]">
+                  {/* Interview Header */}
+                  <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
+                    <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-blue-500 transition-all">
+                      <Image
+                        src={group.thumbnail}
+                        alt={group.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h2 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                        {group.title}
+                      </h2>
+                      <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                        <Clock className="h-4 w-4" />
+                        {group.duration}
+                        <span className="mx-2">•</span>
+                        {group.clips.length} clips
+                      </div>
+                    </div>
+                  </Link>
+
+                  {/* Clips Timeline */}
+                  <div className="space-y-3 relative">
+                    {group.clips.map((clip) => {
+                      const minutes = Math.floor(clip.startTime / 60);
+                      const seconds = Math.floor(clip.startTime % 60);
+                      const timecode = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+                      
+                      return (
+                        <Link 
+                          key={clip.id}
+                          href={`/video/${group.id}?t=${clip.startTime}&end=${clip.endTime}`}
+                          className="block"
+                        >
+                          <Card className="overflow-hidden hover:shadow-lg transition-all hover:bg-gray-50 group">
+                            <div className="p-4">
+                              <div className="flex items-start gap-3">
+                                <div className="flex-shrink-0 w-16 text-sm text-gray-500 pt-1">
+                                  {timecode}
+                                </div>
+                                <div className="flex-1">
+                                  <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                                    {highlightText(clip.title, searchQuery)}
+                                  </h3>
+                                  <p className="text-xs text-gray-600 mt-1 line-clamp-2">
+                                    {highlightText(clip.transcript || "", searchQuery)}
+                                  </p>
+                                  {clip.themes && clip.themes.length > 0 && (
+                                    <div className="flex flex-wrap gap-1.5 mt-2">
+                                      {clip.themes.map((theme, i) => {
+                                        const isSelected = keywordGroups.some(group => 
+                                          group.keywords.includes(theme)
+                                        );
+                                        return (
+                                          <Badge
+                                            key={i}
+                                            variant={isSelected ? "default" : "outline"}
+                                            className={cn(
+                                              "text-xs",
+                                              isSelected && "bg-blue-600 text-white hover:bg-blue-700"
+                                            )}
+                                            onClick={(e) => {
+                                              e.preventDefault();
+                                              e.stopPropagation();
+                                              // If there's no active group, create one
+                                              if (keywordGroups.length === 0) {
+                                                const newGroup: { id: string; keywords: string[]; operator: 'AND' | 'OR' | 'NOT'; groupOperator: 'AND' | 'OR' | 'NOT' } = {
+                                                  id: Math.random().toString(),
+                                                  keywords: [theme],
+                                                  operator: 'AND',
+                                                  groupOperator: 'AND'
+                                                };
+                                                setKeywordGroups([newGroup]);
+                                                setSelectedKeywords([...selectedKeywords, theme]);
+                                              } else {
+                                                // Add to the last group
+                                                const lastGroup = keywordGroups[keywordGroups.length - 1];
+                                                if (!lastGroup.keywords.includes(theme)) {
+                                                  setKeywordGroups(
+                                                    keywordGroups.map((group, idx) =>
+                                                      idx === keywordGroups.length - 1
+                                                        ? { ...group, keywords: [...group.keywords, theme] }
+                                                        : group
+                                                    )
+                                                  );
+                                                  setSelectedKeywords([...selectedKeywords, theme]);
+                                                }
+                                              }
+                                            }}
+                                          >
+                                            {theme}
+                                          </Badge>
+                                        );
+                                      })}
+                                    </div>
+                                  )}
+                                </div>
+                                <ChevronRight className="h-4 w-4 text-gray-400 group-hover:text-blue-600 transition-colors flex-shrink-0" />
+                              </div>
+                            </div>
+                          </Card>
+                        </Link>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
