@@ -776,6 +776,10 @@ export default function ChaptersPage() {
                       const seconds = Math.floor(clip.startTime % 60);
                       const timecode = `${minutes}:${seconds.toString().padStart(2, '0')}`;
                       
+                      const durationMinutes = Math.floor(clip.duration / 60);
+                      const durationSeconds = Math.floor(clip.duration % 60);
+                      const durationFormatted = `${durationMinutes}:${durationSeconds.toString().padStart(2, '0')}`;
+                      
                       return (
                         <Link 
                           key={clip.id}
@@ -785,8 +789,12 @@ export default function ChaptersPage() {
                           <Card className="overflow-hidden hover:shadow-lg transition-all hover:bg-gray-50 group">
                             <div className="p-4">
                               <div className="flex items-start gap-3">
-                                <div className="flex-shrink-0 w-16 text-sm text-gray-500 pt-1">
-                                  {timecode}
+                                <div className="flex-shrink-0 w-20 text-sm text-gray-500 pt-1">
+                                  <div className="font-medium">{timecode}</div>
+                                  <div className="text-xs text-gray-400 mt-1 flex items-center gap-1">
+                                    <Clock className="h-3 w-3" />
+                                    <span>{durationFormatted}</span>
+                                  </div>
                                 </div>
                                 <div className="flex-1">
                                   <h3 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
