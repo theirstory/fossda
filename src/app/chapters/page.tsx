@@ -523,8 +523,33 @@ export default function ChaptersPage() {
                   <div className="flex items-center gap-1 border rounded-lg px-2 py-1">
                     {group.keywords.map((keyword, kIndex) => (
                       <React.Fragment key={keyword}>
-                        <Badge variant="default" className="bg-blue-600">
-                          {keyword}
+                        <Badge variant="default" className="bg-blue-600 flex items-center gap-1 pr-1">
+                          <span>{keyword}</span>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="h-4 w-4 hover:bg-blue-700"
+                            onClick={() => {
+                              // Remove keyword from selectedKeywords
+                              setSelectedKeywords(prev => prev.filter(k => k !== keyword));
+                              
+                              // Remove keyword from the group
+                              const updatedGroups = keywordGroups.map((g, idx) => {
+                                if (idx === index) {
+                                  return {
+                                    ...g,
+                                    keywords: g.keywords.filter(k => k !== keyword)
+                                  };
+                                }
+                                return g;
+                              }).filter(g => g.keywords.length > 0); // Remove empty groups
+                              
+                              setKeywordGroups(updatedGroups);
+                            }}
+                          >
+                            <X className="h-3 w-3 text-white" />
+                            <span className="sr-only">Remove {keyword}</span>
+                          </Button>
                         </Badge>
                         {kIndex < group.keywords.length - 1 && (
                           <span className="text-xs font-medium">{group.operator}</span>
