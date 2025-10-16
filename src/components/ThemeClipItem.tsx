@@ -3,7 +3,6 @@
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import { Theme } from "@/data/themes";
 import { Clip } from "@/types";
 import { videoData } from "@/data/videos";
@@ -94,11 +93,13 @@ export default function ThemeClipItem({ clip, currentThemeId, themes, searchQuer
                 >
                   <Badge 
                     variant="outline"
-                    className={cn(
-                      "transition-colors",
-                      relatedTheme.color.replace('hover:', ''),
-                      "hover:border-transparent"
-                    )}
+                    className="transition-colors hover:text-white hover:border-transparent"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = relatedTheme.iconColor;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = '';
+                    }}
                   >
                     {relatedTheme.title}
                   </Badge>

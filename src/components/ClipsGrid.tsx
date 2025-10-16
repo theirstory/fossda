@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { Clip } from "@/types";
 import { Theme } from "@/data/themes";
 import { Badge } from "@/components/ui/badge";
@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { videoData } from "@/data/videos";
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Filter, X } from "lucide-react";
+import { Search, Filter, X, ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { iconMap } from "@/data/icons";
 import { Button } from "@/components/ui/button";
@@ -67,6 +67,9 @@ export default function ClipsGrid({
   setSearchQuery,
   hideSearch = false
 }: ClipsGridProps) {
+  const [intervieweesExpanded, setIntervieweesExpanded] = useState(true);
+  const [themesExpanded, setThemesExpanded] = useState(true);
+  
   const filteredClips = clips.filter(clip => {
     const matchesInterviewee = selectedInterviewees.length === 0 || 
                               selectedInterviewees.includes(clip.interviewId);
@@ -108,7 +111,7 @@ export default function ClipsGrid({
   };
 
   const renderFilters = () => (
-    <div className="space-y-4">
+    <div className="space-y-4 max-h-[calc(100vh-200px)] overflow-y-auto pr-2">
       {/* Filter Section */}
       <div className="space-y-4">
         <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -118,50 +121,92 @@ export default function ClipsGrid({
 
         {/* Interviewees */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-gray-700">Interviewees</label>
-          <div className="flex flex-col gap-2">
-            {interviewees.map((interviewee) => (
-              <Badge
-                key={interviewee.id}
-                variant={selectedInterviewees.includes(interviewee.id) ? "default" : "outline"}
-                className={cn(
-                  "cursor-pointer transition-colors justify-start",
-                  selectedInterviewees.includes(interviewee.id) 
-                    ? "bg-blue-600 hover:bg-blue-700" 
-                    : "hover:bg-gray-100"
-                )}
-                onClick={() => handleIntervieweeChange(interviewee.id)}
-              >
-                {interviewee.title}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              setIntervieweesExpanded(!intervieweesExpanded);
+            }}
+            className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 w-full text-left"
+          >
+            {intervieweesExpanded ? (
+              <ChevronDown className="h-4 w-4 flex-shrink-0" />
+            ) : (
+              <ChevronRight className="h-4 w-4 flex-shrink-0" />
+            )}
+            <span>Interviewees</span>
+            {selectedInterviewees.length > 0 && (
+              <Badge variant="secondary" className="ml-auto">
+                {selectedInterviewees.length}
               </Badge>
-            ))}
-          </div>
+            )}
+          </button>
+          {intervieweesExpanded && (
+            <div className="flex flex-col gap-2 pl-6">
+              {interviewees.map((interviewee) => (
+                <Badge
+                  key={interviewee.id}
+                  variant={selectedInterviewees.includes(interviewee.id) ? "default" : "outline"}
+                  className={cn(
+                    "cursor-pointer transition-colors justify-start",
+                    selectedInterviewees.includes(interviewee.id) 
+                      ? "bg-blue-600 hover:bg-blue-700" 
+                      : "hover:bg-gray-100"
+                  )}
+                  onClick={() => handleIntervieweeChange(interviewee.id)}
+                >
+                  {interviewee.title}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Themes */}
         <div className="space-y-2">
-          <label className="text-sm font-medium text-gray-700">Themes</label>
-          <div className="flex flex-col gap-2">
-            {themes.map((theme) => (
-              <Badge
-                key={theme.id}
-                variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
-                className={cn(
-                  "cursor-pointer transition-colors justify-start gap-2",
-                  selectedThemes.includes(theme.id)
-                    ? "bg-blue-600 hover:bg-blue-700"
-                    : "hover:bg-gray-100"
-                )}
-                onClick={() => handleThemeChange(theme.id)}
-              >
-                {React.createElement(iconMap[theme.iconName], {
-                  className: "h-4 w-4",
-                  style: { color: theme.iconColor }
-                })}
-                {theme.title}
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              setThemesExpanded(!themesExpanded);
+            }}
+            className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900 w-full text-left"
+          >
+            {themesExpanded ? (
+              <ChevronDown className="h-4 w-4 flex-shrink-0" />
+            ) : (
+              <ChevronRight className="h-4 w-4 flex-shrink-0" />
+            )}
+            <span>Themes</span>
+            {selectedThemes.length > 0 && (
+              <Badge variant="secondary" className="ml-auto">
+                {selectedThemes.length}
               </Badge>
-            ))}
-          </div>
+            )}
+          </button>
+          {themesExpanded && (
+            <div className="flex flex-col gap-2 pl-6">
+              {themes.map((theme) => (
+                <Badge
+                  key={theme.id}
+                  variant={selectedThemes.includes(theme.id) ? "default" : "outline"}
+                  className={cn(
+                    "cursor-pointer transition-colors justify-start gap-2",
+                    selectedThemes.includes(theme.id)
+                      ? "bg-blue-600 hover:bg-blue-700"
+                      : "hover:bg-gray-100"
+                  )}
+                  onClick={() => handleThemeChange(theme.id)}
+                >
+                  {React.createElement(iconMap[theme.iconName], {
+                    className: "h-4 w-4",
+                    style: { color: theme.iconColor }
+                  })}
+                  {theme.title}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -205,7 +250,7 @@ export default function ClipsGrid({
                 Filters
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-full sm:w-[540px]">
+            <SheetContent side="left" className="w-full sm:w-[540px] overflow-y-auto">
               <SheetHeader>
                 <SheetTitle>Filters</SheetTitle>
               </SheetHeader>
@@ -286,11 +331,13 @@ export default function ClipsGrid({
                             <Link href={`/theme/${themeId}`}>
                               <Badge 
                                 variant="outline" 
-                                className={cn(
-                                  "transition-colors text-xs",
-                                  theme.color.replace('hover:', ''),
-                                  "hover:border-transparent"
-                                )}
+                                className="transition-colors text-xs hover:text-white hover:border-transparent"
+                                onMouseEnter={(e) => {
+                                  e.currentTarget.style.backgroundColor = theme.iconColor;
+                                }}
+                                onMouseLeave={(e) => {
+                                  e.currentTarget.style.backgroundColor = '';
+                                }}
                               >
                                 {theme.title}
                               </Badge>
