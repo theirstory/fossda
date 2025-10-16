@@ -323,12 +323,12 @@ export default function ChaptersPage() {
           }} />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 py-6 sm:py-8 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               Interview Chapters
             </h1>
-            <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
               Browse through all interview segments and chapters. Find specific topics and moments across our entire archive.
             </p>
           </div>
@@ -340,12 +340,12 @@ export default function ChaptersPage() {
         <div className="w-full px-4 sm:px-6 lg:px-8">
           {/* Search and Filter Options */}
           <div className="pt-6 pb-4 space-y-4">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3 lg:gap-4">
               {/* Search */}
-              <div className="relative w-full max-w-md">
+              <div className="relative w-full lg:max-w-md">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
                 <Input 
-                  placeholder={viewMode === 'chapters' ? "Search chapters by title or content..." : "Search clips by title or transcript..."} 
+                  placeholder={viewMode === 'chapters' ? "Search chapters..." : "Search clips..."} 
                   className="pl-9 h-9"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -364,13 +364,14 @@ export default function ChaptersPage() {
               </div>
 
               {/* Filter Buttons */}
-              <div className="flex gap-4 flex-shrink-0">
+              <div className="flex gap-2 lg:gap-4 flex-shrink-0">
                 {/* Keyword Filter */}
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Button variant="outline" className="w-[200px] justify-between h-9">
+                    <Button variant="outline" className="flex-1 lg:w-[200px] justify-between h-9">
                       <span className="truncate flex items-center gap-2">
-                        <span className="text-muted-foreground">Filter by keyword</span>
+                        <span className="text-muted-foreground hidden sm:inline">Filter by keyword</span>
+                        <span className="text-muted-foreground sm:hidden">Keywords</span>
                         <Badge variant="secondary" className="rounded-sm px-1 font-normal">
                           {selectedKeywords.length}
                         </Badge>
@@ -378,7 +379,7 @@ export default function ChaptersPage() {
                       <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[800px] p-4" align="start" side="bottom" sideOffset={8}>
+                  <PopoverContent className="w-[calc(100vw-2rem)] sm:w-[600px] lg:w-[800px] p-4" align="start" side="bottom" sideOffset={8}>
                     <div data-keyword-filter>
                       <KeywordFilter
                         selectedKeywords={selectedKeywords}
@@ -394,9 +395,10 @@ export default function ChaptersPage() {
                 {/* Interview Selection */}
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Button variant="outline" className="w-[200px] justify-between h-9">
+                    <Button variant="outline" className="flex-1 lg:w-[200px] justify-between h-9">
                       <span className="truncate flex items-center gap-2">
-                        <span className="text-muted-foreground">Filter by interview</span>
+                        <span className="text-muted-foreground hidden sm:inline">Filter by interview</span>
+                        <span className="text-muted-foreground sm:hidden">Interviews</span>
                         <Badge variant="secondary" className="rounded-sm px-1 font-normal">
                           {selectedInterviews.length}
                         </Badge>
@@ -404,7 +406,7 @@ export default function ChaptersPage() {
                       <ChevronDown className="h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </PopoverTrigger>
-                  <PopoverContent className="w-[200px] p-2" align="start">
+                  <PopoverContent className="w-[calc(100vw-2rem)] sm:w-[200px] p-2" align="start">
                     <div className="space-y-2">
                       <div className="flex gap-2 pb-2 border-b">
                         <Button
@@ -464,15 +466,17 @@ export default function ChaptersPage() {
               </div>
 
               {/* View Mode Toggle */}
-              <Tabs value={viewMode} onValueChange={(value) => setViewMode(value as 'chapters' | 'clips')} className="w-auto flex-shrink-0">
+              <Tabs value={viewMode} onValueChange={(value) => setViewMode(value as 'chapters' | 'clips')} className="w-full lg:w-auto flex-shrink-0">
                 <TabsList className="grid w-full grid-cols-2">
                   <TabsTrigger value="chapters" className="flex items-center gap-2">
                     <ListVideo className="h-4 w-4" />
-                    Chapters
+                    <span className="hidden sm:inline">Chapters</span>
+                    <span className="sm:hidden">Ch</span>
                   </TabsTrigger>
                   <TabsTrigger value="clips" className="flex items-center gap-2">
                     <Film className="h-4 w-4" />
-                    Clips
+                    <span className="hidden sm:inline">Clips</span>
+                    <span className="sm:hidden">Cl</span>
                   </TabsTrigger>
                 </TabsList>
               </Tabs>
@@ -534,10 +538,10 @@ export default function ChaptersPage() {
           </div>
 
           <div className="relative">
-            {/* Left Edge Gradient */}
+            {/* Left Edge Gradient - Hide on mobile */}
             {canScrollLeft && (
               <>
-                <div className="sticky left-4 top-[60%] z-50 float-left">
+                <div className="hidden lg:block sticky left-4 top-[60%] z-50 float-left">
                   <Button
                     variant="outline"
                     size="icon"
@@ -547,14 +551,14 @@ export default function ChaptersPage() {
                     <ChevronLeft className="h-6 w-6" />
                   </Button>
                 </div>
-                <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-40" />
+                <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-40" />
               </>
             )}
 
-            {/* Right Edge Gradient */}
+            {/* Right Edge Gradient - Hide on mobile */}
             {canScrollRight && (
               <>
-                <div className="sticky right-4 top-[60%] z-50 float-right">
+                <div className="hidden lg:block sticky right-4 top-[60%] z-50 float-right">
                   <Button
                     variant="outline"
                     size="icon"
@@ -564,17 +568,17 @@ export default function ChaptersPage() {
                     <ChevronRight className="h-6 w-6" />
                   </Button>
                 </div>
-                <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-40" />
+                <div className="hidden lg:block absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-40" />
               </>
             )}
 
             {/* Scrollable Content */}
             <div 
               ref={scrollContainerRef}
-              className="flex overflow-x-auto gap-8 pb-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 scroll-smooth scrollbar-none relative"
+              className="flex flex-col lg:flex-row lg:overflow-x-auto gap-6 lg:gap-8 pb-4 scroll-smooth scrollbar-none relative"
             >
               {viewMode === 'chapters' ? filteredChapters.map((group) => (
-                <div key={group.id} className="space-y-6 flex-none w-[500px]">
+                <div key={group.id} className="space-y-4 lg:space-y-6 flex-none w-full lg:w-[500px]">
                   {/* Interview Header */}
                   <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
                     <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-blue-500 transition-all">
@@ -716,7 +720,7 @@ export default function ChaptersPage() {
                   </div>
                 </div>
               )) : filteredClips.map((group) => (
-                <div key={group.id} className="space-y-6 flex-none w-[500px]">
+                <div key={group.id} className="space-y-4 lg:space-y-6 flex-none w-full lg:w-[500px]">
                   {/* Interview Header */}
                   <Link href={`/video/${group.id}`} className="flex items-center gap-4 group">
                     <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 group-hover:ring-2 group-hover:ring-blue-500 transition-all">
