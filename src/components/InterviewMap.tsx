@@ -105,7 +105,7 @@ export default function InterviewMap() {
   }
 
   return (
-    <div className="w-full h-[600px] rounded-lg overflow-hidden shadow-lg">
+    <div className="w-full h-[600px] rounded-lg overflow-hidden shadow-lg relative z-0">
       <MapContainer
         center={[37.8715, -122.2730]} // Default to Berkeley
         zoom={2}

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function MapPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-gray-50 relative z-0">
       {/* Hero Section */}
       <div className="relative bg-gray-900">
         {/* Background Pattern */}
