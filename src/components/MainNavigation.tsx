@@ -46,7 +46,6 @@ export default function MainNavigation() {
   }, [pathname, mounted]);
 
   const navigationLinks = [
-    { href: "/", label: "Home" },
     { href: "/interviews", label: "Interviews" },
     { href: "/clips", label: "Browse Clips" },
     { href: "/chapters", label: "Chapters" },
@@ -55,9 +54,9 @@ export default function MainNavigation() {
   ];
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="sticky top-0 z-50 relative w-full">
       {/* Main Navigation */}
-      <div className="bg-white border-b">
+      <div className="bg-white border-b w-full">
         <nav className="container mx-auto px-4">
           <div className="flex h-16 items-center gap-4">
             {/* Back Button - only show if we can go back */}
@@ -106,20 +105,20 @@ export default function MainNavigation() {
               </div>
 
               {/* Desktop Search */}
-              <div className="hidden lg:block flex-1">
+              <div className="hidden lg:block flex-1 max-w-2xl">
                 <SearchInput />
               </div>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="w-20 flex justify-end lg:hidden">
-              <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <MenuIcon className="h-5 w-5" />
-                    <span className="sr-only">Toggle menu</span>
-                  </Button>
-                </SheetTrigger>
+                <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+                  <SheetTrigger asChild>
+                    <Button variant="ghost" size="icon">
+                      <MenuIcon className="h-5 w-5" />
+                      <span className="sr-only">Toggle menu</span>
+                    </Button>
+                  </SheetTrigger>
                 <SheetContent side="right" className="w-full sm:w-80">
                   <SheetHeader>
                     <SheetTitle>Menu</SheetTitle>
@@ -174,6 +173,19 @@ export default function MainNavigation() {
                         </div>
                       </div>
                     )}
+
+                    {/* Mobile TheirStory Link */}
+                    <div className="pt-4 border-t">
+                      <Link
+                        href="https://theirstory.io/welcome"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-muted-foreground hover:text-primary"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Powered by <span className="underline">TheirStory</span>
+                      </Link>
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -198,7 +210,7 @@ export default function MainNavigation() {
 
               {/* Desktop Themes Dropdown */}
               {mounted && (
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1 mr-12">
                   <Select 
                     onValueChange={(value: string) => {
                       router.push(`/theme/${value}`);
@@ -232,8 +244,21 @@ export default function MainNavigation() {
                 </div>
               )}
             </div>
+
           </div>
         </nav>
+      </div>
+      
+      {/* Desktop TheirStory Link - Far Right Corner (Outside Navigation) */}
+      <div className="hidden lg:flex items-center absolute right-4 top-0 h-16">
+        <Link
+          href="https://theirstory.io/welcome"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-muted-foreground hover:text-primary whitespace-nowrap"
+        >
+          Powered by <span className="underline">TheirStory</span>
+        </Link>
       </div>
     </div>
   );

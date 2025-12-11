@@ -1,0 +1,2 @@
+[console_scripts]
+elysia = elysia.api.cli:cli

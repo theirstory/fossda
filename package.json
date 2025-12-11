@@ -12,7 +12,9 @@
     "check": "npm run typecheck && npm run lint",
     "verify": "npm run check && npm run build",
     "index-transcripts": "tsx src/scripts/indexTranscripts.ts",
-    "index-production": "tsx scripts/index-production.ts"
+    "index-production": "tsx scripts/index-production.ts",
+    "elysia:server": "source .venv-elysia/bin/activate && python scripts/elysia-api-server.py",
+    "elysia:dev": "source .venv-elysia/bin/activate && python scripts/elysia-api-server.py"
   },
   "husky": {
     "hooks": {
