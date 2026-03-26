@@ -38,12 +38,19 @@ export interface ElysiaHealthResponse {
  */
 export async function checkElysiaHealth(): Promise<ElysiaHealthResponse> {
   try {
+    // Create abort controller with timeout
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
     const response = await fetch(`${ELYSIA_API_URL}/health`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
       },
+      signal: controller.signal,
     });
+
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       throw new Error(`Elysia API returned ${response.status}`);
@@ -51,7 +58,29 @@ export async function checkElysiaHealth(): Promise<ElysiaHealthResponse> {
 
     return await response.json();
   } catch (error) {
-    console.error('Elysia health check failed:', error);
+    // Silently handle network errors (server not running)
+    // Only log if it's not a network/abort error
+    if (error instanceof DOMException && error.name === 'AbortError') {
+      // Timeout - server not responding
+      return {
+        status: 'error',
+        error: 'Elysia API server is not available',
+      };
+    }
+    
+    if (error instanceof TypeError && (error.message.includes('fetch') || error.message.includes('network'))) {
+      // Network error - server likely not running, this is expected
+      return {
+        status: 'error',
+        error: 'Elysia API server is not available',
+      };
+    }
+    
+    // Log other unexpected errors
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Elysia health check failed:', error);
+    }
+    
     return {
       status: 'error',
       error: error instanceof Error ? error.message : 'Unknown error',

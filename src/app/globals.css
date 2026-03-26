@@ -72,8 +72,12 @@
   * {
     @apply border-border;
   }
+  html {
+    direction: ltr;
+  }
   body {
     @apply bg-background text-foreground;
+    direction: ltr;
   }
 }
 

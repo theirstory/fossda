@@ -51,17 +51,20 @@ export default function AskFormElysia() {
 
   // Check Elysia health on mount
   useEffect(() => {
-    checkElysiaHealth().then((health) => {
-      if (health.status === 'ok' && health.elysia_initialized) {
-        setElysiaStatus('available');
-      } else {
+    checkElysiaHealth()
+      .then((health) => {
+        if (health.status === 'ok' && health.elysia_initialized) {
+          setElysiaStatus('available');
+        } else {
+          setElysiaStatus('unavailable');
+          setError('Elysia API server is not available. Please start it with: npm run elysia:server');
+        }
+      })
+      .catch(() => {
+        // Silently handle - the function already returns an error response
         setElysiaStatus('unavailable');
         setError('Elysia API server is not available. Please start it with: npm run elysia:server');
-      }
-    }).catch(() => {
-      setElysiaStatus('unavailable');
-      setError('Elysia API server is not available. Please start it with: npm run elysia:server');
-    });
+      });
   }, []);
 
   // Load messages from localStorage on mount

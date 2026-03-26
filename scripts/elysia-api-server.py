@@ -49,10 +49,15 @@ except ImportError:
 
 app = FastAPI(title="Elysia API Server")
 
-# Configure CORS to allow requests from Next.js
+# Configure CORS to allow requests from Next.js (multiple ports)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://localhost:3001",
+        "http://127.0.0.1:3001",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -355,7 +360,7 @@ if __name__ == "__main__":
     port = int(os.getenv("ELYSIA_API_PORT", "8001"))
     print(f"🚀 Starting Elysia API Server on port {port}")
     print(f"📚 Collection: Transcript")
-    print(f"🌐 CORS enabled for http://localhost:3000")
+    print(f"🌐 CORS enabled for http://localhost:3000 and http://localhost:3001")
     # Disable uvloop to avoid conflicts with Elysia's nest_asyncio
     uvicorn.run(app, host="0.0.0.0", port=port, loop="asyncio")
 

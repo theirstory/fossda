@@ -1,42 +1,26 @@
-import { searchTranscripts } from "@/lib/search";
-import { NextResponse } from "next/server";
+import { NextResponse } from 'next/server';
+import { searchTranscripts } from '@/lib/search';
 
-export async function GET(request: Request) {
+// POST /api/search - Perform semantic search
+export async function POST(request: Request) {
   try {
-    const { searchParams } = new URL(request.url);
-    const query = searchParams.get("q");
+    const body = await request.json();
+    const { query } = body;
 
-    if (!query) {
+    if (!query || typeof query !== 'string') {
       return NextResponse.json(
-        { error: "Missing query parameter" },
+        { error: 'Query is required and must be a string' },
         { status: 400 }
       );
     }
 
     const results = await searchTranscripts(query);
     return NextResponse.json({ results });
-
   } catch (error) {
-    console.error("Search error:", error);
-    
-    // Handle specific error types
-    if (error instanceof Error) {
-      if (error.message.includes('WEAVIATE_HOST')) {
-        return NextResponse.json(
-          { error: "Search service is not configured properly" },
-          { status: 503 }
-        );
-      }
-      return NextResponse.json(
-        { error: error.message },
-        { status: 500 }
-      );
-    }
-
-    // Generic error
+    console.error('Search error:', error);
     return NextResponse.json(
-      { error: "An unexpected error occurred" },
+      { error: 'Search failed' },
       { status: 500 }
     );
   }
-} 
+}
