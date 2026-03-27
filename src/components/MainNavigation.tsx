@@ -51,7 +51,6 @@ export default function MainNavigation() {
     { href: "/chapters", label: "Chapters" },
     { href: "/map", label: "Map" },
     { href: "/ask", label: "Ask AI" },
-    { href: "/notes", label: "Notes" },
   ];
 
   return (
