@@ -21,6 +21,7 @@ interface ChatState {
   sidePanelCitations: Citation[];
   sidePanelQuery: string;
   hoveredCitationIndex: number | null;
+  isDrawerOpen: boolean;
 
   sendMessage: (content: string) => Promise<void>;
   setActiveCitation: (citation: Citation | null) => void;
@@ -29,6 +30,9 @@ interface ChatState {
   backToSources: () => void;
   closeSidePanel: () => void;
   clearChat: () => void;
+  openDrawer: () => void;
+  closeDrawer: () => void;
+  toggleDrawer: () => void;
 }
 
 let abortController: AbortController | null = null;
@@ -80,6 +84,7 @@ export const useChatStore = create<ChatState>()(
       sidePanelCitations: [],
       sidePanelQuery: '',
       hoveredCitationIndex: null,
+      isDrawerOpen: false,
 
       sendMessage: async (content: string) => {
         if (get().isStreaming) return;
@@ -273,6 +278,10 @@ export const useChatStore = create<ChatState>()(
           sidePanelQuery: '',
         });
       },
+
+      openDrawer: () => set({ isDrawerOpen: true }),
+      closeDrawer: () => set({ isDrawerOpen: false }),
+      toggleDrawer: () => set((state) => ({ isDrawerOpen: !state.isDrawerOpen })),
 
       clearChat: () => {
         if (abortController) {
