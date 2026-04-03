@@ -265,6 +265,7 @@ function CitationDetailView({ inDrawer }: { inDrawer?: boolean }) {
           </button>
           <Link
             href={`/video/${activeCitation.interviewId}?t=${Math.floor(activeCitation.timestamp)}`}
+            onClick={handleTranscriptClick}
             className="p-1 hover:bg-gray-100 rounded transition-colors"
             title="Open full interview"
           >

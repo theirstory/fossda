@@ -91,43 +91,38 @@ export default function VideoChapters({
     if (!chapters || chapters.length === 0) return;
     
     const handleInitialChapter = () => {
-      if (videoRef.current) {
-        const currentTime = videoRef.current.currentTime;
-        console.log('Handling initial chapter with currentTime:', currentTime);
-        
-        if (typeof currentTime === 'number' && currentTime > 0) {
-          const initialChapter = findActiveChapter(currentTime);
-          console.log('Initial chapter found based on currentTime:', initialChapter?.title);
+      // Check URL for start time first — this is always available
+      const urlParams = new URLSearchParams(window.location.search);
+      const startTime = urlParams.get('start') || urlParams.get('t');
+      if (startTime) {
+        const timeInSeconds = parseFloat(startTime);
+        if (!isNaN(timeInSeconds)) {
+          const initialChapter = findActiveChapter(timeInSeconds);
           if (initialChapter) {
             setActiveChapter(initialChapter);
             scrollToChapter(initialChapter);
             return;
           }
         }
-        
-        // Check URL for start time if video currentTime is not reliable
-        const urlParams = new URLSearchParams(window.location.search);
-        const startTime = urlParams.get('start') || urlParams.get('t');
-        if (startTime) {
-          const timeInSeconds = parseFloat(startTime);
-          if (!isNaN(timeInSeconds)) {
-            console.log('Using URL start time for initial chapter:', timeInSeconds);
-            const initialChapter = findActiveChapter(timeInSeconds);
-            console.log('Initial chapter found based on URL:', initialChapter?.title);
-            if (initialChapter) {
-              setActiveChapter(initialChapter);
-              scrollToChapter(initialChapter);
-              return;
-            }
+      }
+
+      // Fall back to video's current playback time
+      if (videoRef.current) {
+        const currentTime = videoRef.current.currentTime;
+        if (typeof currentTime === 'number' && currentTime > 0) {
+          const initialChapter = findActiveChapter(currentTime);
+          if (initialChapter) {
+            setActiveChapter(initialChapter);
+            scrollToChapter(initialChapter);
+            return;
           }
         }
-        
-        // Fallback to first chapter
-        console.log('Falling back to first chapter');
-        const initialChapter = chapters[0];
-        setActiveChapter(initialChapter);
-        scrollToChapter(initialChapter);
       }
+
+      // Fallback to first chapter
+      const initialChapter = chapters[0];
+      setActiveChapter(initialChapter);
+      scrollToChapter(initialChapter);
     };
 
     // Try to handle initial chapter immediately
@@ -214,8 +209,11 @@ export default function VideoChapters({
       videoElement.addEventListener('seeking', handleTimeUpdate);
       videoElement.addEventListener('seeked', handleTimeUpdate);
 
-      // Initial check for current time
-      if (typeof muxPlayer.currentTime === 'number') {
+      // Initial check for current time — skip if URL has a start time
+      // since the URL-based initialization effect handles that case
+      const urlParams = new URLSearchParams(window.location.search);
+      const hasStartTime = urlParams.has('start') || urlParams.has('t');
+      if (!hasStartTime && typeof muxPlayer.currentTime === 'number' && muxPlayer.currentTime > 0) {
         const initialChapter = findActiveChapter(muxPlayer.currentTime);
         if (initialChapter) {
           setActiveChapter(initialChapter);
