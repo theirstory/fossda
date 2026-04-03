@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { ChevronLeft, Menu as MenuIcon } from "lucide-react";
+import { ChevronLeft, Menu as MenuIcon, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Select,
@@ -47,10 +47,9 @@ export default function MainNavigation() {
 
   const navigationLinks = [
     { href: "/interviews", label: "Interviews" },
-    { href: "/clips", label: "Browse Clips" },
+    { href: "/clips", label: "Clips" },
     { href: "/chapters", label: "Chapters" },
     { href: "/map", label: "Map" },
-    { href: "/ask", label: "Ask AI" },
   ];
 
   return (
@@ -146,6 +145,19 @@ export default function MainNavigation() {
                           {label}
                         </Link>
                       ))}
+                      <Link
+                        href="/discover"
+                        onClick={() => setIsMenuOpen(false)}
+                        className={cn(
+                          "flex items-center gap-1.5 text-sm font-medium p-2 rounded-md transition-colors",
+                          pathname === "/discover"
+                            ? "bg-blue-600 text-white"
+                            : "text-blue-600"
+                        )}
+                      >
+                        <Sparkles className="h-3.5 w-3.5" />
+                        Discover
+                      </Link>
                     </div>
 
                     {/* Mobile Themes */}
@@ -210,8 +222,8 @@ export default function MainNavigation() {
 
               {/* Desktop Themes Dropdown */}
               {mounted && (
-                <div className="flex items-center gap-1 mr-12">
-                  <Select 
+                <div className="flex items-center gap-1">
+                  <Select
                     onValueChange={(value: string) => {
                       router.push(`/theme/${value}`);
                       const selectElement = document.querySelector('[role="combobox"]') as HTMLElement;
@@ -243,6 +255,20 @@ export default function MainNavigation() {
                   </Select>
                 </div>
               )}
+
+              {/* Discover Button */}
+              <Link
+                href="/discover"
+                className={cn(
+                  "flex items-center gap-1.5 text-sm font-medium whitespace-nowrap px-3 py-1.5 rounded-full border transition-colors mr-8",
+                  pathname === "/discover"
+                    ? "bg-blue-600 text-white border-blue-600"
+                    : "border-blue-600 text-blue-600 hover:bg-blue-50"
+                )}
+              >
+                <Sparkles className="h-3.5 w-3.5" />
+                Discover
+              </Link>
             </div>
 
           </div>
