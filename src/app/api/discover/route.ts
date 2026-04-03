@@ -49,7 +49,7 @@ function buildSystemPrompt(citations: Citation[]): string {
 
 Answer the user's question based on the following interview transcript sources. Follow these rules strictly:
 
-1. Place citations like [1], [2] etc. INLINE next to the relevant information, not at the end of paragraphs.
+1. Place citations like [1], [2] etc. AFTER the quote or claim they support, never before it. For example: "quote text" [1], not [1] "quote text".
 2. NEVER use ranges like [3-5] or grouped citations like [3, 4]. Always write them separately: [3][4][5].
 3. Include direct quotes from the transcripts when they are compelling or illustrative.
 4. Use proper Markdown formatting: **bold** for emphasis, > for block quotes, ## for section headings if needed.

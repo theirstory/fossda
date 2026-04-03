@@ -199,13 +199,15 @@ export const useChatStore = create<ChatState>()(
           if (citations.length > 0) {
             // Renumber citations to sequential 1,2,3... based on order of appearance
             const { text: remappedText, citations: remappedCitations } = remapCitations(accumulatedText, citations);
+            const isInDrawer = get().isDrawerOpen;
             set((state) => ({
               messages: state.messages.map((m) =>
                 m.id === assistantMessage.id
                   ? { ...m, content: remappedText, citations: remappedCitations }
                   : m
               ),
-              sidePanelOpen: true,
+              // Only auto-open side panel on /discover page, not in the drawer
+              sidePanelOpen: !isInDrawer,
               sidePanelView: 'sources',
               sidePanelCitations: remappedCitations,
               sidePanelQuery: content,

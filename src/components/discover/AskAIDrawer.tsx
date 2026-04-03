@@ -16,7 +16,6 @@ function DrawerChatPanel() {
   const streamingStatus = useChatStore((s) => s.streamingStatus);
   const sendMessage = useChatStore((s) => s.sendMessage);
   const clearChat = useChatStore((s) => s.clearChat);
-  const showSourcesForMessage = useChatStore((s) => s.showSourcesForMessage);
   const bottomRef = useRef<HTMLDivElement>(null);
   const pairRefs = useRef<Map<number, HTMLDivElement>>(new Map());
 
@@ -49,11 +48,8 @@ function DrawerChatPanel() {
       if (el) {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-      if (pair.assistant?.id) {
-        showSourcesForMessage(pair.assistant.id);
-      }
     },
-    [messagePairs, showSourcesForMessage]
+    [messagePairs]
   );
 
   return (
@@ -129,7 +125,6 @@ export function AskAIDrawer() {
 
   if (isDiscoverPage) return null;
 
-  // Determine if showing citation detail or sources in the drawer
   const showSources = sidePanelOpen && isDrawerOpen;
 
   return (
@@ -144,51 +139,47 @@ export function AskAIDrawer() {
 
       {/* Drawer panel */}
       <div
-        className={`fixed top-0 right-0 h-full z-50 bg-white shadow-2xl border-l transition-transform duration-300 ease-in-out flex ${
+        className={`fixed top-0 right-0 h-full z-50 bg-white shadow-2xl border-l transition-transform duration-300 ease-in-out ${
           isDrawerOpen ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
-        style={{ width: showSources ? '900px' : '480px', maxWidth: '100vw' }}
+        style={{ width: '480px', maxWidth: '100vw' }}
       >
-        {/* Chat section */}
-        <div className={`flex flex-col ${showSources ? 'w-[480px]' : 'w-full'} shrink-0`}>
-          {/* Header */}
-          <div className="flex items-center justify-between px-4 py-3 border-b bg-white">
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-4 w-4 text-blue-600" />
-              <span className="text-sm font-semibold">Discover - Ask AI</span>
-              <kbd className="hidden sm:inline-flex items-center gap-0.5 rounded border bg-gray-100 px-1.5 py-0.5 text-[10px] text-muted-foreground font-medium">
-                ⌘K
-              </kbd>
-            </div>
-            <div className="flex items-center gap-1">
-              <Link
-                href="/discover"
-                onClick={closeDrawer}
-                className="p-1.5 hover:bg-gray-100 rounded transition-colors"
-                title="Open full Discover page"
-              >
-                <ExternalLink className="h-4 w-4 text-muted-foreground" />
-              </Link>
-              <button
-                type="button"
-                onClick={closeDrawer}
-                className="p-1.5 hover:bg-gray-100 rounded transition-colors"
-              >
-                <X className="h-4 w-4 text-muted-foreground" />
-              </button>
-            </div>
+        {/* Header */}
+        <div className="flex items-center justify-between px-4 py-3 border-b bg-white">
+          <div className="flex items-center gap-2">
+            <Sparkles className="h-4 w-4 text-blue-600" />
+            <span className="text-sm font-semibold">Discover - Ask AI</span>
+            <kbd className="hidden sm:inline-flex items-center gap-0.5 rounded border bg-gray-100 px-1.5 py-0.5 text-[10px] text-muted-foreground font-medium">
+              ⌘K
+            </kbd>
           </div>
-
-          {/* Chat content */}
-          <DrawerChatPanel />
+          <div className="flex items-center gap-1">
+            <Link
+              href="/discover"
+              onClick={closeDrawer}
+              className="p-1.5 hover:bg-gray-100 rounded transition-colors"
+              title="Open full Discover page"
+            >
+              <ExternalLink className="h-4 w-4 text-muted-foreground" />
+            </Link>
+            <button
+              type="button"
+              onClick={closeDrawer}
+              className="p-1.5 hover:bg-gray-100 rounded transition-colors"
+            >
+              <X className="h-4 w-4 text-muted-foreground" />
+            </button>
+          </div>
         </div>
 
-        {/* Sources side panel (within the drawer) */}
-        {showSources && (
-          <div className="w-[420px] shrink-0 border-l bg-white overflow-hidden">
-            <SidePanel />
-          </div>
-        )}
+        {/* Content area: swap between chat and sources */}
+        <div className="flex flex-col h-[calc(100%-49px)] overflow-hidden">
+          {showSources ? (
+            <SidePanel inDrawer />
+          ) : (
+            <DrawerChatPanel />
+          )}
+        </div>
       </div>
 
       {/* Floating Action Button */}

@@ -129,7 +129,7 @@ function RecordingGroup({
   );
 }
 
-function SourcesListView() {
+function SourcesListView({ inDrawer }: { inDrawer?: boolean }) {
   const sidePanelCitations = useChatStore((s) => s.sidePanelCitations);
   const sidePanelQuery = useChatStore((s) => s.sidePanelQuery);
   const setActiveCitation = useChatStore((s) => s.setActiveCitation);
@@ -151,14 +151,26 @@ function SourcesListView() {
       <div className="p-3 border-b space-y-2">
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-sm font-medium leading-snug">{sidePanelQuery}</h3>
+          {!inDrawer && (
+            <button
+              type="button"
+              onClick={closeSidePanel}
+              className="shrink-0 p-1 hover:bg-gray-100 rounded transition-colors"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          )}
+        </div>
+        {inDrawer && (
           <button
             type="button"
             onClick={closeSidePanel}
-            className="shrink-0 p-1 hover:bg-gray-100 rounded transition-colors"
+            className="flex items-center gap-1.5 text-xs text-blue-600 hover:text-blue-700 font-medium transition-colors"
           >
-            <X className="h-4 w-4" />
+            <ArrowLeft className="h-3 w-3" />
+            Back to chat
           </button>
-        </div>
+        )}
         <div className="text-xs text-blue-600 font-medium">
           Sources ({sidePanelCitations.length})
         </div>
@@ -179,11 +191,17 @@ function SourcesListView() {
   );
 }
 
-function CitationDetailView() {
+function CitationDetailView({ inDrawer }: { inDrawer?: boolean }) {
   const activeCitation = useChatStore((s) => s.activeCitation);
   const backToSources = useChatStore((s) => s.backToSources);
   const closeSidePanel = useChatStore((s) => s.closeSidePanel);
+  const closeDrawer = useChatStore((s) => s.closeDrawer);
   const sidePanelCitations = useChatStore((s) => s.sidePanelCitations);
+
+  // In drawer mode, "back" closes the side panel to return to chat
+  const handleBack = inDrawer ? closeSidePanel : backToSources;
+  const backLabel = inDrawer ? 'Back to chat' : `Back to sources (${sidePanelCitations.length})`;
+  const handleTranscriptClick = inDrawer ? () => { closeSidePanel(); closeDrawer(); } : undefined;
 
   if (!activeCitation) return null;
 
@@ -197,11 +215,11 @@ function CitationDetailView() {
         <div className="flex items-center justify-between p-3 border-b">
           <button
             type="button"
-            onClick={backToSources}
+            onClick={handleBack}
             className="flex items-center gap-1.5 text-xs text-blue-600 hover:text-blue-700 font-medium transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to sources ({sidePanelCitations.length})
+            {backLabel}
           </button>
           <button
             type="button"
@@ -239,11 +257,11 @@ function CitationDetailView() {
         <div className="flex items-center justify-between">
           <button
             type="button"
-            onClick={backToSources}
+            onClick={handleBack}
             className="flex items-center gap-1.5 text-xs text-blue-600 hover:text-blue-700 font-medium transition-colors"
           >
             <ArrowLeft className="h-3 w-3" />
-            Back to sources ({sidePanelCitations.length})
+            {backLabel}
           </button>
           <Link
             href={`/video/${activeCitation.interviewId}?t=${Math.floor(activeCitation.timestamp)}`}
@@ -277,6 +295,7 @@ function CitationDetailView() {
 
           <Link
             href={`/video/${activeCitation.interviewId}?tab=transcript&t=${Math.floor(activeCitation.timestamp)}`}
+            onClick={handleTranscriptClick}
             className="flex items-center justify-center gap-2 w-full py-2.5 border border-blue-600 text-blue-600 rounded-lg text-sm font-medium hover:bg-blue-50 transition-colors"
           >
             <FileText className="h-4 w-4" />
@@ -292,12 +311,12 @@ function CitationDetailView() {
   );
 }
 
-export function SidePanel() {
+export function SidePanel({ inDrawer }: { inDrawer?: boolean } = {}) {
   const sidePanelView = useChatStore((s) => s.sidePanelView);
 
   if (sidePanelView === 'citation') {
-    return <CitationDetailView />;
+    return <CitationDetailView inDrawer={inDrawer} />;
   }
 
-  return <SourcesListView />;
+  return <SourcesListView inDrawer={inDrawer} />;
 }

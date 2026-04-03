@@ -8,7 +8,7 @@ const STARTER_QUESTIONS = [
   "What role did licensing play in the open source movement?",
   "How has the relationship between open source and business evolved?",
   "What challenges did women face in early open source communities?",
-  "How did the internet change software collaboration?",
+  "What are interesting questions this collection could uniquely answer?",
 ];
 
 interface StarterQuestionsProps {
